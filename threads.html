@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Threads — The Jordan Crossing Interior Beta</title>
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V8">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V9">
 </head>
 <body data-record-id="thread-constellation-beta">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -61,6 +61,14 @@
         <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
           Read top to bottom for chronology. Each record's reviewed connections are listed beneath it — what it continues, what it answers, and what remains open. Every line traces to a dated source.
         </p>
+        
+        <div style="margin-bottom:var(--space-6);display:flex;gap:var(--space-3);align-items:center;">
+          <input type="text" id="search-input" placeholder="Search by title, summary, or category..." 
+            style="flex:1;padding:var(--space-3);background:rgba(15,20,25,0.6);border:1px solid rgba(201,162,39,0.2);border-radius:var(--radius-md);color:var(--parchment);font-family:var(--font-body);" />
+          <button id="search-clear" style="padding:var(--space-2) var(--space-4);background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.3);border-radius:var(--radius-md);color:var(--parchment);cursor:pointer;display:none;">Clear</button>
+        </div>
+        <div id="search-results" style="margin-bottom:var(--space-3);color:var(--parchment-dim);font-size:var(--text-sm);"></div>
+        
         <div id="timeline-mount" class="thread-list"></div>
       </section>
 
@@ -75,18 +83,41 @@
   <footer class="site-footer">
     <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
   </footer>
-<script src="assets/records-data.js?v=20260831V5"></script>
+<script src="assets/records-data.js?v=20260831V9"></script>
 <script>
 (function () {
+  let allRecords = [];
+  let searchQuery = '';
+
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
-  function renderTimeline() {
+  function highlightText(text, query) {
+    if (!query) return escapeHtml(text);
+    
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return escapeHtml(text).replace(regex, '<mark style="background:rgba(201,162,39,0.3);color:var(--gold);">$1</mark>');
+  }
+
+  function matchesSearch(record, query) {
+    if (!query) return true;
+    
+    const lowerQuery = query.toLowerCase();
+    return (
+      record.title.toLowerCase().includes(lowerQuery) ||
+      record.summary.toLowerCase().includes(lowerQuery) ||
+      record.classification.toLowerCase().includes(lowerQuery) ||
+      record.dateLabel.toLowerCase().includes(lowerQuery)
+    );
+  }
+
+  function renderTimeline(filteredRecords = null) {
     const mount = document.getElementById('timeline-mount');
     if (!mount) return;
 
-    const nodes = JC_RECORDS.slice().sort((a, b) => a.order - b.order).map(rec => {
+    const recordsToRender = filteredRecords || allRecords;
+    const nodes = recordsToRender.map(rec => {
       const { outgoing } = jcGetEdgesFor(rec.id);
       const edgesHtml = outgoing.length
         ? outgoing.map(e => {
@@ -106,18 +137,66 @@
         <div style="margin-bottom:var(--space-3);">
           <span class="record-caption">Seed ${rec.seed}</span> · 
           <span style="color:var(--parchment-dim);font-size:var(--text-sm);">${escapeHtml(rec.dateLabel)}</span> · 
-          <span class="source-badge">${escapeHtml(rec.classification)}</span>
+          <span class="source-badge">${highlightText(rec.classification, searchQuery)}</span>
         </div>
-        <a class="nav-link-title" href="${rec.href}" style="display:block;color:var(--gold);text-decoration:none;margin-bottom:var(--space-2);">${escapeHtml(rec.title)}</a>
-        <p class="thread-note" style="margin-bottom:var(--space-4);">${escapeHtml(rec.summary)}</p>
+        <a class="nav-link-title" href="${rec.href}" style="display:block;color:var(--gold);text-decoration:none;margin-bottom:var(--space-2);">${highlightText(rec.title, searchQuery)}</a>
+        <p class="thread-note" style="margin-bottom:var(--space-4);">${highlightText(rec.summary, searchQuery)}</p>
         <div style="padding-top:var(--space-4);border-top:1px solid rgba(201,162,39,0.1);">${edgesHtml}</div>
       </div>`;
     }).join('');
 
-    mount.innerHTML = nodes;
+    mount.innerHTML = nodes || '<p style="color:var(--parchment-dim);font-style:italic;">No records match your search.</p>';
   }
 
-  document.addEventListener('DOMContentLoaded', renderTimeline);
+  function updateSearch() {
+    const input = document.getElementById('search-input');
+    const clearBtn = document.getElementById('search-clear');
+    const resultsDiv = document.getElementById('search-results');
+    
+    searchQuery = (input.value || '').trim();
+    clearBtn.style.display = searchQuery ? 'inline-block' : 'none';
+
+    const filtered = allRecords.filter(rec => matchesSearch(rec, searchQuery));
+    
+    if (searchQuery) {
+      resultsDiv.textContent = `Found ${filtered.length} of ${allRecords.length} records`;
+    } else {
+      resultsDiv.textContent = '';
+    }
+
+    renderTimeline(filtered);
+  }
+
+  function initTimeline() {
+    if (typeof JC_RECORDS !== 'undefined') {
+      allRecords = JC_RECORDS.slice().sort((a, b) => a.order - b.order);
+      renderTimeline(allRecords);
+
+      const searchInput = document.getElementById('search-input');
+      const clearBtn = document.getElementById('search-clear');
+      
+      if (searchInput) {
+        searchInput.addEventListener('input', updateSearch);
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Escape') {
+            this.value = '';
+            updateSearch();
+          }
+        });
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+          const input = document.getElementById('search-input');
+          input.value = '';
+          updateSearch();
+          input.focus();
+        });
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initTimeline);
 })();
 </script>
 </body></html>
