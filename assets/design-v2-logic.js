@@ -71,6 +71,11 @@
     const statusText = document.getElementById('carry-status-text');
     const clearBtn = document.getElementById('carry-clear-btn');
 
+    // Only initialize if we have the required carry elements (not on all pages)
+    if (!carryBtn && !writeOwnBtn && !status) {
+      return;
+    }
+
     const state = getCarryState();
 
     // Update initial UI
@@ -88,19 +93,19 @@
     // "Write my own question"
     if (writeOwnBtn) {
       writeOwnBtn.addEventListener('click', () => {
-        writePanel.classList.add('active');
-        textarea.focus();
+        if (writePanel) writePanel.classList.add('active');
+        if (textarea) textarea.focus();
       });
     }
 
     // Save custom question
-    if (saveBtn) {
+    if (saveBtn && textarea) {
       saveBtn.addEventListener('click', () => {
         const q = textarea.value.trim();
         if (q) {
           saveCarryState(q);
           textarea.value = '';
-          writePanel.classList.remove('active');
+          if (writePanel) writePanel.classList.remove('active');
           updateCarryUI();
         }
       });
@@ -114,10 +119,10 @@
     }
 
     // Cancel
-    if (cancelBtn) {
+    if (cancelBtn && textarea) {
       cancelBtn.addEventListener('click', () => {
         textarea.value = '';
-        writePanel.classList.remove('active');
+        if (writePanel) writePanel.classList.remove('active');
       });
     }
 
@@ -149,8 +154,8 @@
         if (carryBtn) carryBtn.style.display = '';
         if (writeOwnBtn) writeOwnBtn.style.display = '';
         if (status) status.classList.remove('active');
-        textarea.value = '';
-        writePanel.classList.remove('active');
+        if (textarea) textarea.value = '';
+        if (writePanel) writePanel.classList.remove('active');
       }
     }
   }
