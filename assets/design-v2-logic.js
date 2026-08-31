@@ -273,6 +273,37 @@
   }
 
   // ═══════════════════════════════════════════════════════════════════
+  // RELATED RECORDS — Thematically connected meditations
+  // ═════════════════════════════════════════════════════════════════════
+
+  function initRelatedRecords() {
+    const mount = document.getElementById('related-records-mount');
+    if (!mount || typeof jcGetRelatedRecords === 'undefined') return;
+
+    const related = jcGetRelatedRecords(RECORD_ID, 3);
+    if (!related.length) return;
+
+    let html = '<div class="related-records-header">';
+    html += '<h3>Related records</h3>';
+    html += '</div>';
+    html += '<div class="related-records-grid">';
+
+    related.forEach(record => {
+      // Use jcHrefFromRecord since we're on a record page
+      const href = record.href.replace(/^records\//, '');
+      html += `
+        <a href="${href}" class="related-record-card">
+          <div class="related-record-title">${record.title}</div>
+          <div class="related-record-date">${record.dateLabel}</div>
+        </a>
+      `;
+    });
+
+    html += '</div>';
+    mount.innerHTML = html;
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
   // INIT — Run on DOMContentLoaded
   // ═════════════════════════════════════════════════════════════════════
 
@@ -281,6 +312,7 @@
     initCarryQuestion();
     initReturnChoices();
     initGraphNav();
+    initRelatedRecords();
     initThreadConnections();
   });
 
