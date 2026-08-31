@@ -231,9 +231,23 @@ function jcTitleFor(id) {
   return r ? r.title : id;
 }
 
+// Map full record ID (e.g., '08-29-signpost') to short ID (e.g., 'signpost')
+function jcShortId(id) {
+  // If already a short ID, return as-is
+  if (JC_RECORDS.some(r => r.id === id)) return id;
+  
+  // Map full date-prefixed IDs to short IDs
+  // E.g., '08-29-signpost' → 'signpost', '08-30-compass' → 'compass'
+  const match = id.match(/^\d{2}-\d{2}-(.+)$/);
+  return match ? match[1] : id;
+}
+
 // Get 2-3 thematically related records based on thread edges
 function jcGetRelatedRecords(id, limit = 3) {
-  const edges = jcGetEdgesFor(id);
+  // Normalize the ID from full format (e.g., '08-29-signpost') to short format (e.g., 'signpost')
+  const shortId = jcShortId(id);
+  
+  const edges = jcGetEdgesFor(shortId);
   const relatedIds = new Set();
   
   // Add outgoing connections (what this record continues to, answers, etc.)
