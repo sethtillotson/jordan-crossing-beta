@@ -62,9 +62,10 @@
         </p>
         
         <div style="margin-bottom:var(--space-6);display:flex;gap:var(--space-3);align-items:center;">
+          <label for="search-input" style="position:absolute;width:1px;height:1px;overflow:hidden;">Search records by title, summary, or category</label>
           <input type="text" id="search-input" placeholder="Search by title, summary, or category..." 
             style="flex:1;padding:var(--space-3);background:rgba(15,20,25,0.6);border:1px solid rgba(201,162,39,0.2);border-radius:var(--radius-md);color:var(--parchment);font-family:var(--font-body);" />
-          <button id="search-clear" style="padding:var(--space-2) var(--space-4);background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.3);border-radius:var(--radius-md);color:var(--parchment);cursor:pointer;display:none;">Clear</button>
+          <button id="search-clear" style="padding:var(--space-2) var(--space-4);background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.3);border-radius:var(--radius-md);color:var(--parchment);cursor:pointer;display:none;" aria-label="Clear search results">Clear</button>
         </div>
         <div id="search-results" style="margin-bottom:var(--space-3);color:var(--parchment-dim);font-size:var(--text-sm);"></div>
         

@@ -373,7 +373,7 @@ const JC = (function () {
     mount.innerHTML = `
       ${chronoRowHtml}
       <div class="graph-nav-edges">
-        <h3>Reviewed thread connections</h3>
+        <h2>Reviewed thread connections</h2>
         ${isInterior ? `<p class="caption" style="margin-bottom:var(--space-3);">${escapeHtml(posLabel)}</p>` : ''}
         ${edgesHtml}
       </div>
@@ -660,3 +660,4 @@ const JC = (function () {
   });
 
 })();
+

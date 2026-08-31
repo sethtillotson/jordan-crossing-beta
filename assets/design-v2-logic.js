@@ -242,7 +242,7 @@
     if (!edges.length) return;
 
     let html = '<div class="reviewed-threads">';
-    html += '<h3 class="reviewed-threads-heading">Reviewed thread connections</h3>';
+    html += '<h2 class="reviewed-threads-heading">Reviewed thread connections</h2>';
     html += '<ul class="thread-list">';
 
     edges.forEach(edge => {
@@ -324,3 +324,4 @@
   };
 
 })();
+
