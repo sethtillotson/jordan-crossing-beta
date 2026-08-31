@@ -124,6 +124,57 @@ const JC_CORPUS_PATHS = [
       { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30 \u00b7 13:39', localId: 'filthy-garments', memoPath: null, note: 'Given away \u2014 record #5 in the Seed Register.' },
     ],
   },
+  {
+    id: 'the-gaze',
+    title: 'The Gaze \u2014 fixing attention on Christ',
+    depthLabel: 'A narrow passage',
+    estimate: 'Two meditations \u00b7 Aug 29\u201330',
+    description: 'Learning to fix attention on Christ in the midst of storm and circumstance. Includes the Samuel Loop\'s answer and the mirror\'s revelation.',
+    source: 'PLAUD Meditations Corpus Map \u00a713: meditations on beholding and covenant gaze.',
+    steps: [
+      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'Where the gaze is learned in the wilderness.' },
+      { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The gaze continues \u2014 seeing Christ in the place of shame.' },
+    ],
+  },
+  {
+    id: 'surrender-obedience',
+    title: 'Surrender & Obedience \u2014 the cost of discipleship',
+    depthLabel: 'A full passage',
+    estimate: 'Three meditations \u00b7 Aug 29\u201330',
+    description: 'Exploring the cost of following Christ in the ordinary, late-night obedience and the three-brother study. How the gaze becomes action.',
+    source: 'PLAUD Meditations Corpus Map \u00a713: "If a reader wants to walk the obedience arc."',
+    steps: [
+      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The cup is accepted \u2014 the first movement of obedience.' },
+      { label: 'The Storm\'s Aftermath, Horizon 3, and Ordinary Faithfulness', dateLabel: 'Aug 30 \u00b7 07:43', localId: 'compass', memoPath: null, note: 'Continuation under pressure \u2014 obedience when the storm remains.' },
+      { label: 'Mutual Correction, Corporate Maturity, and the Horizon Widens', dateLabel: 'Aug 30 \u00b7 19:15', localId: 'wisdom', memoPath: null, note: 'Obedience deepens into shared discernment and the company of the wise.' },
+    ],
+  },
+  {
+    id: 'identity-transformation',
+    title: 'Identity & Transformation \u2014 death of the false self',
+    depthLabel: 'A narrow passage',
+    estimate: 'Two meditations \u00b7 Aug 30',
+    description: 'The stripping away of false identity and the recloaking in Christ. The Jordan Crossing movement from filthy garments to finished work.',
+    source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VIII: the identity reversal at the crossing.',
+    steps: [
+      { label: 'The Identity Revealed, the Bible Study, and the Three Faces of Christ', dateLabel: 'Aug 30 \u00b7 09:41', localId: 'man-of-flesh', memoPath: null, note: 'The old identity is named and offered up.' },
+      { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30 \u00b7 13:39', localId: 'filthy-garments', memoPath: null, note: 'The transformation completes \u2014 the old is stripped, the new is given.' },
+    ],
+  },
+  {
+    id: 'waiting-timing',
+    title: 'Waiting & Timing \u2014 learning God\'s rhythm',
+    depthLabel: 'A full passage',
+    estimate: 'Four meditations \u00b7 Aug 28\u201330',
+    description: 'The pattern of waiting, confession, revelation, and study. How God\'s timing supersedes human urgency in the crossing.',
+    source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VI: "If a reader wants the waiting arc."',
+    steps: [
+      { label: 'The First Win Is the Confession', dateLabel: 'Aug 28', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/August/08-28 at 20_09 \u2014 The First Win Is the Confession-Meditation.md', note: 'The confession breaks the grip \u2014 Horizon 2 closes.' },
+      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The waiting reveals the secret place \u2014 the next dawn comes.' },
+      { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The revelation deepens \u2014 identity is offered.' },
+      { label: 'The Worship Song, the Teacher Within, and the Proper Bible Study', dateLabel: 'Aug 30 \u00b7 11:07', localId: 'mirror-gospel', memoPath: null, note: 'The study arrives at last \u2014 God\'s timing, not human rush.' },
+    ],
+  },
 ];
 
 function jcStepHref(step) {
