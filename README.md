@@ -1,102 +1,198 @@
 # Jordan Crossing — Private Beta
+
 ## Interior Record for the Living Topology Corpus
 
-**Status:** Private beta · Not for public distribution
-**Built:** August 31, 2026
-**Interior version:** Beta 1.0
+**Status:** Private beta · Not for public distribution  
+**Built:** August 31, 2026  
+**Interior version:** Beta 1.0  
 **Corpus version:** v11 (jordan-crossing-interior.html preserved untouched)
 
 ---
 
 ## What this is
 
-This is a lightweight, self-contained beta of the Jordan Crossing mystery-thread experience. It demonstrates the planned public interface architecture for the *A Living Topology of Transformation* corpus — without modifying or replacing the canonical interior record (`jordan-crossing-interior.html`).
+The Jordan Crossing is an interactive, text-based encounter with seven meditations recorded by Seth Tillotson on August 29–30, 2026. Each meditation is a first-person witness account of a spiritual movement—discernment, questioning, transformation, recognition.
 
-The beta is a private interior workspace for reviewing structure, navigation patterns, and source-status labeling before any public release is authorized. It is **not** a public deployment.
+This repository holds the **design, interactive logic, and complete beta site** for the interior experience.
 
 ---
 
-## Files
+## Quick Start
+
+### Live URLs
+
+| URL | Purpose |
+|-----|---------|
+| https://sethtillotson.github.io/jordan-crossing-beta/ | GitHub Pages (auto-deployed) |
+| https://eogvatdm.gensparkclaw.com/jordan-crossing-beta/ | VM-hosted (private, noindex) |
+
+### Structure
 
 ```
-jordan-crossing-beta/
-├── README.md                      ← this file
-├── jordan-crossing-interior.html  ← ORIGINAL INTERIOR RECORD — preserved untouched, superseded as homepage
-├── index.html                     ← Beta landing page (corpus orientation + three entry invitations)
-├── mystery.html                   ← Mystery Mode: "What are you carrying today?" (10 doorways)
-├── record.html                    ← One-record receive view (source labels, thread cards, no-interpretation route)
-├── threads.html                   ← Thread constellation (initial 8-record set, explicit statuses)
+.
 ├── assets/
-│   ├── beta.css                   ← Shared design system (river palette, typography, accessibility)
-│   └── beta.js                    ← Shared logic (local bookmarks, carried-question state, no-interp toggle)
+│   ├── design-v2.css              # Complete redesigned stylesheet (17KB)
+│   ├── design-v2-logic.js         # Four-movement interactive logic
+│   ├── mystery-v2-logic.js        # Doorway selection & routing
+│   ├── beta.js                    # Legacy logic (compatibility)
+│   └── *.js, *.css                # Supporting files
+├── records/
+│   ├── *-v2.html                  # 7 redesigned record pages
+│   ├── *.html / *.md              # Original records (archive)
+│   └── tablet-viii-seed-register.md
+├── mystery-v2.html                # Redesigned mystery mode entry
+├── threads.html                   # Timeline view
+├── paths.html                     # Reading paths
+└── index.html                     # Landing page
 ```
 
----
+### The Four Movements (on each record)
 
-## Key design rules honored in this beta
-
-1. **Original interior HTML untouched** — `jordan-crossing-interior.html` is a 136 MB self-contained v11 record. It is preserved as-is. The beta does not modify, wrap, or replace it.
-2. **No invented meditation text** — All meditation titles, dates, and quotes are drawn from the actual corpus files present in `../living-topology/`. Unavailable records are marked **[PLACEHOLDER — awaiting human-reviewed insertion]**.
-3. **Source-status labels everywhere** — Every piece of content carries one of: `original record` / `human-reviewed orientation` / `editorial connection` / `machine-assisted index`.
-4. **Thread statuses are explicit** — Every thread card is labeled `author-confirmed`, `editorial`, or `open`.
-5. **No-interpretation route** — A toggle removes all editorial framing and shows only title, date, content, Scripture references, and source information.
-6. **Local-only state** — Bookmarks and carried-question state use `localStorage` only. No server, no account, no data transmission.
-7. **NKJV only** — All Scripture quotations are New King James Version only. No paraphrases.
-8. **Direct counts, no rounding** — The corpus has 456 meditations (direct archive count as of Aug 31, 2026). This number is never rounded or estimated.
-9. **Accessible** — Keyboard navigation, focus-visible outlines, reduced-motion support, mobile-first responsive layout, sufficient contrast.
+1. **Discern** — "What did you actually encounter?" (7 response choices)
+2. **Carry** — Save a question locally for reflection (localStorage-only)
+3. **Return** — Release choices (5 paths forward)
+4. **Navigate** — Chronological links + thread connections
 
 ---
 
-## Corpus facts used in this beta (verified against workspace files)
+## Design System
 
-- **Author:** Seth Michael Tillotson, Fargo, North Dakota
-- **Corpus:** *A Living Topology of Transformation* — 456 meditations, Feb–Aug 2026
-- **Stone Tablets:** I–VII closed/frozen; VIII open seed register (opened Aug 29, 2026)
-- **Horizons:** H1 surrendered Apr 16, 2026; H2 closed Aug 30, 2026; H3 opened Aug 30, 2026 in paideia
-- **First meditation window:** 60-day Kairos Window, Feb 14 – Apr 14, 2026
-- **Podcast:** *The Upside-Down Kingdom* (Spotify, Apple, Audible, Podimo)
-- **Scripture:** NKJV only throughout
-- **The Whisper:** mid-November 2025, car at work, on break — *"Read your Bible."*
+### Color Palette
+
+| Element | Color | Hex |
+|---------|-------|-----|
+| Background | Deep charcoal | #0f1419 |
+| Text | Parchment | #e8dcc8 |
+| Text (dim) | Dim parchment | #bfb5a5 |
+| Interactive | Gold | #c9a227 |
+
+### Typography
+
+- **Serif (Cambria, Georgia, serif)**: Content, titles, warmth
+- **Sans-serif (system)**: Navigation, UI, utility
+
+### Components
+
+- **Card**: 2px gold border, subtle gradient, lift on hover
+- **Selected state**: Gold border + inner glow
+- **Movement dividers**: Horizontal line + centered dot
+- **Response panels**: Slide in smoothly with animation
 
 ---
 
-## Running locally
+## The Mystery Mode Doorways
+
+Users enter through one of 11 questions/states:
+
+| Doorway | Routes to | Icon |
+|---------|-----------|------|
+| I am beginning again | 08-29-signpost | ◌ |
+| Trapped in old identity | 08-30-man-of-flesh | ⊗ |
+| Waiting for change | 08-30-mirror | ⏳ |
+| Cannot see what God is doing | 08-30-mirror-gospel | ◈ |
+| Afraid of what obedience costs | 08-30-filthy-garments | △ |
+| Need to understand surrender | 08-30-compass | ◇ |
+| Searching for Jesus | 08-30-wisdom | ✦ |
+| Examine the record carefully | 08-29-signpost | ◆ |
+| Follow entire chronology | 08-29-signpost | → |
+| Quiet place to begin | jordan-crossing-interior | 🕯 |
+| I only know I am here | 08-30-compass | ⟳ |
+
+---
+
+## Deployment
+
+### GitHub Pages (Auto)
+
+Every push to `master` triggers a GitHub Actions workflow that:
+1. Builds the static site
+2. Uploads to Pages artifact
+3. Deploys to `https://sethtillotson.github.io/jordan-crossing-beta/`
+
+See `.github/workflows/deploy.yml`.
+
+### Local VM (Manual)
 
 ```bash
-# From the jordan-crossing-beta directory:
-python3 -m http.server 8787
-
-# Then open in browser:
-# http://localhost:8787/index.html
-```
-
-Or test with curl:
-```bash
-curl -s -o /dev/null -w "%{http_code}" http://localhost:8787/index.html
-# Expected: 200
+cd /home/work/.openclaw/workspace/jordan-crossing-beta
+python3 -m http.server 8787 &
+# Served at https://eogvatdm.gensparkclaw.com/jordan-crossing-beta/
 ```
 
 ---
 
-## What is NOT in this beta (and why)
+## Development
 
-- **No audio** — Base64-embedded audio lives in `jordan-crossing-interior.html`. This beta uses placeholder audio elements. The 136 MB interior file is the audio record.
-- **No full meditation text** — Full meditation texts require human-authorized extraction from the corpus. This beta uses clearly marked placeholders for records not yet extracted.
-- **No search** — Search across 456 meditations is a Stage 2 feature.
-- **No maps** — Chronological, thematic, Scripture, tablet, and relational maps are Stage 2 features. Navigation placeholders are present and labeled.
-- **No community features** — "Read With Me" is a Stage 3 feature.
+### To Edit
+
+1. Clone or pull this repo
+2. Edit `.html`, `.css`, `.js` files locally
+3. Test in a browser
+4. Commit & push to `master`
+5. GitHub Pages auto-deploys ~30 seconds later
+
+### Version Management
+
+- CSS/JS are versioned with `?v=YYYYMMDDVN` query strings to bust Cloudflare cache
+- When editing CSS/JS, increment the version: `?v=20260831V4`, etc.
+- HTML doesn't need versioning (no 304 caching)
+
+### File Exclusions
+
+- `jordan-crossing-interior.html` — Too large (136MB) for GitHub; hosted separately
+- `.gitignore` — Excludes large files
 
 ---
 
-## Governance
+## Records Included
 
-This beta is governed by the same rules as the full corpus:
+1. **08-29-Signpost** — "The Signpost, the Secret Place, and the Cup of the Father's Will"
+2. **08-30-Man-of-Flesh** — "The Man of the Flesh Held Me Hostage"
+3. **08-30-Mirror** — "The Man in the Mirror and the Christ Who Stands Between"
+4. **08-30-Mirror-Gospel** — "The Mirror-Gospel and Christ the Teacher Within"
+5. **08-30-Filthy-Garments** — "The Faced Image, the Filthy Garments, and the Finished Work"
+6. **08-30-Compass** — "The Compass in the Locked Room"
+7. **08-30-Wisdom** — "When Wisdom Ushers Power: The Loved Heir, the Renewed Mind, and the Word That Gives Witness to Itself"
 
-- NKJV only
-- No invented facts, no invented meditation text
-- Frozen tablets (I–VII) are not editable
-- Tablet VIII is visibly provisional
-- Sister Katie's arc is not publicly documented (her name does not appear in the public-facing pages)
-- Corrections are dated and visible
+---
 
-**Soli Deo Gloria.**
+## Tech Stack
+
+- **HTML5** — Semantic markup
+- **CSS3** — Complete redesign with responsive grid
+- **Vanilla JavaScript** — No frameworks; localStorage for persistence
+- **GitHub Pages** — Static site hosting
+- **GitHub Actions** — CI/CD pipeline
+
+---
+
+## Privacy & Distribution
+
+- **Status**: Private beta, noindex, not for public distribution
+- **Cookies**: None server-side
+- **Tracking**: None
+- **localStorage**: Carry-question persistence only (user's browser only)
+- **Transmission**: No personal data sent anywhere
+
+---
+
+## Next Steps
+
+- [ ] Extend Corpus Paths with additional meditations
+- [ ] Add audio implementation (currently only in jordan-crossing-interior.html)
+- [ ] Design landing page and index stage-maps
+- [ ] Redesign threads.html and paths.html with v2 visual language
+- [ ] Public deployment (remove noindex when approved)
+
+---
+
+## Credits
+
+**Design & Development**: Barak (AI watchman)  
+**Content & Witness**: Seth Tillotson  
+**Theology & Editing**: Brother Samuel, Jayden, Sister Katie  
+**Built**: August 31, 2026
+
+---
+
+**Soli Deo Gloria**
