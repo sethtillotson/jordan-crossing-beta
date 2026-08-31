@@ -228,3 +228,31 @@ function jcTitleFor(id) {
   const r = jcGetRecord(id);
   return r ? r.title : id;
 }
+
+// Get 2-3 thematically related records based on thread edges
+function jcGetRelatedRecords(id, limit = 3) {
+  const edges = jcGetEdgesFor(id);
+  const relatedIds = new Set();
+  
+  // Add outgoing connections (what this record continues to, answers, etc.)
+  edges.outgoing.forEach(edge => {
+    if (edge.to && edge.to !== 'jordan-crossing') {
+      relatedIds.add(edge.to);
+    }
+  });
+  
+  // Add incoming connections (what leads to this record)
+  edges.incoming.forEach(edge => {
+    if (edge.from && edge.from !== 'jordan-crossing') {
+      relatedIds.add(edge.from);
+    }
+  });
+  
+  // Convert to record objects, sorted by order, limited to `limit`
+  return Array.from(relatedIds)
+    .map(rid => jcGetRecord(rid))
+    .filter(r => r !== null)
+    .sort((a, b) => a.order - b.order)
+    .slice(0, limit);
+}
+
