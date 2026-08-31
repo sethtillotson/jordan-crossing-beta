@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mystery Mode — The Jordan Crossing</title>
   <meta name="description" content="What are you carrying today? Name a doorway and receive one record from the archive.">
-  <link rel="stylesheet" href="assets/beta.css?v=20260831FRESH3">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V7">
   <style>
     .mystery-frame {
-      max-width: 640px;
+      max-width: 56rem;
       margin: 0 auto;
     }
 
+    .mystery-frame > section[aria-label="Mystery Mode entry"] {
+      border-left: 4px solid var(--gold);
+      padding-left: var(--space-6);
+    }
+
     .mystery-prompt {
-      font-size: var(--text-3xl);
+      font-size: var(--text-2xl);
       font-weight: normal;
       color: var(--parchment);
       line-height: 1.3;
@@ -22,17 +27,21 @@
 
     .mystery-subprompt {
       font-size: var(--text-base);
-      color: var(--stone);
+      color: var(--parchment-dim);
       margin-bottom: var(--space-8);
       font-style: italic;
+    }
+
+    .carried-question.is-hidden {
+      display: none;
     }
 
     .mystery-disclaimer {
       font-family: var(--font-sans);
       font-size: var(--text-xs);
-      color: var(--shallow);
-      background: var(--deep);
-      border: 1px solid rgba(139,133,120,0.2);
+      color: var(--parchment-dim);
+      background: rgba(201,162,39,0.08);
+      border: 1px solid rgba(201,162,39,0.2);
       border-radius: var(--radius-md);
       padding: var(--space-3) var(--space-4);
       margin-bottom: var(--space-8);
@@ -62,6 +71,65 @@
     #mystery-continue:disabled {
       opacity: 0.4;
       cursor: not-allowed;
+    }
+
+    .doorway-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4);
+      margin: 0;
+      padding: 0;
+    }
+
+    .doorway-item {
+      list-style: none;
+    }
+
+    .doorway-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      min-height: 130px;
+      padding: var(--space-6);
+      background: rgba(201,162,39,0.04);
+      border: 2px solid rgba(201,162,39,0.15);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      font-family: var(--font-serif);
+      font-size: var(--text-base);
+      color: var(--parchment);
+      transition: var(--transition);
+      text-align: left;
+      gap: var(--space-2);
+    }
+
+    .doorway-btn:hover {
+      background: rgba(201,162,39,0.1);
+      border-color: rgba(201,162,39,0.3);
+      transform: translateY(-2px);
+    }
+
+    .doorway-btn:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .doorway-btn[aria-pressed="true"] {
+      background: rgba(201,162,39,0.2);
+      border-color: var(--gold);
+      box-shadow: inset 0 0 20px rgba(201,162,39,0.1);
+    }
+
+    .doorway-icon {
+      font-size: var(--text-xl);
+      color: var(--parchment-dim);
+      opacity: 0.8;
+    }
+
+    .doorway-btn[aria-pressed="true"] .doorway-icon {
+      opacity: 1;
+      color: var(--gold);
     }
 
     .depth-section {
@@ -116,14 +184,12 @@
 
   <header class="site-header">
     <a href="index.html" class="site-title">The Jordan Crossing</a>
-    <nav aria-label="Site navigation">
-      <ul class="site-nav">
-        <li><a href="index.html">Landing</a></li>
-        <li><a href="mystery.html" aria-current="page">Mystery Mode</a></li>
-        <li><a href="record.html">A Record</a></li>
-        <li><a href="threads.html">Threads</a></li>
-        <li><a href="paths.html">Corpus Paths</a></li>
-      </ul>
+    <nav class="record-nav" aria-label="Site navigation">
+      <a href="index.html">Landing</a>
+      <a href="mystery.html" aria-current="page">Mystery Mode</a>
+      <a href="record.html">A Record</a>
+      <a href="threads.html">Threads</a>
+      <a href="paths.html">Corpus Paths</a>
     </nav>
   </header>
 
@@ -141,9 +207,11 @@
         <!-- Mystery Mode heading -->
         <section aria-label="Mystery Mode entry">
           <p class="caption" style="margin-bottom:var(--space-4);">MYSTERY MODE · THE THRESHOLD</p>
-          <h1 class="mystery-prompt">What are you carrying today?</h1>
+          <h1 class="mystery-prompt">Enter through an honest question</h1>
           <p class="mystery-subprompt">
-            Name a doorway. You will receive one record from the archive as a place to begin.
+            This is not a diagnosis engine or a recommendation algorithm. It is a threshold.
+            You name something you are carrying — not necessarily a problem to be solved, but a question,
+            a weight, or an uncertainty — and the site offers one record as a place to begin.
           </p>
 
           <div class="mystery-disclaimer" role="note">
@@ -317,7 +385,7 @@
           </ul>
 
           <!-- Selected guidance and continue -->
-          <div id="selected-doorway-prompt" class="selected-guidance" hidden aria-live="polite"></div>
+          <div id="selected-doorway" class="selected-guidance" aria-live="polite"></div>
 
           <div class="continue-row">
             <button
@@ -418,8 +486,6 @@
     </p>
   </footer>
 
-  <script src="assets/records-data.js?v=20260831FRESH3"></script>
-  <script src="assets/beta.js?v=20260831FRESH3"></script>
+  <script src="assets/mystery-v2-logic.js?v=20260831V7"></script>
 </body>
 </html>
-

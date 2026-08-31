@@ -3,52 +3,46 @@
 ## Current Status (August 31, 2026)
 
 ### Completed ✓
-- **Phase 1:** Landing page (index.html), Threads (threads.html), Paths (paths.html) — all redesigned with v2 styling
-- **Phase 2.1:** Related Records feature complete — all 7 records display 2-3 thematically connected records
+- **Phase 1:** Landing page (index.html), Mystery Mode (mystery.html), Threads (threads.html), Paths (paths.html) — all redesigned with v2 styling
+- **Phase 2.1:** Related Records feature complete — all curated records display 2-3 thematically connected records
 - **Phase 2.2:** Thread edges/corpus paths defined — reading paths structured in corpus-paths-data.js
+- **Record presentation:** Markdown embedded in all redesigned record pages renders as semantic, readable HTML
+- **Phase 4:** Full-text search (search-index.js), faceted filters, tagged reading paths
+- **Phase 5 (partial):** noindex removed, public docs created (CHANGELOG, DEPLOYMENT, README), sitemap/robots, link validation
+- **Mystery Mode canonicalization:** `mystery.html` is now the single public route carrying the full v2 doorway grid (11 doorways), guidance text, focus-visible states, and correct routing to all destination records. `mystery-v2.html` is retired — it now meta-redirects to `mystery.html` and is marked `noindex` so it can never drift from the canonical experience again.
+- **Accessibility audit:** Verified keyboard navigation, focus-visible outlines, heading hierarchy, alt text/labels, and console cleanliness across all public pages. Found and fixed a real contrast bug on `threads.html` — the `thread-status` badges (author-confirmed / editorial connection / open) used dark, low-contrast text colors left over from a light-theme mockup; replaced with light accent colors that pass WCAG AA (4.5:1+) against the dark v2 background.
 
-### In Progress
-- **Phase 2.3:** Validate navigation graph (check for orphaned records, verify all edges)
-- **Phase 2.4:** Add topic tags to paths (for faceted filtering in Phase 4)
+### In Progress / Next Decision
+- **The living archive (Stage 6):** The full raw meditation corpus (~424 files), a Corpus Map, and three cross-reference passes have been added to `records/`. These describe the private "Personal Space" source corpus (~451 meditations across the Stone Tablets). Per the design document's own guardrails (§1, §2.1, §26 — "private people and protected internal arcs remain private," "introduce the broader corpus in reviewed layers"), these should NOT be bulk-published as public record pages without editorial review — some file names and contents reference private individuals. Recommended path: use the cross-reference passes to strengthen thread connections between the already-published curated records, and build the archive index as a metadata-only, reviewed-layer feature rather than an automatic bulk conversion. See conversation history for the specific question posed to the project owner.
 
 ### To Do
-- **Phase 3:** Audio Implementation (audit audio, build audio player component)
-- **Phase 4:** Search & Discoverability (implement full-text search, faceted filters)
-- **Phase 5:** Public Launch (remove noindex, create docs, accessibility audit, deployment)
+- **Phase 3:** Audio Implementation (audit audio, build audio player component, integrate into records)
+- **Phase 5 (remaining):** Final QA, performance audit, deploy to public GitHub Pages
 
 ---
 
 ## Immediate Next Steps (Priority Order)
 
-### 1. Validate Navigation Graph
-**Task:** validate-graph  
-**Description:** Ensure all localId references in corpus-paths-data.js exist in JC_RECORDS; check for orphaned records; verify no broken edges  
-**Files:** assets/records-data.js, assets/corpus-paths-data.js  
-**Acceptance:** All records linked; no orphans; all edge references valid
+### 1. ✓ Validate Mystery Mode — DONE
+Canonical `mystery.html` verified in-browser: doorway selection, aria-pressed state, guidance text, focus-visible (gold outline, 2px/3px offset), continue-button routing to all 11 destination records, and no console errors. `mystery-v2.html` now redirects to it.
 
-### 2. Add Topic Tags to Reading Paths
-**Task:** add-tags  
-**Description:** Add tags[] array to each path in corpus-paths-data.js; categorize by theme/difficulty/length  
-**Files:** assets/corpus-paths-data.js, paths.html (render tag pills)  
-**Acceptance:** All paths tagged; tags render as clickable pills on paths.html
+### 2. ✓ Complete Accessibility and Public QA — DONE
+Automated contrast audit (WCAG AA, alpha-composited against real backgrounds) across index, mystery, threads, paths, and all record pages found and fixed one real regression (thread-status badges on threads.html). Heading hierarchy, alt text, button/link labels, and console errors all clean.
 
-### 3. Implement Full-Text Search (Phase 4)
-**Task:** implement-search  
-**Description:** Create search-index.js; add search input to threads.html; filter timeline by content  
-**Files:** assets/search-index.js, threads.html  
-**Acceptance:** Search returns results within 200ms; highlighting works
+### 3. Decide scope for the newly added full corpus (Stage 6 — "the living archive")
+**Files:** records/*.md (424 raw meditation files), `Corpus Map.md`, `Pass 1/2/3 *-References.md`
+**Open question:** these files are the raw private source layer (per the Corpus Map, part of a ~451-meditation private corpus). The design document explicitly guards against bulk-publishing private/unreviewed material. Needs an explicit decision from the project owner on: (a) build a metadata-only archive index (title/date/month counts) without exposing raw text publicly yet, (b) use the cross-reference passes only to strengthen thread edges between already-published curated records, or (c) select and hand-build a small next batch of full record pages from specific meditations named in Pass 1's doctrinal spine.
 
 ### 4. Audit Audio Availability (Phase 3 prep)
-**Task:** audit-audio  
-**Description:** Determine which of the 7 records have audio files; document format, duration, source  
-**Files:** assets/records-data.js (add audioUrl property if audio exists)  
+**Task:** audit-audio
+**Description:** Determine which curated records have audio files; document format, duration, source
+**Files:** assets/records-data.js (add audioUrl property if audio exists)
 **Acceptance:** All records audited; decision made on Phase 3 scope
 
-### 5. Public Launch Prep (Phase 5)
-**Tasks:** remove-noindex, create-docs, link-validation, perf-audit, final-qa  
-**Description:** Remove private flags, create documentation, run audits, prepare for public deployment  
-**Files:** All HTML files, README.md, CHANGELOG.md, DEPLOYMENT.md, robots.txt, sitemap.xml  
-**Acceptance:** All noindex removed; accessibility ≥90; performance ≥80; links all valid
+### 5. Public Launch Prep (Phase 5 remaining)
+**Tasks:** perf-audit, final-qa, deploy-public
+**Description:** Run Lighthouse, get stakeholder sign-off, deploy to production
+**Acceptance:** Accessibility ≥90; performance ≥80; SEO ≥85; stable for 24h post-deploy
 
 ---
 

@@ -263,7 +263,10 @@ main {
 
 .record-source h1,
 .record-source h2,
-.record-source h3 {
+.record-source h3,
+.record-source h4,
+.record-source h5,
+.record-source h6 {
   color: var(--parchment);
   margin: var(--space-8) 0 var(--space-4) 0;
   font-weight: normal;
@@ -282,6 +285,13 @@ main {
 
 .record-source h3 {
   font-size: var(--text-base);
+  color: var(--parchment-dim);
+}
+
+.record-source h4,
+.record-source h5,
+.record-source h6 {
+  font-size: var(--text-sm);
   color: var(--parchment-dim);
 }
 
@@ -325,6 +335,36 @@ main {
 .record-source th {
   background: rgba(201, 162, 39, 0.1);
   color: var(--gold);
+}
+
+.record-source blockquote {
+  margin: var(--space-6) 0;
+  padding: var(--space-4) var(--space-6);
+  border-left: 3px solid rgba(201, 162, 39, 0.5);
+  color: var(--parchment-dim);
+  font-style: italic;
+}
+
+.record-source blockquote p {
+  margin: 0;
+}
+
+.record-source hr {
+  border: 0;
+  border-top: 1px solid rgba(201, 162, 39, 0.2);
+  margin: var(--space-8) 0;
+}
+
+.record-source code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--gold);
+}
+
+.record-source a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.5);
 }
 
 /* ═══════════════════════════════════════════════════════════════════

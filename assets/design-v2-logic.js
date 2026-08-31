@@ -9,6 +9,140 @@
   const CARRY_STORAGE_KEY = 'jc_carry_question';
   const RECORD_ID = document.body.dataset.recordId || 'unknown';
 
+  function escapeHtml(value) {
+    return value
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderInlineMarkdown(value) {
+    let html = escapeHtml(value);
+    const code = [];
+
+    html = html.replace(/`([^`]+)`/g, (_, content) => {
+      code.push(`<code>${content}</code>`);
+      return `\u0000${code.length - 1}\u0000`;
+    });
+    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noreferrer">$1</a>');
+    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+    html = html.replace(/(?<!\w)\*([^*]+)\*(?!\w)/g, '<em>$1</em>');
+    html = html.replace(/(?<!\w)_([^_]+)_(?!\w)/g, '<em>$1</em>');
+
+    return html.replace(/\u0000(\d+)\u0000/g, (_, index) => code[Number(index)]);
+  }
+
+  function renderRecordMarkdown() {
+    const article = document.querySelector('.record-source');
+    if (!article || article.dataset.markdownRendered === 'true') return;
+
+    const lines = article.textContent.replace(/\r\n?/g, '\n').split('\n');
+    const output = [];
+    let paragraph = [];
+    let list = null;
+    let quote = [];
+
+    const flushParagraph = () => {
+      if (paragraph.length) {
+        output.push(`<p>${renderInlineMarkdown(paragraph.join(' '))}</p>`);
+        paragraph = [];
+      }
+    };
+    const flushList = () => {
+      if (list) {
+        output.push(`<${list.type}>${list.items.map(item => `<li>${renderInlineMarkdown(item)}</li>`).join('')}</${list.type}>`);
+        list = null;
+      }
+    };
+    const flushQuote = () => {
+      if (quote.length) {
+        output.push(`<blockquote><p>${quote.map(renderInlineMarkdown).join('<br>')}</p></blockquote>`);
+        quote = [];
+      }
+    };
+
+    for (let index = 0; index < lines.length; index += 1) {
+      const line = lines[index].trim();
+      const nextLine = lines[index + 1] ? lines[index + 1].trim() : '';
+
+      if (!line) {
+        flushParagraph();
+        flushList();
+        flushQuote();
+        continue;
+      }
+
+      const heading = line.match(/^(#{1,6})\s+(.+)$/);
+      if (heading) {
+        flushParagraph();
+        flushList();
+        flushQuote();
+        output.push(`<h${heading[1].length}>${renderInlineMarkdown(heading[2])}</h${heading[1].length}>`);
+        continue;
+      }
+
+      if (/^([-*_])(?:\s*\1){2,}\s*$/.test(line)) {
+        flushParagraph();
+        flushList();
+        flushQuote();
+        output.push('<hr>');
+        continue;
+      }
+
+      if (line.startsWith('|') && nextLine.startsWith('|') && /^\|?[\s:|-]+\|[\s:|-]*\|?$/.test(nextLine)) {
+        flushParagraph();
+        flushList();
+        flushQuote();
+        const headers = line.split('|').slice(1, -1).map(cell => `<th>${renderInlineMarkdown(cell.trim())}</th>`).join('');
+        const rows = [];
+        index += 2;
+        while (index < lines.length && lines[index].trim().startsWith('|')) {
+          const cells = lines[index].trim().split('|').slice(1, -1)
+            .map(cell => `<td>${renderInlineMarkdown(cell.trim())}</td>`).join('');
+          rows.push(`<tr>${cells}</tr>`);
+          index += 1;
+        }
+        index -= 1;
+        output.push(`<table><thead><tr>${headers}</tr></thead><tbody>${rows.join('')}</tbody></table>`);
+        continue;
+      }
+
+      const unordered = line.match(/^[-*+]\s+(.+)$/);
+      const ordered = line.match(/^\d+\.\s+(.+)$/);
+      if (unordered || ordered) {
+        flushParagraph();
+        flushQuote();
+        const type = unordered ? 'ul' : 'ol';
+        if (!list || list.type !== type) {
+          flushList();
+          list = { type, items: [] };
+        }
+        list.items.push((unordered || ordered)[1]);
+        continue;
+      }
+
+      if (line.startsWith('>')) {
+        flushParagraph();
+        flushList();
+        quote.push(line.replace(/^>\s?/, ''));
+        continue;
+      }
+
+      flushList();
+      flushQuote();
+      paragraph.push(line);
+      flushParagraph();
+    }
+
+    flushParagraph();
+    flushList();
+    flushQuote();
+    article.innerHTML = output.join('');
+    article.dataset.markdownRendered = 'true';
+  }
+
   // ═══════════════════════════════════════════════════════════════════
   // MOVEMENT 1: DISCERN — Response panel toggling
   // ═════════════════════════════════════════════════════════════════════
@@ -308,6 +442,7 @@
   // ═════════════════════════════════════════════════════════════════════
 
   document.addEventListener('DOMContentLoaded', () => {
+    renderRecordMarkdown();
     initDiscernChoices();
     initCarryQuestion();
     initReturnChoices();
@@ -324,4 +459,3 @@
   };
 
 })();
-

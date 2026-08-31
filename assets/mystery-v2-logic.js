@@ -45,6 +45,7 @@
 
         // Enable continue button
         continueBtn.disabled = false;
+        continueBtn.setAttribute('aria-disabled', 'false');
       });
     });
 

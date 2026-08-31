@@ -441,7 +441,7 @@ const JC = (function () {
     clearCarriedQuestion,
     getLastRecord,
     getNoInterp,
-    renderCarriedQuestion,
+    renderCarriedQuestion: renderCarriedQuestionBar,
   };
 
 })();
@@ -660,4 +660,3 @@ const JC = (function () {
   });
 
 })();
-

@@ -41,15 +41,15 @@
         <h2 class="section-heading">How to read a connection</h2>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-6);margin:var(--space-6) 0;">
           <div>
-            <span class="thread-status" style="background:rgba(107,158,127,0.2);color:#1b3a28;">author-confirmed</span>
+            <span class="thread-status" style="background:rgba(107,158,127,0.2);color:#a0d6b4;">author-confirmed</span>
             <p class="body-text body-text--dim" style="margin-top:var(--space-3);">The connection is explicitly present in the working record or confirmed by the author.</p>
           </div>
           <div>
-            <span class="thread-status" style="background:rgba(168,85,85,0.2);color:#4a1b1b;">editorial connection</span>
+            <span class="thread-status" style="background:rgba(168,85,85,0.2);color:#d68c8c;">editorial connection</span>
             <p class="body-text body-text--dim" style="margin-top:var(--space-3);">A human-reviewed bridge offered for consideration, not presented as revelation.</p>
           </div>
           <div>
-            <span class="thread-status" style="background:rgba(125,122,77,0.2);color:#2d2a0f;">open</span>
+            <span class="thread-status" style="background:rgba(125,122,77,0.2);color:#c4be82;">open</span>
             <p class="body-text body-text--dim" style="margin-top:var(--space-3);">A question or possible relationship not yet settled.</p>
           </div>
         </div>
@@ -126,9 +126,9 @@
             const targetHref = jcHrefFor(e.to);
             const statusClass = e.status === 'author-confirmed' ? 'confirmed' : (e.status === 'editorial' ? 'editorial' : 'open');
             let statusStyle = '';
-            if (statusClass === 'confirmed') statusStyle = 'background:rgba(107,158,127,0.2);color:#1b3a28;';
-            else if (statusClass === 'editorial') statusStyle = 'background:rgba(168,85,85,0.2);color:#4a1b1b;';
-            else statusStyle = 'background:rgba(125,122,77,0.2);color:#2d2a0f;';
+            if (statusClass === 'confirmed') statusStyle = 'background:rgba(107,158,127,0.2);color:#a0d6b4;';
+            else if (statusClass === 'editorial') statusStyle = 'background:rgba(168,85,85,0.2);color:#d68c8c;';
+            else statusStyle = 'background:rgba(125,122,77,0.2);color:#c4be82;';
             return `<div class="thread-edge"><span class="thread-status" style="${statusStyle}">${escapeHtml(label)}</span> <a href="${targetHref}" style="color:var(--gold);text-decoration:none;">${escapeHtml(targetTitle)}</a> <span style="color:var(--parchment-dim);font-size:var(--text-sm);">— ${escapeHtml(e.note)}</span></div>`;
           }).join('')
         : `<div class="thread-edge" style="color:var(--parchment-dim);font-style:italic;">No outgoing reviewed connection yet — reported, not filled.</div>`;
