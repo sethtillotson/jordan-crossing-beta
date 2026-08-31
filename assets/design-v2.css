@@ -86,6 +86,16 @@ body {
   top: 0;
 }
 
+/* Default inline text links — anything not covered by a more specific
+   component rule below falls back to this instead of the browser's
+   default (and nearly invisible) blue against the dark theme. */
+a {
+  color: var(--gold);
+}
+a:hover {
+  text-decoration: underline;
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    HEADER & NAVIGATION
    ═════════════════════════════════════════════════════════════════════ */

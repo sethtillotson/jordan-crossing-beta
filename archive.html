@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Living Archive — The Jordan Crossing Interior Beta</title>
+  <meta name="description" content="The shape of the wider meditation corpus, by month — direct-count metadata only, reviewed layer by layer.">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V12">
+  <style>
+    .archive-bar-row {
+      display: grid;
+      grid-template-columns: 5rem 1fr 3.5rem;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-3);
+    }
+    .archive-bar-label {
+      font-family: var(--font-sans);
+      font-size: var(--text-sm);
+      color: var(--parchment-dim);
+    }
+    .archive-bar-track {
+      background: rgba(201, 162, 39, 0.08);
+      border-radius: var(--radius-sm);
+      height: 1.5rem;
+      overflow: hidden;
+      display: block;
+    }
+    .archive-bar-fill {
+      background: linear-gradient(90deg, rgba(201,162,39,0.5), rgba(201,162,39,0.85));
+      height: 100%;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+    .archive-bar-count {
+      font-family: var(--font-sans);
+      font-size: var(--text-sm);
+      color: var(--gold);
+      text-align: right;
+    }
+    .archive-total {
+      display: flex;
+      gap: var(--space-8);
+      flex-wrap: wrap;
+      margin: var(--space-8) 0;
+      padding: var(--space-6);
+      background: rgba(201, 162, 39, 0.06);
+      border: 1px solid rgba(201, 162, 39, 0.2);
+      border-radius: var(--radius-lg);
+    }
+    .archive-total-figure {
+      font-family: var(--font-serif);
+      font-size: var(--text-2xl);
+      color: var(--gold);
+      line-height: 1;
+    }
+    .archive-total-label {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      color: var(--parchment-dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="beta-banner" role="banner">
+    <span class="badge">INTERIOR BETA</span>
+    <span>Private workspace · Not for public distribution</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-title">The Jordan Crossing</a>
+    <nav class="record-nav" aria-label="Site navigation">
+      <a href="index.html">Landing</a>
+      <a href="mystery.html">Mystery Mode</a>
+      <a href="threads.html">Threads</a>
+      <a href="paths.html">Corpus Paths</a>
+      <a href="archive.html" aria-current="page">Archive</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="main-container">
+      <div class="record-header">
+        <p class="record-caption">Stage 6 · The Living Archive · Direct-Count Metadata</p>
+        <h1 class="page-title">The shape of the corpus</h1>
+        <p class="page-subtitle">Not a reading room yet — a map of scale. What follows is count only: no titles, no quotations, no names.</p>
+      </div>
+
+      <div class="callout">
+        <p class="caption">Why this page shows counts, not content</p>
+        <p>
+          The seven records this beta has fully built — reviewed, formatted, and threaded — remain the
+          only individual meditations this site presents in full. The wider corpus behind them is real,
+          dated, and much larger, but it has not yet passed the same review this project's own governing
+          document requires before publication: private people and protected internal arcs remain
+          private, and the corpus is introduced &ldquo;in reviewed layers,&rdquo; not as a bulk export.
+          Until each layer is reviewed, this page shows only what can be said safely — how much exists,
+          and when it was recorded.
+        </p>
+      </div>
+
+      <div class="archive-total">
+        <div>
+          <div class="archive-total-figure" id="archive-total-figure">—</div>
+          <div class="archive-total-label">meditations mirrored into this working copy</div>
+        </div>
+        <div>
+          <div class="archive-total-figure">451</div>
+          <div class="archive-total-label">direct-archive count, Feb 13 – Aug 30, 2026 (corpus's own working record)</div>
+        </div>
+        <div>
+          <div class="archive-total-figure">7</div>
+          <div class="archive-total-label">fully reviewed &amp; published on this site today</div>
+        </div>
+      </div>
+
+      <section aria-label="Meditations by month">
+        <h2 class="section-heading">By month</h2>
+        <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
+          Counted directly from the files present in this working copy today. Supporting documents
+          (registers, prophetic words, cross-reference memos) are not counted as meditations.
+        </p>
+        <div id="archive-bars"></div>
+      </section>
+
+      <section class="callout" style="margin-top:var(--space-10);">
+        <p class="caption">Where this came from</p>
+        <p>
+          The counts above are drawn from a Corpus Map and four dated Cross-Reference passes the author
+          keeps alongside the source meditations — working documents that trace how records read one
+          another, not public content in themselves. As individual meditations are reviewed and formatted
+          the way the seven Tablet VIII seeds already have been, they will move from this count-only page
+          into <a href="threads.html">Threads</a> and <a href="paths.html">Corpus Paths</a> as full records,
+          the same way the first seven did.
+        </p>
+      </section>
+
+      <section class="callout" style="margin-top:var(--space-6);">
+        <p class="caption">Read what is already here</p>
+        <p>
+          The seven fully published records begin at <a href="mystery.html">Mystery Mode</a>, are traced
+          in <a href="threads.html">Threads</a>, and are ordered in <a href="paths.html">Corpus Paths</a>.
+          Nothing on this page substitutes for reading them.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
+  </footer>
+
+  <script>
+    (function () {
+      // Direct counts from the records/ working copy, computed 2026-08-31.
+      // Supporting documents (registers, prophetic words, cross-reference
+      // memos) are intentionally excluded — see the callout above.
+      var MONTHS = [
+        { label: 'February', count: 10 },
+        { label: 'March', count: 38 },
+        { label: 'April', count: 67 },
+        { label: 'May', count: 51 },
+        { label: 'June', count: 96 },
+        { label: 'July', count: 86 },
+        { label: 'August', count: 59 },
+      ];
+      var total = MONTHS.reduce(function (sum, m) { return sum + m.count; }, 0);
+      var max = Math.max.apply(null, MONTHS.map(function (m) { return m.count; }));
+
+      document.getElementById('archive-total-figure').textContent = total;
+
+      var mount = document.getElementById('archive-bars');
+      var html = '';
+      MONTHS.forEach(function (m) {
+        var pct = Math.round((m.count / max) * 100);
+        html += '<div class="archive-bar-row">' +
+          '<span class="archive-bar-label">' + m.label + '</span>' +
+          '<span class="archive-bar-track"><span class="archive-bar-fill" style="width:' + pct + '%"></span></span>' +
+          '<span class="archive-bar-count">' + m.count + '</span>' +
+        '</div>';
+      });
+      mount.innerHTML = html;
+    })();
+  </script>
+</body>
+</html>
