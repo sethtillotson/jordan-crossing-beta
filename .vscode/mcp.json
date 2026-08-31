@@ -1,0 +1,11 @@
+{
+	"servers": {
+		"com.vercel/vercel-mcp": {
+			"type": "http",
+			"url": "https://mcp.vercel.com",
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.0.3"
+		}
+	},
+	"inputs": []
+}
