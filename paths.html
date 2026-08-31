@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Corpus Paths — The Jordan Crossing Interior Beta</title>
   <meta name="description" content="Curated reading paths through the wider 451-meditation PLAUD archive.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V6">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V9">
   <style>
     .path-card {
       background:rgba(15,20,25,0.4);
@@ -125,6 +125,58 @@
       background:rgba(168,85,85,0.2);
       color:#a85555;
     }
+    .tag-filter-section {
+      margin-bottom: var(--space-8);
+      padding: var(--space-6);
+      background: rgba(15, 20, 25, 0.3);
+      border: 1px solid rgba(201, 162, 39, 0.1);
+      border-radius: var(--radius-lg);
+    }
+    .tag-filter-label {
+      font-size: var(--text-xs);
+      color: var(--parchment-dim);
+      margin-bottom: var(--space-3);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .tag-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+    .tag-pill {
+      padding: var(--space-2) var(--space-4);
+      background: rgba(15, 20, 25, 0.6);
+      border: 1px solid rgba(201, 162, 39, 0.2);
+      border-radius: var(--radius-md);
+      color: var(--parchment);
+      font-size: var(--text-xs);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .tag-pill:hover {
+      border-color: rgba(201, 162, 39, 0.5);
+      background: rgba(201, 162, 39, 0.1);
+    }
+    .tag-pill.active {
+      background: rgba(201, 162, 39, 0.2);
+      border-color: rgba(201, 162, 39, 0.8);
+      color: var(--gold);
+    }
+    .path-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-4);
+    }
+    .path-tag {
+      font-size: var(--text-xs);
+      padding: 2px 6px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: var(--radius-sm);
+      color: var(--parchment-dim);
+    }
   </style>
 </head>
 <body>
@@ -158,6 +210,13 @@
         <p>The paths below are copied from the corpus-map documents Seth keeps in the Second Brain. This beta's local records cover only the seven Aug 29–30 Tablet VIII seeds. Steps not among those seven link out to the actual Second Brain source — marked <span class="step-source-tag step-source-tag--external">external source</span> for those, and <span class="step-source-tag step-source-tag--local">in this beta</span> for the local records.</p>
       </div>
 
+      <div id="tag-filter-section" class="tag-filter-section" style="display:none;">
+        <div class="tag-filter-label">Filter by theme</div>
+        <div id="theme-tags" class="tag-pills"></div>
+        <div class="tag-filter-label" style="margin-top:var(--space-4);">Filter by length</div>
+        <div id="length-tags" class="tag-pills"></div>
+      </div>
+
       <div id="paths-mount"></div>
 
       <section class="callout" style="margin-top:var(--space-8);">
@@ -171,19 +230,98 @@
     <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
   </footer>
 
-  <script src="assets/records-data.js?v=20260831V8"></script>
-  <script src="assets/corpus-paths-data.js?v=20260831V8"></script>
+  <script src="assets/records-data.js?v=20260831V9"></script>
+  <script src="assets/corpus-paths-data.js?v=20260831V9"></script>
   <script>
   (function () {
+    const activeTags = new Set();
+
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
 
-    function renderPaths() {
+    function categorizeTag(tag) {
+      // Theme tags
+      const themeTags = ['doctrinal', 'narrative', 'relational', 'transformational', 'symbolic', 'devotional', 'practical'];
+      if (themeTags.includes(tag)) return 'theme';
+      
+      // Length tags
+      const lengthTags = ['short', 'medium', 'long'];
+      if (lengthTags.includes(tag)) return 'length';
+      
+      return 'other';
+    }
+
+    function getAllTags() {
+      const tagsMap = { theme: new Set(), length: new Set(), other: new Set() };
+      
+      if (typeof JC_CORPUS_PATHS !== 'undefined') {
+        JC_CORPUS_PATHS.forEach(path => {
+          if (path.tags && Array.isArray(path.tags)) {
+            path.tags.forEach(tag => {
+              const category = categorizeTag(tag);
+              tagsMap[category].add(tag);
+            });
+          }
+        });
+      }
+      
+      return {
+        theme: Array.from(tagsMap.theme).sort(),
+        length: Array.from(tagsMap.length).sort(),
+        other: Array.from(tagsMap.other).sort()
+      };
+    }
+
+    function renderTagFilters() {
+      const tags = getAllTags();
+      const filterSection = document.getElementById('tag-filter-section');
+      const themeContainer = document.getElementById('theme-tags');
+      const lengthContainer = document.getElementById('length-tags');
+
+      if (tags.theme.length > 0 || tags.length.length > 0) {
+        filterSection.style.display = 'block';
+      }
+
+      themeContainer.innerHTML = tags.theme.map(tag => 
+        `<button class="tag-pill" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`
+      ).join('');
+
+      lengthContainer.innerHTML = tags.length.map(tag => 
+        `<button class="tag-pill" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`
+      ).join('');
+
+      // Add click handlers
+      document.querySelectorAll('.tag-pill').forEach(pill => {
+        pill.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tag = this.dataset.tag;
+          if (activeTags.has(tag)) {
+            activeTags.delete(tag);
+            this.classList.remove('active');
+          } else {
+            activeTags.add(tag);
+            this.classList.add('active');
+          }
+          filterAndRenderPaths();
+        });
+      });
+    }
+
+    function pathMatchesFilters(path) {
+      if (activeTags.size === 0) return true;
+      
+      if (!path.tags || !Array.isArray(path.tags)) return false;
+      
+      // Check if path has ANY of the active tags (OR logic)
+      return Array.from(activeTags).some(tag => path.tags.includes(tag));
+    }
+
+    function filterAndRenderPaths() {
       const mount = document.getElementById('paths-mount');
       if (!mount || typeof JC_CORPUS_PATHS === 'undefined') return;
 
-      mount.innerHTML = JC_CORPUS_PATHS.map(path => {
+      mount.innerHTML = JC_CORPUS_PATHS.filter(pathMatchesFilters).map(path => {
         const steps = path.steps.map(step => {
           const href = jcStepHref(step);
           const isLocal = !!step.localId;
@@ -200,20 +338,40 @@
           </li>`;
         }).join('');
 
+        const tagPills = (path.tags || []).map(t => 
+          `<span class="path-tag">${escapeHtml(t)}</span>`
+        ).join('');
+
         return `<div class="path-card" id="${path.id}">
           <div class="path-head">
             <span class="path-title">${escapeHtml(path.title)}</span>
             <span class="path-depth">${escapeHtml(path.depthLabel)}</span>
           </div>
           <div class="path-estimate">${escapeHtml(path.estimate)}</div>
+          ${tagPills ? `<div class="path-tags">${tagPills}</div>` : ''}
           <p class="path-desc">${escapeHtml(path.description)}</p>
           <p class="path-source">Source: ${escapeHtml(path.source)}</p>
           <ol class="path-steps">${steps}</ol>
         </div>`;
       }).join('');
+
+      // Update active state of pills
+      document.querySelectorAll('.tag-pill').forEach(pill => {
+        const tag = pill.dataset.tag;
+        if (activeTags.has(tag)) {
+          pill.classList.add('active');
+        } else {
+          pill.classList.remove('active');
+        }
+      });
     }
 
-    document.addEventListener('DOMContentLoaded', renderPaths);
+    function initPathsPage() {
+      renderTagFilters();
+      filterAndRenderPaths();
+    }
+
+    document.addEventListener('DOMContentLoaded', initPathsPage);
   })();
   </script>
 </body>
