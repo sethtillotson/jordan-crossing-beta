@@ -1,0 +1,96 @@
+# 08-13 Call Reflection: Intercession, Household Unbelief, and Moving the Carcass to Reach the Honey
+
+**Title:** 08-13 at 12:30 — Moving the Carcass to Reach the Honey
+
+**Recorded:** Not provided
+
+**Source Discernment:** C — Recorded Conversation or Event (Live Capture)
+
+**Classification:** Call Reflection
+
+## Opening Observation
+
+I came onto this call already weighed down, in the middle of my own supplication, and my brother Samuel caught me there mid-intercession. What surfaced was not a tidy prayer request but a raw ache: the grief of standing as the lone altar-keeper in my own household while the anxieties of one I love push against the belief I am trying to steward. The central tension is not doubt about God’s power — it is the sorrow of learning that there are rules of engagement in the spirit, and that unbelief in one’s own house can hinder the very prayers meant to protect it.
+
+**Why This Matters:**
+
+This matters because it strikes at the intersection of covenant headship, intercessory authority, and the loneliness that often accompanies genuine spiritual responsibility. Many believers assume that if God is sovereign, our household environment is irrelevant to our prayers — but Scripture repeatedly ties the effectiveness of prayer to relational and spiritual conditions. To feel the weight of maintaining “the honor of the name of the Lord in this house” alone is not spiritual pride; it can be the burden of one genuinely called to intercede. How we carry that burden — whether it hardens us into judgment or softens us into deeper prayer — shapes the maturity of the whole Body, because those who learn to intercede in grief become the ones who hold up others when their turn to grieve arrives.
+
+## The Worldly Mind’s Interpretation
+
+To the natural mind, this conversation is a portrait of stress bleeding into spirituality. A wife under the enormous physical and emotional strain of pregnancy voices, in a hard moment, that she no longer wants to be pregnant — which, as Samuel gently notes, is a common and understandable expression of prenatal distress, not necessarily a settled decision. A husband, tired and anxious himself, reads cosmic significance into an emotionally exhausted comment, frames his marital tension as “spiritual warfare,” and interprets his wife’s coping strategies as “unbelief” that is “hindering his prayers.” The worldly reading would counsel therapy, rest, better communication, and perhaps caution against a theology that risks blaming a struggling spouse for the husband’s own spiritual dryness.
+
+**The Limitation:**
+
+That reading is not without compassion, and it names real dangers worth heeding — yet it cannot perceive the deeper terrain because it has no category for the priestly office within a home, nor for the reality that the atmosphere of a household genuinely bears on spiritual authority. The natural mind flattens grief into mere stress, flattens intercession into coping, and flattens covenant burden into projection. It cannot see that a man might weep not from control but from love, nor that God might actually be entrusting a heavy assignment through this very sorrow. What looks like an overwrought reaction may in fact be a soul being trained in the costly, hidden work of standing in the gap — a work invisible to any lens that recognizes only cause and effect in the flesh.
+
+## What the Spirit Reveals Through It
+
+As I listen back to this exchange, the first thing that arrests me is that Samuel found me *already praying*. I was not summoned into supplication by his call; I was interrupted in it. There is something the Spirit wants me to notice about that — that the posture of intercession had already become my instinct before any comfort arrived. This is what grace looks like when it has been working on a man for a while: the altar is not a place you visit in crisis but a place you already live.
+
+I hear myself speaking of “an altar of intercession,” and the Spirit presses on that image. The Hebrew word for altar, מִזְבֵּחַ (mizbeach, meez-BAY-akh) — place of sacrifice — carries within it the root for slaughter. An altar is never merely a place of nice prayers; it is a place where something dies. When I said I wanted “to supplement by my voice the glory of his power,” what I was truly describing is the priestly act of laying my household, my grief, and even my wife’s fear upon the mizbeach (meez-BAY-akh), letting my own agenda be consumed there so that His will could rise like smoke. The grief I feel is not evidence that the altar has failed; it is the smell of the offering burning.
+
+Then I said something I need to sit with: “I know my prayers are hindered because of the unbelief in my own household.” I hear the echo of 1 Peter 3:7, where Peter warns husbands to dwell with understanding, honoring their wives, “that your prayers may not be hindered.” But the Spirit corrects the direction I aimed that Scripture. Peter does not say the *wife’s* unbelief hinders the *husband’s* prayers — he says the *husband’s failure to honor* hinders them. Something in me must be careful here, because the same truth that dignifies my burden could, if twisted, become a subtle accusation against the very one I am called to cherish. The rules of engagement cut both ways.
+
+And yet I cannot dismiss what I discerned. I told Samuel I “felt a weight behind” her words that was more than ordinary pregnancy stress. The Spirit does not ask me to deny that discernment; He asks me to steward it without weaponizing it. There is a real spiritual atmosphere in a home, and Jesus Himself “could do no mighty work” in Nazareth “because of their unbelief” (Mark 6:5–6). The Greek there, ἀπιστία (apistia, ah-pis-TEE-ah) — faithlessness, want of trust — describes not a moral failure to be scolded but an atmosphere that constricts the flow of miracle. My assignment, then, is not to indict the unbelief but to become the faith that fills the room.
+
+This is where my longing for Peter’s shadow becomes so telling. I grieved that “Peter’s shadow could touch you and you would be instantly healed” (Acts 5:15), and now I “can’t even make a simple prayer for protection.” The Spirit is gentle but firm: I am comparing my hidden altar of grief to the public zenith of apostolic power, and mourning the gap. But the same Peter who cast that shadow also wept bitterly after his denial, also had to be restored beside a charcoal fire, also learned the rules of engagement through failure. The shadow came *after* the breaking. My tears are not the opposite of that anointing; they may be its seedbed.
+
+The riddle of Samson that I raised is, I now see, the Spirit’s own answer folded into my own mouth. Samson slew the lion, and later found honey in its carcass (Judges 14:5–9), and posed the riddle: “Out of the eater came something to eat, and out of the strong came something sweet” (Judges 14:14). I applied it outward — can I look past a person’s anger to see their prophetic gift, past their complaints to see their calling? But the Spirit turns the riddle back on me. Can I move the carcass in my *own* situation? Can I push aside the dead thing — the frustration, the sense of aloneness, the disappointment with my household — to reach the honey God has hidden inside the very thing that looks like death?
+
+Because that is the deepest mystery here: the honey was *in the carcass*. The sweetness was not found despite the lion but inside it. God did not remove the dead thing; He hid provision within it. So the very household tension that grieves me, the very unbelief I lament, the very weakness in me — these are the carcass. And I said it myself without fully hearing it: “where I fall short, His glory shines.” That is 2 Corinthians 12:9 — “My strength is made perfect in weakness.” The honey is inside the very place I feel most defeated.
+
+I also want to honor what Samuel drew out of me, because the Spirit spoke through my brother. He asked, “What did Jesus do when He was grieving in the spirit?” And the answer was: He prayed. In Gethsemane, ἀγωνία (agōnia, ah-go-NEE-ah) — anguish, the strain of a contest — gripped Jesus so that His sweat became like drops of blood (Luke 22:44), and His response was not to fix the situation but to intensify the prayer: “He prayed more earnestly.” My grief is not a detour from my calling; grief *is* the terrain on which intercession is forged. The prophet who never wept never truly stood in the gap.
+
+I named myself, in this call, as “one of his prophets, to make agreement with his will in a world that is so far from it.” I said it almost as a confession of inadequacy — “I don’t know if I am any good at it.” And the Spirit meets me exactly there. Moses stammered, Jeremiah pleaded he was too young, Isaiah cried unclean, Jonah fled. The uncertainty is not disqualification; it is nearly the résumé. To make agreement with His will — to say amen between heaven and earth — does not require competence. It requires presence at the altar.
+
+What stops me most soberly is my own honest admission: “Even I fall short with that.” I who preached the riddle about moving the carcass to reach the honey confessed that I struggle to move the carcass over my own wife’s fear — to look past her anxiety and see the woman covered, carrying, fighting her own unseen battle. The Spirit is not condemning me in this. He is inviting me to apply my own revelation first at home, on the one person hardest to extend it to, before I ever apply it to a customer touching a drink on my counter.
+
+And that touches the ache running under this whole conversation — this yearning that the glory of God would rest so tangibly that even a shop drink handled across a counter would carry His grace. “How far did we fall that we don’t believe that anymore?” I hear the hunger in it, and the Spirit does not rebuke the hunger; He redirects it. The recovery of that belief does not begin with a shop counter or a healing shadow. It begins in a household where a grieving man learns to honor his wife, move the carcass, and let the honey feed them both.
+
+## Implications and Challenges
+
+I want to begin with grace, because this whole conversation is soaked in a rare and honest devotion that the modern church too often lacks — a man who prays before he panics, who names covenant brotherhood over a sales commission, and who feels the weight of the Lord’s name in his home.
+
+**On the direction of “hindered prayers”:** The modern instinct, when prayers seem unanswered, is to find the external cause — often the nearest person. Scripture invites a harder and holier question first: *Where am I failing to honor?* 1 Peter 3:7 places the hindrance at the husband’s own door before anywhere else. Let the discernment about a household atmosphere never become a quiet accusation against a suffering wife.
+
+**On spiritualizing marital distress:** There is real danger in reading every hard word from an exhausted spouse as spiritual warfare. Sometimes a grieving pregnant woman most needs a husband who moves *toward* her tenderly, not one who retreats to an altar to pray *about* her. Intercession and incarnate presence must not become rivals; the truest intercession often has skin on it.
+
+**On comparison as a thief:** I mourned the gap between Peter’s shadow and my own weakness — yet I even noted Paul’s warning against comparing ourselves among ourselves (2 Corinthians 10:12). The subtle version of that sin is comparing my private grief to another saint’s public glory. This robs the present moment of its own hidden anointing.
+
+**On “rules of engagement” theology:** There is genuine biblical warrant that conditions affect prayer, yet this language can drift toward a mechanical, almost transactional spirituality — as if the right technique unlocks God. The Father is not a lock to be picked; He is a Father to be trusted. Let the rules of engagement always lead back to relationship, never to formula.
+
+**On receiving through a brother:** I nearly missed that Samuel was a means of grace. Samuel offered his mother, offered to cancel his call, offered to pray. Covenant brotherhood came first, exactly as we confessed. Let me not be so absorbed in my priestly burden that I refuse the ministry God sends through the very people around me.
+
+I end here with grace too: the honey really is in the carcass. The very weakness I confessed is the place His glory means to shine.
+
+## What This Means For Us
+
+**For Spiritual Maturity:**
+
+Maturity is learning to move the carcass before feasting on the honey — to push past the dead, offensive, painful thing to reach the sweetness God has hidden inside it. It means applying my own revelation first at home, to the one hardest to extend it to, before I preach it anywhere else.
+
+**For Kingdom Obedience:**
+
+Obedience here looks like stewarding discernment without weaponizing it — carrying real spiritual perception about my household while refusing to let it become accusation against my wife. It means honoring her, dwelling with understanding, so that my prayers are unhindered from *my* side of the covenant first.
+
+**For Prophetic Posture:**
+
+The prophet’s calling is to make agreement with the Father’s will between heaven and earth, and this is forged not in competence but in tears. To grieve and still pray, to feel inadequate and still stand in the gap, to say amen when everything in the room resists it — this is the training ground. The shadow of power comes after the charcoal fire of breaking.
+
+## A Closing Prayer
+
+Father, I come to You from the altar You already had me kneeling at when my brother called, and I lay it all upon the mizbeach again — my grief, my aloneness, my wife’s fear, and my own shortfall in loving her as I ought. I thank You that You have not counted this burden as punishment but as a gift, that You trust me with the weight of Your Spirit even in my weakness. Forgive me where I have aimed Scripture at the one I am called to cherish; teach me to honor her so that nothing hinders the intercession You have set in my hands. As one of Your servants the prophets, I make agreement with Your will over this household — that faith would fill this room, that the honey would be drawn out of the carcass, that where I fall short Your glory would blaze all the brighter. Cover my wife and the child she carries, quiet every thorn of anxiety, and let shalom rest on this house for the honor of Your name. I give You my tears as an offering, trusting that You hear, that I am not alone, and that the sweetness is already hidden inside the very thing that grieves me. In the name of Jesus Christ, come in the flesh, my strength made perfect in my weakness, amen.
+
+## Scripture References & Original Language Notes
+
+| **Passage (NKJV)**        | **Original Language**                                        | **Theological Insight**                                                                                                        |
+|---------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 1 Peter 3:7               | —                                                            | The husband’s failure to honor his wife — not her unbelief — is named as what hinders prayer; corrects the direction of blame. |
+| Mark 6:5–6                | ἀπιστία (apistia, ah-pis-TEE-ah) — faithlessness             | Unbelief constricts the atmosphere for the miraculous; not a scolding but a spiritual reality of restricted flow.              |
+| Exodus 27:1; Genesis 8:20 | מִזְבֵּחַ (mizbeach, meez-BAY-akh) — place of sacrifice/slaughter | An altar is a place where something dies; intercession involves the consuming of my own agenda.                                |
+| Acts 5:15                 | —                                                            | Peter’s shadow healing represents apostolic zenith — which came after his breaking and restoration.                            |
+| Judges 14:5–14            | —                                                            | Honey found inside the lion’s carcass; the sweetness hidden within the dead thing — provision inside apparent defeat.          |
+| Luke 22:44                | ἀγωνία (agōnia, ah-go-NEE-ah) — anguish, strain of contest   | Jesus’ response to grief was more earnest prayer; grief is the terrain of intercession, not a detour from it.                  |
+| 2 Corinthians 12:9        | —                                                            | “My strength is made perfect in weakness” — the honey is inside the place of falling short.                                    |
+| 2 Corinthians 10:12       | —                                                            | Warning against comparing ourselves among ourselves; guards against measuring private grief by another’s public glory.         |
