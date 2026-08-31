@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Mystery Mode — The Jordan Crossing Interior Beta</title>
+  <link rel="stylesheet" href="./assets/design-v2.css?v=20260831V3">
+  <style>
+    .mystery-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: var(--space-12) var(--space-4);
+    }
+
+    .mystery-intro {
+      border-left: 4px solid var(--gold);
+      padding-left: var(--space-6);
+    }
+
+    .mystery-intro-heading {
+      font-size: var(--text-2xl);
+      color: var(--parchment);
+      margin: 0 0 var(--space-4) 0;
+      line-height: 1.2;
+    }
+
+    .mystery-intro-text {
+      font-size: var(--text-base);
+      color: var(--parchment-dim);
+      line-height: 1.8;
+      margin: 0 0 var(--space-4) 0;
+    }
+
+    .mystery-intro-prompt {
+      font-size: var(--text-lg);
+      font-style: italic;
+      color: var(--parchment);
+      margin: var(--space-6) 0 0 0;
+    }
+
+    .doorway-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4);
+    }
+
+    .doorway-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: var(--space-6);
+      background: rgba(201, 162, 39, 0.04);
+      border: 2px solid rgba(201, 162, 39, 0.15);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      font-family: var(--font-serif);
+      font-size: var(--text-base);
+      color: var(--parchment);
+      transition: var(--transition);
+      text-align: left;
+      gap: var(--space-2);
+    }
+
+    .doorway-btn:hover {
+      background: rgba(201, 162, 39, 0.1);
+      border-color: rgba(201, 162, 39, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .doorway-btn[aria-pressed="true"] {
+      background: rgba(201, 162, 39, 0.2);
+      border-color: var(--gold);
+      box-shadow: inset 0 0 20px rgba(201, 162, 39, 0.1);
+    }
+
+    .doorway-icon {
+      font-size: var(--text-xl);
+      opacity: 0.6;
+      transition: var(--transition);
+    }
+
+    .doorway-btn[aria-pressed="true"] .doorway-icon {
+      opacity: 1;
+      color: var(--gold);
+    }
+
+    .selected-guidance {
+      display: none;
+      padding: var(--space-6);
+      background: rgba(201, 162, 39, 0.08);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius-md);
+      animation: slideDown 0.3s ease-out;
+    }
+
+    .selected-guidance.active {
+      display: block;
+    }
+
+    .guidance-text {
+      font-size: var(--text-sm);
+      color: var(--parchment-dim);
+      line-height: 1.6;
+      margin: 0 0 var(--space-4) 0;
+    }
+
+    .continue-btn {
+      padding: var(--space-4) var(--space-8);
+      background: rgba(201, 162, 39, 0.2);
+      border: 2px solid var(--gold);
+      border-radius: var(--radius-md);
+      color: var(--parchment);
+      font-family: var(--font-serif);
+      font-size: var(--text-base);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .continue-btn:hover:not(:disabled) {
+      background: rgba(201, 162, 39, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .continue-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="beta-banner" role="banner">
+    <span class="badge">INTERIOR BETA</span>
+    <span>Private workspace · Not for public distribution</span>
+  </div>
+
+  <header class="site-header">
+    <a href="./index.html" class="site-title">The Jordan Crossing</a>
+    <nav class="record-nav" aria-label="Record navigation">
+      <a href="./index.html">Landing</a>
+      <a href="./mystery.html">Mystery Mode</a>
+      <a href="./threads.html">Threads</a>
+      <a href="./paths.html">Corpus Paths</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="mystery-container">
+      <div class="mystery-intro">
+        <h1 class="mystery-intro-heading">Enter through an honest question</h1>
+        <p class="mystery-intro-text">
+          This is not a diagnosis engine or a recommendation algorithm. It is a threshold. You name something you are carrying — not necessarily a problem to be solved, but a question, a weight, an uncertainty — and the site offers one record as a place to begin. The record may or may not be yours. Read it without forcing it.
+        </p>
+        <p class="mystery-intro-text" style="font-size: var(--text-sm); color: var(--parchment-dim); font-style: italic;">
+          This may be a place to begin, not a diagnosis of you.
+        </p>
+      </div>
+
+      <div>
+        <p style="font-size: var(--text-lg); color: var(--parchment); margin: 0 0 var(--space-6) 0;">
+          What are you carrying today?
+        </p>
+
+        <div class="doorway-grid" role="group" aria-label="Choose a doorway">
+          <button class="doorway-btn" type="button" data-doorway="beginning-again" aria-pressed="false">
+            <span class="doorway-icon">◌</span>
+            I am beginning again.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="trapped-identity" aria-pressed="false">
+            <span class="doorway-icon">⊗</span>
+            I feel trapped in an old identity.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="waiting" aria-pressed="false">
+            <span class="doorway-icon">⏳</span>
+            I am waiting for something to change.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="cannot-see" aria-pressed="false">
+            <span class="doorway-icon">◈</span>
+            I cannot see what God is doing.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="cost-of-obedience" aria-pressed="false">
+            <span class="doorway-icon">△</span>
+            I am afraid of what obedience will cost.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="surrender" aria-pressed="false">
+            <span class="doorway-icon">◇</span>
+            I need to understand surrender.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="searching-jesus" aria-pressed="false">
+            <span class="doorway-icon">✦</span>
+            I am searching for Jesus.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="examine-carefully" aria-pressed="false">
+            <span class="doorway-icon">◆</span>
+            I want to examine the record carefully.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="signpost" aria-pressed="false">
+            <span class="doorway-icon">→</span>
+            Follow the entire chronology.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="jordan-crossing" aria-pressed="false">
+            <span class="doorway-icon">🕯</span>
+            I need a quiet place to begin.
+          </button>
+
+          <button class="doorway-btn" type="button" data-doorway="compass" aria-pressed="false">
+            <span class="doorway-icon">⟳</span>
+            I do not know what I carry; I only know I am here.
+          </button>
+        </div>
+      </div>
+
+      <div id="selected-doorway" class="selected-guidance"></div>
+
+      <button class="continue-btn" type="button" id="mystery-continue" disabled>
+        Continue
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+  </footer>
+
+  <script src="./assets/mystery-v2-logic.js?v=20260831V3"></script>
+</body>
+</html>

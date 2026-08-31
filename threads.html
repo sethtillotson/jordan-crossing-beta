@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Threads — The Jordan Crossing Interior Beta</title><link rel="stylesheet" href="assets/beta.css?v=20260831FRESH2"></head>
+<body data-record-id="thread-constellation-beta"><a class="skip-link" href="#main-content">Skip to main content</a><div class="beta-banner" role="banner"><span class="badge">INTERIOR BETA</span><span>Private workspace · Not for public distribution</span></div>
+<header class="site-header"><a href="index.html" class="site-title">The Jordan Crossing</a><nav aria-label="Site navigation"><ul class="site-nav"><li><a href="index.html">Landing</a></li><li><a href="mystery.html">Mystery Mode</a></li><li><a href="record.html">A Record</a></li><li><a href="threads.html" aria-current="page">Threads</a></li><li><a href="paths.html">Corpus Paths</a></li><li><a href="jordan-crossing-interior.html">Interior HTML ↗</a></li></ul></nav></header>
+<main id="main-content"><div class="main-container"><p class="caption">FOLLOW THE MOVEMENT · INITIAL CONSTELLATION</p><h1 class="page-title">Threads</h1><p class="page-subtitle">A small, reviewable constellation inside a much larger living corpus.</p>
+<div class="callout"><p class="caption">EDITORIAL CONNECTION</p><p>This beta does not claim to map the whole archive. It shows one small, chronologically ordered constellation — the seven Tablet VIII seeds recorded Aug 29–30, 2026 — with every bridge between them labeled by confidence and traced to its source. What is directly documented, what is human-reviewed editorial structure, and what remains open are kept visibly distinct.</p></div>
+
+<section aria-label="Thread legend"><h2 class="section-heading">How to read a connection</h2><div class="legend-grid"><div><span class="thread-status thread-status--confirmed">author-confirmed</span><p class="body-text body-text--dim">The connection is explicitly present in the working record or confirmed by the author.</p></div><div><span class="thread-status thread-status--editorial">editorial connection</span><p class="body-text body-text--dim">A human-reviewed bridge offered for consideration, not presented as revelation.</p></div><div><span class="thread-status thread-status--open">open</span><p class="body-text body-text--dim">A question or possible relationship not yet settled.</p></div></div></section>
+
+<section aria-label="Chronological constellation">
+  <h2 class="section-heading">The constellation, in order recorded</h2>
+  <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-4);">
+    Read top to bottom for chronology. Each record's reviewed connections are listed beneath it —
+    what it continues, what it answers, and what remains open. Every line traces to a dated source.
+  </p>
+  <div id="timeline-mount" class="timeline"></div>
+</section>
+
+<section class="callout" aria-label="No interpretation"><p class="caption">NO-INTERPRETATION ROUTE</p><p>Want the source without this map? Open the preserved interior record directly, or open any record above and use its own "original record" link — every page here links straight to the imported source text, with no summary in between.</p><a href="jordan-crossing-interior.html" class="btn btn--ghost">Open original interior record ↗</a></section>
+</div></main><footer class="site-footer"><p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p></footer>
+<script src="assets/records-data.js?v=20260831FRESH2"></script>
+<script>
+(function () {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function renderTimeline() {
+    const mount = document.getElementById('timeline-mount');
+    if (!mount) return;
+
+    const nodes = JC_RECORDS.slice().sort((a, b) => a.order - b.order).map(rec => {
+      const { outgoing } = jcGetEdgesFor(rec.id);
+      const edgesHtml = outgoing.length
+        ? outgoing.map(e => {
+            const label = EDGE_LABELS[e.type] || e.type;
+            const targetTitle = jcTitleFor(e.to);
+            const targetHref = jcHrefFor(e.to);
+            const statusClass = e.status === 'author-confirmed' ? 'confirmed' : (e.status === 'editorial' ? 'editorial' : 'open');
+            return `<div class="timeline-edge"><span class="thread-status thread-status--${statusClass}">${escapeHtml(label)}</span> <a href="${targetHref}">${escapeHtml(targetTitle)}</a> <span style="color:var(--shallow);">— ${escapeHtml(e.note)}</span></div>`;
+          }).join('')
+        : `<div class="timeline-edge" style="color:var(--stone);font-style:italic;">No outgoing reviewed connection yet — reported, not filled.</div>`;
+
+      return `<div class="timeline-node">
+        <div class="timeline-node-head">
+          <span class="timeline-seed">Seed ${rec.seed}</span>
+          <span class="timeline-date">${escapeHtml(rec.dateLabel)}</span>
+          <span class="caption">${escapeHtml(rec.classification)}</span>
+        </div>
+        <a class="timeline-title" href="${rec.href}">${escapeHtml(rec.title)}</a>
+        <p class="timeline-summary">${escapeHtml(rec.summary)}</p>
+        <div class="timeline-edges">${edgesHtml}</div>
+      </div>`;
+    }).join('');
+
+    mount.innerHTML = nodes;
+  }
+
+  document.addEventListener('DOMContentLoaded', renderTimeline);
+})();
+</script>
+</body></html>

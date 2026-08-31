@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Corpus Paths — The Jordan Crossing</title>
+  <meta name="description" content="Curated reading paths through the wider 451-meditation PLAUD archive, sourced from the corpus map documents.">
+  <link rel="stylesheet" href="assets/beta.css?v=20260831FRESH2">
+  <style>
+    .path-card {
+      background: var(--current);
+      border: 1px solid rgba(139,133,120,0.25);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      margin-bottom: var(--space-8);
+    }
+    .path-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-2);
+    }
+    .path-title {
+      font-size: var(--text-xl);
+      color: var(--gold);
+      font-weight: normal;
+    }
+    .path-depth {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--stone);
+      background: var(--eddy);
+      border: 1px solid rgba(201,162,39,0.2);
+      border-radius: var(--radius-sm);
+      padding: 2px var(--space-2);
+      white-space: nowrap;
+    }
+    .path-estimate {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--stone);
+      margin-bottom: var(--space-3);
+    }
+    .path-desc {
+      font-size: var(--text-sm);
+      color: var(--parchment-dim);
+      margin-bottom: var(--space-2);
+      max-width: 68ch;
+    }
+    .path-source {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--shallow);
+      margin-bottom: var(--space-4);
+    }
+    .path-steps {
+      list-style: none;
+      counter-reset: step;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .path-step {
+      counter-increment: step;
+      display: flex;
+      gap: var(--space-3);
+      align-items: flex-start;
+      padding: var(--space-3) var(--space-4);
+      background: var(--deep);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(139,133,120,0.15);
+    }
+    .path-step::before {
+      content: counter(step);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--gold);
+      border: 1px solid rgba(201,162,39,0.3);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .path-step-body { flex: 1; }
+    .path-step-title {
+      color: var(--parchment);
+      text-decoration: none;
+      font-size: var(--text-sm);
+    }
+    .path-step-title:hover { color: var(--gold); }
+    .path-step-date {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--stone);
+      margin-left: var(--space-2);
+    }
+    .path-step-note {
+      font-size: var(--text-xs);
+      color: var(--parchment-dim);
+      margin-top: var(--space-1);
+    }
+    .step-source-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.04em;
+      padding: 1px 6px;
+      border-radius: var(--radius-sm);
+      margin-left: var(--space-2);
+      white-space: nowrap;
+    }
+    .step-source-tag--local {
+      background: var(--status-original);
+      color: #8ECFAA;
+    }
+    .step-source-tag--external {
+      background: var(--status-machine);
+      color: #8EA8CF;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="beta-banner" role="banner" aria-label="Beta status">
+    <span class="badge">INTERIOR BETA</span>
+    <span>Corpus Paths · Private workspace · Not for public distribution</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-title">The Jordan Crossing</a>
+    <nav aria-label="Site navigation">
+      <ul class="site-nav">
+        <li><a href="index.html">Landing</a></li>
+        <li><a href="mystery.html">Mystery Mode</a></li>
+        <li><a href="record.html">A Record</a></li>
+        <li><a href="threads.html">Threads</a></li>
+        <li><a href="paths.html" aria-current="page">Corpus Paths</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="main-container main-container--wide">
+
+      <p class="caption">A FULL PASSAGE · THE WHOLE RIVER · CURATED READING PATHS</p>
+      <h1 class="page-title">Corpus Paths</h1>
+      <p class="page-subtitle">Five ways to walk the larger 451-meditation archive, in the order the corpus itself already reads.</p>
+
+      <div class="callout" style="margin-bottom:var(--space-8);">
+        <p class="caption">EDITORIAL CONNECTION · SOURCED, NOT INVENTED</p>
+        <p>The paths below are copied or lightly paraphrased from the corpus-map documents Seth keeps in the Second Brain (<em>PLAUD Meditations Corpus Map</em> and its companion cross-reference passes). This beta's own local records cover only the seven Aug 29&ndash;30 Tablet VIII seeds. Every step below that is not one of those seven links out to the actual Second Brain source instead of being summarized or invented &mdash; marked <span class="step-source-tag step-source-tag--external">external source</span> for those, and <span class="step-source-tag step-source-tag--local">in this beta</span> for the seven local records.</p>
+      </div>
+
+      <div id="paths-mount"></div>
+
+      <section class="callout" aria-label="No interpretation" style="margin-top:var(--space-8);">
+        <p class="caption">WHERE THIS CAME FROM</p>
+        <p>Full corpus-map documents are cached locally at <code>living-topology/corpus-maps/</code> for reference: <em>PLAUD Meditations Corpus Map.md</em>, <em>Corpus Map.md</em>, and the three dated Pass 1/2/3 Cross-Reference memos. Nothing on this page claims more than those documents already say.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><em>A Living Topology of Transformation</em> · Seth Tillotson · Fargo, ND · 2026</p>
+    <p>
+      <a href="index.html">Landing</a> ·
+      <a href="mystery.html">Mystery Mode</a> ·
+      <a href="threads.html">Threads</a>
+    </p>
+    <p style="margin-top:var(--space-4);font-size:0.7rem;color:rgba(139,133,120,0.5);">
+      Interior beta · Soli Deo Gloria
+    </p>
+  </footer>
+
+  <script src="assets/records-data.js?v=20260831FRESH2"></script>
+  <script src="assets/corpus-paths-data.js?v=20260831FRESH2"></script>
+  <script>
+  (function () {
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function renderPaths() {
+      const mount = document.getElementById('paths-mount');
+      if (!mount || typeof JC_CORPUS_PATHS === 'undefined') return;
+
+      mount.innerHTML = JC_CORPUS_PATHS.map(path => {
+        const steps = path.steps.map(step => {
+          const href = jcStepHref(step);
+          const isLocal = !!step.localId;
+          const tag = isLocal
+            ? '<span class="step-source-tag step-source-tag--local">in this beta</span>'
+            : '<span class="step-source-tag step-source-tag--external">external source ↗</span>';
+          return `<li class="path-step">
+            <div class="path-step-body">
+              <a class="path-step-title" href="${href}"${isLocal ? '' : ' target="_blank" rel="noopener"'}>${escapeHtml(step.label)}</a>
+              <span class="path-step-date">${escapeHtml(step.dateLabel)}</span>
+              ${tag}
+              <div class="path-step-note">${escapeHtml(step.note)}</div>
+            </div>
+          </li>`;
+        }).join('');
+
+        return `<div class="path-card" id="${path.id}">
+          <div class="path-head">
+            <span class="path-title">${escapeHtml(path.title)}</span>
+            <span class="path-depth">${escapeHtml(path.depthLabel)}</span>
+          </div>
+          <div class="path-estimate">${escapeHtml(path.estimate)}</div>
+          <p class="path-desc">${escapeHtml(path.description)}</p>
+          <p class="path-source">Source: ${escapeHtml(path.source)}</p>
+          <ol class="path-steps">${steps}</ol>
+        </div>`;
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', renderPaths);
+  })();
+  </script>
+</body>
+</html>
