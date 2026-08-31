@@ -152,6 +152,22 @@ const JC_EDGES = [
     source: "Stone Tablet VIII Seed Register, seed 7: 'widens Horizon 3 from mutual correction into corporate maturity.'",
   },
   {
+    from: 'signpost',
+    to: 'man-of-flesh',
+    type: 'continues',
+    status: 'editorial',
+    note: 'The Samuel Loop\'s answer (Aug 29 evening) flows into the first light of understanding (Aug 30 morning). The secret place revealed leads to identity in Christ.',
+    source: 'Stone Tablet VIII Seed Register, seeds 1–2: sequential arc of the crossing.',
+  },
+  {
+    from: 'man-of-flesh',
+    to: 'mirror-gospel',
+    type: 'continues',
+    status: 'editorial',
+    note: 'The request for "a proper Bible study" (record 2) is met by the worship song and Teacher-within discernment that frame record 4.',
+    source: 'Stone Tablet VIII Seed Register, seeds 2–4: the study preparation.',
+  },
+  {
     from: 'jordan-crossing',
     to: 'signpost',
     type: 'open',
