@@ -16,6 +16,7 @@
   --accent-no: #a85555;
   --accent-maybe: #7d7a4d;
   --accent-light: rgba(201, 162, 39, 0.15);
+  --current: rgba(42, 38, 32, 0.4);
 
   /* Typography */
   --font-serif: Georgia, 'Times New Roman', serif;
@@ -769,6 +770,151 @@ main {
 }
 
 .nav-link-title {
+  font-size: var(--text-sm);
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   LANDING PAGE — Entry Cards, Corpus Facts, Navigation
+   ═════════════════════════════════════════════════════════════════════ */
+
+.entry-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.entry-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: linear-gradient(135deg, rgba(139, 133, 120, 0.08), rgba(201, 162, 39, 0.04));
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--parchment);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.entry-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.entry-card:hover {
+  background: linear-gradient(135deg, rgba(139, 133, 120, 0.12), rgba(201, 162, 39, 0.08));
+  border-color: rgba(201, 162, 39, 0.4);
+  transform: translateY(-2px);
+}
+
+.entry-card:hover::before {
+  opacity: 1;
+}
+
+.entry-card:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.entry-card-icon {
+  font-size: var(--text-2xl);
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+.entry-card-title {
+  font-size: var(--text-lg);
+  color: var(--gold);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.entry-card-desc {
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Navigation placeholders */
+.nav-placeholder {
+  background: rgba(139, 133, 120, 0.06);
+  border: 1px dashed rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  line-height: 1.6;
+}
+
+.placeholder-label {
+  display: inline-block;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  opacity: 0.7;
+  margin-bottom: var(--space-2);
+}
+
+/* Stone Tablets row */
+.tablet-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-4) 0;
+}
+
+.tablet-chip {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.tablet-chip--closed {
+  background: rgba(139, 133, 120, 0.2);
+  border: 1px solid rgba(139, 133, 120, 0.3);
+  color: var(--parchment);
+}
+
+.tablet-chip--closed:hover {
+  background: rgba(139, 133, 120, 0.3);
+  border-color: rgba(139, 133, 120, 0.4);
+}
+
+.tablet-chip--open {
+  background: rgba(201, 162, 39, 0.15);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.tablet-chip--open:hover {
+  background: rgba(201, 162, 39, 0.25);
+  border-color: rgba(201, 162, 39, 0.5);
+}
+
+/* Current (background color variable) */
+.current {
+  background: rgba(139, 133, 120, 0.05);
+}
   font-size: var(--text-sm);
   color: var(--parchment);
   line-height: 1.3;
