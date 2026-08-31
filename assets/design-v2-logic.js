@@ -438,6 +438,48 @@
   }
 
   // ═══════════════════════════════════════════════════════════════════
+  // NO-INTERPRETATION ROUTE — ?mode=original
+  // Removes recommendations, discernment prompts, thread bridges, and the
+  // carry-question tool, leaving title, date, source status, and the
+  // original record content itself. Per design doc §6.2.
+  // ═════════════════════════════════════════════════════════════════════
+
+  function applyNoInterpretationMode() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('mode') !== 'original') return;
+
+    document.body.classList.add('no-interpretation-mode');
+
+    const toHide = [
+      '.discern-section',
+      '.carry-question-section',
+      '#related-records-mount',
+      '#threads-mount',
+      '.return-panel',
+    ];
+    toHide.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => { el.style.display = 'none'; });
+    });
+    // Hide the movement dividers that separated the now-hidden sections so
+    // the original record reads as one continuous, uninterrupted page.
+    document.querySelectorAll('.movement-divider').forEach(el => { el.style.display = 'none'; });
+
+    const article = document.querySelector('.record-source');
+    if (article) {
+      const banner = document.createElement('div');
+      banner.className = 'no-interpretation-banner';
+      banner.innerHTML = `
+        <p><strong>No-interpretation route.</strong> Recommendations, discernment prompts, and thread
+        bridges are hidden. What remains is the title, date, source status, and the original record.</p>
+        <a href="${window.location.pathname}">Show the full experience →</a>
+      `;
+      article.parentNode.insertBefore(banner, article);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', applyNoInterpretationMode);
+
+  // ═══════════════════════════════════════════════════════════════════
   // INIT — Run on DOMContentLoaded
   // ═════════════════════════════════════════════════════════════════════
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mystery Mode — The Jordan Crossing</title>
   <meta name="description" content="What are you carrying today? Name a doorway and receive one record from the archive.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V7">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V11">
   <style>
     .mystery-frame {
       max-width: 56rem;
@@ -70,6 +70,12 @@
 
     #mystery-continue:disabled {
       opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    #mystery-no-interpretation[aria-disabled="true"] {
+      opacity: 0.4;
+      pointer-events: none;
       cursor: not-allowed;
     }
 
@@ -398,7 +404,7 @@
             >
               Receive a record →
             </button>
-            <a href="record.html?mode=original" class="btn btn--ghost btn--sm">
+            <a id="mystery-no-interpretation" href="records/08-29-signpost-v2.html?mode=original" class="btn btn--ghost btn--sm" aria-disabled="true">
               No-interpretation route — show original only
             </a>
           </div>
@@ -486,6 +492,6 @@
     </p>
   </footer>
 
-  <script src="assets/mystery-v2-logic.js?v=20260831V7"></script>
+  <script src="assets/mystery-v2-logic.js?v=20260831V11"></script>
 </body>
 </html>

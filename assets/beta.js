@@ -257,7 +257,7 @@ const JC = (function () {
           'compass':           'compass',
         };
         const recordId = doorwayToRecordId[selected] || 'compass';
-        window.location.href = (typeof jcHrefFor === 'function') ? jcHrefFor(recordId) : 'records/08-30-compass.html';
+        window.location.href = (typeof jcHrefFor === 'function') ? jcHrefFor(recordId) : 'records/08-30-compass-v2.html';
       });
     }
   }

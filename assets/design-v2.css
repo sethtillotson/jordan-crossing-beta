@@ -244,6 +244,31 @@ main {
   color: var(--parchment-dim);
 }
 
+.no-interpretation-banner {
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-6) 0;
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  line-height: 1.7;
+}
+
+.no-interpretation-banner p {
+  margin: 0 0 var(--space-2) 0;
+}
+
+.no-interpretation-banner a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.no-interpretation-banner a:hover {
+  text-decoration: underline;
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    RECORD SOURCE (the article itself)
    ═════════════════════════════════════════════════════════════════════ */

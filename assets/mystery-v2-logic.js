@@ -22,6 +22,7 @@
   function initDoorways() {
     const btns = document.querySelectorAll('.doorway-btn');
     const continueBtn = document.getElementById('mystery-continue');
+    const noInterpLink = document.getElementById('mystery-no-interpretation');
     const guidanceDiv = document.getElementById('selected-doorway');
     let selectedDoorway = null;
 
@@ -46,6 +47,14 @@
         // Enable continue button
         continueBtn.disabled = false;
         continueBtn.setAttribute('aria-disabled', 'false');
+
+        // Point the no-interpretation route at the same record this doorway
+        // leads to, so it shows the original of the record actually chosen —
+        // not an unrelated placeholder.
+        if (noInterpLink && routing) {
+          noInterpLink.href = `records/${routing.record}?mode=original`;
+          noInterpLink.removeAttribute('aria-disabled');
+        }
       });
     });
 
