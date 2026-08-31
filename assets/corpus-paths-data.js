@@ -44,6 +44,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Six meditations · six months · one arc',
     description: 'Six meditations spanning six months, sourced from the same corpus map\u2019s doctrinal-spine reading path. Each is a hinge word the corpus keeps returning to.',
     source: 'PLAUD Meditations Corpus Map \u00a713: "If a reader wants the doctrinal spine in six meditations."',
+    tags: ['doctrinal', 'foundational', 'short'],
     steps: [
       { label: 'Finished Work', dateLabel: 'Feb 28', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/Feb/02-28 Personal Meditation_ Resting in the Finished Work of Christ and Covenant Identity.md', note: 'tetelestai first named \u2014 the floor under the whole corpus.' },
       { label: 'Kenosis', dateLabel: 'Mar 17', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-17 Personal Meditation_ Kenosis and the Death of Self-Sufficiency-Summary.md', note: 'eken\u014dsen named in Greek \u2014 the bottleneck of Volume I\u2019s whole graph.' },
@@ -60,6 +61,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Eleven meditations · Apr 20 \u2013 Aug 29 (131 days)',
     description: 'The carried, quietly learning to carry. Opens Apr 20 when Samuel first calls; closes Aug 29 when the loop is answered.',
     source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 2) and \u00a713: "If a reader wants to walk the Samuel Loop."',
+    tags: ['narrative', 'spiritual-journey', 'long'],
     steps: [
       { label: 'Holy Spirit Compulsion, Brotherhood, and Covenant Prayer', dateLabel: 'Apr 20', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-20 at 10_34 Call Reflection_ Holy Spirit Compulsion, Brotherhood, and Covenant Prayer-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The Loop opens.' },
       { label: "Samuel's Grief, Sobriety Decision, and Spiritual Warfare", dateLabel: 'Apr 22', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-22 at 06_29 Call Reflection_ Samuel\'s Grief, Sobriety Decision, and Spiritual Warfare-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The sobriety decision is spoken.' },
@@ -81,6 +83,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Six meditations \u00b7 Mar 20 \u2013 Aug 30',
     description: 'How the corpus discovered it was never a solo witness \u2014 traced from the earliest independent convergence with Sister Katie through to the three-brother table.',
     source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 3) and \u00a713: "If a reader wants the Murmuration proper." Read alongside Stone Tablet III \u2014 The Starling Convergence.',
+    tags: ['relational', 'community', 'medium'],
     steps: [
       { label: 'The Hidden Mathematics of Divine Perfection (Thirteen)', dateLabel: 'Mar 20', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-20 Personal Meditation_ The Hidden Mathematics of Divine Perfection\u2014When Thirteen Becomes the Number of the Remnant-Summary.md', note: 'Seam One \u2014 independent convergence with Sister Katie.' },
       { label: 'The Burning Bush, Old Refuges, and Spiritual Formation', dateLabel: 'Jun 4', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-04 Call Reflection_ The Burning Bush, Old Refuges, and Spiritual Formation-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The June 4 confirmation thread \u2014 Tablet III\u2019s origin.' },
@@ -97,6 +100,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Nine meditations \u00b7 Feb 27 \u2013 Aug 30',
     description: 'The arc that bends downward before it bends up \u2014 from the first naming of ambition-become-abiding through the sacrament of small things to the harvest of hiddenness.',
     source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 4) and \u00a713: "If a reader wants the Descent." Read alongside The Semantic Weaving \u00a7V.',
+    tags: ['transformational', 'contemplative', 'long'],
     steps: [
       { label: 'Divine Winnowing and the Transformation from Ambition to Abiding', dateLabel: 'Feb 27', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/Feb/02-27 Personal Meditation_ Divine Winnowing and the Transformation from Ambition to Abiding.md', note: 'Descent first named.' },
       { label: 'Kenosis and the Death of Self-Sufficiency', dateLabel: 'Mar 17', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-17 Personal Meditation_ Kenosis and the Death of Self-Sufficiency-Summary.md', note: 'The bottleneck \u2014 highest betweenness-per-edge in Volume I\u2019s graph.' },
@@ -116,6 +120,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Five meditations \u00b7 Feb 20 \u2013 Aug 30',
     description: 'The oldest of the four load-bearing threads: received before the corpus began, measured through Kairos, named explicitly in June, and finally given away at the three-brother table.',
     source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 1).',
+    tags: ['symbolic', 'transformational', 'medium'],
     steps: [
       { label: 'Joseph, Paul, and Severe Mercy in Discipline', dateLabel: 'Feb 20', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/Feb/02-20 Meditation_ Joseph, Paul, and Severe Mercy in Discipline-Summary.md', note: 'Earliest meditation echoing the pre-corpus Jan 28 theophany.' },
       { label: 'Kenosis and the Death of Self-Sufficiency', dateLabel: 'Mar 17', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-17 Personal Meditation_ Kenosis and the Death of Self-Sufficiency-Summary.md', note: 'Measured in Kairos.' },
@@ -131,6 +136,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Two meditations \u00b7 Aug 29\u201330',
     description: 'Learning to fix attention on Christ in the midst of storm and circumstance. Includes the Samuel Loop\'s answer and the mirror\'s revelation.',
     source: 'PLAUD Meditations Corpus Map \u00a713: meditations on beholding and covenant gaze.',
+    tags: ['devotional', 'contemplative', 'short'],
     steps: [
       { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'Where the gaze is learned in the wilderness.' },
       { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The gaze continues \u2014 seeing Christ in the place of shame.' },
@@ -143,6 +149,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Three meditations \u00b7 Aug 29\u201330',
     description: 'Exploring the cost of following Christ in the ordinary, late-night obedience and the three-brother study. How the gaze becomes action.',
     source: 'PLAUD Meditations Corpus Map \u00a713: "If a reader wants to walk the obedience arc."',
+    tags: ['practical', 'obedience', 'medium'],
     steps: [
       { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The cup is accepted \u2014 the first movement of obedience.' },
       { label: 'The Storm\'s Aftermath, Horizon 3, and Ordinary Faithfulness', dateLabel: 'Aug 30 \u00b7 07:43', localId: 'compass', memoPath: null, note: 'Continuation under pressure \u2014 obedience when the storm remains.' },
@@ -156,6 +163,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Two meditations \u00b7 Aug 30',
     description: 'The stripping away of false identity and the recloaking in Christ. The Jordan Crossing movement from filthy garments to finished work.',
     source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VIII: the identity reversal at the crossing.',
+    tags: ['transformational', 'personal', 'short'],
     steps: [
       { label: 'The Identity Revealed, the Bible Study, and the Three Faces of Christ', dateLabel: 'Aug 30 \u00b7 09:41', localId: 'man-of-flesh', memoPath: null, note: 'The old identity is named and offered up.' },
       { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30 \u00b7 13:39', localId: 'filthy-garments', memoPath: null, note: 'The transformation completes \u2014 the old is stripped, the new is given.' },
@@ -168,6 +176,7 @@ const JC_CORPUS_PATHS = [
     estimate: 'Four meditations \u00b7 Aug 28\u201330',
     description: 'The pattern of waiting, confession, revelation, and study. How God\'s timing supersedes human urgency in the crossing.',
     source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VI: "If a reader wants the waiting arc."',
+    tags: ['devotional', 'patience', 'medium'],
     steps: [
       { label: 'The First Win Is the Confession', dateLabel: 'Aug 28', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/August/08-28 at 20_09 \u2014 The First Win Is the Confession-Meditation.md', note: 'The confession breaks the grip \u2014 Horizon 2 closes.' },
       { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The waiting reveals the secret place \u2014 the next dawn comes.' },
