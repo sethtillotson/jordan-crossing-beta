@@ -31,9 +31,22 @@ Per explicit owner direction (2026-08-31), these reviewed meditations were embed
 - `paths.html`'s "Editorial Connection" callout updated to explain why the curated reading-path steps were **not** automatically re-linked to the new local pages: attempting this surfaced the same filename/content-mismatch issue above (a step's memo-path resolved to a real local file, but that file's actual title didn't match the curated label) — so re-linking those specific steps needs a manual per-step check, not a filename-matching script. The 7 seed-record steps that already linked locally are untouched.
 - Verified via Playwright: zero console errors across every top-level page, the 7 seed records, and 6 randomly-sampled new records; a full end-to-end journey (index → mystery → doorway → record → related record → threads → paths → archive) works at the new 138-record scale; the alpha-composited contrast audit shows zero violations on sampled pages; a Lighthouse spot-check on a random new record page scored Accessibility 100 / Best Practices 100 / SEO 100 / Performance 96 with zero failing binary audits.
 
-**What's left for a future pass:** ~280 of 451 meditations remain outside any of the 6 passes and stay metadata-only in the Archive; the ~27 unresolved pass-doc references need manual filename resolution; Corpus Paths' per-step relinking needs manual (not automated) verification; and the design doc's Stage 5 ("many doorways") could be extended to pool across all 138 records instead of the original 7.
+**What's left for a future pass:** ~280 of 451 meditations remain outside any of the 6 passes and stay metadata-only in the Archive; the ~27 unresolved pass-doc references need manual filename resolution; Corpus Paths' per-step relinking needs manual (not automated) verification.
 
 The raw `.md` files, Corpus Map, and Cross-Reference passes remain **uncommitted** (present in the working tree for reference, not part of any commit) so the private "Personal Space" source layer doesn't get pushed to a public deploy by accident — only the generated `-v2.html` record pages and `assets/records-data.js` are committed.
+
+### Phase 2 (2026-08-31, later) — the four threads, doorway pooling, landing maps
+With the corpus map itself updated to reflect the 138-record reviewed layer, this phase used the six Cross-Reference passes plus the Corpus Map's own §10 ("the four threads, read meditation by meditation") to build real thread-weaving and widen Mystery Mode beyond its original 7 doorway destinations.
+
+**The four named threads.** Resolved each of the four load-bearing threads (Zechariah 3, the Samuel Loop, the Murmuration, the Descent Into Hiddenness) to the actual published record ids that carry them — skipping, and saying so plainly in the edge notes, wherever the Corpus Map names a hinge meditation that hasn't resolved to a local page yet (e.g. Jun 21 "Brought Low, Reclothed, and Sent," Mar 17 "Kenosis"). Added `JC_THREADS` to `records-data.js` (4 threads, 5–10 steps each) and 21 new cross-month `"echoes"` edges — distinct from the existing same-cluster `"continues"` edges — each citing the Corpus Map §10 section it came from. `threads.html` now has a "The four threads" section rendering each as a linked chain with a "Show only this thread" filter (`?thread=zech3|samuel-loop|murmuration|descent`), and a `?q=` param for deep-linking a pre-filled search from elsewhere on the site.
+
+**Fixed dead thread rendering on individual record pages.** While wiring this up, found that `design-v2-logic.js`'s `initGraphNav()`/`initThreadConnections()` — the functions meant to populate `#graph-nav-mount` (prev/next chronology) and `#threads-mount` (reviewed thread connections with source citations) on every record page — referenced nonexistent globals (`RECORDS_DATA`, `THREAD_CONNECTIONS`) left over from an earlier draft, and silently no-opped on all 138 pages. Only `#related-records-mount` (a simpler "Related records" card grid) actually worked. Rewired both functions to the real `JC_RECORDS`/`JC_EDGES` data via the existing `jcGetPrevNext`/`jcGetEdgesFor`/`jcHrefFromRecord`/`jcTitleFor` helpers, and added the missing `.thread-status--confirmed/editorial/open` CSS. Verified in-browser on seed pages, generated pages, first/last-in-sequence edge cases, and `?mode=original` (correctly still hides both mounts).
+
+**Mystery Mode doorway pooling.** Rebuilt `assets/mystery-v2-logic.js`: each of the 11 doorways now draws from a keyword-matched pool of records (title + summary against a per-doorway regex) instead of routing to one hardcoded record every time — the original curated record stays in the pool as a guaranteed fallback. "I want to follow the entire chronology" pools from the union of the four named threads (23 records) rather than keywords. "A quiet place to begin" is left unpooled (routes to the preserved interior page, not a v2 record). Guidance text now notes when a record was "drawn from a reviewed pool of N records on this theme." Verified all 11 doorways in-browser (pool sizes 7–23, correct no-interpretation link, correct Continue-button navigation).
+
+**Landing page — Chronological/Thematic/Encounter maps, begun.** Replaced three of the five Stage-2 placeholder cards on `index.html` with working first drafts: a Chronological Map (7 month links into `threads.html?q=<Mon>`), a Thematic Map (the 4 named threads plus 6 common themes, both via the new `?thread=`/`?q=` params), and an Encounter Index (14 hand-picked hinge records drawn from the Corpus Map's own "key hinges," linked directly to their record pages). Scripture Map and Tablet Map remain untouched placeholders. Explicitly marked as first drafts on the page itself, pending the owner's review.
+
+Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking per the known filename/content-mismatch hazard; Scripture Map and Tablet Map remain placeholders; the ~27 unresolved pass references and ~280 unreviewed meditations are unchanged from the prior phase.
 
 ### Blocked
 - **Audio (Phase 3):** audited — zero audio/video files exist anywhere in the repository for any record. The meditations here are text-only (PLAUD/Speakly-generated summaries). `build-audio-player` and `integrate-audio-player` are blocked until the author provides actual audio source files or linkable audio URLs.
@@ -47,16 +60,17 @@ The raw `.md` files, Corpus Map, and Cross-Reference passes remain **uncommitted
 ## Technical Architecture
 
 ### Data Structure
-- **records-data.js:** `JC_RECORDS` array (138 records — 7 original curated seeds + 131 generated from the six Cross-Reference passes — `href` pointing at `-v2.html` pages), `JC_EDGES` array (121 labeled thread connections: 9 original + 112 generated from same-cluster adjacency, each with a `source` citation). Regenerated by `scripts/build-corpus-records.mjs` — do not hand-edit the generated portion; re-run the script instead if the pass documents change.
+- **records-data.js:** `JC_RECORDS` array (138 records — 7 original curated seeds + 131 generated from the six Cross-Reference passes — `href` pointing at `-v2.html` pages), `JC_EDGES` array (142 labeled thread connections: 121 same-cluster `"continues"`/`"answers"`/`"open"` edges + 21 cross-month `"echoes"` edges for the four named threads, each with a `source` citation), `JC_THREADS` array (the four named threads with their step sequences). The generated portion is rebuilt by `scripts/build-corpus-records.mjs`; the `JC_THREADS`/`"echoes"`-edge portion was hand-authored from the Corpus Map §10 and should be extended by hand if new thread hinges resolve to local pages.
 - **corpus-paths-data.js:** `JC_CORPUS_PATHS` array (6 reading paths with steps; most steps still link externally — see the living-archive note above)
-- **design-v2-logic.js:** page initialization, Markdown rendering, related records, thread rendering, and the `?mode=original` no-interpretation handling
-- **mystery-v2-logic.js:** doorway selection, guidance text, routing, and no-interpretation link targeting
-- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added.
+- **design-v2-logic.js:** page initialization, Markdown rendering, related records, prev/next chronology (`#graph-nav-mount`), reviewed thread connections (`#threads-mount`), and the `?mode=original` no-interpretation handling
+- **mystery-v2-logic.js:** doorway pooling (keyword-matched against `JC_RECORDS`), guidance text, routing, and no-interpretation link targeting
+- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added. Re-running it will regenerate `JC_RECORDS` and the same-cluster edges but does **not** touch the hand-authored `JC_THREADS`/`"echoes"` edges, which live in the same file below the generated block.
 
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
+- `jcGetPrevNext(id)` / `jcGetEdgesFor(id)` — chronology and labeled-edge lookups, used by both `design-v2-logic.js` (record pages) and `threads.html` (constellation view)
 - `jcShortId(id)` — normalizes full IDs to short IDs (e.g., '08-29-signpost' → 'signpost')
-- `initRelatedRecords()` — runs on page load to populate `related-records-mount`
+- `initRelatedRecords()` / `initGraphNav()` / `initThreadConnections()` — run on page load to populate `related-records-mount` / `graph-nav-mount` / `threads-mount`
 - `applyNoInterpretationMode()` — hides interpretive sections when `?mode=original` is present
 
 ### Deployment Pipeline
@@ -73,7 +87,7 @@ The raw `.md` files, Corpus Map, and Cross-Reference passes remain **uncommitted
 - `records/*.html` (7 files, no `-v2` suffix) — superseded by the `-v2` versions; no longer linked anywhere in the site after the routing fix, kept only as historical artifacts
 - `assets/favicon.svg` — new, linked from every page
 - `scripts/build-corpus-records.mjs` — the generator that produced the 131 new record pages and rebuilt `assets/records-data.js`; safe to re-run if the pass documents are extended
-- `records/*.md` (~407–410 files), `Corpus Map.md`, `Pass 1–6 *.md` — the raw corpus mirror described above; present but **not committed** (only the generated `-v2.html` output and `records-data.js` are committed)
+- `records/*.md` (~407–410 files), `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, `Pass 1–6 *.md` — the raw corpus mirror described above; present but **not committed** (only the generated `-v2.html` output and `records-data.js` are committed)
 
 ---
 
@@ -84,6 +98,10 @@ The raw `.md` files, Corpus Map, and Cross-Reference passes remain **uncommitted
 - ✓ Accessibility audit clean; Lighthouse 99–100 across the board
 - ✓ Mystery Mode fully canonicalized with a working no-interpretation route
 - ✓ Living archive: 138 of 451 meditations reviewed (via the six Cross-Reference passes) and fully published as record pages, embedded as-is per owner direction
+- ✓ Four named threads (Zechariah 3, Samuel Loop, Murmuration, Descent) resolved and navigable from Threads and the landing page
+- ✓ Mystery Mode doorways pool across the full 138-record reviewed set, not just the original 7
+- ✓ Reviewed thread connections and chronology visible directly on every record page (fixed a dead-code regression that had silently hidden them)
+- ○ Landing page's Chronological/Thematic/Encounter maps are first drafts pending owner verification; Scripture Map and Tablet Map remain placeholders
 - ○ Remaining ~280 unreviewed meditations stay metadata-only in the Archive pending a future review pass
 - ○ Audio: blocked pending source material
 - ○ Public launch: pending stakeholder sign-off and an explicit decision to lift the "not for public distribution" status

@@ -324,55 +324,57 @@
 
   function initGraphNav() {
     const mount = document.getElementById('graph-nav-mount');
-    if (!mount || typeof RECORDS_DATA === 'undefined') return;
+    if (!mount || typeof JC_RECORDS === 'undefined') return;
 
-    const record = RECORDS_DATA.find(r => r.id === RECORD_ID);
-    if (!record) return;
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const { prev, next } = jcGetPrevNext(shortId);
+    if (!prev && !next) return;
 
-    let html = '<div class="graph-nav"><h3 class="graph-nav-heading">Record Sequence</h3>';
+    let html = '<h3 class="graph-nav-heading">Record Sequence</h3>';
     html += '<div class="graph-nav-links">';
 
-    if (record.prev) {
-      const prevRecord = RECORDS_DATA.find(r => r.id === record.prev);
-      if (prevRecord) {
-        html += `
-          <a href="${record.prev}.html" class="nav-link">
-            <span class="nav-link-label">← Previous</span>
-            <span class="nav-link-title">${prevRecord.title}</span>
-            <span class="nav-link-meta">${prevRecord.date}</span>
-          </a>
-        `;
-      }
+    if (prev) {
+      const href = jcHrefFromRecord(prev.id);
+      html += `
+        <a href="${href}" class="nav-link">
+          <span class="nav-link-label">← Previous</span>
+          <span class="nav-link-title">${prev.title}</span>
+          <span class="nav-link-meta">${prev.dateLabel}</span>
+        </a>
+      `;
+    } else {
+      html += '<div style="flex-grow:1;"></div>';
     }
 
-    html += '<div style="flex-grow: 1;"></div>';
-
-    if (record.next) {
-      const nextRecord = RECORDS_DATA.find(r => r.id === record.next);
-      if (nextRecord) {
-        html += `
-          <a href="${record.next}.html" class="nav-link">
-            <span class="nav-link-label">Next →</span>
-            <span class="nav-link-title">${nextRecord.title}</span>
-            <span class="nav-link-meta">${nextRecord.date}</span>
-          </a>
-        `;
-      }
+    if (next) {
+      const href = jcHrefFromRecord(next.id);
+      html += `
+        <a href="${href}" class="nav-link">
+          <span class="nav-link-label">Next →</span>
+          <span class="nav-link-title">${next.title}</span>
+          <span class="nav-link-meta">${next.dateLabel}</span>
+        </a>
+      `;
     }
 
-    html += '</div></div>';
+    html += '</div>';
     mount.innerHTML = html;
   }
 
   // ═══════════════════════════════════════════════════════════════════
-  // THREAD CONNECTIONS — If threads-data available
+  // THREAD CONNECTIONS — labeled bridges from assets/records-data.js
   // ═════════════════════════════════════════════════════════════════════
 
   function initThreadConnections() {
     const mount = document.getElementById('threads-mount');
-    if (!mount || typeof THREAD_CONNECTIONS === 'undefined') return;
+    if (!mount || typeof JC_EDGES === 'undefined') return;
 
-    const edges = THREAD_CONNECTIONS.filter(e => e.source === RECORD_ID);
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const { outgoing, incoming } = jcGetEdgesFor(shortId);
+    const edges = [
+      ...outgoing.map(e => ({ ...e, direction: 'out' })),
+      ...incoming.map(e => ({ ...e, direction: 'in' })),
+    ];
     if (!edges.length) return;
 
     let html = '<div class="reviewed-threads">';
@@ -380,24 +382,24 @@
     html += '<ul class="thread-list">';
 
     edges.forEach(edge => {
-      const { type, targetId, targetTitle, note, source } = edge;
-      const typeLabel = {
-        'continues': 'continues',
-        'answers': 'answers',
-        'opens': 'opens',
-        'anticipates': 'anticipates',
-        'reopens': 'reopens',
-        'unresolved': 'unresolved'
-      }[type] || type;
+      const otherId = edge.direction === 'out' ? edge.to : edge.from;
+      const label = edge.direction === 'out'
+        ? (EDGE_LABELS[edge.type] || edge.type)
+        : `is ${EDGE_LABELS[edge.type] || edge.type} by`;
+      const statusClass = edge.status === 'author-confirmed' ? 'confirmed' : (edge.status === 'editorial' ? 'editorial' : 'open');
+      const statusLabel = STATUS_LABELS[edge.status] || edge.status;
+      const targetHref = jcHrefFromRecord(otherId);
+      const targetTitle = jcTitleFor(otherId);
 
       html += `
         <li class="thread-item">
           <div class="thread-edge">
-            <span class="thread-status thread-status--${type}">${typeLabel}</span>
-            <a href="${targetId}.html">${targetTitle}</a>
+            <span class="thread-status thread-status--${statusClass}">${statusLabel}</span>
+            <span>${label}</span>
+            <a href="${targetHref}">${targetTitle}</a>
           </div>
-          ${note ? `<p class="thread-note">${note}</p>` : ''}
-          ${source ? `<p class="thread-source">Source: ${source}</p>` : ''}
+          <p class="thread-note">${edge.note}</p>
+          <p class="thread-source">Source: ${edge.source}</p>
         </li>
       `;
     });

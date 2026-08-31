@@ -1048,6 +1048,21 @@ main {
   color: var(--gold);
 }
 
+.thread-status--confirmed {
+  background: rgba(107, 158, 127, 0.2);
+  color: #a0d6b4;
+}
+
+.thread-status--editorial {
+  background: rgba(168, 85, 85, 0.2);
+  color: #d68c8c;
+}
+
+.thread-status--open {
+  background: rgba(125, 122, 77, 0.2);
+  color: #c4be82;
+}
+
 .thread-item a {
   color: var(--gold);
   text-decoration: none;

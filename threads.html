@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Threads — The Jordan Crossing Interior Beta</title>
   <meta name="description" content="A reviewable constellation of labeled connections across the corpus — what each record answers, continues, or reopens, traced to its source.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V13">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V14">
 </head>
 <body data-record-id="thread-constellation-beta">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -58,10 +58,19 @@
         </div>
       </section>
 
+      <section aria-label="The four threads">
+        <h2 class="section-heading">The four threads</h2>
+        <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
+          Four load-bearing threads run underneath the chronology — named and traced meditation-by-meditation in the <em>PLAUD Meditations Corpus Map</em>. Each one can reach back across months. Select a thread to filter the constellation below to just its path.
+        </p>
+        <div id="threads-overview-mount" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6);margin-bottom:var(--space-6);"></div>
+        <div id="thread-filter-banner" style="display:none;margin-bottom:var(--space-6);padding:var(--space-3) var(--space-4);background:rgba(201,162,39,0.08);border:1px solid rgba(201,162,39,0.25);border-radius:var(--radius-md);color:var(--parchment-dim);font-size:var(--text-sm);"></div>
+      </section>
+
       <section aria-label="Chronological constellation">
         <h2 class="section-heading">The constellation, in order recorded</h2>
         <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
-          Read top to bottom for chronology. Each record's reviewed connections are listed beneath it — what it continues, what it answers, and what remains open. Every line traces to a dated source.
+          Read top to bottom for chronology. Each record's reviewed connections are listed beneath it — what it continues, what it answers, what it echoes across a thread, and what remains open. Every line traces to a dated source.
         </p>
         
         <div style="margin-bottom:var(--space-6);display:flex;gap:var(--space-3);align-items:center;">
@@ -86,11 +95,12 @@
   <footer class="site-footer">
     <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
   </footer>
-<script src="assets/records-data.js?v=20260831V13"></script>
+<script src="assets/records-data.js?v=20260831V14"></script>
 <script>
 (function () {
   let allRecords = [];
   let searchQuery = '';
+  let activeThread = null;
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -113,6 +123,57 @@
       record.classification.toLowerCase().includes(lowerQuery) ||
       record.dateLabel.toLowerCase().includes(lowerQuery)
     );
+  }
+
+  function renderThreadsOverview() {
+    const mount = document.getElementById('threads-overview-mount');
+    if (!mount || typeof JC_THREADS === 'undefined') return;
+
+    mount.innerHTML = JC_THREADS.map(t => {
+      const chain = t.sequence.map((id, i) => {
+        const rec = jcGetRecord(id);
+        const title = rec ? rec.title : id;
+        const href = rec ? jcHrefFor(id) : '#';
+        const arrow = i < t.sequence.length - 1 ? ' <span aria-hidden="true" style="color:var(--parchment-dim);">→</span> ' : '';
+        return `<a href="${href}" style="color:var(--gold);text-decoration:none;">${escapeHtml(title)}</a>${arrow}`;
+      }).join('');
+
+      return `<div class="thread-item" style="display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:baseline;gap:var(--space-3);margin-bottom:var(--space-2);">
+          <span class="source-badge" aria-hidden="true">Thread ${escapeHtml(t.symbol)}</span>
+          <span class="record-caption">${t.sequence.length} steps</span>
+        </div>
+        <h3 style="font-size:var(--text-lg);color:var(--parchment);margin:0 0 var(--space-2);">${escapeHtml(t.name)}</h3>
+        <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-4);flex-grow:1;">${escapeHtml(t.description)}</p>
+        <p style="font-size:var(--text-sm);line-height:2;margin-bottom:var(--space-4);">${chain}</p>
+        <button type="button" class="btn btn-secondary thread-filter-btn" data-thread-id="${t.id}" style="align-self:flex-start;">Show only this thread ↓</button>
+      </div>`;
+    }).join('');
+
+    mount.querySelectorAll('.thread-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.threadId;
+        setActiveThread(activeThread === id ? null : id);
+      });
+    });
+  }
+
+  function setActiveThread(threadId) {
+    activeThread = threadId;
+    const banner = document.getElementById('thread-filter-banner');
+    if (banner) {
+      if (threadId && typeof JC_THREADS !== 'undefined') {
+        const t = JC_THREADS.find(x => x.id === threadId);
+        banner.style.display = 'block';
+        banner.innerHTML = `Showing only <strong style="color:var(--gold);">Thread ${escapeHtml(t.symbol)} — ${escapeHtml(t.name)}</strong> (${t.sequence.length} records). <button type="button" id="thread-filter-clear" style="background:none;border:none;color:var(--gold);text-decoration:underline;cursor:pointer;font:inherit;">Clear filter, show full chronology →</button>`;
+        const clearBtn = document.getElementById('thread-filter-clear');
+        if (clearBtn) clearBtn.addEventListener('click', () => setActiveThread(null));
+      } else {
+        banner.style.display = 'none';
+        banner.innerHTML = '';
+      }
+    }
+    updateSearch();
   }
 
   function renderTimeline(filteredRecords = null) {
@@ -159,10 +220,19 @@
     searchQuery = (input.value || '').trim();
     clearBtn.style.display = searchQuery ? 'inline-block' : 'none';
 
-    const filtered = allRecords.filter(rec => matchesSearch(rec, searchQuery));
+    let base = allRecords;
+    if (activeThread && typeof JC_THREADS !== 'undefined') {
+      const t = JC_THREADS.find(x => x.id === activeThread);
+      if (t) {
+        const order = t.sequence;
+        base = order.map(id => jcGetRecord(id)).filter(Boolean);
+      }
+    }
+
+    const filtered = base.filter(rec => matchesSearch(rec, searchQuery));
     
     if (searchQuery) {
-      resultsDiv.textContent = `Found ${filtered.length} of ${allRecords.length} records`;
+      resultsDiv.textContent = `Found ${filtered.length} of ${base.length} records`;
     } else {
       resultsDiv.textContent = '';
     }
@@ -173,9 +243,22 @@
   function initTimeline() {
     if (typeof JC_RECORDS !== 'undefined') {
       allRecords = JC_RECORDS.slice().sort((a, b) => a.order - b.order);
-      renderTimeline(allRecords);
+      renderThreadsOverview();
 
+      const params = new URLSearchParams(location.search);
+      const threadParam = params.get('thread');
+      const qParam = params.get('q');
       const searchInput = document.getElementById('search-input');
+
+      if (threadParam && typeof JC_THREADS !== 'undefined' && JC_THREADS.some(t => t.id === threadParam)) {
+        setActiveThread(threadParam);
+      } else if (qParam && searchInput) {
+        searchInput.value = qParam;
+        updateSearch();
+      } else {
+        renderTimeline(allRecords);
+      }
+
       const clearBtn = document.getElementById('search-clear');
       
       if (searchInput) {

@@ -2512,7 +2512,249 @@ const JC_EDGES = [
     "status": "editorial",
     "note": "Sequential entries in the \"Jun/Jul remainders + Aug 1-10 body (10)\" cluster.",
     "source": "Pass 6 Cross-References — \"Jun/Jul remainders + Aug 1-10 body (10)\" section."
+  },
+
+  /* ─────────────────────────────────────────────────────────────────
+   * Four load-bearing threads (PLAUD Meditations Corpus Map §10).
+   * These edges cross months/clusters — unlike the "continues" edges
+   * above (same pass-cluster adjacency), each pair here follows one
+   * of the corpus's four named threads (Zechariah 3 / Samuel Loop /
+   * Murmuration / the Descent) from the Corpus Map itself. Where the
+   * Corpus Map names a hinge meditation that hasn't resolved to a
+   * local reviewed page yet (e.g. Mar 17 Kenosis, Jun 4 Burning Bush),
+   * the edge says so plainly rather than silently skipping the gap.
+   * `thread` groups these for the Threads page; `type: "echoes"` marks
+   * them as distinct from ordinary same-cluster continuation.
+   * ───────────────────────────────────────────────────────────────── */
+  {
+    "from": "03-25-personal-meditation-obedience-hiddenness",
+    "to": "02-25-meditation-joseph-paul-severe",
+    "type": "echoes",
+    "thread": "zech3",
+    "status": "editorial",
+    "note": "Thread 1 (Zechariah 3): the earliest local witness to \"severe mercy\" (Feb, received-stage) is picked up again in the Kairos Window's own severe-mercy/wilderness-formation meditations.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 1 · Zechariah 3, \"Received\" → \"Measured\" movement."
+  },
+  {
+    "from": "04-06-spiritual-reflection-wilderness-provision",
+    "to": "03-25-personal-meditation-obedience-hiddenness",
+    "type": "echoes",
+    "thread": "zech3",
+    "status": "editorial",
+    "note": "Thread 1 continues through the Kairos Window's wilderness meditations — the garments are still being stripped, not yet replaced.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 1 · Zechariah 3, \"Measured\" movement."
+  },
+  {
+    "from": "04-11-comfort-loop-flaming-sword",
+    "to": "04-06-spiritual-reflection-wilderness-provision",
+    "type": "echoes",
+    "thread": "zech3",
+    "status": "editorial",
+    "note": "Thread 1 continues — kenosis, Sabbath rest, and spiritual authority, the same stretch of the Kairos Window's measuring.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 1 · Zechariah 3, \"Measured\" movement."
+  },
+  {
+    "from": "filthy-garments",
+    "to": "04-11-comfort-loop-flaming-sword",
+    "type": "echoes",
+    "thread": "zech3",
+    "status": "editorial",
+    "note": "Thread 1's \"Named\" hinge (Jun 21 — \"Brought Low, Reclothed, and Sent,\" where Zechariah 3 is first named outright) has not yet resolved to a local reviewed page. The thread's next confirmed local witness after the Kairos Window is the Aug 30 study, where the filthy garments are finally given away.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 1 · Zechariah 3, \"Named\" → \"Given away\" movement (Named hinge unresolved)."
+  },
+  {
+    "from": "05-01-when-lord-meets-man",
+    "to": "04-22-oath-you-cannot-serve",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "Thread 2 (Samuel Loop): the grief/sobriety turn of late April gives way to the Breaking Point — \"you need to die\" — recorded May 1.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop."
+  },
+  {
+    "from": "05-06-personal-meditation-standing-still",
+    "to": "05-01-when-lord-meets-man",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "From the Breaking Point into vocational discernment, the same week.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop."
+  },
+  {
+    "from": "05-08-when-house-shaking-road",
+    "to": "05-06-personal-meditation-standing-still",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "Vocational discernment gives way to the darkest night — the Fourth Watch is named here.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop."
+  },
+  {
+    "from": "05-27-weight-calling-narrowness-gate",
+    "to": "05-08-when-house-shaking-road",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "Three weeks after the darkest night, the Loop turns to mantles and grief carried as intercession.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop."
+  },
+  {
+    "from": "06-25-where-your-faith-testimony",
+    "to": "05-27-weight-calling-narrowness-gate",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "For the first time in the Loop, Samuel's own voice enters the record as testimony.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop, \"Samuel's own voice enters\" hinge."
+  },
+  {
+    "from": "07-10-demon-named-abigail-cat",
+    "to": "06-25-where-your-faith-testimony",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "Samuel's own testimony is followed, weeks later, by the night the heavens moved and a name was spoken aloud.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop, \"Heavens move / demonic deliverance\" hinge."
+  },
+  {
+    "from": "08-17-emptied-house-voice-that",
+    "to": "07-10-demon-named-abigail-cat",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "119 days after the Loop opened (the Corpus Map's own count from Apr 20), the Seam is reached — the counterfeit voice, the wrongly-occupied seat, Stone Tablet VI's origin.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop, \"Seam · counterfeit voice\" hinge."
+  },
+  {
+    "from": "08-28-third-door-leveled-table",
+    "to": "08-17-emptied-house-voice-that",
+    "type": "echoes",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "Eleven days after the Seam, the six-meditation day closes Horizon 2 — the Samuel Loop's own closing day.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop, \"Loop closes\" hinge."
+  },
+  {
+    "from": "signpost",
+    "to": "08-28-third-door-leveled-table",
+    "type": "answers",
+    "thread": "samuel-loop",
+    "status": "editorial",
+    "note": "The Loop's closing day is answered the next evening — the Signpost, the Secret Place, and the Cup of the Father's Will.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 2 · The Samuel Loop, \"Loop closes\" → \"answered\" hinge."
+  },
+  {
+    "from": "06-07-stone-at-gilgal-pastoral",
+    "to": "05-24-saved-loaves-gilgal-stone",
+    "type": "echoes",
+    "thread": "murmuration",
+    "status": "editorial",
+    "note": "Thread 3 (the Murmuration): the Gilgal Stone image (Semantic Weaving §I) returns two weeks later as the explicit knot between the Samuel Loop and the Murmuration.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 3 · The Murmuration, \"Seam One\" and knot hinges."
+  },
+  {
+    "from": "06-08-mirror-murmuration-releasing-what",
+    "to": "06-07-stone-at-gilgal-pastoral",
+    "type": "echoes",
+    "thread": "murmuration",
+    "status": "editorial",
+    "note": "The knot at Gilgal is followed, the next day, by Seth naming the Murmuration outright.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 3 · The Murmuration, \"Named by Seth\" hinge."
+  },
+  {
+    "from": "06-09-wind-weather-witness-when",
+    "to": "06-08-mirror-murmuration-releasing-what",
+    "type": "echoes",
+    "thread": "murmuration",
+    "status": "editorial",
+    "note": "The naming is followed by the return of \"Ayekah\" — \"Where are you?\" — now asked of a plural witness, not just one man.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 3 · The Murmuration, \"Ayekah returned\" hinge."
+  },
+  {
+    "from": "filthy-garments",
+    "to": "06-09-wind-weather-witness-when",
+    "type": "echoes",
+    "thread": "murmuration",
+    "status": "editorial",
+    "note": "The Murmuration's local witness leaps from June's naming to the Aug 30 gathering of three brothers, three countries, four AM in Australia — the Chorus arriving at scale.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 3 · The Murmuration, \"Chorus arrives at scale\" hinge."
+  },
+  {
+    "from": "04-10-way-home-worship-weariness",
+    "to": "02-27-personal-meditation-divine-winnowing",
+    "type": "echoes",
+    "thread": "descent",
+    "status": "editorial",
+    "note": "Thread 4 (the Descent): the Descent opens with Divine Winnowing (ambition bowing to abiding) and is next witnessed, six weeks later, in April's sacred-ordinary/factory-floor meditations.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 4 · The Descent Into Hiddenness, \"First named\" → \"Sacred ordinary\" movement."
+  },
+  {
+    "from": "05-10-brotherhood-round-table-god",
+    "to": "04-10-way-home-worship-weariness",
+    "type": "echoes",
+    "thread": "descent",
+    "status": "editorial",
+    "note": "The sacred ordinary gives way, a month later, to the Plow that demands no looking back.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 4 · The Descent Into Hiddenness, \"The Plow\" hinge."
+  },
+  {
+    "from": "05-26-tablet-written-before-door",
+    "to": "05-10-brotherhood-round-table-god",
+    "type": "echoes",
+    "thread": "descent",
+    "status": "editorial",
+    "note": "The Plow is followed by the Rampart — the theology of faithful waiting that opens Stone Tablet V's Middle Wilderness window.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 4 · The Descent Into Hiddenness, \"Sacred ordinary + weariness\" hinge."
+  },
+  {
+    "from": "filthy-garments",
+    "to": "05-26-tablet-written-before-door",
+    "type": "echoes",
+    "thread": "descent",
+    "status": "editorial",
+    "note": "The Descent's local witness leaps from the Rampart to the Aug 30 harvest of hiddenness — three brothers, three countries, four AM in Australia.",
+    "source": "PLAUD Meditations Corpus Map §10 — Thread 4 · The Descent Into Hiddenness, \"Harvest of hiddenness\" hinge."
   }
+];
+
+/**
+ * The four load-bearing threads, named and traced meditation-by-meditation
+ * in the PLAUD Meditations Corpus Map §10. `sequence` lists record ids in
+ * thread order (not necessarily chronological — a thread can reach back
+ * across months). Consecutive pairs in each sequence have a matching
+ * `thread`-tagged edge above. Used by threads.html to render each thread
+ * as its own path through the constellation, distinct from the full
+ * chronological list.
+ */
+const JC_THREADS = [
+  {
+    id: 'zech3',
+    symbol: 'I',
+    name: 'Zechariah 3 — filthy garments removed, replaced, given away',
+    description: 'Received in the Jan 28 sand-hill theophany (narrated in Stone Tablet V), measured across the Kairos Window, named explicitly in June (not yet a local reviewed page), and given away publicly at the Aug 30 Bible study.',
+    sequence: ['02-25-meditation-joseph-paul-severe', '03-25-personal-meditation-obedience-hiddenness', '04-06-spiritual-reflection-wilderness-provision', '04-11-comfort-loop-flaming-sword', 'filthy-garments'],
+  },
+  {
+    id: 'samuel-loop',
+    symbol: 'II',
+    name: 'The Samuel Loop — the carried, quietly learning to carry',
+    description: 'Opens Apr 20 with Holy Spirit compulsion and covenant prayer, moves through grief, the Breaking Point, the darkest night, and mantles, gathers Samuel\'s own testimony in June, reaches the Aug 17 seam that gave Stone Tablet VI its origin, and is answered on Aug 29.',
+    sequence: ['04-22-oath-you-cannot-serve', '05-01-when-lord-meets-man', '05-06-personal-meditation-standing-still', '05-08-when-house-shaking-road', '05-27-weight-calling-narrowness-gate', '06-25-where-your-faith-testimony', '07-10-demon-named-abigail-cat', '08-17-emptied-house-voice-that', '08-28-third-door-leveled-table', 'signpost'],
+  },
+  {
+    id: 'murmuration',
+    symbol: 'III',
+    name: 'The Murmuration — the maskîlîm are plural',
+    description: 'Seam One at the Gilgal Stone, the knot with the Samuel Loop, Seth naming the Murmuration outright, the return of "Ayekah," and the Chorus arriving at scale on Aug 30 with three brothers in three countries.',
+    sequence: ['05-24-saved-loaves-gilgal-stone', '06-07-stone-at-gilgal-pastoral', '06-08-mirror-murmuration-releasing-what', '06-09-wind-weather-witness-when', 'filthy-garments'],
+  },
+  {
+    id: 'descent',
+    symbol: 'IV',
+    name: 'The Descent Into Hiddenness — the arc bends downward',
+    description: 'First named in Divine Winnowing (ambition bowing to abiding), witnessed again in the sacred-ordinary/factory-floor meditations, the Plow that demands no looking back, the Rampart that opens Stone Tablet V\'s window, and the Aug 30 harvest of hiddenness.',
+    sequence: ['02-27-personal-meditation-divine-winnowing', '04-10-way-home-worship-weariness', '05-10-brotherhood-round-table-god', '05-26-tablet-written-before-door', 'filthy-garments'],
+  },
 ];
 
 const EDGE_LABELS = {
@@ -2520,6 +2762,7 @@ const EDGE_LABELS = {
   answers: 'answers',
   reopens: 'reopens',
   open: 'open question',
+  echoes: 'echoes (thread)',
 };
 
 const STATUS_LABELS = {

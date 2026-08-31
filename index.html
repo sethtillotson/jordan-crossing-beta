@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Jordan Crossing — Interior Beta</title>
   <meta name="description" content="Private interior beta for the Living Topology corpus. Not for public distribution.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V13">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V14">
 </head>
 <body>
 
@@ -168,32 +168,84 @@
 
       <hr class="divider">
 
+      <!-- Live navigation maps (Stage 2, begun) -->
+      <section aria-label="Explore the corpus" style="margin-bottom:var(--space-8);">
+        <h2 class="section-heading">Explore the corpus</h2>
+        <p class="body-text body-text--dim" style="margin-bottom:var(--space-6);font-size:var(--text-sm);">
+          Three ways into the reviewed 138-record constellation, each built from the six Cross-Reference passes
+          and the Corpus Map. These are first drafts — begun, not finished; verify against <a href="threads.html">Threads</a> directly.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6);">
+
+          <div class="nav-placeholder" style="background:var(--current);">
+            <span class="placeholder-label">Chronological Map</span>
+            <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">Seven months, Feb–Aug 2026. Each opens Threads filtered to that month's reviewed records.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
+              <a href="threads.html?q=Feb" class="btn btn-secondary btn--sm">Feb</a>
+              <a href="threads.html?q=Mar" class="btn btn-secondary btn--sm">Mar</a>
+              <a href="threads.html?q=Apr" class="btn btn-secondary btn--sm">Apr</a>
+              <a href="threads.html?q=May" class="btn btn-secondary btn--sm">May</a>
+              <a href="threads.html?q=Jun" class="btn btn-secondary btn--sm">Jun</a>
+              <a href="threads.html?q=Jul" class="btn btn-secondary btn--sm">Jul</a>
+              <a href="threads.html?q=Aug" class="btn btn-secondary btn--sm">Aug</a>
+            </div>
+          </div>
+
+          <div class="nav-placeholder" style="background:var(--current);">
+            <span class="placeholder-label">Thematic Map</span>
+            <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">The four load-bearing threads named in the Corpus Map, plus common themes across the reviewed set.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-3);">
+              <a href="threads.html?thread=zech3" class="btn btn-secondary btn--sm">Zechariah 3</a>
+              <a href="threads.html?thread=samuel-loop" class="btn btn-secondary btn--sm">Samuel Loop</a>
+              <a href="threads.html?thread=murmuration" class="btn btn-secondary btn--sm">Murmuration</a>
+              <a href="threads.html?thread=descent" class="btn btn-secondary btn--sm">Descent</a>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
+              <a href="threads.html?q=surrender" class="btn btn-secondary btn--sm">Surrender</a>
+              <a href="threads.html?q=waiting" class="btn btn-secondary btn--sm">Waiting</a>
+              <a href="threads.html?q=fellowship" class="btn btn-secondary btn--sm">Fellowship</a>
+              <a href="threads.html?q=warfare" class="btn btn-secondary btn--sm">Spiritual warfare</a>
+              <a href="threads.html?q=identity" class="btn btn-secondary btn--sm">Identity</a>
+              <a href="threads.html?q=discipline" class="btn btn-secondary btn--sm">Discipline</a>
+            </div>
+          </div>
+
+          <div class="nav-placeholder" style="background:var(--current);">
+            <span class="placeholder-label">Encounter Index</span>
+            <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">Fourteen named hinges from the Corpus Map's own "key hinges" — a hand-picked way into the constellation, not a ranking.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);max-height:220px;overflow-y:auto;">
+              <li><a href="records/02-25-meditation-joseph-paul-severe-v2.html" style="color:var(--gold);">Feb 25 · Joseph, Paul, and Severe Mercy</a></li>
+              <li><a href="records/02-27-personal-meditation-divine-winnowing-v2.html" style="color:var(--gold);">Feb 27 · Divine Winnowing (the Descent opens)</a></li>
+              <li><a href="records/04-11-comfort-loop-flaming-sword-v2.html" style="color:var(--gold);">Apr 11 · The Comfort Loop and the Flaming Sword</a></li>
+              <li><a href="records/05-01-when-lord-meets-man-v2.html" style="color:var(--gold);">May 1 · The Lord Meets a Man at the Breaking Point</a></li>
+              <li><a href="records/05-10-brotherhood-round-table-god-v2.html" style="color:var(--gold);">May 10 · Brotherhood, the Round Table, and the Plow</a></li>
+              <li><a href="records/05-24-saved-loaves-gilgal-stone-v2.html" style="color:var(--gold);">May 24 · Saved, Loaves, and the Gilgal Stone</a></li>
+              <li><a href="records/05-26-tablet-written-before-door-v2.html" style="color:var(--gold);">May 26 · The Tablet Written Before the Door Opens</a></li>
+              <li><a href="records/06-08-mirror-murmuration-releasing-what-v2.html" style="color:var(--gold);">Jun 8 · The Mirror, the Murmuration, and the Releasing</a></li>
+              <li><a href="records/06-25-where-your-faith-testimony-v2.html" style="color:var(--gold);">Jun 25 · Where Is Your Faith? Samuel's Testimony</a></li>
+              <li><a href="records/07-10-demon-named-abigail-cat-v2.html" style="color:var(--gold);">Jul 10 · The Demon Named Abigail (the heavens moved)</a></li>
+              <li><a href="records/08-17-emptied-house-voice-that-v2.html" style="color:var(--gold);">Aug 17 · The Emptied House (the Seam — Tablet VI's origin)</a></li>
+              <li><a href="records/08-28-third-door-leveled-table-v2.html" style="color:var(--gold);">Aug 28 · The Third Door, the Leveled Table (Loop closes)</a></li>
+              <li><a href="records/08-29-signpost-v2.html" style="color:var(--gold);">Aug 29 · The Signpost and the Cup of the Father's Will</a></li>
+              <li><a href="records/08-30-filthy-garments-v2.html" style="color:var(--gold);">Aug 30 · The Filthy Garments and the Finished Work</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider">
+
       <!-- Navigation placeholders -->
       <section aria-label="Navigation features (planned)" style="margin-bottom:var(--space-12);">
         <h2 class="section-heading">Navigation — planned features</h2>
         <p class="body-text body-text--dim" style="margin-bottom:var(--space-6);font-size:var(--text-sm);">
-          The five maps below are Stage 2 features, grounded in known corpus facts.
+          The remaining two maps below are still Stage 2 placeholders, grounded in known corpus facts.
           Placeholders are marked clearly; no content is invented.
         </p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space-4);">
-
-          <div class="nav-placeholder">
-            <span class="placeholder-label">Chronological Map</span>
-            Answers: What came before what?<br><br>
-            Will trace the full arc from the Whisper (mid-Nov 2025) through Horizons 1–3
-            using the Master Transformation Timeline as its spine.
-            <br><br>
-            <strong>[STAGE 2 — awaiting build authorization]</strong>
-          </div>
-
-          <div class="nav-placeholder">
-            <span class="placeholder-label">Thematic Map</span>
-            Answers: Where does this touch my life?<br><br>
-            Themes: identity, fear, surrender, waiting, fellowship, work, calling, grief, discipline, marriage, money, spiritual warfare.
-            <br><br>
-            <strong>[STAGE 2 — awaiting human-reviewed tag insertion]</strong>
-          </div>
 
           <div class="nav-placeholder">
             <span class="placeholder-label">Scripture Map</span>
@@ -209,14 +261,6 @@
             Eight rooms, one per Stone Tablet. Tablets I–VII frozen. Tablet VIII visibly provisional.
             <br><br>
             <strong>[STAGE 2 — structure ready, content pending]</strong>
-          </div>
-
-          <div class="nav-placeholder">
-            <span class="placeholder-label">Encounter Index</span>
-            Answers: What kind of place am I entering?<br><br>
-            Temperature, length, voice, movement, posture, form, season. Labels describe the record, not the reader.
-            <br><br>
-            <strong>[STAGE 2 — awaiting human-reviewed tagging]</strong>
           </div>
 
         </div>
@@ -249,7 +293,7 @@
     </p>
   </footer>
 
-  <script src="assets/records-data.js?v=20260831V13"></script>
-  <script src="assets/design-v2-logic.js?v=20260831V13"></script>
+  <script src="assets/records-data.js?v=20260831V14"></script>
+  <script src="assets/design-v2-logic.js?v=20260831V14"></script>
 </body>
 </html>

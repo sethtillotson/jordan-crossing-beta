@@ -311,7 +311,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
   <title>${escAttr(title)} — Interior Beta</title>
   <meta name="description" content="${escAttr(summary)}">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260831V13">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260831V14">
 </head>
 <body data-record-id="${escAttr(id)}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -539,8 +539,8 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
     <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260831V13"></script>
-  <script src="../assets/design-v2-logic.js?v=20260831V13"></script>
+  <script src="../assets/records-data.js?v=20260831V14"></script>
+  <script src="../assets/design-v2-logic.js?v=20260831V14"></script>
 </body>
 </html>
 `;
