@@ -2,7 +2,7 @@
  * Jordan Crossing Beta — Record Metadata & Reviewed Thread Edges
  * Single source of truth for prev/next chronology and labeled bridges.
  * 
- * Last updated: 2026-08-31T16:30:00Z (Version 7 cache bust)
+ * Last updated: 2026-08-31T17:45:00Z (Version 8 cache bust - fixed jcGetRelatedRecords ID normalization)
  *
  * IMPORTANT — governance:
  * - `order` is pure chronological fact (recorded date/time). Always safe to show.
