@@ -74,6 +74,21 @@ The Jordan Crossing is now publicly available for reading and reflection.
 - Thread edge validation (all 7 records have verified outgoing connections)
 - CSS cache busting (v=20260831V9 applied to all asset references)
 
+---
+
+## [1.3] — September 1, 2026
+
+### Added
+
+#### Phase 3: Audio Implementation (component)
+- **Audio player component** (`assets/audio-player.js`, `assets/audio-player.css`) — accessible custom player: play/pause, seekable progress bar, elapsed/duration timestamp, playback-speed control (0.75×–2×), volume control, and native `<track kind="captions">` support for a future captions file
+- **Wired into all 138 record pages** — an `#audio-player-mount` element, plus the stylesheet and script tags, added to every record page (the 7 original seeds and the 131 generated pages) and to the `scripts/build-corpus-records.mjs` generator template so future generated pages get it automatically
+- **Data contract** — `JC_RECORDS` entries may now carry an optional `audioUrl` (and `captionsUrl`); the player mounts only when `audioUrl` is present, otherwise the mount renders nothing
+
+### Known Limitations
+
+- No record currently has audio — the corpus remains text-only (PLAUD/Speakly-generated summaries), so the player component exists but is dormant everywhere. Per-record audio integration (`integrate-audio-player`) is still blocked pending the author providing actual audio source files or linkable URLs; adding one is now a one-line data change per record, not new engineering.
+
 ### Technical Details
 
 - **Framework**: None (vanilla HTML5/CSS3/JavaScript)
@@ -107,16 +122,18 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 ## Roadmap
 
-### Phase 3: Audio Implementation (Future)
-- Audio player component for supported records
-- Transcript sync highlighting
-- Playback speed control
-- Accessibility features (captions)
+### Phase 3: Audio Implementation
+- ✓ Audio player component for supported records — see [1.3] above
+- ✓ Playback speed control — see [1.3] above
+- ✓ Accessibility features (captions) — native `<track kind="captions">` support, see [1.3] above
+- Transcript sync highlighting — still future; requires per-word/per-line timing data alongside an actual audio file, neither of which exists yet
+- Per-record audio integration — blocked pending the author providing real audio source files or linkable URLs (the component itself is ready; wiring one in is a one-line `audioUrl` data change)
 
-### Phase 4: Expanded Corpus (Future)
-- 20–30 additional meditation records
-- Tag system expansion
-- Advanced search filters
+### Phase 4: Expanded Corpus
+- ✓ 131 additional meditation records reviewed and published (138 total) via six dated Cross-Reference passes — see the Living Archive section of `plan.md`
+- ~280 of 451 direct-archive meditations remain outside any reviewed pass and stay metadata-only in the Archive, pending a future review pass
+- Tag system expansion — still future
+- Advanced search filters — still future
 
 ### Phase 5: Community Features (Future)
 - Annotation system

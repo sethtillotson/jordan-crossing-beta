@@ -319,6 +319,29 @@
   }
 
   // ═══════════════════════════════════════════════════════════════════
+  // AUDIO PLAYER — Phase 3. Renders only if the record's JC_RECORDS entry
+  // carries an audioUrl. As of this writing no record has one — the six
+  // Cross-Reference passes and the raw meditation corpus are text-only —
+  // so this mounts nothing on any current page. Wired ahead of time so a
+  // future audioUrl is a one-line data change, not new engineering.
+  // ═════════════════════════════════════════════════════════════════════
+
+  function initAudioPlayer() {
+    const mount = document.getElementById('audio-player-mount');
+    if (!mount || typeof JC_RECORDS === 'undefined' || typeof window.JordanCrossingAudio === 'undefined') return;
+
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const record = JC_RECORDS.find(r => r.id === shortId);
+    if (!record || !record.audioUrl) return;
+
+    window.JordanCrossingAudio.mountAudioPlayer(mount, {
+      audioUrl: record.audioUrl,
+      captionsUrl: record.captionsUrl || null,
+      title: record.title,
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
   // MOVEMENT 4: GRAPH NAV — Chronological nav (if records-data available)
   // ═════════════════════════════════════════════════════════════════════
 
@@ -490,6 +513,7 @@
     initDiscernChoices();
     initCarryQuestion();
     initReturnChoices();
+    initAudioPlayer();
     initGraphNav();
     initRelatedRecords();
     initThreadConnections();

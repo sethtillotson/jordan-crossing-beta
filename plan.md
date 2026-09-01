@@ -48,8 +48,19 @@ With the corpus map itself updated to reflect the 138-record reviewed layer, thi
 
 Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking per the known filename/content-mismatch hazard; Scripture Map and Tablet Map remain placeholders; the ~27 unresolved pass references and ~280 unreviewed meditations are unchanged from the prior phase.
 
+### Phase 3 (2026-09-01) — audio player component, built ahead of source material
+The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio/video source files exist anywhere in the repository (confirmed again — zero `.mp3/.m4a/.wav/.ogg/.aac/.mp4/.mov` files), the actual per-record audio integration remains genuinely blocked. What *is* unblocked is the component itself, so this phase built it ahead of time.
+
+**Built `assets/audio-player.js` + `assets/audio-player.css`.** A standalone, accessible custom player: play/pause button, seekable progress bar (`<input type=range>`, native `accent-color` styling), an elapsed/duration timestamp, a playback-speed `<select>` (0.75×–2×), a volume slider, and native `<track kind="captions">` support for a future `captionsUrl`. `mountAudioPlayer(mount, { audioUrl, captionsUrl, title })` is exposed on `window.JordanCrossingAudio` for direct use, plus an auto-init path for any `.audio-player-mount[data-audio-url]` element. The mount renders **nothing** (zero height, no console errors) whenever no `audioUrl` is supplied — which is every record today.
+
+**Wired the hook into all 138 record pages.** Added `#audio-player-mount` immediately before the article body, the `audio-player.css` stylesheet link, and the `audio-player.js` script tag to every `records/*-v2.html` page (both the 7 original seeds and the 131 generated pages), plus `design-v2-logic.js`'s `initAudioPlayer()` — which looks up the current record's `JC_RECORDS` entry and mounts a player only if `record.audioUrl` is present. Also updated `scripts/build-corpus-records.mjs`'s page template so any future generator run produces pages with the hook already in place, and documented the optional `audioUrl`/`captionsUrl` fields in `records-data.js`'s header comment.
+
+**Verified in-browser:** zero console errors across every top-level page and a sample of record pages with the new hook in place; confirmed the mount stays invisible/empty on every current record (no `audioUrl` anywhere yet); confirmed the player actually mounts, plays, pauses, and advances its seek bar correctly when given a real test audio URL via direct JS invocation (not committed — verification only).
+
+**What this does *not* unblock:** `integrate-audio-player` (wiring real audio into specific records) still requires the author to supply actual audio source files or linkable URLs. The day that happens, adding `audioUrl: '...'` (and optionally `captionsUrl`) to a record's `JC_RECORDS` entry is the entire remaining task — no further engineering needed.
+
 ### Blocked
-- **Audio (Phase 3):** audited — zero audio/video files exist anywhere in the repository for any record. The meditations here are text-only (PLAUD/Speakly-generated summaries). `build-audio-player` and `integrate-audio-player` are blocked until the author provides actual audio source files or linkable audio URLs.
+- **Audio, per-record integration:** the player component now exists (see Phase 3 above), but zero audio/video files exist anywhere in the repository for any record — the meditations here are text-only (PLAUD/Speakly-generated summaries). `integrate-audio-player` stays blocked until the author provides actual audio source files or linkable audio URLs.
 
 ### Pending human decision (not an engineering task)
 - **final-qa:** requires the actual stakeholder (project owner) to review and approve — this can't be done on their behalf.
@@ -62,16 +73,18 @@ Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking
 ### Data Structure
 - **records-data.js:** `JC_RECORDS` array (138 records — 7 original curated seeds + 131 generated from the six Cross-Reference passes — `href` pointing at `-v2.html` pages), `JC_EDGES` array (142 labeled thread connections: 121 same-cluster `"continues"`/`"answers"`/`"open"` edges + 21 cross-month `"echoes"` edges for the four named threads, each with a `source` citation), `JC_THREADS` array (the four named threads with their step sequences). The generated portion is rebuilt by `scripts/build-corpus-records.mjs`; the `JC_THREADS`/`"echoes"`-edge portion was hand-authored from the Corpus Map §10 and should be extended by hand if new thread hinges resolve to local pages.
 - **corpus-paths-data.js:** `JC_CORPUS_PATHS` array (6 reading paths with steps; most steps still link externally — see the living-archive note above)
-- **design-v2-logic.js:** page initialization, Markdown rendering, related records, prev/next chronology (`#graph-nav-mount`), reviewed thread connections (`#threads-mount`), and the `?mode=original` no-interpretation handling
+- **design-v2-logic.js:** page initialization, Markdown rendering, related records, prev/next chronology (`#graph-nav-mount`), reviewed thread connections (`#threads-mount`), audio player init (`#audio-player-mount`, only mounts if `record.audioUrl` is set), and the `?mode=original` no-interpretation handling
 - **mystery-v2-logic.js:** doorway pooling (keyword-matched against `JC_RECORDS`), guidance text, routing, and no-interpretation link targeting
-- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added. Re-running it will regenerate `JC_RECORDS` and the same-cluster edges but does **not** touch the hand-authored `JC_THREADS`/`"echoes"` edges, which live in the same file below the generated block.
+- **audio-player.js / audio-player.css:** standalone accessible audio player component (play/pause, seek, timestamp, speed, volume, captions track support), exposed as `window.JordanCrossingAudio.mountAudioPlayer()`; renders nothing until a record supplies an `audioUrl`
+- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added. Re-running it will regenerate `JC_RECORDS` and the same-cluster edges but does **not** touch the hand-authored `JC_THREADS`/`"echoes"` edges, which live in the same file below the generated block. Its page template already includes the audio-player mount/scripts for any newly generated page.
 
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
 - `jcGetPrevNext(id)` / `jcGetEdgesFor(id)` — chronology and labeled-edge lookups, used by both `design-v2-logic.js` (record pages) and `threads.html` (constellation view)
 - `jcShortId(id)` — normalizes full IDs to short IDs (e.g., '08-29-signpost' → 'signpost')
-- `initRelatedRecords()` / `initGraphNav()` / `initThreadConnections()` — run on page load to populate `related-records-mount` / `graph-nav-mount` / `threads-mount`
+- `initRelatedRecords()` / `initGraphNav()` / `initThreadConnections()` / `initAudioPlayer()` — run on page load to populate `related-records-mount` / `graph-nav-mount` / `threads-mount` / `audio-player-mount`
 - `applyNoInterpretationMode()` — hides interpretive sections when `?mode=original` is present
+- `JordanCrossingAudio.mountAudioPlayer(mount, { audioUrl, captionsUrl, title })` — mounts a fully wired player into any element; used by `initAudioPlayer()` and available for direct/manual use
 
 ### Deployment Pipeline
 - All changes committed to master → GitHub Actions auto-deploys to GitHub Pages
@@ -83,9 +96,10 @@ Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking
 
 - `index.html`, `mystery.html`, `threads.html`, `paths.html`, `archive.html` — all v2, all cross-linked in nav
 - `mystery-v2.html`, `record.html` — legacy pages kept only for redirect/reference; not linked from anywhere live except `record.html?mode=original` from the landing page's third invitation card (intentional — refers to the preserved v11 interior record, a different concept from a curated meditation's no-interpretation view)
-- `records/*-v2.html` (138 files) — all fully published, reviewed meditation records: the original 7 curated seeds plus 131 generated by `scripts/build-corpus-records.mjs` from the six Cross-Reference passes
+- `records/*-v2.html` (138 files) — all fully published, reviewed meditation records: the original 7 curated seeds plus 131 generated by `scripts/build-corpus-records.mjs` from the six Cross-Reference passes; every page now carries the audio-player mount/hooks (dormant until a record has an `audioUrl`)
 - `records/*.html` (7 files, no `-v2` suffix) — superseded by the `-v2` versions; no longer linked anywhere in the site after the routing fix, kept only as historical artifacts
 - `assets/favicon.svg` — new, linked from every page
+- `assets/audio-player.js`, `assets/audio-player.css` — the Phase 3 audio player component, built ahead of source material
 - `scripts/build-corpus-records.mjs` — the generator that produced the 131 new record pages and rebuilt `assets/records-data.js`; safe to re-run if the pass documents are extended
 - `records/*.md` (~407–410 files), `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, `Pass 1–6 *.md` — the raw corpus mirror described above; present but **not committed** (only the generated `-v2.html` output and `records-data.js` are committed)
 
@@ -101,9 +115,10 @@ Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking
 - ✓ Four named threads (Zechariah 3, Samuel Loop, Murmuration, Descent) resolved and navigable from Threads and the landing page
 - ✓ Mystery Mode doorways pool across the full 138-record reviewed set, not just the original 7
 - ✓ Reviewed thread connections and chronology visible directly on every record page (fixed a dead-code regression that had silently hidden them)
+- ✓ Audio player component built and wired into every record page, verified working; dormant until real audio source material is provided
 - ○ Landing page's Chronological/Thematic/Encounter maps are first drafts pending owner verification; Scripture Map and Tablet Map remain placeholders
 - ○ Remaining ~280 unreviewed meditations stay metadata-only in the Archive pending a future review pass
-- ○ Audio: blocked pending source material
+- ○ Audio: per-record integration blocked pending source material (component itself is done)
 - ○ Public launch: pending stakeholder sign-off and an explicit decision to lift the "not for public distribution" status
 
 ---

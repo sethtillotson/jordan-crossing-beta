@@ -1,0 +1,128 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Audio Player — Phase 3 (CHANGELOG roadmap)
+   ═════════════════════════════════════════════════════════════════════
+   Renders nothing (zero height, no visible box) until JS mounts an
+   actual player into it — see assets/audio-player.js. Safe to include
+   on every record page even while no record has an audioUrl yet.
+   ═════════════════════════════════════════════════════════════════════ */
+
+.audio-player-mount {
+  display: none;
+}
+
+.audio-player-mount.audio-player {
+  display: block;
+  margin: var(--space-6) 0;
+}
+
+.audio-player-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  background: rgba(201, 162, 39, 0.05);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.audio-play-btn {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--gold);
+  font-size: var(--text-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.audio-play-btn:hover {
+  background: rgba(201, 162, 39, 0.22);
+}
+
+.audio-play-btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.audio-player-body {
+  flex: 1 1 220px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.audio-progress-label,
+.audio-speed-label,
+.audio-volume-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.audio-progress {
+  width: 100%;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+
+.audio-progress:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.audio-time-row {
+  display: flex;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--parchment-dim);
+}
+
+.audio-player-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.audio-speed {
+  background: var(--current);
+  color: var(--parchment);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+}
+
+.audio-volume {
+  width: 5rem;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+
+.audio-speed:focus-visible,
+.audio-volume:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .audio-player-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .audio-player-controls {
+    justify-content: space-between;
+  }
+}

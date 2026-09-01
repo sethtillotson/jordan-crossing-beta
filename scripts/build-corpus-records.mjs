@@ -312,6 +312,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
   <title>${escAttr(title)} — Interior Beta</title>
   <meta name="description" content="${escAttr(summary)}">
   <link rel="stylesheet" href="../assets/design-v2.css?v=20260831V14">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260831V14">
 </head>
 <body data-record-id="${escAttr(id)}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -350,6 +351,9 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
           <p>This page displays the imported source text itself. Editorial thread links are outside this record and are labeled separately.</p>
         </div>
       </div>
+
+      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
+      <div class="audio-player-mount" id="audio-player-mount"></div>
 
       <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text">${article}</article>
@@ -540,6 +544,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
   </footer>
 
   <script src="../assets/records-data.js?v=20260831V14"></script>
+  <script src="../assets/audio-player.js?v=20260831V14"></script>
   <script src="../assets/design-v2-logic.js?v=20260831V14"></script>
 </body>
 </html>

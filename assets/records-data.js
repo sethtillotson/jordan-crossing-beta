@@ -15,6 +15,13 @@
  * - Records generated from the six Pass Cross-Reference documents carry
  *   edges whose `source` cites the specific pass + cluster section that
  *   justifies the connection. Do not add an edge without a source.
+ * - `audioUrl` (optional, Phase 3) — a playable audio source URL for this
+ *   record. When present, assets/audio-player.js mounts a player into the
+ *   record page's #audio-player-mount. `captionsUrl` (optional) points to
+ *   a WebVTT captions file for that audio. As of this writing no record
+ *   carries either field — the corpus is text-only — so no player
+ *   currently renders anywhere; this is a data-only gap, not an
+ *   engineering one. See CHANGELOG.md's "Phase 3: Audio Implementation."
  */
 
 'use strict';
