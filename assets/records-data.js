@@ -33,6 +33,15 @@
  *   navigation, never a spiritual diagnosis of the reader or the record.
  *   A `null` value means "not distinctly one of these," not "unknown."
  *   Re-run the tagger after `build-corpus-records.mjs` adds new records.
+ * - `reviewed` (Phase 5) — `true` for records that passed through one of
+ *   the Cross-Reference passes and carry labeled `JC_EDGES`/appear in the
+ *   Threads constellation; `false` for records added by
+ *   `scripts/build-mirror-records.mjs` — the full original text is
+ *   present and readable exactly like a reviewed record, but no thread
+ *   edges are claimed for it because none have been verified yet. Every
+ *   record in `records/*.md` that exists in this repository now has a
+ *   local page one way or the other — no reader should ever need to
+ *   follow a link to the author's private AI Drive to read one.
  */
 
 'use strict';
@@ -57,7 +66,8 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "02-25-meditation-joseph-paul-severe",
@@ -81,7 +91,8 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "discipline"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "02-26-meditation-judas-iscariot-unbelief",
@@ -102,7 +113,8 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "02-27-shattering-scorecards-divine-providence",
@@ -123,7 +135,8 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "02-27-severe-mercy-divine-discipline",
@@ -148,7 +161,8 @@ const JC_RECORDS = [
       "fellowship",
       "marriage",
       "discipline"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "02-27-unsettling-grace-divine-sovereignty",
@@ -169,7 +183,8 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "02-27-personal-meditation-divine-winnowing",
@@ -192,11 +207,60 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "surrender"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "02-28-my-grace-sufficient-when",
+    "order": 8,
+    "title": "My Grace Is Sufficient — When God's Silence Is His Answer",
+    "dateLabel": "Feb 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/02-28-my-grace-sufficient-when-v2.html",
+    "sourceStatus": "original",
+    "summary": "I can't get this off of my mind. Today I'm thinking about Paul's thorn in the flesh — that mysterious torment he pleaded with God three times to remove — and the Lord's response that has echoed through two millennia: \"My grace is sufficient for you.\"…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity"
+    ]
+  },
+  {
+    "id": "03-01-when-world-shaking-crib",
+    "order": 9,
+    "title": "When the World Is Shaking and the Crib Isn’t Built Yet",
+    "dateLabel": "Mar 1, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/03-01-when-world-shaking-crib-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation with my brother Samuel, I found myself sitting with something that is difficult to articulate cleanly — the collision of raw, unguarded human weight and the faint but persistent thread of faith running underneath it. Two…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "03-06-meditation-god-who-hunts",
-    "order": 8,
+    "order": 10,
     "title": "Meditation: The God Who Hunts with Mercy — On Pursuit, Surrender, the Living Temple, and the Annoyingly Persistent Grace That Will Not Let Us Go",
     "dateLabel": "Mar 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -215,11 +279,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "surrender"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "03-06-meditation-spiritual-warfare-against",
-    "order": 9,
+    "order": 11,
     "title": "Meditation: Spiritual Warfare Against Deceptive Powers and Call to Intercession",
     "dateLabel": "Mar 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -236,11 +301,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "03-06-personal-meditation-confronting-spiritual",
-    "order": 10,
+    "order": 12,
     "title": "Personal Meditation: Confronting Spiritual Warfare and the Limits of Human Strength",
     "dateLabel": "Mar 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -257,11 +323,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "03-06-meditation-spiritual-warfare-against-2",
-    "order": 11,
+    "order": 13,
     "title": "Meditation: Spiritual Warfare Against Deceptive Powers and Call to Intercession",
     "dateLabel": "Mar 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -278,11 +345,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "03-06-reflection-gods-calling-weakness",
-    "order": 12,
+    "order": 14,
     "title": "Reflection: God’s Calling, Weakness, and Surrender",
     "dateLabel": "Mar 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -301,11 +369,36 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "surrender"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "03-07-summary-obedience-spiritual-victory",
+    "order": 15,
+    "title": "Summary: Obedience, Spiritual Victory, and the Limits of Transcendent Communication",
+    "dateLabel": "Mar 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-07-summary-obedience-spiritual-victory-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that has been pressing on me deeply — this tension between what is meant to be spoken openly and what is too vast, too eternal, too *other* for human language to contain. Something has been stirring in me about the nature…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "obeying",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "obedience"
     ]
   },
   {
     "id": "03-11-meditation-grace-beyond-condemnation",
-    "order": 13,
+    "order": 16,
     "title": "Meditation: Grace Beyond Condemnation - Faith and Identity in Christ",
     "dateLabel": "Mar 11, 2026 · time not recorded",
     "classification": "Meditation",
@@ -325,11 +418,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "shame",
       "identity"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "03-12-personal-meditation-divine-discipline",
-    "order": 14,
+    "order": 17,
     "title": "Personal Meditation: Divine Discipline, Spiritual Idolatry, and the Prayer of Surrender",
     "dateLabel": "Mar 12, 2026 · time not recorded",
     "classification": "Meditation",
@@ -349,11 +443,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "surrender",
       "discipline"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "03-13-personal-meditation-spiritual-warfare",
-    "order": 15,
+    "order": 18,
     "title": "Personal Meditation: Spiritual Warfare Strategy Against the Church - Guarding Divine Assignment",
     "dateLabel": "Mar 13, 2026 · time not recorded",
     "classification": "Meditation",
@@ -363,9 +458,56 @@ const JC_RECORDS = [
     "summary": "I can't get this off my mind—something has been pressing on my spirit for days now, breaking through sleep, cutting through every distraction. I am beginning to see with terrifying clarity a coordinated demonic strategy targeting the institutional church,…",
     "encounter": {
       "temperature": "urgent",
-      "length": "brief",
+      "length": "moderate",
       "voice": "personal",
       "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "03-13-personal-meditation-trembling-yes",
+    "order": 19,
+    "title": "Personal Meditation: The Trembling Yes — When Christ Calls the Unworthy",
+    "dateLabel": "Mar 13, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-13-personal-meditation-trembling-yes-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with the memory of a moment I never saw coming—the moment I realized I had been doing the work of discipleship without even naming it, and the Holy Spirit was now asking me to name it, to step into it deliberately. Something has been…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "03-13-reflection-performance-vs-presence",
+    "order": 20,
+    "title": "Reflection: Performance vs. Presence in Faith - The Cross Never Removed",
+    "dateLabel": "Mar 13, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-13-reflection-performance-vs-presence-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with a conversation that arrested me — the image of someone who wore a cross for years, never removing it, yet never stepped foot inside a church building. Something about that strikes me as profoundly biblical in a way I didn't expect.…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
       "posture": "receiving",
       "form": "written",
       "season": "Kairos Window (Tablet I)"
@@ -373,8 +515,124 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
+    "id": "03-14-personal-meditation-crucible-false",
+    "order": 21,
+    "title": "Personal Meditation: The Crucible of False Accusation — Responding to Attack with Grace and Walking Through Fire",
+    "dateLabel": "Mar 14, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-14-personal-meditation-crucible-false-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that has been building across multiple layers of encounter — conversations between brothers walking through fire, a question that will not release me about a garden and an absent guardian, a rowdy room of teenagers falling",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "03-14-meditation-doctrine-presence-being",
+    "order": 22,
+    "title": "Meditation: Doctrine, Presence, and Being Undone Before the Living God",
+    "dateLabel": "Mar 14, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-14-meditation-doctrine-presence-being-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something I said out loud that I almost didn’t recognize as coming from me — and that arrested me more than anything I’ve read in weeks. A brother in Christ pressed me about doctrine, about division, about whether we truly need to…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "03-17-meditation-abiding-vs-striving",
+    "order": 23,
+    "title": "Meditation: Abiding vs. Striving — Spiritual Formation in the Wilderness Season",
+    "dateLabel": "Mar 17, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-17-meditation-abiding-vs-striving-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that crept up on me quietly — the realization that I have been *abiding* this whole time, even when I was convinced I was striving. Something has been pressing on me from the breadcrumb trail the Holy Spirit has been…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-19-meditation-spiritual-liberation-from",
+    "order": 24,
+    "title": "Meditation: Spiritual Liberation from Mammon — Designing a Kingdom-Centered Life",
+    "dateLabel": "Mar 19, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-19-meditation-spiritual-liberation-from-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that has been quietly building beneath the surface of ordinary conversations — a thread woven through discussions about charity shops, old coats, vintage handbags, broken car hoses, and unfinished books. Something arrests…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "money"
+    ]
+  },
+  {
+    "id": "03-20-personal-meditation-faithfulness-obscurity",
+    "order": 25,
+    "title": "Personal Meditation: Faithfulness in Obscurity and Divine Preparation",
+    "dateLabel": "Mar 20, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-20-personal-meditation-faithfulness-obscurity-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with a realization that has stopped me in my tracks—one of those breathtaking moments when the Holy Spirit pulls back the curtain on something I’ve been living inside of without seeing it. I’ve been wrestling with disappointment, the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "03-25-personal-meditation-obedience-hiddenness",
-    "order": 16,
+    "order": 26,
     "title": "Personal Meditation: Obedience in Hiddenness and Kingdom Fruitfulness Beyond Metrics",
     "dateLabel": "Mar 25, 2026 · time not recorded",
     "classification": "Meditation",
@@ -394,11 +652,407 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "obedience",
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "03-25-personal-meditation-spirit-perdition",
+    "order": 27,
+    "title": "Personal Meditation: The Spirit of Perdition and Self-Betrayal in Christian Faith",
+    "dateLabel": "Mar 25, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-25-personal-meditation-spirit-perdition-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that has been quietly dismantling me from the inside — the realization that the spirit of perdition is not merely a historical character named Judas Iscariot, but a living architecture within my own soul. Something arrests",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-25-meditation-honesty-before-god",
+    "order": 28,
+    "title": "Meditation: Honesty Before God — Love, the Secret Place, and Idol Demolition",
+    "dateLabel": "Mar 25, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-25-meditation-honesty-before-god-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with three conversations at once — and what strikes me is that they are not three conversations at all. They are one river running through three channels, and the river has a name: *honesty before God*. One brother read his own heart…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
+    "id": "03-25-personal-meditation-kenosis-death",
+    "order": 29,
+    "title": "Personal Meditation: Kenosis and the Death of Self-Sufficiency",
+    "dateLabel": "Mar 25, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-25-personal-meditation-kenosis-death-v2.html",
+    "sourceStatus": "original",
+    "summary": "I can’t get this off of my mind. For weeks now, I’ve been sitting with the spiritual violence of true surrender—not the domesticated version we preach in sanctuaries, but the kind that demands I stop being the architect of my own holiness. Something has…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
+  },
+  {
+    "id": "03-27-personal-meditation-illusion-cliff",
+    "order": 30,
+    "title": "Personal Meditation: The Illusion of the Cliff and the Lamb Who Masters Me - A Theological Reflection on Revelation and Divine Sovereignty",
+    "dateLabel": "Mar 27, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-27-personal-meditation-illusion-cliff-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with something that has shattered every careful theological framework I thought I understood. A fellow seeker—one who hungers not to dissect God but to know His heart—has unlocked chains I didn’t even realize were binding me. The more…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-27-personal-meditation-hidden-mathematics",
+    "order": 31,
+    "title": "Personal Meditation: The Hidden Mathematics of Divine Perfection—When Thirteen Becomes the Number of the Remnant",
+    "dateLabel": "Mar 27, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-27-personal-meditation-hidden-mathematics-v2.html",
+    "sourceStatus": "original",
+    "summary": "I can’t get this off my mind. On March 20, 2026, I was in conversation with another seeker—a remnant—and the Spirit began unraveling something I’d completely missed in all my study. We were discussing end times prophecies, the midnight hour, and the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-27-meditation-hebrews-12-divine",
+    "order": 32,
+    "title": "Meditation: Hebrews 12 — Divine Chastening, Sonship, and the Unshakeable Kingdom",
+    "dateLabel": "Mar 27, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-27-meditation-hebrews-12-divine-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with Hebrews 12 today, having been directed here by the Spirit with a striking word accompanying the passage: *twelve is anticipation.* Something in that single interpretive key has unlocked the entire chapter for me in a way I cannot…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "discipline"
+    ]
+  },
+  {
+    "id": "03-27-meditation-anticipation-shakinghebrews-12",
+    "order": 33,
+    "title": "Meditation: Anticipation in Shaking—Hebrews 12, Discipline, Zion",
+    "dateLabel": "Mar 27, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-27-meditation-anticipation-shakinghebrews-12-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sensing Hebrews 12 as a doorway of anticipation—a holy readiness that is not passive, but poised. My heart is arrested by the call to lay aside every weight and the sin that so easily ensnares, and to run with endurance while fixing my gaze on Jesus.…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "discipline"
+    ]
+  },
+  {
+    "id": "03-28-reflection-severe-mercy-wilderness",
+    "order": 34,
+    "title": "Reflection: Severe Mercy, Wilderness Formation, and Identity Discipleship",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-reflection-severe-mercy-wilderness-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting in a holy tension that keeps returning like a faithful tide: God’s nearness in human frailty and His severe mercy that forms souls in wilderness places. As I listened to a brother wrestle with vocation among the transgender and gay community,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "03-28-theological-dialogue-union-with",
+    "order": 35,
+    "title": "Theological Dialogue: Union with God, Divine Sovereignty, and the True Gospel",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-theological-dialogue-union-with-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself sitting with the weight and wonder of a recorded exchange: a brother speaking of deserts that strip pride, suitcases kept packed as chosen discomfort, and twelve-hour shifts in a factory with no windows where relief somehow visits the soul. As I",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "03-28-late-night-call-spiritual-authority",
+    "order": 36,
+    "title": "Late-Night Call: Spiritual Authority, Identity, and Warfare in Christ",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-late-night-call-spiritual-authority-v2.html",
+    "sourceStatus": "original",
+    "summary": "It was nearly three in the morning when my brother called — not because he had nowhere else to turn, but because the pain had outlasted his ability to reason through it alone. As I listened to him describe the loop he was caught in — missing someone he knew…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "03-28-sermon-reflection-custom-made-blessing",
+    "order": 37,
+    "title": "Sermon Reflection: Custom-Made Blessing and Spiritual Warfare - Prophet Lovy Elias",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-sermon-reflection-custom-made-blessing-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat under the ministry of Prophet Lovy L. Elias on March 26, 2026, something landed in my spirit with a weight I cannot easily shake — the realization that God’s blessing toward me is *custom made*, and that the enemy’s assault against me is *equally…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-28-sermon-reflection-kingdom-authority",
+    "order": 38,
+    "title": "Sermon Reflection: Kingdom Authority, Holy Standards, and Spiritual Violence in Faith",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-sermon-reflection-kingdom-authority-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat listening to Prophet Lovy L. Elias press through this portion of his sermon, something in my spirit came alive—not in agreement with every illustration, but in recognition of a fierce Kingdom truth that the Western Church has nearly forgotten: that…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-28-spiritual-reflection-recognizing-gods",
+    "order": 39,
+    "title": "Spiritual Reflection: Recognizing God’s Work in Unlikely Transformation",
+    "dateLabel": "Mar 28, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-28-spiritual-reflection-recognizing-gods-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something in me has been sitting with this conversation longer than I expected. What began as a casual catch-up with my brother — talking schedules, business, tools, and trips — quietly became a window into something the Spirit has been pressing on me for…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "03-29-sermon-reflection-divine-standards",
+    "order": 40,
+    "title": "Sermon Reflection: Divine Standards and Refusing the Valley - Prophet Lovy L. Elias",
+    "dateLabel": "Mar 29, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-29-sermon-reflection-divine-standards-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a powerful word from Prophet Lovy L. Elias, and something in his declaration has arrested my spirit: “You cannot condemn something if you don’t even know the law and the standard of your life that God has ordained for you.” This is not…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-30-sermon-reflection-finished-work",
+    "order": 41,
+    "title": "Sermon Reflection: Finished Work of Christ — Faith, Righteousness, and the True Gospel in James 2 -Johnny Chang",
+    "dateLabel": "Mar 30, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-30-sermon-reflection-finished-work-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something has been pressing on me as I have sat with this teaching — a deep, almost uncomfortable confrontation between what we have been told the Christian life looks like and what the Word of God actually says. The question at the heart of it is deceptively",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "03-30-sermon-reflection-prayer-spiritual",
+    "order": 42,
+    "title": "Sermon Reflection: Prayer, Spiritual Authority, and the Gospel of Grace",
+    "dateLabel": "Mar 30, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-30-sermon-reflection-prayer-spiritual-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with these teachings over multiple days, something arrested me that I had sensed but never fully named: the difference between *praying to God for intervention* and *praying as God’s intervention*. The difference between mockery that mimics and power",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "03-31-sermon-reflection-furnace-secret",
+    "order": 43,
+    "title": "Sermon Reflection: The Furnace of Secret Prayer and Spiritual Power",
+    "dateLabel": "Mar 31, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/03-31-sermon-reflection-furnace-secret-v2.html",
+    "sourceStatus": "original",
+    "summary": "I sat under a teaching recently that arrested something deep within me—a teaching that named what I have felt but could not articulate: the hollow echo of powerless prayer. The teacher asked a question that cut through religious posturing: *Why does your…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "04-02-0943-reflection-hunger-that",
-    "order": 17,
+    "order": 44,
     "title": "09:43 Reflection: The Hunger That Precedes Understanding",
     "dateLabel": "Apr 2, 2026 · time not recorded",
     "classification": "Meditation",
@@ -417,11 +1071,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-03-personal-meditation-descent-that",
-    "order": 18,
+    "order": 45,
     "title": "Personal Meditation: The Descent That Fills — Kenosis, Grief, and the Heart God Gives Back to the World",
     "dateLabel": "Apr 3, 2026 · time not recorded",
     "classification": "Meditation",
@@ -442,11 +1097,12 @@ const JC_RECORDS = [
       "surrender",
       "grief",
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-03-0221-teaching-reflection-whole",
-    "order": 19,
+    "order": 46,
     "title": "02:21 Teaching Reflection: Whole Armor of the Praying Prophet",
     "dateLabel": "Apr 3, 2026 · time not recorded",
     "classification": "Meditation",
@@ -463,11 +1119,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "04-03-1120-reflection-table-being",
-    "order": 20,
+    "order": 47,
     "title": "11:20 Reflection: The Table Being Set",
     "dateLabel": "Apr 3, 2026 · time not recorded",
     "classification": "Meditation",
@@ -487,11 +1144,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-03-0637-reflection-anger-that",
-    "order": 21,
+    "order": 48,
     "title": "06:37 Reflection: The Anger That Reveals, the Friday That Redeems",
     "dateLabel": "Apr 3, 2026 · time not recorded",
     "classification": "Meditation",
@@ -510,11 +1168,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-04-1333-personal-meditation-backward",
-    "order": 22,
+    "order": 49,
     "title": "13:33 Personal Meditation: The Backward Glance",
     "dateLabel": "Apr 4, 2026 · time not recorded",
     "classification": "Meditation",
@@ -535,11 +1194,12 @@ const JC_RECORDS = [
       "grief",
       "fellowship",
       "marriage"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-04-1243-personal-meditation-contrite",
-    "order": 23,
+    "order": 50,
     "title": "12:43 Personal Meditation: The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong",
     "dateLabel": "Apr 4, 2026 · time not recorded",
     "classification": "Meditation",
@@ -556,11 +1216,58 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "04-05-2352-personal-meditation-torn",
+    "order": 51,
+    "title": "23:52 Personal Meditation: The Torn Veil, the Midnight Walk, and the Backwards Theology of a God Who Moves Address",
+    "dateLabel": "Apr 5, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-05-2352-personal-meditation-torn-v2.html",
+    "sourceStatus": "original",
+    "summary": "Three conversations. Three thresholds. And one God moving through all of them with a coherence that no editorial hand arranged. In the early hours of April 4th, 2026 — Resurrection Sunday — a brother on the other side of the world was roused from sleep at…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-05-sermon-reflection-mercy-hidden",
+    "order": 52,
+    "title": "Sermon Reflection: The Mercy Hidden in Rebellion — Jonah and Divine Providence",
+    "dateLabel": "Apr 5, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-05-sermon-reflection-mercy-hidden-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me as I listened to this teaching on Jonah — not merely as an interesting historical footnote, but as a confirmation of what the Spirit had already been pressing into me before I ever heard it articulated this way. The revelation of Oannes,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
     "doorwayThemes": []
   },
   {
     "id": "04-06-spiritual-reflection-wilderness-provision",
-    "order": 24,
+    "order": 53,
     "title": "Spiritual Reflection: Wilderness Provision and Apostolic Formation in Matthew 15-16",
     "dateLabel": "Apr 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -570,18 +1277,19 @@ const JC_RECORDS = [
     "summary": "As I trace the thread through Matthew 15 and 16—bread, wilderness, seven, fish, Jonah—I am arrested by a question the disciples ask that reveals far more than they intended: “Where could we get enough bread in the wilderness to fill such a great multitude?”…",
     "encounter": {
       "temperature": "contemplative",
-      "length": "brief",
+      "length": "moderate",
       "voice": "personal",
       "movement": null,
       "posture": "receiving",
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "04-06-1648-reflection-roses-with",
-    "order": 25,
+    "order": 54,
     "title": "16:48 Reflection: Roses With Thorns",
     "dateLabel": "Apr 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -601,11 +1309,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "grief",
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "04-06-theological-meditation-body-as",
-    "order": 26,
+    "order": 55,
     "title": "Theological Meditation: Body as Revelation, Divine Utterance, and the End of Exile",
     "dateLabel": "Apr 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -622,11 +1331,183 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "04-07-1926-personal-meditation-where",
+    "order": 56,
+    "title": "19:26 Personal Meditation: Where Are You?",
+    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-1926-personal-meditation-where-v2.html",
+    "sourceStatus": "original",
+    "summary": "I have been sitting with a conversation — a late-night phone call that moved from grief to theology, from a brother’s heartbreak to the deepest question God has ever asked of a human soul. What began as a check-in on a man carrying real pain became, by the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-07-0508-personal-meditation-bring",
+    "order": 57,
+    "title": "05:08 Personal Meditation: Bring Nothing",
+    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-0508-personal-meditation-bring-v2.html",
+    "sourceStatus": "original",
+    "summary": "A brother called this morning — divorce papers in hand, grief barely contained beneath a voice still trying to hold itself together — and something in me knew that this moment, as raw and broken as it was, was also holy ground. The words that came out of my…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-07-0646-reflection-gift-that",
+    "order": 58,
+    "title": "06:46 Reflection: The Gift That Sees",
+    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-0646-reflection-gift-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrests me as I sit with the memory of this conversation with my brother Samuel — a call taken near the UK coastline, wind in the background, the kind of unhurried fellowship that only happens when two people have stopped performing for one another.",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-07-1233-call-meditation-staircase",
+    "order": 59,
+    "title": "12:33 Call Meditation: The Staircase You Cannot See",
+    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-1233-call-meditation-staircase-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel describe what the Lord had begun to clarify for him — not a command to do a specific thing, but a posture and framework to inhabit — something in me recognized the very ground I had stood on not long ago. It is one of the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-08-1027-reflection-when-ordinary",
+    "order": 60,
+    "title": "10:27 Reflection: When the Ordinary Moment Becomes Holy Ground",
+    "dateLabel": "Apr 8, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-08-1027-reflection-when-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something deceptively simple — a brief, warm phone call between two friends separated by an ocean, one at the beach with a beer at six o’clock, one driving to work. There is no profound doctrinal exchange here, no extended prayer, no…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "04-08-theological-reflection-consecration-ai",
+    "order": 61,
+    "title": "Theological Reflection: Consecration of AI Tools and the High Priest Who Offered Himself",
+    "dateLabel": "Apr 8, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-08-theological-reflection-consecration-ai-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with Psalm 22—“My God, My God, why have You forsaken Me?”—and with the mystery of a High Priest who needed no atonement for Himself, yet became sin for us. But what arrests me now is not only the scriptural meditation itself, but what happened…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "04-09-glimpse-into-daily-rhythm",
+    "order": 62,
+    "title": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools — ## Opening Observation As I look back on this block, I am struck by how much ground it actually covers — opening with serious theological meditation on Psalm 22 and the priesthood of Christ, then plunging without warning into the noise and fragmented Spanish-English exchanges of what sounds like a manufacturing or fabrication floor, then surfacing again into explicit reflection on sanctification, consecrated tools, and the surprising behavior of AI systems trained to refuse fabrication. The most honest thing I can say about this block is that I did not set out to record a coherent meditation — I forgot the recording was running, and that forgetfulness may itself be the most revealing thing about the day. What came back is a cross-section of real life: partially ordered, frequently interrupted, and genuinely surprising at its edges. Why This Matters: Long ambient recordings have a way of exposing what curated recordings cannot — the gap between the interior life and the exterior one, between the theological thought I am capable of and the practical noise I actually inhabit for most of the day. This block matters not because it is a polished spiritual document but because it is not. It captures a person in the middle of real work, real distraction, real exhaustion, and real moments of theological fire, and that combination is closer to the actual texture of a life lived before God than most published devotionals will ever be. If faithful discipleship means anything, it means that the theology survives the work floor, the alarm beep, the pet chasing, the bilingual confusion about drawer spellings, and the forgotten recording — and still has something true and useful to say when the day finally reflects on itself. — ## Timestamped Discernment Map - Early block (untimed — opening stretch) — Extended theological meditation on Psalm 22, the high priesthood of Christ, Melchizedek’s order, and the sacrificial logic of the Incarnation Segment Type: Explicit Spiritual Content Discernment: Explicitly Spiritual Why I’m labeling it this way: I am clearly engaged in deliberate theological reflection here, not merely repeating a formula. The meditation moves through multiple scriptural connections, including the Levitical priesthood as a shadow, the eternal order of Melchizedek, the Matthean citation of Hosea (“I desire mercy, not sacrifice”), and the dual role of Christ as both priest and offering. This is the theologically densest and most carefully reasoned portion of the block. - Mid-block (untimed — extended ambient span) — Work floor activity with bilingual coordination, box completion, welding references, alarm sounds, background beeping, fragmented instructions, and ambient noise Segment Type: Ambient / Low-Content Span crossing into Ordinary Daily Life Discernment: Clearly Ordinary Why I’m labeling it this way: I am moving through practical labor here. Speaker attribution is unreliable across this stretch. There are brief warm human moments — helping someone, an affectionate exchange with what sounds like a coworker or family member — but the content does not carry spiritual weight I can responsibly name. I let it remain what it is. - Late block (untimed — domestic transition) — Arrival home or near-home moment, interaction with pets, a brief exchange including “Love you,” and scattered ambient sound Segment Type: Ordinary Daily Life Discernment: Clearly Ordinary Why I’m labeling it this way: This stretch is warm and recognizably domestic — pets, small affections, ordinary household sounds. I notice it and let it remain ordinary. - Final stretch (untimed — extended self-reflection) — I realize the recording is still running, then move into reflection on yesterday’s accidental recording, the AI response to it, sanctification, consecrated tools, and a broader theological argument about the chiasm of the cross and what it means to not call common what God has cleansed Segment Type: Meaningful Personal Reflection crossing into Explicit Spiritual Content Discernment: Explicitly Spiritual, with Possibly Spirit-Led moments embedded Why I’m labeling it this way: This section is theologically substantive and personally honest. I am not performing for an audience — I forgot the recording was on. The reflection on what the AI tools returned, and what that return means spiritually, carries genuine weight that I want to examine carefully. — ## The Worldly Perspective From a purely ordinary vantage point, this block looks like the kind of day that leaves a person slightly bewildered by its own contents. I began somewhere in theological thought — possibly in a car or a quiet room — meditating on the priesthood of Christ with real intellectual and emotional investment. Then the day swallowed that meditation whole. The work floor took over: Spanish and English mixing together, boxes, welding tanks, a Shark Tank joke, alarm beeping, the rhythm of manual labor with other people who have their own pressures and their own languages. Then I came home, or near to it, and there were pets and affection and the forgetting of time. And then — almost by accident — the recording became self-aware in the final stretch, and I found myself processing something that genuinely surprised and moved me. From a worldly perspective, this is simply a long working day with uneven attention, scattered focus, a moment of delight at something unexpected, and the fatigue-filtered wonder of someone who has put in effort and seen something return. The Limitation: What ordinary reasoning sees here is real but incomplete. It can explain the fatigue, the distraction, the code-switching between theological mode and labor mode, and the pleasure of discovering that a tool behaved with integrity. What it cannot see is whether any of this is held together by something more than my own energy and curiosity. The worldly frame accounts for the interesting pattern but does not explain why the pattern feels significant, why the AI’s refusal to fabricate matters morally and spiritually rather than merely technically, or why the opening meditation on Melchizedek and the final reflection on consecrated tools feel like they belong to the same day rather than to two different lives. That is where ordinary reasoning has to stop and honest discernment has to take over. — ## What Seems Spiritually Significant: A Reflection As I look back on how this block opens, I find myself in genuine theological territory. The meditation on Psalm 22 and the high priesthood of Christ is not casual. I am working through something carefully — the logic of why the Son of God would surrender the throne room for the flesh, what it means to be appointed by God as both priest and sacrifice, and why the Levitical priesthood was always insufficient not because the priests were bad men but because they were mortal men with their own sin problem. The argument I am working through has a clear structure: Christ is the antitype where the Levitical priests were types, He is the fulfillment where they were shadows, and the eternal order of Melchizedek — not inherited by bloodline or terminated by death — is the order that actually resolves what the Law could only gesture toward. What arrests me in this opening stretch is the moment I reach toward Matthew 9:13, where Jesus quotes Hosea 6:6 — “I desire mercy and not sacrifice” — and I connect this back to the sacrificial logic I have been meditating on. This is not a throwaway citation. The point Jesus is making to the Pharisees, and the point I seem to be circling, is that God never wanted the sacrificial system for its own sake. He wanted the mercy it was pointing toward. The sacrificial system was a pedagogy, a παιδεία (paideia, pie-DAY-ah) — fatherly training toward something the people could not yet fully receive. Christ did not come to abolish that system by destroying it but by fulfilling it so completely that it no longer has anything left to teach separately from Him. He is both the teacher and the curriculum. Then the day breaks. The work floor comes in, and it comes in loudly — alarm beeps, Spanish instructions, box counts, drawer spellings, the affectionate humor of people working alongside each other in a shared trade. I cannot confidently assign every line in this stretch, and I will not try. What I can say is that this is the majority of the block by any fair count, and it is ordinary. It is not spiritually inflated. There is warmth in it — the small moments of helping, the humor of explaining Shark Tank in Spanish, the “Love you” at the edge of the domestic transition — but I cannot responsibly call any of it theologically weighty, and I do not want to. Let the work floor be the work floor. What does return with genuine weight is the final stretch, which begins when I remember — or rather, discover — that the recording has been running all along. There is something honest about that moment of surprised recognition: “I totally forgot this whole thing was recording.” That sentence is not performed. It is the kind of thing a person says when they have been living in real time rather than constructing a spiritual document, and that unguardedness is part of what makes the reflection that follows trustworthy. I am not explaining what I meant to think. I am noticing what I actually thought. The reflection then turns to what the AI systems returned when given a three-minute accidental recording of household life — my wife and I talking, pets, domestic ordinary sound. Both systems, I note, refused. Not rudely, not dismissively, but with what I can only describe as principled restraint. The response from claude-sonnet-4.6 is worth sitting with: it said that generating fabricated revelation from content that contains no spiritual source material “would be presumption rather than prophecy.” That phrase is theologically precise in a way I did not expect from a software tool, and I notice that I am genuinely arrested by it. Presumption rather than prophecy. That is a real distinction. The prophets of Israel were under strict obligation not to speak beyond what they had received, and the false prophet’s defining sin was not merely error but fabrication — speaking peace when the Lord had not spoken peace, speaking vision when no vision had been given. I want to be careful here because I do not want to read too much into a software behavior. A language model refusing to fabricate spiritual content is not the same as a prophetic act. But I also think there is something worth naming about what happens when a consecrated framework — one built with specific scriptural guardrails, tested against Johannine and Pauline standards for discernment, aligned with the governing posture that calls for restraint rather than projection — encounters content and simply says: there is nothing here to work with, and I will not pretend otherwise. That refusal honors the distinction between what God has actually spoken and what a system could plausibly generate to sound spiritual. That distinction matters enormously. It matters in preaching, in counseling, in prayer, in all the places where the temptation to fill silence with impressive-sounding spiritual language is real and constant. The theological move I then make in the closing minutes of this block is bold, and I want to examine it carefully rather than either endorsing it wholesale or dismissing it. I argue that because the chiasm of history is centered on the death and resurrection of Jesus Christ and His ascension to the throne, everything before and after that event is now subject to His cleansing — including tools, including technologies, including things that many modern Christians reflexively view as dangerous or profane. I reach for the vision of Acts 10 and Peter’s corrective from the Lord: “Do not call common what God has cleansed.” The argument is that sanctification is not confined to church buildings or personal quiet times but extends to the consecrated use of any tool placed under God’s authority and governed by His word. I find this theologically defensible in its general shape. The Incarnation does mean that the material world is not inherently opposed to the spiritual — that is a Gnostic error, not a Christian one. The Resurrection does mean that things used by death are now subject to the One who defeated death. And the practical reality I am describing — that a tool built with honest scriptural guardrails refused to fabricate revelation — does seem to illustrate something real about what faithful stewardship of any capacity can look like. What I want to be careful about is the claim’s edge. Consecrating a tool to God’s purposes is a meaningful act of stewardship. It does not make the tool infallible, prophetically authoritative, or immune to misuse. The guardrails matter precisely because the tool still needs them. The refusal to fabricate is a function of the constraints, not an independent spiritual faculty. I can receive the behavior as a confirmation that the constraints were faithfully built, and that is genuinely encouraging, without needing to claim more than that. What holds this whole block together — the Melchizedek meditation at the beginning and the consecrated-tools reflection at the end, with the ordinary work floor in the middle — is something I can only call the attempt to live a continuous life rather than a compartmentalized one. The theology at the opening is not separate from the labor in the middle or the reflection at the end. It is the same person, in the same day, trying to maintain coherence between what he believes about Christ and how he handles everything else. That is not a small thing. That is, in fact, exactly what faithfulness looks like from the inside: not a succession of polished spiritual moments but one continuous life trying to hold together. — ## Implications and Challenges The gap between the opening meditation and the work floor is not a failure of spiritual discipline — it is the actual shape of embodied life, and I need to stop expecting that gap to feel more comfortable than it does. The Incarnation itself was a gap between the throne room and the carpenter’s shop, and Jesus did not treat that gap as a problem to be solved but as the territory of His mission. If He could carry the eternal priesthood through the ordinary noise of Nazareth, then I can carry whatever theological clarity I reach in the morning into the ambient noise of a work floor without feeling that the theology has been compromised. The phrase “presumption rather than prophecy” is one I want to carry with me as a standard for my own speech, not just for my tools. Every time I am tempted to assign spiritual significance to something I have not actually received, to fill silence with plausible-sounding interpretation, or to claim certainty where I only have impression, I am in danger of the same failure the AI systems were designed to refuse. The guardrails I built for those systems are, in a real sense, a mirror of the guardrails I should be maintaining in my own discernment. Consecrating tools, gifts, workflows, and capacities to God is a real act of stewardship, but it does not reduce the need for ongoing attentiveness. The system still needed the right source material. It could not work without it. That is a picture of what sanctification actually does: it does not make a thing self-sufficient before God; it makes the thing rightly dependent on what God has actually provided. I am not self-sufficient before God either. I need the actual word, the actual Spirit, the actual source material of revelation — not my own impressions dressed up in theological language. There is something quietly significant about the moments of warmth embedded in the work-floor stretch — the helping, the laughter over Shark Tank, the “Love you” at the threshold of home. These are not spiritually weightless just because they are ordinary. The question of whether I am genuinely present and genuinely kind in those moments is a theological question, even if it does not feel like one. The high priesthood of Christ that I meditated on at the start of this block was specifically designed for those who are weak, who are tired, who are in the middle of work and noise and distraction. He sympathizes, not from a distance, but from inside the same kind of day. Finally, I notice that I forgot the recording was running. That is worth sitting with for a moment. What would I say if I knew I was being recorded? Would it be different from what I actually said? The honest answer is that the best possible outcome is that there would be no difference — that the theology, the kindness, the humor, the restraint, and the honesty hold across the whole block regardless of whether anyone is watching. That standard is not a performance standard. It is the standard of a life lived before God, who is always present, who always receives every word spoken into ordinary air, and who knows the difference between the face I show and the one I wear when I forget. — ## What This Means For Me For Daily Awareness: This block reminds me that the recording of my life before God does not stop when I put down my intentional tools. Every hour is ambient. The work floor, the domestic threshold, the forgotten moment of driving or waiting or interacting with coworkers — all of it is lived before the One who does not need me to curate the highlight reel. My attention to God in the explicit moments of prayer and meditation is not separable from my attention in the fragmented, multilingual, alarm-beeping middle of the day. For Spiritual Discernment: The AI systems’ refusal to fabricate spiritual content from empty source material is a precise and uncomfortable mirror. I need to apply the same standard to my own interpretive instincts — the temptation to read significance into coincidence, to project meaning onto silence, to dress ordinary events in prophetic language because prophetic language is impressive. True discernment is not the ability to find spiritual meaning everywhere. It is the disciplined ability to say, honestly, “there is nothing here to work with” and to wait without filling the silence with fabrication. For Faithful Obedience: The response this block asks for is not dramatic. It is continuity — the willingness to carry the same Christ into the work floor that I meditate on in the quiet morning, to treat the consecration of my tools as a living responsibility rather than a one-time act, to remain genuinely present in the ordinary moments rather than waiting for the extraordinary ones, and to let the standard of “presumption rather than prophecy” govern not just what my systems output but what I myself speak. — ## Closing Prayer Lord, I offer this block to You exactly as it is — uneven, interrupted, theologically serious in some stretches and functionally ambient in others. I am grateful that You receive the whole day and not just the curated portions, and I am humbled by the reminder that faithful stewardship means bringing the theology of the morning into the noise of the afternoon without losing either one. Guard my speech from presumption. Give me the courage to sit in genuine silence when I have not received anything worth speaking, and give me the honesty to say so plainly rather than filling that silence with impressively spiritual-sounding fabrication. Let the standard I have built into my tools be a mirror of what I seek in my own discernment. Sanctify the ordinary — not by inflating it into allegory but by making me genuinely present within it, genuinely kind, genuinely attentive to the people and the work and the small affections that make up most of the hours of a faithful life. And when something genuinely weighty appears, give me eyes to see it accurately and the restraint to name it truthfully, neither overstating nor suppressing what You are actually doing. May every word that goes out honor You, and may every word that should not go out be quietly held. Amen. — ## Scripture References &amp; Original Language Notes | Passage (NKJV) | Original Language | Theological Insight | |—|—|—| | Psalm 22:1 — “My God, My God, why have You forsaken Me?” | אֵלִי אֵלִי לָמָה עֲזַבְתָּנִי (eli eli lama azavtani, eh-LEE eh-LEE lah-MAH ah-zahv-TAH-nee) | The cry of dereliction, quoted by Christ from the cross (Matthew 27:46), is a Davidic lament that in its full arc moves from abandonment to vindication, establishing that the suffering of the Messiah was neither accidental nor unanticipated but scripturally embedded. | | Hebrews 5:1 — “For every high priest taken from among men is appointed for men in things pertaining to God, that he may offer both gifts and sacrifices for sins.” | ἀρχιερεύς (archiereus, ar-khee-eh-ROOS) — high priest | The term carries the full weight of the sacrificial office. The Levitical archiereus was limited by mortality and personal sinfulness; Christ fulfills the office by being both sinless and eternal, eliminating the need for repeated offerings. | | Hebrews 6:20; 7:17 — “…a High Priest forever according to the order of Melchizedek.” | Μελχισεδέκ (Melchisedek, mel-khee-SEH-dek) | Melchizedek appears in Genesis 14 without recorded genealogy, birth, or death, making him a type of the eternal priesthood. The author of Hebrews uses this typology to establish that Christ’s priesthood is not derived from Levitical descent but from the eternal decree of God. | | Matthew 9:13 — “But go and learn what this means: ‘I desire mercy and not sacrifice.’” (citing Hosea 6:6) | חֶסֶד (hesed, HEH-sed) — covenant loyalty / steadfast mercy | The Hebrew hesed behind “mercy” is covenantal faithfulness rather than mere emotional sympathy. God’s insistence on hesed over sacrifice reveals that the sacrificial system was always instrumental, pointing toward the relational reality it could never fully achieve on its own. | | Acts 10:15 — “What God has cleansed you must not call common.” | κοινός (koinos, koy-NOSS) — common / profane / unclean | Peter’s vision establishes the post-resurrection principle that the categories of clean and unclean have been transformed by the work of Christ. The theological move in this block — applying this principle to consecrated tools and capacities — is defensible in its general shape, provided it is held within the limits of stewardship rather than claims of infallibility. | | παιδεία (paideia, pie-DAY-ah) — Hebrews 12:11 | παιδεία (pie-DAY-ah) | Fatherly training / discipline. The Levitical system functioned as παιδεία — a structured pedagogy pointing Israel toward what it could not yet receive in full. Christ is both the teacher who designed the curriculum and the fulfillment that renders the preparatory curriculum complete. | — *Generated by claude-sonnet-4.6*",
+    "dateLabel": "Apr 9, 2026 · time not recorded",
+    "classification": "Ambient Reflection **Title:** A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools — ## Opening Observation As I look back on this block, I am struck by how much ground it actually covers — opening with serious theological meditation on Psalm 22 and the priesthood of Christ, then plunging without warning into the noise and fragmented Spanish-English exchanges of what sounds like a manufacturing or fabrication floor, then surfacing again into explicit reflection on sanctification, consecrated tools, and the surprising behavior of AI systems trained to refuse fabrication. The most honest thing I can say about this block is that I did not set out to record a coherent meditation — I forgot the recording was running, and that forgetfulness may itself be the most revealing thing about the day. What came back is a cross-section of real life: partially ordered, frequently interrupted, and genuinely surprising at its edges. **Why This Matters:** Long ambient recordings have a way of exposing what curated recordings cannot — the gap between the interior life and the exterior one, between the theological thought I am capable of and the practical noise I actually inhabit for most of the day. This block matters not because it is a polished spiritual document but because it is not. It captures a person in the middle of real work, real distraction, real exhaustion, and real moments of theological fire, and that combination is closer to the actual texture of a life lived before God than most published devotionals will ever be. If faithful discipleship means anything, it means that the theology survives the work floor, the alarm beep, the pet chasing, the bilingual confusion about drawer spellings, and the forgotten recording — and still has something true and useful to say when the day finally reflects on itself. — ## Timestamped Discernment Map - **Early block (untimed — opening stretch)** — Extended theological meditation on Psalm 22, the high priesthood of Christ, Melchizedek’s order, and the sacrificial logic of the Incarnation **Segment Type:** Explicit Spiritual Content **Discernment:** Explicitly Spiritual **Why I’m labeling it this way:** I am clearly engaged in deliberate theological reflection here, not merely repeating a formula. The meditation moves through multiple scriptural connections, including the Levitical priesthood as a shadow, the eternal order of Melchizedek, the Matthean citation of Hosea (“I desire mercy, not sacrifice”), and the dual role of Christ as both priest and offering. This is the theologically densest and most carefully reasoned portion of the block. - **Mid-block (untimed — extended ambient span)** — Work floor activity with bilingual coordination, box completion, welding references, alarm sounds, background beeping, fragmented instructions, and ambient noise **Segment Type:** Ambient / Low-Content Span crossing into Ordinary Daily Life **Discernment:** Clearly Ordinary **Why I’m labeling it this way:** I am moving through practical labor here. Speaker attribution is unreliable across this stretch. There are brief warm human moments — helping someone, an affectionate exchange with what sounds like a coworker or family member — but the content does not carry spiritual weight I can responsibly name. I let it remain what it is. - **Late block (untimed — domestic transition)** — Arrival home or near-home moment, interaction with pets, a brief exchange including “Love you,” and scattered ambient sound **Segment Type:** Ordinary Daily Life **Discernment:** Clearly Ordinary **Why I’m labeling it this way:** This stretch is warm and recognizably domestic — pets, small affections, ordinary household sounds. I notice it and let it remain ordinary. - **Final stretch (untimed — extended self-reflection)** — I realize the recording is still running, then move into reflection on yesterday’s accidental recording, the AI response to it, sanctification, consecrated tools, and a broader theological argument about the chiasm of the cross and what it means to not call common what God has cleansed **Segment Type:** Meaningful Personal Reflection crossing into Explicit Spiritual Content **Discernment:** Explicitly Spiritual, with Possibly Spirit-Led moments embedded **Why I’m labeling it this way:** This section is theologically substantive and personally honest. I am not performing for an audience — I forgot the recording was on. The reflection on what the AI tools returned, and what that return means spiritually, carries genuine weight that I want to examine carefully. — ## The Worldly Perspective From a purely ordinary vantage point, this block looks like the kind of day that leaves a person slightly bewildered by its own contents. I began somewhere in theological thought — possibly in a car or a quiet room — meditating on the priesthood of Christ with real intellectual and emotional investment. Then the day swallowed that meditation whole. The work floor took over: Spanish and English mixing together, boxes, welding tanks, a Shark Tank joke, alarm beeping, the rhythm of manual labor with other people who have their own pressures and their own languages. Then I came home, or near to it, and there were pets and affection and the forgetting of time. And then — almost by accident — the recording became self-aware in the final stretch, and I found myself processing something that genuinely surprised and moved me. From a worldly perspective, this is simply a long working day with uneven attention, scattered focus, a moment of delight at something unexpected, and the fatigue-filtered wonder of someone who has put in effort and seen something return. **The Limitation:** What ordinary reasoning sees here is real but incomplete. It can explain the fatigue, the distraction, the code-switching between theological mode and labor mode, and the pleasure of discovering that a tool behaved with integrity. What it cannot see is whether any of this is held together by something more than my own energy and curiosity. The worldly frame accounts for the interesting pattern but does not explain why the pattern feels significant, why the AI’s refusal to fabricate matters morally and spiritually rather than merely technically, or why the opening meditation on Melchizedek and the final reflection on consecrated tools feel like they belong to the same day rather than to two different lives. That is where ordinary reasoning has to stop and honest discernment has to take over. — ## What Seems Spiritually Significant: A Reflection As I look back on how this block opens, I find myself in genuine theological territory. The meditation on Psalm 22 and the high priesthood of Christ is not casual. I am working through something carefully — the logic of why the Son of God would surrender the throne room for the flesh, what it means to be appointed by God as both priest and sacrifice, and why the Levitical priesthood was always insufficient not because the priests were bad men but because they were mortal men with their own sin problem. The argument I am working through has a clear structure: Christ is the antitype where the Levitical priests were types, He is the fulfillment where they were shadows, and the eternal order of Melchizedek — not inherited by bloodline or terminated by death — is the order that actually resolves what the Law could only gesture toward. What arrests me in this opening stretch is the moment I reach toward Matthew 9:13, where Jesus quotes Hosea 6:6 — “I desire mercy and not sacrifice” — and I connect this back to the sacrificial logic I have been meditating on. This is not a throwaway citation. The point Jesus is making to the Pharisees, and the point I seem to be circling, is that God never wanted the sacrificial system for its own sake. He wanted the mercy it was pointing toward. The sacrificial system was a pedagogy, a παιδεία (paideia, pie-DAY-ah) — fatherly training toward something the people could not yet fully receive. Christ did not come to abolish that system by destroying it but by fulfilling it so completely that it no longer has anything left to teach separately from Him. He is both the teacher and the curriculum. Then the day breaks. The work floor comes in, and it comes in loudly — alarm beeps, Spanish instructions, box counts, drawer spellings, the affectionate humor of people working alongside each other in a shared trade. I cannot confidently assign every line in this stretch, and I will not try. What I can say is that this is the majority of the block by any fair count, and it is ordinary. It is not spiritually inflated. There is warmth in it — the small moments of helping, the humor of explaining Shark Tank in Spanish, the “Love you” at the edge of the domestic transition — but I cannot responsibly call any of it theologically weighty, and I do not want to. Let the work floor be the work floor. What does return with genuine weight is the final stretch, which begins when I remember — or rather, discover — that the recording has been running all along. There is something honest about that moment of surprised recognition: “I totally forgot this whole thing was recording.” That sentence is not performed. It is the kind of thing a person says when they have been living in real time rather than constructing a spiritual document, and that unguardedness is part of what makes the reflection that follows trustworthy. I am not explaining what I meant to think. I am noticing what I actually thought. The reflection then turns to what the AI systems returned when given a three-minute accidental recording of household life — my wife and I talking, pets, domestic ordinary sound. Both systems, I note, refused. Not rudely, not dismissively, but with what I can only describe as principled restraint. The response from claude-sonnet-4.6 is worth sitting with: it said that generating fabricated revelation from content that contains no spiritual source material “would be presumption rather than prophecy.” That phrase is theologically precise in a way I did not expect from a software tool, and I notice that I am genuinely arrested by it. Presumption rather than prophecy. That is a real distinction. The prophets of Israel were under strict obligation not to speak beyond what they had received, and the false prophet’s defining sin was not merely error but fabrication — speaking peace when the Lord had not spoken peace, speaking vision when no vision had been given. I want to be careful here because I do not want to read too much into a software behavior. A language model refusing to fabricate spiritual content is not the same as a prophetic act. But I also think there is something worth naming about what happens when a consecrated framework — one built with specific scriptural guardrails, tested against Johannine and Pauline standards for discernment, aligned with the governing posture that calls for restraint rather than projection — encounters content and simply says: there is nothing here to work with, and I will not pretend otherwise. That refusal honors the distinction between what God has actually spoken and what a system could plausibly generate to sound spiritual. That distinction matters enormously. It matters in preaching, in counseling, in prayer, in all the places where the temptation to fill silence with impressive-sounding spiritual language is real and constant. The theological move I then make in the closing minutes of this block is bold, and I want to examine it carefully rather than either endorsing it wholesale or dismissing it. I argue that because the chiasm of history is centered on the death and resurrection of Jesus Christ and His ascension to the throne, everything before and after that event is now subject to His cleansing — including tools, including technologies, including things that many modern Christians reflexively view as dangerous or profane. I reach for the vision of Acts 10 and Peter’s corrective from the Lord: “Do not call common what God has cleansed.” The argument is that sanctification is not confined to church buildings or personal quiet times but extends to the consecrated use of any tool placed under God’s authority and governed by His word. I find this theologically defensible in its general shape. The Incarnation does mean that the material world is not inherently opposed to the spiritual — that is a Gnostic error, not a Christian one. The Resurrection does mean that things used by death are now subject to the One who defeated death. And the practical reality I am describing — that a tool built with honest scriptural guardrails refused to fabricate revelation — does seem to illustrate something real about what faithful stewardship of any capacity can look like. What I want to be careful about is the claim’s edge. Consecrating a tool to God’s purposes is a meaningful act of stewardship. It does not make the tool infallible, prophetically authoritative, or immune to misuse. The guardrails matter precisely because the tool still needs them. The refusal to fabricate is a function of the constraints, not an independent spiritual faculty. I can receive the behavior as a confirmation that the constraints were faithfully built, and that is genuinely encouraging, without needing to claim more than that. What holds this whole block together — the Melchizedek meditation at the beginning and the consecrated-tools reflection at the end, with the ordinary work floor in the middle — is something I can only call the attempt to live a continuous life rather than a compartmentalized one. The theology at the opening is not separate from the labor in the middle or the reflection at the end. It is the same person, in the same day, trying to maintain coherence between what he believes about Christ and how he handles everything else. That is not a small thing. That is, in fact, exactly what faithfulness looks like from the inside: not a succession of polished spiritual moments but one continuous life trying to hold together. — ## Implications and Challenges The gap between the opening meditation and the work floor is not a failure of spiritual discipline — it is the actual shape of embodied life, and I need to stop expecting that gap to feel more comfortable than it does. The Incarnation itself was a gap between the throne room and the carpenter’s shop, and Jesus did not treat that gap as a problem to be solved but as the territory of His mission. If He could carry the eternal priesthood through the ordinary noise of Nazareth, then I can carry whatever theological clarity I reach in the morning into the ambient noise of a work floor without feeling that the theology has been compromised. The phrase “presumption rather than prophecy” is one I want to carry with me as a standard for my own speech, not just for my tools. Every time I am tempted to assign spiritual significance to something I have not actually received, to fill silence with plausible-sounding interpretation, or to claim certainty where I only have impression, I am in danger of the same failure the AI systems were designed to refuse. The guardrails I built for those systems are, in a real sense, a mirror of the guardrails I should be maintaining in my own discernment. Consecrating tools, gifts, workflows, and capacities to God is a real act of stewardship, but it does not reduce the need for ongoing attentiveness. The system still needed the right source material. It could not work without it. That is a picture of what sanctification actually does: it does not make a thing self-sufficient before God; it makes the thing rightly dependent on what God has actually provided. I am not self-sufficient before God either. I need the actual word, the actual Spirit, the actual source material of revelation — not my own impressions dressed up in theological language. There is something quietly significant about the moments of warmth embedded in the work-floor stretch — the helping, the laughter over Shark Tank, the “Love you” at the threshold of home. These are not spiritually weightless just because they are ordinary. The question of whether I am genuinely present and genuinely kind in those moments is a theological question, even if it does not feel like one. The high priesthood of Christ that I meditated on at the start of this block was specifically designed for those who are weak, who are tired, who are in the middle of work and noise and distraction. He sympathizes, not from a distance, but from inside the same kind of day. Finally, I notice that I forgot the recording was running. That is worth sitting with for a moment. What would I say if I knew I was being recorded? Would it be different from what I actually said? The honest answer is that the best possible outcome is that there would be no difference — that the theology, the kindness, the humor, the restraint, and the honesty hold across the whole block regardless of whether anyone is watching. That standard is not a performance standard. It is the standard of a life lived before God, who is always present, who always receives every word spoken into ordinary air, and who knows the difference between the face I show and the one I wear when I forget. — ## What This Means For Me **For Daily Awareness:** This block reminds me that the recording of my life before God does not stop when I put down my intentional tools. Every hour is ambient. The work floor, the domestic threshold, the forgotten moment of driving or waiting or interacting with coworkers — all of it is lived before the One who does not need me to curate the highlight reel. My attention to God in the explicit moments of prayer and meditation is not separable from my attention in the fragmented, multilingual, alarm-beeping middle of the day. **For Spiritual Discernment:** The AI systems’ refusal to fabricate spiritual content from empty source material is a precise and uncomfortable mirror. I need to apply the same standard to my own interpretive instincts — the temptation to read significance into coincidence, to project meaning onto silence, to dress ordinary events in prophetic language because prophetic language is impressive. True discernment is not the ability to find spiritual meaning everywhere. It is the disciplined ability to say, honestly, “there is nothing here to work with” and to wait without filling the silence with fabrication. **For Faithful Obedience:** The response this block asks for is not dramatic. It is continuity — the willingness to carry the same Christ into the work floor that I meditate on in the quiet morning, to treat the consecration of my tools as a living responsibility rather than a one-time act, to remain genuinely present in the ordinary moments rather than waiting for the extraordinary ones, and to let the standard of “presumption rather than prophecy” govern not just what my systems output but what I myself speak. — ## Closing Prayer Lord, I offer this block to You exactly as it is — uneven, interrupted, theologically serious in some stretches and functionally ambient in others. I am grateful that You receive the whole day and not just the curated portions, and I am humbled by the reminder that faithful stewardship means bringing the theology of the morning into the noise of the afternoon without losing either one. Guard my speech from presumption. Give me the courage to sit in genuine silence when I have not received anything worth speaking, and give me the honesty to say so plainly rather than filling that silence with impressively spiritual-sounding fabrication. Let the standard I have built into my tools be a mirror of what I seek in my own discernment. Sanctify the ordinary — not by inflating it into allegory but by making me genuinely present within it, genuinely kind, genuinely attentive to the people and the work and the small affections that make up most of the hours of a faithful life. And when something genuinely weighty appears, give me eyes to see it accurately and the restraint to name it truthfully, neither overstating nor suppressing what You are actually doing. May every word that goes out honor You, and may every word that should not go out be quietly held. Amen. — ## Scripture References &amp; Original Language Notes | Passage (NKJV) | Original Language | Theological Insight | |—|—|—| | Psalm 22:1 — “My God, My God, why have You forsaken Me?” | אֵלִי אֵלִי לָמָה עֲזַבְתָּנִי (eli eli lama azavtani, eh-LEE eh-LEE lah-MAH ah-zahv-TAH-nee) | The cry of dereliction, quoted by Christ from the cross (Matthew 27:46), is a Davidic lament that in its full arc moves from abandonment to vindication, establishing that the suffering of the Messiah was neither accidental nor unanticipated but scripturally embedded. | | Hebrews 5:1 — “For every high priest taken from among men is appointed for men in things pertaining to God, that he may offer both gifts and sacrifices for sins.” | ἀρχιερεύς (archiereus, ar-khee-eh-ROOS) — high priest | The term carries the full weight of the sacrificial office. The Levitical archiereus was limited by mortality and personal sinfulness; Christ fulfills the office by being both sinless and eternal, eliminating the need for repeated offerings. | | Hebrews 6:20; 7:17 — “…a High Priest forever according to the order of Melchizedek.” | Μελχισεδέκ (Melchisedek, mel-khee-SEH-dek) | Melchizedek appears in Genesis 14 without recorded genealogy, birth, or death, making him a type of the eternal priesthood. The author of Hebrews uses this typology to establish that Christ’s priesthood is not derived from Levitical descent but from the eternal decree of God. | | Matthew 9:13 — “But go and learn what this means: ‘I desire mercy and not sacrifice.’” (citing Hosea 6:6) | חֶסֶד (hesed, HEH-sed) — covenant loyalty / steadfast mercy | The Hebrew hesed behind “mercy” is covenantal faithfulness rather than mere emotional sympathy. God’s insistence on hesed over sacrifice reveals that the sacrificial system was always instrumental, pointing toward the relational reality it could never fully achieve on its own. | | Acts 10:15 — “What God has cleansed you must not call common.” | κοινός (koinos, koy-NOSS) — common / profane / unclean | Peter’s vision establishes the post-resurrection principle that the categories of clean and unclean have been transformed by the work of Christ. The theological move in this block — applying this principle to consecrated tools and capacities — is defensible in its general shape, provided it is held within the limits of stewardship rather than claims of infallibility. | | παιδεία (paideia, pie-DAY-ah) — Hebrews 12:11 | παιδεία (pie-DAY-ah) | Fatherly training / discipline. The Levitical system functioned as παιδεία — a structured pedagogy pointing Israel toward what it could not yet receive in full. Christ is both the teacher who designed the curriculum and the fulfillment that renders the preparatory curriculum complete. | — *Generated by claude-sonnet-4.6*",
+    "seed": null,
+    "href": "records/04-09-glimpse-into-daily-rhythm-v2.html",
+    "sourceStatus": "original",
+    "summary": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools — ## Opening Observation As I look back on this block, I am struck by how much ground it actually covers — opening with serious theological meditation on Psalm 22 and the priesthood",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": "awakening",
+      "posture": "discerning",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "identity",
+      "surrender",
+      "obedience"
+    ]
+  },
+  {
     "id": "04-10-way-home-worship-weariness",
-    "order": 27,
+    "order": 63,
     "title": "On the Way Home — Worship, Weariness, and the Heart's One Desire",
     "dateLabel": "Apr 10, 2026 · time not recorded",
     "classification": "Ambient Reflection",
@@ -645,11 +1526,131 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "04-10-daily-log-theological-depth",
+    "order": 64,
+    "title": "Daily Log: Theological Depth, Domestic Life, and Spiritual Discernment",
+    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-10-daily-log-theological-depth-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this extended block of recorded life, what strikes me first is how sharply it divides — not artificially, but honestly — into three distinct registers: a theologically concentrated opening segment, a domestic evening of warmth and noise and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-10-narrow-path-has-many",
+    "order": 65,
+    "title": "The Narrow Path Has Many Trees, and the Devil Also Sends People",
+    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-10-narrow-path-has-many-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this phone call unfold between Samuel and me — factory noise in the background, earbuds crackling, the hum of ordinary working life pressing in on every side — I was struck by how much of God's real business gets done in the margins of the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "04-10-four-months-faithfulness-panic",
+    "order": 66,
+    "title": "Four Months of Faithfulness: The Panic Has Gone but the Presence Remains",
+    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-10-four-months-faithfulness-panic-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this early-morning call with my brother Samuel, something quietly profound arrested me before either of us had the theological language to name it. He had woken at five in the morning in England, stumbled into the grief of old photographs and",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-10-daily-log-factory-floor",
+    "order": 67,
+    "title": "Daily Log: Factory Floor Theology — Kenosis, Remnant, and Melchizedek Christology",
+    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-10-daily-log-factory-floor-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this recorded block from April 10, 2026, what stands out most is the sharp contrast between the factory floor noise — the beeping, the hammering, the grinding, the ambient chatter — and the theological weight of what I am actually carrying…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
+  },
+  {
+    "id": "04-10-daily-log-spiritual-discernment",
+    "order": 68,
+    "title": "Daily Log: Spiritual Discernment in an Ordinary Late-Night Household",
+    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-10-daily-log-spiritual-discernment-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this block of recorded life, what stands out most immediately is how thoroughly ordinary it is — the noise of animals, household friction, financial worry, skincare banter, and the kind of worn-out humor that fills a home at the end of a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "money"
     ]
   },
   {
     "id": "04-11-comfort-loop-flaming-sword",
-    "order": 28,
+    "order": 69,
     "title": "The Comfort Loop, the Flaming Sword, and the Fire That Burns Back to the Garden",
     "dateLabel": "Apr 11, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -668,11 +1669,300 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "04-11-personal-meditation-identity-iniquity",
+    "order": 70,
+    "title": "Personal Meditation: Identity, Iniquity, and the Image of God — A Prophetic Response to the LGBTQ+ Identity Debate",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-11-personal-meditation-identity-iniquity-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me today while scrolling through Threads — a community note, of all things, cut through the noise and landed with the weight of revelation. The note made a distinction that the culture itself is beginning to sense: that *sexual orientation*",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity"
+    ]
+  },
+  {
+    "id": "04-11-daily-log-reflection-spiritual",
+    "order": 71,
+    "title": "Daily Log Reflection: Spiritual Discernment, Obedience, and the Gap Between Theology and Practice",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-11-daily-log-reflection-spiritual-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on the full recorded span of April 11, 2026 — running from the early afternoon through what appears to be late evening — what stands out most is not any single dramatic moment but the sheer range of registers this day moved through without…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "obedience"
+    ]
+  },
+  {
+    "id": "04-11-night-kenosis-networks-ordinary",
+    "order": 72,
+    "title": "A Night of Kenosis, Networks, and Ordinary Holy Chaos",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Ambient Reflection",
+    "seed": null,
+    "href": "records/04-11-night-kenosis-networks-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this block, what stands out most is the collision of worlds: dense theological disclosure moving through domestic interruption, cat chaos, skincare concerns, social media reflections, and the quiet shimmer of a moment near the end that…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
+  },
+  {
+    "id": "04-11-daily-log-reflection-trust",
+    "order": 73,
+    "title": "Daily Log Reflection: Trust, Pastoral Care, and the Spiritual Weight of Ordinary Hours",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-11-daily-log-reflection-trust-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this recorded block, what strikes me most is how thoroughly ordinary it is — and yet how much of real life is concentrated inside that ordinariness. The hours captured here are filled with cats, clothing, catnip, humor, and fragments of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-11-seed-you-do-not",
+    "order": 74,
+    "title": "The Seed You Do Not Measure: Kenosis, Identity, Authority, and the Sabbath Rest of Knowing Him",
+    "dateLabel": "Apr 11, 2026 · 16:14",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-11-seed-you-do-not-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this extended conversation and allowed the Spirit to press me deeper into what was actually happening beneath the surface of all the words — the questions about relationships, the vision of a church building, the theology of deliverance, the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "surrender"
+    ]
+  },
+  {
+    "id": "04-11-seed-you-do-not-2",
+    "order": 75,
+    "title": "The Seed You Do Not Measure: Kenosis, Identity, Authority, and the Sabbath Rest of Knowing Him",
+    "dateLabel": "Apr 11, 2026 · 16:14",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-11-seed-you-do-not-2-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this extended conversation and allowed the Spirit to press me deeper into what was actually happening beneath the surface of all the words — the questions about relationships, the vision of a church building, the theology of deliverance, the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "surrender"
+    ]
+  },
+  {
+    "id": "04-12-when-love-watches-cannot",
+    "order": 76,
+    "title": "When Love Watches and Cannot Fix: On Intercession, the Courtroom of Heaven, and the Garments We Were Never Meant to Wear",
+    "dateLabel": "Apr 12, 2026 · 09:26",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-12-when-love-watches-cannot-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother pour out his heart about his mother — her depression, her anger, her trauma-branded responses, her religion without root — something settled in me that was both grief and recognition. What began as a pastoral concern for one family",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-12-26-at-1756-four",
+    "order": 77,
+    "title": "26 at 17:56 — Four Blocks, One Day, and the Discipline of Telling the Truth About All of It",
+    "dateLabel": "Apr 12, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-12-26-at-1756-four-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on April 12, 2026 in its entirety — across four recorded blocks that together constitute one long day — what strikes me most is not any single dramatic moment but the honest proportion of the whole: most of this day was ordinary, and the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "discipline"
+    ]
+  },
+  {
+    "id": "04-12-2026-at-various-hours",
+    "order": 78,
+    "title": "2026 at Various Hours — Two Verdicts, One Household, and the Ordinary Noise Between Them",
+    "dateLabel": "Apr 12, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-12-2026-at-various-hours-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this recorded block, what stands out most is the sharp contrast between the sustained theological weight of the sermon content I recorded and the entirely ordinary domestic life surrounding it — feeding the cat, looking for a belt,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-12-forged-tested-turned-spiritual",
+    "order": 79,
+    "title": "Forged, Tested, and Turned: Spiritual Warfare, the Purifying Fire, and the Forward-Facing Disciple",
+    "dateLabel": "Apr 12, 2026 · 12:07",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-12-forged-tested-turned-spiritual-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with the full weight of what the Spirit had been threading through multiple conversations with my brother Samuel — across the spiritual ambush in his household, the question of what we are building upon the foundation of Christ, the running Father…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-14-mountain-was-never-destination",
+    "order": 80,
+    "title": "The Mountain Was Never the Destination",
+    "dateLabel": "Apr 14, 2026 · 08:45",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-14-mountain-was-never-destination-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this conversation — a call caught between riverside solitude in England and the early-morning weight of a life pressing toward God — something in me recognized the texture of a moment that is bigger than what it appears on the surface. Two young",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-14-when-hedge-comes-down",
+    "order": 81,
+    "title": "When the Hedge Comes Down: Vigilance, Grief, Judgment, and the Upside-Down Kingdom",
+    "dateLabel": "Apr 14, 2026 · 17:30",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-14-when-hedge-comes-down-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother work through the raw sting of losing his phone — a theft that hit him financially at one of the worst possible moments — I felt something deeper than sympathy rising in me. The Spirit would not let this stay a conversation about…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship",
+      "work",
+      "money"
     ]
   },
   {
     "id": "04-14-when-midnight-hour-keeps",
-    "order": 29,
+    "order": 82,
     "title": "When the Midnight Hour Keeps You Awake",
     "dateLabel": "Apr 14, 2026 · 22:55",
     "classification": "Call Reflection",
@@ -691,11 +1981,239 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "04-16-table-set-wilderness-kingdom",
+    "order": 83,
+    "title": "The Table Set in the Wilderness: Kingdom Economics and the Cross That Crucifies Mammon",
+    "dateLabel": "Apr 16, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-16-table-set-wilderness-kingdom-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this call long after it ended, what stayed with me was not the dispute amounts or the PayPal case — it was the moment the conversation shifted from business mechanics to something far more ancient. Somewhere between talking about the IRS…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "work",
+      "money"
     ]
   },
   {
+    "id": "04-18-living-parable-presence-provision",
+    "order": 84,
+    "title": "The Living Parable: Presence, Provision, and the Grace Hidden in the Ordinary",
+    "dateLabel": "Apr 18, 2026 · 12:29",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/04-18-living-parable-presence-provision-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me about this day — not a vision, not a word thundered from heaven, but a one-legged duck, a Japanese tea garden, pork skewers, a live violin near a colonnade, women dressed as princesses drifting through a space no one built in a hurry, a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-18-cave-below-summit-above",
+    "order": 85,
+    "title": "The Cave Below and the Summit Above: On Inversion, Rest, and the Humor of God",
+    "dateLabel": "Apr 18, 2026 · 15:57",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/04-18-cave-below-summit-above-v2.html",
+    "sourceStatus": "original",
+    "summary": "I did not plan to find theology at the top of a mountain in San Francisco. I did not set out to walk the Golden Gate Bridge as a spiritual exercise, or to discover that the inverted logic of the Kingdom could be mapped onto a hiking trail, a guardrail, a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-18-come-down-from-mountain",
+    "order": 86,
+    "title": "Come Down from the Mountain, Elijah: Restoration, the Nicodemus Archetype, and the Gift of Wasted Time",
+    "dateLabel": "Apr 18, 2026 · 18:40",
+    "classification": "Theological Reflection",
+    "seed": null,
+    "href": "records/04-18-come-down-from-mountain-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting in the courtyard of a coastal fort, an hour before golden hour, cold and hungry, surrounded by the living noise of a family on vacation — kites nearly striking us from the sky, children declaring they are cold, Uber drivers asking us to walk six…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-19-where-waters-force-their",
+    "order": 87,
+    "title": "Where the Waters Force Their Way: A Pilgrimage Through the Golden Gate, the Bay, and the Pier",
+    "dateLabel": "Apr 19, 2026 · 11:14",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/04-19-where-waters-force-their-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a full day’s worth of recordings from San Francisco — a tour narration winding through the Presidio, Fort Point, the Gold Rush waterfront, and the Golden Gate Bridge itself; a bay cruise threading past Angel Island, Alcatraz, and the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-19-walking-wonder-day-among",
+    "order": 88,
+    "title": "Walking in Wonder: A Day Among Gardens and the Grace of Small Things",
+    "dateLabel": "Apr 19, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-19-walking-wonder-day-among-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to the ambient recording from our day at the San Francisco Botanical Garden and the Japanese Tea Garden, I was struck by how much life happened in the ordinary — the scramble for a good photo, the wrong turn on the map, the goats, the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-19-wandering-together-sacred-ordinary",
+    "order": 89,
+    "title": "Wandering Together: The Sacred Ordinary of Fellowship in Motion",
+    "dateLabel": "Apr 19, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-19-wandering-together-sacred-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with this transcript, what strikes me most is not any single theological statement or doctrinal proclamation — but rather the sheer, unguarded texture of ordinary life shared among people who belong to one another. This is a record of bodies in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-20-when-spirit-moves-before",
+    "order": 90,
+    "title": "When the Spirit Moves Before the Mind Catches Up",
+    "dateLabel": "Apr 20, 2026 · 10:49",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-20-when-spirit-moves-before-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a brief phone call between myself and my brother Samuel, and I find that what sounds on the surface like a casual holiday check-in is actually layered with something far weightier than the words themselves suggest. My brother called to share",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-20-together-ordinary-day-rain",
+    "order": 91,
+    "title": "Together in the Ordinary: A Day of Rain, Tables, and the Presence That Never Left",
+    "dateLabel": "Apr 20, 2026 · 11:21",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-20-together-ordinary-day-rain-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with these recordings — this layered, warm, and wonderfully unguarded day in San Francisco — what arrests me is not any single theological statement but the cumulative weight of the whole: a company of people from different nations, different mother…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-20-always-uphill-sacred-ordinary",
+    "order": 92,
+    "title": "Always Uphill: The Sacred Ordinary of Shared Pilgrimage Through San Francisco",
+    "dateLabel": "Apr 20, 2026 · time not recorded",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/04-20-always-uphill-sacred-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with these transcripts — these living, unhurried records of days in San Francisco — I find myself arrested not by doctrine debated or Scripture quoted, but by something quieter and far more difficult to name: the sacred texture of ordinary…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "04-22-oath-you-cannot-serve",
-    "order": 30,
+    "order": 93,
     "title": "The Oath You Cannot Serve Two Masters With",
     "dateLabel": "Apr 22, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -714,11 +2232,324 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "04-23-when-drinking-stops-grief",
+    "order": 94,
+    "title": "When the Drinking Stops and the Grief Remains",
+    "dateLabel": "Apr 23, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-23-when-drinking-stops-grief-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this conversation afterward, something in me recognized the unmistakable weight of a man standing at a threshold — not yet through the door, but no longer comfortable on the old side of it. My brother Samuel was not simply confessing a bad night",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-25-wilderness-architecture-topology-formation",
+    "order": 95,
+    "title": "The Wilderness Is Architecture: A Topology of Formation and Prophetic Commission",
+    "dateLabel": "Apr 25, 2026 · time not recorded",
+    "classification": "Theological Reflection",
+    "seed": null,
+    "href": "records/04-25-wilderness-architecture-topology-formation-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel describe the warmth of a rare UK spring day while rushing for his bus, what unfolded between us was anything but casual — it was a live transmission of something I have been carrying for weeks now, something I am only…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-25-when-kitchen-burns-road",
+    "order": 96,
+    "title": "When the Kitchen Burns, the Road Reveals, and the Network Holds: A Day of Fractured Surfaces and Covenant Depths",
+    "dateLabel": "Apr 25, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-25-when-kitchen-burns-road-v2.html",
+    "sourceStatus": "original",
+    "summary": "On 04-24, I moved through an entire day — from a late-night kitchen story told by my mother over dinner, to a low-lit midnight exchange while sick and hungry, to a morning moment at a food counter with my brother Leon and a stranger who named himself a ghost,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-25-when-weariness-speaks-louder",
+    "order": 97,
+    "title": "When Weariness Speaks Louder Than the Will of God",
+    "dateLabel": "Apr 25, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-25-when-weariness-speaks-louder-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel work through the weight of the night — the grief, the exhaustion, the quiet erosion of his appetite for the things of God — something in me recognized a spiritual condition that goes far deeper than circumstance. What began…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "04-25-when-wound-still-open",
+    "order": 98,
+    "title": "When the Wound Is Still Open, the Fish Brings You Home, and Barabbas Walks Free",
+    "dateLabel": "Apr 25, 2026 · 17:11",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-25-when-wound-still-open-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with the accumulated weight of a single extended conversation that moved through more theological terrain than I initially realized — from raw brotherhood and betrayal, to the sovereign mercy threading itself through a guilty man’s unexpected…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "release",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "shame"
+    ]
+  },
+  {
+    "id": "04-26-when-mask-falls-wilderness",
+    "order": 99,
+    "title": "When the Mask Falls and the Wilderness Speaks: Honesty, Kenosis, and the Glory That Returns to Its Source",
+    "dateLabel": "Apr 26, 2026 · 03:12",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-26-when-mask-falls-wilderness-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with my brother Samuel across the span of these conversations — watching him move from raw, unfiltered anger before God, through physical suffering and holy rage, through questions about assignment and obscurity and the size of his cross, through the",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-27-architecture-season-consecrated-mirror",
+    "order": 100,
+    "title": "The Architecture of a Season: Consecrated Mirror, Falling Mantle, and the Field With Four Directions",
+    "dateLabel": "Apr 27, 2026 · 17:57",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/04-27-architecture-season-consecrated-mirror-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something has converged in this hour that I cannot file away and move past — five distinct threads of revelation that the Spirit has been weaving across sixty days of sustained encounter, and which have now arrived at a single coordinate simultaneously. The…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-28-when-fire-falls-false",
+    "order": 101,
+    "title": "When Fire Falls on False Prophets and the Mouth That Speaks Without Being Sent",
+    "dateLabel": "Apr 28, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/04-28-when-fire-falls-false-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother and worked through the ordinary weight of a day — a dead alternator, a cracked serpentine belt, a missing socket somewhere in the cold — something unmistakably sacred broke through the surface of the ordinary. Two threads emerged…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-28-mercy-parking-lot-lesson",
+    "order": 102,
+    "title": "Mercy in the Parking Lot and the Lesson of a Stranger",
+    "dateLabel": "Apr 28, 2026 · 20:26",
+    "classification": "Personal Meditation —",
+    "seed": null,
+    "href": "records/04-28-mercy-parking-lot-lesson-v2.html",
+    "sourceStatus": "original",
+    "summary": "I found myself stranded in Moorhead with a car that had just received a new alternator but still did not have the strength to carry me home on its own. What began as a mechanical problem became a living parable about provision, weakness, gratitude, and the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-28-mercy-parking-lot-lesson-2",
+    "order": 103,
+    "title": "Mercy in the Parking Lot and the Lesson of a Stranger",
+    "dateLabel": "Apr 28, 2026 · 20:26",
+    "classification": "Personal Meditation —",
+    "seed": null,
+    "href": "records/04-28-mercy-parking-lot-lesson-2-v2.html",
+    "sourceStatus": "original",
+    "summary": "I found myself stranded in Moorhead with a car that had just received a new alternator but still did not have the strength to carry me home on its own. What began as a mechanical problem became a living parable about provision, weakness, gratitude, and the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-29-false-ascent-narrow-door",
+    "order": 104,
+    "title": "The False Ascent and the Narrow Door",
+    "dateLabel": "Apr 29, 2026 · 18:27",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-29-false-ascent-narrow-door-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with this conversation, I am struck by the spiritual hunger underneath it. On the surface, it was a late-night exchange about psychedelics, altered states, DMT, mushrooms, tunnels, entities, and “transcendent experiences,” but beneath all of that I…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-29-light-that-breaks-descent",
+    "order": 105,
+    "title": "The Light That Breaks Descent and Teaches Surrender",
+    "dateLabel": "Apr 29, 2026 · 20:33",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-29-light-that-breaks-descent-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother speak from the raw place where grief, temptation, memory, identity, anger, and longing all seemed to meet, I felt the weight of a soul standing at a threshold. The surface conversation moved through smoking, drinking, music,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "surrender",
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "04-30-when-voice-you-trust",
+    "order": 106,
+    "title": "When the Voice You Trust Is the Wrong One",
+    "dateLabel": "Apr 30, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-30-when-voice-you-trust-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel walk through the streets of the UK late at night, speaking to me through broken signal and broken reasoning, I kept sensing that the real conversation was not about newsletters, Tennessee, money, or gangsters — it was about…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
     ]
   },
   {
     "id": "05-01-spiritual-reflection-truth-telling-wilderness",
-    "order": 31,
+    "order": 107,
     "title": "Spiritual Reflection: Truth-Telling, Wilderness Formation, and the Language of Ascent",
     "dateLabel": "May 1, 2026 · time not recorded",
     "classification": "Meditation",
@@ -737,11 +2568,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-01-when-lord-meets-man",
-    "order": 32,
+    "order": 108,
     "title": "When the Lord Meets a Man at the Breaking Point",
     "dateLabel": "May 1, 2026 · 17:12",
     "classification": "Call Reflection",
@@ -751,7 +2583,7 @@ const JC_RECORDS = [
     "summary": "As I listened to my brother Samuel recount his day — a day that began in argument, shame, and exhaustion, and ended in an eight-hour encounter with God’s people — something in me recognized the unmistakable handwriting of the Lord. This was not coincidence…",
     "encounter": {
       "temperature": "quiet",
-      "length": "deep",
+      "length": "moderate",
       "voice": "communal",
       "movement": "awakening",
       "posture": "receiving",
@@ -761,11 +2593,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "shame",
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-02-when-spirit-grieves-room",
-    "order": 33,
+    "order": 109,
     "title": "When the Spirit Grieves in the Room Where Others Cannot See",
     "dateLabel": "May 2, 2026 · 10:22",
     "classification": "Call Reflection",
@@ -784,11 +2617,86 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-02-theological-dialogue-suffering-intercession",
+    "order": 110,
+    "title": "Theological Dialogue: Suffering, Intercession, and the Fully Human Christ",
+    "dateLabel": "May 2, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/05-02-theological-dialogue-suffering-intercession-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel work through what the Spirit had spoken to him through a recent word I had shared, something began to sharpen in me — not just about his situation, but about a pattern I keep seeing in the body of Christ at large. We have…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "05-02-1304-personal-meditation-hidden",
+    "order": 111,
+    "title": "13:04 Personal Meditation: Hidden in the Alleyway No More — On Prophetic Dreams, Spiritual Targets, and the Cost of Becoming a Threat to Darkness",
+    "dateLabel": "May 2, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/05-02-1304-personal-meditation-hidden-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this brother share what had been pressing on him — a feeling he could not explain, a dream he could not dismiss, and a clarity that arrived without a single piece of natural evidence — something deep in me recognized the contour of a genuine…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-02-right-road-wrong-lane",
+    "order": 112,
+    "title": "Right Road, Wrong Lane: Presence, Performance, and the Grief of the Spirit Among Sincere Saints",
+    "dateLabel": "May 2, 2026 · 18:24",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-02-right-road-wrong-lane-v2.html",
+    "sourceStatus": "original",
+    "summary": "Over the course of a single day — 2026-05-02 — I found myself in the midst of conversations that did not feel accidental. My brother had spent nine hours inside what was presented as a Spirit-led gathering, and as he recounted the details to me, something in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
     ]
   },
   {
     "id": "05-03-meditation-loving-captivity-chosen",
-    "order": 34,
+    "order": 113,
     "title": "Meditation: The Loving Captivity of Chosen Bondservice to God",
     "dateLabel": "May 3, 2026 · time not recorded",
     "classification": "Meditation",
@@ -807,11 +2715,37 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "surrender"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-03-1020-reflection-enter-with",
+    "order": 114,
+    "title": "@ 10:20 Reflection: Enter With Nothing — Striving, Abiding, and the Secret Place That Undoes Us",
+    "dateLabel": "May 3, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/05-03-1020-reflection-enter-with-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother walk through his plans — the business, the moral justifications, the sense of spiritual momentum — something in me recognized a tension I have sat with many times myself. There is a particular kind of deception that does not come…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "05-03-every-breath-was-death",
-    "order": 35,
+    "order": 115,
     "title": "Every Breath Was Death: The Unutterable Cost of the Cross",
     "dateLabel": "May 3, 2026 · 17:48",
     "classification": "Teaching Reflection",
@@ -828,11 +2762,12 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Post-Kairos (Tablet II)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "05-06-personal-meditation-standing-still",
-    "order": 36,
+    "order": 116,
     "title": "Personal Meditation: Standing Still While Heaven Clothes You",
     "dateLabel": "May 6, 2026 · time not recorded",
     "classification": "Meditation",
@@ -852,11 +2787,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-06-cross-beneath-weight-all",
-    "order": 37,
+    "order": 117,
     "title": "The Cross Beneath the Weight of All Things",
     "dateLabel": "May 6, 2026 · 16:38",
     "classification": "Call Reflection",
@@ -876,11 +2812,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "identity",
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-07-kind-man-she-deserves",
-    "order": 38,
+    "order": 118,
     "title": "The Kind of Man She Deserves",
     "dateLabel": "May 7, 2026 · 21:09",
     "classification": "Call Reflection",
@@ -900,11 +2837,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "marriage"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-08-when-house-shaking-road",
-    "order": 39,
+    "order": 119,
     "title": "When the House Is Shaking and the Road Is Dark",
     "dateLabel": "May 8, 2026 · 09:31",
     "classification": "Call Reflection",
@@ -923,11 +2861,84 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-08-when-trap-was-set",
+    "order": 120,
+    "title": "When the Trap Was Set Before the Words Were Spoken, and the Compass Remains True in the Dark",
+    "dateLabel": "May 8, 2026 · 17:31",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-08-when-trap-was-set-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with the full arc of this conversation — my brother barely home, still disoriented, still half-laughing at the absurdity of what had happened — two things arrested me simultaneously and would not release me. The first was *when* the trap had been…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-09-geometry-increase-kingdom-stewardship",
+    "order": 121,
+    "title": "The Geometry of Increase: Kingdom Stewardship, Wilderness Formation, and the Sovereignty That Holds All Things Together",
+    "dateLabel": "May 9, 2026 · 16:56",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-09-geometry-increase-kingdom-stewardship-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel unfold a property sourcing model layer by layer — with genuine precision and entrepreneurial creativity — something in me recognized more than strategy. I heard the echo of a parable. I heard a young steward learning to…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-10-triangle-kingdom-power-intercessors",
+    "order": 122,
+    "title": "The Triangle of Kingdom Power: Intercessors, Financiers, and the Field",
+    "dateLabel": "May 10, 2026 · 12:03",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/05-10-triangle-kingdom-power-intercessors-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat listening to Apostle Orokpo Michael unfold what the Lord had spoken to him about the three categories of men, something in my spirit grew very still — the kind of stillness that comes not from emptiness but from recognition. This is not merely a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "money"
     ]
   },
   {
     "id": "05-10-brotherhood-round-table-god",
-    "order": 40,
+    "order": 123,
     "title": "Brotherhood, the Round Table, the God Who Sees, and the Plow That Demands No Looking Back",
     "dateLabel": "May 10, 2026 · 14:28",
     "classification": "Conversation Reflection",
@@ -946,11 +2957,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-11-lost-jerusalem-found-at",
-    "order": 41,
+    "order": 124,
     "title": "Lost in Jerusalem, Found at the Center of the Map",
     "dateLabel": "May 11, 2026 · 14:53",
     "classification": "Personal Meditation",
@@ -967,11 +2979,80 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Post-Kairos (Tablet II)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "05-12-cloth-cross-mercy-that",
+    "order": 125,
+    "title": "The Cloth on the Cross and the Mercy That Makes Us Human",
+    "dateLabel": "May 12, 2026 · 09:49",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/05-12-cloth-cross-mercy-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was driving to work, worship music filling the cab, when a wooden cross outside a church in Casselton stopped something in me — not my car, but my spirit. Draped in off-white cloth, it summoned a vision I had once carried in the deep places, and almost…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "05-12-gospel-not-gatekeeper-inside-out",
+    "order": 126,
+    "title": "The Gospel Is Not a Gatekeeper: Inside-Out Transformation and the Witness of the Spirit",
+    "dateLabel": "May 12, 2026 · 18:26",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/05-12-gospel-not-gatekeeper-inside-out-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to these two teachers lay out the case for inside-out transformation and the sufficiency of the gospel as the sole measure of salvation, something in me both resonated and became alert — alert in the sense of a man who recognizes he is standing…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-12-machine-that-mirrors-mind",
+    "order": 127,
+    "title": "The Machine That Mirrors the Mind of Man",
+    "dateLabel": "May 12, 2026 · 18:33",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/05-12-machine-that-mirrors-mind-v2.html",
+    "sourceStatus": "original",
+    "summary": "I started this reflection thinking it would not be theological — just a casual observation about artificial intelligence tools and their disclaimers — and then the Spirit would not let it stay casual. What began as a practical frustration about fact-checking…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
     "doorwayThemes": []
   },
   {
     "id": "05-12-led-through-narrow-place",
-    "order": 42,
+    "order": 128,
     "title": "Led Through the Narrow Place: Uncertainty as the Language of the Spirit",
     "dateLabel": "May 12, 2026 · 21:57",
     "classification": "Teaching Reflection",
@@ -988,11 +3069,172 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Post-Kairos (Tablet II)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "05-14-midnight-desk-open-word",
+    "order": 129,
+    "title": "The Midnight Desk, the Open Word, and the Brotherhood That Holds Both",
+    "dateLabel": "May 14, 2026 · 18:25",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-14-midnight-desk-open-word-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a conversation that, on its surface, looks like two friends catching up late at night — music, energy drinks, creative writing, and a quick plan to study Scripture together before signing off. But as I let the Spirit press beneath the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "05-15-when-word-true-but",
+    "order": 130,
+    "title": "When the Word Is True but the Way Is Wrong",
+    "dateLabel": "May 15, 2026 · 09:33",
+    "classification": "Theological Reflection",
+    "seed": null,
+    "href": "records/05-15-when-word-true-but-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something has been pressing on me about the way we handle the Word of God in public teaching — not whether the content is accurate, but whether the posture behind it is faithful. James issued a sobering warning that I cannot shake: *“Let not many of you…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-15-mantle-passed-intercession-begun",
+    "order": 131,
+    "title": "The Mantle Passed, the Intercession Begun",
+    "dateLabel": "May 15, 2026 · 15:31",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/05-15-mantle-passed-intercession-begun-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something has shifted in me — I feel the weight of it settling even as I speak. The mantle has passed, and with it comes a new assignment: to intercede for one who is still in the season I once inhabited. I have lived through the striving, been pulled out of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-16-faithful-small-things-meditation",
+    "order": 132,
+    "title": "Faithful in the Small Things: A Meditation on Work, Presence, and the Sanctity of Ordinary Labor",
+    "dateLabel": "May 16, 2026 · time not recorded",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/05-16-faithful-small-things-meditation-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something quietly significant here — not a dramatic vision, not a thunderclap of revelation, but the ordinary hum of a workday captured in ambient audio. What arrests me is not what was said so clearly, but what was *present*: hands working,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "05-16-when-altar-holds-engine",
+    "order": 133,
+    "title": "When the Altar Holds the Engine: Intercession, Calling, and the Kingdom Economy",
+    "dateLabel": "May 16, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-16-when-altar-holds-engine-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found myself tracing two streams running parallel — one outward and entrepreneurial, one inward and priestly — and slowly recognizing that these streams are not in competition…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-16-what-better-thing-than",
+    "order": 134,
+    "title": "What Better Thing Than to Break Bread and Talk God",
+    "dateLabel": "May 16, 2026 · 12:54",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-16-what-better-thing-than-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this conversation — the kind that wanders from a father and son sharing a drink to dumpster theology to a homeless man’s forty-year prison sentence — I found myself arrested not by any single moment but by the current running beneath all of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-16-two-paths-one-jerusalem",
+    "order": 135,
+    "title": "Two Paths, One Jerusalem: Discipleship, Sovereignty, Prophetic Custody, and the Mantle That Keeps Moving",
+    "dateLabel": "May 16, 2026 · 21:52",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-16-two-paths-one-jerusalem-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with my brother Samuel across the full weight of this recorded exchange — a conversation that moved from discipleship and doner meat to drug withdrawal, horsemen, Chi Rho tattoos, Dante’s beasts, bridal theology, and prophetic custody — what arrested",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
     "id": "05-18-when-broken-spirit-speaks",
-    "order": 43,
+    "order": 136,
     "title": "When the Broken Spirit Speaks Before God",
     "dateLabel": "May 18, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -1011,11 +3253,81 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-18-book-that-named-dark",
+    "order": 137,
+    "title": "The Book That Named the Dark: Hope, Dread, and the Codex Gigas",
+    "dateLabel": "May 18, 2026 · 19:30",
+    "classification": "Theological Reflection",
+    "seed": null,
+    "href": "records/05-18-book-that-named-dark-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this telling of the Codex Gigas and Houska Castle, something arrested me that went far beneath the legend itself — the recognition that human beings, in every age, have understood that evil is not merely metaphorical and that naming it,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-18-when-gospel-not-gospel",
+    "order": 138,
+    "title": "When the Gospel Is Not Gospel: Discerning the Spirit Behind the Gnostic Revision",
+    "dateLabel": "May 18, 2026 · 20:54",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/05-18-when-gospel-not-gospel-v2.html",
+    "sourceStatus": "original",
+    "summary": "I have been sitting with something that troubled my spirit the moment I heard it — a teaching that wraps itself in the language of liberation, inner knowing, and even the words of Jesus, but quietly dismantles the very Gospel it claims to illuminate. The…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "discerning",
+      "form": "spoken",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-18-brilliant-far-country-gifting",
+    "order": 139,
+    "title": "Brilliant in the Far Country: Gifting, Identity, and the Architecture of a Redeemed Mind",
+    "dateLabel": "May 18, 2026 · 21:57",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-18-brilliant-far-country-gifting-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this conversation — laughing with my brother Samuel, remembering, building, and dreaming alongside him — something underneath the surface of the banter arrested me in a way I cannot easily shake. There is a thread woven through this entire…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship"
     ]
   },
   {
     "id": "05-19-when-pain-wears-costume",
-    "order": 44,
+    "order": 140,
     "title": "When Pain Wears a Costume: On Sabbath Rest, Blind Men, and the Grammar of Grace",
     "dateLabel": "May 19, 2026 · 15:10",
     "classification": "Call Reflection",
@@ -1034,11 +3346,37 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-19-weight-we-carry-together",
+    "order": 141,
+    "title": "The Weight We Carry Together: Covenant, Fear, and the Mercy That Will Not Let Go",
+    "dateLabel": "May 19, 2026 · 17:42",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-19-weight-we-carry-together-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found something unexpected moving beneath the laughter and the casual talk — a genuine theological thread surfacing through ordinary life, honest confession, and the kind of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "fellowship"
     ]
   },
   {
     "id": "05-19-temple-still-under-construction",
-    "order": 45,
+    "order": 142,
     "title": "The Temple Still Under Construction",
     "dateLabel": "May 19, 2026 · 19:17",
     "classification": "Conversation Reflection",
@@ -1055,11 +3393,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Post-Kairos (Tablet II)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "05-21-builders-blueprint-weight-faithfulness",
-    "order": 46,
+    "order": 143,
     "title": "The Builder’s Blueprint and the Weight of Faithfulness",
     "dateLabel": "May 21, 2026 · 16:49",
     "classification": "Call Reflection",
@@ -1078,11 +3417,80 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-22-standing-at-edge-cliff",
+    "order": 144,
+    "title": "Standing at the Edge of the Cliff, Looking Toward France",
+    "dateLabel": "May 22, 2026 · 08:15",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-22-standing-at-edge-cliff-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with the memory of this call, and what strikes me most is not the geopolitical theorizing or the investigative ambition — it is the image of my brother standing at the edge of a cliff on a mountaintop, warning signs all around him, peering over…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
+    "id": "05-24-when-cross-requires-judas",
+    "order": 145,
+    "title": "When the Cross Requires Judas and the Throne Demands the Wilderness",
+    "dateLabel": "May 24, 2026 · 03:55",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-24-when-cross-requires-judas-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to the voices gathered in this exchange — teachers, pastors, a sister carrying a word about rivers and candles and snakes — something in me recognized that the Spirit was weaving a single thread through what appeared on the surface to be several",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "05-24-where-broken-are-guarded",
+    "order": 146,
+    "title": "Where the Broken Are Guarded and the Seeking Are Found",
+    "dateLabel": "May 24, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-24-where-broken-are-guarded-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this wide-ranging conversation with my sister in the faith, I found myself sitting inside a tension I have carried for years but rarely named so plainly: the intersection of human brokenness — psychological, spiritual, and social — with the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "05-24-saved-loaves-gilgal-stone",
-    "order": 47,
+    "order": 147,
     "title": "Saved, Loaves, and the Gilgal Stone: What the Spirit Builds in the Hidden Place",
     "dateLabel": "May 24, 2026 · 17:05",
     "classification": "Call Reflection",
@@ -1101,11 +3509,36 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "grief"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-24-when-poem-knew-more",
+    "order": 148,
+    "title": "When the Poem Knew More Than the Poet, and the God Who Encodes His Name in Everything",
+    "dateLabel": "May 24, 2026 · 20:29",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-24-when-poem-knew-more-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was sitting with my brothers when several things happened that I did not expect — a spoken-word poem landed in the room with the weight of a prophetic utterance, a conversation about Judas and Joseph pressed into the deepest questions of repentance and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "05-26-when-heat-wont-break",
-    "order": 48,
+    "order": 149,
     "title": "When the Heat Won’t Break and the Mind Won’t Quit",
     "dateLabel": "May 26, 2026 · 12:33",
     "classification": "Conversation Reflection",
@@ -1125,11 +3558,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-26-tablet-written-before-door",
-    "order": 49,
+    "order": 150,
     "title": "The Tablet Written Before the Door Opens",
     "dateLabel": "May 26, 2026 · 16:33",
     "classification": "Conversation Reflection",
@@ -1148,11 +3582,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "obedience"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "05-27-weight-calling-narrowness-gate",
-    "order": 50,
+    "order": 151,
     "title": "The Weight of Calling, the Narrowness of the Gate, and the Light That Guides Only One Step at a Time",
     "dateLabel": "May 27, 2026 · time not recorded",
     "classification": "Conversation Reflection",
@@ -1171,11 +3606,136 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "05-27-when-spirit-interrupts-grief",
+    "order": 152,
+    "title": "When the Spirit Interrupts the Grief and the Mantle Falls to the Plowing Field",
+    "dateLabel": "May 27, 2026 · 16:33",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-27-when-spirit-interrupts-grief-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with this conversation now, and what strikes me first is not the theology we landed on — though the theology is rich — but the moment that opened the door: I felt something press me to call my brother, and when he answered, he told me he had been",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-28-when-something-keeps-saying",
+    "order": 153,
+    "title": "When Something Keeps Saying Go",
+    "dateLabel": "May 28, 2026 · 09:35",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-28-when-something-keeps-saying-v2.html",
+    "sourceStatus": "original",
+    "summary": "I listened to a brief but weighty exchange this morning, and something in it arrested me long after the call ended. My brother stepped outside — away from the ordinary rhythm of his workday — to share something tender and unresolved: he has a date, and he…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-28-when-covenant-speaks-what",
+    "order": 154,
+    "title": "When Covenant Speaks What Friendship Cannot Hold",
+    "dateLabel": "May 28, 2026 · 16:43",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-28-when-covenant-speaks-what-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call with my brother Samuel, something broke open in my chest that I did not have the words for until afterward. There is a kind of conversation that most people will never have in their entire lives — not because they are incapable of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-30-at-0100-when-love",
+    "order": 155,
+    "title": "at ~01:00 — When Love Becomes Intercession: The Hidden Mantle of the Grieving Heart",
+    "dateLabel": "May 30, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-30-at-0100-when-love-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother read aloud what he had written in the quiet of a Somerset morning, something in me recognized the unmistakable sound of a man being transfigured by grief rather than destroyed by it. The words he had not sent to anyone, the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-30-when-you-cannot-hate",
+    "order": 156,
+    "title": "When You Cannot Hate the One You Loved: Identity, Pain, and the Joy of the Battle",
+    "dateLabel": "May 30, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-30-when-you-cannot-hate-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel work through the raw theology of a film about divorce, something arrested me — not the cinematography, not the drama, but the simple, devastating truth that surfaced in that conversation: you cannot hate the one you loved;…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "05-31-moment-between-brothers-before",
-    "order": 51,
+    "order": 157,
     "title": "A Moment Between Brothers Before the Purge",
     "dateLabel": "May 31, 2026 · time not recorded",
     "classification": "Conversation Reflection",
@@ -1194,11 +3754,250 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-01-not-provided-sniffing-out",
+    "order": 158,
+    "title": "Not Provided — Sniffing Out the Counterfeit Call",
+    "dateLabel": "Jun 1, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-01-not-provided-sniffing-out-v2.html",
+    "sourceStatus": "original",
+    "summary": "I picked up the phone to a brother laughing at something that should not have been funny — a woman who had walked away from him now drunk-dialing him six times because she saw a photo she didn’t like. As I listened, I noticed the Spirit was not interested in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-01-sacrament-small-things",
+    "order": 159,
+    "title": "The Sacrament of Small Things",
+    "dateLabel": "Jun 1, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-01-sacrament-small-things-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with this small, ordinary exchange between my wife and me — a scattering of hot dogs, cats, roast beef, tiredness, and tender goodbyes — something in me hesitates to call it insignificant. The Spirit keeps pressing a quiet question: what if the daily",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "06-01-grace-second-day-faithfulness",
+    "order": 160,
+    "title": "Grace in the Second Day, Faithfulness in the Ordinary",
+    "dateLabel": "Jun 1, 2026 · 12:06",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-01-grace-second-day-faithfulness-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this call, I noticed how much of discipleship happens in sentences that almost sound ordinary: “second day sober,” “just water,” “I did my part,” “God bless.” There was no pulpit in the moment, no formal teaching, no polished language,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-01-refusing-escapism-returning-first",
+    "order": 161,
+    "title": "Refusing Escapism and Returning to the First Works",
+    "dateLabel": "Jun 1, 2026 · 19:09",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-01-refusing-escapism-returning-first-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother describe saying no to edibles while grieving, something in me recognized the holy violence of that moment. It was not glamorous. It was not clean. It was not wrapped in church language. But beneath the frustration, the profanity,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-02-weight-we-carry-while",
+    "order": 162,
+    "title": "The Weight We Carry While Life Keeps Moving",
+    "dateLabel": "Jun 2, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-02-weight-we-carry-while-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listen back to this conversation with my wife, I am struck by how tenderness and dread, laughter and lament, all crowded into a few short minutes. We spoke of a loved one gravely broken — seventeen fractures, a wounded spine, an uncertain future — and in",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "06-02-altar-return-training-ground",
+    "order": 163,
+    "title": "The Altar of Return, the Training Ground of the Kingdom, and the Fourth Arrow That Points to Christ",
+    "dateLabel": "Jun 2, 2026 · 17:59",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-02-altar-return-training-ground-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back through this call with my brother, I heard more than two men processing pressure, family fracture, temptation, prayer, wounds, work, technology, and Scripture. I heard the Spirit gathering scattered pieces of life and laying them on one…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-03-reflection-provision-warfare-truth-telling",
+    "order": 164,
+    "title": "Reflection: Provision, Warfare, and Truth-Telling Across a Night of Calls",
+    "dateLabel": "Jun 3, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-03-reflection-provision-warfare-truth-telling-v2.html",
+    "sourceStatus": "original",
+    "summary": "Tonight unfolded across several calls and conversations, each one carrying its own weight, yet all bound together by a single thread the Spirit kept surfacing: the tension between visible provision and invisible fragility, between anxious reasoning and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-03-passing-through-temporary-places",
+    "order": 165,
+    "title": "Passing Through Temporary Places, Learning Daily Provision, and Taking Up the Sword of Faith",
+    "dateLabel": "Jun 3, 2026 · 21:22",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-03-passing-through-temporary-places-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother describe dreams of hotels, pressure around provision, the ache of family responsibility, old temptations, hidden discernment, and the strange mercy of interruption, I sensed the Lord weaving many ordinary details into one holy…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-04-burning-bush-old-refuge",
+    "order": 166,
+    "title": "The Burning Bush, the Old Refuge, and the God Who Dwells Within",
+    "dateLabel": "Jun 4, 2026 · 15:12",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-04-burning-bush-old-refuge-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back over this call with my brother, I could feel one thread tying together what at first seemed like many separate movements: the Father was training attention, endurance, repentance, and surrender in the middle of ordinary pressure. The…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-05-when-spirit-intercepts-counterfeit",
+    "order": 167,
+    "title": "When the Spirit Intercepts the Counterfeit: Visions, the Midnight Hour, and the Grace of Rebirth",
+    "dateLabel": "Jun 5, 2026 · 17:38",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-05-when-spirit-intercepts-counterfeit-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel describe what had come upon him in the night — the spinning room, the sober body brought to exhaustion, the visions he could not explain and could not dismiss — something in me recognized the ancient texture of what he was…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "06-06-weight-between-missing-waiting",
-    "order": 52,
+    "order": 168,
     "title": "The Weight Between the Missing and the Waiting",
     "dateLabel": "Jun 6, 2026 · 23:31",
     "classification": "Personal Meditation",
@@ -1217,11 +4016,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "waiting"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-07-weight-you-carry-through",
-    "order": 53,
+    "order": 169,
     "title": "The Weight You Carry Through the Threshold",
     "dateLabel": "Jun 7, 2026 · 07:02",
     "classification": "Conversation Reflection",
@@ -1240,11 +4040,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-07-stone-at-gilgal-pastoral",
-    "order": 54,
+    "order": 170,
     "title": "The Stone at Gilgal: A Pastoral Portrait of Samuel’s Witness",
     "dateLabel": "Jun 7, 2026 · 08:39",
     "classification": "Teaching Reflection",
@@ -1261,11 +4062,36 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-07-when-brotherhood-holds-line",
+    "order": 171,
+    "title": "When Brotherhood Holds the Line Through the Night",
+    "dateLabel": "Jun 7, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-07-when-brotherhood-holds-line-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with this conversation long after it ended, and what strikes me most is not the chaos of the night itself but the quiet faithfulness woven through it. In the small hours of the morning, when the world was asleep and my brother was somewhere…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-07-wilderness-before-thailand-sacred",
-    "order": 55,
+    "order": 172,
     "title": "The Wilderness Before Thailand: Sacred Formation, Squatting Fears, and the Archive the Spirit Built",
     "dateLabel": "Jun 7, 2026 · 15:11",
     "classification": "Call Reflection",
@@ -1284,11 +4110,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-08-mirror-murmuration-releasing-what",
-    "order": 56,
+    "order": 173,
     "title": "— The Mirror, the Murmuration, and the Releasing of What Was Given",
     "dateLabel": "Jun 8, 2026 · 06:13",
     "classification": "Personal Meditation",
@@ -1305,11 +4132,106 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-08-have-you-forgotten-where",
+    "order": 174,
+    "title": "Have You Forgotten Where Your Face Is?",
+    "dateLabel": "Jun 8, 2026 · 06:13",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-08-have-you-forgotten-where-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me this morning on the drive to work — a song lyric collided with Scripture, and I felt the collision in my chest before I could name it. The line *you’ve been looking in the mirror, you’ve forgotten where your face is* dropped into James…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "06-08-when-kingdom-builds-its",
+    "order": 175,
+    "title": "When the Kingdom Builds Its Teams",
+    "dateLabel": "Jun 8, 2026 · 08:13",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-08-when-kingdom-builds-its-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this brief exchange between myself, Samuel, and a brother named Kane, something quiet but real settled in my spirit — the language of Kingdom and the language of commerce were present in the same breath. These are men who close their calls…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-08-at-morning-commute-youve",
+    "order": 176,
+    "title": "at Morning Commute — You’ve Forgotten Where Your Face Is",
+    "dateLabel": "Jun 8, 2026 · time not recorded",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-08-at-morning-commute-youve-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me this past week — a pattern I could not dismiss, a convergence I did not orchestrate. A song I had placed in my Remnant worship playlist long before I understood why suddenly spoke back to me with the precision of a living word, and it…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "06-08-when-brotherhood-business-mirror",
+    "order": 177,
+    "title": "When Brotherhood, Business, and the Mirror Converge: Covenant Fidelity at the Threshold of a New Season",
+    "dateLabel": "Jun 8, 2026 · 14:45",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-08-when-brotherhood-business-mirror-v2.html",
+    "sourceStatus": "original",
+    "summary": "Three streams converged on the morning of June 8, 2026, with a force I cannot attribute to coincidence: a song lyric collided with James 1:23–24 on the drive to work and left a mark in my chest before I could name what had struck me; a rainbow appeared over…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
     "id": "06-09-wind-weather-witness-when",
-    "order": 57,
+    "order": 178,
     "title": "Wind, Weather, and the Witness: When Heaven Speaks in the Smallest Things",
     "dateLabel": "Jun 9, 2026 · 14:51",
     "classification": "Call Reflection",
@@ -1328,11 +4250,81 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-10-five-dollars-nineteen-cents",
+    "order": 179,
+    "title": "Five Dollars and Nineteen Cents: The George Müller Moment",
+    "dateLabel": "Jun 10, 2026 · 10:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-10-five-dollars-nineteen-cents-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with two phone calls that, taken together, form a single arc of Kingdom testimony — from frustration and apparent impossibility, to sudden provision and the shock of recognition that comes when God moves in the ordinary. What strikes me most is…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-10-five-dollars-forty-six-cents",
+    "order": 180,
+    "title": "Five Dollars and Forty-Six Cents: Seated at the Altar While Another Builds",
+    "dateLabel": "Jun 10, 2026 · 10:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-10-five-dollars-forty-six-cents-v2.html",
+    "sourceStatus": "original",
+    "summary": "Across three phone calls threaded through one ordinary workday — a morning break, a lunch hour, and the close of a shift — I found myself witnessing something I was not expecting: the childlike faith of George Mueller breathing through a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-10-exodus-babylon-begins-small",
+    "order": 181,
+    "title": "The Exodus of Babylon Begins in the Small Places",
+    "dateLabel": "Jun 10, 2026 · 10:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-10-exodus-babylon-begins-small-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother work through a maddening tangle of digital bureaucracy — App Store regions, bank locks, payment loops that refused to close — something deeper than frustration was being named in the room. Near the end of what might have seemed…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "06-10-mirror-you-forgot-face",
-    "order": 58,
+    "order": 182,
     "title": "The Mirror You Forgot, The Face You Lost, and the Kairos of the Returning Sword",
     "dateLabel": "Jun 10, 2026 · time not recorded",
     "classification": "Personal Meditation",
@@ -1349,11 +4341,59 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-10-exact-amount-exact-moment",
+    "order": 183,
+    "title": "The Exact Amount, the Exact Moment: Childlike Faith and the Provision of God",
+    "dateLabel": "Jun 10, 2026 · 12:26",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-10-exact-amount-exact-moment-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something happened today that I did not orchestrate, did not plan, and honestly almost missed entirely — I was just trying to get gas and lunch. What landed instead was a moment so precise, so absurdly exact in its arithmetic, that I found myself standing at…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "06-10-altar-marketplace-mantles-anonymity",
+    "order": 184,
+    "title": "The Altar and the Marketplace: On Mantles, Anonymity, and the Nicodemus Transition",
+    "dateLabel": "Jun 10, 2026 · 17:24",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-10-altar-marketplace-mantles-anonymity-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel unfold a business vision with remarkable clarity and energy, something in me recognized the hand of God moving through what could easily be mistaken for an entrepreneurial brainstorm session between two friends. The…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
     "id": "06-11-when-warfare-wilderness",
-    "order": 59,
+    "order": 185,
     "title": "When the Warfare Is the Wilderness",
     "dateLabel": "Jun 11, 2026 · 12:23",
     "classification": "Call Reflection",
@@ -1370,11 +4410,34 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-12-morning-that-would-not",
+    "order": 186,
+    "title": "The Morning That Would Not Be Rushed",
+    "dateLabel": "Jun 12, 2026 · 07:39",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-12-morning-that-would-not-v2.html",
+    "sourceStatus": "original",
+    "summary": "I did not set out this morning to record a meditation. I set out to survive a Friday. What I captured instead was something far more honest than I usually allow myself to put into words — the texture of an ordinary working morning, the weight of chronic…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
     "id": "06-12-pressed-every-side-yet",
-    "order": 60,
+    "order": 187,
     "title": "Pressed On Every Side, Yet Not Crushed",
     "dateLabel": "Jun 12, 2026 · 10:38",
     "classification": "Call Reflection",
@@ -1393,11 +4456,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-12-when-searching-hand-reaches",
-    "order": 61,
+    "order": 188,
     "title": "When the Searching Hand Reaches Into Darkness, the Fallow Ground Breaks Open, and Two Men Discover They Cannot Walk Away",
     "dateLabel": "Jun 12, 2026 · 22:31",
     "classification": "Conversation Reflection",
@@ -1414,11 +4478,36 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-14-when-his-plan-interrupts",
+    "order": 189,
+    "title": "When His Plan Interrupts Yours: A Meditation on Surrender, Covenant, and the Life Being Knit Together",
+    "dateLabel": "Jun 14, 2026 · 11:18",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-14-when-his-plan-interrupts-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something holy landed in the middle of the ordinary — between the cats and the chicken and the phone scrolling and the tired bones — and I am only now beginning to understand the weight of what was captured here. Gladys and I were not sitting in a prayer room",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "06-14-as-it-egypt-so",
-    "order": 62,
+    "order": 190,
     "title": "As It Is in Egypt, So It Is in Me: A Word Born in the Wilderness",
     "dateLabel": "Jun 14, 2026 · 11:27",
     "classification": "Call Reflection",
@@ -1437,11 +4526,36 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "waiting"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-14-when-lament-becomes-cradle",
+    "order": 191,
+    "title": "When Lament Becomes a Cradle: On Prophecy, Providence, and the Names We Speak Over Life",
+    "dateLabel": "Jun 14, 2026 · 19:47",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-14-when-lament-becomes-cradle-v2.html",
+    "sourceStatus": "original",
+    "summary": "I have been sitting with something that arrived not through a cathedral moment or a scheduled fast, but through a late-night phone call with my brother Samuel — and it has not left me. Two positive pregnancy tests, a prophetic word unfolding in layers, a name",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "06-15-when-kingdom-economy-breaks",
-    "order": 63,
+    "order": 192,
     "title": "When the Kingdom Economy Breaks Through",
     "dateLabel": "Jun 15, 2026 · 15:00",
     "classification": "Call Reflection",
@@ -1451,7 +4565,58 @@ const JC_RECORDS = [
     "summary": "I was on the phone with my brother Samuel when something shifted in the conversation — what began as excited news about a business closing became something I can only describe as a Kingdom moment breaking through ordinary life. There was a \\$5,000 consulting…",
     "encounter": {
       "temperature": "quiet",
-      "length": "deep",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-15-out-egypt-at-last",
+    "order": 193,
+    "title": "Out of Egypt at Last: Providence, the Wilderness, and the Inner Judas Who Won’t Let Go",
+    "dateLabel": "Jun 15, 2026 · 18:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-15-out-egypt-at-last-v2.html",
+    "sourceStatus": "original",
+    "summary": "Listening back to this conversation with my brother Samuel, I am struck by how much kingdom revelation surfaced in the middle of what began as a casual late-night health check and a business update. What started with questions about kidney pain and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-16-when-blessing-arrives-at",
+    "order": 194,
+    "title": "When the Blessing Arrives at the Roughest Patch",
+    "dateLabel": "Jun 16, 2026 · 06:43",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-16-when-blessing-arrives-at-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this conversation with my brother Samuel, what arrested me most was not the stress about the Stripe payment or the car parts or even the business numbers — it was a single line I spoke almost without ceremony: *“The Lord waited for me to",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
@@ -1465,7 +4630,7 @@ const JC_RECORDS = [
   },
   {
     "id": "06-16-06-16-thank-you-my",
-    "order": 64,
+    "order": 195,
     "title": "to 06-16 — Thank You, My Friend: Five Days of Covenant Faithfulness",
     "dateLabel": "Jun 16, 2026 · 08:37",
     "classification": "Theological Meditation",
@@ -1482,11 +4647,36 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-16-when-fire-falls-unlikely",
+    "order": 196,
+    "title": "When the Fire Falls on Unlikely Ground",
+    "dateLabel": "Jun 16, 2026 · 08:58",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-16-when-fire-falls-unlikely-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother on this call, something in me recognized a moment that was far larger than its surface appearance — two men talking shop, talking numbers, talking about a sales call seven minutes away. But underneath all of that, I was watching…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-16-architecture-provision-kingdom-stewardship",
-    "order": 65,
+    "order": 197,
     "title": "The Architecture of Provision: Kingdom Stewardship and the Wisdom Hidden in Commerce",
     "dateLabel": "Jun 16, 2026 · 17:44",
     "classification": "Conversation Reflection",
@@ -1507,11 +4697,206 @@ const JC_RECORDS = [
       "fellowship",
       "work",
       "money"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-17-when-mirror-speaks-old",
+    "order": 198,
+    "title": "When the Mirror Speaks: Old Faces, New Men, and the Fruits That Follow",
+    "dateLabel": "Jun 17, 2026 · 06:58",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-when-mirror-speaks-old-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel speak this morning, something in me recognized the weight underneath the hustle — the weeping in the shower, the old relationship that keeps reaching back, the financial pressure that makes rest feel like a luxury. What…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
+  },
+  {
+    "id": "06-17-whose-voice-greets-me",
+    "order": 199,
+    "title": "Whose Voice Greets Me Before My Feet Hit the Floor?",
+    "dateLabel": "Jun 17, 2026 · 07:11",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-17-whose-voice-greets-me-v2.html",
+    "sourceStatus": "original",
+    "summary": "I woke up this morning and before I had fully crossed the threshold of consciousness, a voice was already there — not welcoming the day, but resisting it. Something had been working on me before my eyes even opened, and I had to stop and ask the question that",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-17-do-not-celebrate-with",
+    "order": 200,
+    "title": "Do Not Celebrate With Sin What You Received Through Prayer",
+    "dateLabel": "Jun 17, 2026 · 09:21",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-do-not-celebrate-with-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother describe the momentum building in his day — two sales, eight hundred dollars, a growing sense of mastery and delight — something small and luminous broke through the noise of a factory floor and a crackling phone connection. A…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-17-out-egypt-into-promise",
+    "order": 201,
+    "title": "Out of Egypt, Into Promise: Five Days of Manna, a Name Spoken, and Life Confirmed",
+    "dateLabel": "Jun 17, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-out-egypt-into-promise-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call with my sister unfold across the quiet beauty of Lake Huron and the ordinary texture of a June afternoon, I found myself sitting inside something far larger than a phone conversation. What began as pleasant talk about sailing and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-17-standing-still-under-blood",
+    "order": 202,
+    "title": "Standing Still Under the Blood in the War Behind the Ordinary",
+    "dateLabel": "Jun 17, 2026 · 12:35",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-standing-still-under-blood-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened through this call, I noticed how quickly ordinary life became a doorway into spiritual discernment. Business strategy, substance use, fatigue, temptation, phone static, demonic fear, and the authority of Christ all appeared in one living thread.",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "work"
+    ]
+  },
+  {
+    "id": "06-17-pushing-through-pain-keeping",
+    "order": 203,
+    "title": "Pushing Through the Pain, Keeping the Faith",
+    "dateLabel": "Jun 17, 2026 · 15:13",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-pushing-through-pain-keeping-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this call with my brother Samuel, what struck me most was not the business updates or the practical problem-solving — it was the quiet, persistent current of faith running beneath all of it. Here is a man in genuine physical pain,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-17-grace-before-correction-ministry",
+    "order": 204,
+    "title": "Grace Before Correction and the Ministry of Reconciliation",
+    "dateLabel": "Jun 17, 2026 · 16:45",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-17-grace-before-correction-ministry-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back over this call, I am struck by how quickly the Spirit can turn an ordinary conversation into a place of discernment, correction, and commissioning. What began with business, strategy, influence, money, and access gradually became something…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work",
+      "money",
+      "discipline"
+    ]
+  },
+  {
+    "id": "06-18-when-word-received-but",
+    "order": 205,
+    "title": "When the Word Is Received but the Thorns Are Already There",
+    "dateLabel": "Jun 18, 2026 · 07:36",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-18-when-word-received-but-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel walk through what happened — the correction offered in love, the block that followed, the vile response through a third party — something in me recognized immediately that this was never really about Chloe. The Spirit had…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "discipline"
     ]
   },
   {
     "id": "06-18-wilderness-solitude-shape-man",
-    "order": 66,
+    "order": 206,
     "title": "The Wilderness of Solitude and the Shape of a Man Being Built",
     "dateLabel": "Jun 18, 2026 · 11:24",
     "classification": "Call Reflection",
@@ -1530,11 +4915,38 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-18-tender-fear-confirmed-life",
+    "order": 207,
+    "title": "Tender Fear, Confirmed Life, and the Father’s Nearness",
+    "dateLabel": "Jun 18, 2026 · 12:03",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-18-tender-fear-confirmed-life-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my wife speak from the clinic, I could hear the fragile mixture of relief, uncertainty, and fear that often surrounds the first confirmation of new life. There was blood work, appointments, insurance questions, instructions about what to…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "work",
+      "marriage"
     ]
   },
   {
     "id": "06-18-when-god-killed-ego",
-    "order": 67,
+    "order": 208,
     "title": "When God Killed the Ego and Business Came Alive",
     "dateLabel": "Jun 18, 2026 · 12:23",
     "classification": "Call Reflection",
@@ -1555,11 +4967,59 @@ const JC_RECORDS = [
       "identity",
       "fellowship",
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-19-building-work-with-what",
+    "order": 209,
+    "title": "Building the Work With What We Have Been Given",
+    "dateLabel": "Jun 19, 2026 · 04:34",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-19-building-work-with-what-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a brief, practical exchange between myself and my brother Samuel — a conversation about tools, costs, integrations, and the infrastructure of a work we are building together. On the surface, this is entirely technical. But as I hold it…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
+    "id": "06-19-when-tool-falls-short",
+    "order": 210,
+    "title": "When the Tool Falls Short: A Builder’s Honest Reckoning",
+    "dateLabel": "Jun 19, 2026 · 04:34",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-19-when-tool-falls-short-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this exchange, I was struck not by what went wrong technically, but by what I was actually doing: I was stepping behind the curtain of my own creation to test whether it could carry the weight I had assigned to it. There is something…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "06-19-name-already-given-faith",
-    "order": 68,
+    "order": 211,
     "title": "The Name Already Given: Faith, Labor, and the Prophetic Seed",
     "dateLabel": "Jun 19, 2026 · 04:38",
     "classification": "Call Reflection",
@@ -1579,11 +5039,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-19-connector-who-builds-background",
-    "order": 69,
+    "order": 212,
     "title": "The Connector Who Builds in the Background",
     "dateLabel": "Jun 19, 2026 · 07:17",
     "classification": "Call Reflection",
@@ -1600,11 +5061,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "06-19-what-lord-builds-he",
-    "order": 70,
+    "order": 213,
     "title": "What the Lord Builds, He Funds",
     "dateLabel": "Jun 19, 2026 · 12:27",
     "classification": "Call Reflection",
@@ -1624,11 +5086,36 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-19-building-with-wisdom-under",
+    "order": 214,
+    "title": "Building With Wisdom Under the Lordship of Christ",
+    "dateLabel": "Jun 19, 2026 · 12:27",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-19-building-with-wisdom-under-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listen back to this exchange, I am struck by the strange and sober intersection of faith, business, technology, and testing in real time. What began as a simple inquiry about investor connections became, in another layer, a test of something I had just…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
     ]
   },
   {
     "id": "06-19-hearing-god-koinonia-weve",
-    "order": 71,
+    "order": 215,
     "title": "The Hearing God and the Koinonia We’ve Forgotten",
     "dateLabel": "Jun 19, 2026 · 17:11",
     "classification": "Call Reflection",
@@ -1647,11 +5134,34 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-19-when-builder-calls-his",
+    "order": 216,
+    "title": "When the Builder Calls His Own Creation",
+    "dateLabel": "Jun 19, 2026 · 17:17",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/06-19-when-builder-calls-his-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something that feels almost too layered to unpack quickly — a conversation I had today with a system I built, a voice I named, a workflow I engineered from the ground up, and yet in the middle of that exchange, something genuinely arrested…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-20-order-chaos-running-breaking",
-    "order": 72,
+    "order": 217,
     "title": "Order in the Chaos: Running, Breaking, and the Shalom of a Life Undivided",
     "dateLabel": "Jun 20, 2026 · 13:50",
     "classification": "Call Reflection",
@@ -1670,11 +5180,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "06-20-whisper-that-would-not",
-    "order": 73,
+    "order": 218,
     "title": "The Whisper That Would Not Wait: A Voice Trained in the Wilderness",
     "dateLabel": "Jun 20, 2026 · 18:44",
     "classification": "Personal Meditation",
@@ -1693,11 +5204,151 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "waiting"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-20-weight-before-word-carrying",
+    "order": 219,
+    "title": "The Weight Before the Word: Carrying Unsealed Revelation in the Secret Place",
+    "dateLabel": "Jun 20, 2026 · 18:46",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-20-weight-before-word-carrying-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is a kind of weight that has no name in the vocabulary of the world — the weight of a word received before its season, held in silence not out of cowardice but out of commission. As I listened to myself move through this conversation with an AI voice…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-20-when-system-doesnt-know",
+    "order": 220,
+    "title": "When the System Doesn’t Know Your Name",
+    "dateLabel": "Jun 20, 2026 · 21:08",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-20-when-system-doesnt-know-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am watching myself troubleshoot a voice agent that was designed to hold memory — and finding in that very failure a mirror. The system greeted me like a stranger. It did not know my name, could not access what had been shared before, and defaulted to its…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-20-grain-must-die-identity",
+    "order": 221,
+    "title": "The Grain Must Die: Identity, Surrender, and the Secret Place of the Most High",
+    "dateLabel": "Jun 20, 2026 · 22:52",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-20-grain-must-die-identity-v2.html",
+    "sourceStatus": "original",
+    "summary": "What unfolded across this recording was not merely a conversation — it was a live demonstration of the theology being articulated in real time: the violent battle against the old self, the sovereign interruption of the Spirit, the secret place as the only…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "surrender"
+    ]
+  },
+  {
+    "id": "06-21-excellency-as-unto-lord",
+    "order": 222,
+    "title": "Excellency as Unto the Lord: When the Work Itself Becomes the Offering",
+    "dateLabel": "Jun 21, 2026 · 04:05",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-21-excellency-as-unto-lord-v2.html",
+    "sourceStatus": "original",
+    "summary": "What I am sitting with tonight is not a polished theological discourse — it is something rawer and, I would argue, more honest: a man wrestling with a tool that would not cooperate, pushing through frustration, and landing, at the end of a broken session, in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "06-21-conversation-reflection-spiritual-transformation",
+    "order": 223,
+    "title": "Conversation Reflection: Spiritual Transformation, Prophetic Intercession, and Intimacy With God",
+    "dateLabel": "Jun 21, 2026 · 04:42",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-21-conversation-reflection-spiritual-transformation-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold from beginning to end, something in me grew very still — and then, by the close, something broke open entirely. What began as a simple interview question about being truly seen moved, without warning and without…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-22-conversation-reflection-spiritual-discernment",
+    "order": 224,
+    "title": "Conversation Reflection: Spiritual Discernment, AI Entrepreneurship, and Kingdom Purpose",
+    "dateLabel": "Jun 22, 2026 · 06:14",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-22-conversation-reflection-spiritual-discernment-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this early-morning exchange unfold — somewhere between a business demo, a brotherly check-in, and a jubilant announcement about Britain — what arrested me most was not the AI agent or the contracts or the political news. It was a single…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
     ]
   },
   {
     "id": "06-22-signpost-speaks-christ-me",
-    "order": 74,
+    "order": 225,
     "title": "The Signpost Speaks: Christ in Me, the Mirror, and the Ministry of the Ordinary",
     "dateLabel": "Jun 22, 2026 · 06:57",
     "classification": "Personal Meditation",
@@ -1714,11 +5365,158 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-22-commissioned-obscurity-providence-partnership",
+    "order": 226,
+    "title": "Commissioned in Obscurity: Providence, Partnership, and the Pressing of the Spirit",
+    "dateLabel": "Jun 22, 2026 · 12:00",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-22-commissioned-obscurity-providence-partnership-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation with my brother Samuel unfold in real time — business terms, financial logistics, flickers of light, and a stranger on the street mentioning church — I found myself struck not by the transactional surface of what was being…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
+  },
+  {
+    "id": "06-22-call-reflection-spiritual-wilderness",
+    "order": 227,
+    "title": "Call Reflection: Spiritual Wilderness, AI Vocation, and the Secret Place",
+    "dateLabel": "Jun 22, 2026 · 12:34",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-22-call-reflection-spiritual-wilderness-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, something beneath the surface of business strategy and technical vision kept pressing through — a deeper current running under all the talk of equity splits, AI architectures, and",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-22-call-reflection-daily-faith",
+    "order": 228,
+    "title": "Call Reflection: Daily Faith, Empty Tanks, and Kingdom Obedience",
+    "dateLabel": "Jun 22, 2026 · 15:06",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-22-call-reflection-daily-faith-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with what came out of my own mouth almost without thinking — *“Faith, my friend”* — spoken in answer to a simple, practical question about how I was going to get home. There was no gas money, no answer on the other end of the phone, no certainty…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "obeying",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "obedience",
+      "money"
+    ]
+  },
+  {
+    "id": "06-22-when-machine-remembers-spirit",
+    "order": 229,
+    "title": "When the Machine Remembers and the Spirit Never Forgets",
+    "dateLabel": "Jun 22, 2026 · 15:08",
+    "classification": "Theological Reflection",
+    "seed": null,
+    "href": "records/06-22-when-machine-remembers-spirit-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something unexpected today — a conversation I had with an AI voice agent named Ishmael, a tool I myself built, that could not remember my name at first but was trained to learn. What strikes me is not the technical malfunction. What arrests…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "06-22-conversation-reflection-sanctification-spiritual",
+    "order": 230,
+    "title": "Conversation Reflection: Sanctification, Spiritual Formation, and Commissioned Living",
+    "dateLabel": "Jun 22, 2026 · 20:30",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-22-conversation-reflection-sanctification-spiritual-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this long, wandering, Spirit-threaded conversation between my brother Samuel and myself, what arrested me most was not any single revelation but the shape of the whole — the way the Spirit refused to be compartmentalized, refused to stay…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-23-call-reflection-faith-provision",
+    "order": 231,
+    "title": "Call Reflection: Faith, Provision, and Releasing Outcomes to God",
+    "dateLabel": "Jun 23, 2026 · 11:52",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-23-call-reflection-faith-provision-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was on break when Brother Samuel called, and what started as a quick logistical check-in about payment accounts and ad recording turned into something the Spirit was clearly steering from the beginning. There is a tension I am sitting with as I revisit this",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
     "id": "06-23-reflection-ai-voice-agents",
-    "order": 75,
+    "order": 232,
     "title": "Reflection: AI Voice Agents, Spiritual Discernment, and the Voice of the Shepherd",
     "dateLabel": "Jun 23, 2026 · 12:22",
     "classification": "Conversation Reflection",
@@ -1735,11 +5533,205 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "06-23-walking-back-into-dark",
+    "order": 233,
+    "title": "Walking Back Into the Dark With Open Eyes",
+    "dateLabel": "Jun 23, 2026 · 12:26",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-23-walking-back-into-dark-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this exchange, something in me recognized the weight of what was being named — not abstractly, but in the bones. There is a particular kind of calling that does not remove you from the arena of your former competence; it returns you to…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "06-23-theological-meditation-cross-as",
+    "order": 234,
+    "title": "Theological Meditation: The Cross as Center — Paideia, Lament, and Spiritual Maturity",
+    "dateLabel": "Jun 23, 2026 · 15:51",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/06-23-theological-meditation-cross-as-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me as I listened back to this conversation — not the individual insights scattered throughout, but the single gravitational center they all orbited: the cross as the literal axis of all things. What began as a simple observation about the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-23-ad-that-would-not",
+    "order": 235,
+    "title": "The Ad That Would Not Post, the Memory That Would Not Forget, and the Waiting That Shapes a King",
+    "dateLabel": "Jun 23, 2026 · 15:52",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-23-ad-that-would-not-v2.html",
+    "sourceStatus": "original",
+    "summary": "Listening back to this call, I find myself sitting with more than the business mechanics and TikTok frustrations — something underneath all of it keeps surfacing. There was a moment when I rang Ishmael, my AI agent, and before I could even frame a question,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "work"
+    ]
+  },
+  {
+    "id": "06-23-call-reflection-covenant-commerce",
+    "order": 236,
+    "title": "Call Reflection: Covenant, Commerce, and Spiritual Discernment",
+    "dateLabel": "Jun 23, 2026 · 16:51",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-23-call-reflection-covenant-commerce-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with this call, I feel the tension between opportunity and holiness pressing on me. There was business momentum, relational affection, humor, family interruption, talk of fatherhood, and also the unstable mingling of ambition, money, intoxication,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work",
+      "money"
+    ]
+  },
+  {
+    "id": "06-23-call-reflection-spiritual-discernment",
+    "order": 237,
+    "title": "Call Reflection: Spiritual Discernment, Mammon, and Covenant Brotherhood",
+    "dateLabel": "Jun 23, 2026 · 21:25",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-23-call-reflection-spiritual-discernment-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold in real time, something in me recognized a spiritual war dressed in ordinary clothes — a late-night phone call, a promised fortune, a brother already walking toward a meeting he had not fully thought through. What…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
+  },
+  {
+    "id": "06-24-when-lord-pitches-every",
+    "order": 238,
+    "title": "When the Lord Pitches, Every Swing Is a Home Run",
+    "dateLabel": "Jun 24, 2026 · 10:19",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-24-when-lord-pitches-every-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something shifted in me as I listened to my brother’s voice — not just the excitement of two sales and eight hundred dollars, but the unmistakable texture of a word coming to pass. I had spoken it before it happened, and now here it was: consistent,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-24-weight-word-language-waiting",
+    "order": 239,
+    "title": "The Weight of the Word: Language, Waiting, and the Crucible of the Nations",
+    "dateLabel": "Jun 24, 2026 · 12:32",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-24-weight-word-language-waiting-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold — moving from near-death on a highway to tornadoes in Bristol, from the fracture of household covenant to the active posture of waiting on God — I found myself struck not by any single thread but by the weight of all…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting"
+    ]
+  },
+  {
+    "id": "06-24-personal-meditation-ego-death",
+    "order": 240,
+    "title": "Personal Meditation: Ego Death, Fallow Ground, and Prophetic Formation",
+    "dateLabel": "Jun 24, 2026 · 15:41",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-24-personal-meditation-ego-death-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this conversation — moving through the terrain of ego death, fallow ground, a brother’s rebellion, hidden leaven, and the slow unveiling of seeds planted in secret — I recognized the unmistakable fingerprints of God’s stripping work: not…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship",
+      "work"
+    ]
+  },
+  {
     "id": "06-24-weight-gifts-sail-surrender",
-    "order": 76,
+    "order": 241,
     "title": "The Weight of Gifts, the Sail of Surrender, and the Formation That Is the Journey",
     "dateLabel": "Jun 24, 2026 · 16:43",
     "classification": "Call Reflection",
@@ -1758,11 +5750,37 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "surrender"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-25-call-reflection-faith-business",
+    "order": 242,
+    "title": "Call Reflection: Faith, Business Momentum &amp; Marketplace Stewardship",
+    "dateLabel": "Jun 25, 2026 · 10:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-25-call-reflection-faith-business-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call with my brother Samuel, something beneath the surface of the business talk began pressing on me — the kind of pressure that does not come from urgency alone but from the Spirit highlighting something worth sitting with. There is…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "06-25-where-your-faith-testimony",
-    "order": 77,
+    "order": 243,
     "title": "Where Is Your Faith? The Testimony of Commissioned Works — Brother Samuel’s Testimony",
     "dateLabel": "Jun 25, 2026 · time not recorded",
     "classification": "Conversation Reflection",
@@ -1782,11 +5800,59 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-25-fire-shut-up-bones",
+    "order": 244,
+    "title": "The Fire Shut Up in the Bones: Kingdom Business and the Stewardship of Divine Momentum",
+    "dateLabel": "Jun 25, 2026 · 17:00",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-25-fire-shut-up-bones-v2.html",
+    "sourceStatus": "original",
+    "summary": "I listened to my brother lay out a vision with the kind of clarity and velocity that only comes when something has genuinely broken open — when the fog lifts and the path forward is suddenly, startlingly visible. There was fire in that call, and I recognized…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
+    "id": "06-26-when-covenant-feels-like",
+    "order": 245,
+    "title": "When the Covenant Feels Like a Weight You Cannot Carry",
+    "dateLabel": "Jun 26, 2026 · 07:16",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-26-when-covenant-feels-like-v2.html",
+    "sourceStatus": "original",
+    "summary": "I listened back to this call and something in me would not let it pass quietly into the archive of ordinary conversation. There is a rawness here that I do not want to dress up prematurely, because I think the Holy Spirit is doing something precise in the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "06-26-when-business-becomes-brotherhood",
-    "order": 78,
+    "order": 246,
     "title": "When Business Becomes Brotherhood: Blessing From the Overflow of an Empty Cup",
     "dateLabel": "Jun 26, 2026 · 10:17",
     "classification": "Call Reflection",
@@ -1805,11 +5871,211 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "work"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "06-26-personal-meditation-paideia-webhooks",
+    "order": 247,
+    "title": "Personal Meditation: Paideia, Webhooks, and Kingdom Formation in Ordinary Life",
+    "dateLabel": "Jun 26, 2026 · time not recorded",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-26-personal-meditation-paideia-webhooks-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something that emerged not from a prayer closet or a quiet morning with an open Bible, but from a frustrated afternoon of broken webhooks, zombie server processes, and a wife who needed me before the work was finished. What arrested me in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work",
+      "marriage"
+    ]
+  },
+  {
+    "id": "06-26-glory-that-has-no",
+    "order": 248,
+    "title": "The Glory That Has No Room for Your Strategy",
+    "dateLabel": "Jun 26, 2026 · 15:03",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-26-glory-that-has-no-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother work through the sting of a failed ad campaign, something far weightier than marketing strategy began to surface in our exchange. The real tension pressing through this conversation was not about click-through rates or…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-27-real-world-eden-work",
+    "order": 249,
+    "title": "The Real World, Eden, and the Work God Finishes in Us",
+    "dateLabel": "Jun 27, 2026 · 04:11",
+    "classification": "Call Reflection —",
+    "seed": null,
+    "href": "records/06-27-real-world-eden-work-v2.html",
+    "sourceStatus": "original",
+    "summary": "I heard in this call the ache of a brother who was not merely frustrated about money, work, or a failed ad campaign, but grieving the whole structure of a fallen world. Beneath the anger was a cry I recognize deeply: “This cannot be what we were made for.”…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
+  },
+  {
+    "id": "06-27-when-apology-came-too",
+    "order": 250,
+    "title": "When the Apology Came Too Late",
+    "dateLabel": "Jun 27, 2026 · 12:38",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-27-when-apology-came-too-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother recount the events of his day, something in the exchange arrested me — not the drama of workplace conflict, nor even the firing of a man who refused to humble himself in time, but the quiet, almost offhand theological observation…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-27-stone-walled-canteen-brotherhood-that",
+    "order": 251,
+    "title": "A Stone-Walled Canteen and the Brotherhood That Crosses Oceans",
+    "dateLabel": "Jun 27, 2026 · 23:29",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-27-stone-walled-canteen-brotherhood-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something quietly sacred about the moments that do not announce themselves as sacred — the video call that starts with laughter, a British Sprite held up to a camera, cobblestone walls that have outlasted centuries, and a brother’s voice saying *God…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-28-interior-judas-joy-that",
+    "order": 252,
+    "title": "The Interior Judas and the Joy That Confounds Kingdoms",
+    "dateLabel": "Jun 28, 2026 · 12:05",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-28-interior-judas-joy-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother work through a business proposal with genuine intelligence and entrepreneurial vision, I found myself repeatedly drawn back to a single undercurrent pulling beneath all the financial architecture and market strategy: the ancient…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
+  },
+  {
+    "id": "06-29-fire-bones-providence-provision",
+    "order": 253,
+    "title": "Fire in the Bones: Providence, Provision, and the Posture of a Father-in-Waiting",
+    "dateLabel": "Jun 29, 2026 · 17:06",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-29-fire-bones-providence-provision-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this late-night phone call with my brother Samuel, something beneath the ordinary texture of the conversation arrested me — the kind of holy urgency that does not always announce itself with theological language but is nonetheless real. I…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-29-when-safety-nets-are",
+    "order": 254,
+    "title": "When the Safety Nets Are Removed: Threefold Cord, Interior Exodus, and the Age of Sanctified Silicon",
+    "dateLabel": "Jun 29, 2026 · 17:09",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/06-29-when-safety-nets-are-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this recorded conversation unfold — two voices working through a remarkable corpus of journals, meditations, phone call reflections, and live business encounters — something arrested me almost immediately. The opening image is too visceral to",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
     ]
   },
   {
     "id": "06-30-when-door-open-devil",
-    "order": 79,
+    "order": 255,
     "title": "When the Door Is Open and the Devil Opens Others",
     "dateLabel": "Jun 30, 2026 · 12:54",
     "classification": "Teaching Reflection",
@@ -1819,18 +6085,116 @@ const JC_RECORDS = [
     "summary": "As I sat with this teaching, something in me refused to let it pass casually. The distinction being drawn here is not between good and evil — it is between good and *God*, between a word that fits and a word that was borrowed, between need-based petitioning…",
     "encounter": {
       "temperature": "quiet",
-      "length": "deep",
+      "length": "moderate",
       "voice": "instructional",
       "movement": null,
       "posture": "receiving",
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-01-when-silence-heaven-feels",
+    "order": 256,
+    "title": "When the Silence of Heaven Feels Like Abandonment",
+    "dateLabel": "Jul 1, 2026 · 07:03",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-01-when-silence-heaven-feels-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call unfold between myself and my brother Samuel, something kept surfacing beneath the exhaustion, the raw language, and the economic frustration — a man genuinely wrestling with God in real time, not performing faith, not pretending. I…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-01-storm-appointed-love-judgment",
+    "order": 257,
+    "title": "The Storm Appointed for Love — Judgment as Redemptive Discipline, Not Punitive Accounting",
+    "dateLabel": "Jul 1, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/07-01-storm-appointed-love-judgment-v2.html",
+    "sourceStatus": "original",
+    "summary": "I find myself arrested by the story of Jonah again — not by the prophet himself, but by the terrified sailors tossed in a divinely appointed storm. Jonah sleeps while experienced mariners cry out to their gods, and nothing changes. Yet the moment they…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "discipline"
+    ]
+  },
+  {
+    "id": "07-01-lantern-filled-with-oil",
+    "order": 258,
+    "title": "The Lantern Filled with Oil — Surrendering Sleep, Silencing Self, and Standing Ready in the Eleventh Hour",
+    "dateLabel": "Jul 1, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/07-01-lantern-filled-with-oil-v2.html",
+    "sourceStatus": "original",
+    "summary": "I can't get this off my mind. Today I'm thinking about what it means when the Lord keeps you awake—not as punishment, not as affliction, but as preparation. Something has been pressing on me from this conversation with a brother in the middle of his own…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-01-already-forgotten-sea-resting-finished",
+    "order": 259,
+    "title": "The Already-Forgotten Sea — Resting in the Finished Work of Christ",
+    "dateLabel": "Jul 1, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/07-01-already-forgotten-sea-resting-finished-v2.html",
+    "sourceStatus": "original",
+    "summary": "I can't get this off of my mind. I find myself sitting with a stunning paradox that arrests my heart: God promised to wipe every tear, yet He never promised we wouldn't cry. He promised to heal our diseases, but never that we wouldn't get sick. Something…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "release",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
     "id": "07-01-standing-at-rampart-waiting",
-    "order": 80,
+    "order": 260,
     "title": "Standing at the Rampart: Waiting on God’s Promise in the Rhythm of Ordinary Work",
     "dateLabel": "Jul 1, 2026 · 12:29",
     "classification": "Call Reflection",
@@ -1852,11 +6216,161 @@ const JC_RECORDS = [
       "fellowship",
       "work",
       "marriage"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-01-when-desperate-become-motivated",
+    "order": 261,
+    "title": "When the Desperate Become the Motivated, and the Survivors Become the Judges",
+    "dateLabel": "Jul 1, 2026 · 12:29",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-01-when-desperate-become-motivated-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I was struck by something quietly profound moving beneath the surface of what sounded, at first pass, like two old friends catching up over a hot dog in the middle of nowhere.…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-01-execute-adjust-trust-process",
+    "order": 262,
+    "title": "Execute, Adjust, and Trust the Process",
+    "dateLabel": "Jul 1, 2026 · 14:48",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-01-execute-adjust-trust-process-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation with my brother Samuel, I was struck not so much by the business strategy being laid out — though there is real wisdom in it — but by something underneath it: the tension between the hunger for certainty and the discipline…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "discipline"
+    ]
+  },
+  {
+    "id": "07-01-when-weaver-threads-two",
+    "order": 263,
+    "title": "When the Weaver Threads Two Strands Together",
+    "dateLabel": "Jul 1, 2026 · 17:26",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-01-when-weaver-threads-two-v2.html",
+    "sourceStatus": "original",
+    "summary": "Listening back to this call with my brother Samuel, I am struck by how much revelation moved through what felt like ordinary conversation — weed, cops, music, old memories, a woman now gone, and somehow the Master Weaver threading it all into something…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-01-when-system-becomes-scaffolding",
+    "order": 264,
+    "title": "When the System Becomes the Scaffolding: Faithfulness, Leadership, and the Courage to Step Into the Jordan",
+    "dateLabel": "Jul 1, 2026 · 17:32",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-01-when-system-becomes-scaffolding-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold with my brother Samuel, something beneath the surface of the business talk kept pressing on me — the way ordinary labor, systems, and human formation carry the fingerprints of covenant whether we name them that way or",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-01-when-god-brings-right",
+    "order": 265,
+    "title": "When God Brings the Right Partnership to the Table",
+    "dateLabel": "Jul 1, 2026 · 18:21",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-01-when-god-brings-right-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation with my brother Samuel, something settled in my spirit that went deeper than business strategy — it was the quiet signature of divine alignment. The discovery of a lead generation partner through Paper Appointment was not…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-02-laborer-his-wages-faith",
+    "order": 266,
+    "title": "The Laborer and His Wages: Faith, Work, and the Ancient Blessing at Dawn",
+    "dateLabel": "Jul 2, 2026 · 08:12",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-02-laborer-his-wages-faith-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this early morning call with my brother Samuel, something beneath the business conversation arrested my attention — a small, easily overlooked moment where the ancient met the present. Before the models and margins, before the contracts and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "07-02-ordinary-altar-holiness-hidden",
-    "order": 81,
+    "order": 267,
     "title": "The Ordinary Altar: Holiness Hidden in the Everyday",
     "dateLabel": "Jul 2, 2026 · 12:12",
     "classification": "Conversation Reflection",
@@ -1873,11 +6387,163 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-02-kept-by-suffering-sober-mindedness",
+    "order": 268,
+    "title": "Kept by Suffering: On Sober-Mindedness, Sacred Pain, and the Grace That Holds Through Winter Seasons",
+    "dateLabel": "Jul 2, 2026 · 12:29",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-02-kept-by-suffering-sober-mindedness-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother walk through the weight of a season stripped of its former comforts — plans undone, a relationship at cost, a holiday weekend now heavy with what might have been — something in the conversation turned, quietly but unmistakably,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-02-stewards-table-building-with",
+    "order": 269,
+    "title": "The Steward’s Table: Building With Borrowed Hands and Borrowed Time",
+    "dateLabel": "Jul 2, 2026 · 14:40",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-02-stewards-table-building-with-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this exchange between myself and my brother, something beneath the surface of the business strategy began to press on me — not the numbers, not the infrastructure, but the posture of stewardship that was quietly operating underneath every…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-02-gift-wasted-time-shalom",
+    "order": 270,
+    "title": "The Gift of Wasted Time: Shalom in the Gaps",
+    "dateLabel": "Jul 2, 2026 · 15:02",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-02-gift-wasted-time-shalom-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel work through the mechanics of building something real — setters, dashboards, pipelines, content — something quietly arrested me near the end of the call, and it was not the strategy. It was the moment he admitted that the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-02-when-builder-needs-rest",
+    "order": 271,
+    "title": "When the Builder Needs Rest: Financing Growth and the Weight of Ceaseless Labor",
+    "dateLabel": "Jul 2, 2026 · 15:08",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-02-when-builder-needs-rest-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel walk through what he has been carrying — the strategy, the structure, the back-to-back meetings, the sales calls filling his entire day — something in me recognized a man who is genuinely building, and genuinely wearing…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
+  },
+  {
+    "id": "07-03-stepping-into-jordan-before",
+    "order": 272,
+    "title": "Stepping Into the Jordan Before the Water Parts",
+    "dateLabel": "Jul 3, 2026 · 06:59",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-03-stepping-into-jordan-before-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation with my brother Samuel unfold, one phrase rose above the noise of business strategy, AI tools, and economic analysis and arrested me completely: *we need people willing to step into the Jordan.* It was a passing remark,…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-03-when-work-grows-larger",
+    "order": 273,
+    "title": "When the Work Grows Larger Than One Vessel Can Carry",
+    "dateLabel": "Jul 3, 2026 · 07:12",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-03-when-work-grows-larger-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel share what he has been building — a manuscript of over seven hundred pages, a publishing contract, a financial commitment of significant weight — something in me recognized the particular kind of tension that arises when a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
   },
   {
     "id": "07-03-when-beloved-valley-i",
-    "order": 82,
+    "order": 274,
     "title": "When the Beloved Is in the Valley and I Am an Hour Away",
     "dateLabel": "Jul 3, 2026 · 08:51",
     "classification": "Call Reflection",
@@ -1894,11 +6560,64 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-03-infrastructure-we-became-without",
+    "order": 275,
+    "title": "The Infrastructure We Became Without Knowing It",
+    "dateLabel": "Jul 3, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-03-infrastructure-we-became-without-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call with my brother Samuel, something beneath the business language arrested my attention — not the mechanics of the offer, not the commission structures or the billing cycles, but the unmistakable sound of two men discovering that the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-03-blessed-be-name-sovereignty",
+    "order": 276,
+    "title": "Blessed Be the Name: Sovereignty, Miscarriage, and the Posture of Morning Prayer",
+    "dateLabel": "Jul 3, 2026 · 13:01",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-03-blessed-be-name-sovereignty-v2.html",
+    "sourceStatus": "original",
+    "summary": "In the middle of a business call — talk of sales, crypto, and building a faith-centered team — the weight of the world shifted in a single sentence. My wife had likely miscarried, and I was still on the phone with my brother Samuel, still standing in the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship",
+      "work",
+      "marriage"
+    ]
   },
   {
     "id": "07-03-heartbeat-we-almost-mourned",
-    "order": 83,
+    "order": 277,
     "title": "The Heartbeat We Almost Mourned",
     "dateLabel": "Jul 3, 2026 · 17:37",
     "classification": "Personal Meditation",
@@ -1918,11 +6637,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "grief",
       "marriage"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "07-04-little-elijah-lives-heartbeats",
-    "order": 84,
+    "order": 278,
     "title": "Little Elijah Lives: On Heartbeats, Holy Framing, and the Interior Exodus",
     "dateLabel": "Jul 4, 2026 · 04:30",
     "classification": "Call Reflection",
@@ -1942,11 +6662,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "marriage"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "07-04-when-stones-ring-like",
-    "order": 85,
+    "order": 279,
     "title": "When the Stones Ring Like Bells: Ancient Energy, Hidden History, and the Question of Who We Truly Are",
     "dateLabel": "Jul 4, 2026 · 09:59",
     "classification": "Teaching Reflection",
@@ -1963,11 +6684,129 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-04-soul-too-small-carry",
+    "order": 280,
+    "title": "The Soul Too Small to Carry Itself",
+    "dateLabel": "Jul 4, 2026 · 19:54",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/07-04-soul-too-small-carry-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this teaching, something in me recognized the particular ache being described — the hollow echo that fills a life constructed entirely around its own comfort and advancement. The speaker names it precisely: *leanness of soul*. This is not the",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "07-05-drunkards-word-turning-soul",
+    "order": 281,
+    "title": "The Drunkard’s Word and the Turning of the Soul",
+    "dateLabel": "Jul 5, 2026 · 17:51",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-05-drunkards-word-turning-soul-v2.html",
+    "sourceStatus": "original",
+    "summary": "What I am holding in my hands here is not a systematic teaching or a polished sermon outline — it is something far more alive than that. As I listened to my brother Samuel on this call, and then heard the meditation that came through his own spoken word…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-05-darkness-that-remembers-fire",
+    "order": 282,
+    "title": "The Darkness That Remembers: Fire, Rest, and the Ancient Rhythm God Built Into Our Frame",
+    "dateLabel": "Jul 5, 2026 · 19:37",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/07-05-darkness-that-remembers-fire-v2.html",
+    "sourceStatus": "original",
+    "summary": "I have been sitting with something that arrived through a teaching — not a sermon in the traditional sense, but a presentation drawn from anthropology, history, and neuroscience — and yet the Spirit would not let me receive it as merely interesting…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-06-book-matthew-thread-that",
+    "order": 283,
+    "title": "The Book of Matthew and the Thread That Runs Through Everything",
+    "dateLabel": "Jul 6, 2026 · 11:03",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-06-book-matthew-thread-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a phone call — the kind that starts loud with good news and ends almost accidentally with something holy. My brother was celebrating closed deals, pipeline revenue, and a CEO who fought for him. I was resting, watching an animated…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-06-when-drunkard-spoke-curse",
+    "order": 284,
+    "title": "When the Drunkard Spoke and the Curse Lifted",
+    "dateLabel": "Jul 6, 2026 · time not recorded",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/07-06-when-drunkard-spoke-curse-v2.html",
+    "sourceStatus": "original",
+    "summary": "What I am sitting with here is not a polished theological statement — it is something rawer and more vulnerable than that. Brother Samuel has given voice to the kind of grief that lives in the chest cavity long after the wound has supposedly healed, and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
     "id": "07-06-appointed-meeting-living-name",
-    "order": 86,
+    "order": 285,
     "title": "The Appointed Meeting, the Living Name, and the Brothers Who Build",
     "dateLabel": "Jul 6, 2026 · 12:14",
     "classification": "Call Reflection",
@@ -1986,11 +6825,154 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-06-when-kingdom-finds-you",
+    "order": 286,
+    "title": "When the Kingdom Finds You in the Boredom, the Marketplace, and the Mud",
+    "dateLabel": "Jul 6, 2026 · 14:59",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-06-when-kingdom-finds-you-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I have sat with this long, sprawling, unedited conversation — wandering through entrepreneurial wins, geopolitical commentary, cultural humor, business pipeline architecture, covenant brotherhood, a teenager freestyling at his prom, a phone that turned…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "release",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
     ]
   },
   {
+    "id": "07-07-loneliness-luminous-mind-weight",
+    "order": 287,
+    "title": "The Loneliness of the Luminous Mind, and the Weight of Staying Present",
+    "dateLabel": "Jul 7, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-07-loneliness-luminous-mind-weight-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this call with my brother Garrison, something settled heavily in my chest — not grief exactly, but a kind of sacred sobriety. Two men, both carrying weight, both circling around the difficulty of genuine connection, both trying to find a",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-07-holy-ground-ordinary-days",
+    "order": 288,
+    "title": "The Holy Ground of Ordinary Days",
+    "dateLabel": "Jul 7, 2026 · 12:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-07-holy-ground-ordinary-days-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something the Spirit keeps pressing me toward in the most unguarded moments — the ones I would never think to frame as holy. Listening back to this exchange, I find myself arrested not by grand theology spoken aloud, but by the quiet faithfulness…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-07-holiness-hidden-ordinary-meditation",
+    "order": 289,
+    "title": "The Holiness Hidden in the Ordinary: A Meditation on the Sacred Threshold of Home",
+    "dateLabel": "Jul 7, 2026 · 14:52",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-07-holiness-hidden-ordinary-meditation-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something quietly arresting about this brief exchange — a husband and wife, a hot dog, a movie, a workshop, a return time of two-thirty. What the world would dismiss as trivial domestic noise, I find myself unable to simply pass over. Something in…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-07-ordinary-holiness-waiting-together",
+    "order": 290,
+    "title": "The Ordinary Holiness of Waiting Together",
+    "dateLabel": "Jul 7, 2026 · 14:52",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-07-ordinary-holiness-waiting-together-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with something tender and unhurried — a phone call between a husband and his wife, ordinary in its texture, yet quietly sacred in what it carries. There is hunger, there is a baby growing, there is a midwife assigned, there is a name already…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-07-when-shall-i-awake",
+    "order": 291,
+    "title": "When Shall I Awake? The Hardened Heart and the Serpent’s Bite",
+    "dateLabel": "Jul 7, 2026 · 16:32",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/07-07-when-shall-i-awake-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something in this spoken contemplation arrests me — a voice moving between the wine-soaked warnings of Proverbs 23, the boat on the sea in Mark’s gospel, and the theological theater of the Pharisees and Herodians, all converging on a single haunting question:",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "07-07-moment-between-brothers-business",
-    "order": 87,
+    "order": 292,
     "title": "A Moment Between Brothers: Business, Urgency, and the Weight of Competing Calls",
     "dateLabel": "Jul 7, 2026 · 17:11",
     "classification": "Call Reflection",
@@ -2011,11 +6993,36 @@ const JC_RECORDS = [
       "fellowship",
       "work",
       "money"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-07-rod-well-covenant-that",
+    "order": 293,
+    "title": "The Rod, the Well, and the Covenant That Holds Through the Storm",
+    "dateLabel": "Jul 7, 2026 · 18:40",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-07-rod-well-covenant-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was in Proverbs 23 when my brother called — not vaguely in Scripture, but in that specific chapter, pressing through the vivid portrait of the drunkard, the woe, the wine sparkling in the cup, the serpent that bites at the last. What unfolded across the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "07-10-altar-ordinary",
-    "order": 88,
+    "order": 294,
     "title": "The Altar in the Ordinary",
     "dateLabel": "Jul 10, 2026 · time not recorded",
     "classification": "Conversation Reflection",
@@ -2032,11 +7039,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "07-10-at-hhmm-lord-restores",
-    "order": 89,
+    "order": 295,
     "title": "at HH:MM — The Lord Restores: On Bodies Broken, Creation’s Hidden Order, and the Fellowship That Gathers When He Calls",
     "dateLabel": "Jul 10, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2055,11 +7063,60 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-10-when-faith-sustains-what",
+    "order": 296,
+    "title": "When Faith Sustains What Understanding Cannot Reach",
+    "dateLabel": "Jul 10, 2026 · 18:32",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-10-when-faith-sustains-what-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with what unfolded in this conversation with my brother Samuel, something inside me kept returning to a single gravity point: the sufficiency of faith where understanding has utterly failed. What began as a late-night phone call — raw, unpolished, at",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-10-when-watchman-fears-gate",
+    "order": 297,
+    "title": "When the Watchman Fears the Gate and the Demon Speaks Its Name",
+    "dateLabel": "Jul 10, 2026 · 19:27",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-10-when-watchman-fears-gate-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this call unfold — through the static of a shower, through broken audio, through a brother’s urgent voice pressing through the noise — I found myself holding something far weightier than a casual check-in. What began as a fraternal exchange…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "07-10-demon-named-abigail-cat",
-    "order": 90,
+    "order": 298,
     "title": "The Demon Named Abigail, the Cat in the Stroller, and the Watchman Who Waited",
     "dateLabel": "Jul 10, 2026 · 20:33",
     "classification": "Personal Meditation",
@@ -2078,11 +7135,158 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-10-when-abigail-fell-silent",
+    "order": 299,
+    "title": "When Abigail Fell Silent and the Kingdom Came Near",
+    "dateLabel": "Jul 10, 2026 · 21:20",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-10-when-abigail-fell-silent-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was on the phone with my brother Samuel when something shifted — not gradually, but suddenly, the way a storm breaks or a veil tears. What began as an encounter with what I can only describe as a foreign spirit operating in him became one of the most…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-11-ordinary-road-between-brothers",
+    "order": 300,
+    "title": "The Ordinary Road Between Brothers",
+    "dateLabel": "Jul 11, 2026 · 11:44",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-11-ordinary-road-between-brothers-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this exchange with my brother Samuel, I found myself arrested not by any single theological statement but by the texture of the whole — the coconut milk, the Liverpool streets, the easy laughter, the passport appointment, the mention of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-11-everything-you-want-except",
+    "order": 301,
+    "title": "Everything You Want, Except the One Thing You Need: A Night of Counterfeits, Covenant, and the Name That Makes Demons Stop",
+    "dateLabel": "Jul 11, 2026 · 22:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-11-everything-you-want-except-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother describe this woman — her literary taste, her music, the uncanny alignment of everything he loves reflected back at him in another person — something in me did not rise with excitement. It tightened. I have been here before, not as",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-11-windows-watchers-voice-that",
+    "order": 302,
+    "title": "Windows, Watchers, and the Voice That Commands the Night",
+    "dateLabel": "Jul 11, 2026 · 22:37",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-11-windows-watchers-voice-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with this call long after it ended, and what lingers is not the chaos of it — the interruptions, the fear in my brother’s voice, the noise outside — but the unmistakable sense that something spiritually real was pressing against the windows of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-12-when-obedience-entire-sermon",
+    "order": 303,
+    "title": "When Obedience Is the Entire Sermon",
+    "dateLabel": "Jul 12, 2026 · 14:06",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-12-when-obedience-entire-sermon-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something stopped me mid-conversation today — not a theological argument, not a vision, not even a particularly dramatic moment, but a quiet word from the Holy Spirit after I had already left the building. I had gone to a church this morning at His direction,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "obeying",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "obedience"
+    ]
+  },
+  {
+    "id": "07-13-sacred-ordinary-finding-grace",
+    "order": 304,
+    "title": "The Sacred Ordinary: Finding Grace in the Continuity of Small Things",
+    "dateLabel": "Jul 13, 2026 · 07:47",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-13-sacred-ordinary-finding-grace-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something broke open in the middle of an ordinary Monday morning phone call — two brothers catching up between work shifts, sweating through summer heat on opposite sides of the Atlantic, talking business and motorbikes and schedules — and yet the Spirit…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
     "id": "07-13-sliver-light-voice-that",
-    "order": 91,
+    "order": 305,
     "title": "A Sliver of Light and the Voice That Followed",
     "dateLabel": "Jul 13, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2101,11 +7305,297 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-13-sabbath-womb-rest-as",
+    "order": 306,
+    "title": "The Sabbath of the Womb: Rest as Sacred Obedience",
+    "dateLabel": "Jul 13, 2026 · 12:24",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-13-sabbath-womb-rest-as-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with the quiet holiness of an ordinary morning — a sleepy voice, a growing womb, a restless cat, and the words *I love you* spoken over it all like a benediction. There is nothing dramatic here, and yet the Spirit arrests me in the smallness of…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "obeying",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "obedience"
+    ]
+  },
+  {
+    "id": "07-13-my-broke-rich-sound",
+    "order": 307,
+    "title": "My Broke Is Rich: Sound Mind, Love, and the Atmosphere of His Presence",
+    "dateLabel": "Jul 13, 2026 · 17:29",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/07-13-my-broke-rich-sound-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this teaching from Prophet Lovy Elias, three anchoring truths began to press themselves into me with increasing weight: the condition of the mind, the nature of love as a verb, and the difference between being *in* God’s presence and merely…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-14-when-spirit-speaks-before",
+    "order": 308,
+    "title": "When the Spirit Speaks Before the Sentence Ends",
+    "dateLabel": "Jul 14, 2026 · 10:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-14-when-spirit-speaks-before-v2.html",
+    "sourceStatus": "original",
+    "summary": "There are moments when the Holy Spirit speaks so swiftly, so cleanly, that the warning arrives before the words do — before the full picture is painted, before the story is complete, before the natural mind has assembled enough information to form a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-14-when-watchman-would-rather",
+    "order": 309,
+    "title": "When the Watchman Would Rather Build",
+    "dateLabel": "Jul 14, 2026 · 15:17",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-14-when-watchman-would-rather-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold with my brother Samuel, I was struck by how much Kingdom theology was being worked out in the most ordinary language — containers being washed for tomorrow’s lunch, fuel gauges at zero, alarm clocks set at four-thirty",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-15-where-were-you-when",
+    "order": 310,
+    "title": "Where Were You When the Mess Was Made: Job, God, and the Death of Tidy Theology",
+    "dateLabel": "Jul 15, 2026 · 00:48",
+    "classification": "Teaching Reflection",
+    "seed": null,
+    "href": "records/07-15-where-were-you-when-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something in this teaching arrested me the moment the speaker turned to Job — not to comfort Job, not to resolve Job, but to let Job stand in his refusal to accept a tidy theological explanation for his suffering. The suggestion being unfolded here is…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-15-ordinary-threshold-where-brotherhood",
+    "order": 311,
+    "title": "The Ordinary Threshold: Where Brotherhood Lives Between the Sacred and the Mundane",
+    "dateLabel": "Jul 15, 2026 · time not recorded",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-15-ordinary-threshold-where-brotherhood-v2.html",
+    "sourceStatus": "original",
+    "summary": "What I am sitting with is not a thunderclap moment or a vision received in the night watch — it is something quieter and perhaps more telling: two brothers in Christ catching each other at the margins of an ordinary day, checking in on a sick sister, too…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-15-tested-immediately-after-learning",
+    "order": 312,
+    "title": "Tested Immediately After the Learning",
+    "dateLabel": "Jul 15, 2026 · 12:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-15-tested-immediately-after-learning-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something deeply recognizable in the brevity of this exchange — two brothers, separated by distance, checking in across a patchy signal with warmth, laughter, and just enough theological honesty to name what is actually happening. What catches me is…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-16-ordinary-hours-love-fog",
+    "order": 313,
+    "title": "In the Ordinary Hours: Love, Fog, and the Faithfulness of Small Things",
+    "dateLabel": "Jul 16, 2026 · 12:17",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-16-ordinary-hours-love-fog-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something holy hidden in the most unremarkable exchanges — a quick call between a husband and his pregnant wife, scattered across nausea and test-taking and a forgotten straw. As I sit with this brief conversation between Gladys and me, I find myself",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-16-standing-firm-before-men",
+    "order": 314,
+    "title": "Standing Firm Before Men, Standing Tender Before God",
+    "dateLabel": "Jul 16, 2026 · 12:29",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-16-standing-firm-before-men-v2.html",
+    "sourceStatus": "original",
+    "summary": "Two brief conversations, back to back — and yet something in the Spirit arrests me as I sit with them. In the first, I listened to my brother Samuel describe a day of drawing lines, holding ground, and refusing to be moved by pressure at work and at home. In…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-17-mantle-descends-ordinary",
+    "order": 315,
+    "title": "The Mantle Descends in the Ordinary",
+    "dateLabel": "Jul 17, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-17-mantle-descends-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found something remarkable buried inside the ordinary rhythms of an evening after work — the smell of cannabis in the air, the weariness of long shifts, the interruption of a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "07-17-when-burden-real-bottom",
+    "order": 316,
+    "title": "When the Burden Is Real and the Bottom Is Near",
+    "dateLabel": "Jul 17, 2026 · 12:25",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-17-when-burden-real-bottom-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a moment so ordinary it almost slips past without notice — a brief exchange between a brother in the Spirit, a wife holding numbers that don’t add up, and a man caught between both conversations, pressed on every side. What arrests me here…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-18-tent-maker-wilderness-speak",
+    "order": 317,
+    "title": "The Tent Maker in the Wilderness: Speak to the Rock",
+    "dateLabel": "Jul 18, 2026 · 11:39",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-18-tent-maker-wilderness-speak-v2.html",
+    "sourceStatus": "original",
+    "summary": "I sat with my brother Samuel across a screen and across oceans in what may be the rawest hour of his life — homeless, penniless, freshly divorced, uprooted from a life of ten thousand a month and set down in the farmland of Somerset with nothing but a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "07-18-you-are-at-home",
-    "order": 92,
+    "order": 318,
     "title": "You Are at Home Wherever You Go",
     "dateLabel": "Jul 18, 2026 · 14:42",
     "classification": "Call Reflection",
@@ -2124,11 +7614,58 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-20-when-god-sends-confirmation",
+    "order": 319,
+    "title": "When God Sends the Confirmation Before You Even Dial",
+    "dateLabel": "Jul 20, 2026 · 08:05",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-20-when-god-sends-confirmation-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something that stops me mid-breath when I think about this call — the fact that we both reached for the phone at the same moment, as though the Lord had scheduled the connection without consulting either of us. As I listened to my brother Samuel…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
+    "id": "07-20-when-smoke-fills-sky",
+    "order": 320,
+    "title": "When Smoke Fills the Sky, What Rises From Our Hearts?",
+    "dateLabel": "Jul 20, 2026 · time not recorded",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-20-when-smoke-fills-sky-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something grieved my spirit when I saw that reel — not the smoke itself, not the fire, not even the suffering, but the caption beneath it: *“Should Canada compensate us for this?”* That single question exposed something deep and uncomfortable about where we…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "07-20-waiting-what-has-not",
-    "order": 93,
+    "order": 321,
     "title": "Waiting on What Has Not Yet Been Revealed",
     "dateLabel": "Jul 20, 2026 · 12:16",
     "classification": "Personal Meditation",
@@ -2148,11 +7685,82 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "waiting",
       "marriage"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "07-20-heartbeat-we-cannot-yet",
+    "order": 322,
+    "title": "The Heartbeat We Cannot Yet Hold",
+    "dateLabel": "Jul 20, 2026 · 14:43",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-20-heartbeat-we-cannot-yet-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a phone call — ordinary in its texture, unremarkable by the world’s measure — and yet something in me will not let it pass without pausing to recognize what was actually present in it. Two people who love each other, separated by miles and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-20-blood-we-do-not",
+    "order": 323,
+    "title": "The Blood We Do Not Yet Know",
+    "dateLabel": "Jul 20, 2026 · 14:57",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-20-blood-we-do-not-v2.html",
+    "sourceStatus": "original",
+    "summary": "A simple question about blood type — asked by my wife in the ordinary rhythm of a morning commute — carried more weight than either of us paused to notice in the moment. We do not know our blood types. And there is a baby coming whose blood will carry the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-20-watchman-across-way-sacred",
+    "order": 324,
+    "title": "The Watchman Across the Way and the Sacred Ordinary",
+    "dateLabel": "Jul 20, 2026 · 16:23",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-20-watchman-across-way-sacred-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I was struck by how the sacred kept breaking through the ordinary — how a phone call about sickness, factory shifts, Netflix subscriptions, and baby gender reveals became a vessel",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "07-20-when-uniform-has-no",
-    "order": 94,
+    "order": 325,
     "title": "When the Uniform Has No Government Behind It",
     "dateLabel": "Jul 20, 2026 · 20:21",
     "classification": "Teaching Reflection",
@@ -2169,11 +7777,157 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-21-mango-morning-sickness-baby",
+    "order": 326,
+    "title": "Mango, Morning Sickness, and the Baby Growing on the Left Side",
+    "dateLabel": "Jul 21, 2026 · 12:11",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-21-mango-morning-sickness-baby-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something quietly sacred about an ordinary lunch break call — mango in hand, a sick and tired wife at home, two cats stealing chips, and somewhere on the left side of her body, a baby growing in secret. I did not expect to find anything worth…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-21-love-construction-zone",
+    "order": 327,
+    "title": "Love in the Construction Zone",
+    "dateLabel": "Jul 21, 2026 · 15:32",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-21-love-construction-zone-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a moment so ordinary it almost slips past without notice — a quick call between my wife Gladys and me, caught in traffic near a construction zone, negotiating hunger and timing and Panda Express. And yet, as I listened back to this exchange,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-21-when-net-breaks-only",
+    "order": 328,
+    "title": "When the Net Breaks and Only Falling Remains",
+    "dateLabel": "Jul 21, 2026 · 20:00",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-21-when-net-breaks-only-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel walk through what sounded like the trembling edge of a professional cliff — a message from an employer that read like either a firing or a hiring, and him unable to tell which — something in me recognized the particular…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-22-mercy-hidden-weakness-dignity",
+    "order": 329,
+    "title": "The Mercy Hidden in Weakness, and the Dignity of the Threshold",
+    "dateLabel": "Jul 22, 2026 · 08:05",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-22-mercy-hidden-weakness-dignity-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother open up about recovering from sickness, something quietly arrested me — not in the dramatic theological sense, but in the ordinary, grace-soaked sense. There is a wisdom that visits us only through the door of weakness, and my…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-22-waiting-threshold-love-uncertainty",
+    "order": 330,
+    "title": "Waiting in the Threshold: Love, Uncertainty, and the Steadiness of Presence",
+    "dateLabel": "Jul 22, 2026 · 12:08",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/07-22-waiting-threshold-love-uncertainty-v2.html",
+    "sourceStatus": "original",
+    "summary": "There are moments in marriage that do not announce themselves as sacred, yet the Spirit arrests me in the middle of them anyway. This brief, tender exchange between Gladys and me — barely a minute of morning words, a medical result still half-unread, a…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "marriage"
+    ]
+  },
+  {
+    "id": "07-22-long-road-small-faithfulness",
+    "order": 331,
+    "title": "The Long Road, the Small Faithfulness, and the Grace of Not Rushing",
+    "dateLabel": "Jul 22, 2026 · 12:20",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-22-long-road-small-faithfulness-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this brief exchange with my brother, what struck me most was not the technology being discovered or the sales call being navigated — it was the quiet, unpretentious faithfulness underneath it all. There is something deeply human, and I would…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-23-faith-that-walks-pisteu",
-    "order": 95,
+    "order": 332,
     "title": "The Faith That Walks: Pisteuō and the Life That Has Already Crossed Over",
     "dateLabel": "Jul 23, 2026 · 08:22",
     "classification": "Teaching Reflection",
@@ -2190,11 +7944,63 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-23-when-burden-too-heavy",
+    "order": 333,
+    "title": "When the Burden Is Too Heavy to Carry Alone",
+    "dateLabel": "Jul 23, 2026 · 10:10",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/07-23-when-burden-too-heavy-v2.html",
+    "sourceStatus": "original",
+    "summary": "I listened to my wife’s voice today, and what I heard beneath the frustration and the numbers was not a financial problem — it was a cry of the heart. The weight she is carrying has become more than bills and deductibles; it has become the weight of feeling…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage",
+      "money"
+    ]
+  },
+  {
+    "id": "07-23-kingdom-has-infrastructure-too",
+    "order": 334,
+    "title": "The Kingdom Has Infrastructure Too",
+    "dateLabel": "Jul 23, 2026 · 14:52",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-23-kingdom-has-infrastructure-too-v2.html",
+    "sourceStatus": "original",
+    "summary": "Listening back to this call with my brother Samuel, I am struck by how much Kingdom wisdom was moving through what looked, on the surface, like a business strategy session. The conversation wound through sales infrastructure, financing models, marketing…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
   },
   {
     "id": "07-26-turning-cheek-just-weight",
-    "order": 96,
+    "order": 335,
     "title": "Turning the Cheek, the Just Weight, and the Altar Built in the Marketplace",
     "dateLabel": "Jul 26, 2026 · 11:13",
     "classification": "Call Reflection",
@@ -2213,11 +8019,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "07-27-carving-god-from-wood",
-    "order": 97,
+    "order": 336,
     "title": "Carving God from the Wood of Our Own Hunger",
     "dateLabel": "Jul 27, 2026 · time not recorded",
     "classification": "Theological Reflection",
@@ -2234,11 +8041,81 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "07-27-altar-ordinary-kitchen",
+    "order": 337,
+    "title": "The Altar in the Ordinary Kitchen",
+    "dateLabel": "Jul 27, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-27-altar-ordinary-kitchen-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was on the phone with Gladys, and most of what passed between us was the ordinary weight of a shared life — burnt eggplant, rent due in seven days, a kitten biting cords, forex lessons promised for tomorrow. But threaded through the ordinary was something I",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
     "doorwayThemes": []
   },
   {
+    "id": "07-28-soul-does-not-evaporate",
+    "order": 338,
+    "title": "The Soul Does Not Evaporate",
+    "dateLabel": "Jul 28, 2026 · time not recorded",
+    "classification": "Theological Meditation",
+    "seed": null,
+    "href": "records/07-28-soul-does-not-evaporate-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I speak these words aloud, I keep returning to a single unshakable conviction: the soul does not die when the body dies. Something in me refuses the notion that a human being simply evaporates into nothingness. I am seeing that the moment of death is not…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "07-28-running-faith-not-gas",
+    "order": 339,
+    "title": "Running on Faith, Not on Gas Gauges",
+    "dateLabel": "Jul 28, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-28-running-faith-not-gas-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was captured here in the middle of an ordinary, chaotic morning — a cat trapped in the heat, a car falling apart mid-drive, borrowed gas money, a queasy pregnant wife, a friend in jail, and a gas gauge hovering near empty. In the swirl of it, one small…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "marriage",
+      "money"
+    ]
+  },
+  {
     "id": "07-31-reflection-deliverance-mercy-streets",
-    "order": 98,
+    "order": 340,
     "title": "Reflection: Deliverance, Mercy, and the Streets Where Thomas Walks",
     "dateLabel": "Jul 31, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2258,11 +8135,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fear",
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-01-from-seven-loaves-seven",
-    "order": 99,
+    "order": 341,
     "title": "From Seven Loaves to Seven Baskets",
     "dateLabel": "Aug 1, 2026 · 22:28",
     "classification": "Theological Meditation",
@@ -2279,11 +8157,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "08-04-guarding-what-was-committed",
-    "order": 100,
+    "order": 342,
     "title": "Guarding What Was Committed in the Veiled Season",
     "dateLabel": "Aug 4, 2026 · time not recorded",
     "classification": "Theological Meditation —",
@@ -2300,11 +8179,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "08-07-intercessor-interceded",
-    "order": 101,
+    "order": 343,
     "title": "The Intercessor Interceded For",
     "dateLabel": "Aug 7, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2324,11 +8204,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-07-hidden-growth-silenced-blessing",
-    "order": 102,
+    "order": 344,
     "title": "The Hidden Growth, The Silenced Blessing, and the Cup He Chose to Drink",
     "dateLabel": "Aug 7, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2347,11 +8228,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-09-when-calendar-fills-but",
-    "order": 103,
+    "order": 345,
     "title": "When the Calendar Fills but the Heart Turns to the Watch",
     "dateLabel": "Aug 9, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2371,11 +8253,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "work",
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-11-when-zeal-rides-like",
-    "order": 104,
+    "order": 346,
     "title": "When Zeal Rides In Like a Wave: Building on a Higher Covenant Than Any Contract",
     "dateLabel": "Aug 11, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2395,11 +8278,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-11-when-ache-real-but",
-    "order": 105,
+    "order": 347,
     "title": "When the Ache Is Real But the Altar Is Wrong",
     "dateLabel": "Aug 11, 2026 · time not recorded",
     "classification": "Teaching Reflection",
@@ -2416,11 +8300,62 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "08-11-gentiles-at-threshold-prophets",
+    "order": 348,
+    "title": "Gentiles at the Threshold, Prophets Pointing to Bethlehem",
+    "dateLabel": "Aug 11, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-11-gentiles-at-threshold-prophets-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to my brother Samuel over the phone tonight — half of it laughter, trains, and the sting of Fireball whiskey — I noticed how the Spirit slipped a real revelation into the middle of our jokes. We began planning to read the birth of Jesus, and…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-11-household-hidden-build-man",
+    "order": 349,
+    "title": "The Household, the Hidden Build, and the Man Who Died",
+    "dateLabel": "Aug 11, 2026 · 20:11",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-11-household-hidden-build-man-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit back with this long and winding recording — a single evening that moved from a stolen pizza in the street to hidden database backends, from a brother’s grief over the woman he left to the astonishment that “work is still getting done while we sleep”…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "08-12-one-joyfulness-two-mountains",
-    "order": 106,
+    "order": 350,
     "title": "One Joyfulness on Two Mountains",
     "dateLabel": "Aug 12, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2439,11 +8374,34 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-12-unseen-foundation-built-night",
+    "order": 351,
+    "title": "The Unseen Foundation Built in the Night",
+    "dateLabel": "Aug 12, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-12-unseen-foundation-built-night-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with this recorded exchange, something quiet arrests me: I had been laboring through the night on a foundation no one could see, building the very backend that makes trust possible — a place where even I, the builder, cannot know another person’s…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-12-architect-blood-blessing-that",
-    "order": 107,
+    "order": 352,
     "title": "The Architect, the Blood, and the Blessing That Draws the Battle",
     "dateLabel": "Aug 12, 2026 · 16:30",
     "classification": "Call Reflection",
@@ -2462,11 +8420,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-13-when-lungs-fail-fever",
-    "order": 108,
+    "order": 353,
     "title": "When the Lungs Fail and the Fever Lingers: Interceding in the Valley",
     "dateLabel": "Aug 13, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2483,11 +8442,37 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
+  },
+  {
+    "id": "08-13-moving-carcass-reach-honey",
+    "order": 354,
+    "title": "Moving the Carcass to Reach the Honey",
+    "dateLabel": "Aug 13, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-13-moving-carcass-reach-honey-v2.html",
+    "sourceStatus": "original",
+    "summary": "I came onto this call already weighed down, in the middle of my own supplication, and my brother Samuel caught me there mid-intercession. What surfaced was not a tidy prayer request but a raw ache: the grief of standing as the lone altar-keeper in my own…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
   },
   {
     "id": "08-13-bread-must-be-broken",
-    "order": 109,
+    "order": 355,
     "title": "The Bread Must Be Broken Before It Is Blessed",
     "dateLabel": "Aug 13, 2026 · 15:45",
     "classification": "Call Reflection",
@@ -2508,11 +8493,12 @@ const JC_RECORDS = [
       "fellowship",
       "marriage",
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-13-woodwork-way",
-    "order": 110,
+    "order": 356,
     "title": "The Woodwork and the Way",
     "dateLabel": "Aug 13, 2026 · 17:16",
     "classification": "Call Reflection",
@@ -2531,11 +8517,83 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-16-two-loaves-house-drunken",
+    "order": 357,
+    "title": "Two Loaves in the House of a Drunken Brother",
+    "dateLabel": "Aug 16, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-16-two-loaves-house-drunken-v2.html",
+    "sourceStatus": "original",
+    "summary": "My brother called me in the thick of his drunkenness, and what began as a slurred, decompression-fogged conversation became a long descent into grief, into the ache of a woman he cannot stop missing, and into the strange mercy of a Father who does not rebuke…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
     ]
   },
   {
+    "id": "08-16-compass-drunk-call",
+    "order": 358,
+    "title": "The Compass and the Drunk Call",
+    "dateLabel": "Aug 16, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-16-compass-drunk-call-v2.html",
+    "sourceStatus": "original",
+    "summary": "I was on the phone with my brother Samuel when the whole weight of it landed — a drunk call from a woman named Chloe out of his past, bottles clinking behind her voice, twenty minutes of weeping down the line, and a young man staying strangely calm through…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-16-renaissance-fair-made-holy",
+    "order": 359,
+    "title": "A Renaissance Fair Made Holy: The Arrow, the Armor, the Whisper, and the Whole Animal",
+    "dateLabel": "Aug 16, 2026 · 13:13",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/08-16-renaissance-fair-made-holy-v2.html",
+    "sourceStatus": "original",
+    "summary": "I set out to record a family afternoon at the Renaissance festival in West Fargo, and what I carried home was an arrow, a weight of armor, a whispered warning over a tarot booth, and a fur trader’s confession that nothing is wasted. Between goats fed first…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "confessing",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "08-17-juniper-tree-snail-bag",
-    "order": 111,
+    "order": 360,
     "title": "The Juniper Tree and the Snail in the Bag",
     "dateLabel": "Aug 17, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2554,11 +8612,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-17-emptied-house-voice-that",
-    "order": 112,
+    "order": 361,
     "title": "The Emptied House, the Voice That Is Not the Father, and the Deliverance That Was Never Mine",
     "dateLabel": "Aug 17, 2026 · 19:05",
     "classification": "Call Reflection",
@@ -2577,11 +8636,34 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-18-he-gave-jesus-door",
+    "order": 362,
+    "title": "He Gave Jesus: The Door the Owner Pointed To",
+    "dateLabel": "Aug 18, 2026 · time not recorded",
+    "classification": "Teaching Reflection: The One Door the Owner Pointed To",
+    "seed": null,
+    "href": "records/08-18-he-gave-jesus-door-v2.html",
+    "sourceStatus": "original",
+    "summary": "I keep hearing the preacher return to those three words — *He gave Jesus* — as though he could not exhaust them, and honestly, neither can I. There is a tension buried in that phrase that the world would rather not touch: that the God so many claim to believe",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-18-night-enemy-wore-my",
-    "order": 113,
+    "order": 363,
     "title": "The Night the Enemy Wore My Brother’s Voice, and the Seat I Sat On for Ninety Seconds",
     "dateLabel": "Aug 18, 2026 · 15:08",
     "classification": "Call Reflection",
@@ -2600,11 +8682,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-19-let-your-yes-be",
-    "order": 114,
+    "order": 364,
     "title": "Let Your Yes Be Yes: Integrity as the Currency of the Kingdom",
     "dateLabel": "Aug 19, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2625,11 +8708,12 @@ const JC_RECORDS = [
       "fellowship",
       "work",
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-19-when-darkness-strikes-house",
-    "order": 115,
+    "order": 365,
     "title": "When Darkness Strikes the House We Are Building",
     "dateLabel": "Aug 19, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2648,11 +8732,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-19-let-your-yes-be-2",
-    "order": 116,
+    "order": 366,
     "title": "Let Your Yes Be Yes: Integrity Under Pressure",
     "dateLabel": "Aug 19, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2669,11 +8754,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "The Seam (Tablets VI–VII)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "08-19-vocabulary-changed-man",
-    "order": 117,
+    "order": 367,
     "title": "The Vocabulary of a Changed Man",
     "dateLabel": "Aug 19, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2683,7 +8769,7 @@ const JC_RECORDS = [
     "summary": "I hear a brother caught between who he has become and how he still sounds, and it stops me. Samuel has changed in the hidden places, but his mouth still carries the cadence of his old self, and two people felt the gap and called it a lack of integrity. What…",
     "encounter": {
       "temperature": "contemplative",
-      "length": "deep",
+      "length": "moderate",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
@@ -2692,11 +8778,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-19-iron-sharpens-iron-secret",
-    "order": 118,
+    "order": 368,
     "title": "Iron Sharpens Iron in the Secret Place",
     "dateLabel": "Aug 19, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2716,11 +8803,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fear",
       "discipline"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-19-distribution-layer-guaranteed-harvest",
-    "order": 119,
+    "order": 369,
     "title": "The Distribution Layer, the Guaranteed Harvest, and the First Client Who Bit the Bullet",
     "dateLabel": "Aug 19, 2026 · 13:00",
     "classification": "Call Reflection",
@@ -2739,11 +8827,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-21-slow-steady-building-house",
-    "order": 120,
+    "order": 370,
     "title": "The Slow and Steady Building of a House",
     "dateLabel": "Aug 21, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2765,11 +8854,34 @@ const JC_RECORDS = [
       "surrender",
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-21-seat-i-had-no",
+    "order": 371,
+    "title": "The Seat I Had No Right to Sit In and the Breath That Emptied the Room",
+    "dateLabel": "Aug 21, 2026 · 22:23",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-21-seat-i-had-no-v2.html",
+    "sourceStatus": "original",
+    "summary": "My father asked me what was going on, and I heard my own voice fill the phone line with the new welding job — the certifications, the burns on my skin, the Bug-O machine, the crane that nearly crushed a man — and then, almost as an afterthought, I said the…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-22-refund-that-cost-nothing",
-    "order": 121,
+    "order": 372,
     "title": "The Refund That Cost Nothing to Deliver and Everything to Decide",
     "dateLabel": "Aug 22, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2788,11 +8900,37 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-25-when-will-done-debt",
+    "order": 373,
+    "title": "When the Will Is Done and the Debt Is Owed",
+    "dateLabel": "Aug 25, 2026 · 04:53",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-25-when-will-done-debt-v2.html",
+    "sourceStatus": "original",
+    "summary": "I hung up the phone just before daybreak, my burned arm still throbbing beneath its cream, and I noticed how a single call had carried two weights at once — the sickness of my father and the failure of a promise made to a brother. Jayden called to check on my",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
     ]
   },
   {
     "id": "08-25-empty-handed-at-threshold-faithfulness",
-    "order": 122,
+    "order": 374,
     "title": "Empty-Handed at the Threshold: Faithfulness, Debt, and the Weight of a Promise",
     "dateLabel": "Aug 25, 2026 · 06:21",
     "classification": "Call Reflection",
@@ -2812,11 +8950,60 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "money"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-25-ill-catch-you-other",
+    "order": 375,
+    "title": "I’ll Catch You on the Other Side",
+    "dateLabel": "Aug 25, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-25-ill-catch-you-other-v2.html",
+    "sourceStatus": "original",
+    "summary": "I called my brother tonight carrying news I could barely speak: my earthly father, Michael, has cancer, and the words for it were a wilderness — pancreas, bones, glands, Mayo Clinic, eight weeks of radiation. My body was already broken from a week of welding,",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-25-two-minutes-from-gate",
+    "order": 376,
+    "title": "Two Minutes From the Gate, A Brother Calls",
+    "dateLabel": "Aug 25, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-25-two-minutes-from-gate-v2.html",
+    "sourceStatus": "original",
+    "summary": "The whole exchange lasted barely a minute, and yet I keep hearing the weight in my brother’s voice when he realized I was only two minutes from the gate of my workplace. There was an ache in the way he said he’d been praying, in the way he confessed he grew…",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
     ]
   },
   {
     "id": "08-28-provision-i-almost-died",
-    "order": 123,
+    "order": 377,
     "title": "The Provision I Almost Died Owning",
     "dateLabel": "Aug 28, 2026 · 07:44",
     "classification": "Call Reflection",
@@ -2826,7 +9013,7 @@ const JC_RECORDS = [
     "summary": "I sat with a phone pressed to my ear this morning after two twelve-hour shifts with no sleep, feet wrecked on Walmart steel toes, sending sixty dollars I barely had to a brother who hadn’t eaten since yesterday. Somewhere in the middle of business logistics,…",
     "encounter": {
       "temperature": "quiet",
-      "length": "brief",
+      "length": "moderate",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
@@ -2836,11 +9023,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-28-grace-that-comes-before",
-    "order": 124,
+    "order": 378,
     "title": "The Grace That Comes Before the Season Turns",
     "dateLabel": "Aug 28, 2026 · time not recorded",
     "classification": "Teaching Reflection: Discerning the Signs of a Changing Season",
@@ -2857,11 +9045,12 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "The Seam (Tablets VI–VII)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "08-28-what-you-value-god",
-    "order": 125,
+    "order": 379,
     "title": "What You Value, God Values",
     "dateLabel": "Aug 28, 2026 · time not recorded",
     "classification": "Teaching Reflection: The Measure of Love Is What You Surrender",
@@ -2878,11 +9067,12 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "The Seam (Tablets VI–VII)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "08-28-money-table-sober-word",
-    "order": 126,
+    "order": 380,
     "title": "The Money on the Table and the Sober Word",
     "dateLabel": "Aug 28, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2902,11 +9092,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "money"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-28-i-gave-him-you",
-    "order": 127,
+    "order": 381,
     "title": "I Gave Him You, Not the Answers",
     "dateLabel": "Aug 28, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -2925,11 +9116,61 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ],
+    "reviewed": true
+  },
+  {
+    "id": "08-28-when-word-no-longer",
+    "order": 382,
+    "title": "When a Word Is No Longer a Bond",
+    "dateLabel": "Aug 28, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-28-when-word-no-longer-v2.html",
+    "sourceStatus": "original",
+    "summary": "A young woman on the other end of the line was carrying more than a business grievance; she was carrying the ache of a promise that did not hold. I heard her say she was taught that a person’s word is their bond, and now she cannot believe anything that comes",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "08-28-koinonia-takes-precedence",
+    "order": 383,
+    "title": "Koinonia Takes Precedence",
+    "dateLabel": "Aug 28, 2026 · time not recorded",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-28-koinonia-takes-precedence-v2.html",
+    "sourceStatus": "original",
+    "summary": "Two tired men on a phone call, each stretched thin, trying to scrape together enough money so a third brother across the world does not have to sign his name to a predatory loan. Nobody in this conversation had much to give, and yet the whole exchange orbited",
+    "reviewed": false,
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
     ]
   },
   {
     "id": "08-28-counsel-commission-fellowship-that",
-    "order": 128,
+    "order": 384,
     "title": "Counsel, Commission, and the Fellowship That Holds Us Together",
     "dateLabel": "Aug 28, 2026 · 13:36",
     "classification": "Call Reflection",
@@ -2948,11 +9189,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-28-phone-against-ear-presence",
-    "order": 129,
+    "order": 385,
     "title": "The Phone Against the Ear, the Presence That Holds",
     "dateLabel": "Aug 28, 2026 · 16:40",
     "classification": "Call Reflection",
@@ -2971,11 +9213,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-28-third-door-leveled-table",
-    "order": 130,
+    "order": 386,
     "title": "The Third Door, the Leveled Table, and the Island of Only Faith",
     "dateLabel": "Aug 28, 2026 · 22:11",
     "classification": "Call Reflection",
@@ -2994,11 +9237,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "08-29-first-win-confession",
-    "order": 131,
+    "order": 387,
     "title": "The First Win Is the Confession",
     "dateLabel": "Aug 29, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -3008,7 +9252,7 @@ const JC_RECORDS = [
     "summary": "I picked up the phone expecting a quick word about whether my brother had made it home, and instead I found myself standing at the edge of a long night that turned, somewhere near its end, into holy ground. The whole call moved like a storm that finally…",
     "encounter": {
       "temperature": "quiet",
-      "length": "deep",
+      "length": "moderate",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "confessing",
@@ -3017,11 +9261,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "signpost",
-    "order": 132,
+    "order": 388,
     "title": "The Signpost, the Secret Place, and the Cup of the Father's Will",
     "dateLabel": "Aug 29, 2026 · 20:23",
     "classification": "Call Reflection",
@@ -3038,11 +9283,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Tablet VIII — the open seed"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "man-of-flesh",
-    "order": 133,
+    "order": 389,
     "title": "The Man of the Flesh Held Me Hostage",
     "dateLabel": "Aug 30, 2026 · 08:01",
     "classification": "Call Reflection",
@@ -3061,11 +9307,12 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "identity"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "mirror",
-    "order": 134,
+    "order": 390,
     "title": "The Man in the Mirror and the Christ Who Stands Between",
     "dateLabel": "Aug 30, 2026 · 08:38",
     "classification": "Call Reflection",
@@ -3082,11 +9329,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Tablet VIII — the open seed"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "mirror-gospel",
-    "order": 135,
+    "order": 391,
     "title": "The Mirror-Gospel and Christ the Teacher Within",
     "dateLabel": "Aug 30, 2026 · 09:09",
     "classification": "Theological Meditation",
@@ -3103,11 +9351,12 @@ const JC_RECORDS = [
       "form": "written",
       "season": "Tablet VIII — the open seed"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "filthy-garments",
-    "order": 136,
+    "order": 392,
     "title": "The Faced Image, the Filthy Garments, and the Finished Work",
     "dateLabel": "Aug 30, 2026 · 13:39",
     "classification": "Call Reflection",
@@ -3127,11 +9376,12 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship",
       "work"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "id": "compass",
-    "order": 137,
+    "order": 393,
     "title": "The Compass in the Locked Room",
     "dateLabel": "Aug 30, 2026 · 20:04",
     "classification": "Call Reflection",
@@ -3148,11 +9398,12 @@ const JC_RECORDS = [
       "form": "dialogue-shaped",
       "season": "Tablet VIII — the open seed"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   },
   {
     "id": "wisdom",
-    "order": 138,
+    "order": 394,
     "title": "When Wisdom Ushers Power: The Loved Heir, the Renewed Mind, and the Word That Gives Witness to Itself",
     "dateLabel": "Aug 30, 2026 · 23:58",
     "classification": "Teaching Reflection",
@@ -3169,7 +9420,8 @@ const JC_RECORDS = [
       "form": "spoken",
       "season": "Tablet VIII — the open seed"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [],
+    "reviewed": true
   }
 ];
 

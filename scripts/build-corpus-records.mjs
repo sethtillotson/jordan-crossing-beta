@@ -325,8 +325,8 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
   <title>${escAttr(title)} — Interior Beta</title>
   <meta name="description" content="${escAttr(summary)}">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V1">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260831V14">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
 </head>
 <body data-record-id="${escAttr(id)}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -357,7 +357,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
         <div class="source-row">
           <span class="source-badge">Original record</span>
-          <span>Imported from AI Drive Markdown source · ${classification}</span>
+          <span>Mirrored locally · ${classification}</span>
         </div>
 
         <div class="callout">
@@ -560,9 +560,9 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
     <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V1"></script>
-  <script src="../assets/audio-player.js?v=20260831V14"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V1"></script>
+  <script src="../assets/records-data.js?v=20260901V2"></script>
+  <script src="../assets/audio-player.js?v=20260901V2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
 </body>
 </html>
 `;

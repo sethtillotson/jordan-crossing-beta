@@ -61,7 +61,12 @@
     const re = DOORWAY_KEYWORDS[doorwayId];
     const pool = [];
     if (re) {
+      // Only pool from reviewed/threaded records — the guidance text below
+      // says "drawn from a reviewed pool," and that claim must stay true
+      // now that JC_RECORDS also contains mirrored-but-unreviewed records
+      // (see assets/records-data.js's header, Phase 5).
       JC_RECORDS.forEach(rec => {
+        if (rec.reviewed === false) return;
         const haystack = `${rec.title} ${rec.summary || ''}`;
         if (re.test(haystack)) pool.push(rec.id);
       });

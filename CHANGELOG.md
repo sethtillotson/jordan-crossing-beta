@@ -74,6 +74,13 @@ The Jordan Crossing is now publicly available for reading and reflection.
 - Thread edge validation (all 7 records have verified outgoing connections)
 - CSS cache busting (v=20260831V9 applied to all asset references)
 
+### Known Limitations
+
+- Audio player not yet implemented (audio source files not yet available)
+- Corpus limited to 7 meditation records (can expand to 20–30)
+- No transcript search (future enhancement with audio)
+- No community features (annotations, study groups)
+
 ---
 
 ## [1.3] — September 1, 2026
@@ -116,12 +123,35 @@ The Jordan Crossing is now publicly available for reading and reflection.
 - **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
 - **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
 
+---
+
+## [1.5] — September 1, 2026
+
+### Added
+
+#### Phase 5: Full Local Mirror — No Reader Needs the Author's Private Drive
+- **256 new "mirrored" record pages** (`scripts/build-mirror-records.mjs`) — every uploaded raw meditation not already reviewed now has a local page with the full original text, the same interactive movements as reviewed records, and the same Encounter Index tagging. Total local records: **394** (138 reviewed + 256 mirrored) out of 410 raw files present.
+- **`JC_RECORDS` gains a `reviewed` boolean** — `true` for the 138 records with verified thread edges, `false` for the 256 mirrored ones. `threads.html`'s reviewed constellation filters to `reviewed !== false`; Mystery Mode's keyword pools do too (fixing a gap where mirrored records could have silently entered a pool the guidance text calls "reviewed").
+- **`archive.html` rebuilt from count-only into a real, searchable, month-by-month browsable index** of all 394 local records, each linking directly to its page with a reviewed/mirrored badge.
+- **`scripts/relink-corpus-paths.mjs`** — re-links Corpus Paths steps to a local page only when a same-day record's real, content-derived title strongly covers the step's own label (never by filename — see Known Limitations). Relinked 21 of 48 steps (up from 16); the rest are individually disclosed as unresolved rather than guessed.
+- **Fixed "Imported from AI Drive Markdown source" wording** across all 138 previously-generated pages and the generator template — now reads "Mirrored locally," since it no longer implies an ongoing dependency on the author's private drive.
+
 ### Known Limitations
 
-- Audio player not yet implemented (audio source files not yet available)
-- Corpus limited to 7 meditation records (can expand to 20–30)
-- No transcript search (future enhancement with audio)
-- No community features (annotations, study groups)
+- **A genuine corpus data-quality issue was found and worked around, not fixed at the source**: at least one raw meditation file's actual body content does not match its own filename (the file named "...Resting in the Finished Work of Christ and Covenant Identity.md" contains an unrelated meditation). An initial filename-based relinking approach was discarded after finding this; the shipped approach matches on each record's own real, parsed title instead, and simply declines to link anything it can't confirm.
+- 27 of 48 Corpus Paths steps remain external, each with a specific printed reason (no same-day local match, or a same-day candidate whose title doesn't actually cover the step's label).
+- ~41 meditations documented in the author's own Corpus Map (451 total) were never uploaded to this repository (410 raw files present) and cannot be mirrored until they are.
+- Audio remains out of scope per owner direction; unchanged from [1.3]/[1.4].
+- Pass 7 and Pass 8 Cross-References (70 more entries, archive coverage 171→241) have been received but not yet integrated into the reviewed-record generator.
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
 
 ---
 
@@ -149,7 +179,7 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 ### Phase 4: Expanded Corpus
 - ✓ 131 additional meditation records reviewed and published (138 total) via six dated Cross-Reference passes — see the Living Archive section of `plan.md`
-- ~280 of 451 direct-archive meditations remain outside any reviewed pass and stay metadata-only in the Archive, pending a future review pass
+- ✓ 256 further meditations mirrored (full original text, no thread claims yet) via `scripts/build-mirror-records.mjs` — see [1.5] above. 394 of 410 raw files now have a local page; ~41 meditations documented in the Corpus Map were never uploaded to this repository.
 - Tag system expansion — still future
 - Advanced search filters — still future
 

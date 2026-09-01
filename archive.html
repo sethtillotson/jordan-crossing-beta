@@ -5,40 +5,9 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>The Living Archive — The Jordan Crossing Interior Beta</title>
-  <meta name="description" content="The shape of the wider meditation corpus, by month — direct-count metadata only, reviewed layer by layer.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260901V1">
+  <meta name="description" content="Browse the full local mirror of the meditation corpus by month — every record readable in this app, no external drive required.">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260901V2">
   <style>
-    .archive-bar-row {
-      display: grid;
-      grid-template-columns: 5rem 1fr 3.5rem;
-      align-items: center;
-      gap: var(--space-4);
-      margin-bottom: var(--space-3);
-    }
-    .archive-bar-label {
-      font-family: var(--font-sans);
-      font-size: var(--text-sm);
-      color: var(--parchment-dim);
-    }
-    .archive-bar-track {
-      background: rgba(201, 162, 39, 0.08);
-      border-radius: var(--radius-sm);
-      height: 1.5rem;
-      overflow: hidden;
-      display: block;
-    }
-    .archive-bar-fill {
-      background: linear-gradient(90deg, rgba(201,162,39,0.5), rgba(201,162,39,0.85));
-      height: 100%;
-      border-radius: var(--radius-sm);
-      display: block;
-    }
-    .archive-bar-count {
-      font-family: var(--font-sans);
-      font-size: var(--text-sm);
-      color: var(--gold);
-      text-align: right;
-    }
     .archive-total {
       display: flex;
       gap: var(--space-8);
@@ -62,6 +31,103 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: var(--space-2);
+    }
+    .archive-month {
+      border: 1px solid rgba(201, 162, 39, 0.15);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-4);
+      background: rgba(201, 162, 39, 0.02);
+    }
+    .archive-month > summary {
+      cursor: pointer;
+      padding: var(--space-4) var(--space-6);
+      font-family: var(--font-serif);
+      font-size: var(--text-lg);
+      color: var(--parchment);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .archive-month > summary::-webkit-details-marker { display: none; }
+    .archive-month > summary::before {
+      content: '▸';
+      color: var(--gold);
+      margin-right: var(--space-3);
+      transition: transform 150ms ease-out;
+    }
+    .archive-month[open] > summary::before {
+      transform: rotate(90deg);
+    }
+    .archive-month-count {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      color: var(--parchment-dim);
+      white-space: nowrap;
+    }
+    .archive-month-list {
+      list-style: none;
+      margin: 0;
+      padding: 0 var(--space-6) var(--space-4);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .archive-record-row {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      padding: var(--space-2) 0;
+      border-top: 1px solid rgba(201, 162, 39, 0.08);
+    }
+    .archive-record-row:first-child { border-top: none; }
+    .archive-record-date {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--parchment-dim);
+      flex-shrink: 0;
+      width: 6.5rem;
+    }
+    .archive-record-title {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: var(--text-sm);
+      flex: 1 1 auto;
+    }
+    .archive-record-title:hover { text-decoration: underline; }
+    .archive-record-badge {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.1rem 0.5rem;
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+    }
+    .archive-record-badge--reviewed {
+      background: rgba(107, 158, 127, 0.2);
+      color: #a0d6b4;
+    }
+    .archive-record-badge--mirrored {
+      background: rgba(125, 122, 77, 0.2);
+      color: #c4be82;
+    }
+    .archive-search-row {
+      margin: var(--space-6) 0;
+      display: flex;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    .archive-search-row input {
+      flex: 1;
+      padding: var(--space-3);
+      background: rgba(15,20,25,0.6);
+      border: 1px solid rgba(201,162,39,0.2);
+      border-radius: var(--radius-md);
+      color: var(--parchment);
+      font-family: var(--font-body);
     }
   </style>
 </head>
@@ -87,67 +153,73 @@
   <main id="main-content">
     <div class="main-container">
       <div class="record-header">
-        <p class="record-caption">Stage 6 · The Living Archive · Direct-Count Metadata</p>
+        <p class="record-caption">Stage 6 · The Living Archive · Full Local Mirror</p>
         <h1 class="page-title">The shape of the corpus</h1>
-        <p class="page-subtitle">Not a reading room yet — a map of scale. What follows is count only: no titles, no quotations, no names.</p>
+        <p class="page-subtitle">Every meditation uploaded into this repository now opens locally, in this app — no external drive required to read one.</p>
       </div>
 
       <div class="callout">
-        <p class="caption">Why this page shows counts, not content</p>
+        <p class="caption">What "reviewed" and "mirrored" mean here</p>
         <p>
-          138 records — the original seven Tablet VIII seeds plus 131 meditations reviewed and
-          cross-referenced across six review passes — are now fully built: reviewed, formatted, and
-          threaded. The wider corpus behind them is real, dated, and much larger, but most of it has
-          not yet passed the same review this project's own governing document requires before
-          publication: private people and protected internal arcs remain private, and the corpus is
-          introduced &ldquo;in reviewed layers,&rdquo; not as a bulk export. Until each remaining layer
-          is reviewed, this page shows only what can be said safely about it — how much exists, and
-          when it was recorded.
+          <span class="archive-record-badge archive-record-badge--reviewed" style="display:inline-block;">reviewed</span>
+          records have passed through one of the Cross-Reference passes: they carry labeled thread
+          connections and appear in <a href="threads.html">Threads</a>. 
+          <span class="archive-record-badge archive-record-badge--mirrored" style="display:inline-block;">mirrored</span>
+          records are just as fully readable — the complete original text, the same page — but have not
+          yet been cross-referenced, so no thread claims are made for them. Both kinds are local pages in
+          this app; neither depends on the author's private drive to open. The corpus's own working
+          record documents 451 meditations in total; this repository currently mirrors 410 of the
+          underlying files, of which a handful are supporting documents rather than meditations proper —
+          see the by-month counts below for exactly what is and isn't present yet.
         </p>
       </div>
 
       <div class="archive-total">
         <div>
           <div class="archive-total-figure" id="archive-total-figure">—</div>
-          <div class="archive-total-label">meditations mirrored into this working copy</div>
+          <div class="archive-total-label">records readable locally in this app today</div>
         </div>
         <div>
           <div class="archive-total-figure">451</div>
           <div class="archive-total-label">direct-archive count, Feb 13 – Aug 30, 2026 (corpus's own working record)</div>
         </div>
         <div>
-          <div class="archive-total-figure">138</div>
-          <div class="archive-total-label">fully reviewed &amp; published on this site today</div>
+          <div class="archive-total-figure" id="archive-reviewed-figure">—</div>
+          <div class="archive-total-label">fully reviewed &amp; threaded</div>
         </div>
       </div>
 
       <section aria-label="Meditations by month">
-        <h2 class="section-heading">By month</h2>
-        <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
-          Counted directly from the files present in this working copy today. Supporting documents
-          (registers, prophetic words, cross-reference memos) are not counted as meditations.
+        <h2 class="section-heading">Browse by month</h2>
+        <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-4);">
+          Every record below opens its own local page. Search filters across all months at once.
         </p>
-        <div id="archive-bars"></div>
+        <div class="archive-search-row">
+          <label for="archive-search-input" style="position:absolute;width:1px;height:1px;overflow:hidden;">Search the archive by title, summary, or classification</label>
+          <input type="text" id="archive-search-input" placeholder="Search by title, summary, or classification...">
+        </div>
+        <div id="archive-search-status" style="font-size:var(--text-xs);color:var(--parchment-dim);margin-bottom:var(--space-4);"></div>
+        <div id="archive-months"></div>
       </section>
 
       <section class="callout" style="margin-top:var(--space-10);">
         <p class="caption">Where this came from</p>
         <p>
-          The counts above are drawn from a Corpus Map and six dated Cross-Reference passes the author
-          keeps alongside the source meditations — working documents that trace how records read one
-          another, not public content in themselves. As individual meditations are reviewed and formatted
-          the way these 138 already have been, they will move from this count-only page
-          into <a href="threads.html">Threads</a> and <a href="paths.html">Corpus Paths</a> as full records,
-          the same way these were.
+          The reviewed records are drawn from a Corpus Map and Cross-Reference passes the author keeps
+          alongside the source meditations. The mirrored records are the same raw meditation files,
+          rendered the same way, without those pass-level connections claimed yet. As more meditations
+          are reviewed and cross-referenced, they move from "mirrored" to "reviewed" and gain entries
+          in <a href="threads.html">Threads</a> and <a href="paths.html">Corpus Paths</a> — the underlying
+          page does not change, only its labeled connections.
         </p>
       </section>
 
       <section class="callout" style="margin-top:var(--space-6);">
         <p class="caption">Read what is already here</p>
         <p>
-          The 138 fully published records begin at <a href="mystery.html">Mystery Mode</a>, are traced
-          in <a href="threads.html">Threads</a>, and are ordered in <a href="paths.html">Corpus Paths</a>.
-          Nothing on this page substitutes for reading them.
+          The reviewed records begin at <a href="mystery.html">Mystery Mode</a> and are traced
+          in <a href="threads.html">Threads</a>. Every record — reviewed or mirrored — can be opened
+          directly from the list above. Nothing on this page substitutes for reading them.
         </p>
       </section>
     </div>
@@ -157,37 +229,95 @@
     <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
   </footer>
 
+  <script src="assets/records-data.js?v=20260901V2"></script>
   <script>
-    (function () {
-      // Direct counts from the records/ working copy, computed 2026-08-31.
-      // Supporting documents (registers, prophetic words, cross-reference
-      // memos) are intentionally excluded — see the callout above.
-      var MONTHS = [
-        { label: 'February', count: 10 },
-        { label: 'March', count: 38 },
-        { label: 'April', count: 67 },
-        { label: 'May', count: 51 },
-        { label: 'June', count: 96 },
-        { label: 'July', count: 86 },
-        { label: 'August', count: 59 },
-      ];
-      var total = MONTHS.reduce(function (sum, m) { return sum + m.count; }, 0);
-      var max = Math.max.apply(null, MONTHS.map(function (m) { return m.count; }));
+  (function () {
+    'use strict';
 
-      document.getElementById('archive-total-figure').textContent = total;
+    var MONTH_ORDER = ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
 
-      var mount = document.getElementById('archive-bars');
-      var html = '';
-      MONTHS.forEach(function (m) {
-        var pct = Math.round((m.count / max) * 100);
-        html += '<div class="archive-bar-row">' +
-          '<span class="archive-bar-label">' + m.label + '</span>' +
-          '<span class="archive-bar-track"><span class="archive-bar-fill" style="width:' + pct + '%"></span></span>' +
-          '<span class="archive-bar-count">' + m.count + '</span>' +
-        '</div>';
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
       });
-      mount.innerHTML = html;
-    })();
+    }
+
+    function monthOf(dateLabel) {
+      var m = dateLabel.match(/^(\w{3})/);
+      return m ? m[1] : null;
+    }
+
+    function matchesSearch(rec, query) {
+      if (!query) return true;
+      var q = query.toLowerCase();
+      return (
+        rec.title.toLowerCase().indexOf(q) !== -1 ||
+        (rec.summary || '').toLowerCase().indexOf(q) !== -1 ||
+        (rec.classification || '').toLowerCase().indexOf(q) !== -1
+      );
+    }
+
+    function render(query) {
+      var mount = document.getElementById('archive-months');
+      var statusEl = document.getElementById('archive-search-status');
+      if (!mount || typeof JC_RECORDS === 'undefined') return;
+
+      var filtered = JC_RECORDS.filter(function (r) { return matchesSearch(r, query); });
+      if (query) {
+        statusEl.textContent = 'Found ' + filtered.length + ' of ' + JC_RECORDS.length + ' records';
+      } else {
+        statusEl.textContent = '';
+      }
+
+      var byMonth = {};
+      filtered.forEach(function (r) {
+        var mo = monthOf(r.dateLabel);
+        if (!mo) return;
+        if (!byMonth[mo]) byMonth[mo] = [];
+        byMonth[mo].push(r);
+      });
+
+      var html = '';
+      MONTH_ORDER.forEach(function (mo) {
+        var records = byMonth[mo];
+        if (!records || !records.length) return;
+        records.sort(function (a, b) { return a.order - b.order; });
+        var rows = records.map(function (r) {
+          var badge = r.reviewed === false
+            ? '<span class="archive-record-badge archive-record-badge--mirrored">mirrored</span>'
+            : '<span class="archive-record-badge archive-record-badge--reviewed">reviewed</span>';
+          var dateOnly = r.dateLabel.replace(/\s*·.*$/, '');
+          return '<li class="archive-record-row">' +
+            '<span class="archive-record-date">' + escapeHtml(dateOnly) + '</span>' +
+            '<a class="archive-record-title" href="' + r.href + '">' + escapeHtml(r.title) + '</a>' +
+            badge +
+          '</li>';
+        }).join('');
+        var monthName = { Feb: 'February', Mar: 'March', Apr: 'April', May: 'May', Jun: 'June', Jul: 'July', Aug: 'August' }[mo];
+        html += '<details class="archive-month"' + (query ? ' open' : '') + '>' +
+          '<summary>' + monthName + '<span class="archive-month-count">' + records.length + ' record' + (records.length === 1 ? '' : 's') + '</span></summary>' +
+          '<ul class="archive-month-list">' + rows + '</ul>' +
+        '</details>';
+      });
+
+      mount.innerHTML = html || '<p style="color:var(--parchment-dim);font-style:italic;">No records match your search.</p>';
+    }
+
+    function init() {
+      if (typeof JC_RECORDS === 'undefined') return;
+      document.getElementById('archive-total-figure').textContent = JC_RECORDS.length;
+      document.getElementById('archive-reviewed-figure').textContent = JC_RECORDS.filter(function (r) { return r.reviewed !== false; }).length;
+
+      render('');
+
+      var input = document.getElementById('archive-search-input');
+      if (input) {
+        input.addEventListener('input', function () { render(input.value.trim()); });
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
   </script>
 </body>
 </html>

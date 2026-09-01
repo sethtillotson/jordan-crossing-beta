@@ -12,11 +12,27 @@
  *   is not yet imported into this beta's records/ folder, it links out to the
  *   Second Brain source (https://www.genspark.ai/second-brain?fid=...) rather
  *   than being silently omitted or replaced with invented text.
- * - This corpus map covers 451 PLAUD meditations Feb 14 - Aug 30, 2026 -- a much
- *   larger set than the 7 Tablet VIII seeds in JC_RECORDS (assets/records-data.js).
- *   Only Aug 29 Signpost, Aug 30 Man of Flesh, Man in Mirror, Mirror-Gospel,
- *   Filthy Garments, Compass, and Wisdom exist as local record pages; every
- *   other step below is an external Second-Brain link, clearly marked.
+ * - This corpus map covers 451 PLAUD meditations Feb 14 - Aug 30, 2026. As of
+ *   Phase 5 (2026-09-01), 394 of those meditations have a local page in
+ *   JC_RECORDS (assets/records-data.js) — reviewed or mirrored, see that
+ *   file's header. `scripts/relink-corpus-paths.mjs` re-links a step to its
+ *   local page whenever it can CONFIRM the match (same recorded day + the
+ *   step's own label strongly covered by that record's real, content-derived
+ *   title) — 21 of 48 steps are local as of this writing.
+ * - The remaining 27 external steps are NOT simply unlabeled — re-running the
+ *   relinker on them found either (a) no locally-mirrored record recorded on
+ *   that exact day matches the step's label at all, or (b) a same-day
+ *   candidate whose title only weakly overlaps the label. Investigation
+ *   traced this to genuine data-quality issues in the underlying export, not
+ *   a linking bug: at least one raw source file's actual body content does
+ *   not match its own filename (the file named "...Resting in the Finished
+ *   Work of Christ and Covenant Identity.md" contains a different meditation,
+ *   "My Grace Is Sufficient..."), and at least one step's own curated
+ *   dateLabel does not match its meditation's **Recorded:** metadata either.
+ *   These 27 need a human to either locate the real content by hand or
+ *   confirm it was never uploaded — do not "fix" them by loosening the
+ *   relinker's matching thresholds; that would trade a visible external
+ *   link for an invisible wrong one.
  * - "status" on each path mirrors the design doc's Stage labels: these are
  *   editorially curated *reading orders* through already-existing meditations,
  *   not new interpretive claims about what the meditations mean.
@@ -88,7 +104,7 @@ const JC_CORPUS_PATHS = [
       { label: 'The Hidden Mathematics of Divine Perfection (Thirteen)', dateLabel: 'Mar 20', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-20 Personal Meditation_ The Hidden Mathematics of Divine Perfection\u2014When Thirteen Becomes the Number of the Remnant-Summary.md', note: 'Seam One \u2014 independent convergence with Sister Katie.' },
       { label: 'The Burning Bush, Old Refuges, and Spiritual Formation', dateLabel: 'Jun 4', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-04 Call Reflection_ The Burning Bush, Old Refuges, and Spiritual Formation-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The June 4 confirmation thread \u2014 Tablet III\u2019s origin.' },
       { label: "Sister Katie's Covenantal Co-Witness, Kenosis, and the Plural Prophetic Archive", dateLabel: 'Jun 7', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-07 Corpus Reflection_ Sister Katie\'s Covenantal Co-Witness, Kenosis, and the Plural Prophetic Archive-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The corpus becomes plural.' },
-      { label: 'The Mirror, Murmuration, and Releasing Revelation', dateLabel: 'Jun 8 \u00b7 11:05', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-08 @ 11_05 - Personal Meditation_ The Mirror, Murmuration, and Releasing Revelation-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Murmuration named by Seth in his own voice.' },
+      { label: 'The Mirror, Murmuration, and Releasing Revelation', dateLabel: 'Jun 8 \u00b7 11:05', localId: '06-08-mirror-murmuration-releasing-what', memoPath: null, note: 'Murmuration named by Seth in his own voice.' },
       { label: "Where Is Your Faith? Samuel's Testimony", dateLabel: 'Jun 23', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-23 \u2014 Where Is Your Faith_ The Testimony of Commissioned Works \u2014 Brother Samuel\'s Testimony-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Samuel joins the plural voice.' },
       { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30', localId: 'filthy-garments', memoPath: null, note: 'The Chorus arrives at scale \u2014 three brothers, three countries, four AM in Australia.' },
     ],
@@ -102,12 +118,12 @@ const JC_CORPUS_PATHS = [
     source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 4) and \u00a713: "If a reader wants the Descent." Read alongside The Semantic Weaving \u00a7V.',
     tags: ['transformational', 'contemplative', 'long'],
     steps: [
-      { label: 'Divine Winnowing and the Transformation from Ambition to Abiding', dateLabel: 'Feb 27', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/Feb/02-27 Personal Meditation_ Divine Winnowing and the Transformation from Ambition to Abiding.md', note: 'Descent first named.' },
+      { label: 'Divine Winnowing and the Transformation from Ambition to Abiding', dateLabel: 'Feb 27', localId: '02-27-personal-meditation-divine-winnowing', memoPath: null, note: 'Descent first named.' },
       { label: 'Kenosis and the Death of Self-Sufficiency', dateLabel: 'Mar 17', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-17 Personal Meditation_ Kenosis and the Death of Self-Sufficiency-Summary.md', note: 'The bottleneck \u2014 highest betweenness-per-edge in Volume I\u2019s graph.' },
       { label: 'Hidden in the Alleyway No More', dateLabel: 'Mar 29', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/March/03-29 13_04 Personal Meditation_ Hidden in the Alleyway No More.md', note: 'Hiddenness ends as concealment, begins as vocation.' },
-      { label: 'When the Ordinary Moment Becomes Holy Ground', dateLabel: 'Apr 8', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-08 10_27 Reflection_ When the Ordinary Moment Becomes Holy Ground-Summary.md', note: 'The sacred ordinary opens.' },
-      { label: 'Factory Floor Theology \u2014 Kenosis, Remnant, and Melchizedek Christology', dateLabel: 'Apr 10', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-10 Daily Log_ Factory Floor Theology \u2014 Kenosis, Remnant, and Melchizedek Christology-Summary.md', note: 'The workplace is now sanctuary.' },
-      { label: 'Brotherhood, the Round Table, the God Who Sees, and the Plow', dateLabel: 'May 10', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-10 at 14_28 \u2014 Brotherhood, the Round Table, the God Who Sees, and the Plow .md', note: 'The Plow of the Beloved is named.' },
+      { label: 'When the Ordinary Moment Becomes Holy Ground', dateLabel: 'Apr 8', localId: '04-08-1027-reflection-when-ordinary', memoPath: null, note: 'The sacred ordinary opens.' },
+      { label: 'Factory Floor Theology \u2014 Kenosis, Remnant, and Melchizedek Christology', dateLabel: 'Apr 10', localId: '04-10-daily-log-factory-floor', memoPath: null, note: 'The workplace is now sanctuary.' },
+      { label: 'Brotherhood, the Round Table, the God Who Sees, and the Plow', dateLabel: 'May 10', localId: '05-10-brotherhood-round-table-god', memoPath: null, note: 'The Plow of the Beloved is named.' },
       { label: 'Prophetic Writing, Faithful Waiting, and the Theology of the Rampart', dateLabel: 'May 26', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-26 Conversation Reflection_ Prophetic Writing, Faithful Waiting, and the Theology of the Rampart-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Sacred ordinary meets weariness; Tablet V\u2019s window opens.' },
       { label: 'The Sacrament of Small Things', dateLabel: 'Jul 28', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/July/07-28 at 22_31 \u2014 The Sacrament of Small Things-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Renamed as sacrament \u2014 the phrase Tablet V governs by.' },
       { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30', localId: 'filthy-garments', memoPath: null, note: 'The harvest of hiddenness \u2014 given away at the three-brother table.' },
