@@ -46,7 +46,7 @@ With the corpus map itself updated to reflect the 138-record reviewed layer, thi
 
 **Landing page — Chronological/Thematic/Encounter maps, begun.** Replaced three of the five Stage-2 placeholder cards on `index.html` with working first drafts: a Chronological Map (7 month links into `threads.html?q=<Mon>`), a Thematic Map (the 4 named threads plus 6 common themes, both via the new `?thread=`/`?q=` params), and an Encounter Index (14 hand-picked hinge records drawn from the Corpus Map's own "key hinges," linked directly to their record pages). Scripture Map and Tablet Map remain untouched placeholders. Explicitly marked as first drafts on the page itself, pending the owner's review.
 
-Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking per the known filename/content-mismatch hazard; Scripture Map and Tablet Map remain placeholders; the ~27 unresolved pass references and ~280 unreviewed meditations are unchanged from the prior phase.
+Not yet done: `corpus-paths-data.js` still needs manual (not scripted) relinking per the known filename/content-mismatch hazard; Scripture Map and Tablet Map remain placeholders; the ~27 unresolved pass references and ~280 unreviewed meditations are unchanged from the prior phase. Pass 7 (35 more entries, coverage 171→206) and Pass 8 (35 more, coverage 206→241) have both since been received and are present in the repository but not yet integrated by the generator.
 
 ### Phase 3 (2026-09-01) — audio player component, built ahead of source material
 The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio/video source files exist anywhere in the repository (confirmed again — zero `.mp3/.m4a/.wav/.ogg/.aac/.mp4/.mov` files), the actual per-record audio integration remains genuinely blocked. What *is* unblocked is the component itself, so this phase built it ahead of time.
@@ -59,8 +59,21 @@ The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio
 
 **What this does *not* unblock:** `integrate-audio-player` (wiring real audio into specific records) still requires the author to supply actual audio source files or linkable URLs. The day that happens, adding `audioUrl: '...'` (and optionally `captionsUrl`) to a record's `JC_RECORDS` entry is the entire remaining task — no further engineering needed.
 
+### Phase 4 (2026-09-01) — the digital threshold: Encounter Index, human doorways, returning reader
+The design document's closing section (§31, "The final shape") describes the site becoming "a digital threshold: part archive, part map, part reading room, part listening chamber, part chain of witness" where "not every reader will have the same encounter." Auditing the site against that section (and §7, §9, §11) surfaced three genuine gaps beyond audio (explicitly out of scope for this phase per owner direction): the landing page's "Encounter Index" card was actually just a hand-picked hinge list, not the dimensional "what kind of place am I entering?" index §9 describes; no record page offered the theme-based "human doorways" (§7) a reader could leave by; and the "returning reader" continuity (§11) had no visible surface anywhere live.
+
+**Built a real Encounter Index.** `scripts/tag-encounter-dimensions.mjs` computes seven dimensions per record — `temperature` (quiet/contemplative/confrontational/urgent), `length` (brief/moderate/deep, calibrated to this corpus's own actual word-count distribution via percentile cutoffs, since every record here is already substantial), `voice` (personal/communal/instructional/prayerful), `movement` (awakening/surrender/confrontation/waiting/fellowship/release, or `null` if none clearly apply), `posture` (receiving/wrestling/confessing/discerning/obeying), `form` (written/dialogue-shaped/spoken/scripture-centered, from the record's own classification), and `season` (which Stone Tablet window the date falls in) — and writes them onto every `JC_RECORDS` entry as an `encounter` object. `length` and `season` are objective; the rest are keyword-derived from the record's own title/summary/classification, explicitly labeled everywhere in the UI as "an approximation for navigation, never a spiritual diagnosis of you" (matching the design doc's own §9 warning). The landing page's real Encounter Index lets a reader pick any combination of these (or leave fields "Any"), see how many records match, and receive one at random — verified in-browser with real matches, an honest "no match" state, and a working reset.
+
+**Added "human doorways" theme chips to every record page.** The same script derives up to 4 `doorwayThemes` per record from the design doc's §7 list (shame, waiting, fear, identity, surrender, obedience, grief, fellowship, work, marriage, money, discipline) via keyword matching, and `design-v2-logic.js`'s new `initDoorwayThemes()` renders them as chips linking to `threads.html?q=<theme>` — a way to leave a record by the life-question it touched, distinct from its reviewed thread edges. Hidden correctly under `?mode=original`.
+
+**Added a "Welcome back" returning-reader panel** to the landing page: reads the existing carried-question `localStorage` state plus a new lightweight `jc_last_record` tracker (written by every record page on load) and shows "You last read [record]" / "You left this question open: [question]" — entirely local, no account, hidden completely for first-time visitors. Verified showing and correctly hiding depending on `localStorage` state.
+
+**Audio was explicitly out of scope for this phase** per owner direction ("we don't need the audio on there right now") — the Phase 3 component remains built and dormant as before.
+
+**What's still open from the design doc:** Scripture Map (§8) and Tablet Map remain placeholders; the encounter/doorway dimensions are heuristic and would benefit from human review at some point, same as any Mystery Mode pool; `corpus-paths-data.js` relinking is still manual-only; Pass 7 (tagged mid-session, 35 more cross-reference entries, archive coverage 171→206) has not yet been integrated into the generator — a natural next step.
+
 ### Blocked
-- **Audio, per-record integration:** the player component now exists (see Phase 3 above), but zero audio/video files exist anywhere in the repository for any record — the meditations here are text-only (PLAUD/Speakly-generated summaries). `integrate-audio-player` stays blocked until the author provides actual audio source files or linkable audio URLs.
+- **Audio, per-record integration:** the player component exists (Phase 3), but zero audio/video files exist anywhere in the repository for any record — the meditations here are text-only (PLAUD/Speakly-generated summaries). `integrate-audio-player` stays blocked until the author provides actual audio source files or linkable audio URLs.
 
 ### Pending human decision (not an engineering task)
 - **final-qa:** requires the actual stakeholder (project owner) to review and approve — this can't be done on their behalf.
@@ -71,20 +84,22 @@ The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio
 ## Technical Architecture
 
 ### Data Structure
-- **records-data.js:** `JC_RECORDS` array (138 records — 7 original curated seeds + 131 generated from the six Cross-Reference passes — `href` pointing at `-v2.html` pages), `JC_EDGES` array (142 labeled thread connections: 121 same-cluster `"continues"`/`"answers"`/`"open"` edges + 21 cross-month `"echoes"` edges for the four named threads, each with a `source` citation), `JC_THREADS` array (the four named threads with their step sequences). The generated portion is rebuilt by `scripts/build-corpus-records.mjs`; the `JC_THREADS`/`"echoes"`-edge portion was hand-authored from the Corpus Map §10 and should be extended by hand if new thread hinges resolve to local pages.
+- **records-data.js:** `JC_RECORDS` array (138 records — 7 original curated seeds + 131 generated from the six Cross-Reference passes — `href` pointing at `-v2.html` pages, plus `encounter{}`/`doorwayThemes[]` per record), `JC_EDGES` array (142 labeled thread connections: 121 same-cluster `"continues"`/`"answers"`/`"open"` edges + 21 cross-month `"echoes"` edges for the four named threads, each with a `source` citation), `JC_THREADS` array (the four named threads with their step sequences). The generated portion is rebuilt by `scripts/build-corpus-records.mjs`; the `JC_THREADS`/`"echoes"`-edge portion was hand-authored from the Corpus Map §10; the `encounter`/`doorwayThemes` fields are computed by `scripts/tag-encounter-dimensions.mjs`. All three additions should be re-applied by hand/re-run after `build-corpus-records.mjs` regenerates the file (it overwrites `records-data.js` completely — see the generator's own header warning).
 - **corpus-paths-data.js:** `JC_CORPUS_PATHS` array (6 reading paths with steps; most steps still link externally — see the living-archive note above)
-- **design-v2-logic.js:** page initialization, Markdown rendering, related records, prev/next chronology (`#graph-nav-mount`), reviewed thread connections (`#threads-mount`), audio player init (`#audio-player-mount`, only mounts if `record.audioUrl` is set), and the `?mode=original` no-interpretation handling
+- **design-v2-logic.js:** page initialization, Markdown rendering, related records, prev/next chronology (`#graph-nav-mount`), reviewed thread connections (`#threads-mount`), human-doorway theme chips (`#doorway-themes-mount`), audio player init (`#audio-player-mount`, only mounts if `record.audioUrl` is set), last-record tracking for the returning-reader panel, and the `?mode=original` no-interpretation handling
 - **mystery-v2-logic.js:** doorway pooling (keyword-matched against `JC_RECORDS`), guidance text, routing, and no-interpretation link targeting
 - **audio-player.js / audio-player.css:** standalone accessible audio player component (play/pause, seek, timestamp, speed, volume, captions track support), exposed as `window.JordanCrossingAudio.mountAudioPlayer()`; renders nothing until a record supplies an `audioUrl`
-- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added. Re-running it will regenerate `JC_RECORDS` and the same-cluster edges but does **not** touch the hand-authored `JC_THREADS`/`"echoes"` edges, which live in the same file below the generated block. Its page template already includes the audio-player mount/scripts for any newly generated page.
+- **scripts/build-corpus-records.mjs:** the corpus-embedding generator (see living-archive section above) — run via `node scripts/build-corpus-records.mjs` from the repo root any time the pass documents are updated or a new pass is added. Re-running it will regenerate `JC_RECORDS` and the same-cluster edges but does **not** touch the hand-authored `JC_THREADS`/`"echoes"` edges or the `encounter`/`doorwayThemes` fields — see its own header comment for the exact recovery steps. Its page template already includes the audio-player and human-doorways mounts/scripts for any newly generated page.
+- **scripts/tag-encounter-dimensions.mjs:** computes the Encounter Index (§9) dimensions and human-doorway themes (§7) onto every `JC_RECORDS` entry — idempotent, safe to re-run any time after the record set changes. `length`/`season` are objective (word count percentile within this corpus; recorded date against the Stone Tablet windows); the rest are keyword-derived and explicitly labeled as an approximation in the UI, never a diagnosis.
 
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
 - `jcGetPrevNext(id)` / `jcGetEdgesFor(id)` — chronology and labeled-edge lookups, used by both `design-v2-logic.js` (record pages) and `threads.html` (constellation view)
 - `jcShortId(id)` — normalizes full IDs to short IDs (e.g., '08-29-signpost' → 'signpost')
-- `initRelatedRecords()` / `initGraphNav()` / `initThreadConnections()` / `initAudioPlayer()` — run on page load to populate `related-records-mount` / `graph-nav-mount` / `threads-mount` / `audio-player-mount`
-- `applyNoInterpretationMode()` — hides interpretive sections when `?mode=original` is present
+- `initRelatedRecords()` / `initGraphNav()` / `initThreadConnections()` / `initDoorwayThemes()` / `initAudioPlayer()` — run on page load to populate `related-records-mount` / `graph-nav-mount` / `threads-mount` / `doorway-themes-mount` / `audio-player-mount`
+- `applyNoInterpretationMode()` — hides interpretive sections (including doorway themes) when `?mode=original` is present
 - `JordanCrossingAudio.mountAudioPlayer(mount, { audioUrl, captionsUrl, title })` — mounts a fully wired player into any element; used by `initAudioPlayer()` and available for direct/manual use
+- `index.html`'s inline `initEncounterIndex()` / `initWelcomeBack()` — the Encounter Index picker and the returning-reader panel; both read `JC_RECORDS` and/or `localStorage` directly, no separate data file
 
 ### Deployment Pipeline
 - All changes committed to master → GitHub Actions auto-deploys to GitHub Pages
@@ -96,12 +111,13 @@ The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio
 
 - `index.html`, `mystery.html`, `threads.html`, `paths.html`, `archive.html` — all v2, all cross-linked in nav
 - `mystery-v2.html`, `record.html` — legacy pages kept only for redirect/reference; not linked from anywhere live except `record.html?mode=original` from the landing page's third invitation card (intentional — refers to the preserved v11 interior record, a different concept from a curated meditation's no-interpretation view)
-- `records/*-v2.html` (138 files) — all fully published, reviewed meditation records: the original 7 curated seeds plus 131 generated by `scripts/build-corpus-records.mjs` from the six Cross-Reference passes; every page now carries the audio-player mount/hooks (dormant until a record has an `audioUrl`)
+- `records/*-v2.html` (138 files) — all fully published, reviewed meditation records: the original 7 curated seeds plus 131 generated by `scripts/build-corpus-records.mjs` from the six Cross-Reference passes; every page now carries the audio-player and human-doorways mounts/hooks
 - `records/*.html` (7 files, no `-v2` suffix) — superseded by the `-v2` versions; no longer linked anywhere in the site after the routing fix, kept only as historical artifacts
 - `assets/favicon.svg` — new, linked from every page
 - `assets/audio-player.js`, `assets/audio-player.css` — the Phase 3 audio player component, built ahead of source material
-- `scripts/build-corpus-records.mjs` — the generator that produced the 131 new record pages and rebuilt `assets/records-data.js`; safe to re-run if the pass documents are extended
-- `records/*.md` (~407–410 files), `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, `Pass 1–6 *.md` — the raw corpus mirror described above; present but **not committed** (only the generated `-v2.html` output and `records-data.js` are committed)
+- `scripts/build-corpus-records.mjs` — the generator that produced the 131 new record pages and rebuilt `assets/records-data.js`; safe to re-run if the pass documents are extended (see its own header for what must be re-applied afterward)
+- `scripts/tag-encounter-dimensions.mjs` — the Phase 4 tagger that computes `encounter`/`doorwayThemes` for every record
+- `records/*.md` (410 files), `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, `Pass 1–8 *.md` — the raw corpus mirror described above. These are committed to this repository (it remains a private Interior Beta, not a public deploy) so the six-then-eight Cross-Reference passes and the two Corpus Map documents stay available as the generator's own source of truth; only the *published-and-reviewed* 138 meditations are surfaced anywhere in the live site's navigation.
 
 ---
 
@@ -116,8 +132,11 @@ The CHANGELOG's own roadmap named Phase 3 "Audio Implementation." Since no audio
 - ✓ Mystery Mode doorways pool across the full 138-record reviewed set, not just the original 7
 - ✓ Reviewed thread connections and chronology visible directly on every record page (fixed a dead-code regression that had silently hidden them)
 - ✓ Audio player component built and wired into every record page, verified working; dormant until real audio source material is provided
+- ✓ A real Encounter Index (design doc §9) lets a reader choose an encounter by temperature/length/movement/posture/voice/season and receive a matching record, verified with real and empty-match cases
+- ✓ Every record page offers "human doorways" theme chips (§7) alongside its reviewed edges
+- ✓ A local-only "Welcome back" panel surfaces the last record read and any carried question, verified showing/hiding correctly
 - ○ Landing page's Chronological/Thematic/Encounter maps are first drafts pending owner verification; Scripture Map and Tablet Map remain placeholders
-- ○ Remaining ~280 unreviewed meditations stay metadata-only in the Archive pending a future review pass
+- ○ Remaining ~280 unreviewed meditations stay metadata-only in the Archive pending a future review pass; Pass 7 (35 more entries) is tagged but not yet integrated
 - ○ Audio: per-record integration blocked pending source material (component itself is done)
 - ○ Public launch: pending stakeholder sign-off and an explicit decision to lift the "not for public distribution" status
 

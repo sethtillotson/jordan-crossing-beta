@@ -89,6 +89,24 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 - No record currently has audio — the corpus remains text-only (PLAUD/Speakly-generated summaries), so the player component exists but is dormant everywhere. Per-record audio integration (`integrate-audio-player`) is still blocked pending the author providing actual audio source files or linkable URLs; adding one is now a one-line data change per record, not new engineering.
 
+---
+
+## [1.4] — September 1, 2026
+
+### Added
+
+#### Phase 4: The Digital Threshold (Encounter Index, human doorways, returning reader)
+- **The Encounter Index** (design doc §9) — a real interactive picker on the landing page answering "what kind of place am I entering?" rather than "what word am I looking for?" Readers choose any combination of temperature (quiet/contemplative/confrontational/urgent), length (brief/moderate/deep), movement (awakening/surrender/confrontation/waiting/fellowship/release), posture (receiving/wrestling/confessing/discerning/obeying), voice (personal/communal/instructional/prayerful), and season (which Stone Tablet window), see a live match count, and receive one matching record at random. Every value is either objectively derived (length/season) or keyword-derived and explicitly labeled as an approximation, never a diagnosis of the reader.
+- **Human doorway theme chips** (design doc §7) on every one of the 138 record pages — up to 4 tags per record (shame, waiting, fear, identity, surrender, obedience, grief, fellowship, work, marriage, money, discipline), linking to a filtered view on Threads. A reader can now leave a record by the life-question it touched, not only by its reviewed thread edges.
+- **"Welcome back" returning-reader panel** (design doc §11) on the landing page — shows the last record read and any carried question still open, using only local, account-free `localStorage`. Invisible to first-time visitors.
+- **`scripts/tag-encounter-dimensions.mjs`** — the tagger that computes the above onto every `JC_RECORDS` entry; idempotent, re-run any time the record set changes.
+
+### Known Limitations
+
+- The Encounter Index's five interpretive dimensions (temperature/voice/movement/posture/form) are keyword-derived, not individually human-reviewed the way the six Cross-Reference passes are. `length` and `season` are objective. This is disclosed directly in the landing page's own copy.
+- Audio explicitly out of scope for this phase per owner direction; unchanged from [1.3].
+- Pass 7 Cross-References (35 more entries, archive coverage 171→206) has been received but not yet integrated into the generator.
+
 ### Technical Details
 
 - **Framework**: None (vanilla HTML5/CSS3/JavaScript)

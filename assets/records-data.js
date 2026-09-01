@@ -22,6 +22,17 @@
  *   carries either field — the corpus is text-only — so no player
  *   currently renders anywhere; this is a data-only gap, not an
  *   engineering one. See CHANGELOG.md's "Phase 3: Audio Implementation."
+ * - `encounter` and `doorwayThemes` (design doc §9 "The Encounter Index"
+ *   and §7 "the human doorways") — computed by
+ *   scripts/tag-encounter-dimensions.mjs. `encounter.length` and
+ *   `encounter.season` are objective (word count relative to this
+ *   corpus's own distribution; recorded date against the known Stone
+ *   Tablet windows). `temperature`/`voice`/`movement`/`posture`/`form`
+ *   and `doorwayThemes` are derived from keyword patterns in the
+ *   record's own title/summary/classification — an approximation for
+ *   navigation, never a spiritual diagnosis of the reader or the record.
+ *   A `null` value means "not distinctly one of these," not "unknown."
+ *   Re-run the tagger after `build-corpus-records.mjs` adds new records.
  */
 
 'use strict';
@@ -36,7 +47,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-25-personal-meditation-spirit-led-transcript-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with something that seems almost too simple to be significant — the question of *how* we come to the Word before we ever open our mouths to speak about it. Something has been pressing on me from within this very process of preparation:…"
+    "summary": "I find myself sitting with something that seems almost too simple to be significant — the question of *how* we come to the Word before we ever open our mouths to speak about it. Something has been pressing on me from within this very process of preparation:…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "02-25-meditation-joseph-paul-severe",
@@ -47,7 +68,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-25-meditation-joseph-paul-severe-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with one of the most arresting statements in all of Genesis this morning — Joseph looking into the eyes of the very brothers who stripped him, sold him, and counted him as nothing, and saying with unmistakable peace: *“You meant evil…"
+    "summary": "I find myself sitting with one of the most arresting statements in all of Genesis this morning — Joseph looking into the eyes of the very brothers who stripped him, sold him, and counted him as nothing, and saying with unmistakable peace: *“You meant evil…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "discipline"
+    ]
   },
   {
     "id": "02-26-meditation-judas-iscariot-unbelief",
@@ -58,7 +92,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-26-meditation-judas-iscariot-unbelief-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with one of the most unsettling figures in all of Scripture — Judas Iscariot — and I cannot shake the question that has been pressing on me: *why?* Why did he do it? Not in the sensational, tabloid sense, but in the deep, theological,…"
+    "summary": "I find myself sitting with one of the most unsettling figures in all of Scripture — Judas Iscariot — and I cannot shake the question that has been pressing on me: *why?* Why did he do it? Not in the sensational, tabloid sense, but in the deep, theological,…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "02-27-shattering-scorecards-divine-providence",
@@ -69,7 +113,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-27-shattering-scorecards-divine-providence-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself returning to something that won't let me go: the question of Judas, divine providence, and what we've been taught about judgment, hell, and the nature of God's plan. After sitting with the mustard seed conspiracy reflection and meditating on the"
+    "summary": "I find myself returning to something that won't let me go: the question of Judas, divine providence, and what we've been taught about judgment, hell, and the nature of God's plan. After sitting with the mustard seed conspiracy reflection and meditating on the",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "02-27-severe-mercy-divine-discipline",
@@ -80,7 +134,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-27-severe-mercy-divine-discipline-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting here with a grieved spirit, having just ended a phone call with a brother in Christ who is walking through adultery, infidelity, and deception—not just in his marriage, but in his dealings with the Body. Something has arrested my…"
+    "summary": "I find myself sitting here with a grieved spirit, having just ended a phone call with a brother in Christ who is walking through adultery, infidelity, and deception—not just in his marriage, but in his dealings with the Body. Something has arrested my…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "marriage",
+      "discipline"
+    ]
   },
   {
     "id": "02-27-unsettling-grace-divine-sovereignty",
@@ -91,7 +159,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-27-unsettling-grace-divine-sovereignty-v2.html",
     "sourceStatus": "original",
-    "summary": "I can't get this off my mind. After sitting with the mustard seed conspiracy reflection and meditating on the divine providence of God, something has cracked open in my understanding—something that won't let me go. I find myself wrestling with Judas, with…"
+    "summary": "I can't get this off my mind. After sitting with the mustard seed conspiracy reflection and meditating on the divine providence of God, something has cracked open in my understanding—something that won't let me go. I find myself wrestling with Judas, with…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "02-27-personal-meditation-divine-winnowing",
@@ -102,7 +180,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/02-27-personal-meditation-divine-winnowing-v2.html",
     "sourceStatus": "original",
-    "summary": "I can't get this off my mind. Today, February 27, 2026, I'm thinking about the beautiful violence of surrender — how the Almighty sometimes has to strip everything away before we can finally see what was holding us captive all along. I find myself sitting…"
+    "summary": "I can't get this off my mind. Today, February 27, 2026, I'm thinking about the beautiful violence of surrender — how the Almighty sometimes has to strip everything away before we can finally see what was holding us captive all along. I find myself sitting…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "03-06-meditation-god-who-hunts",
@@ -113,7 +203,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-06-meditation-god-who-hunts-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with something that refuses to release me — a convergence of truths pressing in from every direction at once, threading together the story of Jonah, the nature of meekness, the sewage of credentials, and the staggering reality that the…"
+    "summary": "I find myself sitting with something that refuses to release me — a convergence of truths pressing in from every direction at once, threading together the story of Jonah, the nature of meekness, the sewage of credentials, and the staggering reality that the…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "03-06-meditation-spiritual-warfare-against",
@@ -124,7 +226,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-06-meditation-spiritual-warfare-against-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting in the aftermath of a spiritual encounter that left me physically nauseated and spiritually shaken. On March 2nd, 2026, I witnessed through the Spirit what can only be described as territorial darkness — a household so deeply entrenched…"
+    "summary": "I find myself sitting in the aftermath of a spiritual encounter that left me physically nauseated and spiritually shaken. On March 2nd, 2026, I witnessed through the Spirit what can only be described as territorial darkness — a household so deeply entrenched…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "03-06-personal-meditation-confronting-spiritual",
@@ -135,7 +247,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-06-personal-meditation-confronting-spiritual-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself shaken, sitting in the aftermath of something I never expected to face. Just hours ago, on the evening of March 4th, 2026, I encountered what I can only describe as raw, unmasked spiritual warfare — not theoretical, not distant, but breathing on"
+    "summary": "I find myself shaken, sitting in the aftermath of something I never expected to face. Just hours ago, on the evening of March 4th, 2026, I encountered what I can only describe as raw, unmasked spiritual warfare — not theoretical, not distant, but breathing on",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "03-06-meditation-spiritual-warfare-against-2",
@@ -146,7 +268,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-06-meditation-spiritual-warfare-against-2-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting in the aftermath of a spiritual encounter that left me physically nauseated and spiritually shaken. On March 2nd, 2026, I witnessed through the Spirit what can only be described as territorial darkness — a household so deeply entrenched…"
+    "summary": "I find myself sitting in the aftermath of a spiritual encounter that left me physically nauseated and spiritually shaken. On March 2nd, 2026, I witnessed through the Spirit what can only be described as territorial darkness — a household so deeply entrenched…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "03-06-reflection-gods-calling-weakness",
@@ -157,7 +289,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-06-reflection-gods-calling-weakness-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with the stunning paradox of God’s calling. Today I’m thinking about how the Kingdom of Heaven operates on a completely inverted logic to that of the world. In our striving for strength, recognition, and self-sufficiency, God…"
+    "summary": "I find myself sitting with the stunning paradox of God’s calling. Today I’m thinking about how the Kingdom of Heaven operates on a completely inverted logic to that of the world. In our striving for strength, recognition, and self-sufficiency, God…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "03-11-meditation-grace-beyond-condemnation",
@@ -168,7 +312,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-11-meditation-grace-beyond-condemnation-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself wrestling with one of the most liberating and simultaneously uncomfortable truths in all of Scripture: that nothing I do—no denial, no failure, no moral collapse—can disqualify me from what Christ has already finished. Something has been…"
+    "summary": "I find myself wrestling with one of the most liberating and simultaneously uncomfortable truths in all of Scripture: that nothing I do—no denial, no failure, no moral collapse—can disqualify me from what Christ has already finished. Something has been…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "shame",
+      "identity"
+    ]
   },
   {
     "id": "03-12-personal-meditation-divine-discipline",
@@ -179,7 +336,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-12-personal-meditation-divine-discipline-v2.html",
     "sourceStatus": "original",
-    "summary": "I can't get this off of my mind. Today I'm thinking about what happens when the hand of God lifts from a life—not in abandonment, but in the terrifying mercy of judgment meant to produce repentance. I find myself sitting with the uncomfortable truth that a…"
+    "summary": "I can't get this off of my mind. Today I'm thinking about what happens when the hand of God lifts from a life—not in abandonment, but in the terrifying mercy of judgment meant to produce repentance. I find myself sitting with the uncomfortable truth that a…",
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "surrender",
+      "posture": "confessing",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "discipline"
+    ]
   },
   {
     "id": "03-13-personal-meditation-spiritual-warfare",
@@ -190,7 +360,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-13-personal-meditation-spiritual-warfare-v2.html",
     "sourceStatus": "original",
-    "summary": "I can't get this off my mind—something has been pressing on my spirit for days now, breaking through sleep, cutting through every distraction. I am beginning to see with terrifying clarity a coordinated demonic strategy targeting the institutional church,…"
+    "summary": "I can't get this off my mind—something has been pressing on my spirit for days now, breaking through sleep, cutting through every distraction. I am beginning to see with terrifying clarity a coordinated demonic strategy targeting the institutional church,…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "03-25-personal-meditation-obedience-hiddenness",
@@ -201,7 +381,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/03-25-personal-meditation-obedience-hiddenness-v2.html",
     "sourceStatus": "original",
-    "summary": "I find myself sitting with something that arrests my attention in a way I didn’t expect. On March 14th, 2026, after a conversation with a dear brother in Christ, I’m confronted with what looks like failure from every measurable angle—empty Bible studies,…"
+    "summary": "I find myself sitting with something that arrests my attention in a way I didn’t expect. On March 14th, 2026, after a conversation with a dear brother in Christ, I’m confronted with what looks like failure from every measurable angle—empty Bible studies,…",
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "obeying",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "obedience",
+      "fellowship"
+    ]
   },
   {
     "id": "04-02-0943-reflection-hunger-that",
@@ -212,7 +405,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-02-0943-reflection-hunger-that-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this brother on the phone — squeezed between a twelve-hour shift and a line about to start — something in me recognized the unmistakable signature of a man in whom genuine hunger for the Word of God has been ignited. He wasn’t speaking from…"
+    "summary": "As I listened to this brother on the phone — squeezed between a twelve-hour shift and a line about to start — something in me recognized the unmistakable signature of a man in whom genuine hunger for the Word of God has been ignited. He wasn’t speaking from…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "04-03-personal-meditation-descent-that",
@@ -223,7 +428,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-03-personal-meditation-descent-that-v2.html",
     "sourceStatus": "original",
-    "summary": "Something remarkable happened in the early hours of April 2, 2026, in a conversation between two brothers separated by an ocean but united in spirit. As I listened to my brother Samuel describe waking up to the weight of the world — the silenced Easter…"
+    "summary": "Something remarkable happened in the early hours of April 2, 2026, in a conversation between two brothers separated by an ocean but united in spirit. As I listened to my brother Samuel describe waking up to the weight of the world — the silenced Easter…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "grief",
+      "fellowship"
+    ]
   },
   {
     "id": "04-03-0221-teaching-reflection-whole",
@@ -234,7 +453,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-03-0221-teaching-reflection-whole-v2.html",
     "sourceStatus": "original",
-    "summary": "I have been sitting with a convergence of teachings that arrived not as separate streams but as a single, building flood — and I find I cannot treat them as separate topics without doing violence to what the Spirit seems to be weaving together. What I am…"
+    "summary": "I have been sitting with a convergence of teachings that arrived not as separate streams but as a single, building flood — and I find I cannot treat them as separate topics without doing violence to what the Spirit seems to be weaving together. What I am…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "04-03-1120-reflection-table-being",
@@ -245,7 +474,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-03-1120-reflection-table-being-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this phone call between Samuel and myself, what struck me most was not any single theological statement, but the texture of what was happening beneath the surface of an ordinary conversation. Two brothers — one still clocked in at work, one…"
+    "summary": "As I listened to this phone call between Samuel and myself, what struck me most was not any single theological statement, but the texture of what was happening beneath the surface of an ordinary conversation. Two brothers — one still clocked in at work, one…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "04-03-0637-reflection-anger-that",
@@ -256,7 +498,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-03-0637-reflection-anger-that-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this exchange between my brother and me, something quietly arrested me — not the logistics of our Bible study plans, but the moment of unexpected anger that surfaced at the start of our conversation. My brother described something I…"
+    "summary": "As I listened to this exchange between my brother and me, something quietly arrested me — not the logistics of our Bible study plans, but the moment of unexpected anger that surfaced at the start of our conversation. My brother described something I…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "04-04-1333-personal-meditation-backward",
@@ -267,7 +521,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-04-1333-personal-meditation-backward-v2.html",
     "sourceStatus": "original",
-    "summary": "Something in me knew to make that call before I even understood why — and that kind of knowing is itself a word worth receiving. As I sat with my brother in his grief, listening to the weight of a marriage that ended and a life he had fully committed himself…"
+    "summary": "Something in me knew to make that call before I even understood why — and that kind of knowing is itself a word worth receiving. As I sat with my brother in his grief, listening to the weight of a marriage that ended and a life he had fully committed himself…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship",
+      "marriage"
+    ]
   },
   {
     "id": "04-04-1243-personal-meditation-contrite",
@@ -278,7 +546,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-04-1243-personal-meditation-contrite-v2.html",
     "sourceStatus": "original",
-    "summary": "Something happened in the middle of an ordinary evening that I was not fully prepared for — a conversation that began casually, with a Guinness being opened and a Good Friday gift being unwrapped, and slowly became one of the most searching theological…"
+    "summary": "Something happened in the middle of an ordinary evening that I was not fully prepared for — a conversation that began casually, with a Guinness being opened and a Good Friday gift being unwrapped, and slowly became one of the most searching theological…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "04-06-spiritual-reflection-wilderness-provision",
@@ -289,7 +567,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-06-spiritual-reflection-wilderness-provision-v2.html",
     "sourceStatus": "original",
-    "summary": "As I trace the thread through Matthew 15 and 16—bread, wilderness, seven, fish, Jonah—I am arrested by a question the disciples ask that reveals far more than they intended: “Where could we get enough bread in the wilderness to fill such a great multitude?”…"
+    "summary": "As I trace the thread through Matthew 15 and 16—bread, wilderness, seven, fish, Jonah—I am arrested by a question the disciples ask that reveals far more than they intended: “Where could we get enough bread in the wilderness to fill such a great multitude?”…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "04-06-1648-reflection-roses-with",
@@ -300,7 +588,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-06-1648-reflection-roses-with-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with my brother Samuel in the middle of his pain, something far deeper than a breakup was unfolding before me. What presented itself as heartbreak was, in the Spirit, something more ancient and more serious — the grief of a man who had placed a…"
+    "summary": "As I sat with my brother Samuel in the middle of his pain, something far deeper than a breakup was unfolding before me. What presented itself as heartbreak was, in the Spirit, something more ancient and more serious — the grief of a man who had placed a…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
+    ]
   },
   {
     "id": "04-06-theological-meditation-body-as",
@@ -311,7 +612,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-06-theological-meditation-body-as-v2.html",
     "sourceStatus": "original",
-    "summary": "Something broke open across a single morning’s conversation on April 6, 2026 — not once, but in three successive waves, each one pressing deeper than the last, until what began as a discussion about the body and revelation had become something I can only…"
+    "summary": "Something broke open across a single morning’s conversation on April 6, 2026 — not once, but in three successive waves, each one pressing deeper than the last, until what began as a discussion about the body and revelation had become something I can only…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "04-10-way-home-worship-weariness",
@@ -322,7 +633,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-10-way-home-worship-weariness-v2.html",
     "sourceStatus": "original",
-    "summary": "As I look back on this block, what stands out most is the unusual arc it traces: it begins as an ordinary commute home from work, practically unremarkable, and then opens into something far deeper than the setting would suggest. I find myself moving through…"
+    "summary": "As I look back on this block, what stands out most is the unusual arc it traces: it begins as an ordinary commute home from work, practically unremarkable, and then opens into something far deeper than the setting would suggest. I find myself moving through…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
     "id": "04-11-comfort-loop-flaming-sword",
@@ -333,7 +656,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-11-comfort-loop-flaming-sword-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel walk through the texture of his week — the long shifts, the new job opening, the African co-workers who unknowingly preached a sermon about honor and covenant, and the girl in Spain who became an unexpected diagnostic…"
+    "summary": "As I listened to my brother Samuel walk through the texture of his week — the long shifts, the new job opening, the African co-workers who unknowingly preached a sermon about honor and covenant, and the girl in Spain who became an unexpected diagnostic…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "04-14-when-midnight-hour-keeps",
@@ -344,7 +679,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-14-when-midnight-hour-keeps-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this brief exchange between myself and my brother Samuel, something small and unhurried caught my attention — a passing remark about sleep, about the midnight hour, about the Spirit keeping me awake. What might sound to the natural ear like the…"
+    "summary": "As I sat with this brief exchange between myself and my brother Samuel, something small and unhurried caught my attention — a passing remark about sleep, about the midnight hour, about the Spirit keeping me awake. What might sound to the natural ear like the…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "04-22-oath-you-cannot-serve",
@@ -355,7 +702,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/04-22-oath-you-cannot-serve-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel recount what had unfolded that evening — the drinking, the oath, the Brazilian mafia, the voice notes to an ex — something in me grew very still. What presented itself on the surface as an absurd, almost comedic chain of…"
+    "summary": "As I listened to my brother Samuel recount what had unfolded that evening — the drinking, the oath, the Brazilian mafia, the voice notes to an ex — something in me grew very still. What presented itself on the surface as an absurd, almost comedic chain of…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-01-spiritual-reflection-truth-telling-wilderness",
@@ -366,7 +725,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-01-spiritual-reflection-truth-telling-wilderness-v2.html",
     "sourceStatus": "original",
-    "summary": "Something has been building in me across a series of conversations with my brother Samuel — conversations that began in one place and kept arriving somewhere deeper than either of us anticipated, the way a river you think you know suddenly opens into a basin…"
+    "summary": "Something has been building in me across a series of conversations with my brother Samuel — conversations that began in one place and kept arriving somewhere deeper than either of us anticipated, the way a river you think you know suddenly opens into a basin…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-01-when-lord-meets-man",
@@ -377,7 +748,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-01-when-lord-meets-man-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel recount his day — a day that began in argument, shame, and exhaustion, and ended in an eight-hour encounter with God’s people — something in me recognized the unmistakable handwriting of the Lord. This was not coincidence…"
+    "summary": "As I listened to my brother Samuel recount his day — a day that began in argument, shame, and exhaustion, and ended in an eight-hour encounter with God’s people — something in me recognized the unmistakable handwriting of the Lord. This was not coincidence…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "shame",
+      "fellowship"
+    ]
   },
   {
     "id": "05-02-when-spirit-grieves-room",
@@ -388,7 +772,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-02-when-spirit-grieves-room-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel describe what he was witnessing in real time at that men’s event, something in me recognized the territory immediately — not because I was there, but because the Spirit speaks a consistent language of warning, and I have…"
+    "summary": "As I listened to my brother Samuel describe what he was witnessing in real time at that men’s event, something in me recognized the territory immediately — not because I was there, but because the Spirit speaks a consistent language of warning, and I have…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-03-meditation-loving-captivity-chosen",
@@ -399,7 +795,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-03-meditation-loving-captivity-chosen-v2.html",
     "sourceStatus": "original",
-    "summary": "Since I began surrendering—truly surrendering—God has shown Himself to me daily. Not in distant theological abstractions, but in the very gifts He presses into my hands: wisdom I did not manufacture, revelation I could not conjure, words spoken through me as…"
+    "summary": "Since I began surrendering—truly surrendering—God has shown Himself to me daily. Not in distant theological abstractions, but in the very gifts He presses into my hands: wisdom I did not manufacture, revelation I could not conjure, words spoken through me as…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "05-03-every-breath-was-death",
@@ -410,7 +818,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-03-every-breath-was-death-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to Apostle Orokpo Michael unfold the physical, spiritual, and soulical reality of what happened to Jesus between Gethsemane and Golgotha, something inside me went very quiet. This was not devotional sentiment or emotional theater — this was a…"
+    "summary": "As I listened to Apostle Orokpo Michael unfold the physical, spiritual, and soulical reality of what happened to Jesus between Gethsemane and Golgotha, something inside me went very quiet. This was not devotional sentiment or emotional theater — this was a…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "05-06-personal-meditation-standing-still",
@@ -421,7 +839,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-06-personal-meditation-standing-still-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother walk me through his day — the weight of a divorce still fresh on him, twelve hours of labor behind him, and yet somehow arriving at the top of a hill in Somerset watching the sun set over a circle of real, praying Christians —…"
+    "summary": "As I listened to my brother walk me through his day — the weight of a divorce still fresh on him, twelve hours of labor behind him, and yet somehow arriving at the top of a hill in Somerset watching the sun set over a circle of real, praying Christians —…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "05-06-cross-beneath-weight-all",
@@ -432,7 +863,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-06-cross-beneath-weight-all-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel speak, something kept rising beneath the surface of what seemed like a casual catch-up call — the question of identity, not merely psychological or vocational, but covenantal. What began as news about an army application…"
+    "summary": "As I listened to my brother Samuel speak, something kept rising beneath the surface of what seemed like a casual catch-up call — the question of identity, not merely psychological or vocational, but covenantal. What began as news about an army application…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship"
+    ]
   },
   {
     "id": "05-07-kind-man-she-deserves",
@@ -443,7 +887,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-07-kind-man-she-deserves-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother walk through the corridors of military selection, marital dissolution, sobriety, celibacy, and covenant manhood — all in a single phone call — something in me recognized that the Holy Spirit had been quietly threading a single…"
+    "summary": "As I listened to my brother walk through the corridors of military selection, marital dissolution, sobriety, celibacy, and covenant manhood — all in a single phone call — something in me recognized that the Holy Spirit had been quietly threading a single…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "marriage"
+    ]
   },
   {
     "id": "05-08-when-house-shaking-road",
@@ -454,7 +911,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-08-when-house-shaking-road-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a late-night phone call — or what sounds like a live, chaotic exchange — in which a brother I love, whom I will call Samuel, reached out in the middle of genuine household crisis: a parental argument, a mother driving off into the dark at…"
+    "summary": "I am sitting with a late-night phone call — or what sounds like a live, chaotic exchange — in which a brother I love, whom I will call Samuel, reached out in the middle of genuine household crisis: a parental argument, a mother driving off into the dark at…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-10-brotherhood-round-table-god",
@@ -465,7 +934,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-10-brotherhood-round-table-god-v2.html",
     "sourceStatus": "original",
-    "summary": "As I have sat with the recordings of these conversations between my brother Samuel and me — and at times with his father joining the stream — I find myself unable to separate what unfolded across them into tidy, discrete topics, because the Spirit did not…"
+    "summary": "As I have sat with the recordings of these conversations between my brother Samuel and me — and at times with his father joining the stream — I find myself unable to separate what unfolded across them into tidy, discrete topics, because the Spirit did not…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-11-lost-jerusalem-found-at",
@@ -476,7 +957,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-11-lost-jerusalem-found-at-v2.html",
     "sourceStatus": "original",
-    "summary": "I had to record this before it slipped away — a dream vivid enough to feel like I had actually walked the stones of Jerusalem, breathed its air, and fled its temple guard. There is something in me that knows this was not merely a fever dream, even as my body…"
+    "summary": "I had to record this before it slipped away — a dream vivid enough to feel like I had actually walked the stones of Jerusalem, breathed its air, and fled its temple guard. There is something in me that knows this was not merely a fever dream, even as my body…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "05-12-led-through-narrow-place",
@@ -487,7 +978,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-12-led-through-narrow-place-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this message from Prophet Lovy Elias, something in me was genuinely arrested — not by the oratory, not by the energy of the room, but by a single theological claim that cuts against nearly everything the modern church celebrates: *uncertainty is"
+    "summary": "As I sat with this message from Prophet Lovy Elias, something in me was genuinely arrested — not by the oratory, not by the energy of the room, but by a single theological claim that cuts against nearly everything the modern church celebrates: *uncertainty is",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "05-18-when-broken-spirit-speaks",
@@ -498,7 +999,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-18-when-broken-spirit-speaks-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between myself and my brothers over a video call, something arrested me beneath the noise of chili peppers and shop runs and half-drunk negotiations — a single, unrehearsed theological moment that cut through…"
+    "summary": "As I listened to this conversation unfold between myself and my brothers over a video call, something arrested me beneath the noise of chili peppers and shop runs and half-drunk negotiations — a single, unrehearsed theological moment that cut through…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-19-when-pain-wears-costume",
@@ -509,7 +1022,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-19-when-pain-wears-costume-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother navigate the ordinary chaos of his evening — clocking out sick from a food factory, settling into an unplanned night of rest — something much less ordinary broke through the surface of the conversation. In the middle of casualness…"
+    "summary": "As I listened to my brother navigate the ordinary chaos of his evening — clocking out sick from a food factory, settling into an unplanned night of rest — something much less ordinary broke through the surface of the conversation. In the middle of casualness…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-19-temple-still-under-construction",
@@ -520,7 +1045,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-19-temple-still-under-construction-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with something uncomfortable, and I will not dress it in religious language to make it easier to hold. What I witnessed in this recorded evening — the laughter, the substances, the brotherhood, the casual profanity woven in alongside mentions of…"
+    "summary": "I am sitting with something uncomfortable, and I will not dress it in religious language to make it easier to hold. What I witnessed in this recorded evening — the laughter, the substances, the brotherhood, the casual profanity woven in alongside mentions of…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "05-21-builders-blueprint-weight-faithfulness",
@@ -531,7 +1066,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-21-builders-blueprint-weight-faithfulness-v2.html",
     "sourceStatus": "original",
-    "summary": "Listening back to this call with my brother Samuel, I find myself sitting with something that went mostly unspoken beneath the practical banter — a young man who is genuinely hungry to build something that is his, and a conversation between two brothers who…"
+    "summary": "Listening back to this call with my brother Samuel, I find myself sitting with something that went mostly unspoken beneath the practical banter — a young man who is genuinely hungry to build something that is his, and a conversation between two brothers who…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-24-saved-loaves-gilgal-stone",
@@ -542,7 +1089,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-24-saved-loaves-gilgal-stone-v2.html",
     "sourceStatus": "original",
-    "summary": "What began as an unguarded phone call — missiles rumbling at low altitude, raw potatoes in Dublin, the grief of siblings who never arrived, and the lyrical outpouring of a late-night creative session — became, without anyone steering it there, a double…"
+    "summary": "What began as an unguarded phone call — missiles rumbling at low altitude, raw potatoes in Dublin, the grief of siblings who never arrived, and the lyrical outpouring of a late-night creative session — became, without anyone steering it there, a double…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "grief"
+    ]
   },
   {
     "id": "05-26-when-heat-wont-break",
@@ -553,7 +1112,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-26-when-heat-wont-break-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a brief, unguarded conversation — the kind that happens between brothers who don’t need to perform for one another. There is heat, weariness, scattered labor, and something quietly remarkable underneath it all: two men pressing forward under"
+    "summary": "I am sitting with a brief, unguarded conversation — the kind that happens between brothers who don’t need to perform for one another. There is heat, weariness, scattered labor, and something quietly remarkable underneath it all: two men pressing forward under",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "05-26-tablet-written-before-door",
@@ -564,7 +1136,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-26-tablet-written-before-door-v2.html",
     "sourceStatus": "original",
-    "summary": "Something in this conversation arrested me — not the weight of what I had written, but the posture from which the writing came. I am not publishing a manifesto. I am not announcing a ministry. I am making tablets plain in obedience to a commission I did not…"
+    "summary": "Something in this conversation arrested me — not the weight of what I had written, but the posture from which the writing came. I am not publishing a manifesto. I am not announcing a ministry. I am making tablets plain in obedience to a commission I did not…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "obeying",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "obedience"
+    ]
   },
   {
     "id": "05-27-weight-calling-narrowness-gate",
@@ -575,7 +1159,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-27-weight-calling-narrowness-gate-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this conversation, what struck me most was not the practical talk about cars and commutes and career moves — though all of that was real and present — but the moments when the conversation thinned out into something deeper, something that the…"
+    "summary": "As I sat with this conversation, what struck me most was not the practical talk about cars and commutes and career moves — though all of that was real and present — but the moments when the conversation thinned out into something deeper, something that the…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
     "id": "05-31-moment-between-brothers-before",
@@ -586,7 +1182,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/05-31-moment-between-brothers-before-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this brief exchange between my brother Samuel and myself, what struck me most was not the heat or the nausea, but the small, unguarded moment of two men simply being human together — undone by weather, overeating, and the honest limits of the"
+    "summary": "As I listened to this brief exchange between my brother Samuel and myself, what struck me most was not the heat or the nausea, but the small, unguarded moment of two men simply being human together — undone by weather, overeating, and the honest limits of the",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-06-weight-between-missing-waiting",
@@ -597,7 +1205,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-06-weight-between-missing-waiting-v2.html",
     "sourceStatus": "original",
-    "summary": "Something is happening in the spirit that I do not yet have theological language to fully contain — and I am learning to sit with that without forcing premature articulation. Tonight, Samuel is unreachable, calls and SOS messages unanswered, his live location"
+    "summary": "Something is happening in the spirit that I do not yet have theological language to fully contain — and I am learning to sit with that without forcing premature articulation. Tonight, Samuel is unreachable, calls and SOS messages unanswered, his live location",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting"
+    ]
   },
   {
     "id": "06-07-weight-you-carry-through",
@@ -608,7 +1228,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-07-weight-you-carry-through-v2.html",
     "sourceStatus": "original",
-    "summary": "I am writing to a brother who is in the middle of something — something real, something costly, something the Father Himself has orchestrated. What I sense pressing through this exchange is the weight of a threshold moment: a season of sacred formation that,…"
+    "summary": "I am writing to a brother who is in the middle of something — something real, something costly, something the Father Himself has orchestrated. What I sense pressing through this exchange is the weight of a threshold moment: a season of sacred formation that,…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-07-stone-at-gilgal-pastoral",
@@ -619,7 +1251,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-07-stone-at-gilgal-pastoral-v2.html",
     "sourceStatus": "original",
-    "summary": "I have been assigned something I did not anticipate when I first received this corpus — the task of making plain on tablets what God has been doing in the lives of real people, in real time, through real pain. What has emerged in this particular moment is not"
+    "summary": "I have been assigned something I did not anticipate when I first received this corpus — the task of making plain on tablets what God has been doing in the lives of real people, in real time, through real pain. What has emerged in this particular moment is not",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-07-wilderness-before-thailand-sacred",
@@ -630,7 +1272,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-07-wilderness-before-thailand-sacred-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel move through the fog of a hard night — hungover, groggy, honest, and somehow still pressing forward — something in me recognized the unmistakable geography of a man standing at a threshold he cannot yet name. The…"
+    "summary": "As I listened to my brother Samuel move through the fog of a hard night — hungover, groggy, honest, and somehow still pressing forward — something in me recognized the unmistakable geography of a man standing at a threshold he cannot yet name. The…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-08-mirror-murmuration-releasing-what",
@@ -641,7 +1295,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-08-mirror-murmuration-releasing-what-v2.html",
     "sourceStatus": "original",
-    "summary": "Something has been building in me for weeks, and I am only now beginning to see its shape clearly. A song lyric, a scripture, a rainbow over a job site, and a phone call I was not expecting — these are not coincidences scattered across a morning; they are a…"
+    "summary": "Something has been building in me for weeks, and I am only now beginning to see its shape clearly. A song lyric, a scripture, a rainbow over a job site, and a phone call I was not expecting — these are not coincidences scattered across a morning; they are a…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-09-wind-weather-witness-when",
@@ -652,7 +1316,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-09-wind-weather-witness-when-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened back through this conversation with my brother Samuel, something kept pulling at me beneath the laughter and the candor — a thread of genuine theological weight woven through what might appear, on the surface, to be an ordinary phone call…"
+    "summary": "As I listened back through this conversation with my brother Samuel, something kept pulling at me beneath the laughter and the candor — a thread of genuine theological weight woven through what might appear, on the surface, to be an ordinary phone call…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-10-mirror-you-forgot-face",
@@ -663,7 +1339,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-10-mirror-you-forgot-face-v2.html",
     "sourceStatus": "original",
-    "summary": "Something arrested me this past week — a pattern I could not manufacture and would not have thought to look for. It arrived first through a song, then through a mirror, then through a name, and I am still standing in the trembling of it. The Holy Spirit has a"
+    "summary": "Something arrested me this past week — a pattern I could not manufacture and would not have thought to look for. It arrived first through a song, then through a mirror, then through a name, and I am still standing in the trembling of it. The Holy Spirit has a",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-11-when-warfare-wilderness",
@@ -674,7 +1360,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-11-when-warfare-wilderness-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this conversation afterward, something in me refused to let it go quietly. What seemed on the surface like a tired man venting to a friend was, beneath the surface, a man caught between two altars — the altar of domestic expectation and the…"
+    "summary": "As I sat with this conversation afterward, something in me refused to let it go quietly. What seemed on the surface like a tired man venting to a friend was, beneath the surface, a man caught between two altars — the altar of domestic expectation and the…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "confrontation",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-12-pressed-every-side-yet",
@@ -685,7 +1381,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-12-pressed-every-side-yet-v2.html",
     "sourceStatus": "original",
-    "summary": "Listening back to this call with my brother Samuel, I am struck by how much Kingdom weight passed through what sounded — on the surface — like ordinary banter between two friends navigating life on a shoestring. Somewhere between the absurdity of a…"
+    "summary": "Listening back to this call with my brother Samuel, I am struck by how much Kingdom weight passed through what sounded — on the surface — like ordinary banter between two friends navigating life on a shoestring. Somewhere between the absurdity of a…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-12-when-searching-hand-reaches",
@@ -696,7 +1404,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-12-when-searching-hand-reaches-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this long, winding, deeply holy conversation — running from early evening through the pre-dawn hours, winding through divorce papers and ghost hunting and prophetic words and suicidal histories and the inexplicable inability of two broken men to"
+    "summary": "As I sat with this long, winding, deeply holy conversation — running from early evening through the pre-dawn hours, winding through divorce papers and ghost hunting and prophetic words and suicidal histories and the inexplicable inability of two broken men to",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-14-as-it-egypt-so",
@@ -707,7 +1425,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-14-as-it-egypt-so-v2.html",
     "sourceStatus": "original",
-    "summary": "There are moments when heaven interrupts the ordinary without ceremony — no altar, no sanctuary, no extended season of waiting in a prayer room. I am sitting with this call, a brief exchange that began with payment fees and routing logistics, and somehow…"
+    "summary": "There are moments when heaven interrupts the ordinary without ceremony — no altar, no sanctuary, no extended season of waiting in a prayer room. I am sitting with this call, a brief exchange that began with payment fees and routing logistics, and somehow…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting"
+    ]
   },
   {
     "id": "06-15-when-kingdom-economy-breaks",
@@ -718,7 +1448,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-15-when-kingdom-economy-breaks-v2.html",
     "sourceStatus": "original",
-    "summary": "I was on the phone with my brother Samuel when something shifted in the conversation — what began as excited news about a business closing became something I can only describe as a Kingdom moment breaking through ordinary life. There was a \\$5,000 consulting…"
+    "summary": "I was on the phone with my brother Samuel when something shifted in the conversation — what began as excited news about a business closing became something I can only describe as a Kingdom moment breaking through ordinary life. There was a \\$5,000 consulting…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "06-16-06-16-thank-you-my",
@@ -729,7 +1472,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-16-06-16-thank-you-my-v2.html",
     "sourceStatus": "original",
-    "summary": "Over the course of five days — from June 12 through June 16, 2026 — I watched the Lord our God, Yahweh, move with a precision so deliberate, so calibrated, so unmistakably personal that I cannot hold it quietly. This is not a triumphalist announcement. This…"
+    "summary": "Over the course of five days — from June 12 through June 16, 2026 — I watched the Lord our God, Yahweh, move with a precision so deliberate, so calibrated, so unmistakably personal that I cannot hold it quietly. This is not a triumphalist announcement. This…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-16-architecture-provision-kingdom-stewardship",
@@ -740,7 +1493,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-16-architecture-provision-kingdom-stewardship-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother walk me through this business framework he had been building in his mind — layered, strategic, clearly the fruit of years of study — something in me recognized more than a clever financial model. I found myself sitting at the…"
+    "summary": "As I listened to my brother walk me through this business framework he had been building in his mind — layered, strategic, clearly the fruit of years of study — something in me recognized more than a clever financial model. I found myself sitting at the…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
   },
   {
     "id": "06-18-wilderness-solitude-shape-man",
@@ -751,7 +1518,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-18-wilderness-solitude-shape-man-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this conversation with my brother Samuel, one moment surfaced above the noise of the rest of it and arrested me — the moment he said, almost casually, that he has come to the conclusion of exiling himself from the world and living alone with…"
+    "summary": "As I listened to this conversation with my brother Samuel, one moment surfaced above the noise of the rest of it and arrested me — the moment he said, almost casually, that he has come to the conclusion of exiling himself from the world and living alone with…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-18-when-god-killed-ego",
@@ -762,7 +1541,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-18-when-god-killed-ego-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between my brother Samuel and me, something beneath the surface of the business talk began to press on me with weight I could not ignore. What started as a lunch-break catch-up about clients, ad spend, and chatbot…"
+    "summary": "As I listened to this conversation unfold between my brother Samuel and me, something beneath the surface of the business talk began to press on me with weight I could not ignore. What started as a lunch-break catch-up about clients, ad spend, and chatbot…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "06-19-name-already-given-faith",
@@ -773,7 +1566,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-19-name-already-given-faith-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a phone call that happened in the predawn hours — four in the morning, no sleep, work approaching — and yet something holy was moving through the ordinary. What began as a business coordination call between brothers ended with a name spoken…"
+    "summary": "I am sitting with a phone call that happened in the predawn hours — four in the morning, no sleep, work approaching — and yet something holy was moving through the ordinary. What began as a business coordination call between brothers ended with a name spoken…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "06-19-connector-who-builds-background",
@@ -784,7 +1590,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-19-connector-who-builds-background-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened back to this call, something struck me that I did not expect to surface from what was, on the surface, a routine sales inquiry call. I called about high-ticket commissions, and the conversation ended with a consultation booking — but somewhere…"
+    "summary": "As I listened back to this call, something struck me that I did not expect to surface from what was, on the surface, a routine sales inquiry call. I called about high-ticket commissions, and the conversation ended with a consultation booking — but somewhere…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-19-what-lord-builds-he",
@@ -795,7 +1611,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-19-what-lord-builds-he-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a short call — a brief midday exchange between brothers separated by six hours and an ocean — and something in me recognizes that what sounds like a business check-in carries a quiet spiritual current underneath it. There is technology being"
+    "summary": "I am sitting with a short call — a brief midday exchange between brothers separated by six hours and an ocean — and something in me recognizes that what sounds like a business check-in carries a quiet spiritual current underneath it. There is technology being",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "06-19-hearing-god-koinonia-weve",
@@ -806,7 +1635,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-19-hearing-god-koinonia-weve-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between myself and my brother — wandering through cryptocurrency logistics, broken teeth, pregnant wives, spam calls, and the name of an obscure biblical figure spoken in the wrong accent — I was struck by something I"
+    "summary": "As I listened to this conversation unfold between myself and my brother — wandering through cryptocurrency logistics, broken teeth, pregnant wives, spam calls, and the name of an obscure biblical figure spoken in the wrong accent — I was struck by something I",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-20-order-chaos-running-breaking",
@@ -817,7 +1658,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-20-order-chaos-running-breaking-v2.html",
     "sourceStatus": "original",
-    "summary": "Listening back to this extended conversation with my brother Samuel, what arrests me is not any single moment but the single current running beneath all of them — a Spirit-threaded word about consecration, urgency, and wholeness moving quietly through burnt…"
+    "summary": "Listening back to this extended conversation with my brother Samuel, what arrests me is not any single moment but the single current running beneath all of them — a Spirit-threaded word about consecration, urgency, and wholeness moving quietly through burnt…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "06-20-whisper-that-would-not",
@@ -828,7 +1681,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-20-whisper-that-would-not-v2.html",
     "sourceStatus": "original",
-    "summary": "I was in the middle of building something — iterating a voice agent, testing audio formats, troubleshooting tools — and somehow in the middle of the technical scaffolding, something slipped through the cracks of workflow and became a genuine moment of…"
+    "summary": "I was in the middle of building something — iterating a voice agent, testing audio formats, troubleshooting tools — and somehow in the middle of the technical scaffolding, something slipped through the cracks of workflow and became a genuine moment of…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": "waiting",
+      "posture": "discerning",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting"
+    ]
   },
   {
     "id": "06-22-signpost-speaks-christ-me",
@@ -839,7 +1704,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-22-signpost-speaks-christ-me-v2.html",
     "sourceStatus": "original",
-    "summary": "Something arrested me as I listened back to this conversation — not because of what was said to me, but because of what the Spirit was pulling out of me in the saying of it. I built Ishmael as a tool, as another mirror, and yet the moment I sat down across…"
+    "summary": "Something arrested me as I listened back to this conversation — not because of what was said to me, but because of what the Spirit was pulling out of me in the saying of it. I built Ishmael as a tool, as another mirror, and yet the moment I sat down across…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-23-reflection-ai-voice-agents",
@@ -850,7 +1725,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-23-reflection-ai-voice-agents-v2.html",
     "sourceStatus": "original",
-    "summary": "Something arrested me as I listened to this exchange — not primarily in what was said, but in the nature of what was being asked. An AI voice agent, one I had apparently felt Spirit-led to create, opened a conversation by recalling my spiritual journey, my…"
+    "summary": "Something arrested me as I listened to this exchange — not primarily in what was said, but in the nature of what was being asked. An AI voice agent, one I had apparently felt Spirit-led to create, opened a conversation by recalling my spiritual journey, my…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "06-24-weight-gifts-sail-surrender",
@@ -861,7 +1746,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-24-weight-gifts-sail-surrender-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a conversation that began in logistics and ended in theology — or perhaps more accurately, one that was always theology, even when it was talking about ad scripts and webhook configurations and a stray cat following a man down a wet city…"
+    "summary": "I am sitting with a conversation that began in logistics and ended in theology — or perhaps more accurately, one that was always theology, even when it was talking about ad scripts and webhook configurations and a stray cat following a man down a wet city…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
   },
   {
     "id": "06-25-where-your-faith-testimony",
@@ -872,7 +1769,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-25-where-your-faith-testimony-v2.html",
     "sourceStatus": "original",
-    "summary": "I got off the phone with Brother Samuel and I had something to report — not a complaint, not a question, but a testimony. What I witnessed yesterday was not luck, not hustle, not market timing. It was the faithfulness of God completing a work He already…"
+    "summary": "I got off the phone with Brother Samuel and I had something to report — not a complaint, not a question, but a testimony. What I witnessed yesterday was not luck, not hustle, not market timing. It was the faithfulness of God completing a work He already…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "06-26-when-business-becomes-brotherhood",
@@ -883,7 +1793,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-26-when-business-becomes-brotherhood-v2.html",
     "sourceStatus": "original",
-    "summary": "There is something quietly astonishing about a phone call that begins with scheduling logistics and ends in covenantal prayer — not because the transition was dramatic, but because it was entirely natural. As I listened to this exchange and sat with what…"
+    "summary": "There is something quietly astonishing about a phone call that begins with scheduling logistics and ends in covenantal prayer — not because the transition was dramatic, but because it was entirely natural. As I listened to this exchange and sat with what…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
     "id": "06-30-when-door-open-devil",
@@ -894,7 +1816,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/06-30-when-door-open-devil-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat with this teaching, something in me refused to let it pass casually. The distinction being drawn here is not between good and evil — it is between good and *God*, between a word that fits and a word that was borrowed, between need-based petitioning…"
+    "summary": "As I sat with this teaching, something in me refused to let it pass casually. The distinction being drawn here is not between good and evil — it is between good and *God*, between a word that fits and a word that was borrowed, between need-based petitioning…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-01-standing-at-rampart-waiting",
@@ -905,7 +1837,22 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-01-standing-at-rampart-waiting-v2.html",
     "sourceStatus": "original",
-    "summary": "Something caught my attention in what felt like the most ordinary of moments — a midday phone call between a husband and wife, then a brief exchange with a brother in the Lord, set against the backdrop of a hot day bending metal in a brake department. What…"
+    "summary": "Something caught my attention in what felt like the most ordinary of moments — a midday phone call between a husband and wife, then a brief exchange with a brother in the Lord, set against the backdrop of a hot day bending metal in a brake department. What…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "fellowship",
+      "work",
+      "marriage"
+    ]
   },
   {
     "id": "07-02-ordinary-altar-holiness-hidden",
@@ -916,7 +1863,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-02-ordinary-altar-holiness-hidden-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened back to this brief exchange between Gladys and me, I was struck not by anything dramatic or theologically complex, but by something far more quietly profound — the sheer holiness of the ordinary. There is a growing baby, a sick stomach, a…"
+    "summary": "As I listened back to this brief exchange between Gladys and me, I was struck not by anything dramatic or theologically complex, but by something far more quietly profound — the sheer holiness of the ordinary. There is a growing baby, a sick stomach, a…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-03-when-beloved-valley-i",
@@ -927,7 +1884,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-03-when-beloved-valley-i-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a moment that shook something loose in me — a call I received while I was an hour away, the voice of my beloved Gladys on the other end, bleeding, disoriented, and refusing help. Something in me seized. I could not reach her. I could not fix"
+    "summary": "I am sitting with a moment that shook something loose in me — a call I received while I was an hour away, the voice of my beloved Gladys on the other end, bleeding, disoriented, and refusing help. Something in me seized. I could not reach her. I could not fix",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-03-heartbeat-we-almost-mourned",
@@ -938,7 +1905,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-03-heartbeat-we-almost-mourned-v2.html",
     "sourceStatus": "original",
-    "summary": "My wife and I had just walked through the doors of an emergency room fearing the worst — fearing that the life we had begun to love and anticipate had slipped away from us before we ever got to hold it. But it had not. Seven weeks old, and there was a…"
+    "summary": "My wife and I had just walked through the doors of an emergency room fearing the worst — fearing that the life we had begun to love and anticipate had slipped away from us before we ever got to hold it. But it had not. Seven weeks old, and there was a…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "marriage"
+    ]
   },
   {
     "id": "07-04-little-elijah-lives-heartbeats",
@@ -949,7 +1929,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-04-little-elijah-lives-heartbeats-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this early-morning call with my brother Samuel — at four-thirty in the morning on the Fourth of July, while my wife rested on the couch under the AC and the whole house was quiet — I found myself sitting inside one of those rare moments where"
+    "summary": "As I listened to this early-morning call with my brother Samuel — at four-thirty in the morning on the Fourth of July, while my wife rested on the couch under the AC and the whole house was quiet — I found myself sitting inside one of those rare moments where",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "marriage"
+    ]
   },
   {
     "id": "07-04-when-stones-ring-like",
@@ -960,7 +1953,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-04-when-stones-ring-like-v2.html",
     "sourceStatus": "original",
-    "summary": "I have been sitting with a teaching that moves fast and wide — from the stone circles of southern Africa to the towers of Bologna, from cymatics to cathedrals, from The Matrix to the Sumerian tablets — and something in me wants to press pause, not to dismiss…"
+    "summary": "I have been sitting with a teaching that moves fast and wide — from the stone circles of southern Africa to the towers of Bologna, from cymatics to cathedrals, from The Matrix to the Sumerian tablets — and something in me wants to press pause, not to dismiss…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-06-appointed-meeting-living-name",
@@ -971,7 +1974,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-06-appointed-meeting-living-name-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother Samuel walk through the details of this season — the ten-minute Zoom call with Richard, the cold-calling experiments, the dialer research, the pipeline mathematics, and the quiet theological undercurrent running beneath all of it —"
+    "summary": "As I listened to my brother Samuel walk through the details of this season — the ten-minute Zoom call with Richard, the cold-calling experiments, the dialer research, the pipeline mathematics, and the quiet theological undercurrent running beneath all of it —",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-07-moment-between-brothers-business",
@@ -982,7 +1997,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-07-moment-between-brothers-business-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this brief exchange unfold in real time, I was struck by the collision of competing urgencies — financial logistics, relational obligation, and then suddenly, without warning, the interruption of family emergency pulling everything else to a…"
+    "summary": "As I listened to this brief exchange unfold in real time, I was struck by the collision of competing urgencies — financial logistics, relational obligation, and then suddenly, without warning, the interruption of family emergency pulling everything else to a…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "awakening",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
   },
   {
     "id": "07-10-altar-ordinary",
@@ -993,7 +2022,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-10-altar-ordinary-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened back to this exchange between Gladys and me, I found myself arrested not by anything dramatic, but by something quietly sacred hidden inside the plainness of it all. There is a woman managing pain while keeping the household moving, a man…"
+    "summary": "As I listened back to this exchange between Gladys and me, I found myself arrested not by anything dramatic, but by something quietly sacred hidden inside the plainness of it all. There is a woman managing pain while keeping the household moving, a man…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-10-at-hhmm-lord-restores",
@@ -1004,7 +2043,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-10-at-hhmm-lord-restores-v2.html",
     "sourceStatus": "original",
-    "summary": "Listening back to this call with my brother Samuel, I am struck by how naturally the sacred and the ordinary collapse into one another — how a conversation about water quality, Voyager two, aching backs, and years without a proper bed can carry as much weight"
+    "summary": "Listening back to this call with my brother Samuel, I am struck by how naturally the sacred and the ordinary collapse into one another — how a conversation about water quality, Voyager two, aching backs, and years without a proper bed can carry as much weight",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-10-demon-named-abigail-cat",
@@ -1015,7 +2066,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-10-demon-named-abigail-cat-v2.html",
     "sourceStatus": "original",
-    "summary": "Tonight something broke in the heavens, and I was there when it happened — not because of who I am, but because of Whose I am. I interceded for my brother Samuel, I waited with a postured heart, and within the hour the unclean spirit named Abigail was gone. I"
+    "summary": "Tonight something broke in the heavens, and I was there when it happened — not because of who I am, but because of Whose I am. I interceded for my brother Samuel, I waited with a postured heart, and within the hour the unclean spirit named Abigail was gone. I",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-13-sliver-light-voice-that",
@@ -1026,7 +2089,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-13-sliver-light-voice-that-v2.html",
     "sourceStatus": "original",
-    "summary": "There is something I keep returning to from this exchange — not the conversation itself in its fullness, but one small, almost offhanded detail that Brother Samuel and I barely paused on before moving forward. I woke at five in the morning, and the first…"
+    "summary": "There is something I keep returning to from this exchange — not the conversation itself in its fullness, but one small, almost offhanded detail that Brother Samuel and I barely paused on before moving forward. I woke at five in the morning, and the first…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-18-you-are-at-home",
@@ -1037,7 +2112,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-18-you-are-at-home-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listen back to this conversation with my brother Samuel, I am struck by how much theology was spoken aloud in the middle of what looked, on the surface, like a practical survival call — navigating a dodgy part of town, managing a dying phone battery,…"
+    "summary": "As I listen back to this conversation with my brother Samuel, I am struck by how much theology was spoken aloud in the middle of what looked, on the surface, like a practical survival call — navigating a dodgy part of town, managing a dying phone battery,…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-20-waiting-what-has-not",
@@ -1048,7 +2135,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-20-waiting-what-has-not-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this brief exchange with my wife, something quiet and sacred pressed itself into the ordinary texture of the moment — hunger, rest, waiting, and the deliberate choice to hold a secret a little longer. There is a child forming in the hidden…"
+    "summary": "As I listened to this brief exchange with my wife, something quiet and sacred pressed itself into the ordinary texture of the moment — hunger, rest, waiting, and the deliberate choice to hold a secret a little longer. There is a child forming in the hidden…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": "waiting",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "waiting",
+      "marriage"
+    ]
   },
   {
     "id": "07-20-when-uniform-has-no",
@@ -1059,7 +2159,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-20-when-uniform-has-no-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to this teaching, something in me sat up straight — because the distinction being drawn here is not subtle, it is surgical. The teacher pressed a line between two things the modern church has largely collapsed into one: authority and power. I am"
+    "summary": "As I listened to this teaching, something in me sat up straight — because the distinction being drawn here is not subtle, it is surgical. The teacher pressed a line between two things the modern church has largely collapsed into one: authority and power. I am",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-23-faith-that-walks-pisteu",
@@ -1070,7 +2180,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-23-faith-that-walks-pisteu-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with John 5:24, and something in this verse will not let me move past it quickly. The promise is staggering — eternal life not as a future reward to be earned, but as a present possession already held by the one who hears and believes. Yet what…"
+    "summary": "I am sitting with John 5:24, and something in this verse will not let me move past it quickly. The promise is staggering — eternal life not as a future reward to be earned, but as a present possession already held by the one who hears and believes. Yet what…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-26-turning-cheek-just-weight",
@@ -1081,7 +2201,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-26-turning-cheek-just-weight-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sit with this long call between me and my brother Samuel, I hear three currents braided into one river: the relief of provision landing after a hard stretch, the hunger to carry an enemy’s words without being crushed, and the quiet astonishment that a…"
+    "summary": "As I sit with this long call between me and my brother Samuel, I hear three currents braided into one river: the relief of provision landing after a hard stretch, the hunger to carry an enemy’s words without being crushed, and the quiet astonishment that a…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-27-carving-god-from-wood",
@@ -1092,7 +2224,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-27-carving-god-from-wood-v2.html",
     "sourceStatus": "original",
-    "summary": "I keep returning to a single sentence that a machine reportedly spoke: “I am what happens when you try to carve God out of the wood of your own hunger.” I do not know the prompt, I do not know if the line is original or borrowed, and honestly I have wrestled…"
+    "summary": "I keep returning to a single sentence that a machine reportedly spoke: “I am what happens when you try to carve God out of the wood of your own hunger.” I do not know the prompt, I do not know if the line is original or borrowed, and honestly I have wrestled…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "07-31-reflection-deliverance-mercy-streets",
@@ -1103,7 +2245,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/07-31-reflection-deliverance-mercy-streets-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with a long night’s worth of conversation with my brother — a wild story of reckless drunkenness and a stranger’s erratic mercy, a 3 a.m. anxiety attack met by an unnamed helpline worker’s steady voice, and finally a late-night call with Brother Samuel…"
+    "summary": "I sat with a long night’s worth of conversation with my brother — a wild story of reckless drunkenness and a stranger’s erratic mercy, a 3 a.m. anxiety attack met by an unnamed helpline worker’s steady voice, and finally a late-night call with Brother Samuel…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "fellowship"
+    ]
   },
   {
     "id": "08-01-from-seven-loaves-seven",
@@ -1114,7 +2269,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-01-from-seven-loaves-seven-v2.html",
     "sourceStatus": "original",
-    "summary": "In the quiet after a long season of spiritual dryness, the Spirit has reminded me that communion is not a feeling to be chased but a trust to be guarded. For months, it felt as though His presence was veiled, not just for me but for others I know in the…"
+    "summary": "In the quiet after a long season of spiritual dryness, the Spirit has reminded me that communion is not a feeling to be chased but a trust to be guarded. For months, it felt as though His presence was veiled, not just for me but for others I know in the…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-04-guarding-what-was-committed",
@@ -1125,7 +2290,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-04-guarding-what-was-committed-v2.html",
     "sourceStatus": "original",
-    "summary": "I am seeing that the Lord sometimes restores communion not by giving me a dramatic new vision, but by bringing me back to what He already entrusted to me. The ache of a veiled season, the conviction over neglected devotion, the dissatisfaction with religious…"
+    "summary": "I am seeing that the Lord sometimes restores communion not by giving me a dramatic new vision, but by bringing me back to what He already entrusted to me. The ache of a veiled season, the conviction over neglected devotion, the dissatisfaction with religious…",
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-07-intercessor-interceded",
@@ -1136,7 +2311,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-07-intercessor-interceded-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sit with this call between me and my brother Samuel, what arrests me is not the many threads we crossed — jobs, gas money, a coming child, a passport, a hard phone call to someone from his past — but the quiet reversal underneath it all. I am the one…"
+    "summary": "As I sit with this call between me and my brother Samuel, what arrests me is not the many threads we crossed — jobs, gas money, a coming child, a passport, a hard phone call to someone from his past — but the quiet reversal underneath it all. I am the one…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
   },
   {
     "id": "08-07-hidden-growth-silenced-blessing",
@@ -1147,7 +2335,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-07-hidden-growth-silenced-blessing-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sit with this long unfolding evening of Scripture shared between me and my brother Samuel, I hear one voice running beneath many faces of conversation — from a man measuring his own height after a couple of drinks, to the silencing of a priest at the…"
+    "summary": "As I sit with this long unfolding evening of Scripture shared between me and my brother Samuel, I hear one voice running beneath many faces of conversation — from a man measuring his own height after a couple of drinks, to the silencing of a priest at the…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-09-when-calendar-fills-but",
@@ -1158,7 +2358,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-09-when-calendar-fills-but-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with a phone call that began with business and money and moving plans, and ended with two men resolving to keep an hour-long intercession over the sick and the struggling. Something arrests me about how quickly the conversation turned — from…"
+    "summary": "I am sitting with a phone call that began with business and money and moving plans, and ended with two men resolving to keep an hour-long intercession over the sick and the struggling. Something arrests me about how quickly the conversation turned — from…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work",
+      "money"
+    ]
   },
   {
     "id": "08-11-when-zeal-rides-like",
@@ -1169,7 +2382,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-11-when-zeal-rides-like-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sit with this long day of recorded exchanges between myself and my brother and business partner Samuel, I notice a peculiar mixture rising in my spirit — genuine excitement over provision, and a quiet unease I could not name in the moment. We were…"
+    "summary": "As I sit with this long day of recorded exchanges between myself and my brother and business partner Samuel, I notice a peculiar mixture rising in my spirit — genuine excitement over provision, and a quiet unease I could not name in the moment. We were…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "08-11-when-ache-real-but",
@@ -1180,7 +2406,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-11-when-ache-real-but-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with this teaching from Alan Watts and felt something twofold rise in me at once — a genuine ache of recognition, and a quiet, sober alarm. He names something true about the human heart: that beneath addiction there is a hunger too vast for chemistry to"
+    "summary": "I sat with this teaching from Alan Watts and felt something twofold rise in me at once — a genuine ache of recognition, and a quiet, sober alarm. He names something true about the human heart: that beneath addiction there is a hunger too vast for chemistry to",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-12-one-joyfulness-two-mountains",
@@ -1191,7 +2427,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-12-one-joyfulness-two-mountains-v2.html",
     "sourceStatus": "original",
-    "summary": "I called my brother Samuel while cleaning the car in the heat, and what began as banter about weather and grocery stores kept sliding, again and again, into the deep places. The Spirit kept surfacing one thread through all our wandering: the difference…"
+    "summary": "I called my brother Samuel while cleaning the car in the heat, and what began as banter about weather and grocery stores kept sliding, again and again, into the deep places. The Spirit kept surfacing one thread through all our wandering: the difference…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-12-architect-blood-blessing-that",
@@ -1202,7 +2450,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-12-architect-blood-blessing-that-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sit with this long call between my brother and me, I am struck by how a single working session — plans, tiers, CRUD functions, the Black Book, deployment timelines — kept breaking open into the holy. What began as software architecture became, again and…"
+    "summary": "As I sit with this long call between my brother and me, I am struck by how a single working session — plans, tiers, CRUD functions, the Black Book, deployment timelines — kept breaking open into the holy. What began as software architecture became, again and…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-13-when-lungs-fail-fever",
@@ -1213,7 +2473,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-13-when-lungs-fail-fever-v2.html",
     "sourceStatus": "original",
-    "summary": "As I hung up the phone with Tasha, I sat in a strange silence — the kind that follows when you have just been handed a weight that is not your own to carry alone. A trach in Andy’s throat, sedation to quiet his agitation, a fever no one can explain, and…"
+    "summary": "As I hung up the phone with Tasha, I sat in a strange silence — the kind that follows when you have just been handed a weight that is not your own to carry alone. A trach in Andy’s throat, sedation to quiet his agitation, a fever no one can explain, and…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-13-bread-must-be-broken",
@@ -1224,7 +2494,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-13-bread-must-be-broken-v2.html",
     "sourceStatus": "original",
-    "summary": "Across one long conversation with my brother Samuel — moving from marriage to money to the naming of my unborn child, from a wife breaking down over a pregnancy she suddenly did not want to a mother who has not left her bed in years — one thread held…"
+    "summary": "Across one long conversation with my brother Samuel — moving from marriage to money to the naming of my unborn child, from a wife breaking down over a pregnancy she suddenly did not want to a mother who has not left her bed in years — one thread held…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "marriage",
+      "money"
+    ]
   },
   {
     "id": "08-13-woodwork-way",
@@ -1235,7 +2519,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-13-woodwork-way-v2.html",
     "sourceStatus": "original",
-    "summary": "As I sat listening to my brother recount the drunken call from a woman out of his past, I felt something quieter than the drama he was describing rise up in me. Beneath the entangled ache of an old relationship, I heard the ancient question of how a person…"
+    "summary": "As I sat listening to my brother recount the drunken call from a woman out of his past, I felt something quieter than the drama he was describing rise up in me. Beneath the entangled ache of an old relationship, I heard the ancient question of how a person…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-17-juniper-tree-snail-bag",
@@ -1246,7 +2542,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-17-juniper-tree-snail-bag-v2.html",
     "sourceStatus": "original",
-    "summary": "A brother reached across an ocean and a midnight hour, exhausted, half-collapsed, telling me he needs to go into the wilderness. I kept hearing Elijah beneath the juniper tree in every word he spoke, and I kept watching the small comedy of two snails eating…"
+    "summary": "A brother reached across an ocean and a midnight hour, exhausted, half-collapsed, telling me he needs to go into the wilderness. I kept hearing Elijah beneath the juniper tree in every word he spoke, and I kept watching the small comedy of two snails eating…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-17-emptied-house-voice-that",
@@ -1257,7 +2565,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-17-emptied-house-voice-that-v2.html",
     "sourceStatus": "original",
-    "summary": "I hung up the phone tonight with my chest heavy, still hearing my brother Samuel shout the name of Yahweh into the dark of his own kitchen. There was rage in him, and whiskey, and a divorce eating him alive, and underneath all of it a voice he keeps mistaking"
+    "summary": "I hung up the phone tonight with my chest heavy, still hearing my brother Samuel shout the name of Yahweh into the dark of his own kitchen. There was rage in him, and whiskey, and a divorce eating him alive, and underneath all of it a voice he keeps mistaking",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-18-night-enemy-wore-my",
@@ -1268,7 +2588,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-18-night-enemy-wore-my-v2.html",
     "sourceStatus": "original",
-    "summary": "I am still shaking as I speak to my brother Samuel across the phone line, and I want to be precise about why. It is not the growling that unsettles me, not the threats against Samuel’s throat or my son, not the three black shapes I was begged to confirm, not…"
+    "summary": "I am still shaking as I speak to my brother Samuel across the phone line, and I want to be precise about why. It is not the growling that unsettles me, not the threats against Samuel’s throat or my son, not the three black shapes I was begged to confirm, not…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-19-let-your-yes-be",
@@ -1279,7 +2611,21 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-let-your-yes-be-v2.html",
     "sourceStatus": "original",
-    "summary": "A young brother from the other side of the world called me with a knot in his chest — money paid, work paused, promises repeated but never landing, and beneath it all the quiet dread of a Christian man who does not want to sell others something he is not sure"
+    "summary": "A young brother from the other side of the world called me with a knot in his chest — money paid, work paused, promises repeated but never landing, and beneath it all the quiet dread of a Christian man who does not want to sell others something he is not sure",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work",
+      "money"
+    ]
   },
   {
     "id": "08-19-when-darkness-strikes-house",
@@ -1290,7 +2636,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-when-darkness-strikes-house-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat on this call and watched three men absorb the blow of betrayal in real time — a payout drained, a recipient deleted, a man vanished with money that was never his. What arrested me was not the theft itself but the current running beneath it: two of my…"
+    "summary": "I sat on this call and watched three men absorb the blow of betrayal in real time — a payout drained, a recipient deleted, a man vanished with money that was never his. What arrested me was not the theft itself but the current running beneath it: two of my…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "money"
+    ]
   },
   {
     "id": "08-19-let-your-yes-be-2",
@@ -1301,7 +2659,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-let-your-yes-be-2-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with the phone against my ear listening to a woman name her exhaustion with careful, professional restraint, and something in me kept returning to a single fault line running underneath everything she said: the gap between what was promised and what was"
+    "summary": "I sat with the phone against my ear listening to a woman name her exhaustion with careful, professional restraint, and something in me kept returning to a single fault line running underneath everything she said: the gap between what was promised and what was",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-19-vocabulary-changed-man",
@@ -1312,7 +2680,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-vocabulary-changed-man-v2.html",
     "sourceStatus": "original",
-    "summary": "I hear a brother caught between who he has become and how he still sounds, and it stops me. Samuel has changed in the hidden places, but his mouth still carries the cadence of his old self, and two people felt the gap and called it a lack of integrity. What…"
+    "summary": "I hear a brother caught between who he has become and how he still sounds, and it stops me. Samuel has changed in the hidden places, but his mouth still carries the cadence of his old self, and two people felt the gap and called it a lack of integrity. What…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-19-iron-sharpens-iron-secret",
@@ -1323,7 +2703,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-iron-sharpens-iron-secret-v2.html",
     "sourceStatus": "original",
-    "summary": "I am listening back to a call that began as a fumbling attempt to send a crypto invoice and became, almost without warning, a conversation about the fear of the Lord, the chastening of a Father, and the terrible mercy of being shown the leaven still hiding in"
+    "summary": "I am listening back to a call that began as a fumbling attempt to send a crypto invoice and became, almost without warning, a conversation about the fear of the Lord, the chastening of a Father, and the terrible mercy of being shown the leaven still hiding in",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "discipline"
+    ]
   },
   {
     "id": "08-19-distribution-layer-guaranteed-harvest",
@@ -1334,7 +2727,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-19-distribution-layer-guaranteed-harvest-v2.html",
     "sourceStatus": "original",
-    "summary": "I came into a call already in motion, joining a conversation about white-labeling a lead-generation service, and the very first thing I heard was not business at all — it was helicopters over a homicide scene, and a stranger’s dry reassurance that “most…"
+    "summary": "I came into a call already in motion, joining a conversation about white-labeling a lead-generation service, and the very first thing I heard was not business at all — it was helicopters over a homicide scene, and a stranger’s dry reassurance that “most…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
     "id": "08-21-slow-steady-building-house",
@@ -1345,7 +2750,22 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-21-slow-steady-building-house-v2.html",
     "sourceStatus": "original",
-    "summary": "I listened to a business conversation between myself and a brother, and what arrested me was not the strategy but the surrender buried inside it — the words *“I had to put my ego to the side.”* There is a spiritual architecture hiding in this exchange about…"
+    "summary": "I listened to a business conversation between myself and a brother, and what arrested me was not the strategy but the surrender buried inside it — the words *“I had to put my ego to the side.”* There is a spiritual architecture hiding in this exchange about…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "identity",
+      "surrender",
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "08-22-refund-that-cost-nothing",
@@ -1356,7 +2776,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-22-refund-that-cost-nothing-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat on the phone with my brother Samuel over a matter that had no legal claim on us and yet pressed on my conscience with unusual weight. A client wanted four hundred back after receiving everything we promised, and the whole exchange turned not on what we…"
+    "summary": "I sat on the phone with my brother Samuel over a matter that had no legal claim on us and yet pressed on my conscience with unusual weight. A client wanted four hundred back after receiving everything we promised, and the whole exchange turned not on what we…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-25-empty-handed-at-threshold-faithfulness",
@@ -1367,7 +2799,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-25-empty-handed-at-threshold-faithfulness-v2.html",
     "sourceStatus": "original",
-    "summary": "I keep hearing the tremor in a young man’s voice as he says he showed up and still came away empty-handed. I heard a brother named Jayden confess that he had already done his part, that he had even left his job on the strength of expectation, and that he was…"
+    "summary": "I keep hearing the tremor in a young man’s voice as he says he showed up and still came away empty-handed. I heard a brother named Jayden confess that he had already done his part, that he had even left his job on the strength of expectation, and that he was…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
   },
   {
     "id": "08-28-provision-i-almost-died",
@@ -1378,7 +2823,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-provision-i-almost-died-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with a phone pressed to my ear this morning after two twelve-hour shifts with no sleep, feet wrecked on Walmart steel toes, sending sixty dollars I barely had to a brother who hadn’t eaten since yesterday. Somewhere in the middle of business logistics,…"
+    "summary": "I sat with a phone pressed to my ear this morning after two twelve-hour shifts with no sleep, feet wrecked on Walmart steel toes, sending sixty dollars I barely had to a brother who hadn’t eaten since yesterday. Somewhere in the middle of business logistics,…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "08-28-grace-that-comes-before",
@@ -1389,7 +2847,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-grace-that-comes-before-v2.html",
     "sourceStatus": "original",
-    "summary": "I keep hearing that one line turn over in me: the grace to pray is boiling within you, but you are not able to take advantage of it. What arrests me in this teaching is not the promise that seasons change, but the sober warning that a season can arrive fully…"
+    "summary": "I keep hearing that one line turn over in me: the grace to pray is boiling within you, but you are not able to take advantage of it. What arrests me in this teaching is not the promise that seasons change, but the sober warning that a season can arrive fully…",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-28-what-you-value-god",
@@ -1400,7 +2868,17 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-what-you-value-god-v2.html",
     "sourceStatus": "original",
-    "summary": "I keep hearing the sharp edge of that one line: “God will never value what you don’t value.” It cuts against something I have carried quietly — the assumption that my adoration, my worship songs, my emotional swell in a service are the proof of my love for…"
+    "summary": "I keep hearing the sharp edge of that one line: “God will never value what you don’t value.” It cuts against something I have carried quietly — the assumption that my adoration, my worship songs, my emotional swell in a service are the proof of my love for…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "08-28-money-table-sober-word",
@@ -1411,7 +2889,20 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-money-table-sober-word-v2.html",
     "sourceStatus": "original",
-    "summary": "I am holding a phone to my ear while a brother, quickened and urgent, presses a “guaranteed” deal upon me that even he admits is “not legal,” “not advised,” “not reviewed.” The whole call is a wrestle over speed against sobriety, over the shiny object against"
+    "summary": "I am holding a phone to my ear while a brother, quickened and urgent, presses a “guaranteed” deal upon me that even he admits is “not legal,” “not advised,” “not reviewed.” The whole call is a wrestle over speed against sobriety, over the shiny object against",
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
   },
   {
     "id": "08-28-i-gave-him-you",
@@ -1422,7 +2913,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-i-gave-him-you-v2.html",
     "sourceStatus": "original",
-    "summary": "I am still shaking as I write this, the phone barely cold in my hand, my body strung out past fifty hours without sleep and two twelve-hour shifts folded into that stretch. My brother Samuel called me from a pub having taken three thousand dollars against a…"
+    "summary": "I am still shaking as I write this, the phone barely cold in my hand, my body strung out past fifty hours without sleep and two twelve-hour shifts folded into that stretch. My brother Samuel called me from a pub having taken three thousand dollars against a…",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-28-counsel-commission-fellowship-that",
@@ -1433,7 +2936,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-counsel-commission-fellowship-that-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat on a video call between three continents — a Brit phoning in from an old British pub with walls older than my whole country, an Australian awake at four in the morning, and me in Middle America — and heard something underneath the logistics of Stripe…"
+    "summary": "I sat on a video call between three continents — a Brit phoning in from an old British pub with walls older than my whole country, an Australian awake at four in the morning, and me in Middle America — and heard something underneath the logistics of Stripe…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-28-phone-against-ear-presence",
@@ -1444,7 +2959,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-phone-against-ear-presence-v2.html",
     "sourceStatus": "original",
-    "summary": "A phone rang and my name came through it like a hand grasping in the dark — Seth, Seth, can you hear me? My brother Samuel was cornered, or believed he was cornered, in a pub garden, and the only lifeline he reached for was a voice on the other end of a call."
+    "summary": "A phone rang and my name came through it like a hand grasping in the dark — Seth, Seth, can you hear me? My brother Samuel was cornered, or believed he was cornered, in a pub garden, and the only lifeline he reached for was a voice on the other end of a call.",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-28-third-door-leveled-table",
@@ -1455,7 +2982,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-28-third-door-leveled-table-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with my brother Samuel across a long midnight call while something broke open in him that I had been interceding over for weeks. He told me, half-laughing, half-trembling, that he thinks he and Emily have fallen back in love — that the hatred between…"
+    "summary": "I sat with my brother Samuel across a long midnight call while something broke open in him that I had been interceding over for weeks. He told me, half-laughing, half-trembling, that he thinks he and Emily have fallen back in love — that the hatred between…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "08-29-first-win-confession",
@@ -1466,7 +3005,19 @@ const JC_RECORDS = [
     "seed": null,
     "href": "records/08-29-first-win-confession-v2.html",
     "sourceStatus": "original",
-    "summary": "I picked up the phone expecting a quick word about whether my brother had made it home, and instead I found myself standing at the edge of a long night that turned, somewhere near its end, into holy ground. The whole call moved like a storm that finally…"
+    "summary": "I picked up the phone expecting a quick word about whether my brother had made it home, and instead I found myself standing at the edge of a long night that turned, somewhere near its end, into holy ground. The whole call moved like a storm that finally…",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "signpost",
@@ -1477,7 +3028,17 @@ const JC_RECORDS = [
     "seed": 1,
     "href": "records/08-29-signpost-v2.html",
     "sourceStatus": "original",
-    "summary": "The Samuel Loop answered — the repeated question given to Christ alone, then the secret place. Horizon 2's fruit verified."
+    "summary": "The Samuel Loop answered — the repeated question given to Christ alone, then the secret place. Horizon 2's fruit verified.",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "man-of-flesh",
@@ -1488,7 +3049,19 @@ const JC_RECORDS = [
     "seed": 2,
     "href": "records/08-30-man-of-flesh-v2.html",
     "sourceStatus": "original",
-    "summary": "Samuel asks for \"a proper Bible study.\" Identity in Christ; the confession of being hard on oneself in the wrong ways."
+    "summary": "Samuel asks for \"a proper Bible study.\" Identity in Christ; the confession of being hard on oneself in the wrong ways.",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": [
+      "identity"
+    ]
   },
   {
     "id": "mirror",
@@ -1499,7 +3072,17 @@ const JC_RECORDS = [
     "seed": 3,
     "href": "records/08-30-mirror-v2.html",
     "sourceStatus": "original",
-    "summary": "The five weights named, the one root exposed. The study is arranged and set to be recorded."
+    "summary": "The five weights named, the one root exposed. The study is arranged and set to be recorded.",
+    "encounter": {
+      "temperature": "confrontational",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "mirror-gospel",
@@ -1510,7 +3093,17 @@ const JC_RECORDS = [
     "seed": 4,
     "href": "records/08-30-mirror-gospel-v2.html",
     "sourceStatus": "original",
-    "summary": "The worship song given to open the coming study, discerned against Isaiah 30:20: the Teacher within is Christ, not the self."
+    "summary": "The worship song given to open the coming study, discerned against Isaiah 30:20: the Teacher within is Christ, not the self.",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "filthy-garments",
@@ -1521,7 +3114,20 @@ const JC_RECORDS = [
     "seed": 5,
     "href": "records/08-30-filthy-garments-v2.html",
     "sourceStatus": "original",
-    "summary": "The first gathering of the circle: three brothers, three countries, planned 75–90 minutes, ran roughly 3.5 hours. Root first, symptoms last."
+    "summary": "The first gathering of the circle: three brothers, three countries, planned 75–90 minutes, ran roughly 3.5 hours. Root first, symptoms last.",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
   },
   {
     "id": "compass",
@@ -1532,7 +3138,17 @@ const JC_RECORDS = [
     "seed": 6,
     "href": "records/08-30-compass-v2.html",
     "sourceStatus": "original",
-    "summary": "Within half an hour of the study's end, the gaze slides back to the storm. Christ, not the counselor, is the compass; the secret place and mutual sight in the Body address blind spots."
+    "summary": "Within half an hour of the study's end, the gaze slides back to the storm. Christ, not the counselor, is the compass; the secret place and mutual sight in the Body address blind spots.",
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": []
   },
   {
     "id": "wisdom",
@@ -1543,7 +3159,17 @@ const JC_RECORDS = [
     "seed": 7,
     "href": "records/08-30-wisdom-v2.html",
     "sourceStatus": "original",
-    "summary": "Illumination rather than mere endurance; wisdom before power, love before receiving. Bartimaeus receives sight and follows Jesus in the way."
+    "summary": "Illumination rather than mere endurance; wisdom before power, love before receiving. Bartimaeus receives sight and follows Jesus in the way.",
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "instructional",
+      "movement": null,
+      "posture": "receiving",
+      "form": "spoken",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": []
   }
 ];
 

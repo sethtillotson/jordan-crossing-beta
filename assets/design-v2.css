@@ -794,6 +794,44 @@ main {
   font-style: italic;
 }
 
+/* Human doorway theme chips (design doc §7 "the human doorways") */
+#doorway-themes-mount:empty {
+  display: none;
+}
+
+.doorway-themes-heading {
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 var(--space-3) 0;
+}
+
+.doorway-themes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.doorway-theme-chip {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  text-transform: capitalize;
+  color: var(--gold);
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 999px;
+  padding: var(--space-1) var(--space-4);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.doorway-theme-chip:hover {
+  background: rgba(201, 162, 39, 0.18);
+  border-color: var(--gold);
+}
+
 /* ───────────────────────────────────────────────────────────────────
    MOVEMENT 4: GRAPH NAV — Chronological navigation
    ─────────────────────────────────────────────────────────────────── */
@@ -943,6 +981,122 @@ main {
   color: var(--gold);
   opacity: 0.7;
   margin-bottom: var(--space-2);
+}
+
+/* Encounter Index widget */
+.encounter-index-widget {
+  background: var(--current);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+}
+
+.encounter-index-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.encounter-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.encounter-field label {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--parchment-dim);
+}
+
+.encounter-field select {
+  background: rgba(15, 20, 25, 0.6);
+  color: var(--parchment);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+
+.encounter-field select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.encounter-index-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.encounter-match-count {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--parchment-dim);
+}
+
+.encounter-result {
+  margin-top: var(--space-6);
+}
+
+.encounter-result:empty {
+  margin-top: 0;
+}
+
+.encounter-result-card {
+  background: rgba(201, 162, 39, 0.05);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+}
+
+.encounter-result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.encounter-result-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  background: rgba(201, 162, 39, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 0.15rem 0.5rem;
+}
+
+.encounter-result-title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--gold);
+  text-decoration: none;
+  margin-bottom: var(--space-2);
+}
+
+.encounter-result-title:hover {
+  text-decoration: underline;
+}
+
+.encounter-result-summary {
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.encounter-result-empty {
+  color: var(--parchment-dim);
+  font-style: italic;
+  font-size: var(--text-sm);
 }
 
 /* Stone Tablets row */

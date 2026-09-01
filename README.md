@@ -92,13 +92,14 @@ site **in reviewed layers**, not as a bulk export:
 └── .github/workflows/deploy.yml   # GitHub Pages auto-deploy on push to master
 ```
 
-**Not committed to this repository:** the raw `records/*.md` source meditations, `Corpus Map.md`,
-`PLAUD Meditations Corpus Map.md`, and the `Pass 1–6 *-Cross-References.md` documents. These are the
-private "Personal Space" source layer that the generator reads from — present in the working tree
-for reference, but deliberately excluded so the unreviewed corpus doesn't get pushed to a public
-deploy by accident. Only the generated `-v2.html` output and `records-data.js` are committed.
+**Also present in this repository (unreviewed source layer):** the raw `records/*.md` source
+meditations (410 files), `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, and the
+`Pass 1–8 *-Cross-References.md` documents. This is the private "Personal Space" source layer the
+generator reads from — committed because this repository remains a private Interior Beta, not a
+public deploy. Only the 138 *published-and-reviewed* meditations are surfaced anywhere in the
+live site's navigation; the rest stay metadata-only on `archive.html` until reviewed.
 
-`jordan-crossing-interior.html` (the preserved v11 interior record, ~136 MB) is also excluded —
+`jordan-crossing-interior.html` (the preserved v11 interior record, ~136 MB) is excluded from git —
 too large for GitHub, hosted separately.
 
 ---
@@ -221,7 +222,9 @@ current list. In brief:
       source file (truncated/inconsistent export filenames)
 - [ ] Manually verify and relink Corpus Paths steps to local pages where safe (filename-based
       automation was tried and found unsafe — some source filenames don't match their own content)
-- [ ] Review and publish further layers of the remaining ~280 unreviewed meditations
+- [ ] Review and publish further layers of the remaining ~280 unreviewed meditations (Pass 7 and
+      Pass 8 — 70 more entries, archive coverage 171→241 — have been received but not yet
+      integrated into the generator)
 - [ ] Wire in real audio once source files or URLs are available (component is ready)
 - [ ] Final QA and stakeholder sign-off
 - [ ] An explicit decision on public launch (redaction, indexing, domain, monitoring)

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Jordan Crossing — Interior Beta</title>
   <meta name="description" content="Private interior beta for the Living Topology corpus. Not for public distribution.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260831V14">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260901V1">
 </head>
 <body>
 
@@ -61,6 +61,16 @@
             text and audio. This beta is a lightweight overlay showing the planned navigation and mystery-thread
             structure for a future public release, which is separately authorized.
           </p>
+        </div>
+      </section>
+
+      <!-- WELCOME BACK — returning-reader continuity (design doc §11).
+           Populated client-side from localStorage only; hidden entirely
+           for first-time visitors. No account, no server-side tracking. -->
+      <section id="welcome-back-section" aria-label="Welcome back" style="display:none;margin-bottom:var(--space-8);">
+        <div style="background:var(--current);border:1px solid rgba(201,162,39,0.25);border-radius:var(--radius-md);padding:var(--space-4) var(--space-6);">
+          <p class="caption" style="color:var(--gold);margin-bottom:var(--space-2);">WELCOME BACK</p>
+          <div id="welcome-back-body" style="font-size:var(--text-sm);color:var(--parchment-dim);line-height:1.7;"></div>
         </div>
       </section>
 
@@ -212,7 +222,7 @@
           </div>
 
           <div class="nav-placeholder" style="background:var(--current);">
-            <span class="placeholder-label">Encounter Index</span>
+            <span class="placeholder-label">Notable Hinges</span>
             <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">Fourteen named hinges from the Corpus Map's own "key hinges" — a hand-picked way into the constellation, not a ranking.</p>
             <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);max-height:220px;overflow-y:auto;">
               <li><a href="records/02-25-meditation-joseph-paul-severe-v2.html" style="color:var(--gold);">Feb 25 · Joseph, Paul, and Severe Mercy</a></li>
@@ -232,6 +242,100 @@
             </ul>
           </div>
 
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- THE ENCOUNTER INDEX — "what kind of place am I entering?" -->
+      <section aria-label="The Encounter Index" style="margin-bottom:var(--space-8);">
+        <h2 class="section-heading">The Encounter Index</h2>
+        <p class="body-text body-text--dim" style="margin-bottom:var(--space-4);font-size:var(--text-sm);">
+          Ordinary search asks <em>what word am I looking for?</em> This asks a different question:
+          <strong style="color:var(--parchment);">what kind of place am I entering?</strong>
+          Not every reader will have the same encounter — one wants something brief and quiet, another wants
+          the confrontation, another the long deep read. Choose what you can, leave the rest as "any," and
+          the record itself decides — not a profile of you.
+        </p>
+        <p class="body-text body-text--dim" style="margin-bottom:var(--space-6);font-size:var(--text-xs);font-style:italic;">
+          These labels are derived automatically from each record's own language and length, relative to
+          this corpus — an approximation for navigation, not an editorial judgment and never a diagnosis of you.
+        </p>
+
+        <div id="encounter-index-widget" class="encounter-index-widget">
+          <div class="encounter-index-controls">
+            <div class="encounter-field">
+              <label for="encounter-temperature">Temperature</label>
+              <select id="encounter-temperature">
+                <option value="">Any</option>
+                <option value="quiet">Quiet</option>
+                <option value="contemplative">Contemplative</option>
+                <option value="confrontational">Confrontational</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </div>
+            <div class="encounter-field">
+              <label for="encounter-length">Length</label>
+              <select id="encounter-length">
+                <option value="">Any</option>
+                <option value="brief">Brief</option>
+                <option value="moderate">Moderate</option>
+                <option value="deep">Deep</option>
+              </select>
+            </div>
+            <div class="encounter-field">
+              <label for="encounter-movement">Movement</label>
+              <select id="encounter-movement">
+                <option value="">Any</option>
+                <option value="awakening">Awakening</option>
+                <option value="surrender">Surrender</option>
+                <option value="confrontation">Confrontation</option>
+                <option value="waiting">Waiting</option>
+                <option value="fellowship">Fellowship</option>
+                <option value="release">Release</option>
+              </select>
+            </div>
+            <div class="encounter-field">
+              <label for="encounter-posture">Posture</label>
+              <select id="encounter-posture">
+                <option value="">Any</option>
+                <option value="receiving">Receiving</option>
+                <option value="wrestling">Wrestling</option>
+                <option value="confessing">Confessing</option>
+                <option value="discerning">Discerning</option>
+                <option value="obeying">Obeying</option>
+              </select>
+            </div>
+            <div class="encounter-field">
+              <label for="encounter-voice">Voice</label>
+              <select id="encounter-voice">
+                <option value="">Any</option>
+                <option value="personal">Personal</option>
+                <option value="communal">Communal</option>
+                <option value="instructional">Instructional</option>
+                <option value="prayerful">Prayerful</option>
+              </select>
+            </div>
+            <div class="encounter-field">
+              <label for="encounter-season">Season</label>
+              <select id="encounter-season">
+                <option value="">Any</option>
+                <option value="Kairos Window (Tablet I)">Kairos Window</option>
+                <option value="Post-Kairos (Tablet II)">Post-Kairos</option>
+                <option value="Middle Wilderness (Tablet V)">Middle Wilderness</option>
+                <option value="The Seam (Tablets VI–VII)">The Seam</option>
+                <option value="Tablet VIII — the open seed">Tablet VIII</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="encounter-index-actions">
+            <button type="button" class="btn btn-primary" id="encounter-find-btn">Find a record</button>
+            <button type="button" class="btn btn-secondary" id="encounter-reset-btn">Reset</button>
+            <span id="encounter-match-count" class="encounter-match-count" role="status" aria-live="polite"></span>
+          </div>
+
+          <div id="encounter-result" class="encounter-result" aria-live="polite"></div>
         </div>
       </section>
 
@@ -293,7 +397,116 @@
     </p>
   </footer>
 
-  <script src="assets/records-data.js?v=20260831V14"></script>
-  <script src="assets/design-v2-logic.js?v=20260831V14"></script>
+  <script src="assets/records-data.js?v=20260901V1"></script>
+  <script src="assets/design-v2-logic.js?v=20260901V1"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    /* ─── WELCOME BACK (returning-reader continuity, design doc §11) ─── */
+    function initWelcomeBack() {
+      const section = document.getElementById('welcome-back-section');
+      const body = document.getElementById('welcome-back-body');
+      if (!section || !body || typeof JC_RECORDS === 'undefined') return;
+
+      let lastRecord = null;
+      let carryState = null;
+      try {
+        const rawLast = localStorage.getItem('jc_last_record');
+        if (rawLast) lastRecord = JSON.parse(rawLast);
+        const rawCarry = localStorage.getItem('jc_carry_question');
+        if (rawCarry) carryState = JSON.parse(rawCarry);
+      } catch (e) { return; }
+
+      const parts = [];
+      if (lastRecord && lastRecord.id) {
+        const rec = JC_RECORDS.find(r => r.id === lastRecord.id);
+        if (rec) {
+          parts.push(`You last read <a href="${rec.href}" style="color:var(--gold);">${rec.title}</a>.`);
+        }
+      }
+      if (carryState && carryState.question) {
+        parts.push(`You left a question open: <em>"${carryState.question}"</em> — still carried, still unanswered by the site.`);
+      }
+      if (!parts.length) return;
+
+      body.innerHTML = parts.map(p => `<p style="margin:0 0 var(--space-2);">${p}</p>`).join('');
+      section.style.display = 'block';
+    }
+
+    /* ─── ENCOUNTER INDEX (design doc §9) ─────────────────────────────── */
+    function initEncounterIndex() {
+      const widget = document.getElementById('encounter-index-widget');
+      if (!widget || typeof JC_RECORDS === 'undefined') return;
+
+      const fields = ['temperature', 'length', 'movement', 'posture', 'voice', 'season'];
+      const findBtn = document.getElementById('encounter-find-btn');
+      const resetBtn = document.getElementById('encounter-reset-btn');
+      const countEl = document.getElementById('encounter-match-count');
+      const resultEl = document.getElementById('encounter-result');
+
+      function currentFilters() {
+        const f = {};
+        fields.forEach(name => {
+          const el = document.getElementById('encounter-' + name);
+          if (el && el.value) f[name] = el.value;
+        });
+        return f;
+      }
+
+      function matchingRecords(filters) {
+        return JC_RECORDS.filter(rec => {
+          if (!rec.encounter) return false;
+          return fields.every(name => !filters[name] || rec.encounter[name] === filters[name]);
+        });
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      }
+
+      function renderResult(rec) {
+        if (!rec) {
+          resultEl.innerHTML = '<p class="encounter-result-empty">No reviewed record matches every choice you made. Try leaving one more field as "Any."</p>';
+          return;
+        }
+        const e = rec.encounter;
+        const tags = [e.temperature, e.length, e.movement, e.posture, e.voice].filter(Boolean);
+        resultEl.innerHTML = `
+          <div class="encounter-result-card">
+            <div class="encounter-result-tags">${tags.map(t => `<span class="encounter-result-tag">${escapeHtml(t)}</span>`).join('')}</div>
+            <a class="encounter-result-title" href="${rec.href}">${escapeHtml(rec.title)}</a>
+            <p class="encounter-result-summary">${escapeHtml(rec.summary)}</p>
+          </div>
+        `;
+      }
+
+      function runSearch() {
+        const filters = currentFilters();
+        const matches = matchingRecords(filters);
+        countEl.textContent = matches.length
+          ? `${matches.length} record${matches.length === 1 ? '' : 's'} match this description`
+          : '';
+        const chosen = matches.length ? matches[Math.floor(Math.random() * matches.length)] : null;
+        renderResult(chosen);
+      }
+
+      if (findBtn) findBtn.addEventListener('click', runSearch);
+      if (resetBtn) resetBtn.addEventListener('click', () => {
+        fields.forEach(name => {
+          const el = document.getElementById('encounter-' + name);
+          if (el) el.value = '';
+        });
+        countEl.textContent = '';
+        resultEl.innerHTML = '';
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initWelcomeBack();
+      initEncounterIndex();
+    });
+  })();
+  </script>
 </body>
 </html>

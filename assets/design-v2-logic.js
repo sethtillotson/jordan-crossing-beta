@@ -432,6 +432,32 @@
   }
 
   // ═══════════════════════════════════════════════════════════════════
+  // HUMAN DOORWAYS — theme chips (design doc §7 "the human doorways"):
+  // shame, waiting, fear, identity, surrender, obedience, grief,
+  // fellowship, work, marriage, money, discipline. Chips link to Threads
+  // filtered to that theme, so a reader can leave this record by the
+  // life-question it touched rather than only by its reviewed edges.
+  // ═════════════════════════════════════════════════════════════════════
+
+  function initDoorwayThemes() {
+    const mount = document.getElementById('doorway-themes-mount');
+    if (!mount || typeof JC_RECORDS === 'undefined') return;
+
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const rec = JC_RECORDS.find(r => r.id === shortId);
+    if (!rec || !rec.doorwayThemes || !rec.doorwayThemes.length) return;
+
+    const chips = rec.doorwayThemes.map(theme =>
+      `<a class="doorway-theme-chip" href="../threads.html?q=${encodeURIComponent(theme)}">${theme}</a>`
+    ).join('');
+
+    mount.innerHTML = `
+      <h3 class="doorway-themes-heading">This record touches</h3>
+      <div class="doorway-themes-list">${chips}</div>
+    `;
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
   // RELATED RECORDS — Thematically connected meditations
   // ═════════════════════════════════════════════════════════════════════
 
@@ -480,6 +506,7 @@
       '.carry-question-section',
       '#related-records-mount',
       '#threads-mount',
+      '#doorway-themes-mount',
       '.return-panel',
     ];
     toHide.forEach(sel => {
@@ -502,6 +529,21 @@
     }
   }
 
+  // ═══════════════════════════════════════════════════════════════════
+  // RETURNING READER — last-record continuity (design doc §11, "The
+  // returning reader": last place read, no account, no surveillance).
+  // Records only the current record's id + a timestamp, locally.
+  // ═════════════════════════════════════════════════════════════════════
+
+  const LAST_RECORD_KEY = 'jc_last_record';
+
+  function trackLastRecord() {
+    if (!RECORD_ID || RECORD_ID === 'unknown') return;
+    try {
+      localStorage.setItem(LAST_RECORD_KEY, JSON.stringify({ id: RECORD_ID, at: Date.now() }));
+    } catch (e) { /* localStorage unavailable — fail silently, no functionality depends on it */ }
+  }
+
   document.addEventListener('DOMContentLoaded', applyNoInterpretationMode);
 
   // ═══════════════════════════════════════════════════════════════════
@@ -516,7 +558,9 @@
     initAudioPlayer();
     initGraphNav();
     initRelatedRecords();
+    initDoorwayThemes();
     initThreadConnections();
+    trackLastRecord();
   });
 
   // Expose globally for debugging

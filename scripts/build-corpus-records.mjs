@@ -13,6 +13,20 @@
  *      from same-thread adjacency within each pass's numbered groups.
  *
  * Run from the repository root:  node scripts/build-corpus-records.mjs
+ *
+ * ⚠ IMPORTANT — this script overwrites assets/records-data.js completely.
+ * Two things added by hand AFTER this generator last ran are NOT
+ * reproduced by it and will be lost if you re-run it without restoring
+ * them afterward:
+ *   - The hand-authored `JC_THREADS` array and the cross-month `"echoes"`
+ *     edges in JC_EDGES (Phase 2 — the four named threads from the
+ *     PLAUD Meditations Corpus Map §10).
+ *   - The `encounter` / `doorwayThemes` fields on every JC_RECORDS entry
+ *     (Phase 4 — the Encounter Index / human doorways). Re-run
+ *     `node scripts/tag-encounter-dimensions.mjs` after this generator
+ *     to recompute those for the full (possibly larger) record set.
+ * If you only need to add new pass-doc entries without disturbing the
+ * above, consider extending this file to merge rather than overwrite.
  */
 
 import fs from 'node:fs';
@@ -311,7 +325,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
   <title>${escAttr(title)} — Interior Beta</title>
   <meta name="description" content="${escAttr(summary)}">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260831V14">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V1">
   <link rel="stylesheet" href="../assets/audio-player.css?v=20260831V14">
 </head>
 <body data-record-id="${escAttr(id)}">
@@ -494,6 +508,9 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
       <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
+      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
+      <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
+
       <div class="movement-divider"></div>
 
       <!-- MOVEMENT 3: RETURN -->
@@ -543,9 +560,9 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
     <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260831V14"></script>
+  <script src="../assets/records-data.js?v=20260901V1"></script>
   <script src="../assets/audio-player.js?v=20260831V14"></script>
-  <script src="../assets/design-v2-logic.js?v=20260831V14"></script>
+  <script src="../assets/design-v2-logic.js?v=20260901V1"></script>
 </body>
 </html>
 `;
