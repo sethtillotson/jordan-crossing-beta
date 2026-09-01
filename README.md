@@ -1,209 +1,239 @@
-# Jordan Crossing — Public Release v1.0
+# The Jordan Crossing
 
-## Interior Record for the Living Topology Corpus
+## Interior Beta for the Living Topology Corpus
 
-**Status:** Public release · Open for reading and reflection  
-**Released:** August 31, 2026  
-**Version:** 1.0  
-**Corpus version:** v11 (jordan-crossing-interior.html preserved untouched)
+**Status:** Interior Beta · Private workspace · Not for public distribution
+**Last major update:** September 1, 2026
+**Reviewed corpus:** 138 published records (of 451 in the direct archive)
+**Corpus version:** v11 (`jordan-crossing-interior.html`, preserved untouched)
+
+> This repository is a **private working beta**, not a public release. Every page in the site
+> carries an explicit "INTERIOR BETA · Not for public distribution" banner. See
+> [Status & Distribution](#status--distribution) below before assuming otherwise — GitHub Pages
+> auto-deploys this repo's `master` branch, but that is a staging/preview convenience, not a
+> sign-off to index or publicize the URL.
 
 ---
 
 ## What this is
 
-The Jordan Crossing is an interactive, text-based encounter with seven meditations recorded by Seth Tillotson on August 29–30, 2026. Each meditation is a first-person witness account of a spiritual movement—discernment, questioning, transformation, recognition.
+The Jordan Crossing is an interactive, text-based encounter with a real-time witness record —
+*A Living Topology of Transformation* — recorded by Seth Tillotson across February–August 2026.
+Each record is a first-person meditation: discernment, questioning, transformation, recognition.
 
-This repository holds the **design, interactive logic, and complete beta site** for the interior experience.
+This repository holds the **design, interactive logic, and complete beta site**: a landing page,
+a "Mystery Mode" entry point, a reviewed thread constellation, curated reading paths, and a
+metadata-only archive view of the wider corpus.
+
+For the full build history, current status, and open items, see [`plan.md`](plan.md) (living
+project-status document) and [`CHANGELOG.md`](CHANGELOG.md) (dated release notes).
 
 ---
 
-## Quick Start
+## The reviewed corpus, in brief
 
-### Live URLs
+The underlying witness record holds **451 meditations** (Feb 14 – Aug 30, 2026) plus one received
+prophetic word. Per the project's own governing design document, that corpus is introduced to this
+site **in reviewed layers**, not as a bulk export:
 
-| URL | Purpose |
-|-----|---------|
-| https://sethtillotson.github.io/jordan-crossing-beta/ | GitHub Pages (auto-deployed) |
-| https://eogvatdm.gensparkclaw.com/jordan-crossing-beta/ | VM-hosted (private, noindex) |
+- **138 records are fully reviewed and published** as complete pages under `records/*-v2.html` —
+  the original 7 curated "Tablet VIII" seeds (Aug 29–30, 2026) plus 131 more meditations resolved
+  from **six dated Cross-Reference passes** (documented editorial review, not automated bulk import).
+- Every published record carries labeled, source-cited connections to other records — `continues`,
+  `answers`, `open question`, or `echoes` (a cross-month thread bridge) — each traceable to the
+  specific pass or map section that justifies it. Nothing is asserted without a citation.
+- **Four named threads** run underneath the chronology, traced meditation-by-meditation in the
+  *PLAUD Meditations Corpus Map*: **Zechariah 3** (filthy garments removed, replaced, given away),
+  **the Samuel Loop** (the carried, quietly learning to carry), **the Murmuration** (the *maskîlîm*
+  are plural), and **the Descent Into Hiddenness** (the arc bends downward). Each is browsable on
+  [`threads.html`](threads.html) as its own filtered path.
+- The remaining **~280 meditations** (of the ~407–410 mirrored locally) stay **metadata-only** on
+  [`archive.html`](archive.html) — counted by month, dated, but not yet titled, quoted, or
+  published — until a future review pass verifies them the same way.
 
-### Structure
+---
+
+## Site map
+
+| Page | Purpose |
+|------|---------|
+| [`index.html`](index.html) | Landing page: corpus overview, entry invitations, and first-draft Chronological/Thematic/Encounter navigation maps |
+| [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across all 138 reviewed records |
+| [`threads.html`](threads.html) | The reviewed thread constellation — full chronology, per-thread filters, and full-text search |
+| [`paths.html`](paths.html) | Nine curated reading paths through the corpus (doctrinal spine, Samuel Loop, Murmuration, Descent, Zechariah 3, the Gaze, Surrender & Obedience, Identity & Transformation, Waiting & Timing) |
+| [`archive.html`](archive.html) | Metadata-only view of the wider ~451-meditation corpus, by month, with an explanation of why full text isn't published yet |
+| [`record.html`](record.html) | Legacy wrapper page; retained for the landing page's "read the original" no-interpretation link |
+
+---
+
+## Repository structure
 
 ```
 .
 ├── assets/
-│   ├── design-v2.css              # Complete redesigned stylesheet (17KB)
-│   ├── design-v2-logic.js         # Four-movement interactive logic
-│   ├── mystery-v2-logic.js        # Doorway selection & routing
-│   ├── beta.js                    # Legacy logic (compatibility)
-│   └── *.js, *.css                # Supporting files
+│   ├── design-v2.css              # Site-wide v2 visual system (dark parchment/gold theme)
+│   ├── design-v2-logic.js         # Page init, Markdown rendering, graph nav, thread connections,
+│   │                               #   related records, audio player init, no-interpretation mode
+│   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
+│   ├── records-data.js            # JC_RECORDS (138 records), JC_EDGES (142 edges), JC_THREADS (4)
+│   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the nine curated reading paths
+│   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
+│   └── beta.js/.css               # Legacy logic, kept for compatibility
 ├── records/
-│   ├── *-v2.html                  # 7 redesigned record pages
-│   ├── *.html / *.md              # Original records (archive)
-│   └── tablet-viii-seed-register.md
-├── mystery-v2.html                # Redesigned mystery mode entry
-├── threads.html                   # Timeline view
-├── paths.html                     # Reading paths
-└── index.html                     # Landing page
+│   ├── *-v2.html                  # 138 published, reviewed record pages
+│   ├── *.html (no -v2 suffix)     # Superseded originals, kept as historical artifacts only
+│   └── *.md                       # Raw meditation source mirror (NOT committed — see below)
+├── scripts/
+│   └── build-corpus-records.mjs   # Generator: parses the six Cross-Reference passes, resolves
+│                                   #   them to source files, and produces the *-v2.html pages
+├── index.html, mystery.html, threads.html, paths.html, archive.html, record.html
+├── plan.md                        # Living project-status document — read this first
+├── CHANGELOG.md                   # Dated release notes
+└── .github/workflows/deploy.yml   # GitHub Pages auto-deploy on push to master
 ```
 
-### The Four Movements (on each record)
+**Not committed to this repository:** the raw `records/*.md` source meditations, `Corpus Map.md`,
+`PLAUD Meditations Corpus Map.md`, and the `Pass 1–6 *-Cross-References.md` documents. These are the
+private "Personal Space" source layer that the generator reads from — present in the working tree
+for reference, but deliberately excluded so the unreviewed corpus doesn't get pushed to a public
+deploy by accident. Only the generated `-v2.html` output and `records-data.js` are committed.
 
-1. **Discern** — "What did you actually encounter?" (7 response choices)
-2. **Carry** — Save a question locally for reflection (localStorage-only)
-3. **Return** — Release choices (5 paths forward)
-4. **Navigate** — Chronological links + thread connections
-
----
-
-## Design System
-
-### Color Palette
-
-| Element | Color | Hex |
-|---------|-------|-----|
-| Background | Deep charcoal | #0f1419 |
-| Text | Parchment | #e8dcc8 |
-| Text (dim) | Dim parchment | #bfb5a5 |
-| Interactive | Gold | #c9a227 |
-
-### Typography
-
-- **Serif (Cambria, Georgia, serif)**: Content, titles, warmth
-- **Sans-serif (system)**: Navigation, UI, utility
-
-### Components
-
-- **Card**: 2px gold border, subtle gradient, lift on hover
-- **Selected state**: Gold border + inner glow
-- **Movement dividers**: Horizontal line + centered dot
-- **Response panels**: Slide in smoothly with animation
+`jordan-crossing-interior.html` (the preserved v11 interior record, ~136 MB) is also excluded —
+too large for GitHub, hosted separately.
 
 ---
 
-## The Mystery Mode Doorways
+## Mystery Mode doorways
 
-Users enter through one of 11 questions/states:
+Eleven questions/states, each drawing from a **keyword-matched pool across all 138 reviewed
+records** (not a single fixed destination) — the originally curated record always stays in the
+pool as a guaranteed fallback:
 
-| Doorway | Routes to | Icon |
-|---------|-----------|------|
-| I am beginning again | 08-29-signpost | ◌ |
-| Trapped in old identity | 08-30-man-of-flesh | ⊗ |
-| Waiting for change | 08-30-mirror | ⏳ |
-| Cannot see what God is doing | 08-30-mirror-gospel | ◈ |
-| Afraid of what obedience costs | 08-30-filthy-garments | △ |
-| Need to understand surrender | 08-30-compass | ◇ |
-| Searching for Jesus | 08-30-wisdom | ✦ |
-| Examine the record carefully | 08-29-signpost | ◆ |
-| Follow entire chronology | 08-29-signpost | → |
-| Quiet place to begin | jordan-crossing-interior | 🕯 |
-| I only know I am here | 08-30-compass | ⟳ |
+| Doorway | Pool basis |
+|---------|-----------|
+| I am beginning again | Records matching return/renewal/restoration themes |
+| I feel trapped in an old identity | Records matching identity/flesh/ego/mirror themes |
+| I am waiting for something to change | Records matching waiting/patience/fourth-watch themes |
+| I cannot see what God is doing | Records matching hiddenness/mystery/darkness themes |
+| I am afraid of what obedience will cost | Records matching obedience/cost/fellowship themes |
+| I need to understand surrender | Records matching surrender/kenosis/yielding themes |
+| I am searching for Jesus | Records matching Christ/gospel/redemption themes |
+| I want to examine the record carefully | Records matching discernment/scripture/doctrine themes |
+| I want to follow the entire chronology | The union of all four named threads (23 records) |
+| I need a quiet place to begin | The preserved interior record (single destination) |
+| I do not know what I am carrying, I only know I am here | Records matching "compass"/witness/presence themes |
 
 ---
 
-## Deployment
+## Design system
 
-### GitHub Pages (Auto)
+- **Palette:** deep charcoal background (`#0f1419`), parchment text (`#e8dcc8`), dimmed parchment
+  (`#bfb5a5`), gold interactive accents (`#c9a227`)
+- **Typography:** serif (Cambria/Georgia) for content and titles; system sans-serif for navigation/UI
+- **Components:** gold-bordered cards with hover lift, gold-glow selected states, dotted movement
+  dividers, animated response panels
+- **Accessibility:** WCAG 2.1 AA — keyboard navigation throughout, visible focus states, semantic
+  headings, alt text/labels, verified color contrast
 
-Every push to `master` triggers a GitHub Actions workflow that:
-1. Builds the static site
-2. Uploads to Pages artifact
-3. Deploys to `https://sethtillotson.github.io/jordan-crossing-beta/`
+### The four movements (on each record page)
 
-See `.github/workflows/deploy.yml`.
+1. **Discern** — name what you actually encountered
+2. **Carry** — save a question locally for reflection (localStorage only, never transmitted)
+3. **Return** — choose how to leave (five paths forward)
+4. **Navigate** — chronological prev/next plus labeled, source-cited thread connections
 
-### Local VM (Manual)
+A `?mode=original` query parameter on any record strips all of the above, leaving only the title,
+date, source status, and the original imported text — no editorial framing.
 
-```bash
-cd /home/work/.openclaw/workspace/jordan-crossing-beta
-python3 -m http.server 8787 &
-# Served at https://eogvatdm.gensparkclaw.com/jordan-crossing-beta/
-```
+---
+
+## Audio (component built, dormant)
+
+An accessible audio player component (`assets/audio-player.js` + `assets/audio-player.css`) is
+built and wired into every record page: play/pause, seekable progress bar, elapsed/duration
+timestamp, playback-speed control, volume control, and native caption-track support. It mounts
+only when a record's `JC_RECORDS` entry carries an `audioUrl` — **no record currently has one**,
+because the underlying corpus is text-only (PLAUD/Speakly-generated summaries with no
+audio/video source files anywhere in the repository). The component exists ahead of the data so
+that wiring in real audio, whenever it becomes available, is a one-line data change per record
+rather than new engineering.
+
+---
+
+## Status & distribution
+
+- **Not publicly announced or indexed.** Every page carries an explicit
+  "INTERIOR BETA · Private workspace · Not for public distribution" banner.
+- **No account required, no server-side data collection.** `localStorage` is used only for the
+  carry-a-question feature and stays on the reader's own device.
+- **GitHub Pages auto-deploys `master`** (see `.github/workflows/deploy.yml`) purely as a
+  staging/preview convenience — this is *not* the same thing as a public launch decision.
+- **Public launch is a pending, explicit stakeholder decision** — not yet made. It requires final
+  QA sign-off and a deliberate choice to lift the "not for public distribution" status, decide on
+  pre-publication redaction of private third-party names, and set up indexing/domain/monitoring.
+  See `plan.md`'s "Pending human decision" section for the current open items.
 
 ---
 
 ## Development
 
-### To Edit
+### To edit
 
-1. Clone or pull this repo
-2. Edit `.html`, `.css`, `.js` files locally
-3. Test in a browser
-4. Commit & push to `master`
-5. GitHub Pages auto-deploys ~30 seconds later
+1. Clone this repository
+2. Edit `.html` / `.css` / `.js` files directly — no build step, no framework, no dependencies
+3. Serve locally (e.g. `python3 -m http.server 8000`) and test in a browser
+4. Commit and push to `master` — GitHub Actions auto-deploys ~30 seconds later
 
-### Version Management
+### Cache-busting
 
-- CSS/JS are versioned with `?v=YYYYMMDDVN` query strings to bust Cloudflare cache
-- When editing CSS/JS, increment the version: `?v=20260831V4`, etc.
-- HTML doesn't need versioning (no 304 caching)
+CSS/JS assets are versioned with a `?v=YYYYMMDDVN` query string. Browsers cache the HTML document
+itself (not just linked assets) between visits, so **bump the version on every asset change** —
+search-and-replace it across every referencing page, not just the one you edited.
 
-### File Exclusions
+### Regenerating the reviewed corpus
 
-- `jordan-crossing-interior.html` — Too large (136MB) for GitHub; hosted separately
-- `.gitignore` — Excludes large files
-
----
-
-## Records Included
-
-1. **08-29-Signpost** — "The Signpost, the Secret Place, and the Cup of the Father's Will"
-2. **08-30-Man-of-Flesh** — "The Man of the Flesh Held Me Hostage"
-3. **08-30-Mirror** — "The Man in the Mirror and the Christ Who Stands Between"
-4. **08-30-Mirror-Gospel** — "The Mirror-Gospel and Christ the Teacher Within"
-5. **08-30-Filthy-Garments** — "The Faced Image, the Filthy Garments, and the Finished Work"
-6. **08-30-Compass** — "The Compass in the Locked Room"
-7. **08-30-Wisdom** — "When Wisdom Ushers Power: The Loved Heir, the Renewed Mind, and the Word That Gives Witness to Itself"
+`node scripts/build-corpus-records.mjs` re-parses the six Cross-Reference pass documents, resolves
+newly added entries to source meditation files, regenerates the `-v2.html` pages, and rebuilds the
+generated portion of `assets/records-data.js` (`JC_RECORDS` and same-cluster `JC_EDGES`). It does
+**not** touch the hand-authored `JC_THREADS` array or the cross-month `"echoes"` edges, which live
+in the same file below the generated block — extend those by hand if a thread hinge resolves to a
+newly generated page.
 
 ---
 
-## Tech Stack
+## Tech stack
 
-- **HTML5** — Semantic markup
-- **CSS3** — Complete redesign with responsive grid
-- **Vanilla JavaScript** — No frameworks; localStorage for persistence
-- **GitHub Pages** — Static site hosting
-- **GitHub Actions** — CI/CD pipeline
-
----
-
-## Privacy & Distribution
-
-- **Status**: Public release, fully indexed by search engines
-- **License**: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)
-- **Cookies**: None server-side
-- **Tracking**: None
-- **localStorage**: Carry-question persistence only (user's browser only)
-- **Transmission**: No personal data sent anywhere
-- **Accessibility**: WCAG 2.1 AA compliant
+- **HTML5** — semantic markup, no framework
+- **CSS3** — hand-written responsive grid and design tokens
+- **Vanilla JavaScript** — no build step, no dependencies; `localStorage` for the carry-question
+  feature only
+- **Node.js** — used only for the offline `scripts/build-corpus-records.mjs` generator, not at runtime
+- **GitHub Pages + GitHub Actions** — static hosting and auto-deploy on push to `master`
 
 ---
 
-## What's New in v1.0
+## Roadmap
 
-- **Search & Discovery**: Full-text search on timeline (threads), faceted tag filtering on reading paths
-- **Reading Paths**: Nine curated meditation routes through the corpus (doctrinal spine, surrender, identity, timing, etc.)
-- **Thread Connections**: Visual timeline showing relationships between records with explanation of how they connect
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Accessibility**: WCAG 2.1 AA compliance; keyboard navigation throughout
-- **Performance**: All pages load under 2 seconds on 4G; search results in <5ms
+See [`CHANGELOG.md`](CHANGELOG.md)'s Roadmap section and [`plan.md`](plan.md) for the full,
+current list. In brief:
 
----
-
-## Next Steps
-
-- [ ] Add audio meditation recordings (when available)
-- [ ] Expand corpus to 20–30 records
-- [ ] Add transcript search for audio content
-- [ ] Community features (annotations, study group support)
+- [ ] Manually resolve the ~27 pass-doc references that couldn't be confidently matched to a
+      source file (truncated/inconsistent export filenames)
+- [ ] Manually verify and relink Corpus Paths steps to local pages where safe (filename-based
+      automation was tried and found unsafe — some source filenames don't match their own content)
+- [ ] Review and publish further layers of the remaining ~280 unreviewed meditations
+- [ ] Wire in real audio once source files or URLs are available (component is ready)
+- [ ] Final QA and stakeholder sign-off
+- [ ] An explicit decision on public launch (redaction, indexing, domain, monitoring)
 
 ---
 
 ## Credits
 
-**Design & Development**: Barak (AI watchman)  
-**Content & Witness**: Seth Tillotson  
-**Theology & Editing**: Brother Samuel, Jayden, Sister Katie  
-**Built**: August 31, 2026
+**Design & Development:** Barak (AI watchman)
+**Content & Witness:** Seth Tillotson
+**Theology & Editing:** Brother Samuel, Jayden, Sister Katie
+**Version Manager:** Copilot CLI Runtime
 
 ---
 
