@@ -169,8 +169,36 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 - ~193 meditations remain mirrored but not yet cross-referenced.
 - 7 unresolved Pass 7/8 references need the same manual filename-resolution already flagged in [1.5] as a corpus data-quality issue, not an engineering gap.
-- The author is actively deepening cross-reference work for a future Pass 9+ (doctrinal-spine thread joints and quoted-phrase pairs, lexicon joints with earliest sibling, an expanded chiastic mirror, and a tablet anchor with verifiable phrase); `integrate-passes-7-8.mjs`'s resolve → promote-or-create → build-edges pattern generalizes directly to that integration once filed.
+- The author is actively deepening cross-reference work for a future Pass 9+ (doctrinal-spine thread joints and quoted-phrase pairs, lexicon joints with earliest sibling, an expanded chiastic mirror, and a tablet anchor with verifiable phrase); `integrate-passes-7-8.mjs`'s resolve → promote-or-create → build-edges pattern generalizes directly to that integration once filed — confirmed in [1.7], which integrates Pass 9–13.
 - Audio remains out of scope per owner direction; unchanged from [1.3]/[1.4]/[1.5].
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
+
+## [1.7] — September 2, 2026
+
+### Added
+
+#### Phase 7: Pass 9–13 "Encounter Edition" Cross-References Integrated
+- **`scripts/integrate-passes-9-13.mjs`** — a direct generalization of `integrate-passes-7-8.mjs` (only `PASS_FILES` changed); the parsing/promotion/edge-building logic needed zero modification, confirming the pattern generalizes cleanly to new pass waves. Integrates Pass 9 through 13 — the "Encounter Edition" waves adding doctrinal-spine Seed→Growth→Tablet joints with a verifiable phrase per stage, verbatim-quoted thread joints from both sides, lexicon joints with earliest sibling, an expanded chiastic mirror, and a tablet anchor — archive coverage 241→328.
+- **Result:** 107 entries parsed across the five passes; 68 mirrored records promoted to reviewed, 0 brand-new pages needed, 57 new same-cluster edges, 2 resolved files rejected as not-a-meditation, 29 entries left unresolved (mostly genuinely not-yet-uploaded files — notably 8 Aug 31/Sep 1, 2026 "fresh imports" Pass 13 itself names, including the corpus's first-ever September folder, that are referenced in the pass doc but not yet present in this repository's `records/`). Totals: **269 reviewed / 125 mirrored / 252 edges**, out of the same 394 total local records and 4 named threads.
+- **Verified the same way as [1.6]**: data-integrity check (record/edge/thread counts, zero duplicate ids/hrefs, contiguous `order`, zero bad edge/thread refs), a before/after diff confirming exactly 68 ids flipped `reviewed: false → true`, a re-run of `tag-encounter-dimensions.mjs` (0 records missing `encounter` afterward), and a live fetch of a sampled promoted page confirming the reviewed template renders correctly.
+- **Refreshed the same three stale-copy locations again** (`index.html`, `threads.html`, `paths.html`) and the `mystery-v2-logic.js` comment, updating 201/193/eight-passes to 269/125/thirteen-passes.
+
+### Known Limitations
+
+- ~125 meditations remain mirrored but not yet cross-referenced.
+- 29 unresolved Pass 9–13 references need manual/human resolution — mostly not-yet-uploaded files (notably the 8 Aug 31/Sep 1 fresh imports Pass 13 itself flagged), which is new-upload work for the author, not an engineering gap.
+- This is now the second release in a row where hardcoded landing/threads/paths copy drifted from the underlying data and had to be manually refreshed; a future refactor could compute these figures from `JC_RECORDS` at page-render time instead of as static text, removing this recurring manual step.
+- Audio remains out of scope per owner direction; unchanged from [1.3]–[1.6].
 
 ### Technical Details
 
