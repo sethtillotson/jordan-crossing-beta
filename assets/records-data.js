@@ -244,7 +244,7 @@ const JC_RECORDS = [
     "href": "records/03-01-when-world-shaking-crib-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this conversation with my brother Samuel, I found myself sitting with something that is difficult to articulate cleanly — the collision of raw, unguarded human weight and the faint but persistent thread of faith running underneath it. Two…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -382,7 +382,7 @@ const JC_RECORDS = [
     "href": "records/03-07-summary-obedience-spiritual-victory-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something that has been pressing on me deeply — this tension between what is meant to be spoken openly and what is too vast, too eternal, too *other* for human language to contain. Something has been stirring in me about the nature…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -478,7 +478,7 @@ const JC_RECORDS = [
     "href": "records/03-13-personal-meditation-trembling-yes-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with the memory of a moment I never saw coming—the moment I realized I had been doing the work of discipleship without even naming it, and the Holy Spirit was now asking me to name it, to step into it deliberately. Something has been…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -502,7 +502,7 @@ const JC_RECORDS = [
     "href": "records/03-13-reflection-performance-vs-presence-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with a conversation that arrested me — the image of someone who wore a cross for years, never removing it, yet never stepped foot inside a church building. Something about that strikes me as profoundly biblical in a way I didn't expect.…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -524,7 +524,7 @@ const JC_RECORDS = [
     "href": "records/03-14-personal-meditation-crucible-false-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something that has been building across multiple layers of encounter — conversations between brothers walking through fire, a question that will not release me about a garden and an absent guardian, a rowdy room of teenagers falling",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "urgent",
       "length": "deep",
@@ -548,7 +548,7 @@ const JC_RECORDS = [
     "href": "records/03-14-meditation-doctrine-presence-being-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something I said out loud that I almost didn’t recognize as coming from me — and that arrested me more than anything I’ve read in weeks. A brother in Christ pressed me about doctrine, about division, about whether we truly need to…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -594,7 +594,7 @@ const JC_RECORDS = [
     "href": "records/03-19-meditation-spiritual-liberation-from-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something that has been quietly building beneath the surface of ordinary conversations — a thread woven through discussions about charity shops, old coats, vintage handbags, broken car hoses, and unfinished books. Something arrests…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -665,7 +665,7 @@ const JC_RECORDS = [
     "href": "records/03-25-personal-meditation-spirit-perdition-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something that has been quietly dismantling me from the inside — the realization that the spirit of perdition is not merely a historical character named Judas Iscariot, but a living architecture within my own soul. Something arrests",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -687,7 +687,7 @@ const JC_RECORDS = [
     "href": "records/03-25-meditation-honesty-before-god-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with three conversations at once — and what strikes me is that they are not three conversations at all. They are one river running through three channels, and the river has a name: *honesty before God*. One brother read his own heart…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "confrontational",
       "length": "deep",
@@ -711,7 +711,7 @@ const JC_RECORDS = [
     "href": "records/03-25-personal-meditation-kenosis-death-v2.html",
     "sourceStatus": "original",
     "summary": "I can’t get this off of my mind. For weeks now, I’ve been sitting with the spiritual violence of true surrender—not the domesticated version we preach in sanctuaries, but the kind that demands I stop being the architect of my own holiness. Something has…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -735,7 +735,7 @@ const JC_RECORDS = [
     "href": "records/03-27-personal-meditation-illusion-cliff-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with something that has shattered every careful theological framework I thought I understood. A fellow seeker—one who hungers not to dissect God but to know His heart—has unlocked chains I didn’t even realize were binding me. The more…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -757,7 +757,7 @@ const JC_RECORDS = [
     "href": "records/03-27-personal-meditation-hidden-mathematics-v2.html",
     "sourceStatus": "original",
     "summary": "I can’t get this off my mind. On March 20, 2026, I was in conversation with another seeker—a remnant—and the Spirit began unraveling something I’d completely missed in all my study. We were discussing end times prophecies, the midnight hour, and the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -779,7 +779,7 @@ const JC_RECORDS = [
     "href": "records/03-27-meditation-hebrews-12-divine-v2.html",
     "sourceStatus": "original",
     "summary": "I find myself sitting with Hebrews 12 today, having been directed here by the Spirit with a striking word accompanying the passage: *twelve is anticipation.* Something in that single interpretive key has unlocked the entire chapter for me in a way I cannot…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -2245,7 +2245,7 @@ const JC_RECORDS = [
     "href": "records/04-23-when-drinking-stops-grief-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with this conversation afterward, something in me recognized the unmistakable weight of a man standing at a threshold — not yet through the door, but no longer comfortable on the old side of it. My brother Samuel was not simply confessing a bad night",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -2294,7 +2294,7 @@ const JC_RECORDS = [
     "href": "records/04-25-when-kitchen-burns-road-v2.html",
     "sourceStatus": "original",
     "summary": "On 04-24, I moved through an entire day — from a late-night kitchen story told by my mother over dinner, to a low-lit midnight exchange while sick and hungry, to a morning moment at a food counter with my brother Leon and a stranger who named himself a ghost,",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -2368,7 +2368,7 @@ const JC_RECORDS = [
     "href": "records/04-26-when-mask-falls-wilderness-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with my brother Samuel across the span of these conversations — watching him move from raw, unfiltered anger before God, through physical suffering and holy rage, through questions about assignment and obscurity and the size of his cross, through the",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -2461,7 +2461,7 @@ const JC_RECORDS = [
     "href": "records/04-28-mercy-parking-lot-lesson-2-v2.html",
     "sourceStatus": "original",
     "summary": "I found myself stranded in Moorhead with a car that had just received a new alternator but still did not have the strength to carry me home on its own. What began as a mechanical problem became a living parable about provision, weakness, gratitude, and the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -2483,7 +2483,7 @@ const JC_RECORDS = [
     "href": "records/04-29-false-ascent-narrow-door-v2.html",
     "sourceStatus": "original",
     "summary": "As I sit with this conversation, I am struck by the spiritual hunger underneath it. On the surface, it was a late-night exchange about psychedelics, altered states, DMT, mushrooms, tunnels, entities, and “transcendent experiences,” but beneath all of that I…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -2505,7 +2505,7 @@ const JC_RECORDS = [
     "href": "records/04-29-light-that-breaks-descent-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother speak from the raw place where grief, temptation, memory, identity, anger, and longing all seemed to meet, I felt the weight of a soul standing at a threshold. The surface conversation moved through smoking, drinking, music,…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -2532,7 +2532,7 @@ const JC_RECORDS = [
     "href": "records/04-30-when-voice-you-trust-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel walk through the streets of the UK late at night, speaking to me through broken signal and broken reasoning, I kept sensing that the real conversation was not about newsletters, Tennessee, money, or gangsters — it was about…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3082,7 +3082,7 @@ const JC_RECORDS = [
     "href": "records/05-14-midnight-desk-open-word-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with a conversation that, on its surface, looks like two friends catching up late at night — music, energy drinks, creative writing, and a quick plan to study Scripture together before signing off. But as I let the Spirit press beneath the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -3148,7 +3148,7 @@ const JC_RECORDS = [
     "href": "records/05-16-faithful-small-things-meditation-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with something quietly significant here — not a dramatic vision, not a thunderclap of revelation, but the ordinary hum of a workday captured in ambient audio. What arrests me is not what was said so clearly, but what was *present*: hands working,",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -3172,7 +3172,7 @@ const JC_RECORDS = [
     "href": "records/05-16-when-altar-holds-engine-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found myself tracing two streams running parallel — one outward and entrepreneurial, one inward and priestly — and slowly recognizing that these streams are not in competition…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3837,7 +3837,7 @@ const JC_RECORDS = [
     "href": "records/06-01-refusing-escapism-returning-first-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother describe saying no to edibles while grieving, something in me recognized the holy violence of that moment. It was not glamorous. It was not clean. It was not wrapped in church language. But beneath the frustration, the profanity,…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -3885,7 +3885,7 @@ const JC_RECORDS = [
     "href": "records/06-02-altar-return-training-ground-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened back through this call with my brother, I heard more than two men processing pressure, family fracture, temptation, prayer, wounds, work, technology, and Scripture. I heard the Spirit gathering scattered pieces of life and laying them on one…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3910,7 +3910,7 @@ const JC_RECORDS = [
     "href": "records/06-03-reflection-provision-warfare-truth-telling-v2.html",
     "sourceStatus": "original",
     "summary": "Tonight unfolded across several calls and conversations, each one carrying its own weight, yet all bound together by a single thread the Spirit kept surfacing: the tension between visible provision and invisible fragility, between anxious reasoning and…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "urgent",
       "length": "deep",
@@ -3956,7 +3956,7 @@ const JC_RECORDS = [
     "href": "records/06-04-burning-bush-old-refuge-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened back over this call with my brother, I could feel one thread tying together what at first seemed like many separate movements: the Father was training attention, endurance, repentance, and surrender in the middle of ordinary pressure. The…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3981,7 +3981,7 @@ const JC_RECORDS = [
     "href": "records/06-05-when-spirit-intercepts-counterfeit-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel describe what had come upon him in the night — the spinning room, the sober body brought to exhaustion, the visions he could not explain and could not dismiss — something in me recognized the ancient texture of what he was…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "confrontational",
       "length": "deep",
@@ -4263,7 +4263,7 @@ const JC_RECORDS = [
     "href": "records/06-10-five-dollars-nineteen-cents-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with two phone calls that, taken together, form a single arc of Kingdom testimony — from frustration and apparent impossibility, to sudden provision and the shock of recognition that comes when God moves in the ordinary. What strikes me most is…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -4285,7 +4285,7 @@ const JC_RECORDS = [
     "href": "records/06-10-five-dollars-forty-six-cents-v2.html",
     "sourceStatus": "original",
     "summary": "Across three phone calls threaded through one ordinary workday — a morning break, a lunch hour, and the close of a shift — I found myself witnessing something I was not expecting: the childlike faith of George Mueller breathing through a…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -5568,7 +5568,7 @@ const JC_RECORDS = [
     "href": "records/06-23-theological-meditation-cross-as-v2.html",
     "sourceStatus": "original",
     "summary": "Something arrested me as I listened back to this conversation — not the individual insights scattered throughout, but the single gravitational center they all orbited: the cross as the literal axis of all things. What began as a simple observation about the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -5689,7 +5689,7 @@ const JC_RECORDS = [
     "href": "records/06-24-weight-word-language-waiting-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this conversation unfold — moving from near-death on a highway to tornadoes in Bristol, from the fracture of household covenant to the active posture of waiting on God — I found myself struck not by any single thread but by the weight of all…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -5713,7 +5713,7 @@ const JC_RECORDS = [
     "href": "records/06-24-personal-meditation-ego-death-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with this conversation — moving through the terrain of ego death, fallow ground, a brother’s rebellion, hidden leaven, and the slow unveiling of seeds planted in secret — I recognized the unmistakable fingerprints of God’s stripping work: not…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -5838,7 +5838,7 @@ const JC_RECORDS = [
     "href": "records/06-26-when-covenant-feels-like-v2.html",
     "sourceStatus": "original",
     "summary": "I listened back to this call and something in me would not let it pass quietly into the archive of ordinary conversation. There is a rawness here that I do not want to dress up prematurely, because I think the Holy Spirit is doing something precise in the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -5884,7 +5884,7 @@ const JC_RECORDS = [
     "href": "records/06-26-personal-meditation-paideia-webhooks-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with something that emerged not from a prayer closet or a quiet morning with an open Bible, but from a frustrated afternoon of broken webhooks, zombie server processes, and a wife who needed me before the work was finished. What arrested me in…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -6034,7 +6034,7 @@ const JC_RECORDS = [
     "href": "records/06-29-fire-bones-providence-provision-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this late-night phone call with my brother Samuel, something beneath the ordinary texture of the conversation arrested me — the kind of holy urgency that does not always announce itself with theological language but is nonetheless real. I…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7100,7 +7100,7 @@ const JC_RECORDS = [
     "href": "records/07-10-when-watchman-fears-gate-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this call unfold — through the static of a shower, through broken audio, through a brother’s urgent voice pressing through the noise — I found myself holding something far weightier than a casual check-in. What began as a fraternal exchange…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "urgent",
       "length": "moderate",
@@ -7196,7 +7196,7 @@ const JC_RECORDS = [
     "href": "records/07-11-everything-you-want-except-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother describe this woman — her literary taste, her music, the uncanny alignment of everything he loves reflected back at him in another person — something in me did not rise with excitement. It tightened. I have been here before, not as",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -7342,7 +7342,7 @@ const JC_RECORDS = [
     "href": "records/07-13-my-broke-rich-sound-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with this teaching from Prophet Lovy Elias, three anchoring truths began to press themselves into me with increasing weight: the condition of the mind, the nature of love as a verb, and the difference between being *in* God’s presence and merely…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -7410,7 +7410,7 @@ const JC_RECORDS = [
     "href": "records/07-15-where-were-you-when-v2.html",
     "sourceStatus": "original",
     "summary": "Something in this teaching arrested me the moment the speaker turned to Job — not to comfort Job, not to resolve Job, but to let Job stand in his refusal to accept a tidy theological explanation for his suffering. The suggestion being unfolded here is…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7456,7 +7456,7 @@ const JC_RECORDS = [
     "href": "records/07-15-tested-immediately-after-learning-v2.html",
     "sourceStatus": "original",
     "summary": "There is something deeply recognizable in the brevity of this exchange — two brothers, separated by distance, checking in across a patchy signal with warmth, laughter, and just enough theological honesty to name what is actually happening. What catches me is…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7480,7 +7480,7 @@ const JC_RECORDS = [
     "href": "records/07-16-ordinary-hours-love-fog-v2.html",
     "sourceStatus": "original",
     "summary": "There is something holy hidden in the most unremarkable exchanges — a quick call between a husband and his pregnant wife, scattered across nausea and test-taking and a forgotten straw. As I sit with this brief conversation between Gladys and me, I find myself",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7554,7 +7554,7 @@ const JC_RECORDS = [
     "href": "records/07-17-when-burden-real-bottom-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with a moment so ordinary it almost slips past without notice — a brief exchange between a brother in the Spirit, a wife holding numbers that don’t add up, and a man caught between both conversations, pressed on every side. What arrests me here…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7579,7 +7579,7 @@ const JC_RECORDS = [
     "href": "records/07-18-tent-maker-wilderness-speak-v2.html",
     "sourceStatus": "original",
     "summary": "I sat with my brother Samuel across a screen and across oceans in what may be the rawest hour of his life — homeless, penniless, freshly divorced, uprooted from a life of ten thousand a month and set down in the farmland of Somerset with nothing but a…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -7627,7 +7627,7 @@ const JC_RECORDS = [
     "href": "records/07-20-when-god-sends-confirmation-v2.html",
     "sourceStatus": "original",
     "summary": "There is something that stops me mid-breath when I think about this call — the fact that we both reached for the phone at the same moment, as though the Lord had scheduled the connection without consulting either of us. As I listened to my brother Samuel…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7720,7 +7720,7 @@ const JC_RECORDS = [
     "href": "records/07-20-blood-we-do-not-v2.html",
     "sourceStatus": "original",
     "summary": "A simple question about blood type — asked by my wife in the ordinary rhythm of a morning commute — carried more weight than either of us paused to notice in the moment. We do not know our blood types. And there is a baby coming whose blood will carry the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -7790,7 +7790,7 @@ const JC_RECORDS = [
     "href": "records/07-21-mango-morning-sickness-baby-v2.html",
     "sourceStatus": "original",
     "summary": "There is something quietly sacred about an ordinary lunch break call — mango in hand, a sick and tired wife at home, two cats stealing chips, and somewhere on the left side of her body, a baby growing in secret. I did not expect to find anything worth…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -7862,7 +7862,7 @@ const JC_RECORDS = [
     "href": "records/07-22-mercy-hidden-weakness-dignity-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother open up about recovering from sickness, something quietly arrested me — not in the dramatic theological sense, but in the ordinary, grace-soaked sense. There is a wisdom that visits us only through the door of weakness, and my…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -7982,7 +7982,7 @@ const JC_RECORDS = [
     "href": "records/07-23-kingdom-has-infrastructure-too-v2.html",
     "sourceStatus": "original",
     "summary": "Listening back to this call with my brother Samuel, I am struck by how much Kingdom wisdom was moving through what looked, on the surface, like a business strategy session. The conversation wound through sales infrastructure, financing models, marketing…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -8054,7 +8054,7 @@ const JC_RECORDS = [
     "href": "records/07-27-altar-ordinary-kitchen-v2.html",
     "sourceStatus": "original",
     "summary": "I was on the phone with Gladys, and most of what passed between us was the ordinary weight of a shared life — burnt eggplant, rent due in seven days, a kitten biting cords, forex lessons promised for tomorrow. But threaded through the ordinary was something I",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -8076,7 +8076,7 @@ const JC_RECORDS = [
     "href": "records/07-28-soul-does-not-evaporate-v2.html",
     "sourceStatus": "original",
     "summary": "As I speak these words aloud, I keep returning to a single unshakable conviction: the soul does not die when the body dies. Something in me refuses the notion that a human being simply evaporates into nothingness. I am seeing that the moment of death is not…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "confrontational",
       "length": "brief",
@@ -8313,7 +8313,7 @@ const JC_RECORDS = [
     "href": "records/08-11-gentiles-at-threshold-prophets-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel over the phone tonight — half of it laughter, trains, and the sting of Fireball whiskey — I noticed how the Spirit slipped a real revelation into the middle of our jokes. We began planning to read the birth of Jesus, and…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -8337,7 +8337,7 @@ const JC_RECORDS = [
     "href": "records/08-11-household-hidden-build-man-v2.html",
     "sourceStatus": "original",
     "summary": "As I sit back with this long and winding recording — a single evening that moved from a stolen pizza in the street to hidden database backends, from a brother’s grief over the woman he left to the astonishment that “work is still getting done while we sleep”…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -8387,7 +8387,7 @@ const JC_RECORDS = [
     "href": "records/08-12-unseen-foundation-built-night-v2.html",
     "sourceStatus": "original",
     "summary": "As I sit with this recorded exchange, something quiet arrests me: I had been laboring through the night on a foundation no one could see, building the very backend that makes trust possible — a place where even I, the builder, cannot know another person’s…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -8455,7 +8455,7 @@ const JC_RECORDS = [
     "href": "records/08-13-moving-carcass-reach-honey-v2.html",
     "sourceStatus": "original",
     "summary": "I came onto this call already weighed down, in the middle of my own supplication, and my brother Samuel caught me there mid-intercession. What surfaced was not a tidy prayer request but a raw ache: the grief of standing as the lone altar-keeper in my own…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -8530,7 +8530,7 @@ const JC_RECORDS = [
     "href": "records/08-16-two-loaves-house-drunken-v2.html",
     "sourceStatus": "original",
     "summary": "My brother called me in the thick of his drunkenness, and what began as a slurred, decompression-fogged conversation became a long descent into grief, into the ache of a woman he cannot stop missing, and into the strange mercy of a Father who does not rebuke…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "confrontational",
       "length": "deep",
@@ -8555,7 +8555,7 @@ const JC_RECORDS = [
     "href": "records/08-16-compass-drunk-call-v2.html",
     "sourceStatus": "original",
     "summary": "I was on the phone with my brother Samuel when the whole weight of it landed — a drunk call from a woman named Chloe out of his past, bottles clinking behind her voice, twenty minutes of weeping down the line, and a young man staying strangely calm through…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -8579,7 +8579,7 @@ const JC_RECORDS = [
     "href": "records/08-16-renaissance-fair-made-holy-v2.html",
     "sourceStatus": "original",
     "summary": "I set out to record a family afternoon at the Renaissance festival in West Fargo, and what I carried home was an arrow, a weight of armor, a whispered warning over a tarot booth, and a fur trader’s confession that nothing is wasted. Between goats fed first…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "urgent",
       "length": "deep",
@@ -8649,7 +8649,7 @@ const JC_RECORDS = [
     "href": "records/08-18-he-gave-jesus-door-v2.html",
     "sourceStatus": "original",
     "summary": "I keep hearing the preacher return to those three words — *He gave Jesus* — as though he could not exhaust them, and honestly, neither can I. There is a tension buried in that phrase that the world would rather not touch: that the God so many claim to believe",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -8867,7 +8867,7 @@ const JC_RECORDS = [
     "href": "records/08-21-seat-i-had-no-v2.html",
     "sourceStatus": "original",
     "summary": "My father asked me what was going on, and I heard my own voice fill the phone line with the new welding job — the certifications, the burns on my skin, the Bug-O machine, the crane that nearly crushed a man — and then, almost as an afterthought, I said the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -8913,7 +8913,7 @@ const JC_RECORDS = [
     "href": "records/08-25-when-will-done-debt-v2.html",
     "sourceStatus": "original",
     "summary": "I hung up the phone just before daybreak, my burned arm still throbbing beneath its cream, and I noticed how a single call had carried two weights at once — the sickness of my father and the failure of a promise made to a brother. Jayden called to check on my",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -8963,7 +8963,7 @@ const JC_RECORDS = [
     "href": "records/08-25-ill-catch-you-other-v2.html",
     "sourceStatus": "original",
     "summary": "I called my brother tonight carrying news I could barely speak: my earthly father, Michael, has cancer, and the words for it were a wilderness — pancreas, bones, glands, Mayo Clinic, eight weeks of radiation. My body was already broken from a week of welding,",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -8987,7 +8987,7 @@ const JC_RECORDS = [
     "href": "records/08-25-two-minutes-from-gate-v2.html",
     "sourceStatus": "original",
     "summary": "The whole exchange lasted barely a minute, and yet I keep hearing the weight in my brother’s voice when he realized I was only two minutes from the gate of my workplace. There was an ache in the way he said he’d been praying, in the way he confessed he grew…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -10398,19 +10398,6 @@ const JC_EDGES = [
     "note": "Sequential entries in the \"Jun/Jul remainders + Aug 1-10 body (10)\" cluster.",
     "source": "Pass 6 Cross-References — \"Jun/Jul remainders + Aug 1-10 body (10)\" section."
   },
-
-  /* ─────────────────────────────────────────────────────────────────
-   * Four load-bearing threads (PLAUD Meditations Corpus Map §10).
-   * These edges cross months/clusters — unlike the "continues" edges
-   * above (same pass-cluster adjacency), each pair here follows one
-   * of the corpus's four named threads (Zechariah 3 / Samuel Loop /
-   * Murmuration / the Descent) from the Corpus Map itself. Where the
-   * Corpus Map names a hinge meditation that hasn't resolved to a
-   * local reviewed page yet (e.g. Mar 17 Kenosis, Jun 4 Burning Bush),
-   * the edge says so plainly rather than silently skipping the gap.
-   * `thread` groups these for the Threads page; `type: "echoes"` marks
-   * them as distinct from ordinary same-cluster continuation.
-   * ───────────────────────────────────────────────────────────────── */
   {
     "from": "03-25-personal-meditation-obedience-hiddenness",
     "to": "02-25-meditation-joseph-paul-severe",
@@ -10599,6 +10586,430 @@ const JC_EDGES = [
     "status": "editorial",
     "note": "The Descent's local witness leaps from the Rampart to the Aug 30 harvest of hiddenness — three brothers, three countries, four AM in Australia.",
     "source": "PLAUD Meditations Corpus Map §10 — Thread 4 · The Descent Into Hiddenness, \"Harvest of hiddenness\" hinge."
+  },
+  {
+    "from": "03-14-personal-meditation-crucible-false",
+    "to": "03-13-personal-meditation-trembling-yes",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 13-19 remainders (5)\" cluster (writing-as-reception discipline named).",
+    "source": "Pass 7 Cross-References — \"Mar 13-19 remainders (5)\" section."
+  },
+  {
+    "from": "03-14-meditation-doctrine-presence-being",
+    "to": "03-14-personal-meditation-crucible-false",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 13-19 remainders (5)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 13-19 remainders (5)\" section."
+  },
+  {
+    "from": "03-19-meditation-spiritual-liberation-from",
+    "to": "03-14-meditation-doctrine-presence-being",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 13-19 remainders (5)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 13-19 remainders (5)\" section."
+  },
+  {
+    "from": "03-25-meditation-honesty-before-god",
+    "to": "03-25-personal-meditation-spirit-perdition",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" section."
+  },
+  {
+    "from": "03-25-personal-meditation-kenosis-death",
+    "to": "03-25-meditation-honesty-before-god",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" section."
+  },
+  {
+    "from": "03-27-personal-meditation-illusion-cliff",
+    "to": "03-25-personal-meditation-kenosis-death",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" cluster (pre-doctrinal exousia).",
+    "source": "Pass 7 Cross-References — \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" section."
+  },
+  {
+    "from": "03-27-personal-meditation-hidden-mathematics",
+    "to": "03-27-personal-meditation-illusion-cliff",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" section."
+  },
+  {
+    "from": "03-27-meditation-hebrews-12-divine",
+    "to": "03-27-personal-meditation-hidden-mathematics",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" cluster.",
+    "source": "Pass 7 Cross-References — \"Mar 25-27 late-Volume-I (6) — Mar 25 four-meditation day fully threaded\" section."
+  },
+  {
+    "from": "04-25-when-kitchen-burns-road",
+    "to": "04-23-when-drinking-stops-grief",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster (external confirming voice).",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "04-26-when-mask-falls-wilderness",
+    "to": "04-25-when-kitchen-burns-road",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster (**corpus-self-awareness first named**).",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "04-28-mercy-parking-lot-lesson-2",
+    "to": "04-26-when-mask-falls-wilderness",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "04-29-light-that-breaks-descent",
+    "to": "04-28-mercy-parking-lot-lesson-2",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "04-29-false-ascent-narrow-door",
+    "to": "04-29-light-that-breaks-descent",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "04-30-when-voice-you-trust",
+    "to": "04-29-false-ascent-narrow-door",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Apr 23-30 late Volume II (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Apr 23-30 late Volume II (7)\" section."
+  },
+  {
+    "from": "06-01-refusing-escapism-returning-first",
+    "to": "06-03-reflection-provision-warfare-truth-telling",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "06-02-altar-return-training-ground",
+    "to": "06-01-refusing-escapism-returning-first",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster (δοῦλος identity named).",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "06-04-burning-bush-old-refuge",
+    "to": "06-02-altar-return-training-ground",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "06-05-when-spirit-intercepts-counterfeit",
+    "to": "06-04-burning-bush-old-refuge",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "06-10-five-dollars-nineteen-cents",
+    "to": "06-05-when-spirit-intercepts-counterfeit",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "06-10-five-dollars-forty-six-cents",
+    "to": "06-10-five-dollars-nineteen-cents",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 5-13 bridge (7)\" cluster.",
+    "source": "Pass 7 Cross-References — \"Jun 5-13 bridge (7)\" section."
+  },
+  {
+    "from": "08-25-ill-catch-you-other",
+    "to": "08-21-seat-i-had-no",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "08-25-two-minutes-from-gate",
+    "to": "08-25-ill-catch-you-other",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "08-25-when-will-done-debt",
+    "to": "08-25-two-minutes-from-gate",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "07-10-when-watchman-fears-gate",
+    "to": "08-25-when-will-done-debt",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "07-11-everything-you-want-except",
+    "to": "07-10-when-watchman-fears-gate",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "07-13-my-broke-rich-sound",
+    "to": "07-11-everything-you-want-except",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "07-15-where-were-you-when",
+    "to": "07-13-my-broke-rich-sound",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" cluster.",
+    "source": "Pass 7 Cross-References — \"Aug 22-28 pre-close + Jul 8-16 fill (10) — Aug 25 Fourth-Watch triple threaded, Jul 10-16 arc completed\" section."
+  },
+  {
+    "from": "06-29-fire-bones-providence-provision",
+    "to": "03-01-when-world-shaking-crib",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" cluster (priestly identity ontologized).",
+    "source": "Pass 8 Cross-References — \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" section."
+  },
+  {
+    "from": "03-07-summary-obedience-spiritual-victory",
+    "to": "06-29-fire-bones-providence-provision",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" section."
+  },
+  {
+    "from": "03-13-reflection-performance-vs-presence",
+    "to": "03-07-summary-obedience-spiritual-victory",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Earliest days · Mar 1 pair + Mar 7 + Mar 13 sibling (4)\" section."
+  },
+  {
+    "from": "05-16-faithful-small-things-meditation",
+    "to": "05-14-midnight-desk-open-word",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May 16 conversation-reflection family (4 twins) — day fully threaded\" cluster.",
+    "source": "Pass 8 Cross-References — \"May 16 conversation-reflection family (4 twins) — day fully threaded\" section."
+  },
+  {
+    "from": "05-16-when-altar-holds-engine",
+    "to": "05-16-faithful-small-things-meditation",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May 16 conversation-reflection family (4 twins) — day fully threaded\" cluster.",
+    "source": "Pass 8 Cross-References — \"May 16 conversation-reflection family (4 twins) — day fully threaded\" section."
+  },
+  {
+    "from": "06-24-weight-word-language-waiting",
+    "to": "06-23-theological-meditation-cross-as",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 24-27 (7)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jun 24-27 (7)\" section."
+  },
+  {
+    "from": "06-24-personal-meditation-ego-death",
+    "to": "06-24-weight-word-language-waiting",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 24-27 (7)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jun 24-27 (7)\" section."
+  },
+  {
+    "from": "06-26-personal-meditation-paideia-webhooks",
+    "to": "06-24-personal-meditation-ego-death",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 24-27 (7)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jun 24-27 (7)\" section."
+  },
+  {
+    "from": "06-26-when-covenant-feels-like",
+    "to": "06-26-personal-meditation-paideia-webhooks",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jun 24-27 (7)\" cluster (65-day anticipation of Aug 30 three-brother study).",
+    "source": "Pass 8 Cross-References — \"Jun 24-27 (7)\" section."
+  },
+  {
+    "from": "07-16-ordinary-hours-love-fog",
+    "to": "07-15-tested-immediately-after-learning",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-17-when-burden-real-bottom",
+    "to": "07-16-ordinary-hours-love-fog",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster (**the Elijah arc's second pregnancy**).",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-18-tent-maker-wilderness-speak",
+    "to": "07-17-when-burden-real-bottom",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-20-blood-we-do-not",
+    "to": "07-18-tent-maker-wilderness-speak",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-20-when-god-sends-confirmation",
+    "to": "07-20-blood-we-do-not",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-21-mango-morning-sickness-baby",
+    "to": "07-20-when-god-sends-confirmation",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-22-mercy-hidden-weakness-dignity",
+    "to": "07-21-mango-morning-sickness-baby",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-23-kingdom-has-infrastructure-too",
+    "to": "07-22-mercy-hidden-weakness-dignity",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-27-altar-ordinary-kitchen",
+    "to": "07-23-kingdom-has-infrastructure-too",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster.",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "07-28-soul-does-not-evaporate",
+    "to": "07-27-altar-ordinary-kitchen",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Jul 17-30 remainder (10)\" cluster (**doctrine 20 days before Aug 17 seam**).",
+    "source": "Pass 8 Cross-References — \"Jul 17-30 remainder (10)\" section."
+  },
+  {
+    "from": "08-11-household-hidden-build-man",
+    "to": "08-11-gentiles-at-threshold-prophets",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster.",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-12-unseen-foundation-built-night",
+    "to": "08-11-household-hidden-build-man",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster.",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-13-moving-carcass-reach-honey",
+    "to": "08-12-unseen-foundation-built-night",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster.",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-16-compass-drunk-call",
+    "to": "08-13-moving-carcass-reach-honey",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster.",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-16-two-loaves-house-drunken",
+    "to": "08-16-compass-drunk-call",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster (**three-register braid; day of Internal Orientation writing**).",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-16-renaissance-fair-made-holy",
+    "to": "08-16-two-loaves-house-drunken",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster (**the answer the Aug 17 · 19:05 seam missed**).",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
+  },
+  {
+    "from": "08-18-he-gave-jesus-door",
+    "to": "08-16-renaissance-fair-made-holy",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" cluster (seam's diagnosis 24 hours later).",
+    "source": "Pass 8 Cross-References — \"Aug 6-18 gap-fill (10) — Aug 17 sermon-and-seam pair identified\" section."
   }
 ];
 
