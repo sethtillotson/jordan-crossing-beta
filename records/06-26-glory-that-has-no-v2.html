@@ -32,7 +32,7 @@
     <div class="main-container">
       <!-- RECORD HEADER -->
       <div class="record-header">
-        <p class="record-caption">Original Record · Local Corpus Bundle · Not Yet Reviewed</p>
+        <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">The Glory That Has No Room for Your Strategy</h1>
         <p class="page-subtitle">Jun 26, 2026 · 15:03</p>
 
@@ -43,7 +43,7 @@
 
         <div class="callout">
           <p class="caption">Source Status</p>
-          <p>This record has been mirrored into the app from the author’s own corpus but has not yet been reviewed against the Cross-Reference passes — so no thread connections are shown for it yet. The original text below is exactly as recorded.</p>
+          <p>This page displays the imported source text itself. Editorial thread links are outside this record and are labeled separately.</p>
         </div>
       </div>
 
@@ -161,93 +161,37 @@ Father, I come before You with gratitude for the covenant You have woven between
         <div class="discern-choices" role="group" aria-label="Choose your response">
           <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-recognized">
             <span class="discern-choice__icon" aria-hidden="true">◈</span>
-            I recognized something.
+            I recognized something
           </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-challenged">
-            <span class="discern-choice__icon" aria-hidden="true">△</span>
-            I was challenged.
-          </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-unclear">
-            <span class="discern-choice__icon" aria-hidden="true">◌</span>
-            I did not understand.
-          </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-disagree">
-            <span class="discern-choice__icon" aria-hidden="true">⊘</span>
-            I disagree.
-          </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-scripture">
-            <span class="discern-choice__icon" aria-hidden="true">✦</span>
-            I want to examine the Scripture.
-          </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-sit">
-            <span class="discern-choice__icon" aria-hidden="true">·</span>
-            I need to sit with this.
-          </button>
-
-          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-question">
+          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-uncertain">
             <span class="discern-choice__icon" aria-hidden="true">◇</span>
-            This brought another question.
+            I'm not sure yet
+          </button>
+          <button class="discern-choice" type="button" aria-pressed="false" data-reveals="discern-resisted">
+            <span class="discern-choice__icon" aria-hidden="true">◆</span>
+            I want to resist this
           </button>
         </div>
 
-        <div class="discern-response" id="discern-recognized">
-          <p class="discern-response-text">
-            <strong>You recognized something.</strong> That recognition is itself worth noting. What you encountered became visible—the pattern, the truth, the moment. Hold it gently. Return to the record if the recognition deepens or shifts.
-          </p>
+        <div class="discern-reveal" id="discern-recognized" hidden>
+          <p>Good. Let it be named plainly, in your own words if you wish — not required, not tracked.</p>
         </div>
-
-        <div class="discern-response" id="discern-challenged">
-          <p class="discern-response-text">
-            <strong>You were challenged.</strong> The record pressed against something in you. That pressure can become formation if you do not resist it. What challenged you most? That may be the question worth sitting with.
-          </p>
+        <div class="discern-reveal" id="discern-uncertain" hidden>
+          <p>That is an honest place to stand. Uncertainty is not a failure to discern — it may be its own discernment.</p>
         </div>
-
-        <div class="discern-response" id="discern-unclear">
-          <p class="discern-response-text">
-            <strong>You did not understand.</strong> That is honest. This record may be too dense, too personal, or too far ahead of where you are. You might read the surrounding records, or return to this one later when more context arrives. Not every record is for every reader at every moment.
-          </p>
-        </div>
-
-        <div class="discern-response" id="discern-disagree">
-          <p class="discern-response-text">
-            <strong>You disagree.</strong> The site is confident enough to permit refusal. What specifically conflicts with what you know or believe? That disagreement may itself be instructive—and it is valid.
-          </p>
-        </div>
-
-        <div class="discern-response" id="discern-scripture">
-          <p class="discern-response-text">
-            <strong>You want to examine the Scripture.</strong> The record cites many passages. Read them directly in your preferred translation. Compare with what the record says. The original word often speaks louder than commentary on it.
-          </p>
-        </div>
-
-        <div class="discern-response" id="discern-sit">
-          <p class="discern-response-text">
-            <strong>You need to sit with this.</strong> That may be the most faithful response. You do not need to resolve this today. Hold the question. Let it work on you. The Spirit often moves more in silence than in clarity.
-          </p>
-        </div>
-
-        <div class="discern-response" id="discern-question">
-          <p class="discern-response-text">
-            <strong>This brought another question.</strong> Questions often matter more than answers. If you can name the question, you have taken a step toward wisdom. The record may have opened a door you did not know existed.
-          </p>
+        <div class="discern-reveal" id="discern-resisted" hidden>
+          <p>Resistance is worth noticing, not overriding. What about it resists you?</p>
         </div>
       </section>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY -->
-      <section class="carry-question-section" aria-label="Carry a question forward">
-        <h3 class="carry-heading">Carry a question forward</h3>
-        <p class="carry-description">
-          If something in this record opened a question you want to keep, you can save it here. It is stored only on your device — no account, no server, no data collected.
-        </p>
+      <!-- MOVEMENT 2: CARRY A QUESTION -->
+      <section class="carry-section" aria-label="Carry a question forward">
+        <p class="carry-prompt">Is there a question this record leaves you with?</p>
+        <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
 
-        <div class="carry-controls">
+        <div class="carry-panel">
           <div class="carry-button-group">
             <button class="btn btn-primary" type="button" id="carry-btn">
               Carry this question forward

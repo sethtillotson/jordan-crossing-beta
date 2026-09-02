@@ -211,6 +211,35 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 ---
 
+## [1.8] — September 2, 2026
+
+### Added
+
+#### Phase 8: Pass 14–16 Integrated (91.3% Reviewed); Full Thread-Claim Audit Across All Pass Docs
+- **`scripts/integrate-passes-14-16.mjs`** — same generalization pattern as [1.7] (only `PASS_FILES` changed). Integrates Pass 14 (re-uploaded with corrected `memo:` links after an initial link-less version couldn't be resolved), Pass 15, and Pass 16 — archive coverage 328→419 (91.3% of the corpus's own 459-file working count).
+- **Result:** 105 entries parsed across the three passes; 77 mirrored records promoted to reviewed, 0 brand-new pages, 73 new same-cluster edges, 1 resolved file rejected as not-a-meditation, 19 entries left unresolved (mostly genuinely not-yet-uploaded files). Totals: **346 reviewed / 48 mirrored / 325 edges**, out of the same 394 total records and 4 named threads. Verified identically to [1.6]/[1.7]: integrity check, before/after diff confirming exactly 77 promotions, re-tagged encounter dimensions, live-fetched a promoted page. Refreshed the same three stale-copy locations again, to 346/48/sixteen-passes.
+- **Audited every pass doc (7 through 16) for named-thread claims not yet captured as edges**, per explicit owner request. Found 4 direct thread tags ("Samuel Loop's ... document," "Zech 3 courtroom first named") and 5 explicit multi-file narrative chains named in "Milestones this pass" prose (father-cancer arc and secret-place lineage in Pass 5, corpus-self-awareness lineage in Pass 8, Jer 20:9 fire-in-bones spine in Pass 14, Jonah-arc in Pass 15) that the same-cluster edge builder never captures, since it only links entries within one pass's own numbered group.
+- **Verified all 6 fully-resolvable candidates against their resolved file's own real body content (never filename) before adding anything** — every one showed a content/filename mismatch already flagged as a corpus data-quality issue in [1.5], now confirmed to recur specifically wherever a pass doc's milestone prose names a cross-file narrative arc, across five different passes. **Declined to fabricate these 6 edges** rather than risk an edge whose citation contradicts the record it points to; all 8 affected records already carry other, independently-verified same-cluster edges, so none are orphaned.
+
+### Known Limitations
+
+- ~48 meditations remain mirrored but not yet cross-referenced (Pass 16 itself projects a Pass 17 "closing sweep" for the last ~40 files).
+- 19 unresolved Pass 14–16 references need manual resolution — mostly not-yet-uploaded files.
+- 6 milestone-named cross-pass narrative chains need the author's own hands-on verification against their private drive before they can safely become thread edges — this repository's local mirror shows content/filename mismatches for every file checked in these chains.
+- This is now the third release in a row where hardcoded landing/threads/paths copy drifted from the underlying data and had to be manually refreshed; a future refactor could compute these figures from `JC_RECORDS` at page-render time instead of as static text.
+- Audio remains out of scope per owner direction; unchanged from [1.3]–[1.7].
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
+
 ## [Beta 1.0] — June 2026
 
 ### Initial Release (Private)

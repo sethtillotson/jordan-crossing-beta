@@ -4,7 +4,7 @@
 
 **Status:** Interior Beta · Private workspace · Not for public distribution
 **Last major update:** September 2, 2026
-**Local corpus:** 394 records readable locally (269 reviewed & threaded, 125 mirrored) of 451 in the direct archive
+**Local corpus:** 394 records readable locally (346 reviewed & threaded, 48 mirrored) of 451 in the direct archive
 **Corpus version:** v11 (`jordan-crossing-interior.html`, preserved untouched)
 
 > This repository is a **private working beta**, not a public release. Every page in the site
@@ -40,13 +40,13 @@ the author's own Corpus Map documents were never uploaded here). Per the project
 design document, the corpus is introduced **in reviewed layers** for *interpretation* — but every
 uploaded meditation's own text is available locally regardless of review status:
 
-- **269 records are fully reviewed and threaded** as complete pages under `records/*-v2.html` —
-  the original 7 curated "Tablet VIII" seeds (Aug 29–30, 2026) plus 262 more meditations resolved
-  from **thirteen dated Cross-Reference passes** (documented editorial review, not automated bulk import).
+- **346 records are fully reviewed and threaded** as complete pages under `records/*-v2.html` —
+  the original 7 curated "Tablet VIII" seeds (Aug 29–30, 2026) plus 339 more meditations resolved
+  from **sixteen dated Cross-Reference passes** (documented editorial review, not automated bulk import).
   Every reviewed record carries labeled, source-cited connections to other records — `continues`,
   `answers`, `open question`, or `echoes` (a cross-month thread bridge) — each traceable to the
   specific pass or map section that justifies it. Nothing is asserted without a citation.
-- **125 more records are "mirrored"** — the complete original text, the same interactive page, but
+- **48 more records are "mirrored"** — the complete original text, the same interactive page, but
   no thread connections claimed yet since none have been reviewed for them. Browse both kinds from
   [`archive.html`](archive.html), searchable and organized by month.
 - **Four named threads** run underneath the reviewed chronology, traced meditation-by-meditation in
@@ -66,7 +66,7 @@ uploaded meditation's own text is available locally regardless of review status:
 | Page | Purpose |
 |------|---------|
 | [`index.html`](index.html) | Landing page: corpus overview, entry invitations, and first-draft Chronological/Thematic/Encounter navigation maps |
-| [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across the 269 reviewed records |
+| [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across the 346 reviewed records |
 | [`threads.html`](threads.html) | The reviewed thread constellation — full chronology, per-thread filters, and full-text search |
 | [`paths.html`](paths.html) | Nine curated reading paths through the corpus (doctrinal spine, Samuel Loop, Murmuration, Descent, Zechariah 3, the Gaze, Surrender & Obedience, Identity & Transformation, Waiting & Timing) |
 | [`archive.html`](archive.html) | A full, searchable, month-by-month browsable index of all 394 local records (reviewed and mirrored alike), each linking directly to its page |
@@ -83,13 +83,13 @@ uploaded meditation's own text is available locally regardless of review status:
 │   ├── design-v2-logic.js         # Page init, Markdown rendering, graph nav, thread connections,
 │   │                               #   related records, audio player init, no-interpretation mode
 │   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
-│   ├── records-data.js            # JC_RECORDS (394 records: 269 reviewed + 125 mirrored),
-│   │                               #   JC_EDGES (252 edges), JC_THREADS (4)
+│   ├── records-data.js            # JC_RECORDS (394 records: 346 reviewed + 48 mirrored),
+│   │                               #   JC_EDGES (325 edges), JC_THREADS (4)
 │   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the nine curated reading paths
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
 │   └── beta.js/.css               # Legacy logic, kept for compatibility
 ├── records/
-│   ├── *-v2.html                  # 394 local record pages: 269 reviewed + 125 mirrored
+│   ├── *-v2.html                  # 394 local record pages: 346 reviewed + 48 mirrored
 │   ├── *.html (no -v2 suffix)     # Superseded originals, kept as historical artifacts only
 │   └── *.md                       # Raw meditation source mirror (411 files, committed — see below)
 ├── scripts/
@@ -102,6 +102,8 @@ uploaded meditation's own text is available locally regardless of review status:
 │   │                               #   Cross-References, adds their same-cluster edges
 │   ├── integrate-passes-9-13.mjs  # Generator: promotes mirrored records to reviewed per Pass 9-13
 │   │                               #   "Encounter Edition" Cross-References, adds their edges
+│   ├── integrate-passes-14-16.mjs # Generator: promotes mirrored records to reviewed per Pass 14-16
+│   │                               #   "Encounter Edition" Cross-References, adds their edges
 │   ├── tag-encounter-dimensions.mjs # Computes Encounter Index dimensions + doorway themes
 │   └── relink-corpus-paths.mjs    # Confirms and relinks Corpus Paths steps to local pages
 ├── index.html, mystery.html, threads.html, paths.html, archive.html, record.html
@@ -112,7 +114,7 @@ uploaded meditation's own text is available locally regardless of review status:
 
 **Also present in this repository:** the raw `records/*.md` source meditations (411 files),
 `Corpus Map.md`, `PLAUD Meditations Corpus Map.md`, and the
-`Pass 1–13 *-Cross-References.md` documents. This is the private "Personal Space" source layer the
+`Pass 1–16 *-Cross-References.md` documents. This is the private "Personal Space" source layer the
 generators read from — committed because this repository remains a private Interior Beta, not a
 public deploy. All 394 locally published meditations (reviewed and mirrored) are surfaced in the
 live site's navigation, primarily via `archive.html`.
@@ -124,7 +126,7 @@ too large for GitHub, hosted separately.
 
 ## Mystery Mode doorways
 
-Eleven questions/states, each drawing from a **keyword-matched pool across all 269 reviewed
+Eleven questions/states, each drawing from a **keyword-matched pool across all 346 reviewed
 records** (not a single fixed destination) — the originally curated record always stays in the
 pool as a guaranteed fallback:
 
@@ -215,14 +217,15 @@ search-and-replace it across every referencing page, not just the one you edited
 resolves newly added entries to source meditation files, regenerates the reviewed `-v2.html` pages,
 and rebuilds the generated portion of `assets/records-data.js` (`JC_RECORDS` and same-cluster
 `JC_EDGES`). It does **not** touch the hand-authored `JC_THREADS` array, the cross-month `"echoes"`
-edges, the `encounter`/`doorwayThemes`/`reviewed` fields, the mirrored records, or the Pass 7-13
+edges, the `encounter`/`doorwayThemes`/`reviewed` fields, the mirrored records, or the Pass 7-16
 promotions — see its own header comment for the exact recovery order. After it runs, in order:
 
 1. `node scripts/build-mirror-records.mjs` — mirrors any raw file not already reviewed
 2. `node scripts/integrate-passes-7-8.mjs` — promotes mirrored records per Pass 7/8, adds their edges
 3. `node scripts/integrate-passes-9-13.mjs` — promotes mirrored records per Pass 9-13, adds their edges
-4. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
-5. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
+4. `node scripts/integrate-passes-14-16.mjs` — promotes mirrored records per Pass 14-16, adds their edges
+5. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
+6. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
 
 ---
 
@@ -246,11 +249,14 @@ current list. In brief:
       source file (truncated/inconsistent export filenames)
 - [ ] Manually resolve the 27 Corpus Paths steps that couldn't be confidently confirmed as a local
       meditation — see `assets/corpus-paths-data.js`'s header for the specific reason each one failed
-- [ ] Review and cross-reference the 125 mirrored meditations against future Cross-Reference passes
-      to move them from "mirrored" to "reviewed" (Passes 7-13 — 177 entries, archive coverage
-      171→328 — were integrated in [1.6]/[1.7]; the author is actively deepening cross-reference work
-      further — doctrinal-spine thread joints, lexicon joints, expanded chiastic mirror, tablet
-      anchor with verifiable phrase — for future passes)
+- [ ] Review and cross-reference the 48 mirrored meditations against future Cross-Reference passes
+      to move them from "mirrored" to "reviewed" (Passes 7-16 — 341 entries, archive coverage
+      171→419, 91.3% — were integrated in [1.6]/[1.7]/[1.8]; Pass 16 itself recommends a Pass 17
+      "closing sweep" targeting the remaining ~40 files for full completion)
+- [ ] Manually verify 6 milestone-named cross-pass narrative chains (father-cancer arc, secret-place
+      lineage, corpus-self-awareness lineage, Jer 20:9 fire-in-bones spine, Jonah-arc) against the
+      author's private drive — this repository's local mirror shows content/filename mismatches for
+      every file checked in these specific chains, so they were not added as thread edges (see [1.8])
 - [ ] Upload the 8 Aug 31/Sep 1, 2026 "fresh imports" Pass 13 itself names (including the corpus's
       first September folder) so they can be resolved and mirrored/reviewed like the rest
 - [ ] Upload the ~41 meditations the Corpus Map documents but which aren't yet present in this
