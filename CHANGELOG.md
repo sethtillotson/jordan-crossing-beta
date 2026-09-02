@@ -142,7 +142,35 @@ The Jordan Crossing is now publicly available for reading and reflection.
 - 27 of 48 Corpus Paths steps remain external, each with a specific printed reason (no same-day local match, or a same-day candidate whose title doesn't actually cover the step's label).
 - ~41 meditations documented in the author's own Corpus Map (451 total) were never uploaded to this repository (410 raw files present) and cannot be mirrored until they are.
 - Audio remains out of scope per owner direction; unchanged from [1.3]/[1.4].
-- Pass 7 and Pass 8 Cross-References (70 more entries, archive coverage 171→241) have been received but not yet integrated into the reviewed-record generator.
+- Pass 7 and Pass 8 Cross-References (70 more entries, archive coverage 171→241) have been received and were integrated in [1.6].
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
+
+## [1.6] — September 2, 2026
+
+### Added
+
+#### Phase 6: Pass 7/8 Cross-References Integrated into the Reviewed Layer
+- **`scripts/integrate-passes-7-8.mjs`** — an additive script (same splice-in-place technique as `tag-encounter-dimensions.mjs`/`build-mirror-records.mjs`) that resolves each Pass 7/8 Cross-Reference entry to its existing `JC_RECORDS` entry, then either leaves an already-reviewed match untouched, **promotes** an already-mirrored match to `reviewed: true` (regenerating its page in place with the reviewed-copy template — same `id`/`href`, so nothing that already links to it breaks), or generates a brand-new reviewed page for a match that was never mirrored. Builds new same-cluster edges from each pass's own numbered groups, exactly as `build-corpus-records.mjs` does for Passes 1–6.
+- **Result:** 63 mirrored records promoted to reviewed, 53 new same-cluster edges, 7 entries left unresolved (logged, not fatal — the same kind of filename/content mismatch already flagged in [1.5]). Totals: **201 reviewed / 193 mirrored / 195 edges**, out of 394 total local records and the same 4 named threads.
+- **Verified via a disposable data-integrity check**: record/edge/thread counts match the script's reported totals, zero duplicate ids or hrefs, chronological `order` contiguous across the merged set, and every edge/thread reference resolves to a real record. Re-ran `tag-encounter-dimensions.mjs` (idempotent) so all 63 newly-promoted records carry `encounter`/`doorwayThemes`. Spot-checked promoted pages directly to confirm they render the reviewed-copy template, not the "Not Yet Reviewed" mirrored placeholder.
+- **Refreshed stale hardcoded copy** on `index.html`, `threads.html`, and `paths.html` that still quoted the old 138 reviewed / 256 mirrored / six-pass totals (these were static text, not computed from `JC_RECORDS`). `archive.html`'s figures and Mystery Mode's doorway pools are both computed live from `JC_RECORDS` at runtime and needed no code change — only a stale explanatory comment in `mystery-v2-logic.js` was corrected.
+
+### Known Limitations
+
+- ~193 meditations remain mirrored but not yet cross-referenced.
+- 7 unresolved Pass 7/8 references need the same manual filename-resolution already flagged in [1.5] as a corpus data-quality issue, not an engineering gap.
+- The author is actively deepening cross-reference work for a future Pass 9+ (doctrinal-spine thread joints and quoted-phrase pairs, lexicon joints with earliest sibling, an expanded chiastic mirror, and a tablet anchor with verifiable phrase); `integrate-passes-7-8.mjs`'s resolve → promote-or-create → build-edges pattern generalizes directly to that integration once filed.
+- Audio remains out of scope per owner direction; unchanged from [1.3]/[1.4]/[1.5].
 
 ### Technical Details
 

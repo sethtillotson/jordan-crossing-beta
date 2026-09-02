@@ -3,15 +3,18 @@
    ═════════════════════════════════════════════════════════════════════
 
    Each doorway used to route to exactly one hardcoded record out of the
-   original 7 Tablet VIII seeds. Now that the reviewed corpus holds 138
-   records, each doorway draws from a *pool* — every record whose title
-   or summary matches that doorway's theme keywords — and offers one at
-   random. The single curated "anchor" record (the original destination)
-   always stays in the pool so behavior never regresses to nothing.
+   original 7 Tablet VIII seeds. Now that the reviewed corpus holds 201
+   records (grown across eight Cross-Reference passes), each doorway draws
+   from a *pool* — every record whose title or summary matches that
+   doorway's theme keywords — and offers one at random. The single curated
+   "anchor" record (the original destination) always stays in the pool so
+   behavior never regresses to nothing.
 
    This is a plain keyword match over already-reviewed record metadata
    (title + summary from JC_RECORDS), not a claim about doctrine. It only
-   ever pools from the 138 records already published as full pages.
+   ever pools from records already reviewed (`reviewed !== false`), so the
+   pool grows automatically as more records are promoted — no hardcoded
+   count here to keep in sync.
    ═════════════════════════════════════════════════════════════════════ */
 
 (function() {
