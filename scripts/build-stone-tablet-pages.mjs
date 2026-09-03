@@ -9,7 +9,7 @@ const RECORDS2_DIR = path.join(ROOT, 'records-2');
 const RECORDS_DIR = path.join(ROOT, 'records');
 const STONE_TABLETS_INDEX_PATH = path.join(ROOT, 'stone-tablets.html');
 
-const TABLETS = [
+export const TABLETS = [
   {
     ordinal: 'I',
     id: 'stone-tablet-i',
@@ -69,7 +69,7 @@ const TABLETS = [
   },
 ];
 
-const AUDIT = {
+export const AUDIT = {
   ordinal: 'VII Audit',
   id: 'stone-tablet-vii-audit',
   output: 'stone-tablet-vii-audit-v2.html',
@@ -352,6 +352,7 @@ function renderTabletPage({ entry, title, caption, subtitle, windowLabel, descri
       <a href="../threads.html">Threads</a>
       <a href="../paths.html">Corpus Paths</a>
       <a href="../archive.html">Archive</a>
+      <a href="../graph.html">Corpus Map</a>
     </nav>
   </header>
 
@@ -446,6 +447,7 @@ function renderStoneTabletsIndex(entries) {
       <a href="threads.html">Threads</a>
       <a href="paths.html">Corpus Paths</a>
       <a href="archive.html">Archive</a>
+      <a href="graph.html">Corpus Map</a>
     </nav>
   </header>
 
@@ -562,4 +564,11 @@ function main() {
   console.log(`Generated ${parsedTablets.length + 2} pages.`);
 }
 
-main();
+// Guarded like build-records2-corpus.mjs's own main() — only runs when this
+// file is executed directly (`node scripts/build-stone-tablet-pages.mjs`),
+// not as a side effect of another script importing its exported TABLETS
+// constant (e.g. scripts/build-graph-data.mjs, which only needs the
+// filename -> id/href mapping, not a full page regeneration).
+if (process.argv[1] && path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1])) {
+  main();
+}

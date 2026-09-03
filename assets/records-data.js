@@ -2,7 +2,7 @@
  * Jordan Crossing Beta — Record Metadata & Reviewed Thread Edges
  * Single source of truth for prev/next chronology and labeled bridges.
  *
- * Last updated: 2026-09-03T14:39:04.893Z (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification + Phase 14 joint-type reconciliation)
+ * Last updated: 2026-09-03T15:16:12.804Z (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification + Phase 14 joint-type reconciliation)
  *
  * IMPORTANT — governance:
  * - `order` is pure chronological fact (recorded date/time). Always safe to show.

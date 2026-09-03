@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Corpus Map — The Jordan Crossing</title>
+  <meta name="description" content="A living network map of the whole corpus — every record and Stone Tablet as a node, every verified connection as an edge, sized and colored by the corpus's own structure.">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260903BETA3">
+  <link rel="stylesheet" href="assets/graph.css?v=20260903BETA3">
+</head>
+<body data-record-id="corpus-map-beta" class="graph-page-body">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="beta-banner" role="banner">
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-title">The Jordan Crossing</a>
+    <nav class="record-nav" aria-label="Site navigation">
+      <a href="index.html">Landing</a>
+      <a href="mystery.html">Mystery Mode</a>
+      <a href="threads.html">Threads</a>
+      <a href="paths.html">Corpus Paths</a>
+      <a href="archive.html">Archive</a>
+      <a href="graph.html" aria-current="page">Corpus Map</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="graph-main">
+    <div class="graph-page-header">
+      <p class="record-caption">Follow the Movement · Whole-Corpus Network</p>
+      <h1 class="page-title">The Corpus Map</h1>
+      <p class="page-subtitle" id="graph-stats-subtitle">Loading corpus network…</p>
+    </div>
+
+    <div class="graph-shell">
+      <!-- Left rail: search, filters, legend -->
+      <aside class="graph-rail graph-rail-left" id="graph-rail-left" aria-label="Map controls">
+        <button type="button" class="graph-rail-toggle" id="graph-rail-left-toggle" aria-expanded="true" aria-controls="graph-rail-left-body">
+          <span>Controls</span><span class="graph-rail-toggle-icon">‹</span>
+        </button>
+        <div class="graph-rail-body" id="graph-rail-left-body">
+
+          <div class="graph-control-group">
+            <label for="graph-search" class="graph-control-label">Search <kbd>/</kbd></label>
+            <input type="text" id="graph-search" placeholder="Search by title or id…" autocomplete="off">
+          </div>
+
+          <div class="graph-control-group">
+            <p class="graph-control-label">Node types</p>
+            <label class="graph-checkbox"><input type="checkbox" id="graph-type-meditation" checked> Meditations</label>
+            <label class="graph-checkbox"><input type="checkbox" id="graph-type-stone_tablet" checked> Stone Tablets</label>
+            <label class="graph-checkbox"><input type="checkbox" id="graph-type-external" checked> External references</label>
+          </div>
+
+          <div class="graph-control-group">
+            <label class="graph-checkbox"><input type="checkbox" id="graph-bridges-only"> Bridges only</label>
+            <p class="graph-control-hint">Show only the top 5% of connections that structurally bridge distinct parts of the corpus.</p>
+          </div>
+
+          <div class="graph-control-group">
+            <label for="graph-size-slider" class="graph-control-label">Hide nodes below centrality percentile</label>
+            <input type="range" id="graph-size-slider" min="0" max="95" step="5" value="0">
+            <p class="graph-control-hint" id="graph-size-slider-value">Showing all nodes</p>
+          </div>
+
+          <div class="graph-control-group">
+            <p class="graph-control-label">Communities</p>
+            <p class="graph-control-hint">Click a community to isolate it. Click again to clear.</p>
+            <ul class="graph-legend" id="graph-legend"></ul>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Center: the canvas -->
+      <div class="graph-canvas-wrap">
+        <div id="graph-canvas" class="graph-canvas" role="img" aria-label="Interactive network map of the corpus"></div>
+        <div class="graph-canvas-hint" id="graph-canvas-hint">Scroll to zoom · drag to pan · click a node for detail</div>
+        <div class="graph-loading" id="graph-loading">Laying out the network…</div>
+      </div>
+
+      <!-- Right rail: detail panel -->
+      <aside class="graph-rail graph-rail-right" id="graph-rail-right" aria-label="Selection detail" hidden>
+        <button type="button" class="graph-rail-close" id="graph-rail-right-close" aria-label="Close detail panel">×</button>
+        <div id="graph-detail-mount"></div>
+      </aside>
+    </div>
+
+    <div class="graph-bottom-strip">
+      <div class="graph-bottom-stats" id="graph-bottom-stats"></div>
+      <div class="graph-bottom-actions">
+        <button type="button" class="btn btn-secondary" id="graph-btn-reheat">Reheat</button>
+        <button type="button" class="btn btn-secondary" id="graph-btn-pause">Pause <kbd>Space</kbd></button>
+        <button type="button" class="btn btn-secondary" id="graph-btn-reset-zoom">Reset zoom</button>
+        <button type="button" class="btn btn-secondary" id="graph-btn-fit">Fit view <kbd>f</kbd></button>
+      </div>
+    </div>
+
+    <section class="callout" aria-label="About this map" style="margin-top:var(--space-8);">
+      <p class="caption">How to read this map</p>
+      <p>Every node is a record — sized by how structurally central it is to the whole corpus (how often the shortest path between two other records passes through it), colored by which community of closely-related records it belongs to. Every edge is a real, hand-verified connection; brighter, thicker edges are structural bridges between otherwise-distant parts of the corpus. Nothing here is a ranking of spiritual importance — it is a map of how the record cites and answers itself.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria</p>
+  </footer>
+
+<script src="assets/graph-data.js?v=20260903BETA3"></script>
+<script type="module" src="assets/graph-logic.js?v=20260903BETA3"></script>
+</body>
+</html>

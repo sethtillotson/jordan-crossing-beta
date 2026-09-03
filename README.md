@@ -114,6 +114,14 @@ directly from that source — not patched incrementally.
 │   │                               #   build-records2-corpus.mjs, consumed by
 │   │                               #   rebuild-edges-from-lattice.mjs
 │   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the five curated reading paths (Phase 13, zero external links)
+│   ├── graph-data.js              # window.GRAPH_DATA — the fractal Corpus Map's node/edge/community
+│   │                               #   data (Phase 16b), built by scripts/build-graph-data.mjs from
+│   │                               #   graph-data/graph_data.json with localId/localHref added per
+│   │                               #   resolvable node; every bc/degree/community/radius/width/
+│   │                               #   opacity/ebc/bridge field is copied through verbatim, never
+│   │                               #   recomputed
+│   ├── graph.css                  # Corpus Map page styles (Phase 16b)
+│   ├── graph-logic.js             # Corpus Map Sigma.js/graphology/ForceAtlas2 rendering + interactions
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
 ├── records/
 │   └── *-v2.html                  # 456 meditation record pages + 9 Stone Tablet reader pages —
@@ -123,6 +131,14 @@ directly from that source — not patched incrementally.
 │                                   #   meditation .md files, the 8 Stone Tablet volumes + audit doc,
 │                                   #   and 5 reference docs (Master Index, Tracker CSV, 3 infographics).
 │                                   #   Committed/public (unredacted, per standing owner direction).
+├── graph-data/
+│   ├── graph_data.json            # Phase 16b: pre-baked fractal-graph payload (475 nodes, 3,619
+│   │                               #   edges, 7 Louvain communities, betweenness/edge-betweenness
+│   │                               #   centrality, Jenks-binned radius) — read-only input to
+│   │                               #   scripts/build-graph-data.mjs; never hand-edited or recomputed
+│   │                               #   in the browser
+│   └── build_graph_data.py        # The owner's precompute pipeline that produced graph_data.json —
+│                                   #   kept for reproducibility/reference; not re-run by this repo
 ├── scripts/
 │   ├── build-records2-corpus.mjs  # CURRENT authoritative generator (Phase 11) — parses every
 │   │                               #   records-2/ meditation file's own metadata + embedded
@@ -132,12 +148,18 @@ directly from that source — not patched incrementally.
 │   ├── build-stone-tablet-pages.mjs # Generates the 8 Stone Tablet reader pages + the audit page
 │   ├── rebuild-reference-pages.mjs # Unwraps and republishes the 3 infographic pages from records-2/
 │   ├── tag-encounter-dimensions.mjs # Computes Encounter Index dimensions + doorway themes
+│   ├── build-graph-data.mjs       # Phase 16b: resolves graph_data.json's meditation/Stone Tablet
+│   │                               #   nodes to this site's own record ids/hrefs (exact filename match
+│   │                               #   via Corpus Lattice + records-2/, and via build-stone-tablet-
+│   │                               #   pages.mjs's own TABLETS/AUDIT constants), writes assets/
+│   │                               #   graph-data.js. Re-run whenever records-2/ or graph_data.json
+│   │                               #   changes.
 │   ├── relink-corpus-paths.mjs    # Confirms and relinks Corpus Paths steps to local pages
 │   ├── build-corpus-records.mjs, build-mirror-records.mjs, integrate-passes-7-8.mjs,
 │   │   integrate-passes-9-13.mjs, integrate-passes-14-16.mjs, integrate-pass-17.mjs,
 │   │   rebuild-cross-references-verified.mjs # SUPERSEDED (Phases 5-10) — kept as historical
 │   │                               #   artifacts only; do not re-run, see build-records2-corpus.mjs
-├── index.html, mystery.html, mystery-v2.html, threads.html, paths.html, archive.html,
+├── index.html, mystery.html, mystery-v2.html, threads.html, paths.html, archive.html, graph.html,
 │   stone-tablets.html, six-doctrinal-spines.html, spines-timeline.html, corpus-architecture.html
 ├── plan.md                        # Living project-status document — read this first
 ├── CHANGELOG.md                   # Dated release notes
@@ -275,6 +297,12 @@ can shift when a title is corrected) and leaves `EDGE_LABELS`, `EDGE_LABELS_INCO
 4. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
    `spines-timeline.html`, and `corpus-architecture.html` from `records-2/`'s reference infographics
 5. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
+6. `node scripts/build-graph-data.mjs` — (Phase 16b) rebuilds `assets/graph-data.js` for the Corpus
+   Map page (`graph.html`) from `graph-data/graph_data.json`, resolving each node to this site's own
+   record id/href by exact filename match (via Corpus Lattice + records-2/ for meditations, via
+   `build-stone-tablet-pages.mjs`'s own `TABLETS`/`AUDIT` constants for Stone Tablets). Re-run whenever
+   `records-2/` or `graph-data/graph_data.json` changes; independent of steps 1-5 above (reads
+   `records-2/`/`Corpus Lattice.json` directly, not `assets/records-data.js`).
 
 **Superseded, do not re-run:** `scripts/build-corpus-records.mjs`, `build-mirror-records.mjs`,
 `integrate-passes-7-8.mjs`, `integrate-passes-9-13.mjs`, `integrate-passes-14-16.mjs`,

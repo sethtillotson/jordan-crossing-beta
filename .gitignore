@@ -19,3 +19,12 @@ COPILOT_HANDOFF_PROMPT.md
 COPILOT_CHAT_PROMPT.txt
 COPILOT_USAGE.md
 memory-bank/
+
+# Owner-authored agent-instruction document for the fractal graph build
+# (first-person narrative, references the owner's private vault paths) —
+# local reference input to scripts/build-graph-data.mjs's design only, not
+# itself consumed by any script. graph-data/graph_data.json and
+# build_graph_data.py (the actual reproducible data + pipeline) remain
+# tracked, matching the Corpus Lattice.json/csv precedent of committing
+# structural data even though it exposes internal vault paths.
+graph-data/VS Code Agent Prompt — Render Fractal Graph (v2 render-only).md

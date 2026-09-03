@@ -1,6 +1,88 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Phase 16a: Corpus Lattice v1.3 recovered-time enrichment)
+## Current Status (September 3, 2026 — Phase 16b: The Corpus Map, a fractal graph visualization)
+
+New public page `graph.html` ("Corpus Map"), added to every page's navigation. Renders the owner's
+precomputed whole-corpus network — 475 nodes (459 meditations + 9 Stone Tablets + 7 external
+reference docs; 4 isolated nodes already dropped upstream), 3,619 weighted edges, 7 Louvain
+communities, betweenness/edge-betweenness centrality, Jenks-binned node radius — as a live,
+force-directed WebGL graph using graphology + graphology-layout-forceatlas2 + sigma.js v2, per the
+owner's own build spec (`graph-data/VS Code Agent Prompt — Render Fractal Graph (v2 render-only).md`,
+gitignored as an internal vault-authored document).
+
+**Render-only, not recompute.** Every metric field in `graph-data/graph_data.json` (bc, degree,
+diversivity, community, radius, edge weight/width/opacity/ebc/bridge class) is copied through
+verbatim — never recomputed in the browser, matching the spec's hard constraint.
+
+**New resolution step (`scripts/build-graph-data.mjs`, Phase 16b).** The source JSON's own `path`
+fields are `memo:/` vault paths meaningless on a public site, so this new script resolves every
+meditation/Stone Tablet node to this site's own record id/href by exact filename match — the graph
+JSON's own `filename` (original, un-shortened) is looked up in `Corpus Lattice.json` to get its
+`archive_filename`, which is then matched against `records-2/`'s own filenames (identical to
+`archive_filename` since both were extracted from the same shortened-name zip bundle) using the exact
+same `parseRawRecord`/`makeId` logic that produces the committed `assets/records-data.js` (imported,
+not re-implemented). Stone Tablets resolve via `build-stone-tablet-pages.mjs`'s own exported
+`TABLETS`/`AUDIT` constants (source filename → id/href), which required exporting those two constants
+and guarding that script's own `main()` to run only when invoked directly (so importing it for its
+constants doesn't trigger a full page regeneration as a side effect). Writes `assets/graph-data.js` as
+`window.GRAPH_DATA = {...}` (an explicit global, not `const`, since the consuming script loads as an
+ES module and a module-scope `const` would not be visible as a `window` property). 457/459 meditation
+nodes and 9/9 Stone Tablets resolved (the 2 unresolved are real non-published files — a merged/date-
+range meditation `records-2/` intentionally treats as corrupted-source-skip, and a stray note-prompt
+file never part of the 456 — both correctly omitted rather than linked to nothing).
+
+**Real bugs found and fixed during this build:**
+- **`Sigma` is not `sigma@2.4.0`'s ESM default export.** The source spec called for classic `<script>`
+  UMD tags for all three CDN libraries, but `graphology-layout-forceatlas2@0.10.1` ships no UMD/global
+  build at all (confirmed against its own published file listing — CommonJS-only). Used jsDelivr's
+  first-party `+esm` endpoint instead (still the same three libraries, still zero local bundling, no
+  D3/Cytoscape/Vis.js substitution) — but that endpoint's `default` export for a CJS package with
+  multiple named exports is the whole `exports` object, not the class itself; fixed by importing the
+  named `{ Sigma }` export instead of `{ default: Sigma }`, confirmed against the actual bundled output
+  on jsDelivr.
+- **A race between module-script execution and CSS grid layout.** `.graph-canvas` is
+  `position:absolute; inset:0` inside a CSS Grid track — legitimately zero-sized until the browser has
+  laid out its ancestor grid, which a `<script type="module">` (deferred by default, but not
+  necessarily late enough) could still race. Added a `ResizeObserver`-based `waitForNonZeroSize()` guard
+  before constructing the `Sigma` renderer.
+- **A CSS Grid `align-self`/width-collapse bug**, unrelated to the above: `.graph-shell`'s `flex`
+  parent (`main`) has no `align-items: stretch` override and no explicit width propagation for a grid
+  child, so the whole 3-column shell (and its canvas) collapsed to its content's minimum width (~278px)
+  instead of filling the viewport. Fixed with explicit `width: 100%; align-self: stretch` on
+  `.graph-main`/`.graph-page-header`/`.graph-shell`.
+- **Stone Tablet `localHref`s pointed to the repo root instead of `records/`.** `build-stone-tablet-
+  pages.mjs` writes every tablet page into its own (unexported) `RECORDS_DIR` = `records/`, but its
+  `TABLETS`/`AUDIT` constants' own `output` field is a bare filename with no directory — naively using
+  it as an href produced a dead link (verified live: Ctrl-clicking a Stone Tablet node opened a 404).
+  Fixed by prefixing `records/` in `build-graph-data.mjs`; re-verified every one of the 466 resolved
+  `localHref`s against the real filesystem (0 missing) and re-tested Ctrl-click live.
+
+**Verified live** (dev server + Playwright): zero console errors on load; FA2 converges (loading
+indicator hides) well within the ~10s target via a real displacement-based convergence check
+(average node movement below threshold for 3 consecutive samples), not a fixed timer; the 10
+visually-biggest rendered nodes match `stats.top_10_bc` exactly; all 7 communities appear in the
+legend, each naming a real top node, click-to-isolate toggles correctly; "Bridges only" visibly
+reduces the graph to just the orange bridge edges; type-filter checkboxes, the centrality-percentile
+slider, and the search box all update live with no errors; hover tooltips show real record
+date/time/type/community; click opens a real detail panel (node: title/date/tablet/BC/degree/
+diversivity/top-5 neighbors-by-weight with working links; edge: weight/EBC/bridge class); node drag
+pins a node's position while the rest of the layout keeps moving; scroll-zoom and empty-canvas pan
+both work; Ctrl-click opens the node's real local record page in a new tab (`noopener`); "Open this
+record →" navigates correctly; all keyboard shortcuts (`/`, `Esc`, `Space`, `f`) work; page weight
+~1.05 MB (well under the 3 MB budget), split across `graph.html` (6.1 KB), `assets/graph-data.js`
+(1005 KB), `assets/graph-logic.js` (26.5 KB), `assets/graph.css` (10.6 KB).
+
+**Nav link added everywhere**, not just `graph.html` itself: `index.html`, `threads.html`,
+`paths.html`, `archive.html`, `mystery.html`, and the record-page/Stone-Tablet-page templates in
+`build-records2-corpus.mjs`/`build-stone-tablet-pages.mjs` (regenerated across all 456+9 pages).
+
+See "Phase 16a" below for the Corpus Lattice v1.3 recovered-time enrichment (a separate, unrelated
+change landed just before this one), "Phase 15" for the "What did you actually encounter?" fixes,
+"Phase 14" for the appendix richness work, "Phase 13" for the public-beta cleanup pass, "Phase 12" for
+the Corpus Lattice cross-reference verification, and "Phase 11" for the full account of the corpus
+rebuild from `records-2/`.
+
+## Phase 16a (September 3, 2026 — Corpus Lattice v1.3 recovered-time enrichment)
 
 The owner uploaded Corpus Lattice v1.3, which adds a recovered `time` field (24-hr Central) to
 meditation nodes — recovered from each file's own `**Recorded:**` body metadata, `**Title:**`, or

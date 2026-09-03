@@ -2,6 +2,35 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.6] — September 3, 2026
+
+### The Corpus Map — a fractal graph visualization of the whole corpus (Phase 16b)
+
+New page `graph.html`, linked from every page's navigation as "Corpus Map". Renders the owner's
+precomputed whole-corpus network (475 nodes: 459 meditations + 9 Stone Tablets + 7 external reference
+docs; 3,619 weighted edges; 7 Louvain communities; betweenness/edge-betweenness centrality;
+Jenks-binned node radius) as a live, force-directed graph using graphology + graphology-layout-
+forceatlas2 + sigma.js v2 — render-only, every metric field copied through verbatim, never recomputed
+in the browser.
+
+New `scripts/build-graph-data.mjs` resolves each meditation/Stone Tablet node to this site's own
+record id/href by exact filename match (via Corpus Lattice + records-2/ for meditations, via
+`build-stone-tablet-pages.mjs`'s own exported constants for Stone Tablets) — 457/459 meditations and
+9/9 Stone Tablets resolved; the 2 unresolved are real non-published files, correctly omitted rather
+than linked to nothing.
+
+Fixed 4 real bugs found during this build: (1) jsDelivr's ESM wrapper exports `sigma@2.4.0`'s classes
+as named exports, not `default`; (2) a module-script/CSS-grid-layout race left the canvas
+zero-sized on some loads; (3) a flex/grid width-collapse bug shrank the whole page shell to ~278px;
+(4) Stone Tablet `localHref`s pointed to the repo root instead of `records/` (a live 404, caught via
+Ctrl-click testing and fixed).
+
+Verified live: zero console errors, FA2 converges via a real displacement-based check (not a fixed
+timer), the 10 visually-biggest nodes match `stats.top_10_bc` exactly, all 7 communities appear with
+correct top-node labels, every required interaction (hover/click/drag/zoom/pan/search/filter/isolate/
+keyboard shortcuts) tested and working, all 466 resolved `localHref`s confirmed to point to real
+files, page weight ~1.05 MB (well under the 3 MB budget).
+
 ## [2.5] — September 3, 2026
 
 ### Corpus Lattice v1.3 recovered-time enrichment (Phase 16a)

@@ -567,6 +567,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
       <a href="../threads.html">Threads</a>
       <a href="../paths.html">Corpus Paths</a>
       <a href="../archive.html">Archive</a>
+      <a href="../graph.html">Corpus Map</a>
     </nav>
   </header>
 
