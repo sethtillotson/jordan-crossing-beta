@@ -255,23 +255,72 @@ export function parseRawRecord(filePath) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────
-// Cross-Reference Appendix parsing: Tablet Anchor + typed memo: links.
+// Cross-Reference Appendix parsing: Tablet Anchor + richly-typed memo:
+// links + structured Doctrinal Spine / Lexicon Joints / Chiastic Mirror
+// fields (Phase 14 — see plan.md "Phase 14a").
+//
+// The corpus carries TWO appendix formats, roughly half the corpus each
+// (verified: 236 rigid-only, 220 loose-only, 20 files carry BOTH — a loose
+// block followed later by a rigid block):
+//   - RIGID ("## Cross-Reference Appendix (Pass N · Encounter Edition)"):
+//     fixed H3 sub-headings — Doctrinal Spine, Thread Joints, Lexicon
+//     Joints, Expanded Chiastic Mirror, Tablet Anchor, occasionally a
+//     trailing "Additional Thread Joints (Pass 14 Enrichment)" H3 AFTER
+//     Tablet Anchor.
+//   - LOOSE ("## Cross-References — How This Meditation Reads Others"):
+//     bold inline labels instead of headings ("**Thread role** — ...",
+//     "**Lexicon joints (...):**", "**Chiastic mirror:**", "**Tablet
+//     anchor:**"), plus free-named grouping labels ("**Mantle arc...:**",
+//     "**Jordan-crossing lineage:**") that don't map to a known type but
+//     still carry genuine cross-references (kept as generic
+//     'cross-reference' joints, never dropped).
+//
+// Verified: the appendix (whichever format, or both) is ALWAYS the final
+// section of every file (0 exceptions across all 458 source files) — so
+// once the first "## Cross-Reference" heading is found, everything from
+// there to end-of-file is appendix content. This also fixes a real
+// pre-Phase-14 bug: the old parser stopped at the first "### Tablet
+// Anchor", silently discarding any content after it (e.g. "Additional
+// Thread Joints" — 8 files affected).
 // ─────────────────────────────────────────────────────────────────────────
 
 function parseTabletAnchor(content) {
-  const idx = content.indexOf('### Tablet Anchor');
-  if (idx === -1) return null;
-  const after = content.slice(idx + '### Tablet Anchor'.length, idx + '### Tablet Anchor'.length + 400);
-  const m = after.match(/\*\*(Stone Tablet[^*]+)\*\*\s*(?:—|--)?\s*([^\n.]*)/);
-  if (!m) return null;
-  return { label: m[1].trim(), window: (m[2] || '').trim().replace(/^[.\s]+|[.\s]+$/g, '') };
+  // Prefer the rigid "### Tablet Anchor" H3 form — present in 456/458 files
+  // and, unlike the loose "**Tablet anchor:**" form, never confuses a bold
+  // run that sits INSIDE a markdown link (e.g. "[**Stone Tablet VII ·
+  // Volume IV**](memo:...)" — a real pattern found in the loose format
+  // that, if matched naively, captures the trailing "](memo:...)" as part
+  // of the "window" text; a genuine bug caught by inspecting real output).
+  const rigidIdx = content.indexOf('### Tablet Anchor');
+  const looseIdx = content.search(/\*\*Tablet anchor:?\*\*/i);
+  const candidates = [rigidIdx, looseIdx].filter(i => i !== -1).sort((a, b) => a - b);
+  for (const idx of candidates) {
+    const after = content.slice(idx, idx + 500);
+    // Global search so a false match (immediately followed by "]" — bold
+    // text nested inside a markdown link, not a real anchor description)
+    // can be skipped in favor of the next real occurrence.
+    const re = /\*\*(Stone Tablet[^*]+)\*\*(\s*(?:—|--)?\s*)([^\n.]*)/g;
+    let m;
+    while ((m = re.exec(after))) {
+      if (m[3].startsWith(']')) continue; // bold-inside-link false match
+      const window = m[3].trim().replace(/^[.\s]+|[.\s]+$/g, '');
+      if (!window) continue; // no real description captured — keep looking
+      return { label: m[1].trim(), window };
+    }
+  }
+  return null;
 }
 
+// Every recognized joint type. 'doctrinal-spine-seed'/'-growth'/'-tablet'
+// are assigned specifically (not just 'doctrinal-spine') so the record page
+// can render the Seed → Growth → Tablet arc in its own correct order.
 const TYPE_KEYWORDS = [
-  { re: /doctrinal spine/i, type: 'doctrinal-spine' },
-  { re: /thread joint/i, type: 'thread' },
-  { re: /thread role/i, type: 'thread' },
-  { re: /lexicon joint/i, type: 'lexicon' },
+  { re: /doctrinal spine/i, type: 'doctrinal-spine' }, // refined to -seed/-growth/-tablet per-bullet below
+  { re: /additional thread joint/i, type: 'thread-joint' },
+  { re: /thread joint/i, type: 'thread-joint' },
+  { re: /thread role/i, type: 'thread-joint' },
+  { re: /^mantle arc|^jordan-crossing lineage|^sacred-ordinary lineage|arc \(across|lineage\s*[:(]/i, type: 'thread-joint' }, // loose format's free-named narrative-arc groupings
+  { re: /lexicon joint/i, type: 'lexicon-joint' },
   { re: /chi[ar]stic mirror/i, type: 'chiastic-mirror' }, // covers the corpus's own "Chiratic" typo
   { re: /tablet anchor/i, type: 'tablet-anchor' },
 ];
@@ -280,38 +329,137 @@ function classifyHeading(line) {
   return null;
 }
 
-function parseAppendixLinks(content) {
+/** A line is a "loose format" section label if it's ENTIRELY a bold run,
+ * optionally followed by a colon and nothing else meaningful — e.g.
+ * "**Lexicon joints (...):**" or "**Thread role** — some gloss text" (the
+ * bold prefix sets the label even though gloss text follows on the same
+ * line, unlike the strict heading-only match the old parser required).
+ * Some real labels run long (e.g. "**Lexicon joints (Rom 8:26 + Ps 126:5-6
+ * · Spirit intercedes through groans · sowing in tears):**" is ~90 chars) —
+ * an earlier 80-char cap silently failed to match these, leaving
+ * currentType stuck on whatever section preceded it (a real bug: caught by
+ * inspecting real parsed output where lexicon-section links were mis-typed
+ * as the prior section's type). 200 chars comfortably covers every label
+ * length observed in the corpus without risking a match spanning multiple
+ * unrelated bold runs on the same line. */
+function looseFormatLabel(line) {
+  const m = line.match(/^\*\*([^*]{3,200})\*\*\s*[:—-]?/);
+  return m ? m[1].replace(/:$/, '').trim() : null;
+}
+
+/** Strips markdown link syntax down to its display text, for gloss/note
+ * text shown directly in the UI (e.g. a chiastic-mirror pairing note like
+ * "Pair with [May 27 · Mantles](memo:...)" reads as "Pair with May 27 ·
+ * Mantles"). The underlying memo: link itself is still separately
+ * extracted for edge-building — this only affects display text. */
+function stripMarkdownLinks(text) {
+  return (text || '').replace(/\[([^\]]+)\]\(memo:[^)]+\)/g, '$1').trim();
+}
+
+export function parseAppendixLinks(content) {
   const startMatch = /^## Cross-Reference/m.exec(content);
-  if (!startMatch) return [];
-  const tabletIdx = content.indexOf('### Tablet Anchor', startMatch.index);
-  let endIdx = content.length;
-  if (tabletIdx !== -1) {
-    const nextHeading = content.slice(tabletIdx + 10).search(/^#{2,3}\s+/m);
-    endIdx = nextHeading === -1 ? content.length : tabletIdx + 10 + nextHeading;
-  }
-  const appendix = content.slice(startMatch.index, endIdx);
+  if (!startMatch) return { links: [], doctrinalSpine: null, lexiconJoints: [], chiasticMirror: [], doctrinalThemesCarried: null };
+  const appendix = content.slice(startMatch.index); // to end-of-file — see header note
   const lines = appendix.split(/\r?\n/);
 
   const links = [];
+  const lexiconJoints = [];
+  const chiasticMirror = [];
+  const doctrinalSpine = { seed: null, growth: null, tablet: null };
+  let doctrinalThemesCarried = null;
   let currentType = null;
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    const headingMatch = line.match(/^#{2,4}\s+(.+)$/) || line.match(/^\*\*([A-Z][^*]{2,60}):\*\*\s*$/);
-    if (headingMatch) {
-      const t = classifyHeading(headingMatch[1]);
-      if (t) currentType = t;
-      continue;
-    }
-    const linkRe = /\[([^\]]+)\]\(memo:([^)]+)\)/g;
+  let chiasticIndex = 0;
+  const CHIASTIC_POSITIONS = ['A', 'B', 'C', "B'", "A'", "C'", "D", "D'"];
+
+  const linkRe = /\[([^\]]+)\]\(memo:([^)]+)\)/g;
+  function extractLinks(line, type) {
+    linkRe.lastIndex = 0;
     let m;
     while ((m = linkRe.exec(line))) {
       const displayText = m[1];
       let rawLink;
       try { rawLink = decodeURIComponent(m[2]); } catch { rawLink = m[2]; }
-      links.push({ displayText, rawLink, basename: path.basename(rawLink), type: currentType || 'cross-reference' });
+      links.push({ displayText, rawLink, basename: path.basename(rawLink), type: type || 'cross-reference' });
     }
   }
-  return links;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+
+    // Doctrinal themes carried — single free-text line, no links.
+    const themeMatch = line.match(/Doctrinal themes carried:?\**\s*(.+)$/i);
+    if (themeMatch) { doctrinalThemesCarried = themeMatch[1].replace(/\*+$/, '').trim() || null; continue; }
+
+    // H2-H4 headings (rigid format).
+    const headingMatch = line.match(/^#{2,4}\s+(.+)$/);
+    if (headingMatch) {
+      const t = classifyHeading(headingMatch[1]);
+      if (t) currentType = t;
+      continue;
+    }
+
+    // Loose-format bold inline label (may or may not carry gloss/links on
+    // the same line) — only treat as a NEW section label if it plausibly
+    // reads as one (title-case-ish, not a mid-sentence bold phrase).
+    const label = looseFormatLabel(line);
+    if (label && /^[A-Z]/.test(label)) {
+      const t = classifyHeading(label);
+      if (t) currentType = t;
+      // fall through — the same line may still carry links/content.
+    }
+
+    // Doctrinal Spine seed/growth/tablet bullets:
+    // "- **Seed · [title](memo:...)** — gloss."
+    const spineMatch = line.match(/^-?\s*\*\*(Seed|Growth|Tablet)\s*[·:]?\s*(?:\[([^\]]+)\]\(memo:([^)]+)\))?[^*]*\*\*\s*(?:—|--)?\s*(.*)$/i);
+    if (currentType === 'doctrinal-spine' && spineMatch) {
+      const stepKey = spineMatch[1].toLowerCase();
+      const stepLabel = spineMatch[2] || null;
+      let stepRawLink = null;
+      if (spineMatch[3]) { try { stepRawLink = decodeURIComponent(spineMatch[3]); } catch { stepRawLink = spineMatch[3]; } }
+      const gloss = stripMarkdownLinks((spineMatch[4] || '').trim());
+      if (stepKey === 'seed') doctrinalSpine.seed = { label: stepLabel, basename: stepRawLink ? path.basename(stepRawLink) : null, gloss };
+      else if (stepKey === 'growth') doctrinalSpine.growth = { label: stepLabel, basename: stepRawLink ? path.basename(stepRawLink) : null, gloss };
+      else if (stepKey === 'tablet') doctrinalSpine.tablet = { label: stepLabel, basename: stepRawLink ? path.basename(stepRawLink) : null, gloss };
+      if (stepRawLink) extractLinks(line, `doctrinal-spine-${stepKey}`);
+      continue;
+    }
+
+    // Lexicon Joints bullets: "- **term** — gloss." (rarely carries a link;
+    // when it does, still register the joint AND the edge).
+    if (currentType === 'lexicon-joint') {
+      const lexMatch = line.match(/^-\s*\*\*([^*]+)\*\*\s*(?:—|--)?\s*(.*)$/);
+      if (lexMatch) {
+        lexiconJoints.push({ term: stripMarkdownLinks(lexMatch[1].trim()), gloss: stripMarkdownLinks(lexMatch[2].trim()) });
+        extractLinks(line, 'lexicon-joint');
+        continue;
+      }
+    }
+
+    // Chiastic Mirror bullets: rigid "- **A · label** — gloss." or loose
+    // "- Pair with [link] — gloss." (loose format doesn't use A/B/C labels;
+    // assign positions positionally in the order encountered).
+    if (currentType === 'chiastic-mirror') {
+      const rigidMirror = line.match(/^-\s*\*\*([A-D]'?)\s*[·:]\s*([^*]+)\*\*\s*(?:—|--)?\s*(.*)$/);
+      if (rigidMirror) {
+        chiasticMirror.push({ position: rigidMirror[1], label: stripMarkdownLinks(rigidMirror[2].trim()), gloss: stripMarkdownLinks(rigidMirror[3].trim()) });
+        extractLinks(line, 'chiastic-mirror');
+        continue;
+      }
+      if (/^-\s/.test(line)) {
+        const position = CHIASTIC_POSITIONS[chiasticIndex] || `#${chiasticIndex + 1}`;
+        chiasticIndex += 1;
+        chiasticMirror.push({ position, label: null, gloss: stripMarkdownLinks(line.replace(/^-\s*/, '').trim()) });
+        extractLinks(line, 'chiastic-mirror');
+        continue;
+      }
+    }
+
+    // Everything else: extract any memo: links under the current type.
+    extractLinks(line, currentType);
+  }
+
+  return { links, doctrinalSpine, lexiconJoints, chiasticMirror, doctrinalThemesCarried };
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -471,6 +619,8 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
       <div class="movement-divider"></div>
 
+      <div class="doctrinal-spine-mount" id="doctrinal-spine-mount"></div>
+
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
@@ -478,6 +628,8 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
       <div class="graph-nav" id="graph-nav-mount"></div>
 
       <div class="reviewed-threads" id="threads-mount"></div>
+
+      <div class="lexicon-chiastic-mount" id="lexicon-chiastic-mount"></div>
 
       <div class="movement-divider"></div>
 
@@ -566,8 +718,8 @@ function main() {
     const parsed = parseRawRecord(fullPath);
     if (!parsed.isMeditation) { skippedNotMeditation += 1; continue; }
     const tabletAnchor = parseTabletAnchor(content);
-    const links = parseAppendixLinks(content);
-    parsedByName.set(name, { ...parsed, tabletAnchor, links });
+    const { links, doctrinalSpine, lexiconJoints, chiasticMirror, doctrinalThemesCarried } = parseAppendixLinks(content);
+    parsedByName.set(name, { ...parsed, tabletAnchor, links, doctrinalSpine, lexiconJoints, chiasticMirror, doctrinalThemesCarried });
   }
   console.log(`Parsed as real meditation content: ${parsedByName.size}`);
   console.log(`Skipped (not meditation-shaped content): ${skippedNotMeditation}`);
@@ -577,7 +729,19 @@ function main() {
     if (parsedByName.has(basename)) return basename;
     const base = basename.replace(/\.md$/, '');
     const match = bestMatch(base, baseNames, 20);
-    return match || null;
+    // bestMatch operates on extension-less baseNames (see their construction
+    // above) and so returns an extension-less string — but parsedByName/
+    // nameToId are always keyed WITH the ".md" extension. A pre-existing
+    // bug here (present before Phase 14) returned the bare match without
+    // re-appending ".md", so every fuzzy-matched link (i.e. every case
+    // where the appendix's stated filename differs from records-2's own,
+    // independently-shortened filename — the same well-documented
+    // filename-shortening quirk Corpus Lattice's archive_filename fields
+    // solve for the authoritative edge rebuild) silently failed this
+    // lookup and was miscounted as "skipped (non-meditation target)"
+    // instead of being resolved. Caught by inspecting real Phase 14
+    // extraction output where clearly-resolvable targets were missing.
+    return match ? `${match}.md` : null;
   }
 
   // 3. Assign a deterministic id + href to every parsed meditation, sorted
@@ -622,7 +786,11 @@ function main() {
   }
   console.log(`Rendered ${entries.length} record pages into records/.`);
 
-  // 5. Build JC_RECORDS.
+  // 5. Build JC_RECORDS, including Phase 14's richer appendix-derived
+  //    fields where a record's appendix carries them (never fabricated —
+  //    simply omitted when the source file's appendix doesn't have that
+  //    section; see parseAppendixLinks' header comment on the two real
+  //    appendix formats found across the corpus).
   const jcRecords = entries.map((e, i) => {
     const rec = {
       id: e.id, order: i + 1, title: e.title, dateLabel: e.dateLabel,
@@ -630,12 +798,44 @@ function main() {
       sourceStatus: 'original', summary: e.summary, reviewed: true,
     };
     if (e.tabletAnchor) rec.tabletAnchor = e.tabletAnchor;
+    if (e.doctrinalThemesCarried) rec.doctrinalThemesCarried = e.doctrinalThemesCarried;
+    if (e.lexiconJoints && e.lexiconJoints.length) rec.lexiconJoints = e.lexiconJoints;
+    if (e.chiasticMirror && e.chiasticMirror.length) rec.chiasticMirror = e.chiasticMirror;
+    if (e.doctrinalSpine && (e.doctrinalSpine.seed || e.doctrinalSpine.growth || e.doctrinalSpine.tablet)) {
+      const resolveStep = (step) => {
+        if (!step) return null;
+        const out = { label: step.label, gloss: step.gloss };
+        if (step.basename) {
+          const targetName = resolveTarget(step.basename);
+          const targetId = targetName ? nameToId.get(targetName) : null;
+          if (targetId && targetId !== e.id) out.recordId = targetId;
+        }
+        return out;
+      };
+      rec.doctrinalSpine = {
+        seed: resolveStep(e.doctrinalSpine.seed),
+        growth: resolveStep(e.doctrinalSpine.growth),
+        tablet: resolveStep(e.doctrinalSpine.tablet),
+      };
+    }
     return rec;
   });
 
-  // 6. Build JC_EDGES from every parsed appendix's typed links.
+  // 6. Build JC_EDGES from every parsed appendix's typed links (interim —
+  //    immediately superseded by rebuild-edges-from-lattice.mjs, which is
+  //    the authoritative Corpus-Lattice-verified edge source; see that
+  //    script's own header). Each edge now also carries a `jointType`
+  //    (Phase 14) so the record page / Threads page can render the real
+  //    structural relationship — doctrinal-spine-seed/-growth/-tablet,
+  //    thread-joint, lexicon-joint, chiastic-mirror, or the generic
+  //    cross-reference fallback — instead of one flat label. This script
+  //    ALSO writes assets/appendix-joints.json: a from->to->{jointType,
+  //    note} lookup that rebuild-edges-from-lattice.mjs consults so a
+  //    Corpus-Lattice-verified edge can be enriched with the real joint
+  //    type WITHOUT ever trusting an appendix-only (unverified) edge.
   const newEdges = [];
   const edgeKeys = new Set();
+  const jointHints = {}; // "fromId->toId" -> { jointType, note }
   let linksTotal = 0, linksResolvedToRecord = 0, linksSkippedNonMeditation = 0, linksUnresolved = 0;
   for (const e of entries) {
     for (const link of e.links) {
@@ -647,17 +847,28 @@ function main() {
       if (!targetId) { linksSkippedNonMeditation += 1; continue; }
       if (targetId === e.id) continue; // self-link
       linksResolvedToRecord += 1;
-      const key = `${e.id}->${targetId}->${link.type}`;
-      if (edgeKeys.has(key)) continue;
-      edgeKeys.add(key);
-      newEdges.push({
-        from: e.id,
-        to: targetId,
-        type: 'continues',
-        status: 'editorial',
-        note: link.displayText.replace(/^\d{2}-\d{2}(?:\s+at\s+\d{2}[:_]\d{2})?\s*[·]?\s*/i, '').trim() || `${link.type} joint`,
-        source: `Verified against the corpus's own cross-reference record — ${link.type} joint.`,
-      });
+      const jointType = link.type || 'cross-reference';
+      const note = link.displayText.replace(/^\d{2}-\d{2}(?:\s+at\s+\d{2}[:_]\d{2})?\s*[·]?\s*/i, '').trim() || `${jointType} joint`;
+      const key = `${e.id}->${targetId}->${jointType}`;
+      if (!edgeKeys.has(key)) {
+        edgeKeys.add(key);
+        newEdges.push({
+          from: e.id,
+          to: targetId,
+          type: 'continues',
+          jointType,
+          status: 'editorial',
+          note,
+          source: `Verified against the corpus's own cross-reference record — ${jointType} joint.`,
+        });
+      }
+      // Record the richest hint per (from,to) pair — a non-generic
+      // jointType always wins over 'cross-reference' if both appear.
+      const hintKey = `${e.id}->${targetId}`;
+      const existing = jointHints[hintKey];
+      if (!existing || (existing.jointType === 'cross-reference' && jointType !== 'cross-reference')) {
+        jointHints[hintKey] = { jointType, note };
+      }
     }
   }
   console.log(`Appendix links scanned: ${linksTotal}`);
@@ -665,6 +876,14 @@ function main() {
   console.log(`  skipped (Stone Tablet / non-meditation target): ${linksSkippedNonMeditation}`);
   console.log(`  unresolved (no matching local file): ${linksUnresolved}`);
   console.log(`New edges created: ${newEdges.length}`);
+
+  const jointHintsCount = Object.keys(jointHints).length;
+  fs.writeFileSync(
+    path.join(ROOT, 'assets', 'appendix-joints.json'),
+    JSON.stringify(jointHints, null, 0),
+    'utf8'
+  );
+  console.log(`Wrote assets/appendix-joints.json: ${jointHintsCount} (from->to) joint-type hints.`);
 
   // 7. Remap JC_THREADS onto the new id set (by title+date match against
   //    the OLD JC_RECORDS, since ids are only stable when titles are).

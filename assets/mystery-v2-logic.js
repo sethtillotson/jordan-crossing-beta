@@ -90,7 +90,16 @@
       // (see assets/records-data.js's header, Phase 5).
       JC_RECORDS.forEach(rec => {
         if (rec.reviewed === false) return;
-        const haystack = `${rec.title} ${rec.summary || ''}`;
+        // Phase 14: widen the matching haystack with the record's own
+        // appendix-derived doctrinal theme + lexicon terms/glosses, so a
+        // record whose title/summary don't literally use a doorway's
+        // keywords (but whose own author-named doctrinal theme or lexicon
+        // joint genuinely does) is still found. This does NOT invent any
+        // new doorway<->theme mapping — the same already-verified keyword
+        // regexes below are simply given more of the record's own real
+        // text to test against.
+        const lexiconText = (rec.lexiconJoints || []).map(l => `${l.term} ${l.gloss || ''}`).join(' ');
+        const haystack = `${rec.title} ${rec.summary || ''} ${rec.doctrinalThemesCarried || ''} ${lexiconText}`;
         if (re.test(haystack)) pool.push(rec.id);
       });
     }

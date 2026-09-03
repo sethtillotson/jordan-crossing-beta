@@ -1,39 +1,42 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Phase 13 complete: public-beta cleanup pass)
+## Current Status (September 3, 2026 — Phase 14 complete: appendix richness — Doctrinal Spine, Lexicon Joints, Chiastic Mirror)
 
-See "Phase 13" below for the latest: a targeted cleanup pass responding to live-browsing feedback.
-Rebuilt `JC_THREADS` (4 stale pre-`records-2` threads → 7 threads transcribed directly from the
-owner's new corpus map documents and resolved via Corpus Lattice path-matching, zero guessing) and
-`assets/corpus-paths-data.js` (6 stale paths with external links → 5 fully-local paths, zero external
-links). Fixed a real "undefined" rendering bug on the Threads page (a second, unsynced copy of the
-edge renderer), removed the entire "editorial connection" 3-tier status system now that every edge is
-Corpus-Lattice-verified, archived the carry-a-question feature (removed from all 456 record pages and
-the landing page's "Welcome back" panel — a genuine ID-mismatch bug had silently broken it), rebuilt
-Mystery Mode's doorway pools to report honest, uncapped counts (an arbitrary cap of 10 previously
-undersold every doorway; "full chronology" now correctly pools from all 456 reviewed records), and
-swept every public-facing page for internal-project language (phase numbers, CHANGELOG/GitHub links,
-schema versions, "editorial," "superseded") in favor of a single "verified and hand-checked by the
-author" framing. Also found and fixed a genuine pre-existing `jcStepHref is not defined` bug that had
-silently broken all of Corpus Paths' rendering.
+See "Phase 14" below for the latest: replaced the flat "continues" label every cross-reference edge
+carried with the REAL structural classification each meditation's own Cross-Reference Appendix names —
+Doctrinal Spine (Seed → Growth → Tablet), Thread Joint, Lexicon Joint, and Expanded Chiastic Mirror —
+reconciled onto the existing Corpus-Lattice-verified edge set (3,079 edges, unchanged in count; 3,075 of
+them, 99.8%, now carry a real specific jointType instead of the generic fallback). New per-record fields
+(`doctrinalSpine`, `lexiconJoints`, `chiasticMirror`, `doctrinalThemesCarried`) now surface on record
+pages (a new "Doctrinal Spine" widget, joint-type-colored badges in Reviewed Thread Connections, and
+small Lexicon Joints / Expanded Chiastic Mirror displays), on the Threads page (a joint-type filter), in
+Mystery Mode (doorway keyword-matching now also searches each record's own lexicon terms/doctrinal
+theme, not just title/summary), and on the landing page's Encounter Index (a new "Doctrinal theme"
+filter). Also fixed a real, pre-existing bug (present since Phase 11, independent of anything done this
+phase) that silently dropped roughly 1,600 genuinely-resolvable appendix cross-references because the
+fuzzy-filename-match fallback returned a basename missing its `.md` extension.
 
-See "Phase 12" below for the prior Corpus Lattice cross-reference verification (456 records now carry
-3,079 verified edges), and "Phase 11" for the full account of the corpus rebuild from `records-2/` and
-the site's promotion to public-facing Beta 2.0.
+See "Phase 13" below for the prior public-beta cleanup pass (Threads/Corpus Paths rebuilt from the
+owner's new corpus map documents, several real UI bugs fixed), "Phase 12" for the Corpus Lattice
+cross-reference verification, and "Phase 11" for the full account of the corpus rebuild from
+`records-2/` and the site's promotion to public-facing Beta 2.0.
 
-**Final QA (post-Phase-13) and live deployment both confirmed clean:**
+**Final QA (post-Phase-14) and live deployment both confirmed clean:**
 - Automated data validation: 456 records / 3,079 edges / 7 threads / 5 corpus paths, zero duplicate
   ids/hrefs/edges, zero missing href files, zero bad edge/thread/path references, zero self-loops,
-  zero isolated records, chronological order contiguous 1–456, zero external (memoPath) steps
-  remaining in Corpus Paths.
-- Browser end-to-end verification (fresh dev server, fresh browser page): landing page copy verified
-  clean of draft/placeholder language; Threads page renders 7 threads with real chains and no
-  "undefined"; Mystery Mode's "full chronology" doorway reports "456 records" and other doorways report
-  real uncapped counts (e.g. 44); Corpus Paths renders all 5 paths with fully-local links (the
-  `jcStepHref` bug fix confirmed live); the originally-reported Samuel Loop record pages show no
-  carry-question section while retaining the encounter/related-records/tags/sequence sections, with
-  the return panel genuinely last.
-- Byte-level UTF-8 roundtrip check clean across every edited file (no mojibake introduced).
+  zero isolated records, chronological order contiguous 1–456, every edge has a valid `jointType`,
+  every `doctrinalSpine.recordId` reference resolves, zero stray markdown-link syntax left in any
+  display field, zero external Corpus Paths steps.
+- Browser end-to-end verification (fresh dev server, fresh browser page): a record page with a full
+  Doctrinal Spine (Seed/Growth/Tablet, each linking to its real target) plus joint-type badges in
+  Reviewed Thread Connections plus Lexicon Joints and Expanded Chiastic Mirror displays, all confirmed
+  rendering; the Threads page's new joint-type filter confirmed correctly narrowing the constellation
+  to only Doctrinal Spine connections when selected (and honestly reporting "no connection of this
+  type" rather than hiding records that lack one); Mystery Mode's "surrender" doorway confirmed
+  reporting a real, non-zero pool count; the landing page's Encounter Index "Doctrinal theme" filter
+  confirmed returning the exact expected count (6) for "The Ordered Affections."
+- Byte-level UTF-8 roundtrip check clean across every edited file plus a 40-file record-page sample
+  (no mojibake introduced). Zero browser console errors observed across every page visited.
 
 All session todos are now `done` except 6 legitimately non-actionable ones carried forward: 5 were the
 abandoned in-place body-patch approach, explicitly superseded by the `records-2/` full rebuild; 1
@@ -519,6 +522,106 @@ full chronology), Corpus Paths (all 5 paths fully local, `jcStepHref` fix confir
 -reported Samuel Loop record pages (no carry-question section; encounter/related/tags/sequence intact,
 return panel genuinely last).
 
+### Phase 14 (2026-09-03) — Cross-Reference Appendix richness: Doctrinal Spine, Lexicon Joints, Chiastic Mirror
+
+The owner pointed out that every meditation's own Cross-Reference Appendix carries far more structure
+than the site was using: a Doctrinal Spine (Seed → Growth → Tablet), Thread Joints (verbatim ↔
+verbatim), Lexicon Joints, an Expanded Chiastic Mirror, and a Tablet Anchor — but every cross-reference
+edge on the site had been flattened to one generic "continues" label, and the incoming-direction label
+had a real grammar bug ("is continues by" instead of "is continued by").
+
+**Two real appendix formats, surveyed exhaustively.** The corpus carries two Cross-Reference Appendix
+formats roughly 50/50 (236 rigid-only, 220 loose-only, 20 files carry both — a loose block followed
+later by a rigid block): the RIGID format (`## Cross-Reference Appendix (Pass N · Encounter Edition)`,
+fixed H3 sub-headings) and the LOOSE format (`## Cross-References — How This Meditation Reads Others`,
+bold inline labels like `**Thread role** —` instead of headings, plus free-named groupings like
+`**Mantle arc (...):**`). Verified the appendix is ALWAYS the final section of every file (0 exceptions
+across all 458 source files) — this let the parser safely treat everything from the first
+`## Cross-Reference` heading to end-of-file as appendix content, also fixing a smaller pre-existing bug
+where content after `### Tablet Anchor` (an "Additional Thread Joints" section, 8 files) was silently
+discarded.
+
+**New parser (`scripts/build-records2-corpus.mjs`'s rewritten `parseAppendixLinks()`/`parseTabletAnchor()`)**
+extracts, per record: `doctrinalSpine` (seed/growth/tablet, each with a label, gloss, and — where
+resolvable — a `recordId`), `lexiconJoints` (term + gloss pairs), `chiasticMirror` (position + label +
+gloss), and `doctrinalThemesCarried` (a single free-text line). Every memo-link found anywhere in the
+appendix is also classified into a real `jointType` (`doctrinal-spine-seed/-growth/-tablet`,
+`thread-joint`, `lexicon-joint`, `chiastic-mirror`, or the generic `cross-reference` fallback) instead
+of the old flat `continues`.
+
+**Three real bugs found and fixed while building this:**
+1. **A malformed-match bug in `parseTabletAnchor`.** The loose format sometimes writes the tablet name
+   INSIDE a markdown link (`[**Stone Tablet VII · Volume IV**](memo:...)`) rather than around one — a
+   naive regex captured the trailing `](memo:/Personal%20Space/...)` as part of the "window" text,
+   corrupting `tabletAnchor.window` for 2 records (and, more seriously, breaking every downstream
+   script's naive bracket-counting `findArrayBounds()` helper, since a literal `]` inside a JSON string
+   value defeats that technique). Fixed by preferring the rigid `### Tablet Anchor` H3 (present in
+   456/458 files) and rejecting any match immediately followed by `]`.
+2. **A label-matching regex with a silent 80-character cap.** Some real loose-format section labels
+   run longer (e.g. `**Lexicon joints (Rom 8:26 + Ps 126:5-6 · Spirit intercedes through groans ·
+   sowing in tears):**` is ~93 characters) — the old bound silently failed to match these, leaving
+   `currentType` stuck on whichever section preceded it and mis-classifying every link underneath as
+   the wrong joint type. Raised the cap to 200.
+3. **A significant pre-existing bug in `resolveTarget()` (present since Phase 11, independent of
+   anything built this phase).** Its fuzzy-filename-match fallback (`bestMatch()`, needed whenever an
+   appendix's stated link filename differs from `records-2/`'s own independently-shortened filename —
+   the same well-documented corpus export quirk Corpus Lattice's `archive_filename` fields solve for
+   the authoritative edge rebuild) returned a basename WITHOUT the `.md` extension, but the lookup map
+   it was checked against (`nameToId`) is always keyed WITH `.md`. Every fuzzy-matched link silently
+   failed resolution and was miscounted as "skipped (non-meditation target)." Fixing this alone raised
+   resolved appendix links from 2,136 to 3,747 (+1,611) and appendix-derived joint-type hints from
+   1,734 to 3,134 (+1,400) — nearly doubling the richness available to reconcile onto the verified
+   edge set.
+
+**Reconciliation, not replacement.** `scripts/rebuild-edges-from-lattice.mjs` remains the sole
+authoritative source of *which* edges exist (Corpus-Lattice-verified, unchanged: 3,079 edges, 0
+isolated records). It now additionally loads `assets/appendix-joints.json` (a `from->to` → `{jointType,
+note}` lookup written by the parser above) and, for each Lattice-verified edge, looks up whether the
+appendix independently named a specific joint type for that exact pair — if so, the edge is enriched
+with it; if not, it keeps the generic `cross-reference` fallback. An appendix-only hint with no
+matching Lattice-verified edge is never trusted or surfaced. Result: 3,075 of 3,079 edges (99.8%) now
+carry a real, specific joint type (breakdown: 1,509 thread-joint, 833 lexicon-joint, 230
+doctrinal-spine-seed, 224 doctrinal-spine-growth, 167 doctrinal-spine-tablet, 112 chiastic-mirror, 4
+generic cross-reference).
+
+**UI built on top of the richer data:**
+- Record pages: a new "Doctrinal Spine" widget (`#doctrinal-spine-mount`, rendered only when a
+  record's own appendix carries one — absent for the ~48% of the corpus without this section, never
+  fabricated); "Reviewed thread connections" now shows a real joint-type badge (color-coded: gold for
+  Doctrinal Spine, blue for Lexicon Joint, purple for Chiastic Mirror, green for the rest) instead of
+  one flat "verified" label; new small "Lexicon Joints" and "Expanded Chiastic Mirror" displays
+  (`#lexicon-chiastic-mount`).
+- `threads.html`: a new joint-type filter (All / Doctrinal Spine / Thread Joint / Lexicon Joint /
+  Chiastic Mirror / Cross-Reference) that narrows the constellation's connection list per record,
+  honestly reporting "No connection of this type for this record" rather than hiding records.
+- Mystery Mode (`assets/mystery-v2-logic.js`): doorway keyword-matching now also searches each
+  record's own `doctrinalThemesCarried` and `lexiconJoints` term/gloss text alongside title/summary —
+  widening the real matching signal without inventing any new doorway↔theme mapping (only 5 distinct
+  doctrinal themes exist across the corpus, too narrow and unevenly distributed — 6 to 97 records each
+  — to safely build a whole new taxonomy on top of, so the existing, already-verified keyword regexes
+  were kept and simply given more of each record's own real text to test against).
+- Landing page Encounter Index: a new "Doctrinal theme" filter (Any / the 5 real values found in the
+  corpus), verified live to return the exact expected count for the narrowest theme ("The Ordered
+  Affections," 6 records).
+
+**Also fixed the reported grammar bug directly:** a new `EDGE_LABELS_INCOMING` map in
+`assets/records-data.js` gives the correct past-participle form for every edge type shown in the
+"incoming" direction (continues → "is continued by", answers → "is answered by", etc.) — string
+concatenation (`'is ' + EDGE_LABELS[type] + ' by'`) doesn't work for irregular verbs and was rendering
+literal "is continues by" on every record page. Committed and pushed as a standalone fix ahead of the
+rest of this phase's work.
+
+**Verification:** full pipeline re-run; a new automated integrity sweep specific to this phase (0
+invalid `jointType` values, all `doctrinalSpine.recordId` references resolve, 0 stray markdown-link
+syntax left in any display field, plus all the standard Phase 11-13 checks — still 0 dup/missing/bad
+refs, 0 isolated records); byte-level UTF-8 roundtrip check across every edited file plus a 40-file
+record-page sample; fresh dev server + fresh browser page confirmed live: the Doctrinal Spine widget,
+joint-type badges, Lexicon Joints/Chiastic Mirror displays, the Threads page joint-type filter (tested
+interactively — clicking "Doctrinal Spine" correctly narrows the connection list per record), Mystery
+Mode's widened pools, and the Encounter Index's doctrinal-theme filter (tested interactively — returned
+exactly 6 records for "The Ordered Affections," matching the raw data count). Zero browser console
+errors observed.
+
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
 - `jcGetPrevNext(id)` / `jcGetEdgesFor(id)` — chronology and labeled-edge lookups, used by both `design-v2-logic.js` (record pages) and `threads.html` (constellation view)
@@ -535,6 +638,18 @@ return panel genuinely last).
 ---
 
 ## File Manifest
+
+**Phase 14 current state (September 3, 2026):** `assets/records-data.js` still holds 456 records and
+3,079 edges (both unchanged in count), but now: (a) each record may carry new optional fields
+`doctrinalSpine` (236/456), `lexiconJoints` (297/456), `chiasticMirror` (344/456), and
+`doctrinalThemesCarried` (234/456), extracted from its own Cross-Reference Appendix; (b) each edge now
+carries a real `jointType` (3,075/3,079 non-generic) instead of the old flat `continues` label; (c) a
+new `JOINT_TYPE_LABELS` map and `EDGE_LABELS_INCOMING` map (fixing the "is continues by" grammar bug)
+sit alongside `EDGE_LABELS`/`STATUS_LABELS`. New top-level data file: `assets/appendix-joints.json` (a
+`from->to` → `{jointType, note}` lookup, regenerated by `build-records2-corpus.mjs`, consumed by
+`rebuild-edges-from-lattice.mjs`). New record-page mounts: `#doctrinal-spine-mount`,
+`#lexicon-chiastic-mount`. Threads page gained a joint-type filter; Mystery Mode's keyword pools and
+the landing page's Encounter Index both gained new appendix-sourced matching/filtering.
 
 **Phase 13 current state (September 3, 2026):** `assets/records-data.js` now holds 456 records
 (unchanged), 3,079 Corpus-Lattice-verified edges (unchanged from Phase 12, only the `source` field
@@ -574,21 +689,31 @@ account of what superseded them.
 - `scripts/relink-corpus-paths.mjs` — the Phase 5 script that safely re-links Corpus Paths steps to local pages, 35 of 48 as of Phase 11. **Superseded by Phase 13's `rebuild-threads-and-paths.mjs`**, which rebuilds `corpus-paths-data.js` wholesale from the owner's new corpus map documents via Corpus Lattice matching. Kept as a historical artifact; do not re-run against the current `corpus-paths-data.js` schema.
 - `scripts/integrate-passes-7-8.mjs`, `scripts/integrate-passes-9-13.mjs`, `scripts/integrate-passes-14-16.mjs`, `scripts/integrate-pass-17.mjs` (Phases 6–9) — **superseded by Phase 10.** Each promoted mirrored records and built edges by parsing Pass-N-Cross-References.md *summary* documents; that data was found to be partly hallucinated. Kept in the repository as historical artifacts documenting the project's evolution; do not re-run them.
 - `scripts/rebuild-cross-references-verified.mjs` (Phase 10) — parses each of the 458 verified meditation files' own embedded Cross-Reference Appendix, rebuilds `JC_EDGES` wholesale, adds `tabletAnchor`, mirrors any missing files. **Superseded by Phase 11** (records-2/ cutover) then again by **Phase 12** for edges specifically (Corpus Lattice verification). Kept as a historical artifact; `tabletAnchor` generation logic remains referenced by `build-records2-corpus.mjs`.
-- `scripts/build-records2-corpus.mjs` (Phase 11, current authoritative record-page/JC_RECORDS generator) — parses every `records-2/` meditation file's own metadata + embedded Cross-Reference Appendix, regenerates every record page and `JC_RECORDS`/`tabletAnchor` wholesale. Re-run whenever `records-2/` is updated; must be followed by `rebuild-edges-from-lattice.mjs` (Phase 12) to regenerate `JC_EDGES` afterward (this script's own JC_EDGES output is immediately superseded).
+- `scripts/build-records2-corpus.mjs` (Phase 11, current authoritative record-page/JC_RECORDS generator; **Phase 14** rewrote its appendix parser) — parses every `records-2/` meditation file's own metadata + embedded Cross-Reference Appendix (now extracting the full Doctrinal Spine / Lexicon Joints / Chiastic Mirror / Doctrinal Themes Carried structure, not just typed links), regenerates every record page and `JC_RECORDS`/`tabletAnchor` wholesale, and writes `assets/appendix-joints.json`. Re-run whenever `records-2/` is updated; must be followed by `rebuild-edges-from-lattice.mjs` (Phase 12/14) to regenerate `JC_EDGES` afterward (this script's own JC_EDGES output is immediately superseded).
 - `scripts/build-stone-tablet-pages.mjs`, `scripts/rebuild-reference-pages.mjs` (Phase 11) — Stone Tablet reader pages and the 3 infographic pages, both sourced from `records-2/`.
-- `scripts/rebuild-edges-from-lattice.mjs` (**Phase 12, current authoritative `JC_EDGES` rebuilder**) — re-derives the `records-2/` filename→id mapping (imported from `build-records2-corpus.mjs`, with a hard safety check against the committed `JC_RECORDS`), matches every local record to its Corpus Lattice node via exact `archive_filename` string equality, and wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references. Reports (does not modify) `JC_THREADS` coverage. Re-run whenever `Corpus Lattice.json` is updated — requires schema v1.2 or later (the `archive_filename` fields); refuses to run against older schemas.
+- `scripts/rebuild-edges-from-lattice.mjs` (**Phase 12, current authoritative `JC_EDGES` rebuilder; Phase 14** added joint-type reconciliation) — re-derives the `records-2/` filename→id mapping (imported from `build-records2-corpus.mjs`, with a hard safety check against the committed `JC_RECORDS`), matches every local record to its Corpus Lattice node via exact `archive_filename` string equality, and wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references — each now enriched with a real `jointType`/`note` from `assets/appendix-joints.json` when the appendix independently named one for that exact verified pair. Reports (does not modify) `JC_THREADS` coverage. Re-run whenever `Corpus Lattice.json` is updated — requires schema v1.2 or later (the `archive_filename` fields); refuses to run against older schemas.
 - `records/*.md` — **removed as of Phase 11**; `records/` is now pure generated `-v2.html` output. Raw source lives exclusively in `records-2/`.
 - `verified-source-docs/PLAUD-Meditations-Corpus_2026-09-02/` (Phase 10) — **superseded by `records-2/` in Phase 11**; gitignored/local-only as of Phase 11's `.gitignore` update. Kept locally for historical audit trail, not part of the public repo.
 - `Superseded-Docs/` (Phase 10, expanded Phase 11) — every document earlier phases superseded, including a full pre-Phase-11 snapshot of the old `records/` folder (`records-pre-records2-cutover-2026-09-03/`). Gitignored/local-only as of Phase 11.
 - `Corpus Lattice.json`, `Corpus Lattice.csv` (Phase 12) — the owner's schema-versioned ground-truth cross-reference dataset (v1.2 as of this writing: every node/cross-reference-target carries paired original/`archive_filename` fields). Committed to the repository as the current source of truth for `JC_EDGES`; re-run `rebuild-edges-from-lattice.mjs` whenever these are updated.
 - `scripts/rebuild-threads-and-paths.mjs` (**Phase 13, current authoritative `JC_THREADS`/`corpus-paths-data.js` rebuilder**) — transcribes thread/path members verbatim from the owner's corpus map documents' own `memo:` links (never a paraphrase or a date-only guess), resolves each to a local record via `memoBasename` → Corpus Lattice node (matched on `path` basename) → `archive_filename` → `records-2/` id (re-derived via the same imported, hard-safety-checked logic `rebuild-edges-from-lattice.mjs` uses). Wholesale-replaces `JC_THREADS` and rewrites `assets/corpus-paths-data.js`. Re-run whenever the corpus map documents or Corpus Lattice are updated; always run after `rebuild-edges-from-lattice.mjs`.
 - `Corpus Map — How These Documents Read Each Other.md`, `PLAUD Meditations Corpus Map — How the Meditations Read Each Other.md` (Phase 13) — the owner's new hand-authored corpus map documents (13 threads, ~10 reading paths, 36-term lexicon, persons-as-nodes, horizons — only Threads 1–10/7-built and 5 reading paths adopted this phase; the rest explicitly deferred, see "Deferred" above). Source input to `rebuild-threads-and-paths.mjs`; not committed to the public repo (kept locally as source reference only, consistent with the other corpus-map source documents' handling).
+- `assets/appendix-joints.json` (**Phase 14**) — a `from->to` → `{jointType, note}` lookup built by `build-records2-corpus.mjs` from every meditation's own Cross-Reference Appendix and consumed by `rebuild-edges-from-lattice.mjs` to enrich Corpus-Lattice-verified edges with their real structural classification. Committed to the repository; regenerated on every `build-records2-corpus.mjs` run.
 - `assets/beta.js`, `assets/beta.css` — **deleted in Phase 13** (confirmed dead code: an earlier, unused implementation of the carry-a-question feature, referenced by zero HTML files).
 
 ---
 
 ## Success Criteria
 
+- ✓ **Phase 14 (appendix richness):** every meditation's own Cross-Reference Appendix (Doctrinal Spine,
+  Thread Joints, Lexicon Joints, Expanded Chiastic Mirror, Tablet Anchor) now feeds real structured
+  data onto the site instead of a flat "continues" label — 3,075/3,079 Corpus-Lattice-verified edges
+  (99.8%) carry a real, specific `jointType`; a Doctrinal Spine widget, joint-type badges, and Lexicon
+  Joints/Chiastic Mirror displays render on record pages; a joint-type filter on Threads; widened
+  Mystery Mode matching; a Doctrinal-theme filter on the landing page's Encounter Index. Found and
+  fixed three real bugs along the way, including a significant pre-existing one (present since Phase
+  11) that had silently dropped ~1,600 genuinely-resolvable appendix cross-references; see "Phase 14"
+  above for the full account
 - ✓ **Phase 13 (public beta cleanup pass):** `JC_THREADS` rebuilt from 4 stale pre-`records-2`
   threads to 7 threads transcribed directly from the owner's new corpus map documents, resolved via
   Corpus Lattice path-matching with zero guessing; `assets/corpus-paths-data.js` rebuilt from 6 stale

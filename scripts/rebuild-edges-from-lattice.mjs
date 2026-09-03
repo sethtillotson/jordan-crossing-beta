@@ -167,12 +167,31 @@ function main() {
   console.log(`Local records resolved to a Corpus Lattice node by exact archive_filename: ${sourceMatched} / ${filenameToId.size} (${sourceNotMatched} unresolved).`);
   if (unmatchedSourceSamples.length) console.log('  unmatched samples:', unmatchedSourceSamples);
 
-  // 4. Build the new, Corpus-Lattice-verified edge set: meditation -> meditation
+  // 4. Load Phase 14's appendix-derived joint-type hints (built by
+  //    build-records2-corpus.mjs from each record's own Cross-Reference
+  //    Appendix — doctrinal-spine-seed/-growth/-tablet, thread-joint,
+  //    lexicon-joint, chiastic-mirror, or the generic cross-reference
+  //    fallback). These are used ONLY to enrich an edge Corpus Lattice has
+  //    ALREADY independently verified exists — an appendix-only hint with
+  //    no matching Lattice-verified (from,to) pair is never trusted or
+  //    surfaced, preserving the same anti-hallucination discipline as the
+  //    rest of this script.
+  const jointHintsPath = path.join(ROOT, 'assets', 'appendix-joints.json');
+  let jointHints = {};
+  if (fs.existsSync(jointHintsPath)) {
+    jointHints = JSON.parse(fs.readFileSync(jointHintsPath, 'utf8'));
+    console.log(`Loaded ${Object.keys(jointHints).length} appendix-derived joint-type hints from assets/appendix-joints.json.`);
+  } else {
+    console.log('No assets/appendix-joints.json found — every edge will default to the generic "cross-reference" jointType. Run build-records2-corpus.mjs first to generate it.');
+  }
+
+  // 5. Build the new, Corpus-Lattice-verified edge set: meditation -> meditation
   //    only (Stone Tablet / external cross-references are informational,
   //    not rendered as JC_EDGES — Stone Tablet linkage already lives in
   //    each record's own tabletAnchor field).
   //
-  //    Note: no per-edge `note` field is set here. Corpus Lattice gives no
+  //    Note: no per-edge `note` field is set here UNLESS a matching
+  //    appendix joint-hint supplies one. Corpus Lattice itself gives no
   //    direction-independent descriptive text for a cross-reference beyond
   //    the target's own title (which the "Reviewed thread connections"
   //    link already displays) — an earlier version of this script set
@@ -186,6 +205,7 @@ function main() {
   const newEdges = [];
   const edgeKeys = new Set();
   let scanned = 0, resolvedMedToMed = 0, skippedNonMedTarget = 0, unresolvedTarget = 0;
+  const jointTypeCounts = {};
   for (const [localId, node] of localIdToNode) {
     for (const cr of node.cross_references || []) {
       scanned += 1;
@@ -198,13 +218,19 @@ function main() {
       const key = `${localId}->${targetLocalId}`;
       if (edgeKeys.has(key)) continue;
       edgeKeys.add(key);
-      newEdges.push({
+      const hint = jointHints[key];
+      const jointType = hint ? hint.jointType : 'cross-reference';
+      jointTypeCounts[jointType] = (jointTypeCounts[jointType] || 0) + 1;
+      const edge = {
         from: localId,
         to: targetLocalId,
         type: 'continues',
+        jointType,
         status: 'editorial',
         source: 'Verified against the corpus\'s own cross-reference record.',
-      });
+      };
+      if (hint && hint.note) edge.note = hint.note;
+      newEdges.push(edge);
     }
   }
   console.log(`\nCross-references scanned across ${localIdToNode.size} local records: ${scanned}`);
@@ -212,8 +238,10 @@ function main() {
   console.log(`  skipped (target is a Stone Tablet / external / not locally published): ${skippedNonMedTarget}`);
   console.log(`  unresolved in Corpus Lattice itself (status != ok): ${unresolvedTarget}`);
   console.log(`New Corpus-Lattice-verified edges (deduplicated): ${newEdges.length}`);
+  console.log('Joint-type breakdown (appendix hints reconciled onto Lattice-verified edges):');
+  for (const [t, c] of Object.entries(jointTypeCounts).sort((a, b) => b[1] - a[1])) console.log(`  ${t}: ${c}`);
 
-  // 5. Compare against the CURRENT (Phase 11, appendix-parsed) JC_EDGES.
+  // 6. Compare against the CURRENT (Phase 11, appendix-parsed) JC_EDGES.
   const { value: oldEdges } = loadArray(src0, 'JC_EDGES');
   const oldEdgeKeys = new Set(oldEdges.map(e => `${e.from}->${e.to}`));
   const newEdgeKeySet = new Set(newEdges.map(e => `${e.from}->${e.to}`));
@@ -223,7 +251,7 @@ function main() {
   console.log(`\nEdges in the OLD (Phase 11 appendix-parsed) set with NO backing in Corpus Lattice: ${inOldNotInLattice.length} / ${oldEdges.length}`);
   console.log(`Edges in Corpus Lattice not previously exposed in the OLD set: ${inLatticeNotInOld.length} / ${newEdges.length}`);
 
-  // 6. Report (do NOT modify) how well the named JC_THREADS sequences are
+  // 7. Report (do NOT modify) how well the named JC_THREADS sequences are
   //    backed by the new Corpus-Lattice-verified edge set. IMPORTANT: a
   //    named thread (Zechariah 3 / Samuel Loop / Murmuration / Descent) is
   //    a hand-curated THEMATIC narrative across the whole corpus, built
@@ -254,13 +282,13 @@ function main() {
     console.log(`  "${t.id}": ${connectedCount}/${t.sequence.length} steps have a direct Corpus-Lattice-verified edge to another step in this thread (this is informational, not a defect — see comment above).`);
   }
 
-  // 7. Write everything back — JC_RECORDS and JC_THREADS untouched, only
+  // 8. Write everything back — JC_RECORDS and JC_THREADS untouched, only
   //    JC_EDGES replaced.
   let out = src0;
   out = replaceArray(out, 'JC_EDGES', newEdges);
-  out = out.replace(/Last updated: [^\n]+/, `Last updated: ${new Date().toISOString()} (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification)`);
+  out = out.replace(/Last updated: [^\n]+/, `Last updated: ${new Date().toISOString()} (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification + Phase 14 joint-type reconciliation)`);
   fs.writeFileSync(DATA_PATH, out, 'utf8');
-  console.log(`\nWrote assets/records-data.js: ${jcRecords.length} records (unchanged), ${newEdges.length} edges (Corpus-Lattice-verified), ${jcThreads.length} threads (unchanged — see coverage report above).`);
+  console.log(`\nWrote assets/records-data.js: ${jcRecords.length} records (unchanged), ${newEdges.length} edges (Corpus-Lattice-verified, joint-type-enriched), ${jcThreads.length} threads (unchanged — see coverage report above).`);
 }
 
 main();

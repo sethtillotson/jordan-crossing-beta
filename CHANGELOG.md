@@ -2,6 +2,72 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.3] — September 3, 2026
+
+### Cross-Reference Appendix richness — Doctrinal Spine, Lexicon Joints, Chiastic Mirror (Phase 14)
+
+Every meditation's own Cross-Reference Appendix carries far more structure than the site had been
+using — a Doctrinal Spine (Seed → Growth → Tablet), Thread Joints, Lexicon Joints, an Expanded
+Chiastic Mirror, and a Tablet Anchor — but every cross-reference edge had been flattened to one
+generic "continues" label, and the incoming-direction label had a real grammar bug ("is continues by").
+
+#### New parser, two real appendix formats handled
+
+Surveyed all 458 source files: the corpus carries two Cross-Reference Appendix formats roughly 50/50
+(236 rigid-only, 220 loose-only, 20 files carry both). Verified the appendix is always the file's final
+section (0 exceptions), letting the rewritten parser safely capture everything from the first
+`## Cross-Reference` heading to end-of-file — fixing a smaller pre-existing bug where content after
+`### Tablet Anchor` (an "Additional Thread Joints" section, 8 files) was silently discarded. The new
+parser extracts, per record: `doctrinalSpine` (seed/growth/tablet, each with a label, gloss, and
+resolved `recordId` where possible), `lexiconJoints` (term + gloss pairs), `chiasticMirror` (position +
+label + gloss), and `doctrinalThemesCarried`. Every memo-link in the appendix is classified into a real
+`jointType` (`doctrinal-spine-seed/-growth/-tablet`, `thread-joint`, `lexicon-joint`,
+`chiastic-mirror`, or generic `cross-reference`) instead of the old flat `continues`.
+
+#### Three real bugs found and fixed
+
+- **A malformed-match bug in tablet-anchor parsing.** The loose appendix format sometimes writes the
+  tablet name INSIDE a markdown link rather than around one; a naive regex captured trailing
+  `](memo:...)` text as part of the "window" description, corrupting 2 records' `tabletAnchor.window`
+  field (and, more seriously, breaking every downstream script's bracket-counting array parser). Fixed
+  by preferring the reliable rigid H3 heading and rejecting any match immediately followed by `]`.
+- **A silent 80-character cap on section-label matching.** Real loose-format labels sometimes run
+  longer (~93 characters observed) — the old cap silently failed to match these, leaving the parser's
+  "current section" stuck on whatever preceded it and mis-classifying every link underneath. Raised to
+  200.
+- **A significant pre-existing bug (present since Phase 11, independent of this phase's work).** The
+  fuzzy-filename-match fallback used whenever an appendix's stated link filename differs from
+  `records-2/`'s own independently-shortened filename returned a basename missing its `.md` extension,
+  silently failing every lookup against it. Fixing this alone raised resolved appendix links from
+  2,136 to 3,747 (+1,611) — nearly doubling the richness available to reconcile onto the verified edge
+  set.
+
+#### Reconciliation, not replacement
+
+`rebuild-edges-from-lattice.mjs` remains the sole authority on which edges exist (Corpus-Lattice-
+verified, unchanged: 3,079 edges, 0 isolated records). It now also loads a new `assets/appendix-
+joints.json` lookup and enriches each verified edge with a real `jointType`/`note` when the appendix
+independently named one for that exact pair — an appendix-only hint with no matching verified edge is
+never trusted. Result: 3,075/3,079 edges (99.8%) now carry a real, specific joint type.
+
+#### New UI
+
+- Record pages: a "Doctrinal Spine" widget, color-coded joint-type badges in "Reviewed thread
+  connections" (replacing the old flat "verified" label), and new "Lexicon Joints"/"Expanded Chiastic
+  Mirror" displays — all absent entirely (never fabricated) when a record's own appendix doesn't carry
+  that section.
+- `threads.html`: a joint-type filter (All / Doctrinal Spine / Thread Joint / Lexicon Joint / Chiastic
+  Mirror / Cross-Reference).
+- Mystery Mode: doorway keyword-matching now also searches each record's own doctrinal theme and
+  lexicon terms, widening real recall without inventing any new doorway↔theme taxonomy.
+- Landing page Encounter Index: a new "Doctrinal theme" filter (the 5 real values found in the corpus).
+
+#### Also fixed directly
+
+The reported "is continues by" grammar bug — a new `EDGE_LABELS_INCOMING` map gives the correct
+past-participle form for every edge type shown in the incoming direction. Committed as a standalone fix
+ahead of the rest of this phase's work.
+
 ## [2.2] — September 3, 2026
 
 ### Public beta cleanup pass (Phase 13)

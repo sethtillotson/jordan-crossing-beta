@@ -333,6 +333,17 @@
                 <option value="Tablet VIII — the open seed">Tablet VIII</option>
               </select>
             </div>
+            <div class="encounter-field">
+              <label for="encounter-doctrinal-theme">Doctrinal theme</label>
+              <select id="encounter-doctrinal-theme">
+                <option value="">Any</option>
+                <option value="The Sacred Ordinary">The Sacred Ordinary</option>
+                <option value="The Received Voice">The Received Voice</option>
+                <option value="The Non-Withholding">The Non-Withholding</option>
+                <option value="The Finished Work">The Finished Work</option>
+                <option value="The Ordered Affections">The Ordered Affections</option>
+              </select>
+            </div>
           </div>
 
           <div class="encounter-index-actions">
@@ -450,12 +461,20 @@
           const el = document.getElementById('encounter-' + name);
           if (el && el.value) f[name] = el.value;
         });
+        // Doctrinal theme (Phase 14) — sourced from each record's own
+        // Cross-Reference Appendix ("Doctrinal themes carried"), a
+        // top-level field (not nested under rec.encounter like the others
+        // above), and only present on ~half the corpus — records without
+        // it are simply excluded when this filter is set, never guessed.
+        const themeEl = document.getElementById('encounter-doctrinal-theme');
+        if (themeEl && themeEl.value) f.doctrinalTheme = themeEl.value;
         return f;
       }
 
       function matchingRecords(filters) {
         return JC_RECORDS.filter(rec => {
           if (!rec.encounter) return false;
+          if (filters.doctrinalTheme && rec.doctrinalThemesCarried !== filters.doctrinalTheme) return false;
           return fields.every(name => !filters[name] || rec.encounter[name] === filters[name]);
         });
       }
@@ -496,6 +515,8 @@
           const el = document.getElementById('encounter-' + name);
           if (el) el.value = '';
         });
+        const themeEl = document.getElementById('encounter-doctrinal-theme');
+        if (themeEl) themeEl.value = '';
         countEl.textContent = '';
         resultEl.innerHTML = '';
       });

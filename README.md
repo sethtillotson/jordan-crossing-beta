@@ -103,9 +103,16 @@ directly from that source — not patched incrementally.
 │   ├── design-v2-logic.js         # Page init, Markdown rendering, graph nav, thread connections,
 │   │                               #   related records, audio player init, no-interpretation mode
 │   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
-│   ├── records-data.js            # JC_RECORDS (456 records, all reviewed, all with a tabletAnchor),
-│   │                               #   JC_EDGES (3,079 edges, Corpus-Lattice-verified in Phase 12,
-│   │                               #   zero isolated records), JC_THREADS (7, rebuilt in Phase 13)
+│   ├── records-data.js            # JC_RECORDS (456 records, all reviewed, all with a tabletAnchor;
+│   │                               #   Phase 14 adds optional doctrinalSpine/lexiconJoints/
+│   │                               #   chiasticMirror/doctrinalThemesCarried fields where a record's
+│   │                               #   own appendix carries them), JC_EDGES (3,079 edges, Corpus-
+│   │                               #   Lattice-verified in Phase 12, zero isolated records; Phase 14
+│   │                               #   adds a real jointType to 3,075/3,079 of them), JC_THREADS
+│   │                               #   (7, rebuilt in Phase 13)
+│   ├── appendix-joints.json       # Phase 14: from->to -> {jointType, note} lookup, built by
+│   │                               #   build-records2-corpus.mjs, consumed by
+│   │                               #   rebuild-edges-from-lattice.mjs
 │   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the five curated reading paths (Phase 13, zero external links)
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
 ├── records/
@@ -238,20 +245,25 @@ search-and-replace it across every referencing page, not just the one you edited
 ### Regenerating the corpus
 
 `node scripts/build-records2-corpus.mjs` is **the current authoritative generator for
-records/JC_RECORDS** (Phase 11). It reads every meditation file directly from `records-2/` (the
-canonical raw-source folder), parses each one's own title/date/classification metadata and
-embedded Cross-Reference Appendix, clears and regenerates every `records/*-v2.html` page, and
-rebuilds `JC_RECORDS` (plus an interim `JC_EDGES`, immediately superseded by step 2 below) in
-`assets/records-data.js`. It also remaps `JC_THREADS`' record-id references by title+date match
-(ids can shift when a title is corrected) and leaves `EDGE_LABELS`, `STATUS_LABELS`, and every
-helper function in `records-data.js` untouched. Re-run whenever `records-2/` is updated, then run,
-in order:
+records/JC_RECORDS** (Phase 11; Phase 14 rewrote its appendix parser). It reads every meditation file
+directly from `records-2/` (the canonical raw-source folder), parses each one's own
+title/date/classification metadata and embedded Cross-Reference Appendix — extracting the full
+Doctrinal Spine / Lexicon Joints / Chiastic Mirror / Doctrinal Themes Carried structure, not just typed
+links — clears and regenerates every `records/*-v2.html` page, and rebuilds `JC_RECORDS` (plus an
+interim `JC_EDGES`, immediately superseded by step 1 below) and `assets/appendix-joints.json` in/around
+`assets/records-data.js`. It also remaps `JC_THREADS`' record-id references by title+date match (ids
+can shift when a title is corrected) and leaves `EDGE_LABELS`, `EDGE_LABELS_INCOMING`, `STATUS_LABELS`,
+`JOINT_TYPE_LABELS`, and every helper function in `records-data.js` untouched. Re-run whenever
+`records-2/` is updated, then run, in order:
 
 1. `node scripts/rebuild-edges-from-lattice.mjs` — **the current authoritative `JC_EDGES`
-   rebuilder** (Phase 12). Matches every local record to its Corpus Lattice node by exact
-   `archive_filename` string equality (requires `Corpus Lattice.json` schema v1.2 or later) and
-   wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references.
-   Re-run whenever `Corpus Lattice.json`/`Corpus Lattice.csv` are updated.
+   rebuilder** (Phase 12; Phase 14 added joint-type reconciliation). Matches every local record to its
+   Corpus Lattice node by exact `archive_filename` string equality (requires `Corpus Lattice.json`
+   schema v1.2 or later) and wholesale-replaces `JC_EDGES` with only `status: "ok"`
+   meditation-to-meditation cross-references — each enriched with a real `jointType`/`note` from
+   `assets/appendix-joints.json` when the appendix independently named one for that exact verified
+   pair. Re-run whenever `Corpus Lattice.json`/`Corpus Lattice.csv` are updated, always after step 0
+   above (it consumes that step's `appendix-joints.json` output).
 2. `node scripts/rebuild-threads-and-paths.mjs` — **the current authoritative `JC_THREADS`/
    `corpus-paths-data.js` rebuilder** (Phase 13). Transcribes thread/path members verbatim from the
    owner's corpus map documents' own `memo:` links, resolves each to a local record via Corpus

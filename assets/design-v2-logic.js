@@ -293,11 +293,21 @@
         : (EDGE_LABELS_INCOMING[edge.type] || `is ${edge.type} by`);
       const targetHref = jcHrefFromRecord(otherId);
       const targetTitle = jcTitleFor(otherId);
+      // Phase 14: the real structural classification (Doctrinal Spine /
+      // Thread Joint / Lexicon Joint / Chiastic Mirror), extracted from the
+      // meditation's own Cross-Reference Appendix — replaces the old flat
+      // "verified" badge shown on every single edge regardless of kind.
+      const jointType = edge.jointType || 'cross-reference';
+      const jointLabel = (typeof JOINT_TYPE_LABELS !== 'undefined' && JOINT_TYPE_LABELS[jointType]) || jointType;
+      const badgeClass = jointType.startsWith('doctrinal-spine') ? 'thread-status--spine'
+        : jointType === 'lexicon-joint' ? 'thread-status--lexicon'
+        : jointType === 'chiastic-mirror' ? 'thread-status--mirror'
+        : 'thread-status--confirmed';
 
       html += `
         <li class="thread-item">
           <div class="thread-edge">
-            <span class="thread-status thread-status--confirmed">verified</span>
+            <span class="thread-status ${badgeClass}">${jointLabel}</span>
             <span>${label}</span>
             <a href="${targetHref}">${targetTitle}</a>
           </div>
@@ -307,6 +317,83 @@
     });
 
     html += '</ul>';
+    mount.innerHTML = html;
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
+  // DOCTRINAL SPINE — Seed → Growth → Tablet arc (Phase 14). Rendered only
+  // when the record's own Cross-Reference Appendix names one; a record
+  // without this section in its source appendix (roughly half the corpus
+  // — see build-records2-corpus.mjs's parseAppendixLinks header note)
+  // simply shows nothing here, never a fabricated arc.
+  // ═════════════════════════════════════════════════════════════════════
+
+  function initDoctrinalSpine() {
+    const mount = document.getElementById('doctrinal-spine-mount');
+    if (!mount || typeof JC_RECORDS === 'undefined') return;
+
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const rec = JC_RECORDS.find(r => r.id === shortId);
+    if (!rec || !rec.doctrinalSpine) return;
+    const { seed, growth, tablet } = rec.doctrinalSpine;
+    if (!seed && !growth && !tablet) return;
+
+    const step = (data, stepLabel) => {
+      if (!data) return '';
+      const title = data.recordId ? jcTitleFor(data.recordId) : (data.label || stepLabel);
+      const inner = data.recordId
+        ? `<a href="${jcHrefFromRecord(data.recordId)}">${title}</a>`
+        : `<span>${title}</span>`;
+      return `
+        <div class="spine-step">
+          <span class="spine-step-label">${stepLabel}</span>
+          ${inner}
+          ${data.gloss ? `<p class="spine-step-gloss">${data.gloss}</p>` : ''}
+        </div>
+      `;
+    };
+
+    mount.innerHTML = `
+      <h3 class="doctrinal-spine-heading">Doctrinal Spine</h3>
+      <div class="doctrinal-spine-arc">
+        ${step(seed, 'Seed')}
+        ${step(growth, 'Growth')}
+        ${step(tablet, 'Tablet')}
+      </div>
+    `;
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
+  // LEXICON JOINTS + CHIASTIC MIRROR — small supplementary displays
+  // (Phase 14), rendered only when the record's own appendix names them.
+  // ═════════════════════════════════════════════════════════════════════
+
+  function initLexiconChiasticMirror() {
+    const mount = document.getElementById('lexicon-chiastic-mount');
+    if (!mount || typeof JC_RECORDS === 'undefined') return;
+
+    const shortId = (typeof jcShortId === 'function') ? jcShortId(RECORD_ID) : RECORD_ID;
+    const rec = JC_RECORDS.find(r => r.id === shortId);
+    if (!rec) return;
+    const hasLexicon = rec.lexiconJoints && rec.lexiconJoints.length;
+    const hasMirror = rec.chiasticMirror && rec.chiasticMirror.length;
+    if (!hasLexicon && !hasMirror) return;
+
+    let html = '';
+    if (hasLexicon) {
+      html += '<div class="lexicon-joints"><h3 class="lexicon-joints-heading">Lexicon Joints</h3><ul class="lexicon-joints-list">';
+      rec.lexiconJoints.forEach(lj => {
+        html += `<li><strong>${lj.term}</strong>${lj.gloss ? ` — ${lj.gloss}` : ''}</li>`;
+      });
+      html += '</ul></div>';
+    }
+    if (hasMirror) {
+      html += '<div class="chiastic-mirror"><h3 class="chiastic-mirror-heading">Expanded Chiastic Mirror</h3><ul class="chiastic-mirror-list">';
+      rec.chiasticMirror.forEach(cm => {
+        html += `<li><span class="chiastic-position">${cm.position}</span>${cm.label ? ` <strong>${cm.label}</strong>` : ''}${cm.gloss ? ` — ${cm.gloss}` : ''}</li>`;
+      });
+      html += '</ul></div>';
+    }
     mount.innerHTML = html;
   }
 
@@ -382,9 +469,11 @@
 
     const toHide = [
       '.discern-section',
+      '#doctrinal-spine-mount',
       '#related-records-mount',
       '#threads-mount',
       '#doorway-themes-mount',
+      '#lexicon-chiastic-mount',
       '.return-panel',
     ];
     toHide.forEach(sel => {
@@ -434,9 +523,11 @@
     initReturnChoices();
     initAudioPlayer();
     initGraphNav();
+    initDoctrinalSpine();
     initRelatedRecords();
     initDoorwayThemes();
     initThreadConnections();
+    initLexiconChiasticMirror();
     trackLastRecord();
   });
 

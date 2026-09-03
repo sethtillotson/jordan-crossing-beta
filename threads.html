@@ -55,6 +55,10 @@
           Read top to bottom for chronology. Each record's verified connections are listed beneath it — what it continues, what it answers, what it echoes across a thread, and what remains open. Every line traces to a dated source.
         </p>
         
+        <div id="joint-type-filter" style="margin-bottom:var(--space-4);display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center;">
+          <span style="font-size:var(--text-sm);color:var(--parchment-dim);">Filter connections:</span>
+        </div>
+
         <div style="margin-bottom:var(--space-6);display:flex;gap:var(--space-3);align-items:center;">
           <label for="search-input" style="position:absolute;width:1px;height:1px;overflow:hidden;">Search records by title, summary, or category</label>
           <input type="text" id="search-input" placeholder="Search by title, summary, or category..." 
@@ -82,6 +86,7 @@
   let allRecords = [];
   let searchQuery = '';
   let activeThread = null;
+  let activeJointType = null; // Phase 14: null = show all connection types
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -157,22 +162,67 @@
     updateSearch();
   }
 
+  function jointTypeGroup(jointType) {
+    return jointType && jointType.startsWith('doctrinal-spine') ? 'doctrinal-spine' : (jointType || 'cross-reference');
+  }
+
+  const JOINT_TYPE_FILTERS = [
+    { group: null, label: 'All' },
+    { group: 'doctrinal-spine', label: 'Doctrinal Spine' },
+    { group: 'thread-joint', label: 'Thread Joint' },
+    { group: 'lexicon-joint', label: 'Lexicon Joint' },
+    { group: 'chiastic-mirror', label: 'Chiastic Mirror' },
+    { group: 'cross-reference', label: 'Cross-Reference' },
+  ];
+
+  function renderJointTypeFilter() {
+    const mount = document.getElementById('joint-type-filter');
+    if (!mount) return;
+    const pillsHtml = JOINT_TYPE_FILTERS.map(f => {
+      const active = activeJointType === f.group;
+      const style = active
+        ? 'background:rgba(201,162,39,0.2);border-color:var(--gold);'
+        : 'background:transparent;border-color:rgba(201,162,39,0.2);';
+      return `<button type="button" class="joint-filter-btn" data-group="${f.group || ''}" style="padding:var(--space-1) var(--space-3);border:1px solid;border-radius:var(--radius-sm);color:var(--parchment);font-family:var(--font-serif);font-size:var(--text-xs);cursor:pointer;${style}">${f.label}</button>`;
+    }).join('');
+    mount.innerHTML = '<span style="font-size:var(--text-sm);color:var(--parchment-dim);">Filter connections:</span>' + pillsHtml;
+    mount.querySelectorAll('.joint-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeJointType = btn.dataset.group || null;
+        renderJointTypeFilter();
+        updateSearch();
+      });
+    });
+  }
+
   function renderTimeline(filteredRecords = null) {
     const mount = document.getElementById('timeline-mount');
     if (!mount) return;
 
     const recordsToRender = filteredRecords || allRecords;
     const nodes = recordsToRender.map(rec => {
-      const { outgoing } = jcGetEdgesFor(rec.id);
+      const { outgoing: allOutgoing } = jcGetEdgesFor(rec.id);
+      const outgoing = activeJointType
+        ? allOutgoing.filter(e => jointTypeGroup(e.jointType) === activeJointType)
+        : allOutgoing;
       const edgesHtml = outgoing.length
         ? outgoing.map(e => {
             const label = EDGE_LABELS[e.type] || e.type;
             const targetTitle = jcTitleFor(e.to);
             const targetHref = jcHrefFor(e.to);
             const noteHtml = e.note ? ` <span style="color:var(--parchment-dim);font-size:var(--text-sm);">— ${escapeHtml(e.note)}</span>` : '';
-            return `<div class="thread-edge"><span class="thread-status" style="background:rgba(107,158,127,0.2);color:#a0d6b4;">${escapeHtml(label)}</span> <a href="${targetHref}" style="color:var(--gold);text-decoration:none;">${escapeHtml(targetTitle)}</a>${noteHtml}</div>`;
+            // Phase 14: real joint-type classification (Doctrinal Spine /
+            // Thread Joint / Lexicon Joint / Chiastic Mirror), extracted
+            // from the meditation's own Cross-Reference Appendix.
+            const jointType = e.jointType || 'cross-reference';
+            const jointLabel = escapeHtml((typeof JOINT_TYPE_LABELS !== 'undefined' && JOINT_TYPE_LABELS[jointType]) || jointType);
+            let badgeStyle = 'background:rgba(107,158,127,0.2);color:#a0d6b4;'; // default/cross-reference
+            if (jointType.startsWith('doctrinal-spine')) badgeStyle = 'background:rgba(201,162,39,0.22);color:var(--gold);';
+            else if (jointType === 'lexicon-joint') badgeStyle = 'background:rgba(122,148,201,0.2);color:#a3bce0;';
+            else if (jointType === 'chiastic-mirror') badgeStyle = 'background:rgba(168,122,201,0.2);color:#c7a3e0;';
+            return `<div class="thread-edge"><span class="thread-status" style="${badgeStyle}">${jointLabel}</span> <span style="color:var(--parchment-dim);font-size:var(--text-sm);">${escapeHtml(label)}</span> <a href="${targetHref}" style="color:var(--gold);text-decoration:none;">${escapeHtml(targetTitle)}</a>${noteHtml}</div>`;
           }).join('')
-        : `<div class="thread-edge" style="color:var(--parchment-dim);font-style:italic;">No outgoing connection recorded yet.</div>`;
+        : `<div class="thread-edge" style="color:var(--parchment-dim);font-style:italic;">${activeJointType ? 'No connection of this type for this record.' : 'No outgoing connection recorded yet.'}</div>`;
 
       return `<div class="thread-item">
         <div style="margin-bottom:var(--space-3);">
@@ -228,6 +278,7 @@
       // reviewed thread graph.
       allRecords = JC_RECORDS.filter(r => r.reviewed !== false).slice().sort((a, b) => a.order - b.order);
       renderThreadsOverview();
+      renderJointTypeFilter();
 
       const params = new URLSearchParams(location.search);
       const threadParam = params.get('thread');

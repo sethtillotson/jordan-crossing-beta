@@ -1156,6 +1156,26 @@ main {
   color: #a0d6b4;
 }
 
+/* Phase 14 — joint-type-specific badge colors, extracted from each
+   meditation's own Cross-Reference Appendix (Doctrinal Spine / Thread
+   Joints / Lexicon Joints / Chiastic Mirror). Distinct hues from
+   .thread-status--confirmed so the real structural classification is
+   visually distinguishable at a glance. */
+.thread-status--spine {
+  background: rgba(201, 162, 39, 0.22);
+  color: var(--gold);
+}
+
+.thread-status--lexicon {
+  background: rgba(122, 148, 201, 0.2);
+  color: #a3bce0;
+}
+
+.thread-status--mirror {
+  background: rgba(168, 122, 201, 0.2);
+  color: #c7a3e0;
+}
+
 .thread-status--editorial {
   background: rgba(168, 85, 85, 0.2);
   color: #d68c8c;
@@ -1187,6 +1207,124 @@ main {
   color: var(--parchment-dim);
   opacity: 0.7;
   margin-top: var(--space-2);
+}
+
+/* ───────────────────────────────────────────────────────────────────
+   DOCTRINAL SPINE (Phase 14) — the Seed → Growth → Tablet arc a record
+   belongs to, per its own Cross-Reference Appendix. Absent entirely
+   (:empty) for the roughly half of the corpus whose appendix doesn't
+   carry this section — never fabricated.
+   ─────────────────────────────────────────────────────────────────── */
+
+.doctrinal-spine-mount {
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(201, 162, 39, 0.15);
+}
+
+.doctrinal-spine-mount:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+.doctrinal-spine-heading {
+  font-size: var(--text-lg);
+  color: var(--parchment);
+  margin: 0 0 var(--space-6) 0;
+}
+
+.doctrinal-spine-arc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.spine-step {
+  padding: var(--space-4);
+  background: rgba(201, 162, 39, 0.05);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.spine-step-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-bottom: var(--space-2);
+}
+
+.spine-step a {
+  color: var(--parchment);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.spine-step a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.spine-step-gloss {
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  margin: var(--space-2) 0 0;
+  line-height: 1.5;
+}
+
+/* ───────────────────────────────────────────────────────────────────
+   LEXICON JOINTS + EXPANDED CHIASTIC MIRROR (Phase 14) — small
+   supplementary displays, absent entirely when a record's appendix
+   doesn't carry them.
+   ─────────────────────────────────────────────────────────────────── */
+
+.lexicon-chiastic-mount {
+  margin-top: var(--space-8);
+}
+
+.lexicon-chiastic-mount:empty {
+  margin: 0;
+}
+
+.lexicon-joints, .chiastic-mirror {
+  margin-bottom: var(--space-6);
+}
+
+.lexicon-joints-heading, .chiastic-mirror-heading {
+  font-size: var(--text-base);
+  color: var(--parchment);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.lexicon-joints-list, .chiastic-mirror-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.lexicon-joints-list li, .chiastic-mirror-list li {
+  font-size: var(--text-sm);
+  color: var(--parchment-dim);
+  line-height: 1.5;
+}
+
+.lexicon-joints-list strong, .chiastic-mirror-list strong {
+  color: var(--parchment);
+}
+
+.chiastic-position {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--gold);
+  min-width: 1.5em;
 }
 
 /* ═══════════════════════════════════════════════════════════════════

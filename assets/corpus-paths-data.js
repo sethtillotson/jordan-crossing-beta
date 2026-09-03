@@ -1,7 +1,7 @@
 /**
  * Jordan Crossing — Corpus Reading Paths
  *
- * Rebuilt 2026-09-03T11:26:26.474Z by scripts/rebuild-threads-and-paths.mjs
+ * Rebuilt 2026-09-03T12:15:57.412Z by scripts/rebuild-threads-and-paths.mjs
  * (Phase 13). Every path and step here is transcribed directly from the
  * owner's corpus map documents ("Corpus Map — How These Documents Read Each
  * Other.md" and "PLAUD Meditations Corpus Map — How the Meditations Read
