@@ -1,0 +1,666 @@
+path: PLAUD Meditations/PLAUD Meditations · Timeline of Six Spines.html
+content: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLAUD Meditations · Timeline of Six Spines</title>
+<style>
+:root {
+  --ink: #1a1815;
+  --ink-soft: #3a352f;
+  --ink-mute: #6b625a;
+  --parchment: #f6f1e6;
+  --parchment-deep: #ede4d0;
+  --parchment-edge: #d9cdb1;
+  --gold: #a8823a;
+  --gold-deep: #7a5f2a;
+  --border: rgba(26, 24, 21, 0.12);
+  --border-strong: rgba(26, 24, 21, 0.28);
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 48px 80px;
+}
+/* HERO */
+.hero {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+}
+.hero-label {
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 56px;
+  line-height: 1.03;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-deep); }
+.hero-sub {
+  font-size: 18px;
+  color: var(--ink-soft);
+  max-width: 800px;
+  margin: 0;
+  text-wrap: pretty;
+}
+/* CHART SHELL */
+.chart-shell {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+.chart-legend {
+  padding-top: 40px;
+}
+.spine-label {
+  height: 120px;
+  border-left: 3px solid;
+  padding: 6px 10px 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.spine-numeral {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+}
+.spine-name-line {
+  font-size: 13.5px;
+  line-height: 1.2;
+  color: var(--ink);
+  font-weight: 500;
+  margin-top: 4px;
+}
+.spine-desc-line {
+  font-size: 11px;
+  color: var(--ink-mute);
+  line-height: 1.35;
+  margin-top: 4px;
+  font-family: 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.02em;
+}
+.spine-stats {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.spine-stats strong {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+/* CHART */
+.chart-svg-wrap {
+  position: relative;
+  background: var(--parchment);
+}
+.month-axis {
+  height: 40px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+.month-tick {
+  position: absolute;
+  top: 4px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.month-tick::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 1px;
+  height: 6px;
+  background: var(--border-strong);
+}
+/* FEATURED PIN RULER (above chart) */
+.pin-ruler {
+  position: relative;
+  height: 36px;
+  margin-bottom: 2px;
+}
+.pin {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.pin-label { margin-bottom: 3px; }
+.pin-line {
+  width: 1px;
+  background: var(--ink-mute);
+  height: 8px;
+  opacity: 0.5;
+}
+/* MILESTONES SIDEBAR */
+.milestones {
+  margin-top: 48px;
+  border-top: 1px solid var(--border-strong);
+  padding-top: 32px;
+}
+.milestones h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.milestones .lead {
+  font-size: 14px;
+  color: var(--ink-mute);
+  margin: 0 0 24px;
+}
+.ms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+.ms-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 14px;
+  align-items: start;
+  padding: 14px 16px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--parchment);
+}
+.ms-date {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+.ms-body { min-width: 0; }
+.ms-label {
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+.ms-desc {
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  line-height: 1.35;
+}
+.ms-badge {
+  color: #f6f1e6;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 2px;
+  height: fit-content;
+  margin-top: 2px;
+}
+/* THREE ARCS */
+.arcs {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.arc {
+  border-top: 3px solid var(--ink);
+  padding-top: 18px;
+}
+.arc-eyebrow {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 6px;
+}
+.arc h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.arc p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0;
+  text-wrap: pretty;
+}
+.arc-window {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dotted var(--border-strong);
+}
+.footer {
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.footer em {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+@media (max-width: 1000px) {
+  .chart-shell { grid-template-columns: 1fr; }
+  .ms-list { grid-template-columns: 1fr; }
+  .arcs { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 40px; }
+  .page { padding: 32px 20px 60px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">Timeline · February 15 – September 1, 2026</div>
+  <h1>Seven months of formation,<br>six spines <em>growing</em> together.</h1>
+  <p class="hero-sub">Weekly cadence of every meditation across the six doctrinal spines. Each lane is a spine's own heartbeat over 30 weeks; the pins mark the moments where the corpus's doctrine crystallized.</p>
+</section>
+
+<!-- CHART -->
+<div class="chart-shell">
+  <div class="chart-legend">
+  <div style="height:76px;"></div>
+  <div class="spine-label" style="border-color:#a8823a">
+    <div class="spine-numeral" style="color:#a8823a">I</div>
+    <div class="spine-name-line">Convert's Ground</div>
+    <div class="spine-desc-line">Conversion, providence, first light of the finished work</div>
+    <div class="spine-stats"><strong>59</strong> · peak <strong>11/wk</strong></div>
+  </div>
+  <div class="spine-label" style="border-color:#4a2c5a">
+    <div class="spine-numeral" style="color:#4a2c5a">II</div>
+    <div class="spine-name-line">Prophetic Word Received</div>
+    <div class="spine-desc-line">Received words + prophetic-integrity discipline</div>
+    <div class="spine-stats"><strong>40</strong> · peak <strong>9/wk</strong></div>
+  </div>
+  <div class="spine-label" style="border-color:#2c4a6b">
+    <div class="spine-numeral" style="color:#2c4a6b">V</div>
+    <div class="spine-name-line">Received Voice</div>
+    <div class="spine-desc-line">Discernment, watchman, sound-mind, fortified inner man</div>
+    <div class="spine-stats"><strong>146</strong> · peak <strong>19/wk</strong></div>
+  </div>
+  <div class="spine-label" style="border-color:#7d2b2b">
+    <div class="spine-numeral" style="color:#7d2b2b">VI</div>
+    <div class="spine-name-line">Finished Work</div>
+    <div class="spine-desc-line">τετέλεσται · courtroom · mirror-gospel · Christ IN me</div>
+    <div class="spine-stats"><strong>28</strong> · peak <strong>5/wk</strong></div>
+  </div>
+  <div class="spine-label" style="border-color:#4a5a2e">
+    <div class="spine-numeral" style="color:#4a5a2e">VII</div>
+    <div class="spine-name-line">Non-Withholding</div>
+    <div class="spine-desc-line">חָשַׂךְ · Moriah · ordered affections · σκόλοψ endurance</div>
+    <div class="spine-stats"><strong>78</strong> · peak <strong>12/wk</strong></div>
+  </div>
+  <div class="spine-label" style="border-color:#8a5a3a">
+    <div class="spine-numeral" style="color:#8a5a3a">VIII</div>
+    <div class="spine-name-line">Sacred Ordinary</div>
+    <div class="spine-desc-line">Three-register braid · marketplace-covenant · Kingdom permeates</div>
+    <div class="spine-stats"><strong>106</strong> · peak <strong>14/wk</strong></div>
+  </div>
+  </div>
+  <div class="chart-svg-wrap">
+    <!-- Featured pin ruler -->
+    <div class="pin-ruler">
+      <div class="pin" style="left:3.0%">
+        <span class="pin-label" style="color:#a8823a">Feb 15</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:22.7%">
+        <span class="pin-label" style="color:#8a5a3a">Mar 27</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:30.5%">
+        <span class="pin-label" style="color:#7d2b2b">Apr 12</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:58.1%">
+        <span class="pin-label" style="color:#8a5a3a">Jun 7</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:74.4%">
+        <span class="pin-label" style="color:#2c4a6b">Jul 10</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:93.1%">
+        <span class="pin-label" style="color:#2c4a6b">Aug 17</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:98.5%">
+        <span class="pin-label" style="color:#4a5a2e">Aug 28</span>
+        <div class="pin-line"></div>
+      </div>
+      <div class="pin" style="left:99.5%">
+        <span class="pin-label" style="color:#7d2b2b">Aug 30</span>
+        <div class="pin-line"></div>
+      </div>
+    </div>
+
+    <!-- Month axis -->
+    <div class="month-axis">
+      <div class="month-tick" style="left:0.0%">FEB</div>
+      <div class="month-tick" style="left:9.9%">MAR</div>
+      <div class="month-tick" style="left:25.1%">APR</div>
+      <div class="month-tick" style="left:39.9%">MAY</div>
+      <div class="month-tick" style="left:55.2%">JUN</div>
+      <div class="month-tick" style="left:70.0%">JUL</div>
+      <div class="month-tick" style="left:85.2%">AUG</div>
+    </div>
+
+    <!-- Chart SVG -->
+    <svg viewBox="0 0 1080 690" width="100%" style="height:auto; display:block;" aria-label="Timeline of six doctrinal spines">
+      <line x1="0.0" y1="0" x2="0.0" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="106.4" y1="0" x2="106.4" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="271.3" y1="0" x2="271.3" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="430.9" y1="0" x2="430.9" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="595.9" y1="0" x2="595.9" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="755.5" y1="0" x2="755.5" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+      <line x1="920.4" y1="0" x2="920.4" y2="690" stroke="#d9cdb1" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+
+    <g transform="translate(0 0)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 85.3 C 18.6 85.3, 18.6 85.3, 37.2 85.3 C 55.9 85.3, 55.9 37.9, 74.5 37.9 C 93.1 37.9, 93.1 42.6, 111.7 42.6 C 130.3 42.6, 130.3 52.1, 149.0 52.1 C 167.6 52.1, 167.6 75.8, 186.2 75.8 C 204.8 75.8, 204.8 52.1, 223.4 52.1 C 242.1 52.1, 242.1 61.6, 260.7 61.6 C 279.3 61.6, 279.3 66.3, 297.9 66.3 C 316.6 66.3, 316.6 80.5, 335.2 80.5 C 353.8 80.5, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 90.0, 409.7 90.0 C 428.3 90.0, 428.3 90.0, 446.9 90.0 C 465.5 90.0, 465.5 90.0, 484.1 90.0 C 502.8 90.0, 502.8 90.0, 521.4 90.0 C 540.0 90.0, 540.0 90.0, 558.6 90.0 C 577.2 90.0, 577.2 85.3, 595.9 85.3 C 614.5 85.3, 614.5 75.8, 633.1 75.8 C 651.7 75.8, 651.7 90.0, 670.3 90.0 C 689.0 90.0, 689.0 90.0, 707.6 90.0 C 726.2 90.0, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 90.0, 856.6 90.0 C 875.2 90.0, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 90.0, 1080.0 90.0 L 1080.0 90 Z" fill="#a8823a" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 85.3 C 18.6 85.3, 18.6 85.3, 37.2 85.3 C 55.9 85.3, 55.9 37.9, 74.5 37.9 C 93.1 37.9, 93.1 42.6, 111.7 42.6 C 130.3 42.6, 130.3 52.1, 149.0 52.1 C 167.6 52.1, 167.6 75.8, 186.2 75.8 C 204.8 75.8, 204.8 52.1, 223.4 52.1 C 242.1 52.1, 242.1 61.6, 260.7 61.6 C 279.3 61.6, 279.3 66.3, 297.9 66.3 C 316.6 66.3, 316.6 80.5, 335.2 80.5 C 353.8 80.5, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 90.0, 409.7 90.0 C 428.3 90.0, 428.3 90.0, 446.9 90.0 C 465.5 90.0, 465.5 90.0, 484.1 90.0 C 502.8 90.0, 502.8 90.0, 521.4 90.0 C 540.0 90.0, 540.0 90.0, 558.6 90.0 C 577.2 90.0, 577.2 85.3, 595.9 85.3 C 614.5 85.3, 614.5 75.8, 633.1 75.8 C 651.7 75.8, 651.7 90.0, 670.3 90.0 C 689.0 90.0, 689.0 90.0, 707.6 90.0 C 726.2 90.0, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 90.0, 856.6 90.0 C 875.2 90.0, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 90.0, 1080.0 90.0 " fill="none" stroke="#a8823a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      <circle cx="31.9" cy="85.3" r="4.5" fill="#a8823a" stroke="#f6f1e6" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(0 120)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 90.0, 223.4 90.0 C 242.1 90.0, 242.1 90.0, 260.7 90.0 C 279.3 90.0, 279.3 90.0, 297.9 90.0 C 316.6 90.0, 316.6 90.0, 335.2 90.0 C 353.8 90.0, 353.8 71.1, 372.4 71.1 C 391.0 71.1, 391.0 56.8, 409.7 56.8 C 428.3 56.8, 428.3 71.1, 446.9 71.1 C 465.5 71.1, 465.5 47.4, 484.1 47.4 C 502.8 47.4, 502.8 61.6, 521.4 61.6 C 540.0 61.6, 540.0 66.3, 558.6 66.3 C 577.2 66.3, 577.2 75.8, 595.9 75.8 C 614.5 75.8, 614.5 80.5, 633.1 80.5 C 651.7 80.5, 651.7 90.0, 670.3 90.0 C 689.0 90.0, 689.0 90.0, 707.6 90.0 C 726.2 90.0, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 90.0, 856.6 90.0 C 875.2 90.0, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 90.0, 1080.0 90.0 L 1080.0 90 Z" fill="#4a2c5a" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 90.0, 223.4 90.0 C 242.1 90.0, 242.1 90.0, 260.7 90.0 C 279.3 90.0, 279.3 90.0, 297.9 90.0 C 316.6 90.0, 316.6 90.0, 335.2 90.0 C 353.8 90.0, 353.8 71.1, 372.4 71.1 C 391.0 71.1, 391.0 56.8, 409.7 56.8 C 428.3 56.8, 428.3 71.1, 446.9 71.1 C 465.5 71.1, 465.5 47.4, 484.1 47.4 C 502.8 47.4, 502.8 61.6, 521.4 61.6 C 540.0 61.6, 540.0 66.3, 558.6 66.3 C 577.2 66.3, 577.2 75.8, 595.9 75.8 C 614.5 75.8, 614.5 80.5, 633.1 80.5 C 651.7 80.5, 651.7 90.0, 670.3 90.0 C 689.0 90.0, 689.0 90.0, 707.6 90.0 C 726.2 90.0, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 90.0, 856.6 90.0 C 875.2 90.0, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 90.0, 1080.0 90.0 " fill="none" stroke="#4a2c5a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      
+    </g>
+
+    <g transform="translate(0 240)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 75.8, 223.4 75.8 C 242.1 75.8, 242.1 75.8, 260.7 75.8 C 279.3 75.8, 279.3 61.6, 297.9 61.6 C 316.6 61.6, 316.6 80.5, 335.2 80.5 C 353.8 80.5, 353.8 71.1, 372.4 71.1 C 391.0 71.1, 391.0 71.1, 409.7 71.1 C 428.3 71.1, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 71.1, 484.1 71.1 C 502.8 71.1, 502.8 80.5, 521.4 80.5 C 540.0 80.5, 540.0 80.5, 558.6 80.5 C 577.2 80.5, 577.2 56.8, 595.9 56.8 C 614.5 56.8, 614.5 61.6, 633.1 61.6 C 651.7 61.6, 651.7 0.0, 670.3 0.0 C 689.0 0.0, 689.0 18.9, 707.6 18.9 C 726.2 18.9, 726.2 37.9, 744.8 37.9 C 763.4 37.9, 763.4 4.7, 782.1 4.7 C 800.7 4.7, 800.7 37.9, 819.3 37.9 C 837.9 37.9, 837.9 33.2, 856.6 33.2 C 875.2 33.2, 875.2 56.8, 893.8 56.8 C 912.4 56.8, 912.4 66.3, 931.0 66.3 C 949.7 66.3, 949.7 85.3, 968.3 85.3 C 986.9 85.3, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 75.8, 1080.0 75.8 L 1080.0 90 Z" fill="#2c4a6b" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 75.8, 223.4 75.8 C 242.1 75.8, 242.1 75.8, 260.7 75.8 C 279.3 75.8, 279.3 61.6, 297.9 61.6 C 316.6 61.6, 316.6 80.5, 335.2 80.5 C 353.8 80.5, 353.8 71.1, 372.4 71.1 C 391.0 71.1, 391.0 71.1, 409.7 71.1 C 428.3 71.1, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 71.1, 484.1 71.1 C 502.8 71.1, 502.8 80.5, 521.4 80.5 C 540.0 80.5, 540.0 80.5, 558.6 80.5 C 577.2 80.5, 577.2 56.8, 595.9 56.8 C 614.5 56.8, 614.5 61.6, 633.1 61.6 C 651.7 61.6, 651.7 0.0, 670.3 0.0 C 689.0 0.0, 689.0 18.9, 707.6 18.9 C 726.2 18.9, 726.2 37.9, 744.8 37.9 C 763.4 37.9, 763.4 4.7, 782.1 4.7 C 800.7 4.7, 800.7 37.9, 819.3 37.9 C 837.9 37.9, 837.9 33.2, 856.6 33.2 C 875.2 33.2, 875.2 56.8, 893.8 56.8 C 912.4 56.8, 912.4 66.3, 931.0 66.3 C 949.7 66.3, 949.7 85.3, 968.3 85.3 C 986.9 85.3, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 90.0, 1042.8 90.0 C 1061.4 90.0, 1061.4 75.8, 1080.0 75.8 " fill="none" stroke="#2c4a6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      <circle cx="250.0" cy="75.8" r="4.5" fill="#2c4a6b" stroke="#f6f1e6" stroke-width="2"/><circle cx="415.0" cy="71.1" r="4.5" fill="#2c4a6b" stroke="#f6f1e6" stroke-width="2"/><circle cx="505.4" cy="71.1" r="4.5" fill="#2c4a6b" stroke="#f6f1e6" stroke-width="2"/><circle cx="803.3" cy="4.7" r="4.5" fill="#2c4a6b" stroke="#f6f1e6" stroke-width="2"/><circle cx="1005.5" cy="90.0" r="4.5" fill="#2c4a6b" stroke="#f6f1e6" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(0 360)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 85.3, 223.4 85.3 C 242.1 85.3, 242.1 85.3, 260.7 85.3 C 279.3 85.3, 279.3 66.3, 297.9 66.3 C 316.6 66.3, 316.6 85.3, 335.2 85.3 C 353.8 85.3, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 85.3, 409.7 85.3 C 428.3 85.3, 428.3 90.0, 446.9 90.0 C 465.5 90.0, 465.5 85.3, 484.1 85.3 C 502.8 85.3, 502.8 85.3, 521.4 85.3 C 540.0 85.3, 540.0 85.3, 558.6 85.3 C 577.2 85.3, 577.2 85.3, 595.9 85.3 C 614.5 85.3, 614.5 85.3, 633.1 85.3 C 651.7 85.3, 651.7 71.1, 670.3 71.1 C 689.0 71.1, 689.0 80.5, 707.6 80.5 C 726.2 80.5, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 85.3, 856.6 85.3 C 875.2 85.3, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 85.3, 968.3 85.3 C 986.9 85.3, 986.9 80.5, 1005.5 80.5 C 1024.1 80.5, 1024.1 75.8, 1042.8 75.8 C 1061.4 75.8, 1061.4 85.3, 1080.0 85.3 L 1080.0 90 Z" fill="#7d2b2b" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 85.3, 223.4 85.3 C 242.1 85.3, 242.1 85.3, 260.7 85.3 C 279.3 85.3, 279.3 66.3, 297.9 66.3 C 316.6 66.3, 316.6 85.3, 335.2 85.3 C 353.8 85.3, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 85.3, 409.7 85.3 C 428.3 85.3, 428.3 90.0, 446.9 90.0 C 465.5 90.0, 465.5 85.3, 484.1 85.3 C 502.8 85.3, 502.8 85.3, 521.4 85.3 C 540.0 85.3, 540.0 85.3, 558.6 85.3 C 577.2 85.3, 577.2 85.3, 595.9 85.3 C 614.5 85.3, 614.5 85.3, 633.1 85.3 C 651.7 85.3, 651.7 71.1, 670.3 71.1 C 689.0 71.1, 689.0 80.5, 707.6 80.5 C 726.2 80.5, 726.2 90.0, 744.8 90.0 C 763.4 90.0, 763.4 90.0, 782.1 90.0 C 800.7 90.0, 800.7 90.0, 819.3 90.0 C 837.9 90.0, 837.9 85.3, 856.6 85.3 C 875.2 85.3, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 85.3, 968.3 85.3 C 986.9 85.3, 986.9 80.5, 1005.5 80.5 C 1024.1 80.5, 1024.1 75.8, 1042.8 75.8 C 1061.4 75.8, 1061.4 85.3, 1080.0 85.3 " fill="none" stroke="#7d2b2b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      <circle cx="308.6" cy="66.3" r="4.5" fill="#7d2b2b" stroke="#f6f1e6" stroke-width="2"/><circle cx="329.9" cy="66.3" r="4.5" fill="#7d2b2b" stroke="#f6f1e6" stroke-width="2"/><circle cx="1074.7" cy="75.8" r="4.5" fill="#7d2b2b" stroke="#f6f1e6" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(0 480)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 85.3, 223.4 85.3 C 242.1 85.3, 242.1 80.5, 260.7 80.5 C 279.3 80.5, 279.3 85.3, 297.9 85.3 C 316.6 85.3, 316.6 90.0, 335.2 90.0 C 353.8 90.0, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 85.3, 409.7 85.3 C 428.3 85.3, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 90.0, 484.1 90.0 C 502.8 90.0, 502.8 80.5, 521.4 80.5 C 540.0 80.5, 540.0 85.3, 558.6 85.3 C 577.2 85.3, 577.2 90.0, 595.9 90.0 C 614.5 90.0, 614.5 85.3, 633.1 85.3 C 651.7 85.3, 651.7 61.6, 670.3 61.6 C 689.0 61.6, 689.0 71.1, 707.6 71.1 C 726.2 71.1, 726.2 42.6, 744.8 42.6 C 763.4 42.6, 763.4 75.8, 782.1 75.8 C 800.7 75.8, 800.7 80.5, 819.3 80.5 C 837.9 80.5, 837.9 61.6, 856.6 61.6 C 875.2 61.6, 875.2 85.3, 893.8 85.3 C 912.4 85.3, 912.4 85.3, 931.0 85.3 C 949.7 85.3, 949.7 37.9, 968.3 37.9 C 986.9 37.9, 986.9 33.2, 1005.5 33.2 C 1024.1 33.2, 1024.1 37.9, 1042.8 37.9 C 1061.4 37.9, 1061.4 85.3, 1080.0 85.3 L 1080.0 90 Z" fill="#4a5a2e" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 85.3, 223.4 85.3 C 242.1 85.3, 242.1 80.5, 260.7 80.5 C 279.3 80.5, 279.3 85.3, 297.9 85.3 C 316.6 85.3, 316.6 90.0, 335.2 90.0 C 353.8 90.0, 353.8 90.0, 372.4 90.0 C 391.0 90.0, 391.0 85.3, 409.7 85.3 C 428.3 85.3, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 90.0, 484.1 90.0 C 502.8 90.0, 502.8 80.5, 521.4 80.5 C 540.0 80.5, 540.0 85.3, 558.6 85.3 C 577.2 85.3, 577.2 90.0, 595.9 90.0 C 614.5 90.0, 614.5 85.3, 633.1 85.3 C 651.7 85.3, 651.7 61.6, 670.3 61.6 C 689.0 61.6, 689.0 71.1, 707.6 71.1 C 726.2 71.1, 726.2 42.6, 744.8 42.6 C 763.4 42.6, 763.4 75.8, 782.1 75.8 C 800.7 75.8, 800.7 80.5, 819.3 80.5 C 837.9 80.5, 837.9 61.6, 856.6 61.6 C 875.2 61.6, 875.2 85.3, 893.8 85.3 C 912.4 85.3, 912.4 85.3, 931.0 85.3 C 949.7 85.3, 949.7 37.9, 968.3 37.9 C 986.9 37.9, 986.9 33.2, 1005.5 33.2 C 1024.1 33.2, 1024.1 37.9, 1042.8 37.9 C 1061.4 37.9, 1061.4 85.3, 1080.0 85.3 " fill="none" stroke="#4a5a2e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      <circle cx="1064.0" cy="37.9" r="4.5" fill="#4a5a2e" stroke="#f6f1e6" stroke-width="2"/><circle cx="1080.0" cy="85.3" r="4.5" fill="#4a5a2e" stroke="#f6f1e6" stroke-width="2"/><circle cx="1085.3" cy="85.3" r="4.5" fill="#4a5a2e" stroke="#f6f1e6" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(0 600)">
+      <!-- Baseline -->
+      <line x1="0" y1="90" x2="1080.0" y2="90" stroke="#d9cdb1" stroke-width="1"/>
+      <!-- Area -->
+      <path d="M 0 90 L 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 80.5, 223.4 80.5 C 242.1 80.5, 242.1 85.3, 260.7 85.3 C 279.3 85.3, 279.3 28.4, 297.9 28.4 C 316.6 28.4, 316.6 56.8, 335.2 56.8 C 353.8 56.8, 353.8 66.3, 372.4 66.3 C 391.0 66.3, 391.0 90.0, 409.7 90.0 C 428.3 90.0, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 80.5, 484.1 80.5 C 502.8 80.5, 502.8 71.1, 521.4 71.1 C 540.0 71.1, 540.0 75.8, 558.6 75.8 C 577.2 75.8, 577.2 80.5, 595.9 80.5 C 614.5 80.5, 614.5 47.4, 633.1 47.4 C 651.7 47.4, 651.7 56.8, 670.3 56.8 C 689.0 56.8, 689.0 28.4, 707.6 28.4 C 726.2 28.4, 726.2 23.7, 744.8 23.7 C 763.4 23.7, 763.4 47.4, 782.1 47.4 C 800.7 47.4, 800.7 75.8, 819.3 75.8 C 837.9 75.8, 837.9 85.3, 856.6 85.3 C 875.2 85.3, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 56.8, 1042.8 56.8 C 1061.4 56.8, 1061.4 75.8, 1080.0 75.8 L 1080.0 90 Z" fill="#8a5a3a" fill-opacity="0.18"/>
+      <!-- Line -->
+      <path d="M 0.0 90.0 C 18.6 90.0, 18.6 90.0, 37.2 90.0 C 55.9 90.0, 55.9 90.0, 74.5 90.0 C 93.1 90.0, 93.1 90.0, 111.7 90.0 C 130.3 90.0, 130.3 90.0, 149.0 90.0 C 167.6 90.0, 167.6 90.0, 186.2 90.0 C 204.8 90.0, 204.8 80.5, 223.4 80.5 C 242.1 80.5, 242.1 85.3, 260.7 85.3 C 279.3 85.3, 279.3 28.4, 297.9 28.4 C 316.6 28.4, 316.6 56.8, 335.2 56.8 C 353.8 56.8, 353.8 66.3, 372.4 66.3 C 391.0 66.3, 391.0 90.0, 409.7 90.0 C 428.3 90.0, 428.3 85.3, 446.9 85.3 C 465.5 85.3, 465.5 80.5, 484.1 80.5 C 502.8 80.5, 502.8 71.1, 521.4 71.1 C 540.0 71.1, 540.0 75.8, 558.6 75.8 C 577.2 75.8, 577.2 80.5, 595.9 80.5 C 614.5 80.5, 614.5 47.4, 633.1 47.4 C 651.7 47.4, 651.7 56.8, 670.3 56.8 C 689.0 56.8, 689.0 28.4, 707.6 28.4 C 726.2 28.4, 726.2 23.7, 744.8 23.7 C 763.4 23.7, 763.4 47.4, 782.1 47.4 C 800.7 47.4, 800.7 75.8, 819.3 75.8 C 837.9 75.8, 837.9 85.3, 856.6 85.3 C 875.2 85.3, 875.2 90.0, 893.8 90.0 C 912.4 90.0, 912.4 90.0, 931.0 90.0 C 949.7 90.0, 949.7 90.0, 968.3 90.0 C 986.9 90.0, 986.9 90.0, 1005.5 90.0 C 1024.1 90.0, 1024.1 56.8, 1042.8 56.8 C 1061.4 56.8, 1061.4 75.8, 1080.0 75.8 " fill="none" stroke="#8a5a3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Dots -->
+      <circle cx="244.7" cy="80.5" r="4.5" fill="#8a5a3a" stroke="#f6f1e6" stroke-width="2"/><circle cx="627.8" cy="80.5" r="4.5" fill="#8a5a3a" stroke="#f6f1e6" stroke-width="2"/><circle cx="707.6" cy="28.4" r="4.5" fill="#8a5a3a" stroke="#f6f1e6" stroke-width="2"/><circle cx="776.7" cy="23.7" r="4.5" fill="#8a5a3a" stroke="#f6f1e6" stroke-width="2"/>
+    </g>
+    </svg>
+  </div>
+</div>
+
+
+<!-- MILESTONES LIST -->
+<section class="milestones">
+  <h3>Sixteen moments the corpus turns on.</h3>
+  <p class="lead">These are the meditations where the doctrine crystallized — where language named itself for the first time or the tablet arrived as walked-out event.</p>
+  <ul class="ms-list">
+    
+    <li class="ms-item">
+      <span class="ms-date" style="color:#a8823a">Feb 15</span>
+      <div class="ms-body">
+        <div class="ms-label">Spirit-Led Transcript</div>
+        <div class="ms-desc">The corpus's first Spirit-led-work file</div>
+      </div>
+      <span class="ms-badge" style="background:#a8823a">I</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#8a5a3a">Mar 27</span>
+      <div class="ms-body">
+        <div class="ms-label">Sacred ordinary named</div>
+        <div class="ms-desc">The Kingdom permeates · earliest sacred-ordinary root</div>
+      </div>
+      <span class="ms-badge" style="background:#8a5a3a">VIII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#2c4a6b">Mar 28</span>
+      <div class="ms-body">
+        <div class="ms-label">Mar 28 sermon-day sextet</div>
+        <div class="ms-desc">The corpus's richest single-day thread</div>
+      </div>
+      <span class="ms-badge" style="background:#2c4a6b">V</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#7d2b2b">Apr 8</span>
+      <div class="ms-body">
+        <div class="ms-label">Consecration of AI Tools</div>
+        <div class="ms-desc">Sanctified silicon · Melchizedek priesthood</div>
+      </div>
+      <span class="ms-badge" style="background:#7d2b2b">VI</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#7d2b2b">Apr 12</span>
+      <div class="ms-body">
+        <div class="ms-label">Heavenly courtroom</div>
+        <div class="ms-desc">Zech 3 · forensic grammar named</div>
+      </div>
+      <span class="ms-badge" style="background:#7d2b2b">VI</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#2c4a6b">Apr 28</span>
+      <div class="ms-body">
+        <div class="ms-label">Strange fire boundary</div>
+        <div class="ms-desc">Received vs. γνώμη distinguished</div>
+      </div>
+      <span class="ms-badge" style="background:#2c4a6b">V</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#2c4a6b">May 15</span>
+      <div class="ms-body">
+        <div class="ms-label">Mantle of intercession</div>
+        <div class="ms-desc">Petrine strengthening formalized</div>
+      </div>
+      <span class="ms-badge" style="background:#2c4a6b">V</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#8a5a3a">Jun 7</span>
+      <div class="ms-body">
+        <div class="ms-label">Sister Katie · plural archive</div>
+        <div class="ms-desc">The corpus recognizes itself</div>
+      </div>
+      <span class="ms-badge" style="background:#8a5a3a">VIII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#8a5a3a">Jun 22</span>
+      <div class="ms-body">
+        <div class="ms-label">Anatomy of commissioned life</div>
+        <div class="ms-desc">Awareness → burial → sacred ordinary</div>
+      </div>
+      <span class="ms-badge" style="background:#8a5a3a">VIII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#8a5a3a">Jul 5</span>
+      <div class="ms-body">
+        <div class="ms-label">Network is covenant</div>
+        <div class="ms-desc">Marketplace-covenant canonically named</div>
+      </div>
+      <span class="ms-badge" style="background:#8a5a3a">VIII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#2c4a6b">Jul 10</span>
+      <div class="ms-body">
+        <div class="ms-label">Exousia cascade</div>
+        <div class="ms-desc">Six-file day of authority doctrine</div>
+      </div>
+      <span class="ms-badge" style="background:#2c4a6b">V</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#2c4a6b">Aug 17</span>
+      <div class="ms-body">
+        <div class="ms-label">The Aug 17 seam</div>
+        <div class="ms-desc">The servant who learned to wait</div>
+      </div>
+      <span class="ms-badge" style="background:#2c4a6b">V</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#4a5a2e">Aug 28</span>
+      <div class="ms-body">
+        <div class="ms-label">Moriah surrender</div>
+        <div class="ms-desc">חָשַׂךְ non-withholding · the cost of love</div>
+      </div>
+      <span class="ms-badge" style="background:#4a5a2e">VII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#7d2b2b">Aug 30</span>
+      <div class="ms-body">
+        <div class="ms-label">Mirror-gospel</div>
+        <div class="ms-desc">Christ the Teacher within</div>
+      </div>
+      <span class="ms-badge" style="background:#7d2b2b">VI</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#4a5a2e">Aug 31</span>
+      <div class="ms-body">
+        <div class="ms-label">Anointing as affliction</div>
+        <div class="ms-desc">Anti-prosperity gospel canonicalized</div>
+      </div>
+      <span class="ms-badge" style="background:#4a5a2e">VII</span>
+    </li>
+    <li class="ms-item">
+      <span class="ms-date" style="color:#4a5a2e">Sep 1</span>
+      <div class="ms-body">
+        <div class="ms-label">Blessing of the cave</div>
+        <div class="ms-desc">Preservation over platform</div>
+      </div>
+      <span class="ms-badge" style="background:#4a5a2e">VII</span>
+    </li>
+  </ul>
+</section>
+
+<!-- THREE ARCS -->
+<section class="arcs">
+  <div class="arc">
+    <div class="arc-eyebrow">Movement I · The seedbed</div>
+    <h3>Feb–March · Convert's ground and the discipline of hearing.</h3>
+    <p>Tablet I dominates. Conversion, providence, the abolition of binary judgment. Every doctrine the later corpus depends on gets its first canonical statement here. The March 28 sermon-day sextet is the corpus's richest single-day thread — six sermon-responses laying doctrinal foundation in twelve hours.</p>
+    <div class="arc-window">59 files · Tablets I, V beginning</div>
+  </div>
+  <div class="arc">
+    <div class="arc-eyebrow">Movement II · The middle deepening</div>
+    <h3>April–July · The tablets are being built.</h3>
+    <p>The Received Voice (V) grows steadily. The Sacred Ordinary (VIII) surges as the marketplace-covenant is walked. Apr 12 names the courtroom. Jun 7 recognizes the corpus as plural archive. Jul 10 opens the exousia cascade. Every August tablet has a June or July walked-out root by this point.</p>
+    <div class="arc-window">342 files · All six spines active</div>
+  </div>
+  <div class="arc">
+    <div class="arc-eyebrow">Movement III · The tablets arrive</div>
+    <h3>August–September · What was named is now walked.</h3>
+    <p>The seam (Aug 17). Moriah (Aug 28). The mirror-gospel (Aug 30). The anointing-as-affliction (Aug 31). The blessing of the cave (Sep 1). What earlier months named as doctrine is now walked as event — under fire, in real deliverance, in the covenant's actual weight.</p>
+    <div class="arc-window">63 files · Tablets V, VI, VII, VIII arrive</div>
+  </div>
+</section>
+
+<div class="footer">
+  <div>PLAUD Meditations · Timeline of Six Spines · Compiled 2026-09-02</div>
+  <div><em>Not speculation, but verified joints.</em></div>
+</div>
+
+</div>
+</body>
+</html>
+
+encoding: utf-8
+head: c9f947a6de7060eb0984d3315476d1d07a10a782

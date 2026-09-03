@@ -2655,7 +2655,7 @@ const JC_RECORDS = [
     "href": "records/05-02-1304-personal-meditation-hidden-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this brother share what had been pressing on him — a feeling he could not explain, a dream he could not dismiss, and a clarity that arrived without a single piece of natural evidence — something deep in me recognized the contour of a genuine…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -2728,7 +2728,7 @@ const JC_RECORDS = [
     "href": "records/05-03-1020-reflection-enter-with-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother walk through his plans — the business, the moral justifications, the sense of spiritual momentum — something in me recognized a tension I have sat with many times myself. There is a particular kind of deception that does not come…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -2874,7 +2874,7 @@ const JC_RECORDS = [
     "href": "records/05-08-when-trap-was-set-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with the full arc of this conversation — my brother barely home, still disoriented, still half-laughing at the absurdity of what had happened — two things arrested me simultaneously and would not release me. The first was *when* the trap had been…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -2898,7 +2898,7 @@ const JC_RECORDS = [
     "href": "records/05-09-geometry-increase-kingdom-stewardship-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel unfold a property sourcing model layer by layer — with genuine precision and entrepreneurial creativity — something in me recognized more than strategy. I heard the echo of a parable. I heard a young steward learning to…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -2922,7 +2922,7 @@ const JC_RECORDS = [
     "href": "records/05-10-triangle-kingdom-power-intercessors-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat listening to Apostle Orokpo Michael unfold what the Lord had spoken to him about the three categories of men, something in my spirit grew very still — the kind of stillness that comes not from emptiness but from recognition. This is not merely a…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -3266,7 +3266,7 @@ const JC_RECORDS = [
     "href": "records/05-18-book-that-named-dark-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this telling of the Codex Gigas and Houska Castle, something arrested me that went far beneath the legend itself — the recognition that human beings, in every age, have understood that evil is not merely metaphorical and that naming it,…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3310,7 +3310,7 @@ const JC_RECORDS = [
     "href": "records/05-18-brilliant-far-country-gifting-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with this conversation — laughing with my brother Samuel, remembering, building, and dreaming alongside him — something underneath the surface of the banter arrested me in a way I cannot easily shake. There is a thread woven through this entire…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3359,7 +3359,7 @@ const JC_RECORDS = [
     "href": "records/05-19-weight-we-carry-together-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found something unexpected moving beneath the laughter and the casual talk — a genuine theological thread surfacing through ordinary life, honest confession, and the kind of…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -3430,7 +3430,7 @@ const JC_RECORDS = [
     "href": "records/05-22-standing-at-edge-cliff-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with the memory of this call, and what strikes me most is not the geopolitical theorizing or the investigative ambition — it is the image of my brother standing at the edge of a cliff on a mountaintop, warning signs all around him, peering over…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "urgent",
       "length": "moderate",
@@ -3476,7 +3476,7 @@ const JC_RECORDS = [
     "href": "records/05-24-where-broken-are-guarded-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this wide-ranging conversation with my sister in the faith, I found myself sitting inside a tension I have carried for years but rarely named so plainly: the intersection of human brokenness — psychological, spiritual, and social — with the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3522,7 +3522,7 @@ const JC_RECORDS = [
     "href": "records/05-24-when-poem-knew-more-v2.html",
     "sourceStatus": "original",
     "summary": "I was sitting with my brothers when several things happened that I did not expect — a spoken-word poem landed in the room with the weight of a prophetic utterance, a conversation about Judas and Joseph pressed into the deepest questions of repentance and…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -3692,7 +3692,7 @@ const JC_RECORDS = [
     "href": "records/05-30-at-0100-when-love-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother read aloud what he had written in the quiet of a Somerset morning, something in me recognized the unmistakable sound of a man being transfigured by grief rather than destroyed by it. The words he had not sent to anyone, the…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -3717,7 +3717,7 @@ const JC_RECORDS = [
     "href": "records/05-30-when-you-cannot-hate-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel work through the raw theology of a film about divorce, something arrested me — not the cinematography, not the drama, but the simple, devastating truth that surfaced in that conversation: you cannot hate the one you loved;…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -4660,7 +4660,7 @@ const JC_RECORDS = [
     "href": "records/06-16-when-fire-falls-unlikely-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother on this call, something in me recognized a moment that was far larger than its surface appearance — two men talking shop, talking numbers, talking about a sales call seven minutes away. But underneath all of that, I was watching…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -4710,7 +4710,7 @@ const JC_RECORDS = [
     "href": "records/06-17-when-mirror-speaks-old-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel speak this morning, something in me recognized the weight underneath the hustle — the weeping in the shower, the old relationship that keeps reaching back, the financial pressure that makes rest feel like a luxury. What…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -4735,7 +4735,7 @@ const JC_RECORDS = [
     "href": "records/06-17-whose-voice-greets-me-v2.html",
     "sourceStatus": "original",
     "summary": "I woke up this morning and before I had fully crossed the threshold of consciousness, a voice was already there — not welcoming the day, but resisting it. Something had been working on me before my eyes even opened, and I had to stop and ask the question that",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -4757,7 +4757,7 @@ const JC_RECORDS = [
     "href": "records/06-17-do-not-celebrate-with-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother describe the momentum building in his day — two sales, eight hundred dollars, a growing sense of mastery and delight — something small and luminous broke through the noise of a factory floor and a crackling phone connection. A…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -4781,7 +4781,7 @@ const JC_RECORDS = [
     "href": "records/06-17-out-egypt-into-promise-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this call with my sister unfold across the quiet beauty of Lake Huron and the ordinary texture of a June afternoon, I found myself sitting inside something far larger than a phone conversation. What began as pleasant talk about sailing and…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "deep",
@@ -4803,7 +4803,7 @@ const JC_RECORDS = [
     "href": "records/06-17-standing-still-under-blood-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened through this call, I noticed how quickly ordinary life became a doorway into spiritual discernment. Business strategy, substance use, fatigue, temptation, phone static, demonic fear, and the authority of Christ all appeared in one living thread.",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -4828,7 +4828,7 @@ const JC_RECORDS = [
     "href": "records/06-17-pushing-through-pain-keeping-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened back to this call with my brother Samuel, what struck me most was not the business updates or the practical problem-solving — it was the quiet, persistent current of faith running beneath all of it. Here is a man in genuine physical pain,…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -4879,7 +4879,7 @@ const JC_RECORDS = [
     "href": "records/06-18-when-word-received-but-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel walk through what happened — the correction offered in love, the block that followed, the vile response through a third party — something in me recognized immediately that this was never really about Chloe. The Spirit had…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -4928,7 +4928,7 @@ const JC_RECORDS = [
     "href": "records/06-18-tender-fear-confirmed-life-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my wife speak from the clinic, I could hear the fragile mixture of relief, uncertainty, and fear that often surrounds the first confirmation of new life. There was blood work, appointments, insurance questions, instructions about what to…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -5005,7 +5005,7 @@ const JC_RECORDS = [
     "href": "records/06-19-when-tool-falls-short-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened back to this exchange, I was struck not by what went wrong technically, but by what I was actually doing: I was stepping behind the curtain of my own creation to test whether it could carry the weight I had assigned to it. There is something…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -5099,7 +5099,7 @@ const JC_RECORDS = [
     "href": "records/06-19-building-with-wisdom-under-v2.html",
     "sourceStatus": "original",
     "summary": "As I listen back to this exchange, I am struck by the strange and sober intersection of faith, business, technology, and testing in real time. What began as a simple inquiry about investor connections became, in another layer, a test of something I had just…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -5239,7 +5239,7 @@ const JC_RECORDS = [
     "href": "records/06-20-when-system-doesnt-know-v2.html",
     "sourceStatus": "original",
     "summary": "I am watching myself troubleshoot a voice agent that was designed to hold memory — and finding in that very failure a mirror. The system greeted me like a stranger. It did not know my name, could not access what had been shared before, and defaulted to its…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -5665,7 +5665,7 @@ const JC_RECORDS = [
     "href": "records/06-24-when-lord-pitches-every-v2.html",
     "sourceStatus": "original",
     "summary": "Something shifted in me as I listened to my brother’s voice — not just the excitement of two sales and eight hundred dollars, but the unmistakable texture of a word coming to pass. I had spoken it before it happened, and now here it was: consistent,…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -5813,7 +5813,7 @@ const JC_RECORDS = [
     "href": "records/06-25-fire-shut-up-bones-v2.html",
     "sourceStatus": "original",
     "summary": "I listened to my brother lay out a vision with the kind of clarity and velocity that only comes when something has genuinely broken open — when the fog lifts and the path forward is suddenly, startlingly visible. There was fire in that call, and I recognized…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -6933,7 +6933,7 @@ const JC_RECORDS = [
     "href": "records/07-07-ordinary-holiness-waiting-together-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with something tender and unhurried — a phone call between a husband and his wife, ordinary in its texture, yet quietly sacred in what it carries. There is hunger, there is a baby growing, there is a midwife assigned, there is a name already…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -7076,7 +7076,7 @@ const JC_RECORDS = [
     "href": "records/07-10-when-faith-sustains-what-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with what unfolded in this conversation with my brother Samuel, something inside me kept returning to a single gravity point: the sufficiency of faith where understanding has utterly failed. What began as a late-night phone call — raw, unpolished, at",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "deep",
@@ -7245,7 +7245,7 @@ const JC_RECORDS = [
     "href": "records/07-12-when-obedience-entire-sermon-v2.html",
     "sourceStatus": "original",
     "summary": "Something stopped me mid-conversation today — not a theological argument, not a vision, not even a particularly dramatic moment, but a quiet word from the Holy Spirit after I had already left the building. I had gone to a church this morning at His direction,",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "moderate",
@@ -7504,7 +7504,7 @@ const JC_RECORDS = [
     "href": "records/07-16-standing-firm-before-men-v2.html",
     "sourceStatus": "original",
     "summary": "Two brief conversations, back to back — and yet something in the Spirit arrests me as I sit with them. In the first, I listened to my brother Samuel describe a day of drawing lines, holding ground, and refusing to be moved by pressure at work and at home. In…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7744,7 +7744,7 @@ const JC_RECORDS = [
     "href": "records/07-20-watchman-across-way-sacred-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I was struck by how the sacred kept breaking through the ordinary — how a phone call about sickness, factory shifts, Netflix subscriptions, and baby gender reveals became a vessel",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "moderate",
@@ -7814,7 +7814,7 @@ const JC_RECORDS = [
     "href": "records/07-21-love-construction-zone-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with a moment so ordinary it almost slips past without notice — a quick call between my wife Gladys and me, caught in traffic near a construction zone, negotiating hunger and timing and Panda Express. And yet, as I listened back to this exchange,",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -7886,7 +7886,7 @@ const JC_RECORDS = [
     "href": "records/07-22-waiting-threshold-love-uncertainty-v2.html",
     "sourceStatus": "original",
     "summary": "There are moments in marriage that do not announce themselves as sacred, yet the Spirit arrests me in the middle of them anyway. This brief, tender exchange between Gladys and me — barely a minute of morning words, a medical result still half-unread, a…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "contemplative",
       "length": "brief",
@@ -8098,7 +8098,7 @@ const JC_RECORDS = [
     "href": "records/07-28-running-faith-not-gas-v2.html",
     "sourceStatus": "original",
     "summary": "I was captured here in the middle of an ordinary, chaotic morning — a cat trapped in the heat, a car falling apart mid-drive, borrowed gas money, a queasy pregnant wife, a friend in jail, and a gas gauge hovering near empty. In the swirl of it, one small…",
-    "reviewed": false,
+    "reviewed": true,
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
@@ -12050,6 +12050,262 @@ const JC_EDGES = [
     "status": "editorial",
     "note": "Sequential entries in the \"July remainder (13)\" cluster.",
     "source": "Pass 16 Cross-References — \"July remainder (13)\" section."
+  },
+  {
+    "from": "05-03-1020-reflection-enter-with",
+    "to": "05-02-1304-personal-meditation-hidden",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-08-when-trap-was-set",
+    "to": "05-03-1020-reflection-enter-with",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-09-geometry-increase-kingdom-stewardship",
+    "to": "05-08-when-trap-was-set",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-10-triangle-kingdom-power-intercessors",
+    "to": "05-09-geometry-increase-kingdom-stewardship",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-18-brilliant-far-country-gifting",
+    "to": "05-10-triangle-kingdom-power-intercessors",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-18-book-that-named-dark",
+    "to": "05-18-brilliant-far-country-gifting",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-24-where-broken-are-guarded",
+    "to": "05-18-book-that-named-dark",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster (.md)).",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-19-weight-we-carry-together",
+    "to": "05-24-where-broken-are-guarded",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-22-standing-at-edge-cliff",
+    "to": "05-19-weight-we-carry-together",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-24-when-poem-knew-more",
+    "to": "05-22-standing-at-edge-cliff",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-30-at-0100-when-love",
+    "to": "05-24-when-poem-knew-more",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "05-30-when-you-cannot-hate",
+    "to": "05-30-at-0100-when-love",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"May remainder (13)\" cluster.",
+    "source": "Pass 17 Cross-References — \"May remainder (13)\" section."
+  },
+  {
+    "from": "06-17-out-egypt-into-promise",
+    "to": "06-16-when-fire-falls-unlikely",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-17-whose-voice-greets-me",
+    "to": "06-17-out-egypt-into-promise",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-17-when-mirror-speaks-old",
+    "to": "06-17-whose-voice-greets-me",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-17-do-not-celebrate-with",
+    "to": "06-17-when-mirror-speaks-old",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-17-standing-still-under-blood",
+    "to": "06-17-do-not-celebrate-with",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-17-pushing-through-pain-keeping",
+    "to": "06-17-standing-still-under-blood",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-18-when-word-received-but",
+    "to": "06-17-pushing-through-pain-keeping",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-18-tender-fear-confirmed-life",
+    "to": "06-18-when-word-received-but",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-19-when-tool-falls-short",
+    "to": "06-18-tender-fear-confirmed-life",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-19-building-with-wisdom-under",
+    "to": "06-19-when-tool-falls-short",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-20-when-system-doesnt-know",
+    "to": "06-19-building-with-wisdom-under",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-24-when-lord-pitches-every",
+    "to": "06-20-when-system-doesnt-know",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "06-25-fire-shut-up-bones",
+    "to": "06-24-when-lord-pitches-every",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"June remainder (17)\" cluster.",
+    "source": "Pass 17 Cross-References — \"June remainder (17)\" section."
+  },
+  {
+    "from": "07-10-when-faith-sustains-what",
+    "to": "07-07-ordinary-holiness-waiting-together",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-12-when-obedience-entire-sermon",
+    "to": "07-10-when-faith-sustains-what",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-16-standing-firm-before-men",
+    "to": "07-12-when-obedience-entire-sermon",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-20-watchman-across-way-sacred",
+    "to": "07-16-standing-firm-before-men",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-21-love-construction-zone",
+    "to": "07-20-watchman-across-way-sacred",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-22-waiting-threshold-love-uncertainty",
+    "to": "07-21-love-construction-zone",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
+  },
+  {
+    "from": "07-28-running-faith-not-gas",
+    "to": "07-22-waiting-threshold-love-uncertainty",
+    "type": "continues",
+    "status": "editorial",
+    "note": "Sequential entries in the \"July remainder (9)\" cluster.",
+    "source": "Pass 17 Cross-References — \"July remainder (9)\" section."
   }
 ];
 

@@ -240,6 +240,35 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 ---
 
+## [1.9] — September 2, 2026
+
+### Added
+
+#### Phase 9: Pass 17 (Corpus Complete); Six Doctrinal Spines Infographic + Timeline Embedded
+- **`scripts/integrate-pass-17.mjs`** — same generalization pattern as [1.6]–[1.8]. Integrates Pass 17, the author's own declared final Cross-Reference wave ("458/458 real Markdown meditations, 100%").
+- **Result:** 39 entries parsed; 35 mirrored records promoted to reviewed, 0 brand-new pages, 32 new same-cluster edges, 4 entries left unresolved (not-yet-uploaded files). Totals: **381 reviewed / 13 mirrored / 357 edges**, out of the same 394 total records and 4 named threads. Verified identically to [1.6]–[1.8]: integrity check, before/after diff confirming exactly 35 promotions, re-tagged encounter dimensions, live-fetched a promoted page. Refreshed the same three stale-copy locations again, to 381/13/seventeen-passes.
+- **Received three new reference artifacts alongside Pass 17**: `PLAUD-Meditations-Master-Index.md` (full 458-file index grouped by "Tablet" doctrine, with per-file memo-link density counts — 4,617 total cross-references, mean 10.1/file, in the author's own private corpus), `PLAUD-Meditations-Tracker.csv` (same data as a flat spreadsheet), and two self-contained HTML infographics visualizing six governing "Tablets."
+- **Important scope clarification**: the Master Index/Tracker CSV give per-file cross-reference *counts*, not the actual link *targets* — real edge data only exists in the Pass-N-Cross-References.md documents this project has always parsed. Confirmed the raw `.md` files mirrored into this repository do **not** carry the bottom-of-file Cross-Reference appendices the pass docs describe (those live in the author's private drive, not this mirror). This repository's own edge count (357) reflects what the uploaded Pass documents make independently verifiable, distinct from the author's private corpus's stated 4,617/100%.
+- **Embedded both infographics as new site pages** — `six-doctrinal-spines.html` and `spines-timeline.html` — stripped a stray upload-artifact prefix, wrapped each with the site's standard banner/nav/footer while preserving their own self-contained light-parchment visual design and JavaScript untouched (a deliberate "exhibit" distinct from the site's dark theme), and linked both from `archive.html` and `index.html`. Verified live.
+
+### Known Limitations
+
+- ~13 meditations remain mirrored but not yet cross-referenced; 4 unresolved Pass 17 references need manual resolution.
+- The 6 milestone-named cross-pass narrative chains from [1.8] remain open, needing the author's own verification.
+- This repository's own reviewed/edge counts (381/357) are the practical floor of what's independently verifiable from uploaded documents, distinct from the author's private corpus's declared 458-file/4,617-edge/100% coverage.
+- Audio remains out of scope per owner direction; unchanged from [1.3]–[1.8].
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
+
 ## [Beta 1.0] — June 2026
 
 ### Initial Release (Private)
