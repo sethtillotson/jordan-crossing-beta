@@ -505,18 +505,13 @@ main {
   font-size: var(--text-2xl);
 }
 
-.discern-response {
-  display: none;
+.discern-reveal {
   margin-top: var(--space-4);
   padding: var(--space-6);
   background: rgba(201, 162, 39, 0.08);
   border-left: 4px solid var(--gold);
   border-radius: var(--radius-md);
   animation: slideDown 0.3s ease-out;
-}
-
-.discern-response.active {
-  display: block;
 }
 
 @keyframes slideDown {
@@ -530,7 +525,7 @@ main {
   }
 }
 
-.discern-response-text {
+.discern-reveal p {
   font-size: var(--text-sm);
   color: var(--parchment-dim);
   line-height: 1.6;

@@ -1,6 +1,25 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Phase 14 complete: appendix richness — Doctrinal Spine, Lexicon Joints, Chiastic Mirror)
+## Current Status (September 3, 2026 — Phase 15: "What did you actually encounter?" buttons fixed)
+
+A real, live-reported bug fixed after Phase 14: on every record page, clicking any of the three
+"What did you actually encounter?" buttons (I recognized something / I'm not sure yet / I want to
+resist this) did nothing. Root cause: `initDiscernChoices()` in `assets/design-v2-logic.js` queried
+`.discern-response` elements and toggled a CSS `.active` class — but the actual record-page template
+(`build-records2-corpus.mjs`) emits each reveal panel as `<div class="discern-reveal" hidden>`, a
+completely different class name and mechanism (the native `hidden` attribute, not a CSS class). The
+querySelector found nothing on all 456 record pages, so clicking any of the three buttons silently
+did nothing. Fixed the JS to target the real `.discern-reveal` elements and toggle their `hidden`
+attribute directly; also replaced the now-correctly-targeted (previously orphaned, never-applied)
+`.discern-response`/`.discern-response.active` CSS rules with `.discern-reveal` rules carrying the
+same intended background/border/reveal-animation styling. Verified live: clicking each of the three
+buttons now correctly shows its own response text and hides the others.
+
+See "Phase 14" below for the appendix richness work (Doctrinal Spine, Lexicon Joints, Chiastic
+Mirror), "Phase 13" for the public-beta cleanup pass, "Phase 12" for the Corpus Lattice cross-reference
+verification, and "Phase 11" for the full account of the corpus rebuild from `records-2/`.
+
+## Phase 14 (2026-09-03 — appendix richness: Doctrinal Spine, Lexicon Joints, Chiastic Mirror)
 
 See "Phase 14" below for the latest: replaced the flat "continues" label every cross-reference edge
 carried with the REAL structural classification each meditation's own Cross-Reference Appendix names —

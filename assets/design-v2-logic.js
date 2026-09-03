@@ -153,19 +153,25 @@
       btn.addEventListener('click', () => {
         const revealed = btn.dataset.reveals;
         const allChoices = document.querySelectorAll('.discern-choice');
-        const allResponses = document.querySelectorAll('.discern-response');
+        // A real bug: the record-page template (build-records2-corpus.mjs)
+        // emits each reveal panel as `<div class="discern-reveal" hidden>`
+        // — this code was querying the wrong class (`.discern-response`,
+        // toggling a CSS `.active` class that had no matching element to
+        // ever apply to) and so silently did nothing when clicked on every
+        // one of the 456 record pages.
+        const allReveals = document.querySelectorAll('.discern-reveal');
 
         // Deselect all
         allChoices.forEach(c => c.setAttribute('aria-pressed', 'false'));
-        allResponses.forEach(r => r.classList.remove('active'));
+        allReveals.forEach(r => { r.hidden = true; });
 
         // Select this one
         btn.setAttribute('aria-pressed', 'true');
-        const response = document.getElementById(revealed);
-        if (response) {
-          response.classList.add('active');
+        const reveal = document.getElementById(revealed);
+        if (reveal) {
+          reveal.hidden = false;
           // Scroll to response
-          response.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          reveal.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
       });
     });
