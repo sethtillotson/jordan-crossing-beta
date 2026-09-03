@@ -2,7 +2,7 @@
  * Jordan Crossing Beta — Record Metadata & Reviewed Thread Edges
  * Single source of truth for prev/next chronology and labeled bridges.
  *
- * Last updated: 2026-09-03T12:15:57.400Z (JC_THREADS rebuilt by scripts/rebuild-threads-and-paths.mjs — Phase 13, sourced from the owner's corpus map documents via Corpus Lattice path matching, Threads 1-10 scope)
+ * Last updated: 2026-09-03T14:39:04.893Z (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification + Phase 14 joint-type reconciliation)
  *
  * IMPORTANT — governance:
  * - `order` is pure chronological fact (recorded date/time). Always safe to show.
@@ -2369,13 +2369,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "03-29-1304-personal-meditation-hidden",
+    "id": "03-29-personal-meditation-hidden-alleyway",
     "order": 49,
-    "title": "13:04 Personal Meditation: Hidden in the Alleyway No More — On Prophetic Dreams, Spiritual Targets, and the Cost of Becoming a Threat to Darkness",
-    "dateLabel": "Mar 29, 2026 · time not recorded",
+    "title": "Personal Meditation: Hidden in the Alleyway No More — On Prophetic Dreams, Spiritual Targets, and the Cost of Becoming a Threat to Darkness",
+    "dateLabel": "Mar 29, 2026 · 13:04",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/03-29-1304-personal-meditation-hidden-v2.html",
+    "href": "records/03-29-personal-meditation-hidden-alleyway-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this brother share what had been pressing on him — a feeling he could not explain, a dream he could not dismiss, and a clarity that arrived without a single piece of natural evidence — something deep in me recognized the contour of a genuine…",
     "reviewed": true,
@@ -2407,7 +2407,7 @@ const JC_RECORDS = [
     "id": "03-30-1020-reflection-enter-with",
     "order": 50,
     "title": "@ 10:20 Reflection: Enter With Nothing — Striving, Abiding, and the Secret Place That Undoes Us",
-    "dateLabel": "Mar 30, 2026 · time not recorded",
+    "dateLabel": "Mar 30, 2026 · 10:20",
     "classification": "Meditation",
     "seed": null,
     "href": "records/03-30-1020-reflection-enter-with-v2.html",
@@ -2697,13 +2697,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-01-0943-reflection-hunger-that",
+    "id": "04-01-reflection-hunger-that-precedes",
     "order": 53,
-    "title": "09:43 Reflection: The Hunger That Precedes Understanding",
-    "dateLabel": "Apr 1, 2026 · time not recorded",
+    "title": "Reflection: The Hunger That Precedes Understanding",
+    "dateLabel": "Apr 1, 2026 · 09:43",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-01-0943-reflection-hunger-that-v2.html",
+    "href": "records/04-01-reflection-hunger-that-precedes-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this brother on the phone — squeezed between a twelve-hour shift and a line about to start — something in me recognized the unmistakable signature of a man in whom genuine hunger for the Word of God has been ignited. He wasn’t speaking from…",
     "reviewed": true,
@@ -2813,13 +2813,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-03-0221-teaching-reflection-whole",
+    "id": "04-03-teaching-reflection-whole-armor",
     "order": 55,
-    "title": "02:21 Teaching Reflection: Whole Armor of the Praying Prophet",
-    "dateLabel": "Apr 3, 2026 · time not recorded",
+    "title": "Teaching Reflection: Whole Armor of the Praying Prophet",
+    "dateLabel": "Apr 3, 2026 · 02:21",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-03-0221-teaching-reflection-whole-v2.html",
+    "href": "records/04-03-teaching-reflection-whole-armor-v2.html",
     "sourceStatus": "original",
     "summary": "I have been sitting with a convergence of teachings that arrived not as separate streams but as a single, building flood — and I find I cannot treat them as separate topics without doing violence to what the Spirit seems to be weaving together. What I am…",
     "reviewed": true,
@@ -2839,13 +2839,13 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-03-0637-reflection-anger-that",
+    "id": "04-03-reflection-anger-that-reveals",
     "order": 56,
-    "title": "06:37 Reflection: The Anger That Reveals, the Friday That Redeems",
-    "dateLabel": "Apr 3, 2026 · time not recorded",
+    "title": "Reflection: The Anger That Reveals, the Friday That Redeems",
+    "dateLabel": "Apr 3, 2026 · 06:37",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-03-0637-reflection-anger-that-v2.html",
+    "href": "records/04-03-reflection-anger-that-reveals-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this exchange between my brother and me, something quietly arrested me — not the logistics of our Bible study plans, but the moment of unexpected anger that surfaced at the start of our conversation. My brother described something I…",
     "reviewed": true,
@@ -2874,13 +2874,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-03-1120-reflection-table-being",
+    "id": "04-03-reflection-table-being-set",
     "order": 57,
-    "title": "11:20 Reflection: The Table Being Set",
-    "dateLabel": "Apr 3, 2026 · time not recorded",
+    "title": "Reflection: The Table Being Set",
+    "dateLabel": "Apr 3, 2026 · 11:20",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-03-1120-reflection-table-being-v2.html",
+    "href": "records/04-03-reflection-table-being-set-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to this phone call between Samuel and myself, what struck me most was not any single theological statement, but the texture of what was happening beneath the surface of an ordinary conversation. Two brothers — one still clocked in at work, one…",
     "reviewed": true,
@@ -2910,13 +2910,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-03-1243-personal-meditation-contrite",
+    "id": "04-03-personal-meditation-contrite-heart",
     "order": 58,
-    "title": "12:43 Personal Meditation: The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong",
-    "dateLabel": "Apr 3, 2026 · time not recorded",
+    "title": "Personal Meditation: The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong",
+    "dateLabel": "Apr 3, 2026 · 12:43",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-03-1243-personal-meditation-contrite-v2.html",
+    "href": "records/04-03-personal-meditation-contrite-heart-v2.html",
     "sourceStatus": "original",
     "summary": "Something happened in the middle of an ordinary evening that I was not fully prepared for — a conversation that began casually, with a Guinness being opened and a Good Friday gift being unwrapped, and slowly became one of the most searching theological…",
     "reviewed": true,
@@ -2943,13 +2943,13 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-04-1333-personal-meditation-backward",
+    "id": "04-04-personal-meditation-backward-glance",
     "order": 59,
-    "title": "13:33 Personal Meditation: The Backward Glance",
-    "dateLabel": "Apr 4, 2026 · time not recorded",
+    "title": "Personal Meditation: The Backward Glance",
+    "dateLabel": "Apr 4, 2026 · 13:33",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-04-1333-personal-meditation-backward-v2.html",
+    "href": "records/04-04-personal-meditation-backward-glance-v2.html",
     "sourceStatus": "original",
     "summary": "Something in me knew to make that call before I even understood why — and that kind of knowing is itself a word worth receiving. As I sat with my brother in his grief, listening to the weight of a marriage that ended and a life he had fully committed himself…",
     "reviewed": true,
@@ -2990,13 +2990,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-04-2352-personal-meditation-torn",
+    "id": "04-04-personal-meditation-torn-veil",
     "order": 60,
-    "title": "23:52 Personal Meditation: The Torn Veil, the Midnight Walk, and the Backwards Theology of a God Who Moves Address",
-    "dateLabel": "Apr 4, 2026 · time not recorded",
+    "title": "Personal Meditation: The Torn Veil, the Midnight Walk, and the Backwards Theology of a God Who Moves Address",
+    "dateLabel": "Apr 4, 2026 · 23:52",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-04-2352-personal-meditation-torn-v2.html",
+    "href": "records/04-04-personal-meditation-torn-veil-v2.html",
     "sourceStatus": "original",
     "summary": "Three conversations. Three thresholds. And one God moving through all of them with a coherence that no editorial hand arranged. In the early hours of April 4th, 2026 — Resurrection Sunday — a brother on the other side of the world was roused from sleep at…",
     "reviewed": true,
@@ -3190,7 +3190,7 @@ const JC_RECORDS = [
     "id": "04-06-theological-meditation-body-as",
     "order": 63,
     "title": "Theological Meditation: Body as Revelation, Divine Utterance, and the End of Exile",
-    "dateLabel": "Apr 6, 2026 · time not recorded",
+    "dateLabel": "Apr 6, 2026 · 08:49",
     "classification": "Meditation",
     "seed": null,
     "href": "records/04-06-theological-meditation-body-as-v2.html",
@@ -3226,13 +3226,13 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-06-1648-reflection-roses-with",
+    "id": "04-06-reflection-roses-with-thorns",
     "order": 64,
-    "title": "16:48 Reflection: Roses With Thorns",
-    "dateLabel": "Apr 6, 2026 · time not recorded",
+    "title": "Reflection: Roses With Thorns",
+    "dateLabel": "Apr 6, 2026 · 16:48",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-06-1648-reflection-roses-with-v2.html",
+    "href": "records/04-06-reflection-roses-with-thorns-v2.html",
     "sourceStatus": "original",
     "summary": "As I sat with my brother Samuel in the middle of his pain, something far deeper than a breakup was unfolding before me. What presented itself as heartbreak was, in the Spirit, something more ancient and more serious — the grief of a man who had placed a…",
     "reviewed": true,
@@ -3262,13 +3262,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-06-1926-personal-meditation-where",
+    "id": "04-06-personal-meditation-where-are",
     "order": 65,
-    "title": "19:26 Personal Meditation: Where Are You?",
-    "dateLabel": "Apr 6, 2026 · time not recorded",
+    "title": "Personal Meditation: Where Are You?",
+    "dateLabel": "Apr 6, 2026 · 19:26",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-06-1926-personal-meditation-where-v2.html",
+    "href": "records/04-06-personal-meditation-where-are-v2.html",
     "sourceStatus": "original",
     "summary": "I have been sitting with a conversation — a late-night phone call that moved from grief to theology, from a brother’s heartbreak to the deepest question God has ever asked of a human soul. What began as a check-in on a man carrying real pain became, by the…",
     "reviewed": true,
@@ -3312,13 +3312,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-07-0508-personal-meditation-bring",
+    "id": "04-07-personal-meditation-bring-nothing",
     "order": 66,
-    "title": "05:08 Personal Meditation: Bring Nothing",
-    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "title": "Personal Meditation: Bring Nothing",
+    "dateLabel": "Apr 7, 2026 · 05:08",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-07-0508-personal-meditation-bring-v2.html",
+    "href": "records/04-07-personal-meditation-bring-nothing-v2.html",
     "sourceStatus": "original",
     "summary": "A brother called this morning — divorce papers in hand, grief barely contained beneath a voice still trying to hold itself together — and something in me knew that this moment, as raw and broken as it was, was also holy ground. The words that came out of my…",
     "reviewed": true,
@@ -3404,13 +3404,13 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-07-0646-reflection-gift-that",
+    "id": "04-07-reflection-gift-that-sees",
     "order": 67,
-    "title": "06:46 Reflection: The Gift That Sees",
-    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "title": "Reflection: The Gift That Sees",
+    "dateLabel": "Apr 7, 2026 · 06:46",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-07-0646-reflection-gift-that-v2.html",
+    "href": "records/04-07-reflection-gift-that-sees-v2.html",
     "sourceStatus": "original",
     "summary": "Something arrests me as I sit with the memory of this conversation with my brother Samuel — a call taken near the UK coastline, wind in the background, the kind of unhurried fellowship that only happens when two people have stopped performing for one another.",
     "reviewed": true,
@@ -3491,13 +3491,101 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-07-1233-call-meditation-staircase",
+    "id": "04-07-meditation-notice-casual-household",
     "order": 68,
-    "title": "12:33 Call Meditation: The Staircase You Cannot See",
+    "title": "Meditation Notice: Casual Household Recording — No Spiritual Content Detected",
     "dateLabel": "Apr 7, 2026 · time not recorded",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-07-1233-call-meditation-staircase-v2.html",
+    "href": "records/04-07-meditation-notice-casual-household-v2.html",
+    "sourceStatus": "original",
+    "summary": "04-07 Meditation Notice: Casual Household Recording — No Spiritual Content Detected",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Apr 12 · Daily Log · Honest Proportion",
+        "gloss": "",
+        "recordId": "04-12-26-at-1756-four"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-07-template-guidance-requirements-scriptural",
+    "order": 69,
+    "title": "Template Guidance: Requirements for Scriptural Content Processing",
+    "dateLabel": "Apr 7, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-template-guidance-requirements-scriptural-v2.html",
+    "sourceStatus": "original",
+    "summary": "04-07 Template Guidance: Requirements for Scriptural Content Processing",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Feb 15 · Spirit-Led Transcript Template",
+        "gloss": "",
+        "recordId": "02-15-personal-meditation-spirit-led-transcript"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-07-call-meditation-staircase-you",
+    "order": 70,
+    "title": "Call Meditation: The Staircase You Cannot See",
+    "dateLabel": "Apr 7, 2026 · 12:33",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-07-call-meditation-staircase-you-v2.html",
     "sourceStatus": "original",
     "summary": "As I listened to my brother Samuel describe what the Lord had begun to clarify for him — not a command to do a specific thing, but a posture and framework to inhabit — something in me recognized the very ground I had stood on not long ago. It is one of the…",
     "reviewed": true,
@@ -3574,15 +3662,15 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-07-meditation-notice-casual-household",
-    "order": 69,
-    "title": "Meditation Notice: Casual Household Recording — No Spiritual Content Detected",
-    "dateLabel": "Apr 7, 2026 · time not recorded",
-    "classification": "Meditation",
+    "id": "04-08-glimpse-into-daily-rhythm",
+    "order": 71,
+    "title": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools —",
+    "dateLabel": "Apr 8, 2026 · 09:13",
+    "classification": "Ambient Reflection",
     "seed": null,
-    "href": "records/04-07-meditation-notice-casual-household-v2.html",
+    "href": "records/04-08-glimpse-into-daily-rhythm-v2.html",
     "sourceStatus": "original",
-    "summary": "04-07 Meditation Notice: Casual Household Recording — No Spiritual Content Detected",
+    "summary": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools —",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet I · Volume I · The Architecture of Formation",
@@ -3601,74 +3689,32 @@ const JC_RECORDS = [
         "recordId": "07-02-ordinary-altar-holiness-hidden"
       },
       "tablet": {
-        "label": "Apr 12 · Daily Log · Honest Proportion",
+        "label": "Apr 8 · Consecration of AI Tools · High Priest Who Offered Himself",
         "gloss": "",
-        "recordId": "04-12-26-at-1756-four"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "brief",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": []
-  },
-  {
-    "id": "04-07-template-guidance-requirements-scriptural",
-    "order": 70,
-    "title": "Template Guidance: Requirements for Scriptural Content Processing",
-    "dateLabel": "Apr 7, 2026 · time not recorded",
-    "classification": "Meditation",
-    "seed": null,
-    "href": "records/04-07-template-guidance-requirements-scriptural-v2.html",
-    "sourceStatus": "original",
-    "summary": "04-07 Template Guidance: Requirements for Scriptural Content Processing",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Feb 15 · Spirit-Led Transcript Template",
-        "gloss": "",
-        "recordId": "02-15-personal-meditation-spirit-led-transcript"
+        "recordId": "04-08-theological-reflection-consecration-ai"
       }
     },
     "encounter": {
       "temperature": "quiet",
-      "length": "brief",
+      "length": "moderate",
       "voice": "personal",
       "movement": null,
       "posture": "receiving",
       "form": "written",
       "season": "Kairos Window (Tablet I)"
     },
-    "doorwayThemes": []
+    "doorwayThemes": [
+      "work"
+    ]
   },
   {
-    "id": "04-08-1027-reflection-when-ordinary",
-    "order": 71,
-    "title": "10:27 Reflection: When the Ordinary Moment Becomes Holy Ground",
-    "dateLabel": "Apr 8, 2026 · time not recorded",
+    "id": "04-08-reflection-when-ordinary-moment",
+    "order": 72,
+    "title": "Reflection: When the Ordinary Moment Becomes Holy Ground",
+    "dateLabel": "Apr 8, 2026 · 10:27",
     "classification": "Meditation",
     "seed": null,
-    "href": "records/04-08-1027-reflection-when-ordinary-v2.html",
+    "href": "records/04-08-reflection-when-ordinary-moment-v2.html",
     "sourceStatus": "original",
     "summary": "I am sitting with something deceptively simple — a brief, warm phone call between two friends separated by an ocean, one at the beach with a beer at six o’clock, one driving to work. There is no profound doctrinal exchange here, no extended prayer, no…",
     "reviewed": true,
@@ -3691,7 +3737,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-08-recording-highlights",
-    "order": 72,
+    "order": 73,
     "title": "Recording highlights",
     "dateLabel": "Apr 8, 2026 · time not recorded",
     "classification": "Meditation",
@@ -3735,7 +3781,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-08-theological-reflection-consecration-ai",
-    "order": 73,
+    "order": 74,
     "title": "Theological Reflection: Consecration of AI Tools and the High Priest Who Offered Himself",
     "dateLabel": "Apr 8, 2026 · time not recorded",
     "classification": "Meditation",
@@ -3819,52 +3865,6 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-08-glimpse-into-daily-rhythm",
-    "order": 74,
-    "title": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools —",
-    "dateLabel": "Apr 8, 2026 · time not recorded",
-    "classification": "Ambient Reflection",
-    "seed": null,
-    "href": "records/04-08-glimpse-into-daily-rhythm-v2.html",
-    "sourceStatus": "original",
-    "summary": "A Glimpse into the Daily Rhythm — Theology, Work Floor, and Consecrated Tools —",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Apr 8 · Consecration of AI Tools · High Priest Who Offered Himself",
-        "gloss": "",
-        "recordId": "04-08-theological-reflection-consecration-ai"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": [
-      "work"
-    ]
-  },
-  {
     "id": "04-09-daily-log-theological-depth",
     "order": 75,
     "title": "Daily Log: Theological Depth, Domestic Life, and Spiritual Discernment",
@@ -3909,105 +3909,10 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-10-narrow-path-has-many",
-    "order": 76,
-    "title": "The Narrow Path Has Many Trees, and the Devil Also Sends People",
-    "dateLabel": "Apr 10, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/04-10-narrow-path-has-many-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this phone call unfold between Samuel and me — factory noise in the background, earbuds crackling, the hum of ordinary working life pressing in on every side — I was struck by how much of God's real business gets done in the margins of the…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Received Voice",
-    "lexiconJoints": [
-      {
-        "term": "קָדַשׁ (qadash) — set apart, consecrated",
-        "gloss": "first canonical use as hiddenness-condition."
-      },
-      {
-        "term": "σῶμα (sōma) — body of witness",
-        "gloss": "the whole canon as one body, not proof-text collection."
-      },
-      {
-        "term": "Μελχισέδεκ — priest without genealogy",
-        "gloss": "first canonical use as Christological eternity."
-      },
-      {
-        "term": "παιδεία (paideia) — Father's training-discipline",
-        "gloss": "Heb 12; walked into benediction-response."
-      },
-      {
-        "term": "Deception dressed as holy",
-        "gloss": "file's coined phrase; canonical corpus term."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The factory corner by the window",
-        "gloss": "the hidden post."
-      },
-      {
-        "position": "B",
-        "label": "Jacob's question · \"how do you show God that you love Him?\"",
-        "gloss": "the disciple's central Q."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: the Lion IS the Lamb",
-        "gloss": "Rev 5:5-6 simultaneous identity, not sequence."
-      },
-      {
-        "position": "B'",
-        "label": "Job's self-sourced righteousness",
-        "gloss": "the whirlwind's dismantling as grace."
-      },
-      {
-        "position": "A'",
-        "label": "The nineteen-year-old distraction",
-        "gloss": "spiritual warfare recognized. Return to the factory, now seen as battlefield."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 28 · Divine Standards (Lovy)",
-        "gloss": "the discernment-of-counterfeit doctrine's earliest form.",
-        "recordId": "03-28-sermon-reflection-divine-standards"
-      },
-      "growth": {
-        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing",
-        "gloss": "73 days later; trap-doctrine walked in the marketplace.",
-        "recordId": "06-22-conversation-reflection-spiritual-discernment"
-      },
-      "tablet": {
-        "label": "Aug 17 · 19:05 seam",
-        "gloss": "the seam: *\"the deadliest deceptions do not come to the believer as obvious lies; they come wearing the accent of God\"* — Apr 10's doctrine walked in fire.",
-        "recordId": "08-17-emptied-house-voice-that"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": [
-      "work"
-    ]
-  },
-  {
     "id": "04-10-four-months-faithfulness-panic",
-    "order": 77,
+    "order": 76,
     "title": "Four Months of Faithfulness: The Panic Has Gone but the Presence Remains",
-    "dateLabel": "Apr 10, 2026 · time not recorded",
+    "dateLabel": "Apr 10, 2026 · 02:05",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-10-four-months-faithfulness-panic-v2.html",
@@ -4089,7 +3994,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-10-way-home-worship-weariness",
-    "order": 78,
+    "order": 77,
     "title": "On the Way Home — Worship, Weariness, and the Heart's One Desire",
     "dateLabel": "Apr 10, 2026 · time not recorded",
     "classification": "Ambient Reflection",
@@ -4135,7 +4040,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-10-daily-log-factory-floor",
-    "order": 79,
+    "order": 78,
     "title": "Daily Log: Factory Floor Theology — Kenosis, Remnant, and Melchizedek Christology",
     "dateLabel": "Apr 10, 2026 · time not recorded",
     "classification": "Meditation",
@@ -4169,7 +4074,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-10-daily-log-spiritual-discernment",
-    "order": 80,
+    "order": 79,
     "title": "Daily Log: Spiritual Discernment in an Ordinary Late-Night Household",
     "dateLabel": "Apr 10, 2026 · time not recorded",
     "classification": "Meditation",
@@ -4215,7 +4120,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-10-personal-meditation-identity-iniquity",
-    "order": 81,
+    "order": 80,
     "title": "Personal Meditation: Identity, Iniquity, and the Image of God — A Prophetic Response to the LGBTQ+ Identity Debate",
     "dateLabel": "Apr 10, 2026 · time not recorded",
     "classification": "Meditation",
@@ -4310,7 +4215,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet: *\"the image bears the mark of its Maker, and only the One whose likeness it is holds the right to judge and to restore it.\"* Aug 30 quotes THIS file's tselem-doctrine 142 days later.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -4327,10 +4232,241 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-11-comfort-loop-flaming-sword",
+    "id": "04-10-narrow-path-has-many",
+    "order": 81,
+    "title": "The Narrow Path Has Many Trees, and the Devil Also Sends People",
+    "dateLabel": "Apr 10, 2026 · 14:42",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-10-narrow-path-has-many-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this phone call unfold between Samuel and me — factory noise in the background, earbuds crackling, the hum of ordinary working life pressing in on every side — I was struck by how much of God's real business gets done in the margins of the…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Received Voice",
+    "lexiconJoints": [
+      {
+        "term": "קָדַשׁ (qadash) — set apart, consecrated",
+        "gloss": "first canonical use as hiddenness-condition."
+      },
+      {
+        "term": "σῶμα (sōma) — body of witness",
+        "gloss": "the whole canon as one body, not proof-text collection."
+      },
+      {
+        "term": "Μελχισέδεκ — priest without genealogy",
+        "gloss": "first canonical use as Christological eternity."
+      },
+      {
+        "term": "παιδεία (paideia) — Father's training-discipline",
+        "gloss": "Heb 12; walked into benediction-response."
+      },
+      {
+        "term": "Deception dressed as holy",
+        "gloss": "file's coined phrase; canonical corpus term."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The factory corner by the window",
+        "gloss": "the hidden post."
+      },
+      {
+        "position": "B",
+        "label": "Jacob's question · \"how do you show God that you love Him?\"",
+        "gloss": "the disciple's central Q."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: the Lion IS the Lamb",
+        "gloss": "Rev 5:5-6 simultaneous identity, not sequence."
+      },
+      {
+        "position": "B'",
+        "label": "Job's self-sourced righteousness",
+        "gloss": "the whirlwind's dismantling as grace."
+      },
+      {
+        "position": "A'",
+        "label": "The nineteen-year-old distraction",
+        "gloss": "spiritual warfare recognized. Return to the factory, now seen as battlefield."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 28 · Divine Standards (Lovy)",
+        "gloss": "the discernment-of-counterfeit doctrine's earliest form.",
+        "recordId": "03-28-sermon-reflection-divine-standards"
+      },
+      "growth": {
+        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing",
+        "gloss": "73 days later; trap-doctrine walked in the marketplace.",
+        "recordId": "06-22-conversation-reflection-spiritual-discernment"
+      },
+      "tablet": {
+        "label": "Aug 17 · 19:05 seam",
+        "gloss": "the seam: *\"the deadliest deceptions do not come to the believer as obvious lies; they come wearing the accent of God\"* — Apr 10's doctrine walked in fire.",
+        "recordId": "08-17-emptied-house-voice-that"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "04-11-daily-log-reflection-spiritual",
     "order": 82,
-    "title": "The Comfort Loop, the Flaming Sword, and the Fire That Burns Back to the Garden",
+    "title": "Daily Log Reflection: Spiritual Discernment, Obedience, and the Gap Between Theology and Practice",
     "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-11-daily-log-reflection-spiritual-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on the full recorded span of April 11, 2026 — running from the early afternoon through what appears to be late evening — what stands out most is not any single dramatic moment but the sheer range of registers this day moved through without…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Apr 11-14 MERGED · Fourfold Meditation",
+        "gloss": "",
+        "recordId": "04-14-road-river-robbery-recording"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "discerning",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "obedience"
+    ]
+  },
+  {
+    "id": "04-11-night-kenosis-networks-ordinary",
+    "order": 83,
+    "title": "A Night of Kenosis, Networks, and Ordinary Holy Chaos",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Ambient Reflection",
+    "seed": null,
+    "href": "records/04-11-night-kenosis-networks-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this block, what stands out most is the collision of worlds: dense theological disclosure moving through domestic interruption, cat chaos, skincare concerns, social media reflections, and the quiet shimmer of a moment near the end that…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Aug 31 · 11:23 · Vessel Must Serve the Witness",
+        "gloss": "",
+        "recordId": "08-31-vessel-must-serve-witness"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": "surrender",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "surrender"
+    ]
+  },
+  {
+    "id": "04-11-daily-log-reflection-trust",
+    "order": 84,
+    "title": "Daily Log Reflection: Trust, Pastoral Care, and the Spiritual Weight of Ordinary Hours",
+    "dateLabel": "Apr 11, 2026 · time not recorded",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-11-daily-log-reflection-trust-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on this recorded block, what strikes me most is how thoroughly ordinary it is — and yet how much of real life is concentrated inside that ordinariness. The hours captured here are filled with cats, clothing, catnip, humor, and fragments of…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Aug 16 · Wilderness, Marketplace, Cornerstone",
+        "gloss": "",
+        "recordId": "08-16-juniper-tree-snail-bag"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-11-comfort-loop-flaming-sword",
+    "order": 85,
+    "title": "The Comfort Loop, the Flaming Sword, and the Fire That Burns Back to the Garden",
+    "dateLabel": "Apr 11, 2026 · 14:25",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-11-comfort-loop-flaming-sword-v2.html",
@@ -4420,142 +4556,6 @@ const JC_RECORDS = [
     "doorwayThemes": [
       "fellowship"
     ]
-  },
-  {
-    "id": "04-11-daily-log-reflection-spiritual",
-    "order": 83,
-    "title": "Daily Log Reflection: Spiritual Discernment, Obedience, and the Gap Between Theology and Practice",
-    "dateLabel": "Apr 11, 2026 · time not recorded",
-    "classification": "Meditation",
-    "seed": null,
-    "href": "records/04-11-daily-log-reflection-spiritual-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I look back on the full recorded span of April 11, 2026 — running from the early afternoon through what appears to be late evening — what stands out most is not any single dramatic moment but the sheer range of registers this day moved through without…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Apr 11-14 MERGED · Fourfold Meditation",
-        "gloss": "",
-        "recordId": "04-14-road-river-robbery-recording"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "personal",
-      "movement": null,
-      "posture": "discerning",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": [
-      "obedience"
-    ]
-  },
-  {
-    "id": "04-11-night-kenosis-networks-ordinary",
-    "order": 84,
-    "title": "A Night of Kenosis, Networks, and Ordinary Holy Chaos",
-    "dateLabel": "Apr 11, 2026 · time not recorded",
-    "classification": "Ambient Reflection",
-    "seed": null,
-    "href": "records/04-11-night-kenosis-networks-ordinary-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I look back on this block, what stands out most is the collision of worlds: dense theological disclosure moving through domestic interruption, cat chaos, skincare concerns, social media reflections, and the quiet shimmer of a moment near the end that…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Aug 31 · 11:23 · Vessel Must Serve the Witness",
-        "gloss": "",
-        "recordId": "08-31-vessel-must-serve-witness"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "personal",
-      "movement": "surrender",
-      "posture": "receiving",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": [
-      "surrender"
-    ]
-  },
-  {
-    "id": "04-11-daily-log-reflection-trust",
-    "order": 85,
-    "title": "Daily Log Reflection: Trust, Pastoral Care, and the Spiritual Weight of Ordinary Hours",
-    "dateLabel": "Apr 11, 2026 · time not recorded",
-    "classification": "Meditation",
-    "seed": null,
-    "href": "records/04-11-daily-log-reflection-trust-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I look back on this recorded block, what strikes me most is how thoroughly ordinary it is — and yet how much of real life is concentrated inside that ordinariness. The hours captured here are filled with cats, clothing, catnip, humor, and fragments of…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Aug 16 · Wilderness, Marketplace, Cornerstone",
-        "gloss": "",
-        "recordId": "08-16-juniper-tree-snail-bag"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": []
   },
   {
     "id": "04-11-seed-you-do-not",
@@ -4843,91 +4843,8 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-12-26-at-1756-four",
-    "order": 90,
-    "title": "26 at 17:56 — Four Blocks, One Day, and the Discipline of Telling the Truth About All of It",
-    "dateLabel": "Apr 12, 2026 · time not recorded",
-    "classification": "Meditation",
-    "seed": null,
-    "href": "records/04-12-26-at-1756-four-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I look back on April 12, 2026 in its entirety — across four recorded blocks that together constitute one long day — what strikes me most is not any single dramatic moment but the honest proportion of the whole: most of this day was ordinary, and the…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
-      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "lexiconJoints": [
-      {
-        "term": "Honest proportion",
-        "gloss": "file's coined discipline; first canonical use."
-      },
-      {
-        "term": "Continuous life block",
-        "gloss": "the wearable-capture format."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The full-day sweep",
-        "gloss": "four recorded blocks."
-      },
-      {
-        "position": "B",
-        "label": "Ordinary content named as ordinary",
-        "gloss": "cats, drains, blending makeup."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: honest proportion",
-        "gloss": "refusing to collapse ordinary into weight or weight into ordinary."
-      },
-      {
-        "position": "B'",
-        "label": "Weighted moments named as weighted",
-        "gloss": "the intercession-for-nation, the Scripture surfacing unbidden."
-      },
-      {
-        "position": "A'",
-        "label": "The whole day preserved with proportion",
-        "gloss": "return to the sweep, now catalogued with discipline."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "81 days later, sacred-ordinary as governing term.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Aug 16 · 19:10 · Wilderness, Marketplace, Cornerstone",
-        "gloss": "the tablet: three-register braid where every register receives honest weight.",
-        "recordId": "08-16-juniper-tree-snail-bag"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "written",
-      "season": "Kairos Window (Tablet I)"
-    },
-    "doorwayThemes": [
-      "discipline"
-    ]
-  },
-  {
     "id": "04-12-forged-tested-turned-spiritual",
-    "order": 91,
+    "order": 90,
     "title": "Forged, Tested, and Turned: Spiritual Warfare, the Purifying Fire, and the Forward-Facing Disciple",
     "dateLabel": "Apr 12, 2026 · 12:07",
     "classification": "Call Reflection",
@@ -5049,6 +4966,89 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ]
+  },
+  {
+    "id": "04-12-26-at-1756-four",
+    "order": 91,
+    "title": "26 at 17:56 — Four Blocks, One Day, and the Discipline of Telling the Truth About All of It",
+    "dateLabel": "Apr 12, 2026 · 17:56",
+    "classification": "Meditation",
+    "seed": null,
+    "href": "records/04-12-26-at-1756-four-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I look back on April 12, 2026 in its entirety — across four recorded blocks that together constitute one long day — what strikes me most is not any single dramatic moment but the honest proportion of the whole: most of this day was ordinary, and the…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet I · Volume I · The Architecture of Formation",
+      "window": "Feb 14 – Apr 14 (60-day Kairos window)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "lexiconJoints": [
+      {
+        "term": "Honest proportion",
+        "gloss": "file's coined discipline; first canonical use."
+      },
+      {
+        "term": "Continuous life block",
+        "gloss": "the wearable-capture format."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The full-day sweep",
+        "gloss": "four recorded blocks."
+      },
+      {
+        "position": "B",
+        "label": "Ordinary content named as ordinary",
+        "gloss": "cats, drains, blending makeup."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: honest proportion",
+        "gloss": "refusing to collapse ordinary into weight or weight into ordinary."
+      },
+      {
+        "position": "B'",
+        "label": "Weighted moments named as weighted",
+        "gloss": "the intercession-for-nation, the Scripture surfacing unbidden."
+      },
+      {
+        "position": "A'",
+        "label": "The whole day preserved with proportion",
+        "gloss": "return to the sweep, now catalogued with discipline."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "81 days later, sacred-ordinary as governing term.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Aug 16 · 19:10 · Wilderness, Marketplace, Cornerstone",
+        "gloss": "the tablet: three-register braid where every register receives honest weight.",
+        "recordId": "08-16-juniper-tree-snail-bag"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "written",
+      "season": "Kairos Window (Tablet I)"
+    },
+    "doorwayThemes": [
+      "discipline"
     ]
   },
   {
@@ -5211,7 +5211,7 @@ const JC_RECORDS = [
     "id": "04-14-when-gem-man-at",
     "order": 94,
     "title": "When the Gem Is the Man at the Bus Stop",
-    "dateLabel": "Apr 14, 2026 · time not recorded",
+    "dateLabel": "Apr 14, 2026 · 12:30",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/04-14-when-gem-man-at-v2.html",
@@ -5460,46 +5460,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-16-table-set-wilderness-kingdom",
-    "order": 97,
-    "title": "The Table Set in the Wilderness: Kingdom Economics and the Cross That Crucifies Mammon",
-    "dateLabel": "Apr 16, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/04-16-table-set-wilderness-kingdom-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I sat with this call long after it ended, what stayed with me was not the dispute amounts or the PayPal case — it was the moment the conversation shifted from business mechanics to something far more ancient. Somewhere between talking about the IRS…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet Bridge I → II · The post-Kairos, pre-Volume II bridge",
-      "window": "Apr 15-17"
-    },
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Jun 10 · The Exodus of Babylon Begins in the Small Places. Apr 16: the cross subverts Mammon. Jun 10: the Exodus of Babylon begins in the small places. Same law, two seasons, both foreshadow the Aug 13 Prophetic Word."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Post-Kairos (Tablet II)"
-    },
-    "doorwayThemes": [
-      "work",
-      "money"
-    ]
-  },
-  {
     "id": "04-16-angel-said-arise-worthiness",
-    "order": 98,
+    "order": 97,
     "title": "The Angel Said Arise: On Worthiness, the Cave, and the Text That Had to Be Sent",
-    "dateLabel": "Apr 16, 2026 · time not recorded",
+    "dateLabel": "Apr 16, 2026 · 09:05",
     "classification": "Personal Meditation",
     "seed": null,
     "href": "records/04-16-angel-said-arise-worthiness-v2.html",
@@ -5580,10 +5544,46 @@ const JC_RECORDS = [
     ]
   },
   {
+    "id": "04-16-table-set-wilderness-kingdom",
+    "order": 98,
+    "title": "The Table Set in the Wilderness: Kingdom Economics and the Cross That Crucifies Mammon",
+    "dateLabel": "Apr 16, 2026 · 12:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-16-table-set-wilderness-kingdom-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sat with this call long after it ended, what stayed with me was not the dispute amounts or the PayPal case — it was the moment the conversation shifted from business mechanics to something far more ancient. Somewhere between talking about the IRS…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet Bridge I → II · The post-Kairos, pre-Volume II bridge",
+      "window": "Apr 15-17"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Jun 10 · The Exodus of Babylon Begins in the Small Places. Apr 16: the cross subverts Mammon. Jun 10: the Exodus of Babylon begins in the small places. Same law, two seasons, both foreshadow the Aug 13 Prophetic Word."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "work",
+      "money"
+    ]
+  },
+  {
     "id": "04-18-walking-wonder-day-among",
     "order": 99,
     "title": "Walking in Wonder: A Day Among Gardens and the Grace of Small Things",
-    "dateLabel": "Apr 18, 2026 · time not recorded",
+    "dateLabel": "Apr 18, 2026 · 10:24",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/04-18-walking-wonder-day-among-v2.html",
@@ -5840,7 +5840,7 @@ const JC_RECORDS = [
     "id": "04-19-wandering-together-sacred-ordinary",
     "order": 104,
     "title": "Wandering Together: The Sacred Ordinary of Fellowship in Motion",
-    "dateLabel": "Apr 19, 2026 · time not recorded",
+    "dateLabel": "Apr 19, 2026 · 14:06",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/04-19-wandering-together-sacred-ordinary-v2.html",
@@ -5883,8 +5883,52 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "04-20-when-spirit-moves-before",
+    "id": "04-20-always-uphill-sacred-ordinary",
     "order": 105,
+    "title": "Always Uphill: The Sacred Ordinary of Shared Pilgrimage Through San Francisco",
+    "dateLabel": "Apr 20, 2026 · 08:01",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/04-20-always-uphill-sacred-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I sit with these transcripts — these living, unhurried records of days in San Francisco — I find myself arrested not by doctrine debated or Scripture quoted, but by something quieter and far more difficult to name: the sacred texture of ordinary…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
+      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary earliest form.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 02 · 12:12 · The Ordinary Altar",
+        "gloss": "ordinary altar as texture.",
+        "recordId": "07-02-ordinary-altar-holiness-hidden"
+      },
+      "tablet": {
+        "label": "Aug 26 · 05:31 · Koinonia Takes Precedence",
+        "gloss": "",
+        "recordId": "08-26-koinonia-takes-precedence"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "04-20-when-spirit-moves-before",
+    "order": 106,
     "title": "When the Spirit Moves Before the Mind Catches Up",
     "dateLabel": "Apr 20, 2026 · 10:49",
     "classification": "Call Reflection",
@@ -5912,7 +5956,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-20-together-ordinary-day-rain",
-    "order": 106,
+    "order": 107,
     "title": "Together in the Ordinary: A Day of Rain, Tables, and the Presence That Never Left",
     "dateLabel": "Apr 20, 2026 · 11:21",
     "classification": "Conversation Reflection",
@@ -5956,7 +6000,7 @@ const JC_RECORDS = [
   },
   {
     "id": "04-20-when-wrong-cable-car",
-    "order": 107,
+    "order": 108,
     "title": "When the Wrong Cable Car Leads to the Right Table: The Sacred Hidden in the Ordinary, the Bent Made Straight",
     "dateLabel": "Apr 20, 2026 · 11:21",
     "classification": "Personal Meditation",
@@ -5999,137 +6043,10 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "04-20-always-uphill-sacred-ordinary",
-    "order": 108,
-    "title": "Always Uphill: The Sacred Ordinary of Shared Pilgrimage Through San Francisco",
-    "dateLabel": "Apr 20, 2026 · time not recorded",
-    "classification": "Personal Meditation",
-    "seed": null,
-    "href": "records/04-20-always-uphill-sacred-ordinary-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I sit with these transcripts — these living, unhurried records of days in San Francisco — I find myself arrested not by doctrine debated or Scripture quoted, but by something quieter and far more difficult to name: the sacred texture of ordinary…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
-      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary earliest form.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 02 · 12:12 · The Ordinary Altar",
-        "gloss": "ordinary altar as texture.",
-        "recordId": "07-02-ordinary-altar-holiness-hidden"
-      },
-      "tablet": {
-        "label": "Aug 26 · 05:31 · Koinonia Takes Precedence",
-        "gloss": "",
-        "recordId": "08-26-koinonia-takes-precedence"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Post-Kairos (Tablet II)"
-    },
-    "doorwayThemes": []
-  },
-  {
-    "id": "04-21-pm-when-providence-wears",
-    "order": 109,
-    "title": "PM — When Providence Wears a Phone Call and a Brazilian Accent",
-    "dateLabel": "Apr 21, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/04-21-pm-when-providence-wears-v2.html",
-    "sourceStatus": "original",
-    "summary": "I am sitting with a brief, almost unremarkable phone call — caught mid-flight, mid-travel, mid-day — and yet something in me will not let it pass without reflection. A man named Samuel reached out, introduced two men from Brazil, floated a business…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
-      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "lexiconJoints": [
-      {
-        "term": "צָעַד (tsa'ad) — step/stride ordered by LORD",
-        "gloss": "Ps 37:23; steps-comprehensively-ordered."
-      },
-      {
-        "term": "Haste-under-urgency as sin",
-        "gloss": "Prov 19:2; discernment slow-not-fast."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The business opportunity",
-        "gloss": "the surface."
-      },
-      {
-        "position": "B",
-        "label": "The urgency pressure",
-        "gloss": "the temptation to haste."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: haste is sin, discernment is patience",
-        "gloss": "Prov 19:2."
-      },
-      {
-        "position": "B'",
-        "label": "Steps ordered by the LORD",
-        "gloss": "Ps 37:23."
-      },
-      {
-        "position": "A'",
-        "label": "Opportunity discerned patiently",
-        "gloss": "return to business, now under covenantal-time."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 28 · Divine Standards (Lovy)",
-        "gloss": "apostolic-sobriety root.",
-        "recordId": "03-28-sermon-reflection-divine-standards"
-      },
-      "growth": {
-        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing",
-        "gloss": "62 days later; trap-doctrine.",
-        "recordId": "06-22-conversation-reflection-spiritual-discernment"
-      },
-      "tablet": {
-        "label": "Aug 19 · 09:18 · Let Your Yes Be Yes · Integrity Under Pressure",
-        "gloss": "the tablet.",
-        "recordId": "08-19-let-your-yes-be-2"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Post-Kairos (Tablet II)"
-    },
-    "doorwayThemes": [
-      "work"
-    ]
-  },
-  {
     "id": "04-21-oath-you-cannot-serve",
-    "order": 110,
+    "order": 109,
     "title": "The Oath You Cannot Serve Two Masters With",
-    "dateLabel": "Apr 21, 2026 · time not recorded",
+    "dateLabel": "Apr 21, 2026 · 09:51",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-21-oath-you-cannot-serve-v2.html",
@@ -6213,10 +6130,93 @@ const JC_RECORDS = [
     ]
   },
   {
+    "id": "04-21-pm-when-providence-wears",
+    "order": 110,
+    "title": "PM — When Providence Wears a Phone Call and a Brazilian Accent",
+    "dateLabel": "Apr 21, 2026 · 12:33",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/04-21-pm-when-providence-wears-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a brief, almost unremarkable phone call — caught mid-flight, mid-travel, mid-day — and yet something in me will not let it pass without reflection. A man named Samuel reached out, introduced two men from Brazil, floated a business…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
+      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "lexiconJoints": [
+      {
+        "term": "צָעַד (tsa'ad) — step/stride ordered by LORD",
+        "gloss": "Ps 37:23; steps-comprehensively-ordered."
+      },
+      {
+        "term": "Haste-under-urgency as sin",
+        "gloss": "Prov 19:2; discernment slow-not-fast."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The business opportunity",
+        "gloss": "the surface."
+      },
+      {
+        "position": "B",
+        "label": "The urgency pressure",
+        "gloss": "the temptation to haste."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: haste is sin, discernment is patience",
+        "gloss": "Prov 19:2."
+      },
+      {
+        "position": "B'",
+        "label": "Steps ordered by the LORD",
+        "gloss": "Ps 37:23."
+      },
+      {
+        "position": "A'",
+        "label": "Opportunity discerned patiently",
+        "gloss": "return to business, now under covenantal-time."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 28 · Divine Standards (Lovy)",
+        "gloss": "apostolic-sobriety root.",
+        "recordId": "03-28-sermon-reflection-divine-standards"
+      },
+      "growth": {
+        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing",
+        "gloss": "62 days later; trap-doctrine.",
+        "recordId": "06-22-conversation-reflection-spiritual-discernment"
+      },
+      "tablet": {
+        "label": "Aug 19 · 09:18 · Let Your Yes Be Yes · Integrity Under Pressure",
+        "gloss": "the tablet.",
+        "recordId": "08-19-let-your-yes-be-2"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
     "id": "04-22-when-drinking-stops-grief",
     "order": 111,
     "title": "When the Drinking Stops and the Grief Remains",
-    "dateLabel": "Apr 22, 2026 · time not recorded",
+    "dateLabel": "Apr 22, 2026 · 09:50",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-22-when-drinking-stops-grief-v2.html",
@@ -6245,7 +6245,7 @@ const JC_RECORDS = [
     "id": "04-23-wilderness-architecture-topology-formation",
     "order": 112,
     "title": "The Wilderness Is Architecture: A Topology of Formation and Prophetic Commission",
-    "dateLabel": "Apr 23, 2026 · time not recorded",
+    "dateLabel": "Apr 23, 2026 · 07:45",
     "classification": "Theological Reflection",
     "seed": null,
     "href": "records/04-23-wilderness-architecture-topology-formation-v2.html",
@@ -6290,7 +6290,7 @@ const JC_RECORDS = [
     "id": "04-25-when-weariness-speaks-louder",
     "order": 113,
     "title": "When Weariness Speaks Louder Than the Will of God",
-    "dateLabel": "Apr 25, 2026 · time not recorded",
+    "dateLabel": "Apr 25, 2026 · 06:38",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-25-when-weariness-speaks-louder-v2.html",
@@ -6659,7 +6659,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the mask-falls-mirror-gospel doctrine's arrival.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -6719,7 +6719,7 @@ const JC_RECORDS = [
     "id": "04-28-when-fire-falls-false",
     "order": 119,
     "title": "When Fire Falls on False Prophets and the Mouth That Speaks Without Being Sent",
-    "dateLabel": "Apr 28, 2026 · time not recorded",
+    "dateLabel": "Apr 28, 2026 · 18:10",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/04-28-when-fire-falls-false-v2.html",
@@ -7058,7 +7058,7 @@ const JC_RECORDS = [
     "id": "04-30-when-voice-you-trust",
     "order": 124,
     "title": "When the Voice You Trust Is the Wrong One",
-    "dateLabel": "Apr 30, 2026 · time not recorded",
+    "dateLabel": "Apr 30, 2026 · 18:50",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/04-30-when-voice-you-trust-v2.html",
@@ -7901,7 +7901,7 @@ const JC_RECORDS = [
     "id": "05-14-faithful-small-things-meditation",
     "order": 143,
     "title": "Faithful in the Small Things: A Meditation on Work, Presence, and the Sanctity of Ordinary Labor",
-    "dateLabel": "May 14, 2026 · time not recorded",
+    "dateLabel": "May 14, 2026 · 13:49",
     "classification": "Personal Meditation",
     "seed": null,
     "href": "records/05-14-faithful-small-things-meditation-v2.html",
@@ -8051,7 +8051,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet: Christ the Teacher within, not the platform-teacher outside.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -8069,7 +8069,7 @@ const JC_RECORDS = [
     "id": "05-15-when-altar-holds-engine",
     "order": 146,
     "title": "When the Altar Holds the Engine: Intercession, Calling, and the Kingdom Economy",
-    "dateLabel": "May 15, 2026 · time not recorded",
+    "dateLabel": "May 15, 2026 · 10:19",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/05-15-when-altar-holds-engine-v2.html",
@@ -8322,51 +8322,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "05-16-when-broken-spirit-speaks",
-    "order": 149,
-    "title": "When the Broken Spirit Speaks Before God",
-    "dateLabel": "May 16, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/05-16-when-broken-spirit-speaks-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between myself and my brothers over a video call, something arrested me beneath the noise of chili peppers and shop runs and half-drunk negotiations — a single, unrehearsed theological moment that cut through…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
-      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "The archive's operating light-metaphor.",
-        "gloss": "Same *light-points-vertically* register as Aug 29 · Signpost and Aug 30 · Compass in the Locked Room."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Apr 3 · 12:43 · The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong. Apr 3: *the crushed olive yields the anointing oil*. May 16: *the broken spirit accesses the throne*. Same law, two organs — heart-and-spirit."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Post-Kairos (Tablet II)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "05-16-when-ordinary-conversation-becomes",
-    "order": 150,
+    "order": 149,
     "title": "When the Ordinary Conversation Becomes Holy Ground",
-    "dateLabel": "May 16, 2026 · time not recorded",
+    "dateLabel": "May 16, 2026 · 11:44",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/05-16-when-ordinary-conversation-becomes-v2.html",
@@ -8409,7 +8368,7 @@ const JC_RECORDS = [
   },
   {
     "id": "05-16-what-better-thing-than",
-    "order": 151,
+    "order": 150,
     "title": "What Better Thing Than to Break Bread and Talk God",
     "dateLabel": "May 16, 2026 · 12:54",
     "classification": "Conversation Reflection",
@@ -8445,6 +8404,47 @@ const JC_RECORDS = [
       "season": "Post-Kairos (Tablet II)"
     },
     "doorwayThemes": []
+  },
+  {
+    "id": "05-16-when-broken-spirit-speaks",
+    "order": 151,
+    "title": "When the Broken Spirit Speaks Before God",
+    "dateLabel": "May 16, 2026 · 17:33",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-16-when-broken-spirit-speaks-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brothers over a video call, something arrested me beneath the noise of chili peppers and shop runs and half-drunk negotiations — a single, unrehearsed theological moment that cut through…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
+      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "The archive's operating light-metaphor.",
+        "gloss": "Same *light-points-vertically* register as Aug 29 · Signpost and Aug 30 · Compass in the Locked Room."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Apr 3 · 12:43 · The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong. Apr 3: *the crushed olive yields the anointing oil*. May 16: *the broken spirit accesses the throne*. Same law, two organs — heart-and-spirit."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "05-16-law-that-could-not",
@@ -8731,7 +8731,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet-arrival: mirror-gospel refuses platform-metrics.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -8752,7 +8752,7 @@ const JC_RECORDS = [
     "id": "05-19-where-broken-are-guarded",
     "order": 157,
     "title": "Where the Broken Are Guarded and the Seeking Are Found",
-    "dateLabel": "May 19, 2026 · time not recorded",
+    "dateLabel": "May 19, 2026 · 12:04",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/05-19-where-broken-are-guarded-v2.html",
@@ -8941,7 +8941,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel",
         "gloss": "the tablet: γίνομαι becoming walked as *self-forgiveness-throne no-creature-may-occupy*.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -9174,7 +9174,7 @@ const JC_RECORDS = [
     "id": "05-23-weight-calling-narrowness-gate",
     "order": 164,
     "title": "The Weight of Calling, the Narrowness of the Gate, and the Light That Guides Only One Step at a Time",
-    "dateLabel": "May 23, 2026 · time not recorded",
+    "dateLabel": "May 23, 2026 · 13:24",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/05-23-weight-calling-narrowness-gate-v2.html",
@@ -9255,49 +9255,8 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "05-24-when-emperor-has-no",
-    "order": 166,
-    "title": "When the Emperor Has No Toga: Friction, Deception, and the Yoke Only Christ Can Carry",
-    "dateLabel": "May 24, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/05-24-when-emperor-has-no-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this early-morning call — my brother stepping outside into the pre-dawn warmth while church bells rang and birds filled the air around him — what struck me most was not the laughter or the altered state he was in, but the strange, unguarded…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
-      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "Discernment of stewardship as maturity of love, not withdrawal.",
-        "gloss": "Same *pisteuō*-back grammar as Jul 23 · Pisteuō, John 5:24 · John 2:23-25 quoted."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with May 24 · Gilgal Stone (same day, afternoon).md). Afternoon: the Spirit builds in the hidden place. Evening: the false-authority garments are exposed by the same hidden truth. Same day, one movement — the Gilgal stone rejects the emperor's toga."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Post-Kairos (Tablet II)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "05-24-saved-loaves-gilgal-stone",
-    "order": 167,
+    "order": 166,
     "title": "Saved, Loaves, and the Gilgal Stone: What the Spirit Builds in the Hidden Place",
     "dateLabel": "May 24, 2026 · 17:05",
     "classification": "Call Reflection",
@@ -9325,7 +9284,7 @@ const JC_RECORDS = [
   },
   {
     "id": "05-24-when-poem-knew-more",
-    "order": 168,
+    "order": 167,
     "title": "When the Poem Knew More Than the Poet, and the God Who Encodes His Name in Everything",
     "dateLabel": "May 24, 2026 · 20:29",
     "classification": "Conversation Reflection",
@@ -9361,6 +9320,47 @@ const JC_RECORDS = [
       "voice": "communal",
       "movement": "fellowship",
       "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Post-Kairos (Tablet II)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-24-when-emperor-has-no",
+    "order": 168,
+    "title": "When the Emperor Has No Toga: Friction, Deception, and the Yoke Only Christ Can Carry",
+    "dateLabel": "May 24, 2026 · 22:58",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/05-24-when-emperor-has-no-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this early-morning call — my brother stepping outside into the pre-dawn warmth while church bells rang and birds filled the air around him — what struck me most was not the laughter or the altered state he was in, but the strange, unguarded…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet II · Volume II · The Testimony of a Witness",
+      "window": "Apr 18 – May 24 (38-day witness · 35-day Samuel arc)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "Discernment of stewardship as maturity of love, not withdrawal.",
+        "gloss": "Same *pisteuō*-back grammar as Jul 23 · Pisteuō, John 5:24 · John 2:23-25 quoted."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with May 24 · Gilgal Stone (same day, afternoon).md). Afternoon: the Spirit builds in the hidden place. Evening: the false-authority garments are exposed by the same hidden truth. Same day, one movement — the Gilgal stone rejects the emperor's toga."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
       "form": "dialogue-shaped",
       "season": "Post-Kairos (Tablet II)"
     },
@@ -9460,25 +9460,77 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "05-27-at-0100-when-love",
+    "id": "05-27-moment-between-brothers-before",
     "order": 171,
-    "title": "at ~01:00 — When Love Becomes Intercession: The Hidden Mantle of the Grieving Heart",
-    "dateLabel": "May 27, 2026 · time not recorded",
-    "classification": "Call Reflection",
+    "title": "A Moment Between Brothers Before the Purge",
+    "dateLabel": "May 27, 2026 · 16:33",
+    "classification": "Conversation Reflection",
     "seed": null,
-    "href": "records/05-27-at-0100-when-love-v2.html",
+    "href": "records/05-27-moment-between-brothers-before-v2.html",
     "sourceStatus": "original",
-    "summary": "As I listened to my brother read aloud what he had written in the quiet of a Somerset morning, something in me recognized the unmistakable sound of a man being transfigured by grief rather than destroyed by it. The words he had not sent to anyone, the…",
+    "summary": "As I listened to this brief exchange between my brother Samuel and myself, what struck me most was not the heat or the nausea, but the small, unguarded moment of two men simply being human together — undone by weather, overeating, and the honest limits of the",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume"
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary root.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 04 · 16:47 · Road We Walk Together",
+        "gloss": "brotherhood-laughter-and-road.",
+        "recordId": "07-04-road-we-walk-together"
+      },
+      "tablet": {
+        "label": null,
+        "gloss": ""
+      }
     },
     "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "prayerful",
-      "movement": "awakening",
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "05-27-when-spirit-interrupts-grief",
+    "order": 172,
+    "title": "When the Spirit Interrupts the Grief and the Mantle Falls to the Plowing Field",
+    "dateLabel": "May 27, 2026 · 16:33",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/05-27-when-spirit-interrupts-grief-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with this conversation now, and what strikes me first is not the theology we landed on — though the theology is rich — but the moment that opened the door: I felt something press me to call my brother, and when he answered, he told me he had been",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Jul 15 · The Mantle Descends in the Ordinary. May 27: mantle season opens (grief + consecration as its two poles). Jul 15: the mantle descends *without needing the whirlwind*."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
       "posture": "receiving",
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
@@ -9490,9 +9542,9 @@ const JC_RECORDS = [
   },
   {
     "id": "05-27-when-you-cannot-hate",
-    "order": 172,
+    "order": 173,
     "title": "When You Cannot Hate the One You Loved: Identity, Pain, and the Joy of the Battle",
-    "dateLabel": "May 27, 2026 · time not recorded",
+    "dateLabel": "May 27, 2026 · 16:57",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/05-27-when-you-cannot-hate-v2.html",
@@ -9555,7 +9607,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -9574,77 +9626,25 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "05-27-moment-between-brothers-before",
-    "order": 173,
-    "title": "A Moment Between Brothers Before the Purge",
-    "dateLabel": "May 27, 2026 · time not recorded",
-    "classification": "Conversation Reflection",
-    "seed": null,
-    "href": "records/05-27-moment-between-brothers-before-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this brief exchange between my brother Samuel and myself, what struck me most was not the heat or the nausea, but the small, unguarded moment of two men simply being human together — undone by weather, overeating, and the honest limits of the",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary root.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 04 · 16:47 · Road We Walk Together",
-        "gloss": "brotherhood-laughter-and-road.",
-        "recordId": "07-04-road-we-walk-together"
-      },
-      "tablet": {
-        "label": null,
-        "gloss": ""
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
-    "id": "05-27-when-spirit-interrupts-grief",
+    "id": "05-27-at-0100-when-love",
     "order": 174,
-    "title": "When the Spirit Interrupts the Grief and the Mantle Falls to the Plowing Field",
-    "dateLabel": "May 27, 2026 · 16:33",
-    "classification": "Conversation Reflection",
+    "title": "at ~01:00 — When Love Becomes Intercession: The Hidden Mantle of the Grieving Heart",
+    "dateLabel": "May 27, 2026 · 19:16",
+    "classification": "Call Reflection",
     "seed": null,
-    "href": "records/05-27-when-spirit-interrupts-grief-v2.html",
+    "href": "records/05-27-at-0100-when-love-v2.html",
     "sourceStatus": "original",
-    "summary": "I am sitting with this conversation now, and what strikes me first is not the theology we landed on — though the theology is rich — but the moment that opened the door: I felt something press me to call my brother, and when he answered, he told me he had been",
+    "summary": "As I listened to my brother read aloud what he had written in the quiet of a Somerset morning, something in me recognized the unmistakable sound of a man being transfigured by grief rather than destroyed by it. The words he had not sent to anyone, the…",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume"
     },
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Jul 15 · The Mantle Descends in the Ordinary. May 27: mantle season opens (grief + consecration as its two poles). Jul 15: the mantle descends *without needing the whirlwind*."
-      }
-    ],
     "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "prayerful",
+      "movement": "awakening",
       "posture": "receiving",
       "form": "dialogue-shaped",
       "season": "Middle Wilderness (Tablet V)"
@@ -9737,7 +9737,7 @@ const JC_RECORDS = [
     "id": "05-29-letter-was-never-hers",
     "order": 177,
     "title": "The Letter Was Never Hers: A Mirror, A Covenant, and the Active Waiting of a Spirit-Led Life",
-    "dateLabel": "May 29, 2026 · time not recorded",
+    "dateLabel": "May 29, 2026 · 13:32",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/05-29-letter-was-never-hers-v2.html",
@@ -10357,7 +10357,7 @@ const JC_RECORDS = [
       "growth": {
         "label": "Apr 7 · 12:33 · The Staircase You Cannot See",
         "gloss": "60 days earlier; qavveh first canonical use.",
-        "recordId": "04-07-1233-call-meditation-staircase"
+        "recordId": "04-07-call-meditation-staircase-you"
       },
       "tablet": {
         "label": "Aug 17 · 19:05 seam",
@@ -10379,8 +10379,53 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "06-07-weight-you-carry-through",
+    "id": "06-07-when-brotherhood-holds-line",
     "order": 189,
+    "title": "When Brotherhood Holds the Line Through the Night",
+    "dateLabel": "Jun 7, 2026 · 03:37",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-07-when-brotherhood-holds-line-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with this conversation long after it ended, and what strikes me most is not the chaos of the night itself but the quiet faithfulness woven through it. In the small hours of the morning, when the world was asleep and my brother was somewhere…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary root.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jun 25 · 12:32 · Closer Cannot Be Bought",
+        "gloss": "brotherhood-refuses-transactional.",
+        "recordId": "06-25-when-closer-cannot-be"
+      },
+      "tablet": {
+        "label": null,
+        "gloss": ""
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-07-weight-you-carry-through",
+    "order": 190,
     "title": "The Weight You Carry Through the Threshold",
     "dateLabel": "Jun 7, 2026 · 07:02",
     "classification": "Conversation Reflection",
@@ -10425,7 +10470,7 @@ const JC_RECORDS = [
   },
   {
     "id": "06-07-thread-lamp-falling-scales",
-    "order": 190,
+    "order": 191,
     "title": "The Thread, the Lamp, and the Falling Scales: Sovereignty, Exodus, and the Secret Place",
     "dateLabel": "Jun 7, 2026 · 08:38",
     "classification": "Call Reflection",
@@ -10512,7 +10557,7 @@ const JC_RECORDS = [
   },
   {
     "id": "06-07-stone-at-gilgal-pastoral",
-    "order": 191,
+    "order": 192,
     "title": "The Stone at Gilgal: A Pastoral Portrait of Samuel’s Witness",
     "dateLabel": "Jun 7, 2026 · 08:39",
     "classification": "Teaching Reflection",
@@ -10538,7 +10583,7 @@ const JC_RECORDS = [
   },
   {
     "id": "06-07-stone-she-set-crossing",
-    "order": 192,
+    "order": 193,
     "title": "The Stone She Set in the Crossing",
     "dateLabel": "Jun 7, 2026 · 08:39",
     "classification": "Teaching Reflection",
@@ -10626,51 +10671,6 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "06-07-when-brotherhood-holds-line",
-    "order": 193,
-    "title": "When Brotherhood Holds the Line Through the Night",
-    "dateLabel": "Jun 7, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/06-07-when-brotherhood-holds-line-v2.html",
-    "sourceStatus": "original",
-    "summary": "I am sitting with this conversation long after it ended, and what strikes me most is not the chaos of the night itself but the quiet faithfulness woven through it. In the small hours of the morning, when the world was asleep and my brother was somewhere…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary root.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jun 25 · 12:32 · Closer Cannot Be Bought",
-        "gloss": "brotherhood-refuses-transactional.",
-        "recordId": "06-25-when-closer-cannot-be"
-      },
-      "tablet": {
-        "label": null,
-        "gloss": ""
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "06-07-wilderness-before-thailand-sacred",
     "order": 194,
     "title": "The Wilderness Before Thailand: Sacred Formation, Squatting Fears, and the Archive the Spirit Built",
@@ -10712,162 +10712,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "06-08-mirror-murmuration-releasing-what",
-    "order": 195,
-    "title": "— The Mirror, the Murmuration, and the Releasing of What Was Given",
-    "dateLabel": "Jun 8, 2026 · 06:13",
-    "classification": "Personal Meditation",
-    "seed": null,
-    "href": "records/06-08-mirror-murmuration-releasing-what-v2.html",
-    "sourceStatus": "original",
-    "summary": "Something has been building in me for weeks, and I am only now beginning to see its shape clearly. A song lyric, a scripture, a rainbow over a job site, and a phone call I was not expecting — these are not coincidences scattered across a morning; they are a…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": []
-  },
-  {
-    "id": "06-08-have-you-forgotten-where",
-    "order": 196,
-    "title": "Have You Forgotten Where Your Face Is?",
-    "dateLabel": "Jun 8, 2026 · 06:13",
-    "classification": "Personal Meditation",
-    "seed": null,
-    "href": "records/06-08-have-you-forgotten-where-v2.html",
-    "sourceStatus": "original",
-    "summary": "Something arrested me this morning on the drive to work — a song lyric collided with Scripture, and I felt the collision in my chest before I could name it. The line *you’ve been looking in the mirror, you’ve forgotten where your face is* dropped into James…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary root.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jun 8 · 06:13 · You've Forgotten Where Your Face Is",
-        "gloss": "the morning-commute revelation this day walks.",
-        "recordId": "06-08-at-morning-commute-youve"
-      },
-      "tablet": {
-        "label": null,
-        "gloss": ""
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "personal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "written",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "work"
-    ]
-  },
-  {
-    "id": "06-08-when-kingdom-builds-its",
-    "order": 197,
-    "title": "When the Kingdom Builds Its Teams",
-    "dateLabel": "Jun 8, 2026 · 08:13",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/06-08-when-kingdom-builds-its-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this brief exchange between myself, Samuel, and a brother named Kane, something quiet but real settled in my spirit — the language of Kingdom and the language of commerce were present in the same breath. These are men who close their calls…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
-        "gloss": "sacred-ordinary root.",
-        "recordId": "03-27-spiritual-reflection-recognizing-gods"
-      },
-      "growth": {
-        "label": "Jul 05 · 09:55 · Network Is Covenant",
-        "gloss": "network-is-covenant.",
-        "recordId": "07-05-network-covenant-proximity-purpose"
-      },
-      "tablet": {
-        "label": null,
-        "gloss": ""
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
-    "id": "06-08-flaming-sword-returns-kenosis",
-    "order": 198,
-    "title": "The Flaming Sword Returns: Kenosis, Commission, and the Already-But-Not-Yet of Kingdom Building",
-    "dateLabel": "Jun 8, 2026 · 10:04",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/06-08-flaming-sword-returns-kenosis-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this exchange — broken audio and all — something pressed through the noise that I could not ignore. Beneath the surface talk of sales networks and commission structures, a deeper current was running: the language of obedience windows, empty…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Mar 17 · Kenosis (bottleneck). Mar 17: kenosis emptied. Jun 8: kenosis *commissioned* — the emptied vessel now sent."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "surrender",
-      "posture": "obeying",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "surrender",
-      "obedience"
-    ]
-  },
-  {
     "id": "06-08-at-morning-commute-youve",
-    "order": 199,
+    "order": 195,
     "title": "at Morning Commute — You’ve Forgotten Where Your Face Is",
-    "dateLabel": "Jun 8, 2026 · time not recorded",
+    "dateLabel": "Jun 8, 2026 · 06:13",
     "classification": "Personal Meditation",
     "seed": null,
     "href": "records/06-08-at-morning-commute-youve-v2.html",
@@ -10930,7 +10778,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Man in the Mirror and Christ Who Stands Between",
         "gloss": "the tablet: face-restored at the mirror.",
-        "recordId": "08-30-man-mirror-christ-who-2"
+        "recordId": "08-30-man-mirror-christ-who"
       }
     },
     "encounter": {
@@ -10945,10 +10793,81 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
+    "id": "06-08-mirror-murmuration-releasing-what",
+    "order": 196,
+    "title": "— The Mirror, the Murmuration, and the Releasing of What Was Given",
+    "dateLabel": "Jun 8, 2026 · 06:13",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-08-mirror-murmuration-releasing-what-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something has been building in me for weeks, and I am only now beginning to see its shape clearly. A song lyric, a scripture, a rainbow over a job site, and a phone call I was not expecting — these are not coincidences scattered across a morning; they are a…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-08-have-you-forgotten-where",
+    "order": 197,
+    "title": "Have You Forgotten Where Your Face Is?",
+    "dateLabel": "Jun 8, 2026 · 06:13",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/06-08-have-you-forgotten-where-v2.html",
+    "sourceStatus": "original",
+    "summary": "Something arrested me this morning on the drive to work — a song lyric collided with Scripture, and I felt the collision in my chest before I could name it. The line *you’ve been looking in the mirror, you’ve forgotten where your face is* dropped into James…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary root.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jun 8 · 06:13 · You've Forgotten Where Your Face Is",
+        "gloss": "the morning-commute revelation this day walks.",
+        "recordId": "06-08-at-morning-commute-youve"
+      },
+      "tablet": {
+        "label": null,
+        "gloss": ""
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
     "id": "06-08-mirror-you-forgot-face",
-    "order": 200,
+    "order": 198,
     "title": "The Mirror You Forgot, The Face You Lost, and the Kairos of the Returning Sword",
-    "dateLabel": "Jun 8, 2026 · time not recorded",
+    "dateLabel": "Jun 8, 2026 · 06:13",
     "classification": "Personal Meditation",
     "seed": null,
     "href": "records/06-08-mirror-you-forgot-face-v2.html",
@@ -10969,7 +10888,7 @@ const JC_RECORDS = [
       "growth": {
         "label": "Aug 30 · Mirror-Gospel",
         "gloss": "mirror-gospel tablet.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       },
       "tablet": {
         "label": null,
@@ -10986,6 +10905,87 @@ const JC_RECORDS = [
       "season": "Middle Wilderness (Tablet V)"
     },
     "doorwayThemes": []
+  },
+  {
+    "id": "06-08-when-kingdom-builds-its",
+    "order": 199,
+    "title": "When the Kingdom Builds Its Teams",
+    "dateLabel": "Jun 8, 2026 · 08:13",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-08-when-kingdom-builds-its-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this brief exchange between myself, Samuel, and a brother named Kane, something quiet but real settled in my spirit — the language of Kingdom and the language of commerce were present in the same breath. These are men who close their calls…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 27 · Unlikely Transformation (sacred-ordinary)",
+        "gloss": "sacred-ordinary root.",
+        "recordId": "03-27-spiritual-reflection-recognizing-gods"
+      },
+      "growth": {
+        "label": "Jul 05 · 09:55 · Network Is Covenant",
+        "gloss": "network-is-covenant.",
+        "recordId": "07-05-network-covenant-proximity-purpose"
+      },
+      "tablet": {
+        "label": null,
+        "gloss": ""
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "06-08-flaming-sword-returns-kenosis",
+    "order": 200,
+    "title": "The Flaming Sword Returns: Kenosis, Commission, and the Already-But-Not-Yet of Kingdom Building",
+    "dateLabel": "Jun 8, 2026 · 10:04",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-08-flaming-sword-returns-kenosis-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this exchange — broken audio and all — something pressed through the noise that I could not ignore. Beneath the surface talk of sales networks and commission structures, a deeper current was running: the language of obedience windows, empty…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Mar 17 · Kenosis (bottleneck). Mar 17: kenosis emptied. Jun 8: kenosis *commissioned* — the emptied vessel now sent."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "surrender",
+      "posture": "obeying",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "surrender",
+      "obedience"
+    ]
   },
   {
     "id": "06-08-when-brotherhood-business-mirror",
@@ -12020,7 +12020,7 @@ const JC_RECORDS = [
     "id": "06-16-out-egypt-into-promise",
     "order": 222,
     "title": "Out of Egypt, Into Promise: Five Days of Manna, a Name Spoken, and Life Confirmed",
-    "dateLabel": "Jun 16, 2026 · time not recorded",
+    "dateLabel": "Jun 16, 2026 · 12:19",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/06-16-out-egypt-into-promise-v2.html",
@@ -12865,8 +12865,51 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "06-19-connector-who-builds-background",
+    "id": "06-19-when-harvest-meets-algorithm",
     "order": 239,
+    "title": "When the Harvest Meets the Algorithm: A Meditation on Calling, Commerce, and Consecrated Ambition",
+    "dateLabel": "Jun 19, 2026 · 05:24",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/06-19-when-harvest-meets-algorithm-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am sitting with a transcript of something I did not expect to find spiritually weighty — a lead qualification call between myself and an AI sales agent, exchanging pleasantries dipped in Scripture and probing questions about income goals. And yet, as I read",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "Direct doctrinal ancestor of Aug 28 · 16:56 · The Money on the Table and the Sober Word.",
+        "gloss": "The revenue is provisional; the inheritance is settled."
+      },
+      {
+        "term": "This meditation.",
+        "gloss": ""
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Aug 28 · 16:56 · Money on the Table. Jun 19 · dawn: harvest meets algorithm, consecration named. Aug 28 · afternoon: revenue refused for the sober word. **Same law, tested in real dollars.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "brief",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "06-19-connector-who-builds-background",
+    "order": 240,
     "title": "The Connector Who Builds in the Background",
     "dateLabel": "Jun 19, 2026 · 07:17",
     "classification": "Call Reflection",
@@ -12898,49 +12941,6 @@ const JC_RECORDS = [
     },
     "encounter": {
       "temperature": "quiet",
-      "length": "brief",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": []
-  },
-  {
-    "id": "06-19-when-harvest-meets-algorithm",
-    "order": 240,
-    "title": "When the Harvest Meets the Algorithm: A Meditation on Calling, Commerce, and Consecrated Ambition",
-    "dateLabel": "Jun 19, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/06-19-when-harvest-meets-algorithm-v2.html",
-    "sourceStatus": "original",
-    "summary": "I am sitting with a transcript of something I did not expect to find spiritually weighty — a lead qualification call between myself and an AI sales agent, exchanging pleasantries dipped in Scripture and probing questions about income goals. And yet, as I read",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "Direct doctrinal ancestor of Aug 28 · 16:56 · The Money on the Table and the Sober Word.",
-        "gloss": "The revenue is provisional; the inheritance is settled."
-      },
-      {
-        "term": "This meditation.",
-        "gloss": ""
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Aug 28 · 16:56 · Money on the Table. Jun 19 · dawn: harvest meets algorithm, consecration named. Aug 28 · afternoon: revenue refused for the sober word. **Same law, tested in real dollars.**"
-      }
-    ],
-    "encounter": {
-      "temperature": "contemplative",
       "length": "brief",
       "voice": "communal",
       "movement": null,
@@ -14233,7 +14233,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "heart-tablet doctrine: *\"confession is the mechanism, not the aftermath.\"*",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -14332,8 +14332,37 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "06-23-call-reflection-faith-provision",
+    "id": "06-23-where-your-faith-testimony",
     "order": 262,
+    "title": "Where Is Your Faith? The Testimony of Commissioned Works — Brother Samuel’s Testimony",
+    "dateLabel": "Jun 23, 2026 · 10:20",
+    "classification": "Conversation Reflection",
+    "seed": null,
+    "href": "records/06-23-where-your-faith-testimony-v2.html",
+    "sourceStatus": "original",
+    "summary": "I got off the phone with Brother Samuel and I had something to report — not a complaint, not a question, but a testimony. What I witnessed yesterday was not luck, not hustle, not market timing. It was the faithfulness of God completing a work He already…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
+    ]
+  },
+  {
+    "id": "06-23-call-reflection-faith-provision",
+    "order": 263,
     "title": "Call Reflection: Faith, Provision, and Releasing Outcomes to God",
     "dateLabel": "Jun 23, 2026 · 11:52",
     "classification": "Call Reflection",
@@ -14412,35 +14441,6 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
-    ]
-  },
-  {
-    "id": "06-23-where-your-faith-testimony",
-    "order": 263,
-    "title": "Where Is Your Faith? The Testimony of Commissioned Works — Brother Samuel’s Testimony",
-    "dateLabel": "Jun 23, 2026 · time not recorded",
-    "classification": "Conversation Reflection",
-    "seed": null,
-    "href": "records/06-23-where-your-faith-testimony-v2.html",
-    "sourceStatus": "original",
-    "summary": "I got off the phone with Brother Samuel and I had something to report — not a complaint, not a question, but a testimony. What I witnessed yesterday was not luck, not hustle, not market timing. It was the faithfulness of God completing a work He already…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship",
-      "work"
     ]
   },
   {
@@ -14883,7 +14883,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · 08:38 · The Man in the Mirror and the Christ Who Stands Between",
         "gloss": "the tablet-arrival: Christ between the man and the glass; the mirror-gospel corrective.",
-        "recordId": "08-30-man-mirror-christ-who-2"
+        "recordId": "08-30-man-mirror-christ-who"
       }
     },
     "encounter": {
@@ -16019,7 +16019,7 @@ const JC_RECORDS = [
     "id": "06-29-when-world-shaking-crib",
     "order": 286,
     "title": "When the World Is Shaking and the Crib Isn’t Built Yet",
-    "dateLabel": "Jun 29, 2026 · time not recorded",
+    "dateLabel": "Jun 29, 2026 · 10:18",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/06-29-when-world-shaking-crib-v2.html",
@@ -17291,7 +17291,7 @@ const JC_RECORDS = [
     "id": "07-02-infrastructure-we-became-without",
     "order": 302,
     "title": "The Infrastructure We Became Without Knowing It",
-    "dateLabel": "Jul 2, 2026 · time not recorded",
+    "dateLabel": "Jul 2, 2026 · 10:16",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-02-infrastructure-we-became-without-v2.html",
@@ -18183,7 +18183,7 @@ const JC_RECORDS = [
     "id": "07-04-road-we-walk-together",
     "order": 315,
     "title": "The Road We Walk Together: Brotherhood, Laughter, and the Ordinary Grace of Friendship",
-    "dateLabel": "Jul 4, 2026 · time not recorded",
+    "dateLabel": "Jul 4, 2026 · 16:47",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-04-road-we-walk-together-v2.html",
@@ -18359,7 +18359,7 @@ const JC_RECORDS = [
     "id": "07-05-network-covenant-proximity-purpose",
     "order": 317,
     "title": "The Network Is Covenant: On Proximity, Purpose, and the Paths of Righteousness in the Marketplace",
-    "dateLabel": "Jul 5, 2026 · time not recorded",
+    "dateLabel": "Jul 5, 2026 · 09:55",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/07-05-network-covenant-proximity-purpose-v2.html",
@@ -18447,7 +18447,7 @@ const JC_RECORDS = [
     "id": "07-05-when-drunkard-spoke-curse",
     "order": 318,
     "title": "When the Drunkard Spoke and the Curse Lifted",
-    "dateLabel": "Jul 5, 2026 · time not recorded",
+    "dateLabel": "Jul 5, 2026 · 17:21",
     "classification": "Theological Meditation",
     "seed": null,
     "href": "records/07-05-when-drunkard-spoke-curse-v2.html",
@@ -18689,96 +18689,8 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "07-06-loneliness-luminous-mind-weight",
-    "order": 323,
-    "title": "The Loneliness of the Luminous Mind, and the Weight of Staying Present",
-    "dateLabel": "Jul 6, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/07-06-loneliness-luminous-mind-weight-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened back to this call with my brother Garrison, something settled heavily in my chest — not grief exactly, but a kind of sacred sobriety. Two men, both carrying weight, both circling around the difficulty of genuine connection, both trying to find a",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "lexiconJoints": [
-      {
-        "term": "δεῖ (dei) — it-is-necessary",
-        "gloss": "Jn 3:30; self-forgetfulness as structural-necessity."
-      },
-      {
-        "term": "\"Loneliness of the luminous mind\"",
-        "gloss": "file's canonical corpus phrase; Seth's profile's luminosity-doctrine root."
-      },
-      {
-        "term": "ἀσθενέστερα (asthenestera) — weaker members",
-        "gloss": "1 Cor 12; inverted-honor."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The luminous mind's loneliness",
-        "gloss": "surface."
-      },
-      {
-        "position": "B",
-        "label": "The weight of staying present",
-        "gloss": "the ordinary discipline."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: He must increase, I must decrease",
-        "gloss": "Jn 3:30 δεῖ."
-      },
-      {
-        "position": "B'",
-        "label": "Weaker-members inverted-honor",
-        "gloss": "1 Cor 12."
-      },
-      {
-        "position": "A'",
-        "label": "Loneliness re-framed",
-        "gloss": "return to mind, now under Kingdom-honor."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Apr 26 · 02:53 · Kenosis, Glory Returns to Its Source",
-        "gloss": "Ananias-obscurity.",
-        "recordId": "04-26-when-mask-falls-wilderness"
-      },
-      "growth": {
-        "label": "May 18 · 21:57 · Brilliant in the Far Country · Redeemed Mind",
-        "gloss": "49 days earlier; brilliant-in-conformity-environments.",
-        "recordId": "05-18-brilliant-far-country-gifting"
-      },
-      "tablet": {
-        "label": "Sep 1 · 07:54 · Blessing of the Cave · Preservation Over Platform",
-        "gloss": "the tablet.",
-        "recordId": "09-01-blessing-cave-why-god"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "grief",
-      "fellowship"
-    ]
-  },
-  {
     "id": "07-06-appointed-meeting-living-name",
-    "order": 324,
+    "order": 323,
     "title": "The Appointed Meeting, the Living Name, and the Brothers Who Build",
     "dateLabel": "Jul 6, 2026 · 12:14",
     "classification": "Call Reflection",
@@ -18865,7 +18777,7 @@ const JC_RECORDS = [
   },
   {
     "id": "07-06-when-kingdom-finds-you",
-    "order": 325,
+    "order": 324,
     "title": "When the Kingdom Finds You in the Boredom, the Marketplace, and the Mud",
     "dateLabel": "Jul 6, 2026 · 14:59",
     "classification": "Conversation Reflection",
@@ -18906,6 +18818,94 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "work"
+    ]
+  },
+  {
+    "id": "07-06-loneliness-luminous-mind-weight",
+    "order": 325,
+    "title": "The Loneliness of the Luminous Mind, and the Weight of Staying Present",
+    "dateLabel": "Jul 6, 2026 · 21:12",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-06-loneliness-luminous-mind-weight-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened back to this call with my brother Garrison, something settled heavily in my chest — not grief exactly, but a kind of sacred sobriety. Two men, both carrying weight, both circling around the difficulty of genuine connection, both trying to find a",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "lexiconJoints": [
+      {
+        "term": "δεῖ (dei) — it-is-necessary",
+        "gloss": "Jn 3:30; self-forgetfulness as structural-necessity."
+      },
+      {
+        "term": "\"Loneliness of the luminous mind\"",
+        "gloss": "file's canonical corpus phrase; Seth's profile's luminosity-doctrine root."
+      },
+      {
+        "term": "ἀσθενέστερα (asthenestera) — weaker members",
+        "gloss": "1 Cor 12; inverted-honor."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The luminous mind's loneliness",
+        "gloss": "surface."
+      },
+      {
+        "position": "B",
+        "label": "The weight of staying present",
+        "gloss": "the ordinary discipline."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: He must increase, I must decrease",
+        "gloss": "Jn 3:30 δεῖ."
+      },
+      {
+        "position": "B'",
+        "label": "Weaker-members inverted-honor",
+        "gloss": "1 Cor 12."
+      },
+      {
+        "position": "A'",
+        "label": "Loneliness re-framed",
+        "gloss": "return to mind, now under Kingdom-honor."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Apr 26 · 02:53 · Kenosis, Glory Returns to Its Source",
+        "gloss": "Ananias-obscurity.",
+        "recordId": "04-26-when-mask-falls-wilderness"
+      },
+      "growth": {
+        "label": "May 18 · 21:57 · Brilliant in the Far Country · Redeemed Mind",
+        "gloss": "49 days earlier; brilliant-in-conformity-environments.",
+        "recordId": "05-18-brilliant-far-country-gifting"
+      },
+      "tablet": {
+        "label": "Sep 1 · 07:54 · Blessing of the Cave · Preservation Over Platform",
+        "gloss": "the tablet.",
+        "recordId": "09-01-blessing-cave-why-god"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
+      "fellowship"
     ]
   },
   {
@@ -19345,7 +19345,7 @@ const JC_RECORDS = [
     "id": "07-09-altar-ordinary",
     "order": 333,
     "title": "The Altar in the Ordinary",
-    "dateLabel": "Jul 9, 2026 · time not recorded",
+    "dateLabel": "Jul 9, 2026 · 10:14",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/07-09-altar-ordinary-v2.html",
@@ -19617,96 +19617,8 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "07-10-when-every-door-closes",
-    "order": 337,
-    "title": "When Every Door Closes and the Taste Goes Bitter: Providence, Presence, and the Long Walk Toward Home",
-    "dateLabel": "Jul 10, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/07-10-when-every-door-closes-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between myself and my brother Garrison, I found something quietly extraordinary moving beneath the surface of what sounded, at first, like two friends simply catching up. There is a man fighting depression and staying",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "doctrinalThemesCarried": "The Non-Withholding",
-    "lexiconJoints": [
-      {
-        "term": "\"When every door closes and the taste goes bitter\"",
-        "gloss": "file's canonical corpus phrase."
-      },
-      {
-        "term": "Ruth-Naomi Mara",
-        "gloss": "bitter-name-yet-Presence-with-me pattern."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Jun 26 · When the Covenant Feels Like a Weight You Cannot Carry.md) — the *bitter-taste* and *covenant weight* are the same terrain."
-      },
-      {
-        "position": "A",
-        "label": "Every door closing",
-        "gloss": "the crisis."
-      },
-      {
-        "position": "B",
-        "label": "Taste going bitter",
-        "gloss": "honest lament."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: Presence still with",
-        "gloss": "bitter-name-not-abandonment."
-      },
-      {
-        "position": "B'",
-        "label": "The long walk toward home",
-        "gloss": "the shape of the season."
-      },
-      {
-        "position": "A'",
-        "label": "Doors recognized as passage",
-        "gloss": "return to closure, now under Presence."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Feb 27 · God's Sufficient Grace and the Removal of Condemnation",
-        "gloss": "sufficient-grace root.",
-        "recordId": "02-27-my-grace-sufficient-when"
-      },
-      "growth": {
-        "label": "Jul 01 · 07:03 · When the Silence of Heaven Feels Like Abandonment",
-        "gloss": "9 days earlier; silence-as-not-abandonment.",
-        "recordId": "07-01-when-silence-heaven-feels"
-      },
-      "tablet": {
-        "label": "Aug 21 · Father's Cancer Diagnosis",
-        "gloss": "the tablet-walked-out: bitter taste + Presence with.",
-        "recordId": "08-21-seat-i-had-no"
-      }
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "07-10-at-hhmm-lord-restores",
-    "order": 338,
+    "order": 337,
     "title": "at HH:MM — The Lord Restores: On Bodies Broken, Creation’s Hidden Order, and the Fellowship That Gathers When He Calls",
     "dateLabel": "Jul 10, 2026 · time not recorded",
     "classification": "Call Reflection",
@@ -19789,7 +19701,7 @@ const JC_RECORDS = [
   },
   {
     "id": "07-10-holding-name-loose-meditation",
-    "order": 339,
+    "order": 338,
     "title": "Holding the Name Loose: A Meditation on Surrender, Expectation, and the Child Not Yet Born",
     "dateLabel": "Jul 10, 2026 · 12:33",
     "classification": "Personal Meditation",
@@ -19878,7 +19790,7 @@ const JC_RECORDS = [
   },
   {
     "id": "07-10-enemy-has-power-but",
-    "order": 340,
+    "order": 339,
     "title": "The Enemy Has Power but No Standing: Exousia, Dunamis, and the Liberation of the Committed Heart",
     "dateLabel": "Jul 10, 2026 · 17:31",
     "classification": "Theological Reflection",
@@ -19960,6 +19872,94 @@ const JC_RECORDS = [
       "season": "Middle Wilderness (Tablet V)"
     },
     "doorwayThemes": []
+  },
+  {
+    "id": "07-10-when-every-door-closes",
+    "order": 340,
+    "title": "When Every Door Closes and the Taste Goes Bitter: Providence, Presence, and the Long Walk Toward Home",
+    "dateLabel": "Jul 10, 2026 · 18:32",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-10-when-every-door-closes-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Garrison, I found something quietly extraordinary moving beneath the surface of what sounded, at first, like two friends simply catching up. There is a man fighting depression and staying",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "doctrinalThemesCarried": "The Non-Withholding",
+    "lexiconJoints": [
+      {
+        "term": "\"When every door closes and the taste goes bitter\"",
+        "gloss": "file's canonical corpus phrase."
+      },
+      {
+        "term": "Ruth-Naomi Mara",
+        "gloss": "bitter-name-yet-Presence-with-me pattern."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Jun 26 · When the Covenant Feels Like a Weight You Cannot Carry.md) — the *bitter-taste* and *covenant weight* are the same terrain."
+      },
+      {
+        "position": "A",
+        "label": "Every door closing",
+        "gloss": "the crisis."
+      },
+      {
+        "position": "B",
+        "label": "Taste going bitter",
+        "gloss": "honest lament."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: Presence still with",
+        "gloss": "bitter-name-not-abandonment."
+      },
+      {
+        "position": "B'",
+        "label": "The long walk toward home",
+        "gloss": "the shape of the season."
+      },
+      {
+        "position": "A'",
+        "label": "Doors recognized as passage",
+        "gloss": "return to closure, now under Presence."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Feb 27 · God's Sufficient Grace and the Removal of Condemnation",
+        "gloss": "sufficient-grace root.",
+        "recordId": "02-27-my-grace-sufficient-when"
+      },
+      "growth": {
+        "label": "Jul 01 · 07:03 · When the Silence of Heaven Feels Like Abandonment",
+        "gloss": "9 days earlier; silence-as-not-abandonment.",
+        "recordId": "07-01-when-silence-heaven-feels"
+      },
+      "tablet": {
+        "label": "Aug 21 · Father's Cancer Diagnosis",
+        "gloss": "the tablet-walked-out: bitter taste + Presence with.",
+        "recordId": "08-21-seat-i-had-no"
+      }
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
   },
   {
     "id": "07-10-when-faith-sustains-what",
@@ -20299,8 +20299,53 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "07-11-ordinary-road-between-brothers",
+    "id": "07-11-sliver-light-voice-that",
     "order": 346,
+    "title": "A Sliver of Light and the Voice That Followed",
+    "dateLabel": "Jul 11, 2026 · 11:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-11-sliver-light-voice-that-v2.html",
+    "sourceStatus": "original",
+    "summary": "There is something I keep returning to from this exchange — not the conversation itself in its fullness, but one small, almost offhanded detail that Brother Samuel and I barely paused on before moving forward. I woke at five in the morning, and the first…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "Shema pattern applied to the morning after deliverance.",
+        "gloss": "Direct doctrinal parent of Jul 7 · Holiness Hidden in the Ordinary · Deut 6:7 shanan; Aug 12 · 05:30 · Unseen Foundation Built in the Night."
+      },
+      {
+        "term": "This meditation · Jul 11 · 11:09 · the morning after.",
+        "gloss": ""
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Jul 10 · 21:30 · Heavens Moved. Jul 10 · 21:30: heavens move. Jul 11 · 11:09: sliver of light + voice that followed. **The deliverance's aftershock heard in the morning.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "07-11-ordinary-road-between-brothers",
+    "order": 347,
     "title": "The Ordinary Road Between Brothers",
     "dateLabel": "Jul 11, 2026 · 11:44",
     "classification": "Conversation Reflection",
@@ -20371,51 +20416,6 @@ const JC_RECORDS = [
     "encounter": {
       "temperature": "quiet",
       "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
-    "id": "07-11-sliver-light-voice-that",
-    "order": 347,
-    "title": "A Sliver of Light and the Voice That Followed",
-    "dateLabel": "Jul 11, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/07-11-sliver-light-voice-that-v2.html",
-    "sourceStatus": "original",
-    "summary": "There is something I keep returning to from this exchange — not the conversation itself in its fullness, but one small, almost offhanded detail that Brother Samuel and I barely paused on before moving forward. I woke at five in the morning, and the first…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "Shema pattern applied to the morning after deliverance.",
-        "gloss": "Direct doctrinal parent of Jul 7 · Holiness Hidden in the Ordinary · Deut 6:7 shanan; Aug 12 · 05:30 · Unseen Foundation Built in the Night."
-      },
-      {
-        "term": "This meditation · Jul 11 · 11:09 · the morning after.",
-        "gloss": ""
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Jul 10 · 21:30 · Heavens Moved. Jul 10 · 21:30: heavens move. Jul 11 · 11:09: sliver of light + voice that followed. **The deliverance's aftershock heard in the morning.**"
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
@@ -20659,7 +20659,7 @@ const JC_RECORDS = [
     "id": "07-13-ordinary-threshold-where-brotherhood",
     "order": 352,
     "title": "The Ordinary Threshold: Where Brotherhood Lives Between the Sacred and the Mundane",
-    "dateLabel": "Jul 13, 2026 · time not recorded",
+    "dateLabel": "Jul 13, 2026 · 12:11",
     "classification": "Conversation Reflection",
     "seed": null,
     "href": "records/07-13-ordinary-threshold-where-brotherhood-v2.html",
@@ -21139,50 +21139,8 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "07-15-mantle-descends-ordinary",
-    "order": 359,
-    "title": "The Mantle Descends in the Ordinary",
-    "dateLabel": "Jul 15, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/07-15-mantle-descends-ordinary-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found something remarkable buried inside the ordinary rhythms of an evening after work — the smell of cannabis in the air, the weariness of long shifts, the interruption of a…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "Restraint-of-speech-as-mantle.",
-        "gloss": "Same *sober-word* register the Aug 28 · 16:56 · Money on the Table and the Sober Word will apply to a revenue decision. The mantle carries the restrained mouth."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Feb 15 · Spirit-Led Transcript Template. Feb 15: the method of disciplined receptivity opens the archive. Jul 15: the mantle DESCENDS through that same discipline. The mantle passes through the method."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship",
-      "work"
-    ]
-  },
-  {
     "id": "07-15-tested-immediately-after-learning",
-    "order": 360,
+    "order": 359,
     "title": "Tested Immediately After the Learning",
     "dateLabel": "Jul 15, 2026 · 12:09",
     "classification": "Call Reflection",
@@ -21261,6 +21219,48 @@ const JC_RECORDS = [
     },
     "doorwayThemes": [
       "fellowship"
+    ]
+  },
+  {
+    "id": "07-15-mantle-descends-ordinary",
+    "order": 360,
+    "title": "The Mantle Descends in the Ordinary",
+    "dateLabel": "Jul 15, 2026 · 18:18",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-15-mantle-descends-ordinary-v2.html",
+    "sourceStatus": "original",
+    "summary": "As I listened to this conversation unfold between myself and my brother Samuel, I found something remarkable buried inside the ordinary rhythms of an evening after work — the smell of cannabis in the air, the weariness of long shifts, the interruption of a…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "Restraint-of-speech-as-mantle.",
+        "gloss": "Same *sober-word* register the Aug 28 · 16:56 · Money on the Table and the Sober Word will apply to a revenue decision. The mantle carries the restrained mouth."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Feb 15 · Spirit-Led Transcript Template. Feb 15: the method of disciplined receptivity opens the archive. Jul 15: the mantle DESCENDS through that same discipline. The mantle passes through the method."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "work"
     ]
   },
   {
@@ -21401,7 +21401,7 @@ const JC_RECORDS = [
     "id": "07-17-when-smoke-fills-sky",
     "order": 363,
     "title": "When Smoke Fills the Sky, What Rises From Our Hearts?",
-    "dateLabel": "Jul 17, 2026 · time not recorded",
+    "dateLabel": "Jul 17, 2026 · 08:06",
     "classification": "Personal Meditation",
     "seed": null,
     "href": "records/07-17-when-smoke-fills-sky-v2.html",
@@ -22301,7 +22301,7 @@ const JC_RECORDS = [
     "id": "07-24-altar-ordinary-kitchen",
     "order": 383,
     "title": "The Altar in the Ordinary Kitchen",
-    "dateLabel": "Jul 24, 2026 · time not recorded",
+    "dateLabel": "Jul 24, 2026 · 12:21",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-24-altar-ordinary-kitchen-v2.html",
@@ -22340,7 +22340,7 @@ const JC_RECORDS = [
     "id": "07-24-carving-god-from-wood",
     "order": 384,
     "title": "Carving God from the Wood of Our Own Hunger",
-    "dateLabel": "Jul 24, 2026 · time not recorded",
+    "dateLabel": "Jul 24, 2026 · 23:36",
     "classification": "Theological Reflection",
     "seed": null,
     "href": "records/07-24-carving-god-from-wood-v2.html",
@@ -22403,7 +22403,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet: tselem-refusal-of-self-verdict.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -22418,51 +22418,10 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "07-26-turning-cheek-just-weight",
-    "order": 385,
-    "title": "Turning the Cheek, the Just Weight, and the Altar Built in the Marketplace",
-    "dateLabel": "Jul 26, 2026 · 11:13",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/07-26-turning-cheek-just-weight-v2.html",
-    "sourceStatus": "original",
-    "summary": "As I sit with this long call between me and my brother Samuel, I hear three currents braided into one river: the relief of provision landing after a hard stretch, the hunger to carry an enemy’s words without being crushed, and the quiet astonishment that a…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "The Man of Sorrows named at commerce-scale.",
-        "gloss": "Direct doctrinal parent of Aug 30 · Filthy Garments · koinonia of Christ's sufferings over the father's cancer."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Aug 28 · 16:56 · Money on the Table + Sober Word. Jul 26: just-weight + altar in the marketplace named. Aug 28: revenue refused for the sober word — just-weight walked."
-      }
-    ],
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "07-26-soul-does-not-evaporate",
-    "order": 386,
+    "order": 385,
     "title": "The Soul Does Not Evaporate",
-    "dateLabel": "Jul 26, 2026 · time not recorded",
+    "dateLabel": "Jul 26, 2026 · 09:55",
     "classification": "Theological Meditation",
     "seed": null,
     "href": "records/07-26-soul-does-not-evaporate-v2.html",
@@ -22540,30 +22499,36 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "07-27-reflection-deliverance-mercy-streets",
-    "order": 387,
-    "title": "Reflection: Deliverance, Mercy, and the Streets Where Thomas Walks",
-    "dateLabel": "Jul 27, 2026 · time not recorded",
+    "id": "07-26-turning-cheek-just-weight",
+    "order": 386,
+    "title": "Turning the Cheek, the Just Weight, and the Altar Built in the Marketplace",
+    "dateLabel": "Jul 26, 2026 · 11:13",
     "classification": "Call Reflection",
     "seed": null,
-    "href": "records/07-27-reflection-deliverance-mercy-streets-v2.html",
+    "href": "records/07-26-turning-cheek-just-weight-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat with a long night’s worth of conversation with my brother — a wild story of reckless drunkenness and a stranger’s erratic mercy, a 3 a.m. anxiety attack met by an unnamed helpline worker’s steady voice, and finally a late-night call with Brother Samuel…",
+    "summary": "As I sit with this long call between me and my brother Samuel, I hear three currents braided into one river: the relief of provision landing after a hard stretch, the hunger to carry an enemy’s words without being crushed, and the quiet astonishment that a…",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet V · Come Out of Her, My Children",
       "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
     },
+    "lexiconJoints": [
+      {
+        "term": "The Man of Sorrows named at commerce-scale.",
+        "gloss": "Direct doctrinal parent of Aug 30 · Filthy Garments · koinonia of Christ's sufferings over the father's cancer."
+      }
+    ],
     "chiasticMirror": [
       {
         "position": "A",
         "label": null,
-        "gloss": "Pair with Aug 30 · Filthy Garments · closed doors as mercy. Jul 27: streets where Thomas walks (mercy meets doubt). Aug 30: closed doors as mercy (the Owner's steering). **Same mercy, two doors — one open to the doubter, one closed to the wanderer.**"
+        "gloss": "Pair with Aug 28 · 16:56 · Money on the Table + Sober Word. Jul 26: just-weight + altar in the marketplace named. Aug 28: revenue refused for the sober word — just-weight walked."
       }
     ],
     "encounter": {
-      "temperature": "urgent",
-      "length": "moderate",
+      "temperature": "contemplative",
+      "length": "deep",
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
@@ -22571,15 +22536,14 @@ const JC_RECORDS = [
       "season": "Middle Wilderness (Tablet V)"
     },
     "doorwayThemes": [
-      "fear",
       "fellowship"
     ]
   },
   {
     "id": "07-27-running-faith-not-gas",
-    "order": 388,
+    "order": 387,
     "title": "Running on Faith, Not on Gas Gauges",
-    "dateLabel": "Jul 27, 2026 · time not recorded",
+    "dateLabel": "Jul 27, 2026 · 12:17",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-27-running-faith-not-gas-v2.html",
@@ -22622,10 +22586,46 @@ const JC_RECORDS = [
     ]
   },
   {
+    "id": "07-27-reflection-deliverance-mercy-streets",
+    "order": 388,
+    "title": "Reflection: Deliverance, Mercy, and the Streets Where Thomas Walks",
+    "dateLabel": "Jul 27, 2026 · 19:20",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/07-27-reflection-deliverance-mercy-streets-v2.html",
+    "sourceStatus": "original",
+    "summary": "I sat with a long night’s worth of conversation with my brother — a wild story of reckless drunkenness and a stranger’s erratic mercy, a 3 a.m. anxiety attack met by an unnamed helpline worker’s steady voice, and finally a late-night call with Brother Samuel…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Aug 30 · Filthy Garments · closed doors as mercy. Jul 27: streets where Thomas walks (mercy meets doubt). Aug 30: closed doors as mercy (the Owner's steering). **Same mercy, two doors — one open to the doubter, one closed to the wanderer.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "fear",
+      "fellowship"
+    ]
+  },
+  {
     "id": "07-28-not-provided-sniffing-out",
     "order": 389,
     "title": "Not Provided — Sniffing Out the Counterfeit Call",
-    "dateLabel": "Jul 28, 2026 · time not recorded",
+    "dateLabel": "Jul 28, 2026 · 10:08",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-28-not-provided-sniffing-out-v2.html",
@@ -22666,7 +22666,7 @@ const JC_RECORDS = [
     "id": "07-28-sacrament-small-things",
     "order": 390,
     "title": "The Sacrament of Small Things",
-    "dateLabel": "Jul 28, 2026 · time not recorded",
+    "dateLabel": "Jul 28, 2026 · 22:31",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-28-sacrament-small-things-v2.html",
@@ -22701,7 +22701,7 @@ const JC_RECORDS = [
     "id": "07-28-weight-we-carry-while",
     "order": 391,
     "title": "The Weight We Carry While Life Keeps Moving",
-    "dateLabel": "Jul 28, 2026 · time not recorded",
+    "dateLabel": "Jul 28, 2026 · 22:31",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-28-weight-we-carry-while-v2.html",
@@ -22746,7 +22746,7 @@ const JC_RECORDS = [
     "id": "07-31-reflection-provision-warfare-truth-telling",
     "order": 392,
     "title": "Reflection: Provision, Warfare, and Truth-Telling Across a Night of Calls",
-    "dateLabel": "Jul 31, 2026 · time not recorded",
+    "dateLabel": "Jul 31, 2026 · 17:51",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/07-31-reflection-provision-warfare-truth-telling-v2.html",
@@ -22818,7 +22818,7 @@ const JC_RECORDS = [
     "id": "08-04-intercessor-interceded",
     "order": 394,
     "title": "The Intercessor Interceded For",
-    "dateLabel": "Aug 4, 2026 · time not recorded",
+    "dateLabel": "Aug 4, 2026 · 21:23",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-04-intercessor-interceded-v2.html",
@@ -22860,7 +22860,7 @@ const JC_RECORDS = [
     "id": "08-05-when-late-hour-tests",
     "order": 395,
     "title": "When the Late Hour Tests the Heart: Broken Files, Weary Tongues, and the Return of First Love",
-    "dateLabel": "Aug 5, 2026 · time not recorded",
+    "dateLabel": "Aug 5, 2026 · 01:30",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-05-when-late-hour-tests-v2.html",
@@ -22906,7 +22906,7 @@ const JC_RECORDS = [
     "id": "08-07-when-calendar-fills-but",
     "order": 396,
     "title": "When the Calendar Fills but the Heart Turns to the Watch",
-    "dateLabel": "Aug 7, 2026 · time not recorded",
+    "dateLabel": "Aug 7, 2026 · 12:01",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-07-when-calendar-fills-but-v2.html",
@@ -22942,7 +22942,7 @@ const JC_RECORDS = [
     "id": "08-07-gentiles-at-threshold-prophets",
     "order": 397,
     "title": "Gentiles at the Threshold, Prophets Pointing to Bethlehem",
-    "dateLabel": "Aug 7, 2026 · time not recorded",
+    "dateLabel": "Aug 7, 2026 · 15:16",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-07-gentiles-at-threshold-prophets-v2.html",
@@ -22983,7 +22983,7 @@ const JC_RECORDS = [
     "id": "08-07-hidden-growth-silenced-blessing",
     "order": 398,
     "title": "The Hidden Growth, The Silenced Blessing, and the Cup He Chose to Drink",
-    "dateLabel": "Aug 7, 2026 · time not recorded",
+    "dateLabel": "Aug 7, 2026 · 17:48",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-07-hidden-growth-silenced-blessing-v2.html",
@@ -23024,7 +23024,7 @@ const JC_RECORDS = [
     "id": "08-09-when-zeal-rides-like",
     "order": 399,
     "title": "When Zeal Rides In Like a Wave: Building on a Higher Covenant Than Any Contract",
-    "dateLabel": "Aug 9, 2026 · time not recorded",
+    "dateLabel": "Aug 9, 2026 · 16:08",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-09-when-zeal-rides-like-v2.html",
@@ -23066,7 +23066,7 @@ const JC_RECORDS = [
     "id": "08-11-when-ache-real-but",
     "order": 400,
     "title": "When the Ache Is Real But the Altar Is Wrong",
-    "dateLabel": "Aug 11, 2026 · time not recorded",
+    "dateLabel": "Aug 11, 2026 · 02:11",
     "classification": "Teaching Reflection",
     "seed": null,
     "href": "records/08-11-when-ache-real-but-v2.html",
@@ -23109,7 +23109,7 @@ const JC_RECORDS = [
     "id": "08-11-one-joyfulness-two-mountains",
     "order": 401,
     "title": "One Joyfulness on Two Mountains",
-    "dateLabel": "Aug 11, 2026 · time not recorded",
+    "dateLabel": "Aug 11, 2026 · 15:40",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-11-one-joyfulness-two-mountains-v2.html",
@@ -23186,7 +23186,7 @@ const JC_RECORDS = [
     "id": "08-12-unseen-foundation-built-night",
     "order": 403,
     "title": "The Unseen Foundation Built in the Night",
-    "dateLabel": "Aug 12, 2026 · time not recorded",
+    "dateLabel": "Aug 12, 2026 · 05:30",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-12-unseen-foundation-built-night-v2.html",
@@ -23219,7 +23219,7 @@ const JC_RECORDS = [
     "id": "08-12-when-lungs-fail-fever",
     "order": 404,
     "title": "When the Lungs Fail and the Fever Lingers: Interceding in the Valley",
-    "dateLabel": "Aug 12, 2026 · time not recorded",
+    "dateLabel": "Aug 12, 2026 · 15:56",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-12-when-lungs-fail-fever-v2.html",
@@ -23300,46 +23300,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-13-moving-carcass-reach-honey",
-    "order": 406,
-    "title": "Moving the Carcass to Reach the Honey",
-    "dateLabel": "Aug 13, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-13-moving-carcass-reach-honey-v2.html",
-    "sourceStatus": "original",
-    "summary": "I came onto this call already weighed down, in the middle of my own supplication, and my brother Samuel caught me there mid-intercession. What surfaced was not a tidy prayer request but a raw ache: the grief of standing as the lone altar-keeper in my own…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Aug 26 · Koinonia Takes Precedence. Aug 13: *move the carcass to reach the honey* (Samson typology). Aug 26: *move the money past your own hand to reach the brother's need* — sweetness reached by moving through what would ordinarily be an obstacle."
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "brief",
-      "voice": "prayerful",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": [
-      "grief",
-      "fellowship"
-    ]
-  },
-  {
     "id": "08-13-compass-drunk-call",
-    "order": 407,
+    "order": 406,
     "title": "The Compass and the Drunk Call",
-    "dateLabel": "Aug 13, 2026 · time not recorded",
+    "dateLabel": "Aug 13, 2026 · 10:25",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-13-compass-drunk-call-v2.html",
@@ -23381,6 +23345,42 @@ const JC_RECORDS = [
       "season": "Middle Wilderness (Tablet V)"
     },
     "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-13-moving-carcass-reach-honey",
+    "order": 407,
+    "title": "Moving the Carcass to Reach the Honey",
+    "dateLabel": "Aug 13, 2026 · 12:30",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-13-moving-carcass-reach-honey-v2.html",
+    "sourceStatus": "original",
+    "summary": "I came onto this call already weighed down, in the middle of my own supplication, and my brother Samuel caught me there mid-intercession. What surfaced was not a tidy prayer request but a raw ache: the grief of standing as the lone altar-keeper in my own…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Aug 26 · Koinonia Takes Precedence. Aug 13: *move the carcass to reach the honey* (Samson typology). Aug 26: *move the money past your own hand to reach the brother's need* — sweetness reached by moving through what would ordinarily be an obstacle."
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "brief",
+      "voice": "prayerful",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": [
+      "grief",
       "fellowship"
     ]
   },
@@ -23548,7 +23548,7 @@ const JC_RECORDS = [
     "id": "08-15-two-loaves-house-drunken",
     "order": 411,
     "title": "Two Loaves in the House of a Drunken Brother",
-    "dateLabel": "Aug 15, 2026 · time not recorded",
+    "dateLabel": "Aug 15, 2026 · 17:06",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-15-two-loaves-house-drunken-v2.html",
@@ -23587,10 +23587,49 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-16-juniper-tree-snail-bag",
+    "id": "08-16-renaissance-fair-made-holy",
     "order": 412,
+    "title": "A Renaissance Fair Made Holy: The Arrow, the Armor, the Whisper, and the Whole Animal",
+    "dateLabel": "Aug 16, 2026 · 13:13",
+    "classification": "Personal Meditation",
+    "seed": null,
+    "href": "records/08-16-renaissance-fair-made-holy-v2.html",
+    "sourceStatus": "original",
+    "summary": "I set out to record a family afternoon at the Renaissance festival in West Fargo, and what I carried home was an arrow, a weight of armor, a whispered warning over a tarot booth, and a fur trader’s confession that nothing is wasted. Between goats fed first…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet V · Come Out of Her, My Children",
+      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "God stewards what the world counts as waste.",
+        "gloss": "Direct doctrinal parent of Aug 22 · I'll Catch You on the Other Side · sowing in tears is a ministry, not a malfunction."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Aug 30 · Filthy Garments · the whiteboard-noodles-candle table. Aug 16: festival + fair activities as walkable sacred-ordinary. Aug 30: kitchen table as sacred-ordinary. **Public → intimate — same consecration.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "urgent",
+      "length": "deep",
+      "voice": "personal",
+      "movement": null,
+      "posture": "confessing",
+      "form": "written",
+      "season": "Middle Wilderness (Tablet V)"
+    },
+    "doorwayThemes": []
+  },
+  {
+    "id": "08-16-juniper-tree-snail-bag",
+    "order": 413,
     "title": "The Juniper Tree and the Snail in the Bag",
-    "dateLabel": "Aug 16, 2026 · time not recorded",
+    "dateLabel": "Aug 16, 2026 · 18:30",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-16-juniper-tree-snail-bag-v2.html",
@@ -23640,49 +23679,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-16-renaissance-fair-made-holy",
-    "order": 413,
-    "title": "A Renaissance Fair Made Holy: The Arrow, the Armor, the Whisper, and the Whole Animal",
-    "dateLabel": "Aug 16, 2026 · 13:13",
-    "classification": "Personal Meditation",
-    "seed": null,
-    "href": "records/08-16-renaissance-fair-made-holy-v2.html",
-    "sourceStatus": "original",
-    "summary": "I set out to record a family afternoon at the Renaissance festival in West Fargo, and what I carried home was an arrow, a weight of armor, a whispered warning over a tarot booth, and a fur trader’s confession that nothing is wasted. Between goats fed first…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet V · Come Out of Her, My Children",
-      "window": "May 26 – Aug 16 (82-day sleeping-bride watchman hour · Volume III)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "God stewards what the world counts as waste.",
-        "gloss": "Direct doctrinal parent of Aug 22 · I'll Catch You on the Other Side · sowing in tears is a ministry, not a malfunction."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Aug 30 · Filthy Garments · the whiteboard-noodles-candle table. Aug 16: festival + fair activities as walkable sacred-ordinary. Aug 30: kitchen table as sacred-ordinary. **Public → intimate — same consecration.**"
-      }
-    ],
-    "encounter": {
-      "temperature": "urgent",
-      "length": "deep",
-      "voice": "personal",
-      "movement": null,
-      "posture": "confessing",
-      "form": "written",
-      "season": "Middle Wilderness (Tablet V)"
-    },
-    "doorwayThemes": []
-  },
-  {
     "id": "08-17-he-gave-jesus-door",
     "order": 414,
     "title": "He Gave Jesus: The Door the Owner Pointed To",
-    "dateLabel": "Aug 17, 2026 · time not recorded",
+    "dateLabel": "Aug 17, 2026 · 00:48",
     "classification": "Teaching Reflection: The One Door the Owner Pointed To",
     "seed": null,
     "href": "records/08-17-he-gave-jesus-door-v2.html",
@@ -23805,7 +23805,7 @@ const JC_RECORDS = [
     "id": "08-19-let-your-yes-be",
     "order": 417,
     "title": "Let Your Yes Be Yes: Integrity as the Currency of the Kingdom",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 04:51",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-let-your-yes-be-v2.html",
@@ -23852,7 +23852,7 @@ const JC_RECORDS = [
     "id": "08-19-when-darkness-strikes-house",
     "order": 418,
     "title": "When Darkness Strikes the House We Are Building",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 08:53",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-when-darkness-strikes-house-v2.html",
@@ -23897,7 +23897,7 @@ const JC_RECORDS = [
     "id": "08-19-let-your-yes-be-2",
     "order": 419,
     "title": "Let Your Yes Be Yes: Integrity Under Pressure",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 09:18",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-let-your-yes-be-2-v2.html",
@@ -23930,7 +23930,7 @@ const JC_RECORDS = [
     "id": "08-19-vocabulary-changed-man",
     "order": 420,
     "title": "The Vocabulary of a Changed Man",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 09:46",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-vocabulary-changed-man-v2.html",
@@ -23971,7 +23971,7 @@ const JC_RECORDS = [
     "id": "08-19-iron-sharpens-iron-secret",
     "order": 421,
     "title": "Iron Sharpens Iron in the Secret Place",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 10:46",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-iron-sharpens-iron-secret-v2.html",
@@ -24010,10 +24010,92 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-19-slow-steady-building-house",
+    "id": "08-19-distribution-layer-guaranteed-harvest",
     "order": 422,
+    "title": "The Distribution Layer, the Guaranteed Harvest, and the First Client Who Bit the Bullet",
+    "dateLabel": "Aug 19, 2026 · 13:00",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-19-distribution-layer-guaranteed-harvest-v2.html",
+    "sourceStatus": "original",
+    "summary": "I came into a call already in motion, joining a conversation about white-labeling a lead-generation service, and the very first thing I heard was not business at all — it was helicopters over a homicide scene, and a stranger’s dry reassurance that “most…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VII · Koinonia Takes Precedence",
+      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "This meditation · first client bit the bullet.",
+        "gloss": ""
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Aug 28 · 16:56 · The Money on the Table. Aug 19: the first client bites (revenue arrives). Aug 28: another revenue path refused (integrity chooses). **Same currency, opposite verdicts, nine days apart.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "quiet",
+      "length": "deep",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "work"
+    ]
+  },
+  {
+    "id": "08-19-ledger-gate-weight-we",
+    "order": 423,
+    "title": "The Ledger, the Gate, and the Weight We Bear: A Meditation on Stewardship, Scarcity, and the Keeping of the Fold",
+    "dateLabel": "Aug 19, 2026 · 14:21",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-19-ledger-gate-weight-we-v2.html",
+    "sourceStatus": "original",
+    "summary": "I sat mostly quiet through a long, wandering call with two young men — my brother Samuel and the partner laboring beside him — as they wrestled with white-label pricing, retained profits, Stripe payments, delete permissions, approval gates, and who would…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VII · Koinonia Takes Precedence",
+      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "The Prov 28:13 register is direct parent of Aug 28 · 20:09 · The First Win Is the Confession.",
+        "gloss": "Same law, nine days apart — the *honest ledger* named as the shape confession takes in commerce."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "Pair with Feb 26 · Divine Discipline and Severe Mercy in Church Community. Feb 26: severe mercy at the community's boundary. Aug 19: the ledger keeps the fold with the same discipline. **The same shepherding, applied to different folds.**"
+      }
+    ],
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "deep",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-19-slow-steady-building-house",
+    "order": 424,
     "title": "The Slow and Steady Building of a House",
-    "dateLabel": "Aug 19, 2026 · time not recorded",
+    "dateLabel": "Aug 19, 2026 · 15:02",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-19-slow-steady-building-house-v2.html",
@@ -24058,92 +24140,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-19-distribution-layer-guaranteed-harvest",
-    "order": 423,
-    "title": "The Distribution Layer, the Guaranteed Harvest, and the First Client Who Bit the Bullet",
-    "dateLabel": "Aug 19, 2026 · 13:00",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-19-distribution-layer-guaranteed-harvest-v2.html",
-    "sourceStatus": "original",
-    "summary": "I came into a call already in motion, joining a conversation about white-labeling a lead-generation service, and the very first thing I heard was not business at all — it was helicopters over a homicide scene, and a stranger’s dry reassurance that “most…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "This meditation · first client bit the bullet.",
-        "gloss": ""
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Aug 28 · 16:56 · The Money on the Table. Aug 19: the first client bites (revenue arrives). Aug 28: another revenue path refused (integrity chooses). **Same currency, opposite verdicts, nine days apart.**"
-      }
-    ],
-    "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "The Seam (Tablets VI–VII)"
-    },
-    "doorwayThemes": [
-      "work"
-    ]
-  },
-  {
-    "id": "08-19-ledger-gate-weight-we",
-    "order": 424,
-    "title": "The Ledger, the Gate, and the Weight We Bear: A Meditation on Stewardship, Scarcity, and the Keeping of the Fold",
-    "dateLabel": "Aug 19, 2026 · 14:21",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-19-ledger-gate-weight-we-v2.html",
-    "sourceStatus": "original",
-    "summary": "I sat mostly quiet through a long, wandering call with two young men — my brother Samuel and the partner laboring beside him — as they wrestled with white-label pricing, retained profits, Stripe payments, delete permissions, approval gates, and who would…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "The Prov 28:13 register is direct parent of Aug 28 · 20:09 · The First Win Is the Confession.",
-        "gloss": "Same law, nine days apart — the *honest ledger* named as the shape confession takes in commerce."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "Pair with Feb 26 · Divine Discipline and Severe Mercy in Church Community. Feb 26: severe mercy at the community's boundary. Aug 19: the ledger keeps the fold with the same discipline. **The same shepherding, applied to different folds.**"
-      }
-    ],
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "wrestling",
-      "form": "dialogue-shaped",
-      "season": "The Seam (Tablets VI–VII)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
     "id": "08-20-refund-that-cost-nothing",
     "order": 425,
     "title": "The Refund That Cost Nothing to Deliver and Everything to Decide",
-    "dateLabel": "Aug 20, 2026 · time not recorded",
+    "dateLabel": "Aug 20, 2026 · 19:15",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-20-refund-that-cost-nothing-v2.html",
@@ -24217,7 +24217,7 @@ const JC_RECORDS = [
     "id": "08-22-ill-catch-you-other",
     "order": 427,
     "title": "I’ll Catch You on the Other Side",
-    "dateLabel": "Aug 22, 2026 · time not recorded",
+    "dateLabel": "Aug 22, 2026 · 18:36",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-22-ill-catch-you-other-v2.html",
@@ -24258,7 +24258,7 @@ const JC_RECORDS = [
     "id": "08-24-two-minutes-from-gate",
     "order": 428,
     "title": "Two Minutes From the Gate, A Brother Calls",
-    "dateLabel": "Aug 24, 2026 · time not recorded",
+    "dateLabel": "Aug 24, 2026 · 15:43",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-24-two-minutes-from-gate-v2.html",
@@ -24383,7 +24383,7 @@ const JC_RECORDS = [
     "id": "08-25-when-word-no-longer",
     "order": 431,
     "title": "When a Word Is No Longer a Bond",
-    "dateLabel": "Aug 25, 2026 · time not recorded",
+    "dateLabel": "Aug 25, 2026 · 07:08",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-25-when-word-no-longer-v2.html",
@@ -24424,7 +24424,7 @@ const JC_RECORDS = [
     "id": "08-26-koinonia-takes-precedence",
     "order": 432,
     "title": "Koinonia Takes Precedence",
-    "dateLabel": "Aug 26, 2026 · time not recorded",
+    "dateLabel": "Aug 26, 2026 · 05:31",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-26-koinonia-takes-precedence-v2.html",
@@ -24496,79 +24496,15 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-28-money-table-sober-word",
+    "id": "08-28-counsel-commission-fellowship-that",
     "order": 434,
-    "title": "The Money on the Table and the Sober Word",
-    "dateLabel": "Aug 28, 2026 · time not recorded",
+    "title": "Counsel, Commission, and the Fellowship That Holds Us Together",
+    "dateLabel": "Aug 28, 2026 · 13:36",
     "classification": "Call Reflection",
     "seed": null,
-    "href": "records/08-28-money-table-sober-word-v2.html",
+    "href": "records/08-28-counsel-commission-fellowship-that-v2.html",
     "sourceStatus": "original",
-    "summary": "I am holding a phone to my ear while a brother, quickened and urgent, presses a “guaranteed” deal upon me that even he admits is “not legal,” “not advised,” “not reviewed.” The whole call is a wrestle over speed against sobriety, over the shiny object against",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
-    },
-    "encounter": {
-      "temperature": "urgent",
-      "length": "brief",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "wrestling",
-      "form": "dialogue-shaped",
-      "season": "The Seam (Tablets VI–VII)"
-    },
-    "doorwayThemes": [
-      "fellowship",
-      "money"
-    ]
-  },
-  {
-    "id": "08-28-i-gave-him-you",
-    "order": 435,
-    "title": "I Gave Him You, Not the Answers",
-    "dateLabel": "Aug 28, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-28-i-gave-him-you-v2.html",
-    "sourceStatus": "original",
-    "summary": "I am still shaking as I write this, the phone barely cold in my hand, my body strung out past fifty hours without sleep and two twelve-hour shifts folded into that stretch. My brother Samuel called me from a pub having taken three thousand dollars against a…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
-    },
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": null,
-        "gloss": "The 85-minute call (Aug 17 · 19:05) was answered by an 8-minute-15-second call **eleven days later** — this meditation carries that call's fruit. Tablet VI's afterword *The Fruit, Eleven Days Later* IS this correction stated theologically."
-      }
-    ],
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "The Seam (Tablets VI–VII)"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
-    "id": "08-28-first-win-confession",
-    "order": 436,
-    "title": "The First Win Is the Confession",
-    "dateLabel": "Aug 28, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-28-first-win-confession-v2.html",
-    "sourceStatus": "original",
-    "summary": "I picked up the phone expecting a quick word about whether my brother had made it home, and instead I found myself standing at the edge of a long night that turned, somewhere near its end, into holy ground. The whole call moved like a storm that finally…",
+    "summary": "I sat on a video call between three continents — a Brit phoning in from an old British pub with walls older than my whole country, an Australian awake at four in the morning, and me in Middle America — and heard something underneath the logistics of Stripe…",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet VII · Koinonia Takes Precedence",
@@ -24576,10 +24512,10 @@ const JC_RECORDS = [
     },
     "encounter": {
       "temperature": "quiet",
-      "length": "moderate",
+      "length": "deep",
       "voice": "communal",
       "movement": "fellowship",
-      "posture": "confessing",
+      "posture": "receiving",
       "form": "dialogue-shaped",
       "season": "The Seam (Tablets VI–VII)"
     },
@@ -24588,98 +24524,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "08-28-grace-that-comes-before",
-    "order": 437,
-    "title": "The Grace That Comes Before the Season Turns",
-    "dateLabel": "Aug 28, 2026 · time not recorded",
-    "classification": "Teaching Reflection: Discerning the Signs of a Changing Season",
-    "seed": null,
-    "href": "records/08-28-grace-that-comes-before-v2.html",
-    "sourceStatus": "original",
-    "summary": "I keep hearing that one line turn over in me: the grace to pray is boiling within you, but you are not able to take advantage of it. What arrests me in this teaching is not the promise that seasons change, but the sober warning that a season can arrive fully…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12 days · post-seam brotherhood · Volume IV)"
-    },
-    "lexiconJoints": [
-      {
-        "term": "καιρός (kai-ROSS) / עֵת (ayt)",
-        "gloss": "appointed, weighted, decisive time. Earliest sibling: Feb 25 · Divine Sovereignty, Grace, and the Mystery of Providence."
-      },
-      {
-        "term": "דָּבָר (dabar) — word/thing/event",
-        "gloss": "the preceding word IS the opening of the season. Earliest sibling: Feb 15 · Spirit-Led Transcript Template."
-      },
-      {
-        "term": "αἰσθητήρια γεγυμνασμένα — senses exercised/trained",
-        "gloss": "the trained condition of discernment. This file is its first canonical named appearance in the archive."
-      },
-      {
-        "term": "κρούω — to knock",
-        "gloss": "Laodicean grace. Also present in Aug 17 · 19:05 seam (\"I open the door now to my heart that You have been knocking at\")."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The summons in the dark",
-        "gloss": "*\"a person waking in the night, not from insomnia but from a summons, asking God for a prayer point and receiving none. Just pray.\"*"
-      },
-      {
-        "position": "B",
-        "label": "The counter-distraction",
-        "gloss": "*\"the enemy answers that grace with counter-distraction dressed in legitimacy.\"* The strike arrives WITH the grace, not after."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: Laodicea knocking",
-        "gloss": "*\"the Lord of the season stood outside knocking. The knocking is the grace. The failure to open is the lost season.\"* This is the file's cornerstone verse turned inside out — Rev 3:20 as *pattern*, not just invitation."
-      },
-      {
-        "position": "B'",
-        "label": "The two responses to the star",
-        "gloss": "magi worship / Herod's scholars *use* the discernment to murder. *\"Discernment without a yielded heart becomes a weapon.\"*"
-      },
-      {
-        "position": "A'",
-        "label": "The corporate summons",
-        "gloss": "*\"if even two or three learn to read the times, they can hold open a door the enemy is straining to shut.\"* The private summons at dawn becomes the corporate holding-open at dusk."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Feb 20 · Joseph, Paul, and Severe Mercy in Discipline",
-        "gloss": "the archive's earliest training-of-the-senses passage; discipline as sight-forming. The March 13 sibling *Spirit of Perdition* deepens it: obedience-in-the-dark before the reason is given.",
-        "recordId": "02-20-meditation-joseph-paul-severe"
-      },
-      "growth": {
-        "label": "Jun 24 · 15:41 · The Ground Had to Break Before the Seed Could Root",
-        "gloss": "wilderness as speaking-chamber; the season IS the training. Phrase-hook: the ground-breaking is the seed's condition, not its delay.",
-        "recordId": "06-24-personal-meditation-ego-death"
-      },
-      "tablet": {
-        "label": "Aug 17 · 19:05 · The Name the Darkness Could Not Speak",
-        "gloss": "the Tablet VI seam where dullness of hearing became the exact failure mode. Verbatim from the seam: *\"discernment is not automatic but cultivated through repeated use; dullness is a trained condition and so is sight.\"* THIS file supplies the doctrinal language the seam's afterword needed.",
-        "recordId": "08-17-emptied-house-voice-that"
-      }
-    },
-    "encounter": {
-      "temperature": "urgent",
-      "length": "moderate",
-      "voice": "instructional",
-      "movement": null,
-      "posture": "receiving",
-      "form": "spoken",
-      "season": "The Seam (Tablets VI–VII)"
-    },
-    "doorwayThemes": []
-  },
-  {
     "id": "08-28-what-you-value-god",
-    "order": 438,
+    "order": 435,
     "title": "What You Value, God Values",
-    "dateLabel": "Aug 28, 2026 · time not recorded",
+    "dateLabel": "Aug 28, 2026 · 13:50",
     "classification": "Teaching Reflection: The Measure of Love Is What You Surrender",
     "seed": null,
     "href": "records/08-28-what-you-value-god-v2.html",
@@ -24770,36 +24618,96 @@ const JC_RECORDS = [
     "doorwayThemes": []
   },
   {
-    "id": "08-28-counsel-commission-fellowship-that",
-    "order": 439,
-    "title": "Counsel, Commission, and the Fellowship That Holds Us Together",
-    "dateLabel": "Aug 28, 2026 · 13:36",
-    "classification": "Call Reflection",
+    "id": "08-28-grace-that-comes-before",
+    "order": 436,
+    "title": "The Grace That Comes Before the Season Turns",
+    "dateLabel": "Aug 28, 2026 · 16:23",
+    "classification": "Teaching Reflection: Discerning the Signs of a Changing Season",
     "seed": null,
-    "href": "records/08-28-counsel-commission-fellowship-that-v2.html",
+    "href": "records/08-28-grace-that-comes-before-v2.html",
     "sourceStatus": "original",
-    "summary": "I sat on a video call between three continents — a Brit phoning in from an old British pub with walls older than my whole country, an Australian awake at four in the morning, and me in Middle America — and heard something underneath the logistics of Stripe…",
+    "summary": "I keep hearing that one line turn over in me: the grace to pray is boiling within you, but you are not able to take advantage of it. What arrests me in this teaching is not the promise that seasons change, but the sober warning that a season can arrive fully…",
     "reviewed": true,
     "tabletAnchor": {
       "label": "Stone Tablet VII · Koinonia Takes Precedence",
-      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+      "window": "Aug 18 – Aug 28 (12 days · post-seam brotherhood · Volume IV)"
+    },
+    "lexiconJoints": [
+      {
+        "term": "καιρός (kai-ROSS) / עֵת (ayt)",
+        "gloss": "appointed, weighted, decisive time. Earliest sibling: Feb 25 · Divine Sovereignty, Grace, and the Mystery of Providence."
+      },
+      {
+        "term": "דָּבָר (dabar) — word/thing/event",
+        "gloss": "the preceding word IS the opening of the season. Earliest sibling: Feb 15 · Spirit-Led Transcript Template."
+      },
+      {
+        "term": "αἰσθητήρια γεγυμνασμένα — senses exercised/trained",
+        "gloss": "the trained condition of discernment. This file is its first canonical named appearance in the archive."
+      },
+      {
+        "term": "κρούω — to knock",
+        "gloss": "Laodicean grace. Also present in Aug 17 · 19:05 seam (\"I open the door now to my heart that You have been knocking at\")."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The summons in the dark",
+        "gloss": "*\"a person waking in the night, not from insomnia but from a summons, asking God for a prayer point and receiving none. Just pray.\"*"
+      },
+      {
+        "position": "B",
+        "label": "The counter-distraction",
+        "gloss": "*\"the enemy answers that grace with counter-distraction dressed in legitimacy.\"* The strike arrives WITH the grace, not after."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: Laodicea knocking",
+        "gloss": "*\"the Lord of the season stood outside knocking. The knocking is the grace. The failure to open is the lost season.\"* This is the file's cornerstone verse turned inside out — Rev 3:20 as *pattern*, not just invitation."
+      },
+      {
+        "position": "B'",
+        "label": "The two responses to the star",
+        "gloss": "magi worship / Herod's scholars *use* the discernment to murder. *\"Discernment without a yielded heart becomes a weapon.\"*"
+      },
+      {
+        "position": "A'",
+        "label": "The corporate summons",
+        "gloss": "*\"if even two or three learn to read the times, they can hold open a door the enemy is straining to shut.\"* The private summons at dawn becomes the corporate holding-open at dusk."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Feb 20 · Joseph, Paul, and Severe Mercy in Discipline",
+        "gloss": "the archive's earliest training-of-the-senses passage; discipline as sight-forming. The March 13 sibling *Spirit of Perdition* deepens it: obedience-in-the-dark before the reason is given.",
+        "recordId": "02-20-meditation-joseph-paul-severe"
+      },
+      "growth": {
+        "label": "Jun 24 · 15:41 · The Ground Had to Break Before the Seed Could Root",
+        "gloss": "wilderness as speaking-chamber; the season IS the training. Phrase-hook: the ground-breaking is the seed's condition, not its delay.",
+        "recordId": "06-24-personal-meditation-ego-death"
+      },
+      "tablet": {
+        "label": "Aug 17 · 19:05 · The Name the Darkness Could Not Speak",
+        "gloss": "the Tablet VI seam where dullness of hearing became the exact failure mode. Verbatim from the seam: *\"discernment is not automatic but cultivated through repeated use; dullness is a trained condition and so is sight.\"* THIS file supplies the doctrinal language the seam's afterword needed.",
+        "recordId": "08-17-emptied-house-voice-that"
+      }
     },
     "encounter": {
-      "temperature": "quiet",
-      "length": "deep",
-      "voice": "communal",
-      "movement": "fellowship",
+      "temperature": "urgent",
+      "length": "moderate",
+      "voice": "instructional",
+      "movement": null,
       "posture": "receiving",
-      "form": "dialogue-shaped",
+      "form": "spoken",
       "season": "The Seam (Tablets VI–VII)"
     },
-    "doorwayThemes": [
-      "fellowship"
-    ]
+    "doorwayThemes": []
   },
   {
     "id": "08-28-phone-against-ear-presence",
-    "order": 440,
+    "order": 437,
     "title": "The Phone Against the Ear, the Presence That Holds",
     "dateLabel": "Aug 28, 2026 · 16:40",
     "classification": "Call Reflection",
@@ -24825,6 +24733,98 @@ const JC_RECORDS = [
       "voice": "communal",
       "movement": "fellowship",
       "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-28-money-table-sober-word",
+    "order": 438,
+    "title": "The Money on the Table and the Sober Word",
+    "dateLabel": "Aug 28, 2026 · 16:56",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-28-money-table-sober-word-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am holding a phone to my ear while a brother, quickened and urgent, presses a “guaranteed” deal upon me that even he admits is “not legal,” “not advised,” “not reviewed.” The whole call is a wrestle over speed against sobriety, over the shiny object against",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VII · Koinonia Takes Precedence",
+      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+    },
+    "encounter": {
+      "temperature": "urgent",
+      "length": "brief",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "wrestling",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship",
+      "money"
+    ]
+  },
+  {
+    "id": "08-28-i-gave-him-you",
+    "order": 439,
+    "title": "I Gave Him You, Not the Answers",
+    "dateLabel": "Aug 28, 2026 · 18:16",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-28-i-gave-him-you-v2.html",
+    "sourceStatus": "original",
+    "summary": "I am still shaking as I write this, the phone barely cold in my hand, my body strung out past fifty hours without sleep and two twelve-hour shifts folded into that stretch. My brother Samuel called me from a pub having taken three thousand dollars against a…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VII · Koinonia Takes Precedence",
+      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+    },
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": null,
+        "gloss": "The 85-minute call (Aug 17 · 19:05) was answered by an 8-minute-15-second call **eleven days later** — this meditation carries that call's fruit. Tablet VI's afterword *The Fruit, Eleven Days Later* IS this correction stated theologically."
+      }
+    ],
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "The Seam (Tablets VI–VII)"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-28-first-win-confession",
+    "order": 440,
+    "title": "The First Win Is the Confession",
+    "dateLabel": "Aug 28, 2026 · 20:09",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-28-first-win-confession-v2.html",
+    "sourceStatus": "original",
+    "summary": "I picked up the phone expecting a quick word about whether my brother had made it home, and instead I found myself standing at the edge of a long night that turned, somewhere near its end, into holy ground. The whole call moved like a storm that finally…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VII · Koinonia Takes Precedence",
+      "window": "Aug 18 – Aug 28 (12-day post-seam window · Volume IV)"
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
       "form": "dialogue-shaped",
       "season": "The Seam (Tablets VI–VII)"
     },
@@ -24954,10 +24954,38 @@ const JC_RECORDS = [
     "id": "08-30-man-mirror-christ-who",
     "order": 444,
     "title": "The Man in the Mirror and the Christ Who Stands Between",
+    "dateLabel": "Aug 30, 2026 · 08:38",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/08-30-man-mirror-christ-who-v2.html",
+    "sourceStatus": "original",
+    "summary": "My brother called to sort out the logistics of inviting Jaden and Jade into our Bible study, and somewhere between the joke about three recording softwares and the FBI interrogation, the call quietly turned into a confession. He named the weight he is…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VIII · Seed Register",
+      "window": "Aug 29+ (window still open · seed, not stone)"
+    },
+    "encounter": {
+      "temperature": "contemplative",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": "fellowship",
+      "posture": "confessing",
+      "form": "dialogue-shaped",
+      "season": "Tablet VIII — the open seed"
+    },
+    "doorwayThemes": [
+      "fellowship"
+    ]
+  },
+  {
+    "id": "08-30-man-mirror-christ-who-2",
+    "order": 445,
+    "title": "The Man in the Mirror and the Christ Who Stands Between",
     "dateLabel": "Aug 30, 2026 · 09:09",
     "classification": "Theological Meditation",
     "seed": null,
-    "href": "records/08-30-man-mirror-christ-who-v2.html",
+    "href": "records/08-30-man-mirror-christ-who-2-v2.html",
     "sourceStatus": "original",
     "summary": "A song about the teacher who lives inside became, for me, the doorway into preparing a Bible study I never planned in the abstract — a study that grew straight out of the arc that just closed with Brother Samuel. What arrests me is that the whole structure…",
     "reviewed": true,
@@ -24979,34 +25007,6 @@ const JC_RECORDS = [
       "movement": "fellowship",
       "posture": "receiving",
       "form": "written",
-      "season": "Tablet VIII — the open seed"
-    },
-    "doorwayThemes": [
-      "fellowship"
-    ]
-  },
-  {
-    "id": "08-30-man-mirror-christ-who-2",
-    "order": 445,
-    "title": "The Man in the Mirror and the Christ Who Stands Between",
-    "dateLabel": "Aug 30, 2026 · time not recorded",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/08-30-man-mirror-christ-who-2-v2.html",
-    "sourceStatus": "original",
-    "summary": "My brother called to sort out the logistics of inviting Jaden and Jade into our Bible study, and somewhere between the joke about three recording softwares and the FBI interrogation, the call quietly turned into a confession. He named the weight he is…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VIII · Seed Register",
-      "window": "Aug 29+ (window still open · seed, not stone)"
-    },
-    "encounter": {
-      "temperature": "contemplative",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": "fellowship",
-      "posture": "confessing",
-      "form": "dialogue-shaped",
       "season": "Tablet VIII — the open seed"
     },
     "doorwayThemes": [
@@ -25184,7 +25184,7 @@ const JC_RECORDS = [
     "id": "08-31-anointing-call-into-affliction",
     "order": 449,
     "title": "The Anointing Is a Call Into Affliction",
-    "dateLabel": "Aug 31, 2026 · time not recorded",
+    "dateLabel": "Aug 31, 2026 · 10:43",
     "classification": "Teaching Reflection",
     "seed": null,
     "href": "records/08-31-anointing-call-into-affliction-v2.html",
@@ -25273,7 +25273,7 @@ const JC_RECORDS = [
     "id": "08-31-vessel-must-serve-witness",
     "order": 450,
     "title": "The Vessel Must Serve the Witness",
-    "dateLabel": "Aug 31, 2026 · time not recorded",
+    "dateLabel": "Aug 31, 2026 · 11:23",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/08-31-vessel-must-serve-witness-v2.html",
@@ -25361,190 +25361,10 @@ const JC_RECORDS = [
     ]
   },
   {
-    "id": "09-01-when-sale-sold-everything",
-    "order": 451,
-    "title": "When the Sale Sold Everything But the Soul",
-    "dateLabel": "Sep 1, 2026 · 07:21",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/09-01-when-sale-sold-everything-v2.html",
-    "sourceStatus": "original",
-    "summary": "I came onto the tail end of a live sales call, invited in as co-founder to greet a young man named Cooper who had just committed to our program. What lingers in me is not the polish of the close but a single question one of the reps asked almost as an…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VIII · Seed Register",
-      "window": "Aug 29+ (window still open · seed, not stone)"
-    },
-    "doctrinalThemesCarried": "The Sacred Ordinary",
-    "lexiconJoints": [
-      {
-        "term": "καπηλεύω (kapēleuō) — to peddle / hawk for profit",
-        "gloss": "2 Cor 2:17; first canonical use as sales-ethics-boundary."
-      },
-      {
-        "term": "χωρίς (chōris) — apart from / without",
-        "gloss": "Jn 15:5 walked as direct rebuttal to *\"full energy game.\"*"
-      },
-      {
-        "term": "בָּטַח (batach) — to trust / rely",
-        "gloss": "Jer 17:5; the curse-on-trusting-in-man walked as *yoke-sold-as-freedom*."
-      },
-      {
-        "term": "\"The sale sold everything but the soul\"",
-        "gloss": "file's canonical corpus phrase."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "The live sales call",
-        "gloss": "professional surface."
-      },
-      {
-        "position": "B",
-        "label": "Repeated insistence it is not manipulation",
-        "gloss": "the framing."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: soul-question raised only after deposit locked",
-        "gloss": "the sequence exposes the frame."
-      },
-      {
-        "position": "B'",
-        "label": "καπηλεύω vs. glad-tidings",
-        "gloss": "the boundary named."
-      },
-      {
-        "position": "A'",
-        "label": "Skill-upon-fears is still peddling",
-        "gloss": "return to the call, now under Jn 15:5."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing (just-weights)",
-        "gloss": "commerce-as-covenantal ground root.",
-        "recordId": "06-22-conversation-reflection-spiritual-discernment"
-      },
-      "growth": {
-        "label": "Jul 05 · 09:55 · Network Is Covenant",
-        "gloss": "network-is-covenant doctrine.",
-        "recordId": "07-05-network-covenant-proximity-purpose"
-      },
-      "tablet": {
-        "label": "Jul 06 · 12:14 · The Appointed Meeting, the Living Name (μόρφωσις warning)",
-        "gloss": "the tablet: μόρφωσις form-without-life warning walked here as *soul-raised-only-after-deposit*.",
-        "recordId": "07-06-appointed-meeting-living-name"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Undated"
-    },
-    "doorwayThemes": []
-  },
-  {
-    "id": "09-01-right-road-wrong-name",
-    "order": 452,
-    "title": "Right Road, Wrong Name: The Church That Refuses the Algorithm",
-    "dateLabel": "Sep 1, 2026 · 09:23",
-    "classification": "Call Reflection",
-    "seed": null,
-    "href": "records/09-01-right-road-wrong-name-v2.html",
-    "sourceStatus": "original",
-    "summary": "## In the middle of an ordinary Tuesday morning — dishes undone, a printer cartridge fumbled by a left hand that will no longer grip, three cats to be thrown out of the room, and a pregnant wife who wants only to sleep — I heard myself say two things that…",
-    "reviewed": true,
-    "tabletAnchor": {
-      "label": "Stone Tablet VIII · Seed Register",
-      "window": "Aug 29+ (window still open · seed, not stone)"
-    },
-    "doctrinalThemesCarried": "The Received Voice",
-    "lexiconJoints": [
-      {
-        "term": "\"Right road, wrong name\"",
-        "gloss": "file's canonical corpus phrase for name-vs-substance discernment."
-      },
-      {
-        "term": "\"The Holy Spirit is my church, and the people\"",
-        "gloss": "first canonical statement in Seth's own voice; anti-institutional ecclesiology."
-      },
-      {
-        "term": "δοῦλος + chosen vessel",
-        "gloss": "reinforced as identity vs. \"religious.\""
-      },
-      {
-        "term": "\"Does not use algorithms... doesn't monetize your attention\"",
-        "gloss": "the Jordan Crossing's design-covenant."
-      }
-    ],
-    "chiasticMirror": [
-      {
-        "position": "A",
-        "label": "Domestic clamor",
-        "gloss": "dishes, printer, cats, pregnant wife."
-      },
-      {
-        "position": "B",
-        "label": "The utterance to Gladys",
-        "gloss": "the Holy Spirit + the people."
-      },
-      {
-        "position": "C",
-        "label": "The hinge: right road vs. right name",
-        "gloss": "the file's central discernment."
-      },
-      {
-        "position": "B'",
-        "label": "The Jordan Crossing design-refusal",
-        "gloss": "no algorithm, no monetization."
-      },
-      {
-        "position": "A'",
-        "label": "The bond-servant identity confessed in ordinary time",
-        "gloss": "return to the clamor, now under vessel-doctrine."
-      }
-    ],
-    "doctrinalSpine": {
-      "seed": {
-        "label": "Mar 30 · Loving Captivity of Chosen Bondservice",
-        "gloss": "δοῦλος canonical origin.",
-        "recordId": "03-30-meditation-loving-captivity-chosen"
-      },
-      "growth": {
-        "label": "Aug 31 · 11:23 · The Vessel Must Serve the Witness",
-        "gloss": "1 day earlier; vessel-serves-witness axiom.",
-        "recordId": "08-31-vessel-must-serve-witness"
-      },
-      "tablet": {
-        "label": "Aug 26 · 05:31 · Koinonia Takes Precedence",
-        "gloss": "the tablet: koinonia-precedes-institution.",
-        "recordId": "08-26-koinonia-takes-precedence"
-      }
-    },
-    "encounter": {
-      "temperature": "quiet",
-      "length": "moderate",
-      "voice": "communal",
-      "movement": null,
-      "posture": "receiving",
-      "form": "dialogue-shaped",
-      "season": "Undated"
-    },
-    "doorwayThemes": [
-      "marriage"
-    ]
-  },
-  {
     "id": "09-01-take-your-robes-off",
-    "order": 453,
+    "order": 451,
     "title": "Take Your Robes Off Me: The Vape, the Watchman, and the Old Man Who Doesn't Exist",
-    "dateLabel": "Sep 1, 2026 · time not recorded",
+    "dateLabel": "Sep 1, 2026 · 04:30",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/09-01-take-your-robes-off-v2.html",
@@ -25615,7 +25435,7 @@ const JC_RECORDS = [
       "tablet": {
         "label": "Aug 30 · The Mirror-Gospel and Christ the Teacher Within",
         "gloss": "the tablet: the tselem-verdict belongs only to its Maker.",
-        "recordId": "08-30-man-mirror-christ-who"
+        "recordId": "08-30-man-mirror-christ-who-2"
       }
     },
     "encounter": {
@@ -25633,9 +25453,9 @@ const JC_RECORDS = [
   },
   {
     "id": "09-01-provision-persuasion-fisher-men",
-    "order": 454,
+    "order": 452,
     "title": "Provision, Persuasion, and the Fisher of Men: One Morning's Call",
-    "dateLabel": "Sep 1, 2026 · time not recorded",
+    "dateLabel": "Sep 1, 2026 · 07:21",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/09-01-provision-persuasion-fisher-men-v2.html",
@@ -25723,10 +25543,99 @@ const JC_RECORDS = [
     ]
   },
   {
+    "id": "09-01-when-sale-sold-everything",
+    "order": 453,
+    "title": "When the Sale Sold Everything But the Soul",
+    "dateLabel": "Sep 1, 2026 · 07:21",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/09-01-when-sale-sold-everything-v2.html",
+    "sourceStatus": "original",
+    "summary": "I came onto the tail end of a live sales call, invited in as co-founder to greet a young man named Cooper who had just committed to our program. What lingers in me is not the polish of the close but a single question one of the reps asked almost as an…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VIII · Seed Register",
+      "window": "Aug 29+ (window still open · seed, not stone)"
+    },
+    "doctrinalThemesCarried": "The Sacred Ordinary",
+    "lexiconJoints": [
+      {
+        "term": "καπηλεύω (kapēleuō) — to peddle / hawk for profit",
+        "gloss": "2 Cor 2:17; first canonical use as sales-ethics-boundary."
+      },
+      {
+        "term": "χωρίς (chōris) — apart from / without",
+        "gloss": "Jn 15:5 walked as direct rebuttal to *\"full energy game.\"*"
+      },
+      {
+        "term": "בָּטַח (batach) — to trust / rely",
+        "gloss": "Jer 17:5; the curse-on-trusting-in-man walked as *yoke-sold-as-freedom*."
+      },
+      {
+        "term": "\"The sale sold everything but the soul\"",
+        "gloss": "file's canonical corpus phrase."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "The live sales call",
+        "gloss": "professional surface."
+      },
+      {
+        "position": "B",
+        "label": "Repeated insistence it is not manipulation",
+        "gloss": "the framing."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: soul-question raised only after deposit locked",
+        "gloss": "the sequence exposes the frame."
+      },
+      {
+        "position": "B'",
+        "label": "καπηλεύω vs. glad-tidings",
+        "gloss": "the boundary named."
+      },
+      {
+        "position": "A'",
+        "label": "Skill-upon-fears is still peddling",
+        "gloss": "return to the call, now under Jn 15:5."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Jun 22 · 06:14 · Trap Dressed as Blessing (just-weights)",
+        "gloss": "commerce-as-covenantal ground root.",
+        "recordId": "06-22-conversation-reflection-spiritual-discernment"
+      },
+      "growth": {
+        "label": "Jul 05 · 09:55 · Network Is Covenant",
+        "gloss": "network-is-covenant doctrine.",
+        "recordId": "07-05-network-covenant-proximity-purpose"
+      },
+      "tablet": {
+        "label": "Jul 06 · 12:14 · The Appointed Meeting, the Living Name (μόρφωσις warning)",
+        "gloss": "the tablet: μόρφωσις form-without-life warning walked here as *soul-raised-only-after-deposit*.",
+        "recordId": "07-06-appointed-meeting-living-name"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Undated"
+    },
+    "doorwayThemes": []
+  },
+  {
     "id": "09-01-blessing-cave-why-god",
-    "order": 455,
+    "order": 454,
     "title": "The Blessing of the Cave: Why God Keeps You Off the Celebration Table",
-    "dateLabel": "Sep 1, 2026 · time not recorded",
+    "dateLabel": "Sep 1, 2026 · 07:54",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/09-01-blessing-cave-why-god-v2.html",
@@ -25813,9 +25722,9 @@ const JC_RECORDS = [
   },
   {
     "id": "09-01-alarm-that-was-only",
-    "order": 456,
+    "order": 455,
     "title": "The Alarm That Was Only a Balance",
-    "dateLabel": "Sep 1, 2026 · time not recorded",
+    "dateLabel": "Sep 1, 2026 · 08:43",
     "classification": "Call Reflection",
     "seed": null,
     "href": "records/09-01-alarm-that-was-only-v2.html",
@@ -25895,6 +25804,97 @@ const JC_RECORDS = [
       "season": "Undated"
     },
     "doorwayThemes": []
+  },
+  {
+    "id": "09-01-right-road-wrong-name",
+    "order": 456,
+    "title": "Right Road, Wrong Name: The Church That Refuses the Algorithm",
+    "dateLabel": "Sep 1, 2026 · 09:23",
+    "classification": "Call Reflection",
+    "seed": null,
+    "href": "records/09-01-right-road-wrong-name-v2.html",
+    "sourceStatus": "original",
+    "summary": "## In the middle of an ordinary Tuesday morning — dishes undone, a printer cartridge fumbled by a left hand that will no longer grip, three cats to be thrown out of the room, and a pregnant wife who wants only to sleep — I heard myself say two things that…",
+    "reviewed": true,
+    "tabletAnchor": {
+      "label": "Stone Tablet VIII · Seed Register",
+      "window": "Aug 29+ (window still open · seed, not stone)"
+    },
+    "doctrinalThemesCarried": "The Received Voice",
+    "lexiconJoints": [
+      {
+        "term": "\"Right road, wrong name\"",
+        "gloss": "file's canonical corpus phrase for name-vs-substance discernment."
+      },
+      {
+        "term": "\"The Holy Spirit is my church, and the people\"",
+        "gloss": "first canonical statement in Seth's own voice; anti-institutional ecclesiology."
+      },
+      {
+        "term": "δοῦλος + chosen vessel",
+        "gloss": "reinforced as identity vs. \"religious.\""
+      },
+      {
+        "term": "\"Does not use algorithms... doesn't monetize your attention\"",
+        "gloss": "the Jordan Crossing's design-covenant."
+      }
+    ],
+    "chiasticMirror": [
+      {
+        "position": "A",
+        "label": "Domestic clamor",
+        "gloss": "dishes, printer, cats, pregnant wife."
+      },
+      {
+        "position": "B",
+        "label": "The utterance to Gladys",
+        "gloss": "the Holy Spirit + the people."
+      },
+      {
+        "position": "C",
+        "label": "The hinge: right road vs. right name",
+        "gloss": "the file's central discernment."
+      },
+      {
+        "position": "B'",
+        "label": "The Jordan Crossing design-refusal",
+        "gloss": "no algorithm, no monetization."
+      },
+      {
+        "position": "A'",
+        "label": "The bond-servant identity confessed in ordinary time",
+        "gloss": "return to the clamor, now under vessel-doctrine."
+      }
+    ],
+    "doctrinalSpine": {
+      "seed": {
+        "label": "Mar 30 · Loving Captivity of Chosen Bondservice",
+        "gloss": "δοῦλος canonical origin.",
+        "recordId": "03-30-meditation-loving-captivity-chosen"
+      },
+      "growth": {
+        "label": "Aug 31 · 11:23 · The Vessel Must Serve the Witness",
+        "gloss": "1 day earlier; vessel-serves-witness axiom.",
+        "recordId": "08-31-vessel-must-serve-witness"
+      },
+      "tablet": {
+        "label": "Aug 26 · 05:31 · Koinonia Takes Precedence",
+        "gloss": "the tablet: koinonia-precedes-institution.",
+        "recordId": "08-26-koinonia-takes-precedence"
+      }
+    },
+    "encounter": {
+      "temperature": "quiet",
+      "length": "moderate",
+      "voice": "communal",
+      "movement": null,
+      "posture": "receiving",
+      "form": "dialogue-shaped",
+      "season": "Undated"
+    },
+    "doorwayThemes": [
+      "marriage"
+    ]
   }
 ];
 
@@ -26328,7 +26328,7 @@ const JC_EDGES = [
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -26868,7 +26868,7 @@ const JC_EDGES = [
   },
   {
     "from": "03-01-meditation-god-who-hunts",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -28119,7 +28119,7 @@ const JC_EDGES = [
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -28200,7 +28200,7 @@ const JC_EDGES = [
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29039,10 +29039,9 @@ const JC_EDGES = [
     "from": "03-28-sermon-reflection-finished-work",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
@@ -29261,7 +29260,7 @@ const JC_EDGES = [
     "note": "Jul 17 · Intercession, Entitlement, Priestly Reflex"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29270,7 +29269,7 @@ const JC_EDGES = [
     "note": "Feb 27 · Divine Winnowing (ambition → abiding)"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29279,8 +29278,8 @@ const JC_EDGES = [
     "note": "Mar 17 · Kenosis"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "from": "03-29-personal-meditation-hidden-alleyway",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29288,7 +29287,7 @@ const JC_EDGES = [
     "note": "Apr 8 · Ordinary as Holy Ground"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29297,7 +29296,7 @@ const JC_EDGES = [
     "note": "Apr 10 · Factory Floor"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29306,7 +29305,7 @@ const JC_EDGES = [
     "note": "Jul 28 · Sacrament of Small Things"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29315,7 +29314,7 @@ const JC_EDGES = [
     "note": "Aug 30 · three-brother table"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29324,7 +29323,7 @@ const JC_EDGES = [
     "note": "Feb 28 · Finished Work"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29333,7 +29332,7 @@ const JC_EDGES = [
     "note": "Jul 10 · 21:30 · Heavens Move"
   },
   {
-    "from": "03-29-1304-personal-meditation-hidden",
+    "from": "03-29-personal-meditation-hidden-alleyway",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "jointType": "chiastic-mirror",
@@ -29435,10 +29434,9 @@ const JC_EDGES = [
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · The Man in the Mirror"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
@@ -29471,10 +29469,9 @@ const JC_EDGES = [
     "from": "03-31-personal-meditation-standing-still",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
@@ -29495,7 +29492,7 @@ const JC_EDGES = [
     "note": "Mar 30 · The Loving Captivity of Chosen Bondservice"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
+    "from": "04-01-reflection-hunger-that-precedes",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "jointType": "doctrinal-spine-seed",
@@ -29504,7 +29501,7 @@ const JC_EDGES = [
     "note": "Feb 15 · Spirit-Led Transcript Template"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
+    "from": "04-01-reflection-hunger-that-precedes",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "jointType": "doctrinal-spine-tablet",
@@ -29513,7 +29510,7 @@ const JC_EDGES = [
     "note": "Aug 28 · Moriah Surrender"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
+    "from": "04-01-reflection-hunger-that-precedes",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29522,7 +29519,7 @@ const JC_EDGES = [
     "note": "May 19 · 12:04 · Where the Broken Are Guarded, Seeking Are Found"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
+    "from": "04-01-reflection-hunger-that-precedes",
     "to": "07-24-carving-god-from-wood",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29531,7 +29528,7 @@ const JC_EDGES = [
     "note": "Jul 24 · Idolatry, Hunger, Carving God from Our Own Wood"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
+    "from": "04-01-reflection-hunger-that-precedes",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29540,8 +29537,8 @@ const JC_EDGES = [
     "note": "Mar 27 · Unlikely Transformation"
   },
   {
-    "from": "04-01-0943-reflection-hunger-that",
-    "to": "04-07-1233-call-meditation-staircase",
+    "from": "04-01-reflection-hunger-that-precedes",
+    "to": "04-07-call-meditation-staircase-you",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29568,7 +29565,7 @@ const JC_EDGES = [
   },
   {
     "from": "04-02-personal-meditation-descent-that",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29603,8 +29600,8 @@ const JC_EDGES = [
     "note": "Jun 7 · Sister Katie's Covenantal Co-Witness, Kenosis, and the Plural Prophetic Archive"
   },
   {
-    "from": "04-03-0221-teaching-reflection-whole",
-    "to": "04-03-0637-reflection-anger-that",
+    "from": "04-03-teaching-reflection-whole-armor",
+    "to": "04-03-reflection-anger-that-reveals",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29612,8 +29609,8 @@ const JC_EDGES = [
     "note": "06:37 · The Anger That Reveals, the Friday That Redeems"
   },
   {
-    "from": "04-03-0221-teaching-reflection-whole",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "from": "04-03-teaching-reflection-whole-armor",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29621,7 +29618,7 @@ const JC_EDGES = [
     "note": "12:43 · The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong"
   },
   {
-    "from": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-teaching-reflection-whole-armor",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29630,7 +29627,7 @@ const JC_EDGES = [
     "note": "Jul 9 · Exousia vs. Dunamis"
   },
   {
-    "from": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-teaching-reflection-whole-armor",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29639,7 +29636,7 @@ const JC_EDGES = [
     "note": "Jul 10 · 21:30 · Heavens Moved"
   },
   {
-    "from": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-teaching-reflection-whole-armor",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29648,8 +29645,8 @@ const JC_EDGES = [
     "note": "Mar 17 · Kenosis"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
-    "to": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-reflection-anger-that-reveals",
+    "to": "04-03-teaching-reflection-whole-armor",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29657,8 +29654,8 @@ const JC_EDGES = [
     "note": "02:21 · Whole Armor"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "from": "04-03-reflection-anger-that-reveals",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29666,7 +29663,7 @@ const JC_EDGES = [
     "note": "12:43 · Contrite Heart"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
+    "from": "04-03-reflection-anger-that-reveals",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29675,7 +29672,7 @@ const JC_EDGES = [
     "note": "May 26 · Prophetic Writing, Faithful Waiting, and the Theology of the Rampart"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
+    "from": "04-03-reflection-anger-that-reveals",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29684,7 +29681,7 @@ const JC_EDGES = [
     "note": "Mar 20"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
+    "from": "04-03-reflection-anger-that-reveals",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29693,7 +29690,7 @@ const JC_EDGES = [
     "note": "Jul 21 · When Anger Finds Its Altar"
   },
   {
-    "from": "04-03-0637-reflection-anger-that",
+    "from": "04-03-reflection-anger-that-reveals",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29702,8 +29699,8 @@ const JC_EDGES = [
     "note": "Aug 28 · The Money on the Table and the Sober Word"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
-    "to": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-reflection-table-being-set",
+    "to": "04-03-teaching-reflection-whole-armor",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29711,8 +29708,8 @@ const JC_EDGES = [
     "note": "02:21 · Whole Armor of the Praying Prophet"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
-    "to": "04-03-0637-reflection-anger-that",
+    "from": "04-03-reflection-table-being-set",
+    "to": "04-03-reflection-anger-that-reveals",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29720,8 +29717,8 @@ const JC_EDGES = [
     "note": "06:37 · The Anger That Reveals, the Friday That Redeems"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "from": "04-03-reflection-table-being-set",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29729,7 +29726,7 @@ const JC_EDGES = [
     "note": "12:43 · The Contrite Heart, the Breaking, and the Proximity That Makes Prayer Strong"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29738,7 +29735,7 @@ const JC_EDGES = [
     "note": "Apr 11 · Kenosis, Sabbath Rest, Spiritual Authority · Hos 6:6 / Matt 9:13"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29747,7 +29744,7 @@ const JC_EDGES = [
     "note": "Aug 11 · One Joyfulness on Two Mountains · agapē"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29756,7 +29753,7 @@ const JC_EDGES = [
     "note": "Aug 28 · 13:36 · Counsel, Commission, and the Fellowship That Holds Us Together"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29765,7 +29762,7 @@ const JC_EDGES = [
     "note": "Feb 15 · Spirit-Led Transcript Template"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29774,7 +29771,7 @@ const JC_EDGES = [
     "note": "May 26 · Rampart"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29783,7 +29780,7 @@ const JC_EDGES = [
     "note": "Apr 20"
   },
   {
-    "from": "04-03-1120-reflection-table-being",
+    "from": "04-03-reflection-table-being-set",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29792,8 +29789,8 @@ const JC_EDGES = [
     "note": "Aug 30 · Filthy Garments"
   },
   {
-    "from": "04-03-1243-personal-meditation-contrite",
-    "to": "04-03-0221-teaching-reflection-whole",
+    "from": "04-03-personal-meditation-contrite-heart",
+    "to": "04-03-teaching-reflection-whole-armor",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29801,8 +29798,8 @@ const JC_EDGES = [
     "note": "02:21 · Whole Armor of the Praying Prophet"
   },
   {
-    "from": "04-03-1243-personal-meditation-contrite",
-    "to": "04-03-0637-reflection-anger-that",
+    "from": "04-03-personal-meditation-contrite-heart",
+    "to": "04-03-reflection-anger-that-reveals",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -29810,7 +29807,7 @@ const JC_EDGES = [
     "note": "06:37 · The Anger That Reveals, the Friday That Redeems"
   },
   {
-    "from": "04-03-1243-personal-meditation-contrite",
+    "from": "04-03-personal-meditation-contrite-heart",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29819,7 +29816,7 @@ const JC_EDGES = [
     "note": "Mar 25"
   },
   {
-    "from": "04-03-1243-personal-meditation-contrite",
+    "from": "04-03-personal-meditation-contrite-heart",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29828,7 +29825,7 @@ const JC_EDGES = [
     "note": "May 27 · Grief as Intercession — Mantles"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29837,7 +29834,7 @@ const JC_EDGES = [
     "note": "Jun 25 · Paideia, Webhooks, and Kingdom Formation"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29846,7 +29843,7 @@ const JC_EDGES = [
     "note": "Aug 30 body's"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29855,7 +29852,7 @@ const JC_EDGES = [
     "note": "Aug 13 Prophetic Word"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29864,7 +29861,7 @@ const JC_EDGES = [
     "note": "May 6 · The Cross, Identity in Christ, and Samuel's Vocational Discernment"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "05-03-every-breath-was-death",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29873,7 +29870,7 @@ const JC_EDGES = [
     "note": "May 3 · Physical Suffering of Jesus"
   },
   {
-    "from": "04-04-1333-personal-meditation-backward",
+    "from": "04-04-personal-meditation-backward-glance",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "jointType": "chiastic-mirror",
@@ -29882,7 +29879,7 @@ const JC_EDGES = [
     "note": "Feb 27 · Divine Winnowing (ambition → abiding)"
   },
   {
-    "from": "04-04-2352-personal-meditation-torn",
+    "from": "04-04-personal-meditation-torn-veil",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29891,7 +29888,7 @@ const JC_EDGES = [
     "note": "Jun 21 · Brought Low, Reclothed, and Sent"
   },
   {
-    "from": "04-04-2352-personal-meditation-torn",
+    "from": "04-04-personal-meditation-torn-veil",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "thread-joint",
@@ -29900,7 +29897,7 @@ const JC_EDGES = [
     "note": "Aug 30 · Filthy Garments and the Finished Work"
   },
   {
-    "from": "04-04-2352-personal-meditation-torn",
+    "from": "04-04-personal-meditation-torn-veil",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29909,7 +29906,7 @@ const JC_EDGES = [
     "note": "Mar 20 · Thirteen"
   },
   {
-    "from": "04-04-2352-personal-meditation-torn",
+    "from": "04-04-personal-meditation-torn-veil",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -29918,7 +29915,7 @@ const JC_EDGES = [
     "note": "Apr 6 · The Interior Wilderness, the Living Word"
   },
   {
-    "from": "04-04-2352-personal-meditation-torn",
+    "from": "04-04-personal-meditation-torn-veil",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "jointType": "chiastic-mirror",
@@ -30063,7 +30060,7 @@ const JC_EDGES = [
   },
   {
     "from": "04-06-theological-meditation-body-as",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -30108,7 +30105,7 @@ const JC_EDGES = [
   },
   {
     "from": "04-06-theological-meditation-body-as",
-    "to": "04-06-1926-personal-meditation-where",
+    "to": "04-06-personal-meditation-where-are",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -30125,8 +30122,8 @@ const JC_EDGES = [
     "note": "May 26 · Rampart"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
-    "to": "04-06-1926-personal-meditation-where",
+    "from": "04-06-reflection-roses-with-thorns",
+    "to": "04-06-personal-meditation-where-are",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -30134,7 +30131,7 @@ const JC_EDGES = [
     "note": "Apr 6 · 19:26 · Where Are You?"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30143,7 +30140,7 @@ const JC_EDGES = [
     "note": "Feb 28 · Finished Work"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30152,7 +30149,7 @@ const JC_EDGES = [
     "note": "Jun 4 · Burning Bush · Philippians 1:6"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30161,7 +30158,7 @@ const JC_EDGES = [
     "note": "Aug 26 · Koinonia Takes Precedence"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30170,7 +30167,7 @@ const JC_EDGES = [
     "note": "Aug 30 body's"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30179,7 +30176,7 @@ const JC_EDGES = [
     "note": "May 1 · Breaking Point"
   },
   {
-    "from": "04-06-1648-reflection-roses-with",
+    "from": "04-06-reflection-roses-with-thorns",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30188,7 +30185,7 @@ const JC_EDGES = [
     "note": "Aug 28 · 18:16 · I Gave Him You, Not the Answers"
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30197,7 +30194,7 @@ const JC_EDGES = [
     "note": "Apr 6 · 08:49 · Interior Wilderness"
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "06-09-at-time-not-provided",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30206,7 +30203,7 @@ const JC_EDGES = [
     "note": "Jun 9 · Prophetic Confirmation and the Question \"Where Are You?\""
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30215,7 +30212,7 @@ const JC_EDGES = [
     "note": "Jul 23 · Pisteuō, John 5:24"
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30224,7 +30221,7 @@ const JC_EDGES = [
     "note": "Aug 30 · Filthy Garments"
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30233,7 +30230,7 @@ const JC_EDGES = [
     "note": "Aug 29 · Signpost, Secret Place, Cup"
   },
   {
-    "from": "04-06-1926-personal-meditation-where",
+    "from": "04-06-personal-meditation-where-are",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "jointType": "lexicon-joint",
@@ -30242,7 +30239,7 @@ const JC_EDGES = [
     "note": "Jul 9"
   },
   {
-    "from": "04-07-0508-personal-meditation-bring",
+    "from": "04-07-personal-meditation-bring-nothing",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "jointType": "doctrinal-spine-seed",
@@ -30251,7 +30248,7 @@ const JC_EDGES = [
     "note": "Mar 30 · Loving Captivity of Chosen Bondservice"
   },
   {
-    "from": "04-07-0508-personal-meditation-bring",
+    "from": "04-07-personal-meditation-bring-nothing",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "jointType": "doctrinal-spine-growth",
@@ -30260,7 +30257,7 @@ const JC_EDGES = [
     "note": "Jun 22 · 12:34 · Led Into the Wilderness · Building for the Spirit in the Hour of Poverty"
   },
   {
-    "from": "04-07-0508-personal-meditation-bring",
+    "from": "04-07-personal-meditation-bring-nothing",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "jointType": "doctrinal-spine-tablet",
@@ -30269,7 +30266,7 @@ const JC_EDGES = [
     "note": "Aug 28 · The Measure of Love Is Surrender on Moriah"
   },
   {
-    "from": "04-07-0646-reflection-gift-that",
+    "from": "04-07-reflection-gift-that-sees",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "jointType": "doctrinal-spine-seed",
@@ -30278,7 +30275,7 @@ const JC_EDGES = [
     "note": "Mar 30 · Loving Captivity of Bondservice"
   },
   {
-    "from": "04-07-0646-reflection-gift-that",
+    "from": "04-07-reflection-gift-that-sees",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "jointType": "doctrinal-spine-growth",
@@ -30287,7 +30284,7 @@ const JC_EDGES = [
     "note": "Jun 07 · Corpus Reflection · Plural Prophetic Archive"
   },
   {
-    "from": "04-07-0646-reflection-gift-that",
+    "from": "04-07-reflection-gift-that-sees",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "jointType": "doctrinal-spine-tablet",
@@ -30296,7 +30293,7 @@ const JC_EDGES = [
     "note": "Aug 28 · Moriah Surrender"
   },
   {
-    "from": "04-07-0646-reflection-gift-that",
+    "from": "04-07-reflection-gift-that-sees",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30305,7 +30302,7 @@ const JC_EDGES = [
     "note": "Aug 17 · 19:05 seam"
   },
   {
-    "from": "04-07-0646-reflection-gift-that",
+    "from": "04-07-reflection-gift-that-sees",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30314,7 +30311,7 @@ const JC_EDGES = [
     "note": "Mar 28 · Furnace of Secret Prayer"
   },
   {
-    "from": "04-07-1233-call-meditation-staircase",
+    "from": "04-07-call-meditation-staircase-you",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "jointType": "doctrinal-spine-seed",
@@ -30323,7 +30320,7 @@ const JC_EDGES = [
     "note": "Feb 27 · Sleeplessness and Surrendering Self"
   },
   {
-    "from": "04-07-1233-call-meditation-staircase",
+    "from": "04-07-call-meditation-staircase-you",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "jointType": "doctrinal-spine-growth",
@@ -30332,7 +30329,7 @@ const JC_EDGES = [
     "note": "May 29 · Active Waiting, Prophetic Ministry, and Covenant Brotherhood"
   },
   {
-    "from": "04-07-1233-call-meditation-staircase",
+    "from": "04-07-call-meditation-staircase-you",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "jointType": "doctrinal-spine-tablet",
@@ -30341,7 +30338,7 @@ const JC_EDGES = [
     "note": "Aug 17 · 19:05 seam"
   },
   {
-    "from": "04-07-1233-call-meditation-staircase",
+    "from": "04-07-call-meditation-staircase-you",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30350,7 +30347,7 @@ const JC_EDGES = [
     "note": "Jul 01 · 07:03 · Silence of Heaven Feels Like Abandonment"
   },
   {
-    "from": "04-07-1233-call-meditation-staircase",
+    "from": "04-07-call-meditation-staircase-you",
     "to": "06-23-ad-that-would-not",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30485,7 +30482,7 @@ const JC_EDGES = [
     "note": "Aug 17 · 19:05 seam"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30494,7 +30491,7 @@ const JC_EDGES = [
     "note": "Mar 17 · Kenosis"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30503,7 +30500,7 @@ const JC_EDGES = [
     "note": "Apr 10 · Factory Floor"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30512,7 +30509,7 @@ const JC_EDGES = [
     "note": "May 10 · Plow"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30521,7 +30518,7 @@ const JC_EDGES = [
     "note": "May 26 · Rampart"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30530,7 +30527,7 @@ const JC_EDGES = [
     "note": "Jul 28 · Sacrament of Small Things"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "07-07-holiness-hidden-ordinary-meditation",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30539,7 +30536,7 @@ const JC_EDGES = [
     "note": "Jul 7 · The Holiness Hidden in the Ordinary"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "07-09-altar-ordinary",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30548,7 +30545,7 @@ const JC_EDGES = [
     "note": "Jul 9 · 10:14 · The Altar in the Ordinary"
   },
   {
-    "from": "04-08-1027-reflection-when-ordinary",
+    "from": "04-08-reflection-when-ordinary-moment",
     "to": "07-24-altar-ordinary-kitchen",
     "type": "continues",
     "jointType": "thread-joint",
@@ -30794,10 +30791,9 @@ const JC_EDGES = [
     "from": "04-10-narrow-path-has-many",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-four-months-faithfulness-panic",
@@ -30891,7 +30887,7 @@ const JC_EDGES = [
   },
   {
     "from": "04-10-daily-log-factory-floor",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -31055,10 +31051,9 @@ const JC_EDGES = [
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
@@ -31460,10 +31455,9 @@ const JC_EDGES = [
     "from": "04-12-when-love-watches-cannot",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
@@ -31622,10 +31616,9 @@ const JC_EDGES = [
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · The Man in the Mirror and the Christ Who Stands Between"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
@@ -33116,10 +33109,9 @@ const JC_EDGES = [
     "from": "04-26-when-mask-falls-wilderness",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
@@ -34194,7 +34186,7 @@ const JC_EDGES = [
   },
   {
     "from": "05-10-brotherhood-round-table-god",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -34646,10 +34638,9 @@ const JC_EDGES = [
     "from": "05-15-when-word-true-but",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-word-true-but",
@@ -34896,7 +34887,7 @@ const JC_EDGES = [
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "chiastic-mirror",
     "status": "editorial",
@@ -34932,7 +34923,7 @@ const JC_EDGES = [
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -35240,10 +35231,9 @@ const JC_EDGES = [
     "from": "05-18-when-gospel-not-gospel",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
@@ -35267,10 +35257,9 @@ const JC_EDGES = [
     "from": "05-18-brilliant-far-country-gifting",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
@@ -35393,10 +35382,9 @@ const JC_EDGES = [
     "from": "05-19-when-pain-wears-costume",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · Man in the Mirror"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
@@ -35420,10 +35408,9 @@ const JC_EDGES = [
     "from": "05-19-weight-we-carry-together",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
@@ -35823,7 +35810,7 @@ const JC_EDGES = [
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -36212,10 +36199,9 @@ const JC_EDGES = [
     "from": "05-27-when-you-cannot-hate",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
@@ -36642,7 +36628,7 @@ const JC_EDGES = [
   },
   {
     "from": "05-31-first-love-hidden-intercession",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -37083,7 +37069,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-06-weight-between-missing-waiting",
-    "to": "04-07-1233-call-meditation-staircase",
+    "to": "04-07-call-meditation-staircase-you",
     "type": "continues",
     "jointType": "doctrinal-spine-growth",
     "status": "editorial",
@@ -37598,10 +37584,9 @@ const JC_EDGES = [
     "from": "06-08-have-you-forgotten-where",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · Man in the Mirror"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
@@ -37778,10 +37763,9 @@ const JC_EDGES = [
     "from": "06-08-at-morning-commute-youve",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Man in the Mirror and Christ Who Stands Between"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
@@ -37805,10 +37789,9 @@ const JC_EDGES = [
     "from": "06-08-mirror-you-forgot-face",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-growth",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
@@ -37875,7 +37858,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -37947,7 +37930,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-09-at-time-not-provided",
-    "to": "04-06-1926-personal-meditation-where",
+    "to": "04-06-personal-meditation-where-are",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -38559,7 +38542,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-12-when-searching-hand-reaches",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -39344,10 +39327,9 @@ const JC_EDGES = [
     "from": "06-17-when-mirror-speaks-old",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · Man in the Mirror and the Christ Who Stands Between"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
@@ -40604,10 +40586,9 @@ const JC_EDGES = [
     "from": "06-20-weight-before-word-carrying",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-when-system-doesnt-know",
@@ -40926,7 +40907,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -41279,10 +41260,9 @@ const JC_EDGES = [
     "from": "06-23-call-reflection-koinonia-lambs",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-koinonia-lambs",
@@ -41583,7 +41563,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-23-theological-meditation-cross-as",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "chiastic-mirror",
     "status": "editorial",
@@ -41702,10 +41682,9 @@ const JC_EDGES = [
     "from": "06-23-raised-killer-covered-by",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · The Man in the Mirror and the Christ Who Stands Between"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
@@ -42258,7 +42237,7 @@ const JC_EDGES = [
   },
   {
     "from": "06-26-when-covenant-feels-like",
-    "to": "04-03-1243-personal-meditation-contrite",
+    "to": "04-03-personal-meditation-contrite-heart",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -44643,7 +44622,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -47028,7 +47007,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-15-mantle-descends-ordinary",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -47775,7 +47754,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-20-watchman-across-way-sacred",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -47928,7 +47907,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-21-when-anger-finds-its",
-    "to": "04-03-0637-reflection-anger-that",
+    "to": "04-03-reflection-anger-that-reveals",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -48252,7 +48231,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
-    "to": "04-06-1926-personal-meditation-where",
+    "to": "04-06-personal-meditation-where-are",
     "type": "continues",
     "jointType": "lexicon-joint",
     "status": "editorial",
@@ -48405,7 +48384,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -48461,10 +48440,9 @@ const JC_EDGES = [
     "from": "07-24-carving-god-from-wood",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
@@ -48810,7 +48788,7 @@ const JC_EDGES = [
   },
   {
     "from": "07-28-sacrament-small-things",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -49222,10 +49200,9 @@ const JC_EDGES = [
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Theological Meditation · Mirror-Gospel"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
@@ -50417,7 +50394,7 @@ const JC_EDGES = [
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -50932,10 +50909,9 @@ const JC_EDGES = [
     "from": "08-19-vocabulary-changed-man",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · Man in the Mirror and the Christ Who Stands Between"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
@@ -51137,7 +51113,7 @@ const JC_EDGES = [
   },
   {
     "from": "08-19-slow-steady-building-house",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "chiastic-mirror",
     "status": "editorial",
@@ -52345,10 +52321,9 @@ const JC_EDGES = [
     "from": "08-28-what-you-value-god",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · The Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
@@ -52739,7 +52714,7 @@ const JC_EDGES = [
   },
   {
     "from": "08-29-signpost-secret-place-cup",
-    "to": "04-06-1926-personal-meditation-where",
+    "to": "04-06-personal-meditation-where-are",
     "type": "continues",
     "jointType": "chiastic-mirror",
     "status": "editorial",
@@ -52753,7 +52728,7 @@ const JC_EDGES = [
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "08:38 · The Man in the Mirror and the Christ Who Stands Between"
+    "note": "Theological Meditation · The Mirror-Gospel and Christ the Teacher Within"
   },
   {
     "from": "08-30-man-flesh-held-me",
@@ -52780,7 +52755,7 @@ const JC_EDGES = [
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Theological Meditation · The Mirror-Gospel and Christ the Teacher Within"
+    "note": "08:38 · The Man in the Mirror and the Christ Who Stands Between"
   },
   {
     "from": "08-30-man-flesh-held-me",
@@ -52816,40 +52791,37 @@ const JC_EDGES = [
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 PLAUD"
+    "note": "13:39 · Filthy Garments and the Finished Work"
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Speakly parallel"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Jun 7 · Sister Katie's Covenantal Co-Witness"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 28 · 18:16 · I Gave Him You, Not the Answers"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
     "note": "Jun 17 · When the Mirror Speaks"
@@ -52858,58 +52830,13 @@ const JC_EDGES = [
     "from": "08-30-man-mirror-christ-who",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
-    "jointType": "lexicon-joint",
-    "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · 08:38 · Man in the Mirror and the Christ Who Stands Between"
-  },
-  {
-    "from": "08-30-man-mirror-christ-who",
-    "to": "03-20-personal-meditation-hidden-mathematics",
-    "type": "continues",
-    "jointType": "chiastic-mirror",
-    "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Mar 20 · Thirteen"
-  },
-  {
-    "from": "08-30-man-mirror-christ-who-2",
-    "to": "08-30-man-flesh-held-me",
-    "type": "continues",
-    "jointType": "thread-joint",
-    "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "08:01 · The Man of the Flesh Held Me Hostage"
-  },
-  {
-    "from": "08-30-man-mirror-christ-who-2",
-    "to": "08-30-faced-image-filthy-garments",
-    "type": "continues",
-    "jointType": "thread-joint",
-    "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "13:39 · Filthy Garments and the Finished Work"
-  },
-  {
-    "from": "08-30-man-mirror-christ-who-2",
-    "to": "08-30-man-mirror-christ-who",
-    "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
     "note": "The Mirror-Gospel and Christ the Teacher Within"
   },
   {
-    "from": "08-30-man-mirror-christ-who-2",
-    "to": "08-30-compass-locked-room",
-    "type": "continues",
-    "jointType": "thread-joint",
-    "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "20:04 · Compass in the Locked Room"
-  },
-  {
-    "from": "08-30-man-mirror-christ-who-2",
+    "from": "08-30-man-mirror-christ-who",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "jointType": "thread-joint",
@@ -52919,18 +52846,60 @@ const JC_EDGES = [
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
-    "to": "06-08-mirror-murmuration-releasing-what",
+    "to": "08-30-man-flesh-held-me",
+    "type": "continues",
+    "jointType": "cross-reference",
+    "status": "editorial",
+    "source": "Verified against the corpus's own cross-reference record."
+  },
+  {
+    "from": "08-30-man-mirror-christ-who-2",
+    "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Jun 8 · 11:05 · Mirror, Murmuration, Releasing Revelation"
+    "note": "Aug 30 PLAUD"
+  },
+  {
+    "from": "08-30-man-mirror-christ-who-2",
+    "to": "08-30-man-mirror-christ-who",
+    "type": "continues",
+    "jointType": "lexicon-joint",
+    "status": "editorial",
+    "source": "Verified against the corpus's own cross-reference record.",
+    "note": "Aug 30 · 08:38 · Man in the Mirror and the Christ Who Stands Between"
+  },
+  {
+    "from": "08-30-man-mirror-christ-who-2",
+    "to": "08-30-compass-locked-room",
+    "type": "continues",
+    "jointType": "cross-reference",
+    "status": "editorial",
+    "source": "Verified against the corpus's own cross-reference record."
+  },
+  {
+    "from": "08-30-man-mirror-christ-who-2",
+    "to": "03-20-personal-meditation-hidden-mathematics",
+    "type": "continues",
+    "jointType": "chiastic-mirror",
+    "status": "editorial",
+    "source": "Verified against the corpus's own cross-reference record.",
+    "note": "Mar 20 · Thirteen"
+  },
+  {
+    "from": "08-30-man-mirror-christ-who-2",
+    "to": "06-08-mirror-murmuration-releasing-what",
+    "type": "continues",
+    "jointType": "cross-reference",
+    "status": "editorial",
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "lexicon-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
     "note": "Jun 17 · When the Mirror Speaks"
@@ -52939,19 +52908,17 @@ const JC_EDGES = [
     "from": "08-30-man-mirror-christ-who-2",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Feb 28"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
-    "jointType": "lexicon-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Jun 4 · Burning Bush"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
@@ -52966,10 +52933,9 @@ const JC_EDGES = [
     "from": "08-30-bible-study-reflection-filthy",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "thread-joint",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · Theological Meditation · The Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
@@ -53126,7 +53092,7 @@ const JC_EDGES = [
   },
   {
     "from": "08-30-faced-image-filthy-garments",
-    "to": "04-08-1027-reflection-when-ordinary",
+    "to": "04-08-reflection-when-ordinary-moment",
     "type": "continues",
     "jointType": "thread-joint",
     "status": "editorial",
@@ -53221,7 +53187,7 @@ const JC_EDGES = [
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "08:38 · The Man in the Mirror and the Christ Who Stands Between"
+    "note": "Theological Meditation · The Mirror-Gospel and Christ the Teacher Within"
   },
   {
     "from": "08-30-compass-locked-room",
@@ -53248,7 +53214,7 @@ const JC_EDGES = [
     "jointType": "thread-joint",
     "status": "editorial",
     "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Theological Meditation · The Mirror-Gospel and Christ the Teacher Within"
+    "note": "08:38 · The Man in the Mirror and the Christ Who Stands Between"
   },
   {
     "from": "08-30-compass-locked-room",
@@ -53452,10 +53418,9 @@ const JC_EDGES = [
     "from": "09-01-take-your-robes-off",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
-    "jointType": "doctrinal-spine-tablet",
+    "jointType": "cross-reference",
     "status": "editorial",
-    "source": "Verified against the corpus's own cross-reference record.",
-    "note": "Aug 30 · The Mirror-Gospel and Christ the Teacher Within"
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",

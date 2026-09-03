@@ -27,6 +27,11 @@
  *   3. Assigns a deterministic id (date-prefix + slugified title) and
  *      renders records/<id>-v2.html using the public Beta 2.0 template (no
  *      private-workspace banner — see the Beta 2.0 debrand pass below).
+ *   3b. Phase 16a: enriches recordedDate with a Corpus Lattice v1.3
+ *      recovered time-of-day (join on records-2's own filename == the
+ *      Lattice's archive_filename) for any record whose own source-file
+ *      parsing above found no time, BEFORE the chronological sort — see
+ *      loadLatticeArchiveTimeMap()'s header comment for detail.
  *   4. Rebuilds JC_RECORDS and JC_EDGES in assets/records-data.js wholesale.
  *   5. Remaps JC_THREADS' record-id references onto the new id set (titles
  *      are usually stable so ids usually regenerate identically, but a
@@ -233,7 +238,13 @@ export function parseRawRecord(filePath) {
   let title = metaTitle || displayHeading;
   if (!title && looksLikeLabel) title = firstNonEmpty;
   if (!title) title = path.basename(filePath).replace(/\.md$/, '');
-  title = title.replace(/^\d{2}-\d{2}(?:\s+(?:to|at)\s+\d{2}(?:[:_-]\d{2})?)?\s*[—-]?\s*/i, '').trim() || title;
+  // Strips a leading "MM-DD" date prefix, plus either a "to/at HH[:_-]MM"
+  // range suffix (the "Apr 11 to Apr 14 MERGED" style) OR a bare "HH:MM"/
+  // "HH_MM" directly after the date with no to/at word (found on 14 titles,
+  // e.g. "04-01 09:43 Reflection: ..." — previously left "09:43 " stuck on
+  // the front of the displayed title since the old regex only recognized
+  // the to/at form).
+  title = title.replace(/^\d{2}-\d{2}(?:\s+(?:to|at)\s+\d{2}(?:[:_-]\d{2})?|\s+\d{1,2}[:_]\d{2})?\s*[—-]?\s*/i, '').trim() || title;
   title = title.replace(/^\*([^*]+)\*$/, '$1').trim() || title; // wrapping single-asterisk italics left over after date-prefix removal
 
   let classification = classificationMatch ? classificationMatch[1].trim() : null;
@@ -682,6 +693,31 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 }
 
 // ─────────────────────────────────────────────────────────────────────────
+// Corpus Lattice v1.3 recovered-time enrichment (Phase 16a).
+//
+// Corpus Lattice v1.3 added a "time" field to meditation nodes — a real
+// time-of-day recovered from that file's own **Recorded:** body metadata,
+// **Title:**, or filename, independently of anything this script's own
+// parseRawRecord() does (385/459 meditations recoverable, 24-hr Central).
+// records-2/'s own filenames are already the Lattice's `archive_filename`
+// (records-2/ was extracted from the same shortened-name zip bundle the
+// Lattice documents), so the join is a plain exact filename match — no
+// fuzzy matching needed.
+// ─────────────────────────────────────────────────────────────────────────
+function loadLatticeArchiveTimeMap() {
+  const latticePath = path.join(ROOT, 'Corpus Lattice.json');
+  if (!fs.existsSync(latticePath)) return new Map();
+  const lattice = JSON.parse(fs.readFileSync(latticePath, 'utf8'));
+  const map = new Map();
+  for (const node of Object.values(lattice.nodes || {})) {
+    if (node.type !== 'meditation') continue;
+    if (!node.archive_filename || !node.time || !node.date) continue;
+    map.set(node.archive_filename, { date: node.date, time: node.time });
+  }
+  return map;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
 // MAIN
 // ─────────────────────────────────────────────────────────────────────────
 
@@ -748,6 +784,27 @@ function main() {
   //    chronologically for stable, readable ids and `order`.
   const usedIds = new Set();
   const entries = [...parsedByName.entries()].map(([name, p]) => ({ name, ...p }));
+
+  // 2b. Corpus Lattice v1.3 recovered-time enrichment — see the function's
+  // own header comment. Applied BEFORE the chronological sort below so
+  // records/order/sequence navigation reflect the real recovered time,
+  // not a noon placeholder. IDs are unaffected (makeId only uses the
+  // MM-DD date portion, never the time-of-day).
+  const latticeTimeMap = loadLatticeArchiveTimeMap();
+  let timeEnrichedCount = 0;
+  for (const e of entries) {
+    if (e.recordedDate && e.recordedDate.timeKnown) continue;
+    const found = latticeTimeMap.get(e.name);
+    if (!found) continue;
+    e.recordedDate = {
+      key: `${found.date} ${found.time}`,
+      iso: `${found.date}T${found.time}:00`,
+      timeKnown: true,
+    };
+    timeEnrichedCount += 1;
+  }
+  console.log(`Corpus Lattice v1.3 recovered-time enrichment: ${timeEnrichedCount} records gained a real time (previously date-only/unknown).`);
+
   entries.sort((a, b) => {
     const ak = a.recordedDate ? a.recordedDate.iso : '9999';
     const bk = b.recordedDate ? b.recordedDate.iso : '9999';

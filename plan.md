@@ -1,6 +1,53 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Phase 15: "What did you actually encounter?" fixed + made navigational)
+## Current Status (September 3, 2026 — Phase 16a: Corpus Lattice v1.3 recovered-time enrichment)
+
+The owner uploaded Corpus Lattice v1.3, which adds a recovered `time` field (24-hr Central) to
+meditation nodes — recovered from each file's own `**Recorded:**` body metadata, `**Title:**`, or
+filename, independently of anything `build-records2-corpus.mjs`'s own `parseRawRecord()` does.
+385/459 meditations carry a recovered time; node/edge counts are otherwise identical to v1.2 (468
+total nodes, 3,510 lattice edges) — this is purely an additive field, not a re-verification of the
+edge set itself.
+
+Replaced the committed `Corpus Lattice.json`/`Corpus Lattice.csv` with the v1.3 content (same
+filenames, per the established versioning convention). Added a `loadLatticeArchiveTimeMap()` join in
+`build-records2-corpus.mjs`: records-2/'s own filenames are already the Lattice's `archive_filename`
+(records-2/ was extracted from the same shortened-name zip bundle), so for any record whose own
+source-file parsing found no time-of-day, the script now looks up that record's Lattice node by exact
+filename match and, if it carries a recovered time, uses it — applied **before** the chronological
+sort so `order`/record-sequence navigation reflects the real recorded time, not a noon placeholder.
+Result: 110 of the 456 published records gained a real time (from 183 down to 73 records still
+genuinely lacking any recoverable time-of-day, honestly labeled "time not recorded").
+
+While in the same title-cleanup code, also fixed a related pre-existing bug: 14 titles retained a
+leftover leading time token (e.g. "09:43 Reflection: The Hunger That Precedes Understanding") because
+the date-prefix-stripping regex only recognized a `to`/`at`-joined time range (the "Apr 11 to Apr 14
+MERGED" style), not a bare `HH:MM`/`HH_MM` directly after the date with no connecting word. Extended
+the regex to strip both forms. This shifts 14 record ids (date-prefix + newly-correct slug) — the
+full pipeline regenerates ids deterministically each run, so this is expected and was verified to
+propagate cleanly through `JC_THREADS`/`JC_EDGES`/reading paths (none of the 14 affected records
+happened to be thread/path members).
+
+Verified: full pipeline re-run in the README's documented order (`build-records2-corpus.mjs` →
+`rebuild-edges-from-lattice.mjs` → `rebuild-threads-and-paths.mjs` → `build-stone-tablet-pages.mjs` →
+`rebuild-reference-pages.mjs` → `tag-encounter-dimensions.mjs`) — the first pass initially skipped the
+last three steps, which briefly deleted the 9 Stone Tablet reader pages (wiped by
+`build-records2-corpus.mjs`'s unconditional `records/` directory clear, since Stone Tablets are handled
+by a separate generator) and wiped every record's `encounter`/`doorwayThemes` tagging (wholesale-replaced
+by the same script, since that tagging is a separate idempotent pass over `JC_RECORDS`); caught before
+committing, and both steps were re-run to fully restore both — confirmed byte-identical Stone Tablet
+pages and all 456 records re-tagged. Integrity checks: 456 records, 3,079 edges unchanged (same exact
+edge set before/after, only 87 records' `order` and 111 records' `dateLabel` changed as expected; 0
+dangling edges/thread refs/path refs; 0 isolated records; 0 missing href files; order field contiguous
+1-456), and live verification via dev server that the recovered time, the cleaned title, the restored
+Stone Tablet pages, and the Encounter Index (which depends on the restored tagging) all work correctly.
+
+See "Phase 15" below for the "What did you actually encounter?" fixes, "Phase 14" for the appendix
+richness work (Doctrinal Spine, Lexicon Joints, Chiastic Mirror), "Phase 13" for the public-beta
+cleanup pass, "Phase 12" for the Corpus Lattice cross-reference verification, and "Phase 11" for the
+full account of the corpus rebuild from `records-2/`.
+
+## Phase 15 (September 3, 2026 — "What did you actually encounter?" fixed + made navigational)
 
 Two related fixes to the "What did you actually encounter?" section on every record page, both
 live-reported by the owner after Phase 14:

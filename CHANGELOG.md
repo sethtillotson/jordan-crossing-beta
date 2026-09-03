@@ -2,6 +2,25 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.5] — September 3, 2026
+
+### Corpus Lattice v1.3 recovered-time enrichment (Phase 16a)
+
+Corpus Lattice v1.3 adds a recovered `time` field (24-hr Central) to 385/459 meditation nodes,
+independently recovered from each file's own recorded-metadata/title/filename. Joined onto the public
+corpus via exact filename match (records-2/'s own filenames are already the Lattice's
+`archive_filename`): any record whose own parsing found no time-of-day now picks up the Lattice's
+recovered time when available, applied before the chronological sort so record ordering/sequencing
+reflects the real time too. 110 of 456 published records gained a real time (183 → 73 still honestly
+"time not recorded"). Also fixed a related pre-existing bug: 14 titles had a leftover leading time
+token (e.g. "09:43 Reflection: ...") because the title-cleanup regex didn't recognize a bare `HH:MM`
+directly after the date with no connecting "to"/"at" word — fixed, which regenerates those 14 records'
+ids (expected; the pipeline always regenerates ids deterministically). Verified: 456 records/3,079
+edges unchanged, 0 dangling edges, 0 isolated records, live-checked. Also restored the full documented
+pipeline order (the 9 Stone Tablet reader pages and every record's Encounter Index tagging are produced
+by separate scripts that must run after `build-records2-corpus.mjs`'s full-corpus rebuild — both were
+briefly wiped and fully restored before committing).
+
 ## [2.4] — September 3, 2026
 
 ### "What did you actually encounter?" fixed, then made navigational (Phase 15)

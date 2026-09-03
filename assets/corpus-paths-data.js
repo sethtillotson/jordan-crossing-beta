@@ -1,7 +1,7 @@
 /**
  * Jordan Crossing — Corpus Reading Paths
  *
- * Rebuilt 2026-09-03T12:15:57.412Z by scripts/rebuild-threads-and-paths.mjs
+ * Rebuilt 2026-09-03T14:39:03.240Z by scripts/rebuild-threads-and-paths.mjs
  * (Phase 13). Every path and step here is transcribed directly from the
  * owner's corpus map documents ("Corpus Map — How These Documents Read Each
  * Other.md" and "PLAUD Meditations Corpus Map — How the Meditations Read
@@ -30,7 +30,7 @@ const JC_CORPUS_PATHS = [
     "steps": [
       {
         "label": "When Weariness Speaks Louder Than the Will of God",
-        "dateLabel": "Apr 25, 2026 · time not recorded",
+        "dateLabel": "Apr 25, 2026 · 06:38",
         "localId": "04-25-when-weariness-speaks-louder",
         "memoPath": null,
         "note": "The Loop opens."
@@ -65,7 +65,7 @@ const JC_CORPUS_PATHS = [
       },
       {
         "label": "The Blessing of the Cave: Why God Keeps You Off the Celebration Table",
-        "dateLabel": "Sep 1, 2026 · time not recorded",
+        "dateLabel": "Sep 1, 2026 · 07:54",
         "localId": "09-01-blessing-cave-why-god",
         "memoPath": null,
         "note": "The Loop is answered."
@@ -242,7 +242,7 @@ const JC_CORPUS_PATHS = [
       },
       {
         "label": "When Every Door Closes and the Taste Goes Bitter: Providence, Presence, and the Long Walk Toward Home",
-        "dateLabel": "Jul 10, 2026 · time not recorded",
+        "dateLabel": "Jul 10, 2026 · 18:32",
         "localId": "07-10-when-every-door-closes",
         "memoPath": null,
         "note": ""
