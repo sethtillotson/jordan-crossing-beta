@@ -57,22 +57,24 @@ directly from that source — not patched incrementally.
 - **One source file was found to be corrupted** (raw binary/zip content saved with a `.md`
   extension, not real text) and was excluded rather than published — this is exactly the gap
   between the 457 candidate files and the 456 actually published.
-- **Four named threads** run underneath the reviewed chronology, traced meditation-by-meditation in
-  the *PLAUD Meditations Corpus Map* (now superseded, see `Superseded-Docs/`): **Zechariah 3**
-  (filthy garments removed, replaced, given away), **the Samuel Loop** (the carried, quietly
-  learning to carry), **the Murmuration** (the *maskîlîm* are plural), and **the Descent Into
-  Hiddenness** (the arc bends downward). Each is browsable on [`threads.html`](threads.html) as its
-  own filtered path — remapped onto the new ids in Phase 11.
+- **Seven named threads** run underneath the reviewed chronology, transcribed meditation-by-meditation
+  from the author's own corpus map documents and resolved via Corpus Lattice path-matching (Phase 13):
+  **The Zechariah 3 Loop** (filthy garments removed, replaced, given away), **the Samuel Loop** (the
+  carried, quietly learning to carry), **the Mantle Sequence** (the calling itself), **the Murmuration**
+  (the *maskîlîm* are plural), **the Exousia / Dunamis Distinction** (legal right, not raw power),
+  **the Sacred Ordinary** (holiness in the kitchen, the phone call, the parking lot), and **the Descent
+  Into Hiddenness** (the arc bends downward). Each is browsable on [`threads.html`](threads.html) as
+  its own filtered path.
 - **Eight Stone Tablets** — the real written volumes in the author's *Living Topology of
   Transformation* series, each covering a specific window of days — now anchor every record via
   its `tabletAnchor` field, and are readable in full at [`stone-tablets.html`](stone-tablets.html).
   See also [`six-doctrinal-spines.html`](six-doctrinal-spines.html),
   [`spines-timeline.html`](spines-timeline.html), and [`corpus-architecture.html`](corpus-architecture.html)
   for the visual companions.
-- **Corpus Paths** (9 curated reading paths, 48 steps) link to a local page wherever a step's
-  meditation could be *confirmed* as the same content (not just a matching filename) — 35 of 48
-  as of Phase 11; the rest are disclosed as external, each with a specific reason, in
-  [`assets/corpus-paths-data.js`](assets/corpus-paths-data.js)'s own header comment.
+- **Corpus Paths** (5 curated reading paths) link exclusively to local pages — every step resolved
+  via the same Corpus Lattice path-matching as the threads above (Phase 13); any step that could not
+  be confidently resolved was dropped rather than linked externally, so there are zero external links
+  anywhere on this page.
 
 ---
 
@@ -80,14 +82,14 @@ directly from that source — not patched incrementally.
 
 | Page | Purpose |
 |------|---------|
-| [`index.html`](index.html) | Landing page: corpus overview, entry invitations, and first-draft Chronological/Thematic/Encounter navigation maps |
+| [`index.html`](index.html) | Landing page: corpus overview, entry invitations, and Chronological/Thematic/Encounter navigation maps |
 | [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across all 456 records |
 | [`stone-tablets.html`](stone-tablets.html) | The eight Stone Tablet volumes themselves, each with its own full reader page |
 | [`six-doctrinal-spines.html`](six-doctrinal-spines.html) | The Eight Stone Tablets — a standalone infographic on the eight real Stone Tablet volumes that anchor the corpus |
 | [`spines-timeline.html`](spines-timeline.html) | Timeline of the Eight Stone Tablets — weekly growth of the eight tablet windows across all eight months of the record |
 | [`corpus-architecture.html`](corpus-architecture.html) | How the whole record fits together — a standalone infographic on the corpus's architecture |
 | [`threads.html`](threads.html) | The reviewed thread constellation — full chronology, per-thread filters, and full-text search |
-| [`paths.html`](paths.html) | Nine curated reading paths through the corpus (doctrinal spine, Samuel Loop, Murmuration, Descent, Zechariah 3, the Gaze, Surrender & Obedience, Identity & Transformation, Waiting & Timing) |
+| [`paths.html`](paths.html) | Five curated reading paths through the corpus (Samuel Loop end-to-end, the Zechariah 3 walk, the Apr 11-14 merged week, the Mar 28 sermon day, the Jul 10 exousia cascade) |
 | [`archive.html`](archive.html) | A full, searchable, month-by-month browsable index of all 456 local records, each linking directly to its page |
 
 ---
@@ -103,10 +105,9 @@ directly from that source — not patched incrementally.
 │   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
 │   ├── records-data.js            # JC_RECORDS (456 records, all reviewed, all with a tabletAnchor),
 │   │                               #   JC_EDGES (3,079 edges, Corpus-Lattice-verified in Phase 12,
-│   │                               #   zero isolated records), JC_THREADS (4, remapped in Phase 11)
-│   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the nine curated reading paths
+│   │                               #   zero isolated records), JC_THREADS (7, rebuilt in Phase 13)
+│   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the five curated reading paths (Phase 13, zero external links)
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
-│   └── beta.js/.css               # Legacy logic, kept for compatibility
 ├── records/
 │   └── *-v2.html                  # 456 meditation record pages + 9 Stone Tablet reader pages —
 │                                   #   PURE GENERATED OUTPUT as of Phase 11; do not hand-edit, and
@@ -165,7 +166,7 @@ fallback:
 | I need to understand surrender | Records matching surrender/kenosis/yielding themes |
 | I am searching for Jesus | Records matching Christ/gospel/redemption themes |
 | I want to examine the record carefully | Records matching discernment/scripture/doctrine themes |
-| I want to follow the entire chronology | The union of all four named threads |
+| I want to follow the entire chronology | The entire reviewed corpus (all 456 records) — Phase 13; previously undersold via a union of only the old 4 named threads |
 | I need a quiet place to begin | Records matching secret place/quiet/stillness/rest themes (Phase 11 — previously a dead link to the retired interior file) |
 | I do not know what I am carrying, I only know I am here | Records matching "compass"/witness/presence themes |
 
@@ -211,8 +212,8 @@ rather than new engineering.
 
 - **Public Beta 2.0.** Every page carries a lighter "PUBLIC BETA 2.0 · Reader discretion advised"
   banner (replacing the earlier private-workspace notice).
-- **No account required, no server-side data collection.** `localStorage` is used only for the
-  carry-a-question feature and stays on the reader's own device.
+- **No account required, no server-side data collection.** `localStorage` is used only to remember
+  the last record you read, and stays on the reader's own device.
 - **GitHub Pages auto-deploys `master`** (see `.github/workflows/deploy.yml`).
 - **Content is unredacted, as-is**, per the owner's standing direction to publish now and redact
   pre-public-launch only if needed. See `plan.md` for the current open items.
@@ -251,18 +252,24 @@ in order:
    `archive_filename` string equality (requires `Corpus Lattice.json` schema v1.2 or later) and
    wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references.
    Re-run whenever `Corpus Lattice.json`/`Corpus Lattice.csv` are updated.
-2. `node scripts/build-stone-tablet-pages.mjs` — regenerates the 8 Stone Tablet reader pages + the
+2. `node scripts/rebuild-threads-and-paths.mjs` — **the current authoritative `JC_THREADS`/
+   `corpus-paths-data.js` rebuilder** (Phase 13). Transcribes thread/path members verbatim from the
+   owner's corpus map documents' own `memo:` links, resolves each to a local record via Corpus
+   Lattice path-matching (never a paraphrase or a date-only guess), and wholesale-replaces
+   `JC_THREADS` plus rewrites `assets/corpus-paths-data.js`. Re-run whenever the corpus map
+   documents or Corpus Lattice are updated; always run after step 1.
+3. `node scripts/build-stone-tablet-pages.mjs` — regenerates the 8 Stone Tablet reader pages + the
    Tablet VII audit page from `records-2/`'s Stone Tablet volumes
-3. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
+4. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
    `spines-timeline.html`, and `corpus-architecture.html` from `records-2/`'s reference infographics
-4. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
-5. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
+5. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
 
 **Superseded, do not re-run:** `scripts/build-corpus-records.mjs`, `build-mirror-records.mjs`,
 `integrate-passes-7-8.mjs`, `integrate-passes-9-13.mjs`, `integrate-passes-14-16.mjs`,
-`integrate-pass-17.mjs`, `rebuild-cross-references-verified.mjs` — each of these built on an earlier,
-since-superseded source layer (summary pass ledgers, or the pre-Phase-11 `verified-source-docs/`
-bundle). Kept in the repository as historical artifacts only.
+`integrate-pass-17.mjs`, `rebuild-cross-references-verified.mjs`, `relink-corpus-paths.mjs` — each of
+these built on an earlier, since-superseded source layer (summary pass ledgers, the pre-Phase-11
+`verified-source-docs/` bundle, or the pre-Phase-13 4-thread/6-path data). Kept in the repository as
+historical artifacts only.
 
 ---
 
@@ -270,8 +277,8 @@ bundle). Kept in the repository as historical artifacts only.
 
 - **HTML5** — semantic markup, no framework
 - **CSS3** — hand-written responsive grid and design tokens
-- **Vanilla JavaScript** — no build step, no dependencies; `localStorage` for the carry-question
-  feature only
+- **Vanilla JavaScript** — no build step, no dependencies; `localStorage` for returning-reader
+  continuity only
 - **Node.js** — used only for the offline `scripts/*.mjs` generators, not at runtime
 - **GitHub Pages + GitHub Actions** — static hosting and auto-deploy on push to `master`
 

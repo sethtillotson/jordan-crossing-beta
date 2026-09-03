@@ -107,24 +107,6 @@
       margin-top:var(--space-1);
       line-height:1.5;
     }
-    .step-source-tag{
-      font-family:var(--font-mono);
-      font-size:var(--text-xs);
-      letter-spacing:0.04em;
-      padding:1px 6px;
-      border-radius:var(--radius-sm);
-      margin-left:var(--space-2);
-      white-space:nowrap;
-      display:inline-block;
-    }
-    .step-source-tag--local{
-      background:rgba(107,158,127,0.4);
-      color:#d9f0df;
-    }
-    .step-source-tag--external{
-      background:rgba(168,85,85,0.4);
-      color:#ffd9d2;
-    }
     .tag-filter-section {
       margin-bottom: var(--space-8);
       padding: var(--space-6);
@@ -207,8 +189,8 @@
       </div>
 
       <div class="callout">
-        <p class="caption">Editorial Connection · Sourced, Not Invented</p>
-        <p>The paths below are copied from the corpus-map documents Seth keeps in the Second Brain. Following the Phase 11 full corpus rebuild (September 2026), all 456 meditations now have a local page in this beta, fully reviewed and cross-referenced against a corpus-wide truth correction — see <a href="archive.html">Archive</a> for the full browsable list. 35 of these 48 curated path steps now link to a local page, confirmed by matching each step's own label against that record's real, content-derived title on its exact recorded day — not by filename, which turned out to be unreliable (some source filenames in the wider corpus do not match their own recorded content, a genuine data-quality issue in the underlying export). The remaining 13 steps still link to the Second Brain because no local record could be confidently confirmed as the same meditation. Steps already confirmed are marked <span class="step-source-tag step-source-tag--local">in this beta</span>; the rest are marked <span class="step-source-tag step-source-tag--external">external source</span>.</p>
+        <p class="caption">Curated Reading Paths</p>
+        <p>Each path below is a hand-curated route through the archive, drawn from the author's own corpus map and traced meditation by meditation. Every step links directly to its record in this beta — see <a href="archive.html">Archive</a> for the full browsable list.</p>
       </div>
 
       <div id="tag-filter-section" class="tag-filter-section" style="display:none;">
@@ -219,11 +201,6 @@
       </div>
 
       <div id="paths-mount"></div>
-
-      <section class="callout" style="margin-top:var(--space-8);">
-        <p class="caption">Where This Came From</p>
-        <p>The original corpus-map documents this page's steps were copied from are cached locally at <code>living-topology/corpus-maps/</code>. Following a corpus-wide truth correction, the corpus's own front-door documents (<em>PLAUD Meditations · Master Index.md</em>, <em>Tracker.csv</em>, and the corrected Pass 1-18 ledgers) now live under <code>records-2/</code>, the site's canonical public source folder; the earlier <em>Corpus Map.md</em> and per-pass summary documents this page originally referenced have been superseded and moved to <code>Superseded-Docs/</code> (see <a href="../CHANGELOG.md">CHANGELOG.md</a>). Nothing here claims more than those documents already say. For the corpus's overall shape by month — count only, no titles — see the <a href="archive.html">Archive</a> page.</p>
-      </section>
     </div>
   </main>
 
@@ -232,7 +209,7 @@
   </footer>
 
   <script src="assets/records-data.js?v=20260903BETA3"></script>
-  <script src="assets/corpus-paths-data.js?v=20260831V13"></script>
+  <script src="assets/corpus-paths-data.js?v=20260903BETA3"></script>
   <script>
   (function () {
     const activeTags = new Set();
@@ -324,17 +301,13 @@
 
       mount.innerHTML = JC_CORPUS_PATHS.filter(pathMatchesFilters).map(path => {
         const steps = path.steps.map(step => {
-          const href = jcStepHref(step);
-          const isLocal = !!step.localId;
-          const tag = isLocal
-            ? '<span class="step-source-tag step-source-tag--local">in this beta</span>'
-            : '<span class="step-source-tag step-source-tag--external">external source ↗</span>';
+          const href = jcHrefFor(step.localId);
+          const noteHtml = step.note ? `<div class="path-step-note">${escapeHtml(step.note)}</div>` : '';
           return `<li class="path-step">
             <div class="path-step-body">
-              <a class="path-step-title" href="${href}"${isLocal ? '' : ' target="_blank" rel="noopener"'}>${escapeHtml(step.label)}</a>
+              <a class="path-step-title" href="${href}">${escapeHtml(step.label)}</a>
               <span class="path-step-date">${escapeHtml(step.dateLabel)}</span>
-              ${tag}
-              <div class="path-step-note">${escapeHtml(step.note)}</div>
+              ${noteHtml}
             </div>
           </li>`;
         }).join('');

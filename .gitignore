@@ -6,6 +6,14 @@ jordan-crossing-interior.html
 verified-source-docs/
 Superseded-Docs/
 
+# Owner-authored corpus map source documents (narrative, first-person,
+# pass-ledger commentary not meant for public display) — local reference
+# input to scripts/rebuild-threads-and-paths.mjs only. Earlier versions of
+# these same documents were moved to the gitignored Superseded-Docs/; these
+# newer ones follow the same public/internal separation.
+Corpus Map — How These Documents Read Each Other.md
+PLAUD Meditations Corpus Map — How the Meditations Read Each Other.md
+
 # Internal AI-assisted-development artifacts, not for the public repo.
 COPILOT_HANDOFF_PROMPT.md
 COPILOT_CHAT_PROMPT.txt

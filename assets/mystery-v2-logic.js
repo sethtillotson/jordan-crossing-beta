@@ -42,9 +42,10 @@
 
   // Keyword pools: every record whose title+summary matches one of these
   // regexes becomes a candidate for that doorway, in addition to the
-  // anchor above. 'signpost' (full chronology) pools from the four named
-  // threads instead of keywords, since its whole point is breadth across
-  // the timeline rather than a single theme.
+  // anchor above. 'signpost' (full chronology) pools from the ENTIRE
+  // reviewed corpus rather than keywords or a thread subset — its whole
+  // point (per its own guidance text, "the entire chronology") is breadth
+  // across the whole timeline, not a themed or curated slice.
   //
   // Note (Phase 11): the original 7 curated seed records this table once
   // pointed to by their old hand-authored short ids (`signpost`,
@@ -71,9 +72,12 @@
     'compass': /\bcompass\b|\bcarrying\b|\blocked room\b|\bwitness\b|\bhere\b/i,
   };
 
-  // Cap the size of any pool so unrelated keyword hits don't drown the
-  // more thematically central records — the anchor is always included.
-  const MAX_POOL_SIZE = 10;
+  // No artificial cap: pool sizes should honestly report the real number of
+  // reviewed records matching a doorway's theme. An earlier version capped
+  // every pool at 10 regardless of true match count — that made the
+  // "drawn from a reviewed pool of N records" guidance text misleading once
+  // the corpus grew past a few hundred verified records (real counts run
+  // 20-90+ per doorway; see plan.md Phase 13).
 
   function buildKeywordPool(doorwayId, anchorId) {
     if (typeof JC_RECORDS === 'undefined') return anchorId ? [anchorId] : [];
@@ -91,21 +95,22 @@
       });
     }
     if (anchorId && !pool.includes(anchorId)) pool.unshift(anchorId);
-    return pool.slice(0, MAX_POOL_SIZE);
+    return pool;
   }
 
-  function buildThreadPool() {
-    if (typeof JC_THREADS === 'undefined') return [];
-    const ids = new Set();
-    JC_THREADS.forEach(t => t.sequence.forEach(id => ids.add(id)));
-    return Array.from(ids);
+  // "Full chronology" pools from every reviewed record in the corpus, not a
+  // themed keyword subset or a curated thread subset — it is explicitly the
+  // "walk the whole timeline" doorway (see its own prompt text below).
+  function buildFullCorpusPool() {
+    if (typeof JC_RECORDS === 'undefined') return [];
+    return JC_RECORDS.filter(rec => rec.reviewed !== false).map(rec => rec.id);
   }
 
   // Build every doorway's candidate pool once, at load time.
   const DOORWAY_POOLS = {};
   Object.keys(DOORWAY_ROUTING).forEach(doorwayId => {
     if (doorwayId === 'signpost') {
-      const pool = buildThreadPool();
+      const pool = buildFullCorpusPool();
       DOORWAY_POOLS[doorwayId] = pool.length ? pool : [DOORWAY_ROUTING[doorwayId].anchorId];
     } else {
       DOORWAY_POOLS[doorwayId] = buildKeywordPool(doorwayId, DOORWAY_ROUTING[doorwayId].anchorId);

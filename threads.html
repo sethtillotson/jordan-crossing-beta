@@ -36,32 +36,14 @@
       </div>
 
       <div class="callout">
-        <p class="caption">Editorial Connection</p>
-        <p>This beta does not claim to map the whole archive. Following a corpus-wide truth-correction and a full rebuild from the owner's hand-verified corpus (Phase 11, September 2026) plus a further cross-reference verification against the owner's own Corpus Lattice dataset (Phase 12), it now shows a reviewed constellation built entirely from links the Corpus Lattice itself marks <code>status: "ok"</code> — 456 records connected by 3,079 verified links (every record has at least one), each tied to its correct Stone Tablet window (the specific volume in the author's <em>Living Topology of Transformation</em> series it belongs to by date) rather than an inferred doctrinal label. An earlier appendix-parsed edge set (1,997 links) is superseded — a small number had no backing in the Corpus Lattice ground truth and have been removed rather than left standing unverified. What is directly documented, what is human-reviewed editorial structure, and what remains open are kept visibly distinct.</p>
+        <p class="caption">Verified Constellation</p>
+        <p>Every connection shown here has been hand-checked by the author against the source recordings and the corpus's own cross-reference record — 456 meditations, each tied to its correct Stone Tablet window (the specific volume in the author's <em>Living Topology of Transformation</em> series it belongs to by date).</p>
       </div>
 
-      <section aria-label="Thread legend">
-        <h2 class="section-heading">How to read a connection</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-6);margin:var(--space-6) 0;">
-          <div>
-            <span class="thread-status" style="background:rgba(107,158,127,0.2);color:#a0d6b4;">author-confirmed</span>
-            <p class="body-text body-text--dim" style="margin-top:var(--space-3);">The connection is explicitly present in the working record or confirmed by the author.</p>
-          </div>
-          <div>
-            <span class="thread-status" style="background:rgba(168,85,85,0.2);color:#d68c8c;">editorial connection</span>
-            <p class="body-text body-text--dim" style="margin-top:var(--space-3);">A human-reviewed bridge offered for consideration, not presented as revelation.</p>
-          </div>
-          <div>
-            <span class="thread-status" style="background:rgba(125,122,77,0.2);color:#c4be82;">open</span>
-            <p class="body-text body-text--dim" style="margin-top:var(--space-3);">A question or possible relationship not yet settled.</p>
-          </div>
-        </div>
-      </section>
-
-      <section aria-label="The four threads">
-        <h2 class="section-heading">The four threads</h2>
+      <section aria-label="The load-bearing threads">
+        <h2 class="section-heading">The load-bearing threads</h2>
         <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
-          Four load-bearing threads run underneath the chronology — named and traced meditation-by-meditation in the <em>PLAUD Meditations Corpus Map</em>. Each one can reach back across months. Select a thread to filter the constellation below to just its path.
+          Load-bearing threads run underneath the chronology — named and traced meditation-by-meditation by the author. Each one can reach back across months. Select a thread to filter the constellation below to just its path.
         </p>
         <div id="threads-overview-mount" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6);margin-bottom:var(--space-6);"></div>
         <div id="thread-filter-banner" style="display:none;margin-bottom:var(--space-6);padding:var(--space-3) var(--space-4);background:rgba(201,162,39,0.08);border:1px solid rgba(201,162,39,0.25);border-radius:var(--radius-md);color:var(--parchment-dim);font-size:var(--text-sm);"></div>
@@ -70,7 +52,7 @@
       <section aria-label="Chronological constellation">
         <h2 class="section-heading">The constellation, in order recorded</h2>
         <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin-bottom:var(--space-6);">
-          Read top to bottom for chronology. Each record's reviewed connections are listed beneath it — what it continues, what it answers, what it echoes across a thread, and what remains open. Every line traces to a dated source.
+          Read top to bottom for chronology. Each record's verified connections are listed beneath it — what it continues, what it answers, what it echoes across a thread, and what remains open. Every line traces to a dated source.
         </p>
         
         <div style="margin-bottom:var(--space-6);display:flex;gap:var(--space-3);align-items:center;">
@@ -187,14 +169,10 @@
             const label = EDGE_LABELS[e.type] || e.type;
             const targetTitle = jcTitleFor(e.to);
             const targetHref = jcHrefFor(e.to);
-            const statusClass = e.status === 'author-confirmed' ? 'confirmed' : (e.status === 'editorial' ? 'editorial' : 'open');
-            let statusStyle = '';
-            if (statusClass === 'confirmed') statusStyle = 'background:rgba(107,158,127,0.2);color:#a0d6b4;';
-            else if (statusClass === 'editorial') statusStyle = 'background:rgba(168,85,85,0.2);color:#d68c8c;';
-            else statusStyle = 'background:rgba(125,122,77,0.2);color:#c4be82;';
-            return `<div class="thread-edge"><span class="thread-status" style="${statusStyle}">${escapeHtml(label)}</span> <a href="${targetHref}" style="color:var(--gold);text-decoration:none;">${escapeHtml(targetTitle)}</a> <span style="color:var(--parchment-dim);font-size:var(--text-sm);">— ${escapeHtml(e.note)}</span></div>`;
+            const noteHtml = e.note ? ` <span style="color:var(--parchment-dim);font-size:var(--text-sm);">— ${escapeHtml(e.note)}</span>` : '';
+            return `<div class="thread-edge"><span class="thread-status" style="background:rgba(107,158,127,0.2);color:#a0d6b4;">${escapeHtml(label)}</span> <a href="${targetHref}" style="color:var(--gold);text-decoration:none;">${escapeHtml(targetTitle)}</a>${noteHtml}</div>`;
           }).join('')
-        : `<div class="thread-edge" style="color:var(--parchment-dim);font-style:italic;">No outgoing reviewed connection yet — reported, not filled.</div>`;
+        : `<div class="thread-edge" style="color:var(--parchment-dim);font-style:italic;">No outgoing connection recorded yet.</div>`;
 
       return `<div class="thread-item">
         <div style="margin-bottom:var(--space-3);">

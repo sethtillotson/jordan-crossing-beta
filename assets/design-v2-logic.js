@@ -6,7 +6,6 @@
 (function() {
   'use strict';
 
-  const CARRY_STORAGE_KEY = 'jc_carry_question';
   const RECORD_ID = document.body.dataset.recordId || 'unknown';
 
   function escapeHtml(value) {
@@ -173,128 +172,6 @@
   }
 
   // ═══════════════════════════════════════════════════════════════════
-  // MOVEMENT 2: CARRY — Question persistence and UI toggling
-  // ═════════════════════════════════════════════════════════════════════
-
-  function getCarryState() {
-    const stored = localStorage.getItem(CARRY_STORAGE_KEY);
-    return stored ? JSON.parse(stored) : { question: null, records: [] };
-  }
-
-  function saveCarryState(question) {
-    const state = getCarryState();
-    state.question = question;
-    if (!state.records.includes(RECORD_ID)) {
-      state.records.push(RECORD_ID);
-    }
-    localStorage.setItem(CARRY_STORAGE_KEY, JSON.stringify(state));
-  }
-
-  function clearCarryState() {
-    localStorage.removeItem(CARRY_STORAGE_KEY);
-  }
-
-  function initCarryQuestion() {
-    const carryBtn = document.getElementById('carry-btn');
-    const writeOwnBtn = document.getElementById('write-own-btn');
-    const writePanel = document.getElementById('carry-write-panel');
-    const textarea = document.getElementById('carry-textarea');
-    const saveBtn = document.getElementById('carry-save-btn');
-    const cancelBtn = document.getElementById('carry-cancel-btn');
-    const status = document.getElementById('carry-status');
-    const statusText = document.getElementById('carry-status-text');
-    const clearBtn = document.getElementById('carry-clear-btn');
-
-    // Only initialize if we have the required carry elements (not on all pages)
-    if (!carryBtn && !writeOwnBtn && !status) {
-      return;
-    }
-
-    const state = getCarryState();
-
-    // Update initial UI
-    updateCarryUI();
-
-    // "Carry this question forward" - use default
-    if (carryBtn) {
-      carryBtn.addEventListener('click', () => {
-        const defaultQuestion = "What does it mean to fix my gaze on Christ when the world presses in?";
-        saveCarryState(defaultQuestion);
-        updateCarryUI();
-      });
-    }
-
-    // "Write my own question"
-    if (writeOwnBtn) {
-      writeOwnBtn.addEventListener('click', () => {
-        if (writePanel) writePanel.classList.add('active');
-        if (textarea) textarea.focus();
-      });
-    }
-
-    // Save custom question
-    if (saveBtn && textarea) {
-      saveBtn.addEventListener('click', () => {
-        const q = textarea.value.trim();
-        if (q) {
-          saveCarryState(q);
-          textarea.value = '';
-          if (writePanel) writePanel.classList.remove('active');
-          updateCarryUI();
-        }
-      });
-
-      // Allow Enter+Ctrl to save
-      textarea.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
-          saveBtn.click();
-        }
-      });
-    }
-
-    // Cancel
-    if (cancelBtn && textarea) {
-      cancelBtn.addEventListener('click', () => {
-        textarea.value = '';
-        if (writePanel) writePanel.classList.remove('active');
-      });
-    }
-
-    // Clear saved question
-    if (clearBtn) {
-      clearBtn.addEventListener('click', () => {
-        clearCarryState();
-        updateCarryUI();
-      });
-    }
-
-    function updateCarryUI() {
-      const current = getCarryState();
-      if (current.question) {
-        // Show status, hide carry buttons
-        if (carryBtn) carryBtn.style.display = 'none';
-        if (writeOwnBtn) writeOwnBtn.style.display = 'none';
-        if (status) {
-          status.classList.add('active');
-          if (statusText) {
-            const preview = current.question.length > 60
-              ? current.question.slice(0, 60) + '...'
-              : current.question;
-            statusText.textContent = preview;
-          }
-        }
-      } else {
-        // Show carry buttons, hide status
-        if (carryBtn) carryBtn.style.display = '';
-        if (writeOwnBtn) writeOwnBtn.style.display = '';
-        if (status) status.classList.remove('active');
-        if (textarea) textarea.value = '';
-        if (writePanel) writePanel.classList.remove('active');
-      }
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════════════
   // MOVEMENT 3: RETURN — Button actions and page navigation
   // ═════════════════════════════════════════════════════════════════════
 
@@ -414,20 +291,17 @@
       const label = edge.direction === 'out'
         ? (EDGE_LABELS[edge.type] || edge.type)
         : `is ${EDGE_LABELS[edge.type] || edge.type} by`;
-      const statusClass = edge.status === 'author-confirmed' ? 'confirmed' : (edge.status === 'editorial' ? 'editorial' : 'open');
-      const statusLabel = STATUS_LABELS[edge.status] || edge.status;
       const targetHref = jcHrefFromRecord(otherId);
       const targetTitle = jcTitleFor(otherId);
 
       html += `
         <li class="thread-item">
           <div class="thread-edge">
-            <span class="thread-status thread-status--${statusClass}">${statusLabel}</span>
+            <span class="thread-status thread-status--confirmed">verified</span>
             <span>${label}</span>
             <a href="${targetHref}">${targetTitle}</a>
           </div>
           ${edge.note ? `<p class="thread-note">${edge.note}</p>` : ''}
-          <p class="thread-source">Source: ${edge.source}</p>
         </li>
       `;
     });
@@ -495,9 +369,9 @@
 
   // ═══════════════════════════════════════════════════════════════════
   // NO-INTERPRETATION ROUTE — ?mode=original
-  // Removes recommendations, discernment prompts, thread bridges, and the
-  // carry-question tool, leaving title, date, source status, and the
-  // original record content itself. Per design doc §6.2.
+  // Removes recommendations, discernment prompts, and thread bridges,
+  // leaving title, date, source status, and the original record content
+  // itself. Per design doc §6.2.
   // ═════════════════════════════════════════════════════════════════════
 
   function applyNoInterpretationMode() {
@@ -508,7 +382,6 @@
 
     const toHide = [
       '.discern-section',
-      '.carry-question-section',
       '#related-records-mount',
       '#threads-mount',
       '#doorway-themes-mount',
@@ -558,7 +431,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     renderRecordMarkdown();
     initDiscernChoices();
-    initCarryQuestion();
     initReturnChoices();
     initAudioPlayer();
     initGraphNav();
@@ -567,12 +439,5 @@
     initThreadConnections();
     trackLastRecord();
   });
-
-  // Expose globally for debugging
-  window.JordanCrossing = {
-    getCarryState,
-    saveCarryState,
-    clearCarryState
-  };
 
 })();

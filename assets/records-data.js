@@ -2,7 +2,7 @@
  * Jordan Crossing Beta — Record Metadata & Reviewed Thread Edges
  * Single source of truth for prev/next chronology and labeled bridges.
  *
- * Last updated: 2026-09-03T08:24:31.877Z (JC_EDGES rebuilt by scripts/rebuild-edges-from-lattice.mjs — Phase 12 Corpus Lattice verification)
+ * Last updated: 2026-09-03T11:26:26.465Z (JC_THREADS rebuilt by scripts/rebuild-threads-and-paths.mjs — Phase 13, sourced from the owner's corpus map documents via Corpus Lattice path matching, Threads 1-10 scope)
  *
  * IMPORTANT — governance:
  * - `order` is pure chronological fact (recorded date/time). Always safe to show.
@@ -12735,21553 +12735,21553 @@ const JC_EDGES = [
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-15-personal-meditation-spirit-led-transcript",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-15-personal-meditation-spirit-led-transcript",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-15-personal-meditation-spirit-led-transcript",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-15-personal-meditation-spirit-led-transcript",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-20-meditation-joseph-paul-severe",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "06-28-interior-judas-joy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-23-meditation-judas-iscariot-unbelief",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "06-28-interior-judas-joy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-shattering-scorecards-divine-providence",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-25-unsettling-grace-divine-sovereignty",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-26-severe-mercy-divine-discipline",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "06-20-grain-must-die-identity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-personal-meditation-divine-winnowing",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "03-06-meditation-grace-beyond-condemnation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-my-grace-sufficient-when",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-storm-appointed-love-judgment",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "08-04-intercessor-interceded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-27-lantern-filled-with-oil",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-28-already-forgotten-sea-resting-finished",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-28-already-forgotten-sea-resting-finished",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-28-already-forgotten-sea-resting-finished",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "02-28-already-forgotten-sea-resting-finished",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "06-12-pressed-every-side-yet",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "03-27-sermon-reflection-custom-made-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "04-25-when-wound-still-open",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "04-27-architecture-season-consecrated-mirror",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-reflection-gods-calling-weakness",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "05-10-triangle-kingdom-power-intercessors",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "05-23-weight-calling-narrowness-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "07-14-crucible-that-forges-priests",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "06-06-weight-between-missing-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-01-meditation-god-who-hunts",
     "to": "03-01-reflection-gods-calling-weakness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "03-04-personal-meditation-confronting-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "03-05-summary-obedience-spiritual-victory",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-02-meditation-spiritual-warfare-against",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "03-04-personal-meditation-confronting-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "03-05-summary-obedience-spiritual-victory",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-meditation-spiritual-warfare-against",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "03-05-summary-obedience-spiritual-victory",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-04-personal-meditation-confronting-spiritual",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "03-04-personal-meditation-confronting-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-05-summary-obedience-spiritual-victory",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-meditation-grace-beyond-condemnation",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-meditation-grace-beyond-condemnation",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-meditation-grace-beyond-condemnation",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-meditation-grace-beyond-condemnation",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-meditation-grace-beyond-condemnation",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "03-04-personal-meditation-confronting-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "03-05-summary-obedience-spiritual-victory",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-divine-discipline",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "03-04-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-spiritual-warfare",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "03-02-meditation-spiritual-warfare-against",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "03-04-personal-meditation-confronting-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "03-05-summary-obedience-spiritual-victory",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-sacred-threshold",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "03-06-meditation-grace-beyond-condemnation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "03-06-personal-meditation-spiritual-warfare",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "04-02-personal-meditation-descent-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "05-07-kind-man-she-deserves",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-06-personal-meditation-trembling-yes",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "06-06-weight-between-missing-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "03-12-meditation-doctrine-presence-being",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-07-reflection-performance-vs-presence",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "06-08-flaming-sword-returns-kenosis",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-11-personal-meditation-crucible-false",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "06-23-theological-meditation-cross-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-12-meditation-doctrine-presence-being",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-abiding-vs-striving",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "05-15-when-altar-holds-engine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "03-13-meditation-abiding-vs-striving",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "03-13-personal-meditation-faithfulness-obscurity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-meditation-spiritual-liberation-from",
     "to": "03-13-personal-meditation-spirit-perdition",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "03-14-personal-meditation-obedience-hiddenness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "03-13-meditation-abiding-vs-striving",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "03-13-meditation-spiritual-liberation-from",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "03-13-personal-meditation-spirit-perdition",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-faithfulness-obscurity",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "06-28-interior-judas-joy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "03-13-meditation-abiding-vs-striving",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "03-13-meditation-spiritual-liberation-from",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "03-13-personal-meditation-faithfulness-obscurity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "03-27-late-night-call-spiritual-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-13-personal-meditation-spirit-perdition",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-meditation-honesty-before-god",
     "to": "03-14-personal-meditation-obedience-hiddenness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-14-personal-meditation-obedience-hiddenness",
     "to": "03-14-meditation-honesty-before-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "04-02-personal-meditation-descent-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-17-personal-meditation-kenosis-death",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-19-personal-meditation-illusion-cliff",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-19-personal-meditation-illusion-cliff",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-19-personal-meditation-illusion-cliff",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-19-personal-meditation-illusion-cliff",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-19-personal-meditation-illusion-cliff",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-07-stone-at-gilgal-pastoral",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "05-07-kind-man-she-deserves",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-20-personal-meditation-hidden-mathematics",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "03-25-meditation-anticipation-shakinghebrews-12",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "03-25-theological-dialogue-union-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "03-11-personal-meditation-crucible-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-hebrews-12-divine",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "03-25-meditation-hebrews-12-divine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-meditation-anticipation-shakinghebrews-12",
     "to": "03-25-theological-dialogue-union-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "04-14-mountain-was-never-destination",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-reflection-severe-mercy-wilderness",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "03-25-meditation-hebrews-12-divine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "03-25-meditation-anticipation-shakinghebrews-12",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-25-theological-dialogue-union-with",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "03-27-sermon-reflection-custom-made-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "03-27-sermon-reflection-kingdom-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-late-night-call-spiritual-authority",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "03-27-late-night-call-spiritual-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "03-27-sermon-reflection-kingdom-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-custom-made-blessing",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "06-16-architecture-provision-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "08-20-refund-that-cost-nothing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "03-27-late-night-call-spiritual-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "03-27-sermon-reflection-custom-made-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-sermon-reflection-kingdom-authority",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-27-spiritual-reflection-recognizing-gods",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "07-28-not-provided-sniffing-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "03-28-sermon-reflection-finished-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-divine-standards",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-finished-work",
     "to": "03-28-sermon-reflection-prayer-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "03-28-sermon-reflection-finished-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-prayer-spiritual",
     "to": "07-17-when-smoke-fills-sky",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "03-28-sermon-reflection-prayer-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "06-21-excellency-as-unto-lord",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-sermon-reflection-furnace-secret",
     "to": "07-17-when-smoke-fills-sky",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-spiritual-reflection-truth-telling-wilderness",
     "to": "06-25-fire-shut-up-bones",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-spiritual-reflection-truth-telling-wilderness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-spiritual-reflection-truth-telling-wilderness",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-spiritual-reflection-truth-telling-wilderness",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "07-22-waiting-threshold-love-uncertainty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-28-theological-dialogue-suffering-intercession",
     "to": "07-17-when-smoke-fills-sky",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-29-1304-personal-meditation-hidden",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-1020-reflection-enter-with",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-30-meditation-loving-captivity-chosen",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "03-28-sermon-reflection-finished-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "03-31-personal-meditation-standing-still",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "07-24-carving-god-from-wood",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-01-0943-reflection-hunger-that",
     "to": "04-07-1233-call-meditation-staircase",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-02-personal-meditation-descent-that",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0221-teaching-reflection-whole",
     "to": "04-03-0637-reflection-anger-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0221-teaching-reflection-whole",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0221-teaching-reflection-whole",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0221-teaching-reflection-whole",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0221-teaching-reflection-whole",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "04-03-0221-teaching-reflection-whole",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-0637-reflection-anger-that",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "04-03-0221-teaching-reflection-whole",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "04-03-0637-reflection-anger-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1120-reflection-table-being",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1243-personal-meditation-contrite",
     "to": "04-03-0221-teaching-reflection-whole",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1243-personal-meditation-contrite",
     "to": "04-03-0637-reflection-anger-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1243-personal-meditation-contrite",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-03-1243-personal-meditation-contrite",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "05-03-every-breath-was-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-1333-personal-meditation-backward",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-2352-personal-meditation-torn",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-2352-personal-meditation-torn",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-2352-personal-meditation-torn",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-2352-personal-meditation-torn",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-04-2352-personal-meditation-torn",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "06-06-weight-between-missing-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "06-29-pastor-who-bypassed-security",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-sermon-reflection-mercy-hidden",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "03-28-spiritual-reflection-truth-telling-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "06-11-when-warfare-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-05-spiritual-reflection-wilderness-provision",
     "to": "05-09-geometry-increase-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "04-06-1926-personal-meditation-where",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-theological-meditation-body-as",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "04-06-1926-personal-meditation-where",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1648-reflection-roses-with",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "06-09-at-time-not-provided",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-06-1926-personal-meditation-where",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0508-personal-meditation-bring",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0508-personal-meditation-bring",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0508-personal-meditation-bring",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0646-reflection-gift-that",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0646-reflection-gift-that",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0646-reflection-gift-that",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0646-reflection-gift-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-0646-reflection-gift-that",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-1233-call-meditation-staircase",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-1233-call-meditation-staircase",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-1233-call-meditation-staircase",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-1233-call-meditation-staircase",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-1233-call-meditation-staircase",
     "to": "06-23-ad-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "04-12-26-at-1756-four",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-meditation-notice-casual-household",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-07-template-guidance-requirements-scriptural",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "07-07-holiness-hidden-ordinary-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "07-09-altar-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-1027-reflection-when-ordinary",
     "to": "07-24-altar-ordinary-kitchen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-recording-highlights",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-theological-reflection-consecration-ai",
     "to": "03-28-sermon-reflection-finished-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-theological-reflection-consecration-ai",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-theological-reflection-consecration-ai",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-08-glimpse-into-daily-rhythm",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-09-daily-log-theological-depth",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-narrow-path-has-many",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-narrow-path-has-many",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-narrow-path-has-many",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-narrow-path-has-many",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-four-months-faithfulness-panic",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-four-months-faithfulness-panic",
     "to": "06-21-excellency-as-unto-lord",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-four-months-faithfulness-panic",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-four-months-faithfulness-panic",
     "to": "06-23-ad-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-way-home-worship-weariness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "05-14-faithful-small-things-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "06-12-morning-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-factory-floor",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-daily-log-spiritual-discernment",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "06-23-raised-killer-covered-by",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-10-personal-meditation-identity-iniquity",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-comfort-loop-flaming-sword",
     "to": "04-10-four-months-faithfulness-panic",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-spiritual",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-night-kenosis-networks-ordinary",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-daily-log-reflection-trust",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-11-seed-you-do-not-2",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "06-23-raised-killer-covered-by",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-when-love-watches-cannot",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-2026-at-various-hours",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-2026-at-various-hours",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-2026-at-various-hours",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-2026-at-various-hours",
     "to": "04-12-26-at-1756-four",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "04-12-2026-at-various-hours",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-26-at-1756-four",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-12-forged-tested-turned-spiritual",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "04-10-personal-meditation-identity-iniquity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "07-27-reflection-deliverance-mercy-streets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-road-river-robbery-recording",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "04-14-when-gem-man-at",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "04-14-when-hedge-comes-down",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-mountain-was-never-destination",
     "to": "04-23-wilderness-architecture-topology-formation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "07-27-reflection-deliverance-mercy-streets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "07-06-when-kingdom-finds-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-gem-man-at",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-hedge-comes-down",
     "to": "06-16-when-tooth-cracks-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "07-11-windows-watchers-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-14-when-midnight-hour-keeps",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "06-15-when-kingdom-economy-breaks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "06-16-architecture-provision-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-table-set-wilderness-kingdom",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-angel-said-arise-worthiness",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-angel-said-arise-worthiness",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-angel-said-arise-worthiness",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-16-angel-said-arise-worthiness",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-walking-wonder-day-among",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-living-parable-presence-provision",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-cave-below-summit-above",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "06-10-altar-marketplace-mantles-anonymity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "04-21-pm-when-providence-wears",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "04-21-oath-you-cannot-serve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-18-come-down-from-mountain",
     "to": "07-02-gift-wasted-time-shalom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-where-waters-force-their",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-19-wandering-together-sacred-ordinary",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-spirit-moves-before",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-together-ordinary-day-rain",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-when-wrong-cable-car",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-20-always-uphill-sacred-ordinary",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "04-18-come-down-from-mountain",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "06-23-call-reflection-covenant-commerce",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "09-01-when-sale-sold-everything",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-pm-when-providence-wears",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "05-15-mirror-night-what-drunk",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "07-05-drunkards-word-turning-soul",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-21-oath-you-cannot-serve",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-22-when-drinking-stops-grief",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "04-14-mountain-was-never-destination",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-23-wilderness-architecture-topology-formation",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-weariness-speaks-louder",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-weariness-speaks-louder",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-weariness-speaks-louder",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-weariness-speaks-louder",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-through-04-25-topology-center",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-through-04-25-topology-center",
     "to": "04-27-architecture-season-consecrated-mirror",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-through-04-25-topology-center",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-through-04-25-topology-center",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-through-04-25-topology-center",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-kitchen-burns-road",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-kitchen-burns-road",
     "to": "04-25-through-04-25-topology-center",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-kitchen-burns-road",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-kitchen-burns-road",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-wound-still-open",
     "to": "03-27-sermon-reflection-custom-made-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-wound-still-open",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-wound-still-open",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-wound-still-open",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-25-when-wound-still-open",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-26-when-mask-falls-wilderness",
     "to": "04-25-through-04-25-topology-center",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-27-architecture-season-consecrated-mirror",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-27-architecture-season-consecrated-mirror",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-27-architecture-season-consecrated-mirror",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-27-architecture-season-consecrated-mirror",
     "to": "03-13-meditation-abiding-vs-striving",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-27-architecture-season-consecrated-mirror",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-when-fire-falls-false",
     "to": "03-28-sermon-reflection-prayer-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-when-fire-falls-false",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-when-fire-falls-false",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-when-fire-falls-false",
     "to": "04-25-when-weariness-speaks-louder",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-when-fire-falls-false",
     "to": "03-28-spiritual-reflection-truth-telling-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson",
     "to": "03-12-meditation-doctrine-presence-being",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson-2",
     "to": "06-26-when-business-becomes-brotherhood",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson-2",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson-2",
     "to": "04-25-through-04-25-topology-center",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-28-mercy-parking-lot-lesson-2",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-false-ascent-narrow-door",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-false-ascent-narrow-door",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-false-ascent-narrow-door",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-false-ascent-narrow-door",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-light-that-breaks-descent",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-light-that-breaks-descent",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-light-that-breaks-descent",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-light-that-breaks-descent",
     "to": "04-25-when-weariness-speaks-louder",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-29-light-that-breaks-descent",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "05-11-lost-jerusalem-found-at",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-when-voice-you-trust",
     "to": "04-30-come-out-her-backward",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "06-10-five-dollars-nineteen-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "04-30-when-voice-you-trust",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "04-30-come-out-her-backward",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-01-when-lord-meets-man",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-when-spirit-grieves-room",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-when-spirit-grieves-room",
     "to": "05-18-when-gospel-not-gospel",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-when-spirit-grieves-room",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-when-spirit-grieves-room",
     "to": "09-01-when-sale-sold-everything",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-right-road-wrong-lane",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-right-road-wrong-lane",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-right-road-wrong-lane",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-right-road-wrong-lane",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-02-right-road-wrong-lane",
     "to": "05-02-when-spirit-grieves-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-when-wolf-wears-collar",
     "to": "05-18-when-gospel-not-gospel",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-every-breath-was-death",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-every-breath-was-death",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-03-every-breath-was-death",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-06-cross-beneath-weight-all",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-07-kind-man-she-deserves",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-07-kind-man-she-deserves",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-07-kind-man-she-deserves",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-07-kind-man-she-deserves",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-house-shaking-road",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-08-when-trap-was-set",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-09-geometry-increase-kingdom-stewardship",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-09-geometry-increase-kingdom-stewardship",
     "to": "06-24-when-lord-pitches-every",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-09-geometry-increase-kingdom-stewardship",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-09-geometry-increase-kingdom-stewardship",
     "to": "06-26-glory-that-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-triangle-kingdom-power-intercessors",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-10-brotherhood-round-table-god",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-11-lost-jerusalem-found-at",
     "to": "05-28-when-something-keeps-saying",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-11-lost-jerusalem-found-at",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-11-lost-jerusalem-found-at",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "05-12-gospel-not-gatekeeper-inside-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "05-12-led-through-narrow-place",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "03-25-reflection-severe-mercy-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-cloth-cross-mercy-that",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "06-29-when-safety-nets-are",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-gospel-not-gatekeeper-inside-out",
     "to": "05-19-weight-we-carry-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-machine-that-mirrors-mind",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-machine-that-mirrors-mind",
     "to": "05-12-gospel-not-gatekeeper-inside-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-machine-that-mirrors-mind",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-machine-that-mirrors-mind",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "06-23-walking-back-into-dark",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-12-led-through-narrow-place",
     "to": "05-09-geometry-increase-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "06-12-morning-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-faithful-small-things-meditation",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-14-midnight-desk-open-word",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-word-true-but",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-word-true-but",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-word-true-but",
     "to": "04-28-when-fire-falls-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "05-15-mirror-night-what-drunk",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "05-15-when-word-true-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "04-14-mountain-was-never-destination",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "03-28-sermon-reflection-prayer-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-when-altar-holds-engine",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mantle-passed-intercession-begun",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mantle-passed-intercession-begun",
     "to": "04-25-when-weariness-speaks-louder",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mantle-passed-intercession-begun",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mantle-passed-intercession-begun",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mirror-night-what-drunk",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mirror-night-what-drunk",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mirror-night-what-drunk",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-15-mirror-night-what-drunk",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "05-15-when-altar-holds-engine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "05-16-two-paths-one-jerusalem",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "05-16-what-better-thing-than",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "05-16-when-ordinary-conversation-becomes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-broken-spirit-speaks",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "03-07-reflection-performance-vs-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "03-25-theological-dialogue-union-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "04-28-mercy-parking-lot-lesson",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-when-ordinary-conversation-becomes",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-what-better-thing-than",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-what-better-thing-than",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-what-better-thing-than",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-what-better-thing-than",
     "to": "04-28-mercy-parking-lot-lesson",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-what-better-thing-than",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "05-16-two-paths-one-jerusalem",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "05-16-what-better-thing-than",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "05-16-when-ordinary-conversation-becomes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "06-07-weight-you-carry-through",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-law-that-could-not",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-16-two-paths-one-jerusalem",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-book-that-named-dark",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-book-that-named-dark",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-book-that-named-dark",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-book-that-named-dark",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-book-that-named-dark",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-when-gospel-not-gospel",
     "to": "03-13-personal-meditation-spirit-perdition",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-when-gospel-not-gospel",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-when-gospel-not-gospel",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-when-gospel-not-gospel",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
     "to": "03-13-personal-meditation-faithfulness-obscurity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-18-brilliant-far-country-gifting",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-where-broken-are-guarded",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-where-broken-are-guarded",
     "to": "07-01-when-desperate-become-motivated",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-where-broken-are-guarded",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-where-broken-are-guarded",
     "to": "05-19-weight-we-carry-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "03-12-meditation-doctrine-presence-being",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-when-pain-wears-costume",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-weight-we-carry-together",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "03-12-meditation-doctrine-presence-being",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-19-temple-still-under-construction",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "07-13-my-broke-rich-sound",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-20-what-eyes-cannot-measure",
     "to": "05-15-mirror-night-what-drunk",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-21-builders-blueprint-weight-faithfulness",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-21-builders-blueprint-weight-faithfulness",
     "to": "07-01-when-god-brings-right",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-21-builders-blueprint-weight-faithfulness",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-21-builders-blueprint-weight-faithfulness",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-22-standing-at-edge-cliff",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "03-11-personal-meditation-crucible-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "04-02-personal-meditation-descent-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "06-20-grain-must-die-identity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-23-weight-calling-narrowness-gate",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "07-02-kept-by-suffering-sober-mindedness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-cross-requires-judas",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-emperor-has-no",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-emperor-has-no",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-emperor-has-no",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-emperor-has-no",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "06-07-stone-at-gilgal-pastoral",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-saved-loaves-gilgal-stone",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "06-29-when-safety-nets-are",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-24-when-poem-knew-more",
     "to": "07-06-appointed-meeting-living-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "04-25-when-weariness-speaks-louder",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-when-heat-wont-break",
     "to": "07-02-when-builder-needs-rest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-26-tablet-written-before-door",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "05-27-when-spirit-interrupts-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-at-0100-when-love",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-you-cannot-hate",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-you-cannot-hate",
     "to": "04-10-personal-meditation-identity-iniquity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-you-cannot-hate",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-moment-between-brothers-before",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-27-when-spirit-interrupts-grief",
     "to": "08-04-intercessor-interceded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "05-11-lost-jerusalem-found-at",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "03-13-meditation-abiding-vs-striving",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "07-03-stepping-into-jordan-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-something-keeps-saying",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-28-when-covenant-speaks-what",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-29-letter-was-never-hers",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-29-letter-was-never-hers",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-29-letter-was-never-hers",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-29-letter-was-never-hers",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-29-letter-was-never-hers",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-real-thing-cannot-be",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-real-thing-cannot-be",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-real-thing-cannot-be",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-real-thing-cannot-be",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-real-thing-cannot-be",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-30-love-at-table-light",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "05-31-first-love-hidden-intercession",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "05-15-mirror-night-what-drunk",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-grace-second-day-faithfulness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-refusing-escapism-returning-first",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-refusing-escapism-returning-first",
     "to": "06-02-altar-return-training-ground",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-refusing-escapism-returning-first",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-01-refusing-escapism-returning-first",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-02-altar-return-training-ground",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-02-altar-return-training-ground",
     "to": "06-01-refusing-escapism-returning-first",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-02-altar-return-training-ground",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-03-passing-through-temporary-places",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-04-burning-bush-old-refuge",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-05-when-spirit-intercepts-counterfeit",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-05-when-spirit-intercepts-counterfeit",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-05-when-spirit-intercepts-counterfeit",
     "to": "04-29-false-ascent-narrow-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-05-when-spirit-intercepts-counterfeit",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-iron-koinnia-kitchen-that",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "04-07-1233-call-meditation-staircase",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-06-weight-between-missing-waiting",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "05-19-when-pain-wears-costume",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-weight-you-carry-through",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-thread-lamp-falling-scales",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-thread-lamp-falling-scales",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-thread-lamp-falling-scales",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-thread-lamp-falling-scales",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-at-gilgal-pastoral",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "06-07-stone-at-gilgal-pastoral",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-stone-she-set-crossing",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-when-brotherhood-holds-line",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-07-when-brotherhood-holds-line",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-07-weight-you-carry-through",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-07-stone-at-gilgal-pastoral",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "04-30-come-out-her-backward",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-07-wilderness-before-thailand-sacred",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "06-08-flaming-sword-returns-kenosis",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-murmuration-releasing-what",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "07-01-when-system-becomes-scaffolding",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-have-you-forgotten-where",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-kingdom-builds-its",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-flaming-sword-returns-kenosis",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-flaming-sword-returns-kenosis",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-flaming-sword-returns-kenosis",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-flaming-sword-returns-kenosis",
     "to": "03-11-personal-meditation-crucible-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-flaming-sword-returns-kenosis",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "06-08-flaming-sword-returns-kenosis",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "07-01-when-system-becomes-scaffolding",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-at-morning-commute-youve",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-mirror-you-forgot-face",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "06-08-flaming-sword-returns-kenosis",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-08-when-brotherhood-business-mirror",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "04-06-1926-personal-meditation-where",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-at-time-not-provided",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "06-19-hearing-god-koinonia-weve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-09-wind-weather-witness-when",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "06-10-five-dollars-nineteen-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "07-27-running-faith-not-gas",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-forty-six-cents",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exodus-babylon-begins-small",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-five-dollars-nineteen-cents",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exact-amount-exact-moment",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exact-amount-exact-moment",
     "to": "06-23-call-reflection-faith-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-exact-amount-exact-moment",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "04-18-come-down-from-mountain",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-10-altar-marketplace-mantles-anonymity",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-11-when-warfare-wilderness",
     "to": "03-28-spiritual-reflection-truth-telling-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-11-when-warfare-wilderness",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-11-when-warfare-wilderness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-11-when-warfare-wilderness",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "06-21-excellency-as-unto-lord",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-morning-that-would-not",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "06-07-wilderness-before-thailand-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-pressed-every-side-yet",
     "to": "08-04-intercessor-interceded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-chair-still-holds-shape",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-12-when-searching-hand-reaches",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "06-29-when-world-shaking-crib",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "06-18-tender-fear-confirmed-life",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "07-21-mango-morning-sickness-baby",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-his-plan-interrupts",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-as-it-egypt-so",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-14-when-lament-becomes-cradle",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "05-15-when-altar-holds-engine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-when-kingdom-economy-breaks",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "06-28-interior-judas-joy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "06-16-architecture-provision-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-15-out-egypt-at-last",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "06-23-call-reflection-faith-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-blessing-arrives-at",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "06-14-when-his-plan-interrupts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "06-18-tender-fear-confirmed-life",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-thank-you-my-friend",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "07-01-when-god-brings-right",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-fire-falls-unlikely",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "06-14-when-his-plan-interrupts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "06-16-thank-you-my-friend",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-out-egypt-into-promise",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-tooth-cracks-spirit",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-tooth-cracks-spirit",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-tooth-cracks-spirit",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-when-tooth-cracks-spirit",
     "to": "06-23-raised-killer-covered-by",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "05-15-when-altar-holds-engine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-16-architecture-provision-kingdom-stewardship",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-17-do-not-celebrate-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-17-standing-still-under-blood",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "06-17-grace-before-correction-ministry",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-when-mirror-speaks-old",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "04-25-when-weariness-speaks-louder",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-whose-voice-greets-me",
     "to": "05-26-when-heat-wont-break",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-do-not-celebrate-with",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-do-not-celebrate-with",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-do-not-celebrate-with",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-standing-still-under-blood",
     "to": "06-23-raised-killer-covered-by",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "07-02-kept-by-suffering-sober-mindedness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-pushing-through-pain-keeping",
     "to": "07-17-when-burden-real-bottom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-17-grace-before-correction-ministry",
     "to": "06-29-when-god-names-it",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-word-received-but",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-wilderness-solitude-shape-man",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-tender-fear-confirmed-life",
     "to": "06-14-when-his-plan-interrupts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-tender-fear-confirmed-life",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-tender-fear-confirmed-life",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-tender-fear-confirmed-life",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "06-16-architecture-provision-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-18-when-god-killed-ego",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-grace-peace-algorithm-kingdom",
     "to": "06-29-when-safety-nets-are",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "04-25-through-04-25-topology-center",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-work-with-what",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "07-02-when-builder-needs-rest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-tool-falls-short",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-19-when-tool-falls-short",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-19-when-harvest-meets-algorithm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-19-building-with-wisdom-under",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-name-already-given-faith",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-connector-who-builds-background",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-connector-who-builds-background",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-connector-who-builds-background",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-connector-who-builds-background",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-connector-who-builds-background",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-19-when-tool-falls-short",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-19-name-already-given-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-19-building-with-wisdom-under",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-harvest-meets-algorithm",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "06-19-when-tool-falls-short",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "06-19-name-already-given-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "06-19-when-harvest-meets-algorithm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-building-with-wisdom-under",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-hearing-god-koinonia-weve",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-hearing-god-koinonia-weve",
     "to": "06-20-when-system-doesnt-know",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-hearing-god-koinonia-weve",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-hearing-god-koinonia-weve",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "06-19-when-tool-falls-short",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "06-19-when-harvest-meets-algorithm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "06-19-building-with-wisdom-under",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-19-when-builder-calls-his",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "07-02-gift-wasted-time-shalom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-order-chaos-running-breaking",
     "to": "07-13-my-broke-rich-sound",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-whisper-that-would-not",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "04-10-personal-meditation-identity-iniquity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-weight-before-word-carrying",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-when-system-doesnt-know",
     "to": "06-19-hearing-god-koinonia-weve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-when-system-doesnt-know",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-when-system-doesnt-know",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-when-system-doesnt-know",
     "to": "06-23-reflection-ai-voice-agents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "06-19-name-already-given-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-20-grain-must-die-identity",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "06-12-morning-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-excellency-as-unto-lord",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-conversation-reflection-spiritual-transformation",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-conversation-reflection-spiritual-transformation",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-conversation-reflection-spiritual-transformation",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-conversation-reflection-spiritual-transformation",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-conversation-reflection-spiritual-transformation",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-call-reflection-misapplied-gifting",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-call-reflection-misapplied-gifting",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-call-reflection-misapplied-gifting",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-21-call-reflection-misapplied-gifting",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-spiritual-discernment",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-spiritual-discernment",
     "to": "07-05-drunkards-word-turning-soul",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-spiritual-discernment",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-spiritual-discernment",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-spiritual-discernment",
     "to": "07-28-not-provided-sniffing-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-signpost-speaks-christ-me",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-brotherhood-accountability",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-brotherhood-accountability",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-brotherhood-accountability",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-brotherhood-accountability",
     "to": "06-22-commissioned-obscurity-providence-partnership",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-brotherhood-accountability",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-commissioned-obscurity-providence-partnership",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-spiritual-wilderness",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-spiritual-wilderness",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-spiritual-wilderness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-spiritual-wilderness",
     "to": "08-09-when-zeal-rides-like",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-spiritual-wilderness",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "07-27-running-faith-not-gas",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-call-reflection-daily-faith",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "06-20-when-system-doesnt-know",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-when-machine-remembers-spirit",
     "to": "07-06-appointed-meeting-living-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "04-27-architecture-season-consecrated-mirror",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-22-conversation-reflection-sanctification-spiritual",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-koinonia-lambs",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-koinonia-lambs",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-koinonia-lambs",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-koinonia-lambs",
     "to": "06-23-call-reflection-faith-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark",
     "to": "06-23-walking-back-into-dark-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark",
     "to": "06-23-call-reflection-koinonia-lambs",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-faith-provision",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-faith-provision",
     "to": "06-26-when-business-becomes-brotherhood",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-faith-provision",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-faith-provision",
     "to": "06-23-call-reflection-koinonia-lambs",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-faith-provision",
     "to": "07-02-stewards-table-building-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "06-07-stone-at-gilgal-pastoral",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-where-your-faith-testimony",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-reflection-ai-voice-agents",
     "to": "06-20-when-system-doesnt-know",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-reflection-ai-voice-agents",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-reflection-ai-voice-agents",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark-2",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark-2",
     "to": "06-23-walking-back-into-dark",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark-2",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-walking-back-into-dark-2",
     "to": "07-15-tested-immediately-after-learning",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-theological-meditation-cross-as",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-ad-that-would-not",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-ad-that-would-not",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-ad-that-would-not",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-ad-that-would-not",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-ad-that-would-not",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-covenant-commerce",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-covenant-commerce",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-covenant-commerce",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-covenant-commerce",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-covenant-commerce",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
     "to": "04-27-architecture-season-consecrated-mirror",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-raised-killer-covered-by",
     "to": "03-31-personal-meditation-standing-still",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-spiritual-discernment",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-spiritual-discernment",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-spiritual-discernment",
     "to": "08-11-when-ache-real-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-spiritual-discernment",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-23-call-reflection-spiritual-discernment",
     "to": "06-23-raised-killer-covered-by",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "06-24-weight-word-language-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "06-24-weight-gifts-sail-surrender",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "07-12-when-obedience-entire-sermon",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-when-lord-pitches-every",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-word-language-waiting",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-word-language-waiting",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-word-language-waiting",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-word-language-waiting",
     "to": "06-25-fire-shut-up-bones",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-personal-meditation-ego-death",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-personal-meditation-ego-death",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-personal-meditation-ego-death",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-personal-meditation-ego-death",
     "to": "06-12-when-searching-hand-reaches",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-personal-meditation-ego-death",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-gifts-sail-surrender",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-gifts-sail-surrender",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-gifts-sail-surrender",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-24-weight-gifts-sail-surrender",
     "to": "07-02-stewards-table-building-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-call-reflection-faith-business",
     "to": "07-03-when-work-grows-larger",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "04-08-glimpse-into-daily-rhythm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "06-23-theological-meditation-cross-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "04-28-mercy-parking-lot-lesson",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-personal-meditation-paideia-webhooks",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "06-19-when-builder-calls-his",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-when-closer-cannot-be",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "05-23-weight-calling-narrowness-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "03-28-spiritual-reflection-truth-telling-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "06-24-weight-word-language-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-25-fire-shut-up-bones",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "04-03-1243-personal-meditation-contrite",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "07-22-waiting-threshold-love-uncertainty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-covenant-feels-like",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-business-becomes-brotherhood",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-business-becomes-brotherhood",
     "to": "06-27-stone-walled-canteen-brotherhood-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-business-becomes-brotherhood",
     "to": "07-24-altar-ordinary-kitchen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-business-becomes-brotherhood",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-when-business-becomes-brotherhood",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-glory-that-has-no",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-glory-that-has-no",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-26-glory-that-has-no",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "03-06-personal-meditation-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "05-14-faithful-small-things-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "06-12-morning-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "06-23-call-reflection-faith-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-real-world-eden-work",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "04-29-light-that-breaks-descent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-when-apology-came-too",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-stone-walled-canteen-brotherhood-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-stone-walled-canteen-brotherhood-that",
     "to": "08-07-gentiles-at-threshold-prophets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-stone-walled-canteen-brotherhood-that",
     "to": "03-01-meditation-god-who-hunts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-27-stone-walled-canteen-brotherhood-that",
     "to": "04-23-wilderness-architecture-topology-formation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-28-interior-judas-joy-that",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "06-14-when-his-plan-interrupts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "06-18-tender-fear-confirmed-life",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "06-29-fire-bones-providence-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-world-shaking-crib",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-jealous-you",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-jealous-you",
     "to": "04-14-road-river-robbery-recording",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-jealous-you",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-names-it",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-names-it",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-names-it",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-god-names-it",
     "to": "06-29-when-god-jealous-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-fire-bones-providence-provision",
     "to": "03-28-spiritual-reflection-truth-telling-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-fire-bones-providence-provision",
     "to": "06-25-fire-shut-up-bones",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-fire-bones-providence-provision",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-fire-bones-providence-provision",
     "to": "06-29-when-world-shaking-crib",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-safety-nets-are",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-safety-nets-are",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-safety-nets-are",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-when-safety-nets-are",
     "to": "09-01-right-road-wrong-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-pastor-who-bypassed-security",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-pastor-who-bypassed-security",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-29-pastor-who-bypassed-security",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-dirty-hands-pure-heart",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-dirty-hands-pure-heart",
     "to": "06-22-call-reflection-spiritual-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-dirty-hands-pure-heart",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-when-door-open-devil",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-when-door-open-devil",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-when-door-open-devil",
     "to": "06-23-call-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-when-door-open-devil",
     "to": "08-11-when-ache-real-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "06-30-when-door-open-devil",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-silence-heaven-feels",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-silence-heaven-feels",
     "to": "07-01-standing-at-rampart-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-silence-heaven-feels",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-silence-heaven-feels",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-standing-at-rampart-waiting",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-standing-at-rampart-waiting",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-standing-at-rampart-waiting",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-standing-at-rampart-waiting",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-standing-at-rampart-waiting",
     "to": "06-23-ad-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-desperate-become-motivated",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-desperate-become-motivated",
     "to": "07-27-reflection-deliverance-mercy-streets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-desperate-become-motivated",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-execute-adjust-trust-process",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-weaver-threads-two",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-weaver-threads-two",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-weaver-threads-two",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-weaver-threads-two",
     "to": "06-23-call-reflection-koinonia-lambs",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-system-becomes-scaffolding",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-system-becomes-scaffolding",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-system-becomes-scaffolding",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-system-becomes-scaffolding",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-god-brings-right",
     "to": "05-21-builders-blueprint-weight-faithfulness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-god-brings-right",
     "to": "07-02-infrastructure-we-became-without",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-god-brings-right",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-01-when-god-brings-right",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-laborer-his-wages-faith",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-infrastructure-we-became-without",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-infrastructure-we-became-without",
     "to": "07-23-kingdom-has-infrastructure-too",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-infrastructure-we-became-without",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-infrastructure-we-became-without",
     "to": "07-01-when-god-brings-right",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-ordinary-altar-holiness-hidden",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-ordinary-altar-holiness-hidden",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-ordinary-altar-holiness-hidden",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-ordinary-altar-holiness-hidden",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-kept-by-suffering-sober-mindedness",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-kept-by-suffering-sober-mindedness",
     "to": "07-15-where-were-you-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-kept-by-suffering-sober-mindedness",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-kept-by-suffering-sober-mindedness",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-stewards-table-building-with",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-stewards-table-building-with",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-stewards-table-building-with",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-stewards-table-building-with",
     "to": "08-25-empty-handed-at-threshold-faithfulness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-gift-wasted-time-shalom",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-gift-wasted-time-shalom",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-gift-wasted-time-shalom",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-gift-wasted-time-shalom",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-gift-wasted-time-shalom",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "07-02-stewards-table-building-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "07-03-when-work-grows-larger",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-02-when-builder-needs-rest",
     "to": "07-02-gift-wasted-time-shalom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "07-03-heartbeat-we-almost-mourned",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-stepping-into-jordan-before",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-work-grows-larger",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-work-grows-larger",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-work-grows-larger",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-work-grows-larger",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-beloved-valley-i",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-beloved-valley-i",
     "to": "07-22-waiting-threshold-love-uncertainty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-beloved-valley-i",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-when-beloved-valley-i",
     "to": "07-17-when-smoke-fills-sky",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "07-03-stepping-into-jordan-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-blessed-be-name-sovereignty",
     "to": "07-03-heartbeat-we-almost-mourned",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-heartbeat-we-almost-mourned",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-heartbeat-we-almost-mourned",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-heartbeat-we-almost-mourned",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-heartbeat-we-almost-mourned",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-03-heartbeat-we-almost-mourned",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-little-elijah-lives-heartbeats",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "05-18-when-gospel-not-gospel",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-when-stones-ring-like",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-road-we-walk-together",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-road-we-walk-together",
     "to": "07-01-when-weaver-threads-two",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-road-we-walk-together",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-road-we-walk-together",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "07-06-loneliness-luminous-mind-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-04-soul-too-small-carry",
     "to": "06-27-real-world-eden-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-network-covenant-proximity-purpose",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-network-covenant-proximity-purpose",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-network-covenant-proximity-purpose",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-network-covenant-proximity-purpose",
     "to": "07-02-infrastructure-we-became-without",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-network-covenant-proximity-purpose",
     "to": "06-23-call-reflection-covenant-commerce",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-when-drunkard-spoke-curse",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-drunkards-word-turning-soul",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-drunkards-word-turning-soul",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-drunkards-word-turning-soul",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-drunkards-word-turning-soul",
     "to": "07-01-when-desperate-become-motivated",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "07-02-laborer-his-wages-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-05-darkness-that-remembers-fire",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "06-07-thread-lamp-falling-scales",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-book-matthew-thread-that",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "05-15-when-altar-holds-engine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "06-16-architecture-provision-kingdom-stewardship",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "06-19-when-harvest-meets-algorithm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-business-begins-breathe",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "05-18-brilliant-far-country-gifting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-loneliness-luminous-mind-weight",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-appointed-meeting-living-name",
     "to": "03-28-sermon-reflection-finished-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-appointed-meeting-living-name",
     "to": "07-01-when-god-brings-right",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-appointed-meeting-living-name",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-appointed-meeting-living-name",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "04-14-when-gem-man-at",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-06-when-kingdom-finds-you",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holy-ground-ordinary-days",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holy-ground-ordinary-days",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holy-ground-ordinary-days",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "07-24-altar-ordinary-kitchen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-holiness-hidden-ordinary-meditation",
     "to": "08-09-when-zeal-rides-like",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "06-23-ad-that-would-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-ordinary-holiness-waiting-together",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "03-13-personal-meditation-spirit-perdition",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "06-30-when-door-open-devil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "09-01-alarm-that-was-only",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-when-shall-i-awake",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-moment-between-brothers-business",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "05-19-weight-we-carry-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "06-18-tender-fear-confirmed-life",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "07-15-where-were-you-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-07-rod-well-covenant-that",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-blue-flame-heartbeat-sanctification",
     "to": "07-09-altar-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "07-02-ordinary-altar-holiness-hidden",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-altar-ordinary",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-recording-spirit-led-scriptural-meditation",
     "to": "04-07-template-guidance-requirements-scriptural",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-when-satan-must-ask",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-when-satan-must-ask",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-when-satan-must-ask",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-when-satan-must-ask",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-when-satan-must-ask",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "05-19-where-broken-are-guarded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-09-authority-that-silences-what",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-10-when-faith-sustains-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "02-27-my-grace-sufficient-when",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-every-door-closes",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "06-23-call-reflection-koinonia-lambs",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-at-hhmm-lord-restores",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-holding-name-loose-meditation",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-enemy-has-power-but",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-faith-sustains-what",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-watchman-fears-gate",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-when-faith-sustains-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "06-05-when-spirit-intercepts-counterfeit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-demon-named-abigail-cat",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-abigail-fell-silent",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-11-sliver-light-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-10-enemy-has-power-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-10-when-abigail-fell-silent",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-10-when-heavens-moved-intercession",
     "to": "04-12-when-love-watches-cannot",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "07-10-at-hhmm-lord-restores",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-ordinary-road-between-brothers",
     "to": "07-01-when-weaver-threads-two",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "07-07-holiness-hidden-ordinary-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "07-11-everything-you-want-except",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "07-11-ordinary-road-between-brothers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-sliver-light-voice-that",
     "to": "07-11-windows-watchers-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-everything-you-want-except",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "02-27-lantern-filled-with-oil",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "06-03-passing-through-temporary-places",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "06-23-walking-back-into-dark-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-11-windows-watchers-voice-that",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-12-when-obedience-entire-sermon",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-12-when-obedience-entire-sermon",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-12-when-obedience-entire-sermon",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-12-when-obedience-entire-sermon",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-12-when-obedience-entire-sermon",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sacred-ordinary-finding-grace",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-ordinary-threshold-where-brotherhood",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-sabbath-womb-rest-as",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "07-06-appointed-meeting-living-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "07-15-tested-immediately-after-learning",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-13-my-broke-rich-sound",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "06-22-when-machine-remembers-spirit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-spirit-speaks-before",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "05-03-every-breath-was-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "03-11-personal-meditation-crucible-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "03-25-meditation-hebrews-12-divine",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "06-24-weight-word-language-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-crucible-that-forges-priests",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "06-24-weight-word-language-waiting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "09-01-right-road-wrong-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-14-when-watchman-would-rather",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "02-27-storm-appointed-love-judgment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "03-28-sermon-reflection-furnace-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "07-02-kept-by-suffering-sober-mindedness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-where-were-you-when",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-mantle-descends-ordinary",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "06-23-walking-back-into-dark-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "06-23-call-reflection-koinonia-lambs",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "07-09-when-satan-must-ask",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "04-12-forged-tested-turned-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "09-01-alarm-that-was-only",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-15-tested-immediately-after-learning",
     "to": "05-15-mantle-passed-intercession-begun",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "07-07-holy-ground-ordinary-days",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-ordinary-hours-love-fog",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "03-28-sermon-reflection-divine-standards",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "06-22-call-reflection-brotherhood-accountability",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-16-standing-firm-before-men",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-smoke-fills-sky",
     "to": "08-04-intercessor-interceded",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-smoke-fills-sky",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-smoke-fills-sky",
     "to": "03-01-meditation-god-who-hunts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-smoke-fills-sky",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-smoke-fills-sky",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-burden-real-bottom",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-burden-real-bottom",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-burden-real-bottom",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-burden-real-bottom",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-17-when-burden-real-bottom",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-tent-maker-wilderness-speak",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-tent-maker-wilderness-speak",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-tent-maker-wilderness-speak",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-tent-maker-wilderness-speak",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-you-are-at-home",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-you-are-at-home",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-you-are-at-home",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-you-are-at-home",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-18-you-are-at-home",
     "to": "09-01-right-road-wrong-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-god-sends-confirmation",
     "to": "05-23-weight-calling-narrowness-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-god-sends-confirmation",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-god-sends-confirmation",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-god-sends-confirmation",
     "to": "03-27-late-night-call-spiritual-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-20-blood-we-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-20-heartbeat-we-cannot-yet",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-20-when-god-sends-confirmation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "05-29-letter-was-never-hers",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-waiting-what-has-not",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "07-20-waiting-what-has-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "07-20-blood-we-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-heartbeat-we-cannot-yet",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "06-14-when-his-plan-interrupts",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "07-10-holding-name-loose-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "07-21-mango-morning-sickness-baby",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "06-16-out-egypt-into-promise",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "06-18-tender-fear-confirmed-life",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "06-29-when-world-shaking-crib",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-blood-we-do-not",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "07-10-when-watchman-fears-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-watchman-across-way-sacred",
     "to": "07-20-when-uniform-has-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-20-when-uniform-has-no",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "07-20-blood-we-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "07-01-when-silence-heaven-feels",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-mango-morning-sickness-baby",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "04-03-0637-reflection-anger-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "05-12-cloth-cross-mercy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-anger-finds-its",
     "to": "06-23-theological-meditation-cross-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-love-construction-zone",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-love-construction-zone",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-love-construction-zone",
     "to": "03-14-meditation-honesty-before-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-love-construction-zone",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "07-17-when-burden-real-bottom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-21-when-net-breaks-only",
     "to": "07-23-when-burden-too-heavy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-mercy-hidden-weakness-dignity",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-waiting-threshold-love-uncertainty",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-waiting-threshold-love-uncertainty",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-waiting-threshold-love-uncertainty",
     "to": "07-03-heartbeat-we-almost-mourned",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-waiting-threshold-love-uncertainty",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "04-10-four-months-faithfulness-panic",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-22-long-road-small-faithfulness",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "04-06-1926-personal-meditation-where",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "07-03-stepping-into-jordan-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-faith-that-walks-pisteu",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "07-04-road-we-walk-together",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-when-burden-too-heavy",
     "to": "07-21-when-net-breaks-only",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "06-27-real-world-eden-work",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "07-23-when-burden-too-heavy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-23-kingdom-has-infrastructure-too",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
     "to": "07-09-altar-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
     "to": "07-07-holiness-hidden-ordinary-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-altar-ordinary-kitchen",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "04-10-personal-meditation-identity-iniquity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "06-21-call-reflection-misapplied-gifting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-24-carving-god-from-wood",
     "to": "05-18-when-gospel-not-gospel",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "05-03-every-breath-was-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "03-27-sermon-reflection-kingdom-authority",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "07-23-kingdom-has-infrastructure-too",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-turning-cheek-just-weight",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "07-20-blood-we-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-26-soul-does-not-evaporate",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-reflection-deliverance-mercy-streets",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-reflection-deliverance-mercy-streets",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-reflection-deliverance-mercy-streets",
     "to": "07-27-running-faith-not-gas",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-27-running-faith-not-gas",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "04-29-false-ascent-narrow-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "06-05-when-spirit-intercepts-counterfeit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "06-17-do-not-celebrate-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-not-provided-sniffing-out",
     "to": "07-28-weight-we-carry-while",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-sacrament-small-things",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-weight-we-carry-while",
     "to": "03-27-spiritual-reflection-recognizing-gods",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-weight-we-carry-while",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-weight-we-carry-while",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-weight-we-carry-while",
     "to": "06-22-conversation-reflection-sanctification-spiritual",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-28-weight-we-carry-while",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "07-27-running-faith-not-gas",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "07-31-reflection-provision-warfare-truth-telling",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-01-guarding-what-was-committed",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-01-guarding-what-was-committed",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-01-guarding-what-was-committed",
     "to": "07-31-reflection-provision-warfare-truth-telling",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-01-guarding-what-was-committed",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-01-guarding-what-was-committed",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "06-25-personal-meditation-paideia-webhooks",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-04-intercessor-interceded",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-05-when-late-hour-tests",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-05-when-late-hour-tests",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-05-when-late-hour-tests",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-05-when-late-hour-tests",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-05-when-late-hour-tests",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "08-07-gentiles-at-threshold-prophets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "03-06-personal-meditation-sacred-threshold",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "05-26-tablet-written-before-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-when-calendar-fills-but",
     "to": "07-20-watchman-across-way-sacred",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-gentiles-at-threshold-prophets",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "04-08-theological-reflection-consecration-ai",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-07-hidden-growth-silenced-blessing",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "07-07-holiness-hidden-ordinary-meditation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "05-31-first-love-hidden-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-09-when-zeal-rides-like",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "04-29-false-ascent-narrow-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-when-ache-real-but",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-one-joyfulness-two-mountains",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "04-10-daily-log-factory-floor",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-11-household-hidden-build-man",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "07-05-darkness-that-remembers-fire",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-unseen-foundation-built-night",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "08-24-two-minutes-from-gate",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-when-lungs-fail-fever",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-12-architect-blood-blessing-that",
     "to": "04-11-seed-you-do-not",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-moving-carcass-reach-honey",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "08-13-woodwork-way",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "05-28-when-something-keeps-saying",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "05-08-when-house-shaking-road",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-compass-drunk-call",
     "to": "02-25-shattering-scorecards-divine-providence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "03-01-reflection-gods-calling-weakness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "08-13-woodwork-way",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "08-13-compass-drunk-call",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "07-27-reflection-deliverance-mercy-streets",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-prophetic-word",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-bread-must-be-broken",
     "to": "06-10-exodus-babylon-begins-small",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "08-13-compass-drunk-call",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "06-05-when-spirit-intercepts-counterfeit",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-13-woodwork-way",
     "to": "07-28-not-provided-sniffing-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-11-one-joyfulness-two-mountains",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-11-household-hidden-build-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-13-moving-carcass-reach-honey",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-13-prophetic-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-15-two-loaves-house-drunken",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "08-25-when-will-done-debt",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "04-06-theological-meditation-body-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "07-26-turning-cheek-just-weight",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-juniper-tree-snail-bag",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "08-16-juniper-tree-snail-bag",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "07-24-altar-ordinary-kitchen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-16-renaissance-fair-made-holy",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-he-gave-jesus-door",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-he-gave-jesus-door",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-he-gave-jesus-door",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-he-gave-jesus-door",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "06-15-out-egypt-at-last",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-17-emptied-house-voice-that",
     "to": "06-28-interior-judas-joy-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "03-25-theological-dialogue-union-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-18-night-enemy-wore-my",
     "to": "03-11-personal-meditation-crucible-false",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-when-darkness-strikes-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-ledger-gate-weight-we",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-12-architect-blood-blessing-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-ledger-gate-weight-we",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-when-darkness-strikes-house",
     "to": "07-21-when-anger-finds-its",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-when-darkness-strikes-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-ledger-gate-weight-we",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "06-18-when-god-killed-ego",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-let-your-yes-be-2",
     "to": "08-20-refund-that-cost-nothing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-vocabulary-changed-man",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "06-08-at-morning-commute-youve",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "02-27-personal-meditation-divine-winnowing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "06-20-grain-must-die-identity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-iron-sharpens-iron-secret",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-12-unseen-foundation-built-night",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-when-darkness-strikes-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-19-ledger-gate-weight-we",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-slow-steady-building-house",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-when-darkness-strikes-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-ledger-gate-weight-we",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "06-19-when-harvest-meets-algorithm",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-distribution-layer-guaranteed-harvest",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-when-darkness-strikes-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-vocabulary-changed-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-iron-sharpens-iron-secret",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-19-slow-steady-building-house",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-19-ledger-gate-weight-we",
     "to": "02-26-severe-mercy-divine-discipline",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-20-refund-that-cost-nothing",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-20-refund-that-cost-nothing",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-20-refund-that-cost-nothing",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-20-refund-that-cost-nothing",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-20-refund-that-cost-nothing",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "08-22-ill-catch-you-other",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "07-06-when-business-begins-breathe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-21-seat-i-had-no",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "06-14-when-lament-becomes-cradle",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "07-15-mantle-descends-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "07-03-stepping-into-jordan-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-22-ill-catch-you-other",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-24-two-minutes-from-gate",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-24-two-minutes-from-gate",
     "to": "06-22-call-reflection-daily-faith",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-24-two-minutes-from-gate",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-24-two-minutes-from-gate",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-24-two-minutes-from-gate",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-25-empty-handed-at-threshold-faithfulness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-25-when-word-no-longer",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "07-13-sabbath-womb-rest-as",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-will-done-debt",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-25-when-will-done-debt",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-25-when-word-no-longer",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-19-let-your-yes-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-20-refund-that-cost-nothing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-13-bread-must-be-broken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-empty-handed-at-threshold-faithfulness",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "08-25-when-will-done-debt",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "08-25-empty-handed-at-threshold-faithfulness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-25-when-word-no-longer",
     "to": "07-05-when-drunkard-spoke-curse",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "07-04-little-elijah-lives-heartbeats",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "08-15-two-loaves-house-drunken",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-26-koinonia-takes-precedence",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-provision-i-almost-died",
     "to": "06-10-five-dollars-forty-six-cents",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "04-16-table-set-wilderness-kingdom",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-money-table-sober-word",
     "to": "08-19-let-your-yes-be-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-i-gave-him-you",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-first-win-confession",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "02-20-meditation-joseph-paul-severe",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "06-24-personal-meditation-ego-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "03-13-personal-meditation-spirit-perdition",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "08-07-when-calendar-fills-but",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "07-28-not-provided-sniffing-out",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-grace-that-comes-before",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "06-25-when-closer-cannot-be",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "08-17-he-gave-jesus-door",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "02-25-unsettling-grace-divine-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-what-you-value-god",
     "to": "03-07-reflection-performance-vs-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-counsel-commission-fellowship-that",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-28-third-door-leveled-table",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "07-03-when-beloved-valley-i",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-phone-against-ear-presence",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-provision-i-almost-died",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-counsel-commission-fellowship-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-phone-against-ear-presence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-money-table-sober-word",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "07-03-blessed-be-name-sovereignty",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-28-third-door-leveled-table",
     "to": "07-10-when-every-door-closes",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "05-06-cross-beneath-weight-all",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "05-08-when-trap-was-set",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "05-27-at-0100-when-love",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "08-07-hidden-growth-silenced-blessing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "08-21-seat-i-had-no",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-29-signpost-secret-place-cup",
     "to": "04-06-1926-personal-meditation-where",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-flesh-held-me",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-28-i-gave-him-you",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "08-30-compass-locked-room",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "06-17-when-mirror-speaks-old",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-man-mirror-christ-who-2",
     "to": "06-04-burning-bush-old-refuge",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "06-22-signpost-speaks-christ-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-bible-study-reflection-filthy",
     "to": "04-22-when-drinking-stops-grief",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "02-28-already-forgotten-sea-resting-finished",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "03-17-personal-meditation-kenosis-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "06-21-conversation-reflection-spiritual-transformation",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "04-20-when-spirit-moves-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "05-01-when-lord-meets-man",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "06-23-where-your-faith-testimony",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "07-10-when-heavens-moved-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "08-28-first-win-confession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "03-20-personal-meditation-hidden-mathematics",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "06-08-mirror-murmuration-releasing-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "04-08-1027-reflection-when-ordinary",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "05-10-brotherhood-round-table-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "07-28-sacrament-small-things",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "07-09-authority-that-silences-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "07-23-faith-that-walks-pisteu",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "05-28-when-covenant-speaks-what",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "05-03-every-breath-was-death",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-faced-image-filthy-garments",
     "to": "07-09-blue-flame-heartbeat-sanctification",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-30-man-mirror-christ-who-2",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-30-faced-image-filthy-garments",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-30-bible-study-reflection-filthy",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "08-29-signpost-secret-place-cup",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-30-compass-locked-room",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-anointing-call-into-affliction",
     "to": "03-28-theological-dialogue-suffering-intercession",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-anointing-call-into-affliction",
     "to": "07-02-kept-by-suffering-sober-mindedness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-anointing-call-into-affliction",
     "to": "08-28-what-you-value-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-anointing-call-into-affliction",
     "to": "09-01-blessing-cave-why-god",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-anointing-call-into-affliction",
     "to": "08-12-when-lungs-fail-fever",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-vessel-must-serve-witness",
     "to": "02-15-personal-meditation-spirit-led-transcript",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-vessel-must-serve-witness",
     "to": "06-07-stone-she-set-crossing",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-vessel-must-serve-witness",
     "to": "07-03-when-work-grows-larger",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-vessel-must-serve-witness",
     "to": "09-01-right-road-wrong-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "08-31-vessel-must-serve-witness",
     "to": "08-17-emptied-house-voice-that",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-when-sale-sold-everything",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-when-sale-sold-everything",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-when-sale-sold-everything",
     "to": "07-06-appointed-meeting-living-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-when-sale-sold-everything",
     "to": "09-01-provision-persuasion-fisher-men",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-right-road-wrong-name",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-right-road-wrong-name",
     "to": "08-31-vessel-must-serve-witness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-right-road-wrong-name",
     "to": "08-26-koinonia-takes-precedence",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-right-road-wrong-name",
     "to": "05-18-when-gospel-not-gospel",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",
     "to": "03-30-meditation-loving-captivity-chosen",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",
     "to": "04-10-personal-meditation-identity-iniquity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",
     "to": "08-30-man-mirror-christ-who",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",
     "to": "08-30-man-flesh-held-me",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-take-your-robes-off",
     "to": "09-01-provision-persuasion-fisher-men",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "07-05-network-covenant-proximity-purpose",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "08-19-distribution-layer-guaranteed-harvest",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "09-01-when-sale-sold-everything",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "09-01-take-your-robes-off",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-provision-persuasion-fisher-men",
     "to": "07-06-appointed-meeting-living-name",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-blessing-cave-why-god",
     "to": "03-13-personal-meditation-faithfulness-obscurity",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-blessing-cave-why-god",
     "to": "05-18-brilliant-far-country-gifting",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-blessing-cave-why-god",
     "to": "08-31-anointing-call-into-affliction",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-blessing-cave-why-god",
     "to": "04-26-when-mask-falls-wilderness",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-alarm-that-was-only",
     "to": "03-30-1020-reflection-enter-with",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-alarm-that-was-only",
     "to": "06-23-call-reflection-faith-provision",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-alarm-that-was-only",
     "to": "08-28-grace-that-comes-before",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-alarm-that-was-only",
     "to": "06-22-conversation-reflection-spiritual-discernment",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   },
   {
     "from": "09-01-alarm-that-was-only",
     "to": "09-01-provision-persuasion-fisher-men",
     "type": "continues",
     "status": "editorial",
-    "source": "Corpus Lattice (verified, schema v1.2) — cross-reference."
+    "source": "Verified against the corpus's own cross-reference record."
   }
 ];
 
@@ -34296,60 +34296,81 @@ const JC_EDGES = [
  */
 const JC_THREADS = [
   {
-    "id": "zech3",
+    "id": "zechariah-3-loop",
     "symbol": "I",
-    "name": "Zechariah 3 — filthy garments removed, replaced, given away",
-    "description": "Received in the Jan 28 sand-hill theophany (narrated in Stone Tablet V), measured across the Kairos Window, named explicitly in June (not yet a local reviewed page), and given away publicly at the Aug 30 Bible study.",
+    "name": "The Zechariah 3 Loop — filthy garments removed, replaced, given away",
+    "description": "The oldest load-bearing thread: received before the corpus began, measured through the Kairos Window, named explicitly in June, and finally given away at the three-brother table. Tablet anchor: Tablet V §III.6 \"Filthy Garments Removed, Priestly Dignity Given.\"",
     "sequence": [
-      "02-20-meditation-joseph-paul-severe",
-      "03-14-personal-meditation-obedience-hiddenness",
-      "04-05-spiritual-reflection-wilderness-provision",
-      "04-11-comfort-loop-flaming-sword",
-      "08-30-faced-image-filthy-garments"
+      "03-31-personal-meditation-standing-still",
+      "04-12-when-love-watches-cannot",
+      "08-17-emptied-house-voice-that",
+      "08-30-bible-study-reflection-filthy"
     ]
   },
   {
     "id": "samuel-loop",
     "symbol": "II",
     "name": "The Samuel Loop — the carried, quietly learning to carry",
-    "description": "Opens Apr 20 with Holy Spirit compulsion and covenant prayer, moves through grief, the Breaking Point, the darkest night, and mantles, gathers Samuel's own testimony in June, reaches the Aug 17 seam that gave Stone Tablet VI its origin, and is answered on Aug 29.",
+    "description": "Opens with Holy Spirit compulsion and covenant prayer, moves through grief and the breaking point, gathers Samuel's own testimony, reaches the Aug 17 seam that gave Stone Tablet VI its origin, and is answered Sep 1. Tablet anchors: Tablet II Part III · Tablet V §IV.9.",
     "sequence": [
-      "04-21-oath-you-cannot-serve",
-      "05-01-when-lord-meets-man",
-      "03-31-personal-meditation-standing-still",
-      "05-08-when-house-shaking-road",
-      "05-23-weight-calling-narrowness-gate",
-      "06-23-where-your-faith-testimony",
-      "07-10-demon-named-abigail-cat",
+      "04-25-when-weariness-speaks-louder",
+      "05-15-mantle-passed-intercession-begun",
+      "06-29-pastor-who-bypassed-security",
       "08-17-emptied-house-voice-that",
-      "08-28-third-door-leveled-table",
-      "08-29-signpost-secret-place-cup"
+      "09-01-blessing-cave-why-god"
+    ]
+  },
+  {
+    "id": "mantle-sequence",
+    "symbol": "III",
+    "name": "The Mantle Sequence — the calling itself",
+    "description": "Named as season in April, formalized in May: \"the mantle does not rest; it moves.\" Tablet anchors: Tablet II Part II · Tablet V §V.8 \"The Mantle Descends in the Ordinary.\"",
+    "sequence": [
+      "04-27-architecture-season-consecrated-mirror",
+      "05-15-mantle-passed-intercession-begun"
     ]
   },
   {
     "id": "murmuration",
-    "symbol": "III",
+    "symbol": "IV",
     "name": "The Murmuration — the maskîlîm are plural",
-    "description": "Seam One at the Gilgal Stone, the knot with the Samuel Loop, Seth naming the Murmuration outright, the return of \"Ayekah,\" and the Chorus arriving at scale on Aug 30 with three brothers in three countries.",
+    "description": "The corpus discovers it was never a solo witness — named by Seth in his own voice and developed into vessel-doctrine. Tablet anchors: Tablet V §II.4 · Tablet III Part VI \"The Maskîlîm Are Plural.\"",
     "sequence": [
-      "05-24-saved-loaves-gilgal-stone",
-      "06-07-stone-at-gilgal-pastoral",
-      "06-08-mirror-murmuration-releasing-what",
-      "06-09-wind-weather-witness-when",
-      "08-30-faced-image-filthy-garments"
+      "06-07-stone-she-set-crossing",
+      "08-31-vessel-must-serve-witness"
     ]
   },
   {
-    "id": "descent",
-    "symbol": "IV",
-    "name": "The Descent Into Hiddenness — the arc bends downward",
-    "description": "First named in Divine Winnowing (ambition bowing to abiding), witnessed again in the sacred-ordinary/factory-floor meditations, the Plow that demands no looking back, the Rampart that opens Stone Tablet V's window, and the Aug 30 harvest of hiddenness.",
+    "id": "exousia-dunamis",
+    "symbol": "V",
+    "name": "The Exousia / Dunamis Distinction — legal right, not raw power",
+    "description": "First canonical distinction, walked in deliverance, tested at the seam. Tablet anchor: Tablet V Part V title · Tablet V refrain \"Legal right, not raw power.\"",
     "sequence": [
-      "02-27-personal-meditation-divine-winnowing",
-      "04-10-way-home-worship-weariness",
-      "05-10-brotherhood-round-table-god",
-      "05-26-tablet-written-before-door",
-      "08-30-faced-image-filthy-garments"
+      "07-09-authority-that-silences-what",
+      "07-10-when-heavens-moved-intercession",
+      "08-17-emptied-house-voice-that"
+    ]
+  },
+  {
+    "id": "sacred-ordinary",
+    "symbol": "VI",
+    "name": "The Sacred Ordinary — holiness in the kitchen, the phone call, the parking lot",
+    "description": "Earliest canonical statement, developed, and finally sacramental. Tablet anchors: Tablet II Part V · Tablet V Part VI · refrain \"the sacrament of small things.\"",
+    "sequence": [
+      "03-27-spiritual-reflection-recognizing-gods",
+      "06-22-conversation-reflection-sanctification-spiritual",
+      "07-28-sacrament-small-things"
+    ]
+  },
+  {
+    "id": "descent-into-hiddenness",
+    "symbol": "VII",
+    "name": "The Descent Into Hiddenness — the arc bends downward",
+    "description": "Root, named, and walked in the Sep 1 \"preservation over platform\" answer. Tablet anchors: Tablet V Part III \"Brought Low, Reclothed, Sent\" · Tablet II Seven Things #5.",
+    "sequence": [
+      "03-13-personal-meditation-faithfulness-obscurity",
+      "05-18-brilliant-far-country-gifting",
+      "09-01-blessing-cave-why-god"
     ]
   }
 ];

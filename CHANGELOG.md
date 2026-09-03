@@ -2,6 +2,72 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.2] — September 3, 2026
+
+### Public beta cleanup pass (Phase 13)
+
+A scoped cleanup pass responding to live-browsing feedback, bounded to conserve credits ahead of a
+small-group public release.
+
+#### Threads and Corpus Paths rebuilt from new corpus map documents
+
+The owner supplied two new hand-authored corpus map documents naming 13 threads and ~10 reading
+paths, replacing the stale 4-thread / 6-path set the site had carried since before the `records-2`
+cutover. Per owner decision, only Threads 1–10 were adopted (each has an explicit tablet-section
+anchor and named hinge meditations); Threads 11–13 (large density-pattern threads described only by
+example anchors, not a full membership list) were deferred rather than algorithmically expanded, to
+avoid repeating the earlier hallucinated-cross-reference mistake. Of the 10, 7 had ≥2 explicitly-linked
+members and were built.
+
+New script `scripts/rebuild-threads-and-paths.mjs` resolves every thread/path member via a fully
+deterministic chain: a `memoBasename` transcribed verbatim from the corpus map's own `memo:` link →
+Corpus Lattice node (matched by exact basename of the node's own `path` field) → the node's
+`archive_filename` → the `records-2/` filename → id (re-derived via the same imported, hard-safety-
+checked logic `rebuild-edges-from-lattice.mjs` uses). Two "read one day" paths are resolved by date-
+filtering `JC_RECORDS` wholesale, since the corpus map names them as "the whole day," not an itemized
+list. Anything that fails to resolve is reported and dropped, never guessed — this caught and fixed
+two real filename drifts between the corpus map's own link text and the actual `records-2`/Corpus
+Lattice filenames.
+
+**Result: 7 threads, 5 reading paths — 100% resolved, zero external links, zero isolated/orphaned
+references.**
+
+#### Real bugs found and fixed
+
+- **Threads page "undefined" bug.** `threads.html` carried its own separate, out-of-sync copy of the
+  edge-rendering logic that still referenced the `note` field Phase 12 removed from every edge,
+  rendering literal `"undefined"` next to almost every connection — the user's reported bug. Made
+  conditional, matching the fix already applied to `design-v2-logic.js` last phase.
+- **Carry-a-question feature silently broken.** The live JS looked for
+  `carry-save-btn`/`carry-cancel-btn`/`carry-status`/`carry-clear-btn` elements the record-page
+  template never actually emitted — a genuine ID mismatch. Per explicit owner decision (credit
+  conservation ahead of the public release), the feature was **archived, not fixed**: removed from
+  the record-page template, `design-v2-logic.js`, and the landing page's "Welcome back" panel. A
+  second, completely unused legacy implementation of the same feature (`assets/beta.js`) was
+  confirmed referenced by zero HTML files and deleted outright, along with its stylesheet
+  `assets/beta.css`.
+- **Mystery Mode's doorway pool sizes were artifacts.** The "full chronology" doorway pooled from the
+  old 4-thread set (~23 records) and every other doorway was hard-capped at `MAX_POOL_SIZE = 10`
+  regardless of real keyword-match count — undercounting real matches by 2–9× against the full
+  456-record corpus. Removed the cap (doorways now report honest counts, e.g. 44 for "waiting") and
+  changed "full chronology" to pool from the entire reviewed corpus rather than a themed subset — its
+  own guidance text demanded breadth; it now correctly reports 456.
+- **A genuine pre-existing `jcStepHref is not defined` bug** was silently breaking all of Corpus
+  Paths' rendering (the function was called but never defined in any loaded script). Fixed by using
+  the already-shared `jcHrefFor(id)` helper.
+- Removed the "author-confirmed / editorial connection / open" 3-tier edge-status system site-wide
+  (Threads page legend, per-edge colored badges) now that every edge is Corpus-Lattice-verified — a
+  single "verified" label replaces it.
+
+#### Site-wide disclaimer sweep
+
+Removed or reworded every public-facing reference to phase numbers, CHANGELOG/GitHub links, schema
+versions, "Second Brain," "corpus-wide truth correction," "hallucinated," "superseded," and "Stage N"
+placeholder language across the landing page, Archive, Threads, and Corpus Paths, replacing with a
+consistent framing: connections are verified and hand-checked by the author against the source
+recordings. The landing page's "first drafts, begun not finished" line and its bracketed `[STAGE 2 —
+...]` placeholder language were reworded to read as clearly-labeled upcoming features ("Coming soon").
+
 ## [2.1] — September 3, 2026
 
 ### Corpus Lattice cross-reference verification (Phase 12)

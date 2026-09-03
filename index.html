@@ -167,12 +167,12 @@
 
       <hr class="divider">
 
-      <!-- Live navigation maps (Stage 2, begun) -->
+      <!-- Live navigation maps -->
       <section aria-label="Explore the corpus" style="margin-bottom:var(--space-8);">
         <h2 class="section-heading">Explore the corpus</h2>
         <p class="body-text body-text--dim" style="margin-bottom:var(--space-6);font-size:var(--text-sm);">
-          Three ways into the reviewed 456-record constellation, each built from the meditations' own verified Cross-Reference appendices
-          and the Corpus Map. These are first drafts — begun, not finished; verify against <a href="threads.html">Threads</a> directly.
+          Three ways into the reviewed 456-record constellation, each built from the meditations' own verified cross-reference record
+          and the author's own corpus map.
         </p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6);">
@@ -194,12 +194,15 @@
 
           <div class="nav-placeholder" style="background:var(--current);">
             <span class="placeholder-label">Thematic Map</span>
-            <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">The four load-bearing threads named in the Corpus Map, plus common themes across the reviewed set.</p>
+            <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">The load-bearing threads named in the corpus map, plus common themes across the reviewed set.</p>
             <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-3);">
-              <a href="threads.html?thread=zech3" class="btn btn-secondary btn--sm">Zechariah 3</a>
+              <a href="threads.html?thread=zechariah-3-loop" class="btn btn-secondary btn--sm">Zechariah 3</a>
               <a href="threads.html?thread=samuel-loop" class="btn btn-secondary btn--sm">Samuel Loop</a>
+              <a href="threads.html?thread=mantle-sequence" class="btn btn-secondary btn--sm">Mantle Sequence</a>
               <a href="threads.html?thread=murmuration" class="btn btn-secondary btn--sm">Murmuration</a>
-              <a href="threads.html?thread=descent" class="btn btn-secondary btn--sm">Descent</a>
+              <a href="threads.html?thread=exousia-dunamis" class="btn btn-secondary btn--sm">Exousia / Dunamis</a>
+              <a href="threads.html?thread=sacred-ordinary" class="btn btn-secondary btn--sm">Sacred Ordinary</a>
+              <a href="threads.html?thread=descent-into-hiddenness" class="btn btn-secondary btn--sm">Descent</a>
             </div>
             <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
               <a href="threads.html?q=surrender" class="btn btn-secondary btn--sm">Surrender</a>
@@ -238,7 +241,7 @@
       <section aria-label="The eight Stone Tablets" style="margin-bottom:var(--space-8);">
         <div class="nav-placeholder" style="background:var(--current);">
           <span class="placeholder-label">Eight Stone Tablets</span>
-          <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">Following a corpus-wide truth correction, every real meditation now carries a verified Cross-Reference Appendix, hand-checked against the eight true Stone Tablet volumes — not an inferred doctrinal label. Read the tablets themselves, or their visual companions.</p>
+          <p class="body-text body-text--dim" style="font-size:var(--text-sm);margin:var(--space-2) 0 var(--space-4);">Every real meditation carries a verified cross-reference record, hand-checked against the eight true Stone Tablet volumes — not an inferred doctrinal label. Read the tablets themselves, or their visual companions.</p>
           <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
             <a href="stone-tablets.html" class="btn btn-secondary btn--sm">Read the Eight Stone Tablets</a>
             <a href="six-doctrinal-spines.html" class="btn btn-secondary btn--sm">The Eight Stone Tablets Infographic</a>
@@ -344,12 +347,11 @@
 
       <hr class="divider">
 
-      <!-- Navigation placeholders -->
-      <section aria-label="Navigation features (planned)" style="margin-bottom:var(--space-12);">
-        <h2 class="section-heading">Navigation — planned features</h2>
+      <!-- Navigation — upcoming features -->
+      <section aria-label="Navigation features (upcoming)" style="margin-bottom:var(--space-12);">
+        <h2 class="section-heading">Navigation — coming soon</h2>
         <p class="body-text body-text--dim" style="margin-bottom:var(--space-6);font-size:var(--text-sm);">
-          The remaining two maps below are still Stage 2 placeholders, grounded in known corpus facts.
-          Placeholders are marked clearly; no content is invented.
+          Two more ways into the corpus are planned next, both grounded in the same verified record.
         </p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space-4);">
@@ -357,17 +359,17 @@
           <div class="nav-placeholder">
             <span class="placeholder-label">Scripture Map</span>
             Answers: What biblical thread runs through this?<br><br>
-            Will index all cited passages (NKJV). Distinguishes direct quotation from reflection.
+            Will index every cited passage (NKJV), distinguishing direct quotation from reflection.
             <br><br>
-            <strong>[STAGE 2 — awaiting authorized extraction]</strong>
+            <strong>Coming soon</strong>
           </div>
 
           <div class="nav-placeholder">
             <span class="placeholder-label">Tablet Map</span>
             Answers: What has this whole record become?<br><br>
-            Eight rooms, one per Stone Tablet. Tablets I–VII frozen. Tablet VIII visibly provisional.
+            Eight rooms, one per Stone Tablet. Tablets I–VII closed. Tablet VIII is the open seed register.
             <br><br>
-            <strong>[STAGE 2 — structure ready, content pending]</strong>
+            <strong>Coming soon</strong>
           </div>
 
         </div>
@@ -380,7 +382,7 @@
           Read the original records. Test what you encounter. The site points beyond itself.
         </blockquote>
         <p style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--parchment-dim);">
-          No account required. No data collected. Bookmarks and carried questions are stored locally on your device only.
+          No account required. No data collected. Anything remembered between visits is stored locally on your device only.
         </p>
       </section>
 
@@ -413,12 +415,9 @@
       if (!section || !body || typeof JC_RECORDS === 'undefined') return;
 
       let lastRecord = null;
-      let carryState = null;
       try {
         const rawLast = localStorage.getItem('jc_last_record');
         if (rawLast) lastRecord = JSON.parse(rawLast);
-        const rawCarry = localStorage.getItem('jc_carry_question');
-        if (rawCarry) carryState = JSON.parse(rawCarry);
       } catch (e) { return; }
 
       const parts = [];
@@ -427,9 +426,6 @@
         if (rec) {
           parts.push(`You last read <a href="${rec.href}" style="color:var(--gold);">${rec.title}</a>.`);
         }
-      }
-      if (carryState && carryState.question) {
-        parts.push(`You left a question open: <em>"${carryState.question}"</em> — still carried, still unanswered by the site.`);
       }
       if (!parts.length) return;
 

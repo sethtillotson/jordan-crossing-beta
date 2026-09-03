@@ -1,217 +1,273 @@
 /**
- * Jordan Crossing Beta — Corpus Reading Paths
- * Sourced from the Second Brain corpus-map documents (fetched Aug 31, 2026):
- *   - "PLAUD Meditations Corpus Map — How the Meditations Read Each Other.md"
- *   - "Corpus Map — How These Documents Read Each Other.md"
- *   - "_conversations/2026-08-31/PLAUD Meditations — Pass 1/2/3 Cross-References.md"
- * Local cached copies: living-topology/corpus-maps/*.md
+ * Jordan Crossing — Corpus Reading Paths
  *
- * IMPORTANT — governance:
- * - Every path and step here is copied or paraphrased directly from the
- *   corpus-map documents above. Nothing is invented. Where a step's meditation
- *   is not yet imported into this beta's records/ folder, it links out to the
- *   Second Brain source (https://www.genspark.ai/second-brain?fid=...) rather
- *   than being silently omitted or replaced with invented text.
- * - This corpus map covers 451 PLAUD meditations Feb 14 - Aug 30, 2026. As of
- *   Phase 5 (2026-09-01), 394 of those meditations have a local page in
- *   JC_RECORDS (assets/records-data.js) — reviewed or mirrored, see that
- *   file's header. `scripts/relink-corpus-paths.mjs` re-links a step to its
- *   local page whenever it can CONFIRM the match (same recorded day + the
- *   step's own label strongly covered by that record's real, content-derived
- *   title) — 21 of 48 steps are local as of this writing.
- * - The remaining 27 external steps are NOT simply unlabeled — re-running the
- *   relinker on them found either (a) no locally-mirrored record recorded on
- *   that exact day matches the step's label at all, or (b) a same-day
- *   candidate whose title only weakly overlaps the label. Investigation
- *   traced this to genuine data-quality issues in the underlying export, not
- *   a linking bug: at least one raw source file's actual body content does
- *   not match its own filename (the file named "...Resting in the Finished
- *   Work of Christ and Covenant Identity.md" contains a different meditation,
- *   "My Grace Is Sufficient..."), and at least one step's own curated
- *   dateLabel does not match its meditation's **Recorded:** metadata either.
- *   These 27 need a human to either locate the real content by hand or
- *   confirm it was never uploaded — do not "fix" them by loosening the
- *   relinker's matching thresholds; that would trade a visible external
- *   link for an invisible wrong one.
- * - "status" on each path mirrors the design doc's Stage labels: these are
- *   editorially curated *reading orders* through already-existing meditations,
- *   not new interpretive claims about what the meditations mean.
+ * Rebuilt 2026-09-03T11:26:26.474Z by scripts/rebuild-threads-and-paths.mjs
+ * (Phase 13). Every path and step here is transcribed directly from the
+ * owner's corpus map documents ("Corpus Map — How These Documents Read Each
+ * Other.md" and "PLAUD Meditations Corpus Map — How the Meditations Read
+ * Each Other.md") and resolved to a real local record via the verified
+ * Corpus Lattice dataset (memo-path basename -> Lattice node ->
+ * archive_filename -> records-2 id). There are no external links — any step
+ * that could not be confidently resolved to a local record was dropped
+ * rather than linked out.
  */
 
 'use strict';
 
-// Convert a "memo:/Personal Space/memo/..." link (as used in the corpus-map
-// markdown) into the actual Second Brain URL the user gave us.
-function jcMemoToSecondBrainUrl(memoPath) {
-  // memoPath like "/Personal Space/memo/PLAUD Meditations/Feb/02-28 ....md"
-  const encoded = encodeURIComponent(memoPath).replace(/%2F/g, '/');
-  return `https://www.genspark.ai/second-brain?fid=${encoded}`;
-}
-
-/**
- * Each step: { label, dateLabel, localId (JC_RECORDS id, or null), memoPath (for
- * external link when localId is null), note }
- */
 const JC_CORPUS_PATHS = [
   {
-    id: 'doctrinal-spine',
-    title: 'The doctrinal spine in six meditations',
-    depthLabel: 'A short crossing',
-    estimate: 'Six meditations · six months · one arc',
-    description: 'Six meditations spanning six months, sourced from the same corpus map\u2019s doctrinal-spine reading path. Each is a hinge word the corpus keeps returning to.',
-    source: 'PLAUD Meditations Corpus Map \u00a713: "If a reader wants the doctrinal spine in six meditations."',
-    tags: ['doctrinal', 'foundational', 'short'],
-    steps: [
-      { label: 'Finished Work', dateLabel: 'Feb 28', localId: '02-28-already-forgotten-sea-resting-finished', memoPath: null, note: 'tetelestai first named \u2014 the floor under the whole corpus.' },
-      { label: 'Kenosis', dateLabel: 'Mar 17', localId: '03-17-personal-meditation-kenosis-death', memoPath: null, note: 'eken\u014dsen named in Greek \u2014 the bottleneck of Volume I\u2019s whole graph.' },
-      { label: 'Thirteen', dateLabel: 'Mar 20', localId: '03-20-personal-meditation-hidden-mathematics', memoPath: null, note: 'The Ahavah Echad / Thirteen convergence with Sister Katie \u2014 Murmuration Seam One.' },
-      { label: 'Exousia vs. Dunamis', dateLabel: 'Jul 9', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/July/07-09 Teaching Reflection_ Exousia vs. Dunamis \u2014 Authority, Spiritual Warfare, and the Covenant Verdict-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The exousia teaching enters the corpus \u2014 load-bearing for the Aug 30 study.' },
-      { label: 'Pisteu\u014d, John 5:24', dateLabel: 'Jul 23', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/July/07-23 Teaching Reflection_ Pisteu\u014d, John 5_24, and the Nature of Saving Faith-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The settled Christological baseline the whole corpus governs by.' },
-      { label: 'Filthy Garments and the Finished Work', dateLabel: 'Aug 30', localId: 'filthy-garments', memoPath: null, note: 'The eighth window opens \u2014 every spine word converges at the three-brother table.' },
+    "id": "samuel-loop-end-to-end",
+    "title": "The Samuel Loop, start to close",
+    "depthLabel": "A full passage",
+    "estimate": "Six meditations · Apr 25 – Sep 1",
+    "description": "The carried, quietly learning to carry. Opens with spiritual weariness; closes when the loop is answered at the Blessing of the Cave.",
+    "source": "PLAUD Meditations Corpus Map §13: \"If you want to trace the Samuel Loop end-to-end.\"",
+    "tags": [
+      "narrative",
+      "spiritual-journey",
+      "long"
     ],
+    "steps": [
+      {
+        "label": "When Weariness Speaks Louder Than the Will of God",
+        "dateLabel": "Apr 25, 2026 · time not recorded",
+        "localId": "04-25-when-weariness-speaks-louder",
+        "memoPath": null,
+        "note": "The Loop opens."
+      },
+      {
+        "label": "When the Lord Meets a Man at the Breaking Point",
+        "dateLabel": "May 1, 2026 · 17:12",
+        "localId": "05-01-when-lord-meets-man",
+        "memoPath": null,
+        "note": "The breaking-point convergence."
+      },
+      {
+        "label": "The Mantle Passed, the Intercession Begun",
+        "dateLabel": "May 15, 2026 · 15:31",
+        "localId": "05-15-mantle-passed-intercession-begun",
+        "memoPath": null,
+        "note": "The mantle-throwing season opens."
+      },
+      {
+        "label": "The Pastor Who Bypassed Security",
+        "dateLabel": "Jun 29, 2026 · 17:26",
+        "localId": "06-29-pastor-who-bypassed-security",
+        "memoPath": null,
+        "note": "Prevenient grace is named."
+      },
+      {
+        "label": "The Emptied House, the Voice That Is Not the Father, and the Deliverance That Was Never Mine",
+        "dateLabel": "Aug 17, 2026 · 19:05",
+        "localId": "08-17-emptied-house-voice-that",
+        "memoPath": null,
+        "note": "The 85-minute call — the seam Tablet VI is built from."
+      },
+      {
+        "label": "The Blessing of the Cave: Why God Keeps You Off the Celebration Table",
+        "dateLabel": "Sep 1, 2026 · time not recorded",
+        "localId": "09-01-blessing-cave-why-god",
+        "memoPath": null,
+        "note": "The Loop is answered."
+      }
+    ]
   },
   {
-    id: 'samuel-loop',
-    title: 'The Samuel Loop, start to close',
-    depthLabel: 'A full passage',
-    estimate: 'Eleven meditations · Apr 20 \u2013 Aug 29 (131 days)',
-    description: 'The carried, quietly learning to carry. Opens Apr 20 when Samuel first calls; closes Aug 29 when the loop is answered.',
-    source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 2) and \u00a713: "If a reader wants to walk the Samuel Loop."',
-    tags: ['narrative', 'spiritual-journey', 'long'],
-    steps: [
-      { label: 'Holy Spirit Compulsion, Brotherhood, and Covenant Prayer', dateLabel: 'Apr 20', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-20 at 10_34 Call Reflection_ Holy Spirit Compulsion, Brotherhood, and Covenant Prayer-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The Loop opens.' },
-      { label: "Samuel's Grief, Sobriety Decision, and Spiritual Warfare", dateLabel: 'Apr 22', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/April/04-22 at 06_29 Call Reflection_ Samuel\'s Grief, Sobriety Decision, and Spiritual Warfare-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The sobriety decision is spoken.' },
-      { label: "Samuel's Breaking Point (\u201cyou need to die\u201d)", dateLabel: 'May 1', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-01 Call Reflection_ Divine Encounter \u2014 Samuel\'s Breaking Point and Spiritual Transformation-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The 17:12 UK-time convergence.' },
-      { label: "The Cross, Identity in Christ, and Samuel's Vocational Discernment", dateLabel: 'May 6', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-06 Call Reflection_ The Cross, Identity in Christ, and Samuel\'s Vocational Discernment-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Vocational discernment enters the loop.' },
-      { label: "Spiritual Warfare, Covenant Friendship, and a Brother's Darkest Night", dateLabel: 'May 8', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-08 Call Reflection_ Spiritual Warfare, Covenant Friendship, and a Brother\'s Darkest Night-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Fourth-watch provision is named.' },
-      { label: 'Grief as Intercession \u2014 Mantles, Prayer, and Hidden Ministry', dateLabel: 'May 27', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-27 Call Reflection_ Grief as Intercession \u2014 Mantles, Prayer, and Hidden Ministry-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The mantle-throwing season opens.' },
-      { label: "Where Is Your Faith? Samuel's Testimony", dateLabel: 'Jun 23', localId: '06-23-where-your-faith-testimony', memoPath: null, note: "Samuel speaks in his own voice inside the archive for the first time." },
-      { label: 'When the Heavens Moved', dateLabel: 'Jul 10 \u00b7 21:30', localId: '07-10-when-heavens-moved-intercession', memoPath: null, note: 'The heavens-move deliverance for Samuel.' },
-      { label: 'The Name the Darkness Could Not Speak', dateLabel: 'Aug 17 \u00b7 19:05', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/August/08-17 at 19_05 \u2014 The Name the Darkness Could Not Speak, and the Servant Who Learned to Wait-Meditation.md', note: 'The 85-minute call \u2014 the seam Tablet VI is built from.' },
-      { label: 'The First Win Is the Confession', dateLabel: 'Aug 28', localId: '08-28-first-win-confession', memoPath: null, note: 'Horizon 2 closes.' },
-      { label: 'The Signpost, the Secret Place, and the Cup of the Father\u2019s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The Loop is answered.' },
+    "id": "zechariah-3-walk",
+    "title": "Walk the Zechariah 3 thread",
+    "depthLabel": "A single stone (start) or short crossing (whole thread)",
+    "estimate": "Four meditations · Mar 31 – Aug 30",
+    "description": "Filthy garments removed, replaced, given away — the oldest of the load-bearing threads.",
+    "source": "PLAUD Meditations Corpus Map §13: \"If you want to walk one thread.\"",
+    "tags": [
+      "symbolic",
+      "transformational",
+      "medium"
     ],
+    "steps": [
+      {
+        "label": "Personal Meditation: Standing Still While Heaven Clothes You",
+        "dateLabel": "Mar 31, 2026 · time not recorded",
+        "localId": "03-31-personal-meditation-standing-still",
+        "memoPath": null,
+        "note": "The loop opens."
+      },
+      {
+        "label": "When Love Watches and Cannot Fix: On Intercession, the Courtroom of Heaven, and the Garments We Were Never Meant to Wear",
+        "dateLabel": "Apr 12, 2026 · 09:26",
+        "localId": "04-12-when-love-watches-cannot",
+        "memoPath": null,
+        "note": "Forensic language received."
+      },
+      {
+        "label": "The Emptied House, the Voice That Is Not the Father, and the Deliverance That Was Never Mine",
+        "dateLabel": "Aug 17, 2026 · 19:05",
+        "localId": "08-17-emptied-house-voice-that",
+        "memoPath": null,
+        "note": "Tested at the seam."
+      },
+      {
+        "label": "Bible Study Reflection_ Filthy Garments and the Finished Work-Speakly_meditation",
+        "dateLabel": "Aug 30, 2026 · time not recorded",
+        "localId": "08-30-bible-study-reflection-filthy",
+        "memoPath": null,
+        "note": "Given away at the three-brother table."
+      }
+    ]
   },
   {
-    id: 'murmuration',
-    title: 'The Murmuration \u2014 the maskîlîm are plural',
-    depthLabel: 'A full passage',
-    estimate: 'Six meditations \u00b7 Mar 20 \u2013 Aug 30',
-    description: 'How the corpus discovered it was never a solo witness \u2014 traced from the earliest independent convergence with Sister Katie through to the three-brother table.',
-    source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 3) and \u00a713: "If a reader wants the Murmuration proper." Read alongside Stone Tablet III \u2014 The Starling Convergence.',
-    tags: ['relational', 'community', 'medium'],
-    steps: [
-      { label: 'The Hidden Mathematics of Divine Perfection (Thirteen)', dateLabel: 'Mar 20', localId: '03-20-personal-meditation-hidden-mathematics', memoPath: null, note: 'Seam One \u2014 independent convergence with Sister Katie.' },
-      { label: 'The Burning Bush, Old Refuges, and Spiritual Formation', dateLabel: 'Jun 4', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-04 Call Reflection_ The Burning Bush, Old Refuges, and Spiritual Formation-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The June 4 confirmation thread \u2014 Tablet III\u2019s origin.' },
-      { label: "Sister Katie's Covenantal Co-Witness, Kenosis, and the Plural Prophetic Archive", dateLabel: 'Jun 7', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-07 Corpus Reflection_ Sister Katie\'s Covenantal Co-Witness, Kenosis, and the Plural Prophetic Archive-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'The corpus becomes plural.' },
-      { label: 'The Mirror, Murmuration, and Releasing Revelation', dateLabel: 'Jun 8 \u00b7 11:05', localId: '06-08-mirror-murmuration-releasing-what', memoPath: null, note: 'Murmuration named by Seth in his own voice.' },
-      { label: "Where Is Your Faith? Samuel's Testimony", dateLabel: 'Jun 23', localId: '06-23-where-your-faith-testimony', memoPath: null, note: 'Samuel joins the plural voice.' },
-      { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30', localId: 'filthy-garments', memoPath: null, note: 'The Chorus arrives at scale \u2014 three brothers, three countries, four AM in Australia.' },
+    "id": "apr-11-14-merged-week",
+    "title": "Read one week — the closing week of the Kairos",
+    "depthLabel": "A single stone",
+    "estimate": "One document, fourfold",
+    "description": "The corpus's most-integrated single document — the closing week of the Kairos Window gathered into one fourfold witness: formation, vigilance, encounter, the gap.",
+    "source": "PLAUD Meditations Corpus Map §13: \"If you want to read one week.\"",
+    "tags": [
+      "contemplative",
+      "short"
     ],
+    "steps": [
+      {
+        "label": "The Road, the River, the Robbery, and the Recording: A Fourfold Meditation on Formation, Vigilance, Encounter, and the Gap",
+        "dateLabel": "Apr 14, 2026 · 08:45",
+        "localId": "04-14-road-river-robbery-recording",
+        "memoPath": null,
+        "note": "The Kairos Window's closing week, gathered into one witness."
+      }
+    ]
   },
   {
-    id: 'descent',
-    title: 'The Descent Into Hiddenness',
-    depthLabel: 'A full passage',
-    estimate: 'Nine meditations \u00b7 Feb 27 \u2013 Aug 30',
-    description: 'The arc that bends downward before it bends up \u2014 from the first naming of ambition-become-abiding through the sacrament of small things to the harvest of hiddenness.',
-    source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 4) and \u00a713: "If a reader wants the Descent." Read alongside The Semantic Weaving \u00a7V.',
-    tags: ['transformational', 'contemplative', 'long'],
-    steps: [
-      { label: 'Divine Winnowing and the Transformation from Ambition to Abiding', dateLabel: 'Feb 27', localId: '02-27-personal-meditation-divine-winnowing', memoPath: null, note: 'Descent first named.' },
-      { label: 'Kenosis and the Death of Self-Sufficiency', dateLabel: 'Mar 17', localId: '03-17-personal-meditation-kenosis-death', memoPath: null, note: 'The bottleneck \u2014 highest betweenness-per-edge in Volume I\u2019s graph.' },
-      { label: 'Hidden in the Alleyway No More', dateLabel: 'Mar 29', localId: '03-29-1304-personal-meditation-hidden', memoPath: null, note: 'Hiddenness ends as concealment, begins as vocation.' },
-      { label: 'When the Ordinary Moment Becomes Holy Ground', dateLabel: 'Apr 8', localId: '04-08-1027-reflection-when-ordinary', memoPath: null, note: 'The sacred ordinary opens.' },
-      { label: 'Factory Floor Theology \u2014 Kenosis, Remnant, and Melchizedek Christology', dateLabel: 'Apr 10', localId: '04-10-daily-log-factory-floor', memoPath: null, note: 'The workplace is now sanctuary.' },
-      { label: 'Brotherhood, the Round Table, the God Who Sees, and the Plow', dateLabel: 'May 10', localId: '05-10-brotherhood-round-table-god', memoPath: null, note: 'The Plow of the Beloved is named.' },
-      { label: 'Prophetic Writing, Faithful Waiting, and the Theology of the Rampart', dateLabel: 'May 26', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/May/05-26 Conversation Reflection_ Prophetic Writing, Faithful Waiting, and the Theology of the Rampart-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Sacred ordinary meets weariness; Tablet V\u2019s window opens.' },
-      { label: 'The Sacrament of Small Things', dateLabel: 'Jul 28', localId: '07-28-sacrament-small-things', memoPath: null, note: 'Renamed as sacrament \u2014 the phrase Tablet V governs by.' },
-      { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30', localId: 'filthy-garments', memoPath: null, note: 'The harvest of hiddenness \u2014 given away at the three-brother table.' },
+    "id": "mar-28-sermon-day",
+    "title": "Read one day — the Mar 28 sermon-day sextet",
+    "depthLabel": "A single day",
+    "estimate": "Six sermon-responses in twelve hours",
+    "description": "The corpus's richest single-day thread — six sermon-responses laying doctrinal foundation in twelve hours.",
+    "source": "PLAUD Meditations Corpus Map §13: \"If you want to read one day.\"",
+    "tags": [
+      "doctrinal",
+      "short"
     ],
+    "steps": [
+      {
+        "label": "Sermon Reflection: Divine Standards and Refusing the Valley - Prophet Lovy L. Elias",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-sermon-reflection-divine-standards",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Sermon Reflection: Finished Work of Christ — Faith, Righteousness, and the True Gospel in James 2 -Johnny Chang",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-sermon-reflection-finished-work",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Sermon Reflection: The Furnace of Secret Prayer and Spiritual Power",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-sermon-reflection-furnace-secret",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Sermon Reflection: Prayer, Spiritual Authority, and the Gospel of Grace",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-sermon-reflection-prayer-spiritual",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Spiritual Reflection: Truth-Telling, Wilderness Formation, and the Language of Ascent",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-spiritual-reflection-truth-telling-wilderness",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Theological Dialogue: Suffering, Intercession, and the Fully Human Christ",
+        "dateLabel": "Mar 28, 2026 · time not recorded",
+        "localId": "03-28-theological-dialogue-suffering-intercession",
+        "memoPath": null,
+        "note": ""
+      }
+    ]
   },
   {
-    id: 'zechariah-3',
-    title: 'Zechariah 3 \u2014 filthy garments removed, replaced, given away',
-    depthLabel: 'A single stone (start) or short crossing (whole thread)',
-    estimate: 'Five meditations \u00b7 Feb 20 \u2013 Aug 30',
-    description: 'The oldest of the four load-bearing threads: received before the corpus began, measured through Kairos, named explicitly in June, and finally given away at the three-brother table.',
-    source: 'PLAUD Meditations Corpus Map \u00a710 (Thread 1).',
-    tags: ['symbolic', 'transformational', 'medium'],
-    steps: [
-      { label: 'Joseph, Paul, and Severe Mercy in Discipline', dateLabel: 'Feb 20', localId: '02-20-meditation-joseph-paul-severe', memoPath: null, note: 'Earliest meditation echoing the pre-corpus Jan 28 theophany.' },
-      { label: 'Kenosis and the Death of Self-Sufficiency', dateLabel: 'Mar 17', localId: '03-17-personal-meditation-kenosis-death', memoPath: null, note: 'Measured in Kairos.' },
-      { label: 'Brought Low, Reclothed, and Sent: The Full Arc of Intimacy With God', dateLabel: 'Jun 21', localId: null, memoPath: '/Personal Space/memo/PLAUD Meditations/June/06-21 at 04_42 \u2014 Brought Low, Reclothed, and Sent_ The Full Arc of Intimacy With God-Public Spoken Word \u2014 PLAUD Note Prompt.md', note: 'Zechariah 3 named explicitly for the first time.' },
-      { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The five weights, the one root \u2014 preparing the study.' },
-      { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30 \u00b7 13:39', localId: 'filthy-garments', memoPath: null, note: 'Given away \u2014 record #5 in the Seed Register.' },
+    "id": "jul-10-exousia-cascade",
+    "title": "Read one day — the Jul 10 exousia cascade",
+    "depthLabel": "A single day",
+    "estimate": "A six-file day walking authority-doctrine",
+    "description": "The exousia/dunamis authority doctrine walked out in deliverance across a single day.",
+    "source": "PLAUD Meditations Corpus Map §13: \"If you want to read one day.\"",
+    "tags": [
+      "doctrinal",
+      "narrative",
+      "short"
     ],
-  },
-  {
-    id: 'the-gaze',
-    title: 'The Gaze \u2014 fixing attention on Christ',
-    depthLabel: 'A narrow passage',
-    estimate: 'Two meditations \u00b7 Aug 29\u201330',
-    description: 'Learning to fix attention on Christ in the midst of storm and circumstance. Includes the Samuel Loop\'s answer and the mirror\'s revelation.',
-    source: 'PLAUD Meditations Corpus Map \u00a713: meditations on beholding and covenant gaze.',
-    tags: ['devotional', 'contemplative', 'short'],
-    steps: [
-      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'Where the gaze is learned in the wilderness.' },
-      { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The gaze continues \u2014 seeing Christ in the place of shame.' },
-    ],
-  },
-  {
-    id: 'surrender-obedience',
-    title: 'Surrender & Obedience \u2014 the cost of discipleship',
-    depthLabel: 'A full passage',
-    estimate: 'Three meditations \u00b7 Aug 29\u201330',
-    description: 'Exploring the cost of following Christ in the ordinary, late-night obedience and the three-brother study. How the gaze becomes action.',
-    source: 'PLAUD Meditations Corpus Map \u00a713: "If a reader wants to walk the obedience arc."',
-    tags: ['practical', 'obedience', 'medium'],
-    steps: [
-      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The cup is accepted \u2014 the first movement of obedience.' },
-      { label: 'The Storm\'s Aftermath, Horizon 3, and Ordinary Faithfulness', dateLabel: 'Aug 30 \u00b7 07:43', localId: 'compass', memoPath: null, note: 'Continuation under pressure \u2014 obedience when the storm remains.' },
-      { label: 'Mutual Correction, Corporate Maturity, and the Horizon Widens', dateLabel: 'Aug 30 \u00b7 19:15', localId: 'wisdom', memoPath: null, note: 'Obedience deepens into shared discernment and the company of the wise.' },
-    ],
-  },
-  {
-    id: 'identity-transformation',
-    title: 'Identity & Transformation \u2014 death of the false self',
-    depthLabel: 'A narrow passage',
-    estimate: 'Two meditations \u00b7 Aug 30',
-    description: 'The stripping away of false identity and the recloaking in Christ. The Jordan Crossing movement from filthy garments to finished work.',
-    source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VIII: the identity reversal at the crossing.',
-    tags: ['transformational', 'personal', 'short'],
-    steps: [
-      { label: 'The Identity Revealed, the Bible Study, and the Three Faces of Christ', dateLabel: 'Aug 30 \u00b7 09:41', localId: 'man-of-flesh', memoPath: null, note: 'The old identity is named and offered up.' },
-      { label: 'The Faced Image, the Filthy Garments, and the Finished Work', dateLabel: 'Aug 30 \u00b7 13:39', localId: 'filthy-garments', memoPath: null, note: 'The transformation completes \u2014 the old is stripped, the new is given.' },
-    ],
-  },
-  {
-    id: 'waiting-timing',
-    title: 'Waiting & Timing \u2014 learning God\'s rhythm',
-    depthLabel: 'A full passage',
-    estimate: 'Four meditations \u00b7 Aug 28\u201330',
-    description: 'The pattern of waiting, confession, revelation, and study. How God\'s timing supersedes human urgency in the crossing.',
-    source: 'PLAUD Meditations Corpus Map \u00a713 and Stone Tablet VI: "If a reader wants the waiting arc."',
-    tags: ['devotional', 'patience', 'medium'],
-    steps: [
-      { label: 'The First Win Is the Confession', dateLabel: 'Aug 28', localId: '08-28-first-win-confession', memoPath: null, note: 'The confession breaks the grip \u2014 Horizon 2 closes.' },
-      { label: 'The Signpost, the Secret Place, and the Cup of the Father\'s Will', dateLabel: 'Aug 29', localId: 'signpost', memoPath: null, note: 'The waiting reveals the secret place \u2014 the next dawn comes.' },
-      { label: 'The Man in the Mirror and the Christ Who Stands Between', dateLabel: 'Aug 30 \u00b7 08:38', localId: 'mirror', memoPath: null, note: 'The revelation deepens \u2014 identity is offered.' },
-      { label: 'The Worship Song, the Teacher Within, and the Proper Bible Study', dateLabel: 'Aug 30 \u00b7 11:07', localId: 'mirror-gospel', memoPath: null, note: 'The study arrives at last \u2014 God\'s timing, not human rush.' },
-    ],
-  },
-];
-
-function jcStepHref(step) {
-  if (step.localId) {
-    // Caller must know if it's being rendered at root or inside records/;
-    // resolved by the same hrefFor pattern used elsewhere.
-    const rec = (typeof jcGetRecord === 'function') ? jcGetRecord(step.localId) : null;
-    return rec ? rec.href : '#';
+    "steps": [
+      {
+        "label": "at HH:MM — The Lord Restores: On Bodies Broken, Creation’s Hidden Order, and the Fellowship That Gathers When He Calls",
+        "dateLabel": "Jul 10, 2026 · time not recorded",
+        "localId": "07-10-at-hhmm-lord-restores",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "The Demon Named Abigail, the Cat in the Stroller, and the Watchman Who Waited",
+        "dateLabel": "Jul 10, 2026 · 20:33",
+        "localId": "07-10-demon-named-abigail-cat",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "The Enemy Has Power but No Standing: Exousia, Dunamis, and the Liberation of the Committed Heart",
+        "dateLabel": "Jul 10, 2026 · 17:31",
+        "localId": "07-10-enemy-has-power-but",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "Holding the Name Loose: A Meditation on Surrender, Expectation, and the Child Not Yet Born",
+        "dateLabel": "Jul 10, 2026 · 12:33",
+        "localId": "07-10-holding-name-loose-meditation",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "When Abigail Fell Silent and the Kingdom Came Near",
+        "dateLabel": "Jul 10, 2026 · 21:20",
+        "localId": "07-10-when-abigail-fell-silent",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "When Every Door Closes and the Taste Goes Bitter: Providence, Presence, and the Long Walk Toward Home",
+        "dateLabel": "Jul 10, 2026 · time not recorded",
+        "localId": "07-10-when-every-door-closes",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "When Faith Sustains What Understanding Cannot Reach",
+        "dateLabel": "Jul 10, 2026 · 18:32",
+        "localId": "07-10-when-faith-sustains-what",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "When the Heavens Moved: Intercession, Demonic Deliverance, and the Legality of the Kingdom",
+        "dateLabel": "Jul 10, 2026 · 21:30",
+        "localId": "07-10-when-heavens-moved-intercession",
+        "memoPath": null,
+        "note": ""
+      },
+      {
+        "label": "When the Watchman Fears the Gate and the Demon Speaks Its Name",
+        "dateLabel": "Jul 10, 2026 · 19:27",
+        "localId": "07-10-when-watchman-fears-gate",
+        "memoPath": null,
+        "note": ""
+      }
+    ]
   }
-  return jcMemoToSecondBrainUrl(step.memoPath);
-}
-
-function jcGetCorpusPath(id) {
-  return JC_CORPUS_PATHS.find(p => p.id === id) || null;
-}
+];

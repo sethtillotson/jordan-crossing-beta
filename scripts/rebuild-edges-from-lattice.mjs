@@ -203,7 +203,7 @@ function main() {
         to: targetLocalId,
         type: 'continues',
         status: 'editorial',
-        source: 'Corpus Lattice (verified, schema v' + lattice.schema_version + ') — cross-reference.',
+        source: 'Verified against the corpus\'s own cross-reference record.',
       });
     }
   }

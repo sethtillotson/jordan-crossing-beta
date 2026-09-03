@@ -538,39 +538,9 @@ main {
 }
 
 /* ───────────────────────────────────────────────────────────────────
-   MOVEMENT 2: CARRY — "Carry a question forward"
+   Shared button styles (used by return-panel quick actions, landing
+   page navigation, and various on-page controls across the site)
    ─────────────────────────────────────────────────────────────────── */
-
-.carry-question-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-
-.carry-heading {
-  font-size: var(--text-lg);
-  color: var(--parchment);
-  margin: 0;
-}
-
-.carry-description {
-  font-size: var(--text-sm);
-  color: var(--parchment-dim);
-  margin: 0;
-  line-height: 1.6;
-}
-
-.carry-controls {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-
-.carry-button-group {
-  display: flex;
-  gap: var(--space-3);
-  flex-wrap: wrap;
-}
 
 .btn {
   padding: var(--space-3) var(--space-6);
@@ -601,48 +571,6 @@ main {
 .btn.btn-secondary {
   background: transparent;
   border-color: rgba(201, 162, 39, 0.2);
-}
-
-.carry-textarea-wrapper {
-  display: none;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
-.carry-textarea-wrapper.active {
-  display: flex;
-}
-
-.carry-textarea {
-  padding: var(--space-4);
-  background: rgba(201, 162, 39, 0.05);
-  border: 1px solid rgba(201, 162, 39, 0.2);
-  border-radius: var(--radius-md);
-  color: var(--parchment);
-  font-family: var(--font-serif);
-  font-size: var(--text-base);
-  line-height: 1.6;
-  min-height: 100px;
-  resize: vertical;
-}
-
-.carry-textarea:focus {
-  outline: none;
-  border-color: var(--gold);
-  background: rgba(201, 162, 39, 0.1);
-}
-
-.carry-status {
-  font-size: var(--text-sm);
-  color: var(--parchment-dim);
-  padding: var(--space-3);
-  background: rgba(201, 162, 39, 0.05);
-  border-radius: var(--radius-sm);
-  display: none;
-}
-
-.carry-status.active {
-  display: block;
 }
 
 /* ───────────────────────────────────────────────────────────────────
