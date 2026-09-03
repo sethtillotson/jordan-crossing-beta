@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Call Reflection: Daily Faith, Empty Tanks, and Kingdom Obedience — Interior Beta</title>
+  <title>Call Reflection: Daily Faith, Empty Tanks, and Kingdom Obedience — The Jordan Crossing</title>
   <meta name="description" content="I am sitting with what came out of my own mouth almost without thinking — *“Faith, my friend”* — spoken in answer to a simple, practical question about how I was going to get home. There was no gas money, no answer on the other end of the phone, no certainty…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="06-22-call-reflection-daily-faith">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">Call Reflection: Daily Faith, Empty Tanks, and Kingdom Obedience</h1>
@@ -47,10 +46,8 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text"># 06-22 at 15:06 — Running on Fumes and Faith
 
 **Title:**06-22 Call Reflection: Daily Faith, Empty Tanks, and Kingdom Obedience
@@ -129,7 +126,7 @@ A prophetic people learns to read their own ordinary experiences through the len
 
 Father, I come before You from the position of a co-heir of this Kingdom — one who has been written into Your purposes, who stands between heaven and earth as a servant of the Word, in agreement with Your will and with what You are doing in the earth. I thank You for the small moments. I thank You for empty tanks and unanswered calls and brothers who say *“let me know when you get there safely.”* I thank You that You are not only the God of the altar but the God of the parking lot, the God of the twenty-to-nine phone call, the God of the sputtering engine that does not quit. I ask that You would form in Your people a faith that is reflexive — not manufactured under pressure, but released from a place of genuine rest in Your faithfulness. I intercede for every brother and sister who is running on fumes right now, in finances, in strength, in hope. Let them feel the ground of ὑπόστασις (hoo-POS-tah-sis) beneath them. Let them drive forward. Let the jar not run dry. And let us keep committing to the meeting, to the gathering, to the work, because You are worthy of our best obedience even in the middle of the unresolved thing. Be glorified in the ordinary. Be magnified in the daily. Let every mile of the road belong to You. In the name of Jesus Christ, who is the same yesterday, today, and forever — Amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)**   | **Original Language**                                                       | **Theological Insight**                                                                                                                  |
 |----------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -141,13 +138,13 @@ Father, I come before You from the position of a co-heir of this Kingdom — one
 | 1 Corinthians 13:4–7 | ἀγάπη (agapē, ah-GAH-pay) — covenantal, committed love                      | True ἀγάπη is practical and tracking; it is the love that says “let me know when you get there”                                          |
 | James 2:17           | νεκρά (nekra, neh-KRAH) — dead, lifeless, inert                             | Faith without corresponding action is corpse-faith; genuine trust in God takes a living, moving shape in the real world                  |
 | Hebrews 12:1         | νέφος μαρτύρων (nephos martyron, NEH-foss mar-TOO-ron) — cloud of witnesses | The witnesses surround us not only from history but include living saints who testify to the faithfulness of God from present experience |
-</article>
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -182,7 +179,6 @@ Father, I come before You from the position of a co-heir of this Kingdom — one
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -199,34 +195,20 @@ Father, I come before You from the position of a co-heir of this Kingdom — one
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -261,20 +243,18 @@ Father, I come before You from the position of a co-heir of this Kingdom — one
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

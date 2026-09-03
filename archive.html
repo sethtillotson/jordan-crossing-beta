@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>The Living Archive — The Jordan Crossing Interior Beta</title>
+  <title>The Living Archive — The Jordan Crossing</title>
   <meta name="description" content="Browse the full local mirror of the meditation corpus by month — every record readable in this app, no external drive required.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260901V2">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260903BETA2">
   <style>
     .archive-total {
       display: flex;
@@ -135,8 +135,8 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -159,19 +159,17 @@
       </div>
 
       <div class="callout">
-        <p class="caption">What "reviewed" and "mirrored" mean here</p>
+        <p class="caption">What "reviewed" means here</p>
         <p>
+          Following the Phase 11 full corpus rebuild (September 2026), every meditation in this app now
+          carries a
           <span class="archive-record-badge archive-record-badge--reviewed" style="display:inline-block;">reviewed</span>
-          records carry a verified Cross-Reference Appendix — hand-checked by the author against the
-          eight Stone Tablet volumes themselves — and appear with labeled thread connections in
-          <a href="threads.html">Threads</a>.
-          <span class="archive-record-badge archive-record-badge--mirrored" style="display:inline-block;">mirrored</span>
-          records are just as fully readable — the complete original text, the same page — but have not
-          yet been cross-referenced, so no thread claims are made for them. Both kinds are local pages in
-          this app; neither depends on the author's private drive to open. The corpus's own working
-          record documents 458 real meditations in total (Feb 15 – Sep 1, 2026); this repository currently
-          mirrors 409 of them locally — see the by-month counts below for exactly what is and isn't
-          present yet.
+          verified Cross-Reference Appendix — hand-checked by the author against the eight Stone Tablet
+          volumes themselves — and appears with labeled thread connections in
+          <a href="threads.html">Threads</a>. All 456 records are local pages in this app; none depends on
+          the author's private drive to open. One further source file was found to be corrupted (raw
+          binary, not real text) during the rebuild and was excluded rather than published — see
+          <a href="../CHANGELOG.md">CHANGELOG.md</a> for the full account.
         </p>
       </div>
 
@@ -181,8 +179,8 @@
           <div class="archive-total-label">records readable locally in this app today</div>
         </div>
         <div>
-          <div class="archive-total-figure">458</div>
-          <div class="archive-total-label">direct-archive count, Feb 15 – Sep 1, 2026 (corpus's own working record)</div>
+          <div class="archive-total-figure">456</div>
+          <div class="archive-total-label">verified meditations, Feb 15 – Sep 1, 2026 (Phase 11 rebuild)</div>
         </div>
         <div>
           <div class="archive-total-figure" id="archive-reviewed-figure">—</div>
@@ -210,11 +208,13 @@
           verified appendix of cross-references, organized around the eight true Stone Tablets — the
           specific written volumes in the author's <em>Living Topology of Transformation</em> series,
           each covering a specific window of days, that a meditation belongs to by date (not an
-          inferred doctrinal category). Two visual companions to this archive:
-          <a href="six-doctrinal-spines.html">The Eight Stone Tablets</a> (what each tablet is, and
-          how files flow between them) and
+          inferred doctrinal category). Visual companions to this archive:
+          <a href="stone-tablets.html">Read the Eight Stone Tablets</a> (the volumes themselves),
+          <a href="six-doctrinal-spines.html">The Eight Stone Tablets Infographic</a> (what each tablet
+          is, and how files flow between them),
           <a href="spines-timeline.html">Timeline of the Eight Stone Tablets</a> (their weekly growth
-          across all seven months of the record, February through September 2026).
+          across all eight months of the record, February through September 2026), and
+          <a href="corpus-architecture.html">Corpus Architecture</a>.
         </p>
       </section>
 
@@ -226,12 +226,8 @@
           themselves. (An earlier version of this feature parsed summary "pass" ledger documents
           instead of each file's own appendix, and some of what it inferred did not hold up under that
           verification; the entire cross-reference layer was rebuilt from the corrected, per-file
-          source once the author caught and fixed it — see <a href="../CHANGELOG.md">CHANGELOG.md</a>
-          for the full account.) The mirrored records are the same raw meditation files, rendered the
-          same way, without those verified connections yet. As more meditations are reviewed and
-          cross-referenced, they move from "mirrored" to "reviewed" and gain entries
-          in <a href="threads.html">Threads</a> and <a href="paths.html">Corpus Paths</a> — the underlying
-          page does not change, only its labeled connections.
+          source once the author caught and fixed it, then rebuilt again from a further-verified
+          corpus in Phase 11 — see <a href="../CHANGELOG.md">CHANGELOG.md</a> for the full account.)
         </p>
       </section>
 
@@ -239,7 +235,7 @@
         <p class="caption">Read what is already here</p>
         <p>
           The reviewed records begin at <a href="mystery.html">Mystery Mode</a> and are traced
-          in <a href="threads.html">Threads</a>. Every record — reviewed or mirrored — can be opened
+          in <a href="threads.html">Threads</a>. Every record can be opened
           directly from the list above. Nothing on this page substitutes for reading them.
         </p>
       </section>
@@ -247,15 +243,15 @@
   </main>
 
   <footer class="site-footer">
-    <p><em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria</p>
+    <p><em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria</p>
   </footer>
 
-  <script src="assets/records-data.js?v=20260901V2"></script>
+  <script src="assets/records-data.js?v=20260903BETA2"></script>
   <script>
   (function () {
     'use strict';
 
-    var MONTH_ORDER = ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
+    var MONTH_ORDER = ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'];
 
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, function (c) {
@@ -314,7 +310,7 @@
             badge +
           '</li>';
         }).join('');
-        var monthName = { Feb: 'February', Mar: 'March', Apr: 'April', May: 'May', Jun: 'June', Jul: 'July', Aug: 'August' }[mo];
+        var monthName = { Feb: 'February', Mar: 'March', Apr: 'April', May: 'May', Jun: 'June', Jul: 'July', Aug: 'August', Sep: 'September' }[mo];
         html += '<details class="archive-month"' + (query ? ' open' : '') + '>' +
           '<summary>' + monthName + '<span class="archive-month-count">' + records.length + ' record' + (records.length === 1 ? '' : 's') + '</span></summary>' +
           '<ul class="archive-month-list">' + rows + '</ul>' +

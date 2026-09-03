@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>When the Mirror Speaks: Old Faces, New Men, and the Fruits That Follow — Interior Beta</title>
+  <title>When the Mirror Speaks: Old Faces, New Men, and the Fruits That Follow — The Jordan Crossing</title>
   <meta name="description" content="As I listened to my brother Samuel speak this morning, something in me recognized the weight underneath the hustle — the weeping in the shower, the old relationship that keeps reaching back, the financial pressure that makes rest feel like a luxury. What…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="06-17-when-mirror-speaks-old">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">When the Mirror Speaks: Old Faces, New Men, and the Fruits That Follow</h1>
@@ -47,10 +46,8 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text"># 06-17 Call Reflection: Spiritual Transformation, Brotherhood, and Identity Renewal
 
 **Title:** 06-17 at 06:58 — When the Mirror Speaks: Old Faces, New Men, and the Fruits That Follow
@@ -131,7 +128,7 @@ We must learn to read our own lives prophetically — to see the Jeds and the Ch
 
 Father, I come before You with the weight of this morning still on me — the image of a brother weeping in a shower before the day’s demands hit, the sound of an old friend’s voice carrying the gravity of a life I used to live, the small mercy of a car that runs again and money moving across an ocean between men who have chosen to be brothers. You are in all of it. You are in the tears and the sale and the crypto wallet and the recognition and the gratitude. Lord, I thank You that You are not a God of the dramatic moment alone but of the Tuesday morning — the ordinary, pressured, tender, complicated Tuesday morning where Your Kingdom is advancing quietly through two men who refuse to go back. Strengthen Samuel in this hour. Hold the line You have drawn around his new identity. Let the old voices grow distant and the sound of Your voice grow clear. Cover Jed with the same mercy that covered me. And in all of this — the provision and the pruning, the tears and the fruit, the unfinished conversations and the half-formed theologies — let Your name be the one that rises. You are the Lord. You are faithful. You are the most important thing. And we are Yours. Amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)**                                                                             | **Original Language**                                                                                         | **Theological Insight**                                                                                                                         |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -145,13 +142,13 @@ Father, I come before You with the weight of this morning still on me — the im
 | Galatians 6:2 — “Bear one another’s burdens, and so fulfill the law of Christ.”                | βαστάζετε (bastazete, bas-TAH-ze-teh) — carry, lift, bear as a load                                           | Burden-bearing is active, practical, and fulfills the royal law of love; it cannot remain purely sentimental.                                   |
 | Proverbs 4:23 — “Keep your heart with all diligence, for out of it spring the issues of life.” | נָצַר (natsar, nah-TZAR) — to guard, watch over, preserve                                                       | Guarding the heart is an act of active stewardship, not fearful withdrawal; it governs the trajectory of the entire life.                       |
 | Ephesians 4:15 — “…growing up in all things into Him who is the head — Christ.”                | αὐξάνω (auxanō, owx-AH-no) — to grow, increase organically                                                    | Spiritual maturity is a living, organic process — not a position achieved but a direction continuously pursued.                                 |
-</article>
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -186,7 +183,6 @@ Father, I come before You with the weight of this morning still on me — the im
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -203,34 +199,20 @@ Father, I come before You with the weight of this morning still on me — the im
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -265,20 +247,18 @@ Father, I come before You with the weight of this morning still on me — the im
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

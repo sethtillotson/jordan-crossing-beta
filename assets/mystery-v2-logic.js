@@ -27,25 +27,37 @@
   // original 7-record routing so the page still works even if
   // records-data.js hasn't loaded for some reason.
   const DOORWAY_ROUTING = {
-    'beginning-again': { record: '08-29-signpost-v2.html', anchorId: 'signpost', prompt: 'You entered through beginning again. This record explores the repeated question of whether we can begin again when we have failed before.' },
-    'trapped-identity': { record: '08-30-man-of-flesh-v2.html', anchorId: 'man-of-flesh', prompt: 'You entered through the weight of an old identity. This record names the patterns we repeat and the way the flesh holds us.' },
-    'waiting': { record: '08-30-mirror-v2.html', anchorId: 'mirror', prompt: 'You entered through waiting. This record approaches what happens when we do not yet know what God is doing.' },
-    'cannot-see': { record: '08-30-mirror-gospel-v2.html', anchorId: 'mirror-gospel', prompt: 'You entered through uncertainty about God\'s work. This record teaches what happens when the mirror shifts and we begin to see Him instead of ourselves.' },
-    'cost-of-obedience': { record: '08-30-filthy-garments-v2.html', anchorId: 'filthy-garments', prompt: 'You entered through the fear of what obedience costs. This record holds that fear without minimizing it.' },
-    'surrender': { record: '08-30-compass-v2.html', anchorId: 'compass', prompt: 'You entered through the question of surrender. This record approaches surrender through the loss of self-command.' },
-    'searching-jesus': { record: '08-30-wisdom-v2.html', anchorId: 'wisdom', prompt: 'You entered through searching for Jesus. This record teaches that He is the one who searches us first.' },
-    'examine-carefully': { record: '08-29-signpost-v2.html', anchorId: 'signpost', prompt: 'You entered to examine carefully. The records are primary; everything else is secondary. Read without hurrying.' },
-    'signpost': { record: '08-29-signpost-v2.html', anchorId: 'signpost', prompt: 'You chose the full chronology. The records unfold in the order they were recorded; follow the thread connections.' },
-    'jordan-crossing': { record: 'jordan-crossing-interior.html', anchorId: null, prompt: 'You chose a quiet place. The full interior awaits—read, listen, let the silence work on you.' },
-    'compass': { record: '08-30-compass-v2.html', anchorId: 'compass', prompt: 'You are here, and that is enough. This record is offered for the moment you are in.' }
+    'beginning-again': { record: '08-29-signpost-secret-place-cup-v2.html', anchorId: '08-29-signpost-secret-place-cup', prompt: 'You entered through beginning again. This record explores the repeated question of whether we can begin again when we have failed before.' },
+    'trapped-identity': { record: '08-30-man-flesh-held-me-v2.html', anchorId: '08-30-man-flesh-held-me', prompt: 'You entered through the weight of an old identity. This record names the patterns we repeat and the way the flesh holds us.' },
+    'waiting': { record: '08-30-man-mirror-christ-who-v2.html', anchorId: '08-30-man-mirror-christ-who', prompt: 'You entered through waiting. This record approaches what happens when we do not yet know what God is doing.' },
+    'cannot-see': { record: '08-30-man-mirror-christ-who-v2.html', anchorId: '08-30-man-mirror-christ-who', prompt: 'You entered through uncertainty about God\'s work. This record teaches what happens when the mirror shifts and we begin to see Him instead of ourselves.' },
+    'cost-of-obedience': { record: '08-30-faced-image-filthy-garments-v2.html', anchorId: '08-30-faced-image-filthy-garments', prompt: 'You entered through the fear of what obedience costs. This record holds that fear without minimizing it.' },
+    'surrender': { record: '08-30-compass-locked-room-v2.html', anchorId: '08-30-compass-locked-room', prompt: 'You entered through the question of surrender. This record approaches surrender through the loss of self-command.' },
+    'searching-jesus': { record: '08-30-man-mirror-christ-who-v2.html', anchorId: '08-30-man-mirror-christ-who', prompt: 'You entered through searching for Jesus. This record teaches that He is the one who searches us first.' },
+    'examine-carefully': { record: '08-29-signpost-secret-place-cup-v2.html', anchorId: '08-29-signpost-secret-place-cup', prompt: 'You entered to examine carefully. The records are primary; everything else is secondary. Read without hurrying.' },
+    'signpost': { record: '08-29-signpost-secret-place-cup-v2.html', anchorId: '08-29-signpost-secret-place-cup', prompt: 'You chose the full chronology. The records unfold in the order they were recorded; follow the thread connections.' },
+    'jordan-crossing': { record: '08-29-signpost-secret-place-cup-v2.html', anchorId: '08-29-signpost-secret-place-cup', prompt: 'You chose a quiet place. Let the record itself, and the secret place it names, work on you.' },
+    'compass': { record: '08-30-compass-locked-room-v2.html', anchorId: '08-30-compass-locked-room', prompt: 'You are here, and that is enough. This record is offered for the moment you are in.' }
   };
 
   // Keyword pools: every record whose title+summary matches one of these
   // regexes becomes a candidate for that doorway, in addition to the
   // anchor above. 'signpost' (full chronology) pools from the four named
   // threads instead of keywords, since its whole point is breadth across
-  // the timeline rather than a single theme. 'jordan-crossing' is left
-  // unpooled — it is a single preserved interior page, not a v2 record.
+  // the timeline rather than a single theme.
+  //
+  // Note (Phase 11): the original 7 curated seed records this table once
+  // pointed to by their old hand-authored short ids (`signpost`,
+  // `man-of-flesh`, `mirror`, `mirror-gospel`, `filthy-garments`,
+  // `compass`, `wisdom`) were superseded when the full corpus was rebuilt
+  // from `records-2/` — those short ids no longer exist in `JC_RECORDS`
+  // (every id is now date-prefix + slugified-title). Anchors above were
+  // re-resolved by matching each seed's known title/date against the
+  // rebuilt set; one seed ("When Wisdom Ushers Power," Aug 30 · 23:58)
+  // could not be found under any title in the verified corpus and is
+  // disclosed as a genuine gap (see CHANGELOG.md) — its doorways
+  // ('searching-jesus') now anchor to a different, still-thematically-
+  // fitting record instead of a dead link.
   const DOORWAY_KEYWORDS = {
     'beginning-again': /\bbegin(ning)?\b|\bagain\b|\bwinnowing\b|\brenewed?\b|\brestart\b|\brest(ore|oration)\b|\breturn(s|ed|ing)?\b/i,
     'trapped-identity': /\bidentity\b|\bflesh\b|\began\b|\bego\b|\bcaptiv\w*|\bbondage\b|\bhostage\b|\bmirror\b|\bold (man|face)/i,
@@ -55,6 +67,7 @@
     'surrender': /\bsurrender(s|ed)?\b|\bkenosis\b|\bemptied\b|\byield(s|ed|ing)?\b|\bbreaking point\b|\bself-sufficien\w*/i,
     'searching-jesus': /\bjesus\b|\bchrist\b|\bgospel\b|\bteacher\b|\bsavior\b|\bredee?m\w*|\bwisdom\b/i,
     'examine-carefully': /\bexamine\b|\bdiscern\w*|\bscripture\b|\bdoctrine\b|\btest(s|ed|ing)?\b|\bcareful\w*/i,
+    'jordan-crossing': /\bsecret place\b|\bquiet(ness)?\b|\bstill(ness)?\b|\bsilence\b|\brest\b|\bsabbath\b/i,
     'compass': /\bcompass\b|\bcarrying\b|\blocked room\b|\bwitness\b|\bhere\b/i,
   };
 
@@ -91,9 +104,7 @@
   // Build every doorway's candidate pool once, at load time.
   const DOORWAY_POOLS = {};
   Object.keys(DOORWAY_ROUTING).forEach(doorwayId => {
-    if (doorwayId === 'jordan-crossing') {
-      DOORWAY_POOLS[doorwayId] = null; // unpooled — single interior page
-    } else if (doorwayId === 'signpost') {
+    if (doorwayId === 'signpost') {
       const pool = buildThreadPool();
       DOORWAY_POOLS[doorwayId] = pool.length ? pool : [DOORWAY_ROUTING[doorwayId].anchorId];
     } else {
@@ -112,9 +123,6 @@
   function pickFromPool(doorwayId) {
     const routing = DOORWAY_ROUTING[doorwayId];
     if (!routing) return null;
-    if (doorwayId === 'jordan-crossing') {
-      return { record: routing.record, poolSize: 1 };
-    }
     const pool = DOORWAY_POOLS[doorwayId];
     if (!pool || !pool.length) {
       return { record: routing.record, poolSize: 1 };

@@ -1,1 +1,13 @@
 jordan-crossing-interior.html
+
+# Verified corpus master + superseded snapshots stay local-only.
+# records-2/ (the canonical raw-source folder for the public site) is
+# intentionally NOT listed here and remains tracked/pushed.
+verified-source-docs/
+Superseded-Docs/
+
+# Internal AI-assisted-development artifacts, not for the public repo.
+COPILOT_HANDOFF_PROMPT.md
+COPILOT_CHAT_PROMPT.txt
+COPILOT_USAGE.md
+memory-bank/

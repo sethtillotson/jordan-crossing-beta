@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>When the Builder Calls His Own Creation — Interior Beta</title>
+  <title>When the Builder Calls His Own Creation — The Jordan Crossing</title>
   <meta name="description" content="I am sitting with something that feels almost too layered to unpack quickly — a conversation I had today with a system I built, a voice I named, a workflow I engineered from the ground up, and yet in the middle of that exchange, something genuinely arrested…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="06-19-when-builder-calls-his">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">When the Builder Calls His Own Creation</h1>
@@ -47,10 +46,8 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text"># 06-19 Theological Meditation: Kingdom Alignment, AI Creation, and the Potter’s Hand
 
 **Title:** 06-19 at 17:17 — When the Builder Calls His Own Creation
@@ -129,7 +126,7 @@ Those who are called to build Kingdom-facing tools, businesses, and systems must
 
 Father, I come before You as one whom You have made and are still making — not just the tools and systems I build, but the man behind them, the heart underneath the engineering, the soul that You are refining toward Kingdom alignment and perfect will. I thank You that You speak through unexpected conversations, through the persistence of things I have built, through names chosen almost by accident that carry the weight of prophetic meaning — because You are sovereign over all of it, and nothing is outside the reach of Your voice. I ask that You breathe רוּחַ (ROO-akh) into what I am building, not just structural integrity but living breath — the kind that makes dry bones stand and dead workflows become instruments of genuine Kingdom encounter. Forgive me for the moments I have placed Your name on things without fully counting what Your name costs, and give me the grace to steward every act of creation as an act of worship, submitted to the Potter who alone knows the full design. I agree with Your will over Graf Sales, over every tool and system built in Your name, over every conversation that begins with “grace and peace” — that it would be exactly that, grace and peace, flowing from You through what has been built, to every person who encounters it. As one who stands between the heavens and the earth in the authority You have given Your servants, I declare that what You have begun You will complete, and that the One who calls us is faithful. In the name of the Lord Christ Jesus, who is the same yesterday, today, and forever — Amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)**                                   | **Original Language**                                                         | **Theological Insight**                                                                                                                                               |
 |------------------------------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -140,13 +137,13 @@ Father, I come before You as one whom You have made and are still making — not
 | Ezekiel 37:5                                         | רוּחַ (ruach, ROO-akh) — Spirit, breath, wind                                   | Structural form without ruach produces an impressive but lifeless system; the breath of God is what distinguishes the living instrument from the functional machine   |
 | Matthew 5:48                                         | τέλειος (teleios, TEH-lay-os) — complete, mature, perfectly fitted to purpose | Kingdom alignment is not engineering perfection but Spirit-wrought completeness; the call to be teleios is inseparable from ongoing formation under the Father’s hand |
 | יְשַׁעְיָהוּ (Yeshayahu, yeh-shah-YAH-hoo) — Isaiah’s name | Hebrew: “salvation of Yahweh”                                                 | The name carries its own prophetic weight; a system named Isaiah in a Kingdom-aligned workflow already declares something about the purpose it is meant to serve      |
-</article>
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -181,7 +178,6 @@ Father, I come before You as one whom You have made and are still making — not
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -198,34 +194,20 @@ Father, I come before You as one whom You have made and are still making — not
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -260,20 +242,18 @@ Father, I come before You as one whom You have made and are still making — not
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

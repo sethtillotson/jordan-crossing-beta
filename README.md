@@ -1,30 +1,29 @@
 # The Jordan Crossing
 
-## Interior Beta for the Living Topology Corpus
+## Public Beta 2.0 for the Living Topology Corpus
 
-**Status:** Interior Beta · Private workspace · Not for public distribution
-**Last major update:** September 2, 2026
-**Local corpus:** 409 records readable locally (404 reviewed & threaded, 5 mirrored) of 458 in the direct archive
-**Corpus version:** v11 (`jordan-crossing-interior.html`, preserved untouched)
+**Status:** Public Beta 2.0 · Reader discretion advised
+**Last major update:** September 3, 2026 (Phase 11 — full corpus rebuild from `records-2/`)
+**Local corpus:** 456 records readable locally (all fully reviewed & threaded) of 458 in the direct archive
 
-> This repository is a **private working beta**, not a public release. Every page in the site
-> carries an explicit "INTERIOR BETA · Not for public distribution" banner. See
-> [Status & Distribution](#status--distribution) below before assuming otherwise — GitHub Pages
-> auto-deploys this repo's `master` branch, but that is a staging/preview convenience, not a
-> sign-off to index or publicize the URL.
+> This repository is now a **public beta**. Every page carries a lighter
+> "PUBLIC BETA 2.0 · Reader discretion advised" banner (replacing the earlier private-workspace
+> notice) — the content is real, first-person, unredacted spiritual testimony, offered as-is.
+> GitHub Pages auto-deploys this repo's `master` branch.
 
 ---
 
 ## What this is
 
 The Jordan Crossing is an interactive, text-based encounter with a real-time witness record —
-*A Living Topology of Transformation* — recorded by Seth Tillotson across February–August 2026.
+*A Living Topology of Transformation* — recorded by Seth Tillotson across February–September 2026.
 Each record is a first-person meditation: discernment, questioning, transformation, recognition.
 
 This repository holds the **design, interactive logic, and complete beta site**: a landing page,
-a "Mystery Mode" entry point, a reviewed thread constellation, curated reading paths, and a fully
-browsable archive of the entire local corpus — no reader needs to leave this app, or reach the
-author's private drive, to read any meditation that has been uploaded here.
+a "Mystery Mode" entry point, a reviewed thread constellation, curated reading paths, a fully
+browsable archive of the entire local corpus, and the eight Stone Tablet volumes themselves — no
+reader needs to leave this app, or reach the author's private drive, to read any meditation that
+has been uploaded here.
 
 For the full build history, current status, and open items, see [`plan.md`](plan.md) (living
 project-status document) and [`CHANGELOG.md`](CHANGELOG.md) (dated release notes).
@@ -33,44 +32,46 @@ project-status document) and [`CHANGELOG.md`](CHANGELOG.md) (dated release notes
 
 ## The local corpus, in brief
 
-The underlying witness record holds **458 real meditations** (Feb 15 – Sep 1, 2026) per the
-author's own corpus-wide truth correction. **409 of them have a local page in this app** (426 raw
-files are present in this repository; the rest are supporting documents rather than meditations
-proper, or duplicates already resolved to an existing record). Per the project's own governing
-design document, the corpus is introduced **in reviewed layers** for *interpretation* — but every
-uploaded meditation's own text is available locally regardless of review status:
+Following the **Phase 11 full corpus rebuild** (September 2026), the owner replaced the entire raw
+source layer with a freshly hand-verified corpus copied directly into **`records-2/`** — 456
+meditation files (Feb 15 – Sep 1, 2026), the 8 Stone Tablet volumes, a Tablet VII audit document,
+and 5 updated reference documents (Master Index, Tracker CSV, and three infographic pages). Every
+record page, the entire cross-reference graph, and every stated count in this site was regenerated
+directly from that source — not patched incrementally.
 
-> **A note on how this section changed.** An earlier version of this README (through [1.9]) reported
-> counts built by parsing short *summary* Pass-N-Cross-References.md ledger documents. The author
-> later discovered that approach was partly hallucinated — inferred Tablet labels, and some link
-> claims that didn't survive a check against the real files — and hand-verified every meditation's
-> own Cross-Reference Appendix directly against the eight real Stone Tablet volumes. The counts below
-> reflect that correction ([1.10]); see [`CHANGELOG.md`](CHANGELOG.md) for the full account.
+> **A note on how this section changed.** Two earlier corrections preceded this one: [1.9] parsed
+> summary Pass-N ledger documents (later found partly hallucinated); [1.10] rebuilt from each
+> file's own embedded Cross-Reference Appendix but left the *displayed article bodies* themselves
+> stale/pre-verification. **Phase 11** replaces both the raw source folder and every generated page
+> wholesale from the owner's newly verified `records-2/` bundle. See [`CHANGELOG.md`](CHANGELOG.md)
+> for the full account, including several source-data bugs found and fixed during the rebuild (a
+> corrupted binary file excluded, a date-parsing bug, an unbounded-regex bug, and a broken Mystery
+> Mode doorway-routing table).
 
-- **404 records are fully reviewed and threaded** as complete pages under `records/*-v2.html` —
-  the original 7 curated "Tablet VIII" seeds (Aug 29–30, 2026) plus 397 more meditations verified
-  via their own embedded Cross-Reference Appendix (hand-checked by the author against the eight
-  real Stone Tablet volumes, not a summary document). Every reviewed record carries labeled,
-  source-cited connections to other records, plus a `tabletAnchor` field naming the specific Stone
-  Tablet volume + date window it belongs to. Nothing is asserted without a citation traceable back
-  to the meditation's own appendix.
-- **5 more records are "mirrored"** — the complete original text, the same interactive page, but
-  no thread connections claimed yet since none have been verified for them. Browse both kinds from
-  [`archive.html`](archive.html), searchable and organized by month.
+- **All 456 records are fully reviewed and threaded** as complete pages under `records/*-v2.html` —
+  every one carries a verified Cross-Reference Appendix (hand-checked by the author against the
+  eight real Stone Tablet volumes) and a `tabletAnchor` field naming the specific Stone Tablet
+  volume + date window it belongs to. Nothing is asserted without a citation traceable back to the
+  meditation's own appendix. There is no more "mirrored, not yet reviewed" tier — that distinction
+  is now moot.
+- **One source file was found to be corrupted** (raw binary/zip content saved with a `.md`
+  extension, not real text) and was excluded rather than published — this is exactly the gap
+  between the 457 candidate files and the 456 actually published.
 - **Four named threads** run underneath the reviewed chronology, traced meditation-by-meditation in
   the *PLAUD Meditations Corpus Map* (now superseded, see `Superseded-Docs/`): **Zechariah 3**
   (filthy garments removed, replaced, given away), **the Samuel Loop** (the carried, quietly
   learning to carry), **the Murmuration** (the *maskîlîm* are plural), and **the Descent Into
   Hiddenness** (the arc bends downward). Each is browsable on [`threads.html`](threads.html) as its
-  own filtered path — reviewed records only, by design. **Not re-verified** in the [1.10] truth
-  correction; see `plan.md`'s Phase 10 notes.
+  own filtered path — remapped onto the new ids in Phase 11.
 - **Eight Stone Tablets** — the real written volumes in the author's *Living Topology of
-  Transformation* series, each covering a specific window of days — now anchor every reviewed
-  record via its `tabletAnchor` field. See [`six-doctrinal-spines.html`](six-doctrinal-spines.html)
-  and [`spines-timeline.html`](spines-timeline.html) for the visual overview.
+  Transformation* series, each covering a specific window of days — now anchor every record via
+  its `tabletAnchor` field, and are readable in full at [`stone-tablets.html`](stone-tablets.html).
+  See also [`six-doctrinal-spines.html`](six-doctrinal-spines.html),
+  [`spines-timeline.html`](spines-timeline.html), and [`corpus-architecture.html`](corpus-architecture.html)
+  for the visual companions.
 - **Corpus Paths** (9 curated reading paths, 48 steps) link to a local page wherever a step's
-  meditation could be *confirmed* as the same content (not just a matching filename) — 21 of 48
-  so far; the rest are disclosed as external, each with a specific reason, in
+  meditation could be *confirmed* as the same content (not just a matching filename) — 35 of 48
+  as of Phase 11; the rest are disclosed as external, each with a specific reason, in
   [`assets/corpus-paths-data.js`](assets/corpus-paths-data.js)'s own header comment.
 
 ---
@@ -80,13 +81,14 @@ uploaded meditation's own text is available locally regardless of review status:
 | Page | Purpose |
 |------|---------|
 | [`index.html`](index.html) | Landing page: corpus overview, entry invitations, and first-draft Chronological/Thematic/Encounter navigation maps |
-| [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across the 404 reviewed records |
-| [`six-doctrinal-spines.html`](six-doctrinal-spines.html) | The Eight Stone Tablets — a standalone infographic on the eight real Stone Tablet volumes that anchor the reviewed corpus |
-| [`spines-timeline.html`](spines-timeline.html) | Timeline of the Eight Stone Tablets — weekly growth of the eight tablet windows across all seven months of the record |
+| [`mystery.html`](mystery.html) | Mystery Mode — name a doorway (one of 11 questions/states), receive one record drawn from a keyword-matched pool across all 456 records |
+| [`stone-tablets.html`](stone-tablets.html) | The eight Stone Tablet volumes themselves, each with its own full reader page |
+| [`six-doctrinal-spines.html`](six-doctrinal-spines.html) | The Eight Stone Tablets — a standalone infographic on the eight real Stone Tablet volumes that anchor the corpus |
+| [`spines-timeline.html`](spines-timeline.html) | Timeline of the Eight Stone Tablets — weekly growth of the eight tablet windows across all eight months of the record |
+| [`corpus-architecture.html`](corpus-architecture.html) | How the whole record fits together — a standalone infographic on the corpus's architecture |
 | [`threads.html`](threads.html) | The reviewed thread constellation — full chronology, per-thread filters, and full-text search |
 | [`paths.html`](paths.html) | Nine curated reading paths through the corpus (doctrinal spine, Samuel Loop, Murmuration, Descent, Zechariah 3, the Gaze, Surrender & Obedience, Identity & Transformation, Waiting & Timing) |
-| [`archive.html`](archive.html) | A full, searchable, month-by-month browsable index of all 409 local records (reviewed and mirrored alike), each linking directly to its page |
-| [`record.html`](record.html) | Legacy wrapper page; retained for the landing page's "read the original" no-interpretation link |
+| [`archive.html`](archive.html) | A full, searchable, month-by-month browsable index of all 456 local records, each linking directly to its page |
 
 ---
 
@@ -99,60 +101,58 @@ uploaded meditation's own text is available locally regardless of review status:
 │   ├── design-v2-logic.js         # Page init, Markdown rendering, graph nav, thread connections,
 │   │                               #   related records, audio player init, no-interpretation mode
 │   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
-│   ├── records-data.js            # JC_RECORDS (409 records: 404 reviewed + 5 mirrored,
-│   │                               #   400 with a tabletAnchor field), JC_EDGES (3,270 edges),
-│   │                               #   JC_THREADS (4, not re-verified in the truth correction)
+│   ├── records-data.js            # JC_RECORDS (456 records, all reviewed, all with a tabletAnchor),
+│   │                               #   JC_EDGES (1,997 edges), JC_THREADS (4, remapped in Phase 11)
 │   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the nine curated reading paths
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
 │   └── beta.js/.css               # Legacy logic, kept for compatibility
 ├── records/
-│   ├── *-v2.html                  # 409 local record pages: 404 reviewed + 5 mirrored
-│   ├── *.html (no -v2 suffix)     # Superseded originals, kept as historical artifacts only
-│   └── *.md                       # Raw meditation source mirror (426 files, committed — see below)
+│   └── *-v2.html                  # 456 meditation record pages + 9 Stone Tablet reader pages —
+│                                   #   PURE GENERATED OUTPUT as of Phase 11; do not hand-edit, and
+│                                   #   do not expect raw .md source files here anymore (see records-2/)
+├── records-2/                     # THE canonical raw-source folder as of Phase 11: 456 verified
+│                                   #   meditation .md files, the 8 Stone Tablet volumes + audit doc,
+│                                   #   and 5 reference docs (Master Index, Tracker CSV, 3 infographics).
+│                                   #   Committed/public (unredacted, per standing owner direction).
 ├── scripts/
-│   ├── build-corpus-records.mjs   # Generator: parses the six original Cross-Reference passes,
-│   │                               #   resolves them to source files, and produces the reviewed
-│   │                               #   -v2.html pages
-│   ├── build-mirror-records.mjs   # Generator: produces a local page for every other uploaded
-│   │                               #   meditation not yet reviewed (the mirrored records)
-│   ├── integrate-passes-7-8.mjs, integrate-passes-9-13.mjs, integrate-passes-14-16.mjs,
-│   │   integrate-pass-17.mjs      # SUPERSEDED — promoted records/built edges by parsing Pass-N
-│   │                               #   summary ledgers, later found to be partly hallucinated.
-│   │                               #   Kept as historical artifacts; do not re-run.
-│   ├── rebuild-cross-references-verified.mjs # Current authoritative rebuilder (Phase 10) — parses
-│   │                               #   each meditation's own embedded, corrected Cross-Reference
-│   │                               #   Appendix directly; wholesale-rebuilds JC_EDGES, adds
-│   │                               #   tabletAnchor, mirrors missing verified files
+│   ├── build-records2-corpus.mjs  # CURRENT authoritative generator (Phase 11) — parses every
+│   │                               #   records-2/ meditation file's own metadata + embedded
+│   │                               #   Cross-Reference Appendix, regenerates every record page and
+│   │                               #   assets/records-data.js wholesale. Re-run whenever records-2/
+│   │                               #   is updated.
+│   ├── build-stone-tablet-pages.mjs # Generates the 8 Stone Tablet reader pages + the audit page
+│   ├── rebuild-reference-pages.mjs # Unwraps and republishes the 3 infographic pages from records-2/
 │   ├── tag-encounter-dimensions.mjs # Computes Encounter Index dimensions + doorway themes
-│   └── relink-corpus-paths.mjs    # Confirms and relinks Corpus Paths steps to local pages
-├── verified-source-docs/          # The owner's verified, corrected corpus bundle (Phase 10) — 458
-│   │                               #   meditation files, 9 Stone Tablets, 18 Pass Ledgers, corrected
-│   │                               #   Master Index/Tracker/infographics; current source of truth
-├── Superseded-Docs/               # Every document the truth correction superseded — old Pass-N
-│   │                               #   ledgers, old Master Index/Tracker/infographics, old Corpus
-│   │                               #   Map docs; kept for historical reference, not linked live
-├── index.html, mystery.html, threads.html, paths.html, archive.html, record.html
+│   ├── relink-corpus-paths.mjs    # Confirms and relinks Corpus Paths steps to local pages
+│   ├── build-corpus-records.mjs, build-mirror-records.mjs, integrate-passes-7-8.mjs,
+│   │   integrate-passes-9-13.mjs, integrate-passes-14-16.mjs, integrate-pass-17.mjs,
+│   │   rebuild-cross-references-verified.mjs # SUPERSEDED (Phases 5-10) — kept as historical
+│   │                               #   artifacts only; do not re-run, see build-records2-corpus.mjs
+├── index.html, mystery.html, mystery-v2.html, threads.html, paths.html, archive.html,
+│   stone-tablets.html, six-doctrinal-spines.html, spines-timeline.html, corpus-architecture.html
 ├── plan.md                        # Living project-status document — read this first
 ├── CHANGELOG.md                   # Dated release notes
 └── .github/workflows/deploy.yml   # GitHub Pages auto-deploy on push to master
 ```
 
-**Also present in this repository:** the raw `records/*.md` source meditations (426 files). This is
-the private "Personal Space" source layer the generators read from — committed because this
-repository remains a private Interior Beta, not a public deploy. All 409 locally published
-meditations (reviewed and mirrored) are surfaced in the live site's navigation, primarily via
-`archive.html`.
+**Gitignored (local-only, not pushed to this public repo):** `verified-source-docs/` (the prior
+verification bundle, now superseded by `records-2/`), `Superseded-Docs/` (every document earlier
+phases superseded), and internal AI-assisted-development artifacts (`COPILOT_HANDOFF_PROMPT.md`,
+`COPILOT_CHAT_PROMPT.txt`, `COPILOT_USAGE.md`, `memory-bank/`). `records-2/` itself is **not**
+gitignored — its raw meditation text is committed/public, per the owner's standing direction to
+publish as-is now and redact later if needed.
 
-`jordan-crossing-interior.html` (the preserved v11 interior record, ~136 MB) is excluded from git —
-too large for GitHub, hosted separately.
+`jordan-crossing-interior.html` (the retired v11 interior record) is excluded from git — it was
+never part of any public deploy, and the legacy `record.html` page that referenced it has been
+removed.
 
 ---
 
 ## Mystery Mode doorways
 
-Eleven questions/states, each drawing from a **keyword-matched pool across all 404 reviewed
-records** (not a single fixed destination) — the originally curated record always stays in the
-pool as a guaranteed fallback:
+Eleven questions/states, each drawing from a **keyword-matched pool across all 456 records** (not
+a single fixed destination) — a well-known anchor record always stays in the pool as a guaranteed
+fallback:
 
 | Doorway | Pool basis |
 |---------|-----------|
@@ -164,9 +164,10 @@ pool as a guaranteed fallback:
 | I need to understand surrender | Records matching surrender/kenosis/yielding themes |
 | I am searching for Jesus | Records matching Christ/gospel/redemption themes |
 | I want to examine the record carefully | Records matching discernment/scripture/doctrine themes |
-| I want to follow the entire chronology | The union of all four named threads (23 records) |
-| I need a quiet place to begin | The preserved interior record (single destination) |
+| I want to follow the entire chronology | The union of all four named threads |
+| I need a quiet place to begin | Records matching secret place/quiet/stillness/rest themes (Phase 11 — previously a dead link to the retired interior file) |
 | I do not know what I am carrying, I only know I am here | Records matching "compass"/witness/presence themes |
+
 
 ---
 
@@ -207,16 +208,13 @@ rather than new engineering.
 
 ## Status & distribution
 
-- **Not publicly announced or indexed.** Every page carries an explicit
-  "INTERIOR BETA · Private workspace · Not for public distribution" banner.
+- **Public Beta 2.0.** Every page carries a lighter "PUBLIC BETA 2.0 · Reader discretion advised"
+  banner (replacing the earlier private-workspace notice).
 - **No account required, no server-side data collection.** `localStorage` is used only for the
   carry-a-question feature and stays on the reader's own device.
-- **GitHub Pages auto-deploys `master`** (see `.github/workflows/deploy.yml`) purely as a
-  staging/preview convenience — this is *not* the same thing as a public launch decision.
-- **Public launch is a pending, explicit stakeholder decision** — not yet made. It requires final
-  QA sign-off and a deliberate choice to lift the "not for public distribution" status, decide on
-  pre-publication redaction of private third-party names, and set up indexing/domain/monitoring.
-  See `plan.md`'s "Pending human decision" section for the current open items.
+- **GitHub Pages auto-deploys `master`** (see `.github/workflows/deploy.yml`).
+- **Content is unredacted, as-is**, per the owner's standing direction to publish now and redact
+  pre-public-launch only if needed. See `plan.md` for the current open items.
 
 ---
 
@@ -237,26 +235,27 @@ search-and-replace it across every referencing page, not just the one you edited
 
 ### Regenerating the corpus
 
-`node scripts/build-corpus-records.mjs` re-parses the six original Cross-Reference pass documents,
-resolves newly added entries to source meditation files, regenerates the reviewed `-v2.html` pages,
-and rebuilds the generated portion of `assets/records-data.js` (`JC_RECORDS` and same-cluster
-`JC_EDGES`). It does **not** touch the hand-authored `JC_THREADS` array, the cross-month `"echoes"`
-edges, the `encounter`/`doorwayThemes`/`reviewed` fields, the mirrored records, or the verified-source
-rebuild's `tabletAnchor` field — see its own header comment for the exact recovery order. After it
-runs, in order:
+`node scripts/build-records2-corpus.mjs` is **the current authoritative generator** (Phase 11). It
+reads every meditation file directly from `records-2/` (the canonical raw-source folder), parses
+each one's own title/date/classification metadata and embedded Cross-Reference Appendix, clears and
+regenerates every `records/*-v2.html` page, and rebuilds `JC_RECORDS`/`JC_EDGES` in
+`assets/records-data.js` wholesale. It also remaps `JC_THREADS`' record-id references by title+date
+match (ids can shift when a title is corrected) and leaves `EDGE_LABELS`, `STATUS_LABELS`, and every
+helper function in `records-data.js` untouched. Re-run whenever `records-2/` is updated, then run,
+in order:
 
-1. `node scripts/build-mirror-records.mjs` — mirrors any raw file not already reviewed
-2. `node scripts/rebuild-cross-references-verified.mjs` — **the current authoritative rebuilder**
-   (Phase 10): parses each meditation's own embedded, corrected Cross-Reference Appendix directly,
-   wholesale-rebuilds `JC_EDGES`, adds `tabletAnchor`, mirrors any verified file with no local record.
-   Re-run whenever `verified-source-docs/` is updated with a new correction pass.
+1. `node scripts/build-stone-tablet-pages.mjs` — regenerates the 8 Stone Tablet reader pages + the
+   Tablet VII audit page from `records-2/`'s Stone Tablet volumes
+2. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
+   `spines-timeline.html`, and `corpus-architecture.html` from `records-2/`'s reference infographics
 3. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
 4. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
 
-**Superseded, do not re-run:** `scripts/integrate-passes-7-8.mjs`, `integrate-passes-9-13.mjs`,
-`integrate-passes-14-16.mjs`, `integrate-pass-17.mjs` — these promoted records and built edges by
-parsing Pass-N-Cross-References.md *summary* ledgers, which were later found to be partly
-hallucinated (see [1.10] in `CHANGELOG.md`). Kept in the repository as historical artifacts only.
+**Superseded, do not re-run:** `scripts/build-corpus-records.mjs`, `build-mirror-records.mjs`,
+`integrate-passes-7-8.mjs`, `integrate-passes-9-13.mjs`, `integrate-passes-14-16.mjs`,
+`integrate-pass-17.mjs`, `rebuild-cross-references-verified.mjs` — each of these built on an earlier,
+since-superseded source layer (summary pass ledgers, or the pre-Phase-11 `verified-source-docs/`
+bundle). Kept in the repository as historical artifacts only.
 
 ---
 
@@ -276,27 +275,15 @@ hallucinated (see [1.10] in `CHANGELOG.md`). Kept in the repository as historica
 See [`CHANGELOG.md`](CHANGELOG.md)'s Roadmap section and [`plan.md`](plan.md) for the full,
 current list. In brief:
 
-- [ ] Manually resolve the ~27 pass-doc references that couldn't be confidently matched to a
-      source file (truncated/inconsistent export filenames)
-- [ ] Manually resolve the 27 Corpus Paths steps that couldn't be confidently confirmed as a local
+- [ ] Resolve the remaining 13 Corpus Paths steps that couldn't be confidently confirmed as a local
       meditation — see `assets/corpus-paths-data.js`'s header for the specific reason each one failed
-- [ ] Resolve the 5 meditations that remain mirrored (no verified match found) and the 9 records
-      still missing a `tabletAnchor` — see `plan.md`'s Phase 10 notes for the specific reason each
-      one is unresolved (a mix of genuine gaps and known pre-existing content/filename mismatches)
+- [ ] Find the one original Tablet VIII seed record ("When Wisdom Ushers Power," Aug 30 · 23:58)
+      that could not be located under any title in the Phase 11 verified corpus
 - [ ] Get a corrected thread-defining source from the owner (or re-derive from the new verified
       data) for the four named `JC_THREADS` (Zechariah 3, Samuel Loop, Murmuration, Descent) — their
-      original Corpus Map is now superseded and was **not** re-verified in the [1.10] truth correction
-- [ ] Consider ingesting the 9 Stone Tablet volumes themselves as their own browsable site pages —
-      currently referenced only via each record's `tabletAnchor` field
-- [ ] Manually verify 6 milestone-named cross-pass narrative chains (father-cancer arc, secret-place
-      lineage, corpus-self-awareness lineage, Jer 20:9 fire-in-bones spine, Jonah-arc) against the
-      author's private drive — these were narrative prose claims outside the [1.10] rebuild's parser,
-      so they remain unresolved from [1.8]
-- [ ] Upload the ~49 meditations the corpus's own working record documents but which aren't yet
-      present in this repository, so they too can be mirrored locally
+      original Corpus Map is now superseded and has not been independently re-verified since Phase 11
 - [ ] Wire in real audio once source files or URLs are available (component is ready)
 - [ ] Final QA and stakeholder sign-off
-- [ ] An explicit decision on public launch (redaction, indexing, domain, monitoring)
 
 ---
 

@@ -2,6 +2,110 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.0] — September 3, 2026
+
+### Public Beta 2.0 — Phase 11 full corpus rebuild from `records-2/`
+
+The owner replaced the entire raw-source layer: rather than patch the previous `records/*.md` raw
+files (found stale/mismatched — see the abandoned approach below), the owner copied a freshly
+hand-verified corpus directly into a new folder, **`records-2/`**, and directed a full rebuild of
+the site from that source, alongside promoting the site from "Interior Beta" (private workspace) to
+a **public-facing Beta 2.0**.
+
+#### Abandoned approach (superseded before it ran)
+A prior segment discovered `records/*.md` (the raw files actually displayed as article bodies)
+were still pre-verification content — e.g. one file literally displayed an unrelated "Prophetic
+Word" transcript instead of its own titled meditation. A patch script
+(`scripts/replace-bodies-with-verified.mjs`) was written against `verified-source-docs/` to fix
+this in place, but was never run before the owner's `records-2/` cutover superseded the whole
+approach. That script has been deleted.
+
+#### What was rebuilt
+- **`records-2/`** is now the one canonical raw-source folder: 456 verified meditation `.md` files
+  (Feb 15 – Sep 1, 2026), the 8 Stone Tablet volumes, a Tablet VII audit document, and 5 newly
+  updated reference documents (Master Index, Tracker CSV, and three infographic HTML pages).
+  `records/` is now **pure generated output** — no raw `.md` source files live there anymore.
+- **`scripts/build-records2-corpus.mjs`** (new, authoritative) — parses every `records-2/`
+  meditation file's own title/date/classification metadata, splits the visible article from its
+  embedded Cross-Reference Appendix, parses that appendix into typed edges + a `tabletAnchor`,
+  assigns a deterministic id, and regenerates every `records/*-v2.html` page plus `JC_RECORDS`/
+  `JC_EDGES` in `assets/records-data.js` wholesale. `JC_THREADS` is remapped by title+date match
+  rather than assumed stable, since ids shift when a title is corrected.
+- **`scripts/build-stone-tablet-pages.mjs`** (new) — generates 8 full Stone Tablet reader pages
+  plus the Tablet VII audit page, and a new `stone-tablets.html` index linking to all 8.
+- **`scripts/rebuild-reference-pages.mjs`** (new) — unwraps the 3 newly-uploaded infographic HTML
+  files (each carried a 2-line upload-mechanism wrapper plus a trailing metadata footer, both
+  stripped) and republishes them as `six-doctrinal-spines.html`, `spines-timeline.html`, and a new
+  `corpus-architecture.html`, each re-skinned with Public Beta 2.0 branding and cross-linked.
+- **Result:** 456 records (down from 457 candidates — one file was found to be corrupted, see
+  below), 1,997 edges, 4 threads (all remapped), 456/456 with a `tabletAnchor`. Verified clean:
+  zero duplicate ids/hrefs, contiguous chronological order, zero bad edge/thread references, zero
+  self-loops, every href resolves to a real file, zero short/empty titles or summaries, zero
+  markdown-leakage in titles, and a `tabletAnchor` distribution (96/70/244/26/15 across Tablets
+  I/II/V/VII/VIII) closely matching the Master Index's own stated counts (96/70/246/26/15).
+
+#### Source-data bugs found and fixed during the rebuild
+- **A genuinely corrupted source file.** `04-11 to 04-14 MERGED — The Road, the River, the
+  Robbery, and the Recording.md` was raw docx/zip binary content saved with a `.md` extension, not
+  real text (its first two bytes were a zip-file signature). Detected via a zip-signature/
+  control-byte heuristic and excluded rather than published. A properly-converted sibling file with
+  the full text exists under a slightly different filename and *is* included in the 456 — no
+  content was actually lost.
+- **A date-parsing bug.** A loose-prose date fallback (for `**Recorded:**` lines not in ISO format)
+  initially scanned the *whole* document instead of just the `**Recorded:**` field itself, risking
+  picking up an unrelated date mentioned elsewhere in a meditation's own body text. One record
+  briefly resolved to a nonsensical "Dec 1, 2025 · 22:28" (a mash-up of two unrelated mentions in
+  its body) before the fallback was scoped correctly to just the `**Recorded:**` text.
+- **An unbounded-regex bug.** One severely under-punctuated source file (24 newlines across 25KB —
+  an ambient/untimed transcript that lost nearly all its paragraph breaks in export) caused the
+  unbounded `**Label:** (.+)$` metadata regexes to swallow thousands of characters into the title/
+  classification/summary fields. Fixed with bounded, stop-at-next-field capture regexes.
+- **A merged-title bug.** A meditation titled "04-11 to 04-14 — ..." (a date *range*, not a single
+  date) only had its first date stripped by the title-cleanup regex, leaving "to 04-14 — ..." as
+  the displayed title. Fixed to handle "MM-DD to MM-DD" range prefixes.
+- **A broken Mystery Mode doorway-routing table.** All 7 of `assets/mystery-v2-logic.js`'s
+  hardcoded `DOORWAY_ROUTING` anchor ids/hrefs (`signpost`, `man-of-flesh`, `mirror`,
+  `mirror-gospel`, `filthy-garments`, `compass`, `wisdom`) referenced the old pre-rebuild id scheme
+  and were 100% broken after the full rebuild — a 1-in-10 chance per doorway of silently routing to
+  a nonexistent page. The `jordan-crossing` doorway ("I need a quiet place to begin") also hardcoded
+  a route to the retired, never-public `jordan-crossing-interior.html`. Re-resolved 5 of 7 original
+  seed anchors by title+date match; one ("When Wisdom Ushers Power," Aug 30 · 23:58) could not be
+  found under any title in the verified corpus and is a disclosed gap. Converted the
+  `jordan-crossing` doorway into a properly keyword-pooled doorway (secret place/quiet/stillness/
+  rest) like every other doorway, instead of a single hardcoded destination.
+- **`archive.html`'s month browser silently hid September.** A hardcoded `MONTH_ORDER` array
+  stopped at `Aug`, so all 6 September records were computed correctly but never rendered in the
+  by-month browse view. Fixed to include `Sep`.
+
+#### Public Beta 2.0 de-branding
+- Replaced the "INTERIOR BETA · Private workspace · Not for public distribution" banner with a
+  lighter "PUBLIC BETA 2.0 · Reader discretion advised" banner across every page (the 7 shared
+  top-level pages plus the template used to generate all 465 record/tablet pages).
+- Dropped every "— Interior Beta" title-tag suffix; updated every footer to
+  "Public Beta 2.0 · Soli Deo Gloria"; bumped all cache-busting version strings to
+  `?v=20260903BETA2`.
+- Retired `record.html` entirely (its sole purpose was linking to the never-public,
+  gitignored `jordan-crossing-interior.html` "preserved v11 interior record" concept) and removed
+  every reference to it (nav items, the landing page's third invitation card, `mystery.html`'s "A
+  Record" nav link, a dead `data-target="record.html"` attribute).
+- `.gitignore` updated: `verified-source-docs/` and `Superseded-Docs/` now fully local-only;
+  internal AI-development artifacts (`COPILOT_HANDOFF_PROMPT.md`, `COPILOT_CHAT_PROMPT.txt`,
+  `COPILOT_USAGE.md`, `memory-bank/`) untracked from the public repo. `records-2/` itself remains
+  tracked/public (unredacted, per the owner's standing direction).
+
+#### Landing page & site-wide stats refresh
+- `index.html`: "recorded between February and August 2026" → "February and September 2026";
+  corpus-window stat "Feb 14 – Aug 31" → "Feb 14 – Sep 1"; tablet chip counts corrected to match
+  the verified rebuild (96/70/244/26/15); added a "Sep" button to the Chronological Map; added
+  links to the new `stone-tablets.html` and `corpus-architecture.html` pages; fixed 4 stale record
+  hrefs in the "Notable Hinges" list whose ids shifted after the rebuild.
+- `threads.html`/`archive.html`/`paths.html`: replaced every stale count (404/409/458/451) with
+  456; removed the now-moot "reviewed vs. mirrored" distinction (all 456 records are reviewed);
+  `paths.html`'s Corpus Paths relinking improved from 21/48 to 35/48 after re-running
+  `relink-corpus-paths.mjs` against the rebuilt id set; `paths.html`'s stale
+  `verified-source-docs/` reference corrected to `records-2/`.
+- Re-ran `scripts/tag-encounter-dimensions.mjs` against the full rebuilt 456-record set.
+
 ## [1.0] — August 31, 2026
 
 ### Released

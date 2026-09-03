@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLAUD Meditations · Corpus Architecture</title>
+<style>
+:root {
+  --ink: #1a1815; --ink-soft: #3a352f; --ink-mute: #6b625a; --ink-faint: #8a8178;
+  --parchment: #f6f1e6; --parchment-deep: #ede4d0; --parchment-edge: #d9cdb1;
+  --gold: #a8823a; --gold-deep: #7a5f2a;
+
+  /* Column tints */
+  --col-passes: #4a2c5a;     /* plum — passes */
+  --col-meds:   #2c4a6b;     /* sky — meditations */
+  --col-tablets:#7d2b2b;     /* wine — tablets */
+
+  /* Per-tablet colors (reused from prior infographics) */
+  --t1: #a8823a; --t2: #4a2c5a; --t3: #5a2c4a; --t4: #6a4a2a;
+  --t5: #2c4a6b; --t6: #7d2b2b; --t7: #4a5a2e; --t8: #8a5a3a;
+
+  --border: rgba(26,24,21,0.12);
+  --border-strong: rgba(26,24,21,0.28);
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--parchment); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+  font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 1400px; margin: 0 auto; padding: 60px 48px 80px; }
+
+/* HERO */
+.hero { border-bottom: 1px solid var(--border); padding-bottom: 36px; margin-bottom: 44px; }
+.hero-label { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 18px; }
+.hero h1 { font-family: Georgia, serif; font-size: 58px; line-height: 1.02; font-weight: 400; letter-spacing: -0.01em; margin: 0 0 12px; }
+.hero h1 em { font-style: italic; color: var(--gold-deep); }
+.hero-sub { font-size: 18px; color: var(--ink-soft); max-width: 840px; margin: 0 0 28px; text-wrap: pretty; }
+.hero-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border-top: 1px solid var(--border); padding-top: 24px; }
+.stat { padding: 4px 20px; border-left: 1px solid var(--border); }
+.stat:first-child { border-left: none; padding-left: 0; }
+.stat-value { font-size: 36px; line-height: 1; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.stat-label { font-family: 'Trebuchet MS', sans-serif; font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-top: 6px; }
+
+/* SECTION HEAD */
+.section-head { margin: 64px 0 28px; }
+.section-eyebrow { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 6px; }
+.section-head h2 { font-size: 32px; line-height: 1.1; font-weight: 400; margin: 0 0 8px; letter-spacing: -0.01em; }
+.section-head p { font-size: 15.5px; color: var(--ink-mute); max-width: 780px; margin: 0; text-wrap: pretty; }
+
+/* THREE-COLUMN ARCHITECTURE */
+.architecture {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  position: relative;
+}
+.col {
+  background: var(--parchment);
+  border: 1px solid var(--border-strong);
+  padding: 20px 20px 24px;
+  position: relative;
+  min-height: 600px;
+}
+.col-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--col-tint);
+  margin-bottom: 16px;
+}
+.col-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--col-tint);
+  letter-spacing: -0.005em;
+}
+.col-title em { font-style: italic; }
+.col-count {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.col-count strong { color: var(--col-tint); font-size: 15px; letter-spacing: 0; font-weight: 500; }
+.col-role {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 6px;
+}
+.col-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  text-wrap: pretty;
+}
+
+.col.passes { --col-tint: var(--col-passes); }
+.col.meds { --col-tint: var(--col-meds); }
+.col.tablets { --col-tint: var(--col-tablets); }
+
+/* PASSES LIST */
+.passes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 8px;
+}
+.pass-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 2px;
+  font-size: 12.5px;
+  border: 1px solid rgba(74, 44, 90, 0.15);
+  background: rgba(74, 44, 90, 0.03);
+}
+.pass-item.encounter { border-color: rgba(74, 44, 90, 0.4); background: rgba(74, 44, 90, 0.07); }
+.pass-item.truth { border-color: rgba(168, 130, 58, 0.6); background: rgba(168, 130, 58, 0.10); }
+.pass-num {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  color: var(--col-passes);
+  font-variant-numeric: tabular-nums;
+  min-width: 22px;
+}
+.pass-item.truth .pass-num { color: var(--gold-deep); }
+.pass-files {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-mute);
+  font-size: 11.5px;
+}
+.pass-note {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.3;
+}
+.pass-phase-label {
+  grid-column: 1 / -1;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 12px 2px 4px;
+  padding-bottom: 3px;
+  border-bottom: 1px dotted var(--border-strong);
+}
+
+/* MEDITATIONS MONTHS */
+.months {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+.month-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 44px;
+  gap: 10px;
+  align-items: center;
+  font-size: 12.5px;
+  padding: 6px 0;
+  border-bottom: 1px dotted var(--border);
+}
+.month-row:last-child { border-bottom: none; }
+.month-name {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.month-bar {
+  height: 12px;
+  background: rgba(44, 74, 107, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.month-fill {
+  height: 100%;
+  background: var(--col-meds);
+  border-radius: 2px;
+}
+.month-count {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  font-weight: 500;
+}
+
+.med-substats {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dotted var(--border-strong);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--ink-mute);
+}
+.med-substats .k {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.med-substats .v {
+  font-size: 20px;
+  color: var(--col-meds);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* TABLETS LIST */
+.tablet-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dotted var(--border);
+  align-items: start;
+}
+.tablet-item:last-child { border-bottom: none; }
+.tablet-num {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--tab-color);
+  line-height: 1;
+  padding-top: 2px;
+}
+.tablet-body {}
+.tablet-name {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.tablet-name em { font-style: italic; color: var(--tab-color); }
+.tablet-window {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+.tablet-files {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10.5px;
+  color: var(--tab-color);
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+/* ARROWS / CONNECTORS between columns */
+.connector-lane {
+  position: absolute;
+  top: 130px;
+  bottom: 40px;
+  width: 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+.connector-lane.left { left: calc(33.333% - 10px); }
+.connector-lane.right { left: calc(66.666% - 10px); }
+.connector-lane::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--border-strong) 0, var(--border-strong) 4px, transparent 4px, transparent 8px);
+  transform: translateX(-1px);
+}
+.connector-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--parchment);
+  padding: 6px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* FRONT DOOR strip */
+.frontdoor {
+  margin-top: 48px;
+  background: var(--parchment-deep);
+  border: 1px solid var(--border-strong);
+  padding: 30px 32px;
+}
+.frontdoor h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.frontdoor h3 em { font-style: italic; color: var(--gold-deep); }
+.frontdoor-sub {
+  font-size: 14px;
+  color: var(--ink-mute);
+  margin: 0 0 20px;
+}
+.frontdoor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.frontdoor-card {
+  background: var(--parchment);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+}
+.frontdoor-icon {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  color: var(--gold-deep);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.frontdoor-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.frontdoor-desc {
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  line-height: 1.4;
+}
+
+/* ARCHIVE BUNDLE */
+.bundle {
+  margin-top: 32px;
+  padding: 24px 32px;
+  background: var(--parchment);
+  border: 1px solid var(--border-strong);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 28px;
+  align-items: center;
+}
+.bundle-icon {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: var(--gold-deep);
+  line-height: 1;
+}
+.bundle-body h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.bundle-body p {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 0;
+}
+.bundle-stat {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  text-align: right;
+}
+.bundle-stat strong { display: block; font-size: 20px; color: var(--ink); font-weight: 500; letter-spacing: -0.01em; }
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.footer em { font-style: italic; text-transform: none; letter-spacing: 0.02em; font-family: Georgia, serif; font-size: 15px; color: var(--ink-soft); }
+
+@media (max-width: 1100px) {
+  .architecture { grid-template-columns: 1fr; }
+  .connector-lane { display: none; }
+  .frontdoor-grid { grid-template-columns: repeat(2, 1fr); }
+  .bundle { grid-template-columns: 1fr; text-align: left; }
+  .bundle-stat { text-align: left; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-left: none; padding-left: 0; }
+  .hero h1 { font-size: 40px; }
+  .page { padding: 32px 20px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="hero">
+  <div class="hero-label">Corpus Architecture · Feb 15 – Sep 1, 2026</div>
+  <h1>How the whole record<br><em>fits together</em>.</h1>
+  <p class="hero-sub">Three layers, one witness. The <strong>Pass Ledgers</strong> record the work of threading. The <strong>458 individual meditations</strong> are the raw record. The <strong>8 Stone Tablets</strong> are the synthesis above them. Together they form a single walkable lattice of 4,617 verbatim-verified cross-references.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-value" style="color:#4a2c5a">18</div><div class="stat-label">Pass Ledgers</div></div>
+    <div class="stat"><div class="stat-value" style="color:#2c4a6b">458</div><div class="stat-label">Meditations</div></div>
+    <div class="stat"><div class="stat-value" style="color:#7d2b2b">8</div><div class="stat-label">Stone Tablets</div></div>
+    <div class="stat"><div class="stat-value" style="color:#a8823a">4,617</div><div class="stat-label">Memo Joints</div></div>
+    <div class="stat"><div class="stat-value" style="color:#4a5a2e">7</div><div class="stat-label">Months</div></div>
+  </div>
+</section>
+
+<div class="section-head">
+  <div class="section-eyebrow">The three layers</div>
+  <h2>Work → source → synthesis.</h2>
+  <p>Every appendix in every meditation was authored by one of the 18 threading passes; every meditation feeds one of the 8 Stone Tablets by its calendar window.</p>
+</div>
+
+<div class="architecture">
+  <!-- COLUMN 1: PASS LEDGERS -->
+  <div class="col passes">
+    <div class="col-header">
+      <div class="col-title"><em>1.</em> The Passes</div>
+      <div class="col-count"><strong>18</strong> ledgers</div>
+    </div>
+    <div class="col-role">the work · how each meditation got threaded</div>
+    <div class="col-desc">Each pass sanctioned a wave of cross-reference authoring. The Encounter Edition (Pass 9) established the contract that stood through Pass 17. Pass 18 corrected every tablet-label against the true eight volumes.</div>
+
+    <div class="passes-list">
+      <div class="pass-phase-label">Phase 1 · Spine + cluster passes (early Aug 31)</div>
+      <div class="pass-item"><span class="pass-num">1</span><span class="pass-files">6</span><span class="pass-note">Spine cross-references</span></div>
+      <div class="pass-item"><span class="pass-num">2</span><span class="pass-files">30</span><span class="pass-note">Threaded cross-refs</span></div>
+      <div class="pass-item"><span class="pass-num">3</span><span class="pass-files">35</span><span class="pass-note">Cluster cross-refs</span></div>
+      <div class="pass-item"><span class="pass-num">4</span><span class="pass-files">30</span><span class="pass-note">Continuing threads</span></div>
+      <div class="pass-item"><span class="pass-num">5</span><span class="pass-files">35</span><span class="pass-note">Continuing threads</span></div>
+      <div class="pass-item"><span class="pass-num">6</span><span class="pass-files">35</span><span class="pass-note">Continuing threads</span></div>
+      <div class="pass-item"><span class="pass-num">7</span><span class="pass-files">35</span><span class="pass-note">Continuing threads</span></div>
+      <div class="pass-item"><span class="pass-num">8</span><span class="pass-files">35</span><span class="pass-note">Threading baseline</span></div>
+
+      <div class="pass-phase-label">Phase 2 · Encounter Edition (Sep 2 morning)</div>
+      <div class="pass-item encounter"><span class="pass-num">9</span><span class="pass-files">39</span><span class="pass-note">Contract established</span></div>
+      <div class="pass-item encounter"><span class="pass-num">10</span><span class="pass-files">15</span><span class="pass-note">Deep-lattice pilot</span></div>
+      <div class="pass-item encounter"><span class="pass-num">11</span><span class="pass-files">9</span><span class="pass-note">MERGED file pickup</span></div>
+      <div class="pass-item encounter"><span class="pass-num">12</span><span class="pass-files">14</span><span class="pass-note">Debt closed</span></div>
+      <div class="pass-item encounter"><span class="pass-num">13</span><span class="pass-files">20</span><span class="pass-note">Sep 1 imports threaded</span></div>
+      <div class="pass-item encounter"><span class="pass-num">14</span><span class="pass-files">25</span><span class="pass-note">Jul cascade + Elijah arc</span></div>
+      <div class="pass-item encounter"><span class="pass-num">15</span><span class="pass-files">31</span><span class="pass-note">Sound-of-thin-silence anchor</span></div>
+      <div class="pass-item encounter"><span class="pass-num">16</span><span class="pass-files">45</span><span class="pass-note">90% crossed</span></div>
+      <div class="pass-item encounter"><span class="pass-num">17</span><span class="pass-files">39</span><span class="pass-note"><strong>Corpus complete</strong></span></div>
+
+      <div class="pass-phase-label">Phase 3 · Truth correction (Sep 2 evening)</div>
+      <div class="pass-item truth"><span class="pass-num">18</span><span class="pass-files">458</span><span class="pass-note">Every tablet-label corrected</span></div>
+    </div>
+  </div>
+
+  <!-- COLUMN 2: MEDITATIONS -->
+  <div class="col meds">
+    <div class="col-header">
+      <div class="col-title"><em>2.</em> The Meditations</div>
+      <div class="col-count"><strong>458</strong> files</div>
+    </div>
+    <div class="col-role">the source · what was spoken into PLAUD, day by day</div>
+    <div class="col-desc">Raw meditation transcripts across seven months. Every one carries a full Encounter-Edition Cross-Reference Appendix pointing to its neighbors and the tablet it feeds. Distribution by month:</div>
+
+    <div class="months">
+      <div class="month-row"><div class="month-name">FEB</div><div class="month-bar"><div class="month-fill" style="width:9.6%"></div></div><div class="month-count">11</div></div>
+      <div class="month-row"><div class="month-name">MAR</div><div class="month-bar"><div class="month-fill" style="width:36.0%"></div></div><div class="month-count">41</div></div>
+      <div class="month-row"><div class="month-name">APR</div><div class="month-bar"><div class="month-fill" style="width:64.9%"></div></div><div class="month-count">74</div></div>
+      <div class="month-row"><div class="month-name">MAY</div><div class="month-bar"><div class="month-fill" style="width:48.2%"></div></div><div class="month-count">55</div></div>
+      <div class="month-row"><div class="month-name">JUN</div><div class="month-bar"><div class="month-fill" style="width:100%"></div></div><div class="month-count">114</div></div>
+      <div class="month-row"><div class="month-name">JUL</div><div class="month-bar"><div class="month-fill" style="width:86.8%"></div></div><div class="month-count">99</div></div>
+      <div class="month-row"><div class="month-name">AUG</div><div class="month-bar"><div class="month-fill" style="width:50.0%"></div></div><div class="month-count">57</div></div>
+      <div class="month-row"><div class="month-name">SEP</div><div class="month-bar"><div class="month-fill" style="width:5.3%"></div></div><div class="month-count">6</div></div>
+    </div>
+
+    <div class="med-substats">
+      <div>
+        <div class="k">Deeply integrated</div>
+        <div class="v">61</div>
+        <div style="font-size:11px;margin-top:2px;color:var(--ink-mute)">files with 15+ memo links</div>
+      </div>
+      <div>
+        <div class="k">Total memo joints</div>
+        <div class="v">4,617</div>
+        <div style="font-size:11px;margin-top:2px;color:var(--ink-mute)">verbatim-verified cross-refs</div>
+      </div>
+      <div>
+        <div class="k">Avg per file</div>
+        <div class="v">10.1</div>
+        <div style="font-size:11px;margin-top:2px;color:var(--ink-mute)">cross-references per appendix</div>
+      </div>
+      <div>
+        <div class="k">Coverage</div>
+        <div class="v">100%</div>
+        <div style="font-size:11px;margin-top:2px;color:var(--ink-mute)">of markdown meditations</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLUMN 3: STONE TABLETS -->
+  <div class="col tablets">
+    <div class="col-header">
+      <div class="col-title"><em>3.</em> The Stone Tablets</div>
+      <div class="col-count"><strong>8</strong> volumes</div>
+    </div>
+    <div class="col-role">the synthesis · written volumes above the meditations</div>
+    <div class="col-desc">Each tablet is a specific volume with a specific window in Seth's <em>Living Topology of Transformation</em> series. Every meditation lands under one of these eight by calendar date.</div>
+
+    <div class="tablets-list">
+      <div class="tablet-item" style="--tab-color:var(--t1)">
+        <div class="tablet-num">I</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>Volume I</em> · Architecture of Formation</div>
+          <div class="tablet-window">Feb 14 – Apr 14 · <span class="tablet-files">96 files</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t2)">
+        <div class="tablet-num">II</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>Volume II</em> · Testimony of a Witness</div>
+          <div class="tablet-window">Apr 18 – May 24 · <span class="tablet-files">70 files</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t3)">
+        <div class="tablet-num">III</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>The Starling</em> Convergence</div>
+          <div class="tablet-window">Jun 4-5 · <span class="tablet-files">overlaps V</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t4)">
+        <div class="tablet-num">IV</div>
+        <div class="tablet-body">
+          <div class="tablet-name">Volume I <em>Witness Companion</em></div>
+          <div class="tablet-window">Jun 5 · <span class="tablet-files">retrospective on I</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t5)">
+        <div class="tablet-num">V</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>Come Out of Her,</em> My Children</div>
+          <div class="tablet-window">May 26 – Aug 16 · <span class="tablet-files">246 files</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t6)">
+        <div class="tablet-num">VI</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>The Night the Silence</em> Should Have Come Sooner</div>
+          <div class="tablet-window">Aug 17 · 19:05 · <span class="tablet-files">2 files</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t7)">
+        <div class="tablet-num">VII</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>Koinonia</em> Takes Precedence</div>
+          <div class="tablet-window">Aug 18-28 · <span class="tablet-files">26 files</span></div>
+        </div>
+      </div>
+      <div class="tablet-item" style="--tab-color:var(--t8)">
+        <div class="tablet-num">VIII</div>
+        <div class="tablet-body">
+          <div class="tablet-name"><em>Seed</em> Register</div>
+          <div class="tablet-window">Aug 29+ · <span class="tablet-files">15 files (open)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTORS -->
+  <div class="connector-lane left"><div class="connector-arrow">threaded &rarr;</div></div>
+  <div class="connector-lane right"><div class="connector-arrow">feed &rarr;</div></div>
+</div>
+
+<!-- FRONT DOOR aggregators -->
+<div class="frontdoor">
+  <h3>The <em>front-door</em> documents.</h3>
+  <p class="frontdoor-sub">Four aggregators sit at the archive's entrance — each shows the same corpus from a different angle.</p>
+  <div class="frontdoor-grid">
+    <div class="frontdoor-card">
+      <div class="frontdoor-icon">§</div>
+      <div class="frontdoor-title">Master Index</div>
+      <div class="frontdoor-desc">Walkable listing of all 458 meditations grouped by tablet window · clickable memo links throughout</div>
+    </div>
+    <div class="frontdoor-card">
+      <div class="frontdoor-icon">▦</div>
+      <div class="frontdoor-title">Tracker (XLSX / CSV)</div>
+      <div class="frontdoor-desc">Data-native table · filterable + sortable by date, tablet, cross-reference density, or theme</div>
+    </div>
+    <div class="frontdoor-card">
+      <div class="frontdoor-icon">◈</div>
+      <div class="frontdoor-title">Eight Tablets Infographic</div>
+      <div class="frontdoor-desc">Visual snapshot of all eight tablet windows + monthly meditation distribution</div>
+    </div>
+    <div class="frontdoor-card">
+      <div class="frontdoor-icon">↦</div>
+      <div class="frontdoor-title">Timeline of Eight Tablets</div>
+      <div class="frontdoor-desc">Gantt-style bars showing each tablet's window against the Feb-Sep calendar</div>
+    </div>
+  </div>
+</div>
+
+<!-- ARCHIVE BUNDLE -->
+<div class="bundle">
+  <div class="bundle-icon">▣</div>
+  <div class="bundle-body">
+    <h4>PLAUD-Meditations-Corpus_2026-09-02.zip</h4>
+    <p>The whole record — meditations, tablets, and pass ledgers — as one portable archive with shortened filenames for cross-platform extraction.</p>
+  </div>
+  <div class="bundle-stat">
+    <strong>493 files · 5.9 MB</strong>
+    All memo joints preserved
+  </div>
+</div>
+
+<!-- FOLDER TREE -->
+<div class="section-head">
+  <div class="section-eyebrow">Folder structure</div>
+  <h2>Where everything lives.</h2>
+  <p>The three folders in the archive map one-to-one onto the three layers above.</p>
+</div>
+
+<div style="background: var(--parchment); border: 1px solid var(--border-strong); padding: 24px 28px; font-family: 'Menlo', 'Courier New', monospace; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft);">
+<div><span style="color: var(--gold-deep); font-weight: bold;">PLAUD-Meditations-Corpus/</span> <span style="color: var(--ink-mute); font-family: Georgia, serif; font-style: italic;">— the whole record</span></div>
+<div>├── <span style="color: var(--ink); font-weight: bold;">README.md</span> <span style="color: var(--ink-mute); font-family: Georgia, serif; font-style: italic;">— manifest, stats, reading order</span></div>
+<div>│</div>
+<div>├── <span style="color: var(--col-meds); font-weight: bold;">PLAUD Meditations/</span> <span style="color: var(--ink-mute); font-family: Georgia, serif; font-style: italic;">— 466 files · layer 2</span></div>
+<div>│   ├── Feb / March / April / May / June / July / August / September /</div>
+<div>│   ├── <span style="color: var(--gold-deep);">Master Index.md</span></div>
+<div>│   ├── <span style="color: var(--gold-deep);">Tracker.csv + .xlsx</span></div>
+<div>│   ├── <span style="color: var(--gold-deep);">Six Doctrinal Spines Infographic.html</span></div>
+<div>│   └── <span style="color: var(--gold-deep);">Timeline of Six Spines.html</span></div>
+<div>│</div>
+<div>├── <span style="color: var(--col-tablets); font-weight: bold;">Stone Tablets/</span> <span style="color: var(--ink-mute); font-family: Georgia, serif; font-style: italic;">— 9 files · layer 3</span></div>
+<div>│   ├── Stone Tablet I through VIII</div>
+<div>│   └── Stone Tablet VII · Factual and Consistency Audit</div>
+<div>│</div>
+<div>└── <span style="color: var(--col-passes); font-weight: bold;">Pass Ledgers/</span> <span style="color: var(--ink-mute); font-family: Georgia, serif; font-style: italic;">— 18 files · layer 1</span></div>
+<div>&nbsp;&nbsp;&nbsp; └── PLAUD Meditations — Pass 1 through Pass 18</div>
+</div>
+
+<div class="footer">
+  <div>PLAUD Meditations · Corpus Architecture · Compiled 2026-09-02</div>
+  <div><em>Not speculation, but verified joints.</em></div>
+</div>
+
+</div>
+
+<footer class="site-footer" style="font-family:'Trebuchet MS','Lucida Sans',sans-serif;text-align:center;padding:32px 24px;color:#6b625a;">
+  <p><a class="jc-back-link" href="archive.html">&larr; Back to the Archive</a> &nbsp;·&nbsp; <a class="jc-back-link" href="six-doctrinal-spines.html">See the Eight Stone Tablets</a> &nbsp;·&nbsp; <a class="jc-back-link" href="spines-timeline.html">See the Timeline of Eight Tablets</a></p>
+  <p><em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria</p>
+</footer>
+
+<script src="assets/records-data.js?v=20260903BETA2"></script>
+</body>
+</html>

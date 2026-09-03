@@ -1,6 +1,9 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (August 31, 2026)
+## Current Status (September 3, 2026 — Public Beta 2.0, Phase 11 complete)
+
+See "Phase 11" below for the latest: a full corpus rebuild from `records-2/` (456 verified
+meditations) and the site's promotion from private Interior Beta to public-facing Beta 2.0.
 
 ### Completed ✓
 - **Landing, Mystery Mode, Threads, Corpus Paths, Archive:** all five top-level pages redesigned/built with consistent v2 visual language (dark parchment/gold theme), shared header/nav/footer.
@@ -198,7 +201,108 @@ The owner discovered that the whole cross-reference infrastructure built in Phas
 - **scripts/integrate-passes-9-13.mjs (Phase 7):** identical logic to `integrate-passes-7-8.mjs` (only `PASS_FILES` differs) — confirms the pattern generalizes cleanly to new pass waves with zero code changes beyond the file list.
 - **scripts/integrate-passes-14-16.mjs (Phase 8):** identical logic again (only `PASS_FILES` differs) — Pass 14, 15, and 16.
 - **scripts/integrate-pass-17.mjs (Phase 9):** identical logic again — Pass 17, the corpus's own declared final wave. **Superseded by Phase 10** — its source data (the Pass-doc summaries) was found to be partly hallucinated; kept only as a historical artifact, do not re-run.
-- **scripts/rebuild-cross-references-verified.mjs (Phase 10, current authoritative rebuilder):** parses each of the 458 verified meditation files' own embedded Cross-Reference Appendix directly (not a summary document) for its corrected Tablet Anchor and typed cross-reference links; matches verified files to repo raw files via longest-common-prefix scoring (robust to both the verified bundle's shortened filenames and this repo's own pre-existing filename truncation); wholesale-replaces `JC_EDGES` and adds `tabletAnchor` to every matched record; mirrors any verified file with no existing local record. Safe to re-run whenever the verified-source-docs bundle is updated with a further correction pass — see its own header comment for the full case-by-case logic.
+- **scripts/rebuild-cross-references-verified.mjs (Phase 10):** parses each of the 458 verified meditation files' own embedded Cross-Reference Appendix directly (not a summary document) for its corrected Tablet Anchor and typed cross-reference links; matches verified files to repo raw files via longest-common-prefix scoring (robust to both the verified bundle's shortened filenames and this repo's own pre-existing filename truncation); wholesale-replaces `JC_EDGES` and adds `tabletAnchor` to every matched record; mirrors any verified file with no existing local record. **Superseded by Phase 11** — it only fixed cross-reference metadata, never the displayed article bodies themselves (which remained stale); kept as a historical artifact, do not re-run.
+
+### Phase 11 (2026-09-03) — Public Beta 2.0: full corpus rebuild from `records-2/`
+
+A second layer of corruption was found after Phase 10: `records/*.md` — the raw files actually
+displayed as article bodies on every record page — were still the OLD, pre-verification content
+(e.g. one file displayed an unrelated "Prophetic Word" transcript instead of its own titled
+meditation). A patch script (`scripts/replace-bodies-with-verified.mjs`) was written against
+`verified-source-docs/` to fix this in place, but before it ran, **the owner overrode the approach
+entirely**: rather than patch file-by-file, the owner copied a freshly hand-verified corpus
+directly into a new folder, **`records-2/`** — 456 verified meditation files (Feb 15 – Sep 1, 2026),
+the 8 Stone Tablet volumes, a Tablet VII audit doc, and 5 newly updated reference documents (Master
+Index, Tracker CSV, three infographic pages) — and directed a **full rebuild** of the site from
+that source, alongside promoting the site from "Interior Beta" to a public-facing **Beta 2.0**.
+
+**`records-2/` is now the one canonical raw-source folder; `records/` is now pure generated
+output.** The abandoned patch script was deleted.
+
+**Built `scripts/build-records2-corpus.mjs`** — the new authoritative generator. For each of the
+456 real meditation files in `records-2/`: parses title/date/classification metadata (with a
+bounded, stop-at-next-field capture regex — an earlier unbounded version let one severely
+under-punctuated source file swallow thousands of characters into the title field, since that file
+had only 24 newlines across 25KB); splits the visible article body from its own embedded
+Cross-Reference Appendix; parses that appendix into typed edges + a `tabletAnchor` (reusing
+Phase 10's proven classification logic); assigns a deterministic id; and regenerates every
+`records/*-v2.html` page plus `JC_RECORDS`/`JC_EDGES` in `assets/records-data.js` wholesale.
+`JC_THREADS` is remapped by title+date match against the prior data (not assumed stable — ids
+shift when a title is corrected), while `EDGE_LABELS`, `STATUS_LABELS`, and every helper function
+are left untouched.
+
+**Data-quality bugs found and fixed during the rebuild (verification, not just generation):**
+- **One genuinely corrupted source file.** `04-11 to 04-14 MERGED — The Road, the River, the
+  Robbery, and the Recording.md` was raw docx/zip binary content saved with a `.md` extension —
+  its first bytes were literally a zip-file signature. Detected via a zip-signature/control-byte
+  heuristic and excluded. A properly-converted sibling file with the same content under a
+  slightly different name *is* included — no real content was lost. This is exactly the gap
+  between 457 candidate files and 456 published (matching the owner's own stated count).
+- **A date-parsing bug.** A loose-prose date fallback for non-ISO `**Recorded:**` lines initially
+  scanned the *whole* document rather than just the `**Recorded:**` field, risking mistaking an
+  unrelated date mentioned in a meditation's own body for its recording date (one record briefly
+  resolved to a nonsensical "Dec 1, 2025 · 22:28," a mash-up of two separate mentions). Fixed by
+  scoping the fallback to the `**Recorded:**` text only.
+- **A merged-range title bug.** "04-11 to 04-14 — ..." (a date range, not a single date) only had
+  its first date stripped by the cleanup regex, leaving "to 04-14 — ..." displayed. Fixed to
+  handle "MM-DD to MM-DD" range prefixes, and a leftover wrapping single-asterisk italics artifact.
+- **A broken Mystery Mode doorway-routing table.** All 7 of `assets/mystery-v2-logic.js`'s
+  hardcoded `DOORWAY_ROUTING` anchor ids/hrefs (from the original hand-curated 7 Tablet VIII seeds)
+  referenced the pre-rebuild id scheme and were 100% invalid after the rebuild — a real, silent
+  1-in-10-ish chance per doorway of routing to a dead page. The `jordan-crossing` doorway also
+  hardcoded a route to the retired, never-public `jordan-crossing-interior.html`. Re-resolved 5 of
+  7 seed anchors by title+date match; one ("When Wisdom Ushers Power," Aug 30 · 23:58) could not be
+  found under any title in the verified corpus — disclosed as a genuine gap. Converted
+  `jordan-crossing` into a properly keyword-pooled doorway (secret place/quiet/stillness/rest)
+  instead of a single hardcoded destination.
+- **`archive.html`'s month browser silently hid September** — a hardcoded `MONTH_ORDER` array
+  stopped at `Aug`; all 6 September records computed correctly but never rendered. Fixed.
+
+**Verification performed:** dup ids/hrefs (0), contiguous chronological order (1..456), every
+href resolves to a real file (456/456), bad edge/thread refs (0), self-loops (0), tabletAnchor
+coverage (456/456), out-of-range dates (0, all Feb 15–Sep 1 2026), short/empty titles or summaries
+(0), markdown-leakage in titles (0). Cross-checked all 456 records against
+`PLAUD-Meditations-Tracker.csv` (458 rows) by recorded date: 456/458 matched, and both "gaps" are
+explained (one tracker row has no date of its own but the record is present and correctly dated via
+a loose-date-in-body fallback; the other references a stale/superseded filename whose corrected,
+properly-named sibling *is* included) — no real data loss. `tabletAnchor` distribution
+(96/70/244/26/15 across Tablets I/II/V/VII/VIII) closely matches the Master Index's own stated
+counts (96/70/246/26/15). Live-verified in-browser: the previously-broken "Joseph, Paul, and Severe
+Mercy" record now shows its real Genesis 50:20 content; Mystery Mode doorways correctly pool across
+the full 456-record set and route to real pages; `stone-tablets.html` and `corpus-architecture.html`
+render correctly.
+
+**Also built:**
+- **`scripts/build-stone-tablet-pages.mjs`** (new) — generates 8 full Stone Tablet reader pages
+  plus the Tablet VII audit page, and a new `stone-tablets.html` index page.
+- **`scripts/rebuild-reference-pages.mjs`** (new) — unwraps the 3 newly-uploaded infographic HTML
+  files (each carried a 2-line upload-mechanism wrapper plus a trailing metadata footer, both
+  stripped via an `unwrap()` helper) and republishes them as `six-doctrinal-spines.html`,
+  `spines-timeline.html`, and a new `corpus-architecture.html`, re-skinned with Public Beta 2.0
+  branding.
+- Re-ran `scripts/tag-encounter-dimensions.mjs` (word counts changed with the new bodies) and
+  `scripts/relink-corpus-paths.mjs` (improved from 21/48 to 35/48 local Corpus Paths steps).
+
+**Public Beta 2.0 de-branding:** replaced the "INTERIOR BETA · Private workspace · Not for public
+distribution" banner with "PUBLIC BETA 2.0 · Reader discretion advised" across every page (7
+shared top-level pages plus the generator template, covering all 465 record/tablet pages); dropped
+every "— Interior Beta" title suffix; retired `record.html` entirely (its sole purpose was the
+never-public `jordan-crossing-interior.html` concept) and every reference to it; bumped all
+cache-busting version strings to `?v=20260903BETA2`. `.gitignore` updated: `verified-source-docs/`
+and `Superseded-Docs/` now fully local-only; internal AI-dev artifacts
+(`COPILOT_HANDOFF_PROMPT.md`, `COPILOT_CHAT_PROMPT.txt`, `COPILOT_USAGE.md`, `memory-bank/`)
+untracked. `records-2/` itself remains tracked/public (unredacted, per the owner's standing
+direction to publish as-is and redact pre-public-launch only if needed).
+
+**Landing page & site-wide stats refreshed** to 456 meditations, Feb 14–Sep 1 2026, corrected
+tablet chip counts, a "Sep" Chronological Map button, links to the two new pages, and 4 corrected
+"Notable Hinges" hrefs whose ids shifted in the rebuild.
+
+**What's left for a future pass:** the 13 still-unresolved Corpus Paths steps; the one missing
+original seed record ("Wisdom Ushers Power"); the four named `JC_THREADS` have not been
+independently re-verified against the new corpus (only remapped by id); audio remains unwired
+(component ready, no source material yet); final QA and stakeholder sign-off before any actual
+public announcement/indexing decision.
 
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
@@ -216,6 +320,15 @@ The owner discovered that the whole cross-reference infrastructure built in Phas
 ---
 
 ## File Manifest
+
+**Phase 11 current state (September 3, 2026):** `records-2/` is the canonical raw-source folder
+(456 verified meditations + 8 Stone Tablets + audit doc + 5 reference docs); `records/` holds 456
+regenerated meditation pages + 9 Stone Tablet/audit pages (465 total `-v2.html` files), pure
+generated output with no raw `.md` siblings anymore. `assets/records-data.js` holds 456 records
+(all reviewed, all with `tabletAnchor`), 1,997 edges, 4 threads (remapped). New top-level pages:
+`stone-tablets.html`, `corpus-architecture.html`. `record.html` is deleted. The historical bullets
+below (Phases 1–10) describe the site's evolution up to that point; see "Phase 11" above for the
+full account of what superseded them.
 
 - `index.html`, `mystery.html`, `threads.html`, `paths.html`, `archive.html` — all v2, all cross-linked in nav; `archive.html` rebuilt in Phase 5 into a real browsable, searchable index, now describing 409 local records (Phase 10)
 - `mystery-v2.html`, `record.html` — legacy pages kept only for redirect/reference; not linked from anywhere live except `record.html?mode=original` from the landing page's third invitation card (intentional — refers to the preserved v11 interior record, a different concept from a curated meditation's no-interpretation view)
@@ -239,6 +352,13 @@ The owner discovered that the whole cross-reference infrastructure built in Phas
 
 ## Success Criteria
 
+- ✓ **Phase 11 (Public Beta 2.0):** full corpus rebuilt from `records-2/` — 456 records (all
+  reviewed, all with `tabletAnchor`), 1,997 edges, 4 threads remapped; the previously-broken
+  article-body bug (stale pre-verification content displayed as record text) is fully resolved by
+  regenerating every page directly from the newly-verified source; site promoted to a public
+  "PUBLIC BETA 2.0" banner site-wide; `record.html` and the never-public interior-v11 concept
+  retired; Mystery Mode's broken doorway-routing table and `archive.html`'s missing-September bug
+  found and fixed; see "Phase 11" above for the full account
 - ✓ All five top-level pages match v2 design and are cross-navigable
 - ✓ Related records / threads / paths all route to the correct, formatted pages
 - ✓ Accessibility audit clean; Lighthouse 99–100 across the board

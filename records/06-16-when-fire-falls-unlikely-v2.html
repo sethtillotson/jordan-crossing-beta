@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>When the Fire Falls on Unlikely Ground — Interior Beta</title>
+  <title>When the Fire Falls on Unlikely Ground — The Jordan Crossing</title>
   <meta name="description" content="As I listened to my brother on this call, something in me recognized a moment that was far larger than its surface appearance — two men talking shop, talking numbers, talking about a sales call seven minutes away. But underneath all of that, I was watching…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="06-16-when-fire-falls-unlikely">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">When the Fire Falls on Unlikely Ground</h1>
@@ -47,11 +46,9 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
-      <article class="record-source" aria-label="Original meditation text"># 06-16 Call Reflection: Faith, Entrepreneurship &amp; Covenant Brotherhood
+      <article class="record-source" aria-label="Original meditation text"># 06-16 Call Reflection: Faith, Entrepreneurship & Covenant Brotherhood
 
 **Title:** 06-16 at 08:58 — When the Fire Falls on Unlikely Ground
 
@@ -129,7 +126,7 @@ Prophetic people keep books of remembrance — not for self-aggrandizement, but 
 
 Father, I come before You with gratitude that overflows into wonder — because You are not waiting for us to be finished before You move on our behalf. You showed up in a seven-minute window before a sales call. You wrote into the record a conversation between two imperfect men who love You and are still becoming. You multiplied what should not have multiplied, and You let the numbers bear witness to Your faithfulness where only Your faithfulness can explain the math. I thank You for the gift of covenant brotherhood — for men who carry the flame when another is in a season of quiet, and who receive the returning without judgment. I bring before You every beloved brother and sister who is in a season of hiddenness right now, who is catching themselves in old places, who is wondering if the calling has passed them by — and I declare over them in agreement with Your Word that what You have begun, You will complete, that Your gifts and calling are without repentance, and that the wilderness You have led them into is not abandonment but preparation. Let the book of remembrance continue to be written. Let the fire that cannot be explained by natural metrics burn for Your glory and for the multiplication of Your Kingdom purposes. Let the upper room invitation — *friend, not servant* — settle into every heart that has been striving to earn what You have already freely given. We are not late. We are not disqualified. We are right where You said we would be. May all of it — every call, every number, every admission of still-catching-ourselves, every returning stirring — be to the praise of Your name. Amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)** | **Original Language**                                                            | **Theological Insight**                                                                                          |
 |--------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -141,13 +138,14 @@ Father, I come before You with gratitude that overflows into wonder — because 
 | Deuteronomy 8:2    | מִדְבָּר (midbar, mid-BAR) — wilderness / place of speaking                          | The wilderness is a divinely orchestrated interior school, not punishment or abandonment                         |
 | 1 Samuel 13:14     | לְבָבוֹ (levavo, leh-vah-VOH) — his heart                                           | David’s distinction before God was a matter of interior alignment, not external perfection                       |
 | Revelation 12:11   | μαρτυρία (martyria, mar-too-REE-ah) — testimony / witness                        | Personal testimony of God’s faithfulness is named as a direct weapon against the accuser                         |
-</article>
+
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -182,7 +180,6 @@ Father, I come before You with gratitude that overflows into wonder — because 
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -199,34 +196,20 @@ Father, I come before You with gratitude that overflows into wonder — because 
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -261,20 +244,18 @@ Father, I come before You with gratitude that overflows into wonder — because 
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

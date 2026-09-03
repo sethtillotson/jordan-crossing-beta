@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>When the Burden Is Too Heavy to Carry Alone — Interior Beta</title>
+  <title>When the Burden Is Too Heavy to Carry Alone — The Jordan Crossing</title>
   <meta name="description" content="I listened to my wife’s voice today, and what I heard beneath the frustration and the numbers was not a financial problem — it was a cry of the heart. The weight she is carrying has become more than bills and deductibles; it has become the weight of feeling…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="07-23-when-burden-too-heavy">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">When the Burden Is Too Heavy to Carry Alone</h1>
@@ -47,10 +46,8 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text"># 07-23 Conversation Reflection: Covenant Burden-Bearing, Marriage, and Immigrant Vulnerability
 
 **Title:** 07-23 at 10:10 — When the Burden Is Too Heavy to Carry Alone
@@ -131,7 +128,7 @@ The prophetic posture this meditation calls for is one of *faithful domestic wit
 
 Father, I come before You with this moment held open in my hands — the voice of my wife, the weight she is carrying, the systems that confuse, the bills that accumulate, the sense of aloneness that crept in when the burden grew too heavy. Lord, I receive this as Your training, Your παιδεία (pie-DAY-ah), Your fatherly forming of me into the husband and shepherd You have called me to be. I do not want to merely respond to crises — I want to be the kind of covenant presence that senses the rising water before she is submerged. Strengthen me, Lord, to build structures of shared stewardship, to cultivate proactive attentiveness, to be present not only in body but in spirit and understanding. And over Gladys — my beloved, my covenant partner, the one You placed in my home and in my hands — pour out Your sustaining תָּמַךְ, Lord. Uphold her. Let her feel held by You first, and then tangibly held by the husband You are forming me to be. Where the systems of this world are confusing and restrictive and heavy, give us wisdom, give us clarity, give us favor. And where the weight is simply real and will not lift overnight, let the knowledge of Your presence and our shared covenant be the still water that restores her soul. We are Yours. This household is Yours. May it be a testimony of Your love. In the Name of Jesus, amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)**                                                                                  | **Original Language**                                                    | **Theological Insight**                                                                             |
 |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -142,13 +139,14 @@ Father, I come before You with this moment held open in my hands — the voice o
 | Proverbs 27:23 — “Be diligent to know the state of your flocks.”                                    | שָׁתֵת לֵב (shathet lev) — to attend, to set the heart toward                | Wisdom calls for proactive stewardship, not reactive management after the flock is in crisis        |
 | Hebrews 12:6 — “For whom the Lord loves He chastens.”                                               | παιδεύει (paideia, pie-DAY-ah) — fatherly training, formative discipline | Discipline in this context is character formation, not punitive judgment; it is the mark of sonship |
 | John 16:33 — “In the world you will have tribulation.”                                              | θλῖψις (thlipsis, THLIP-sis) — pressure, tribulation, crushing weight    | Jesus does not promise the absence of pressure but His presence and peace through it                |
-</article>
+
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -183,7 +181,6 @@ Father, I come before You with this moment held open in my hands — the voice o
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -200,34 +197,20 @@ Father, I come before You with this moment held open in my hands — the voice o
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -262,20 +245,18 @@ Father, I come before You with this moment held open in my hands — the voice o
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

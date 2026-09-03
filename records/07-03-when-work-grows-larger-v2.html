@@ -4,17 +4,17 @@
   <meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>When the Work Grows Larger Than One Vessel Can Carry — Interior Beta</title>
+  <title>When the Work Grows Larger Than One Vessel Can Carry — The Jordan Crossing</title>
   <meta name="description" content="As I listened to my brother Samuel share what he has been building — a manuscript of over seven hundred pages, a publishing contract, a financial commitment of significant weight — something in me recognized the particular kind of tension that arises when a…">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260901V2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260901V2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
 </head>
 <body data-record-id="07-03-when-work-grows-larger">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="beta-banner" role="banner">
-    <span class="badge">INTERIOR BETA</span>
-    <span>Private workspace · Not for public distribution</span>
+    <span class="badge">PUBLIC BETA 2.0</span>
+    <span>Reader discretion advised</span>
   </div>
 
   <header class="site-header">
@@ -30,7 +30,6 @@
 
   <main id="main-content">
     <div class="main-container">
-      <!-- RECORD HEADER -->
       <div class="record-header">
         <p class="record-caption">Original Record · Local Corpus Bundle</p>
         <h1 class="page-title">When the Work Grows Larger Than One Vessel Can Carry</h1>
@@ -47,10 +46,8 @@
         </div>
       </div>
 
-      <!-- AUDIO PLAYER (Phase 3 -- renders only if this record has an audioUrl) -->
       <div class="audio-player-mount" id="audio-player-mount"></div>
 
-      <!-- THE MEDITATION (article) -->
       <article class="record-source" aria-label="Original meditation text"># 07-03 Conversation Reflection: Kingdom Stewardship of a Large Manuscript
 
 **Title:** 07-03 at 07:12 — When the Work Grows Larger Than One Vessel Can Carry
@@ -129,7 +126,7 @@ The prophetic posture for those entrusted with written or spoken Kingdom assignm
 
 Father, I come before You as one who has been counted worthy, by Your grace alone, to bear witness to the assignments You are releasing through Your servants in this hour. I give You thanks for the word my brother Samuel is carrying — for the labor of those seven hundred pages, for the courage it takes to commit to a large and costly undertaking, and for the wisdom You are already growing in him to let the form of that work be shaped by Your hand rather than his own preference. Lord, I ask that You guard every word in that manuscript that You breathed into existence, and that You prune every word that was added in the energy of flesh. Let each volume that emerges carry the weight of its own word — complete, clear, and life-giving to those who receive it. I stand in agreement with Your purpose for this work, and I declare by the authority of the New Covenant established in the blood of Jesus that what You have assigned to Your servant will not return to You void — it will accomplish exactly what You pleased and prosper in the thing for which You sent it. May the words go up, as we go up, before Your face. To You be all glory, in the name above every name. Amen.
 
-## Scripture References &amp; Original Language Notes
+## Scripture References & Original Language Notes
 
 | **Passage (NKJV)**                                                                                                                                                                                | **Original Language**                                                                                         | **Theological Insight**                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,13 +135,13 @@ Father, I come before You as one who has been counted worthy, by Your grace alon
 | Proverbs 27:17 — “As iron sharpens iron, so a man sharpens the countenance of his friend.”                                                                                                        | Hebrew: חָדַד (chadad, khah-DAHD) — to sharpen, to make keen                                                    | The relational sharpening of the Body is not optional for Kingdom assignments; isolation dulls the word                                    |
 | Isaiah 55:11 — “So shall My word be that goes forth from My mouth; it shall not return to Me void, but it shall accomplish what I please, and it shall prosper in the thing for which I sent it.” | Hebrew: דָּבָר (dabar, dah-VAHR) — word / matter / thing; carries weight of event and reality, not merely speech | The divine word is always purposeful and always accomplishes its assignment regardless of the form it takes                                |
 | Psalms 121:1 — “I will lift up my eyes to the hills — from whence comes my help?”                                                                                                                 | Hebrew: עָלָה (alah, ah-LAH) — to go up, to ascend                                                              | The posture of ascent — let us go up — is the orienting movement of every Kingdom pilgrim and every Kingdom assignment                     |
-</article>
+
+---</article>
 
       <p class="caption" style="margin-top:var(--space-6)">End of imported source record.</p>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 1: DISCERN -->
       <section class="discern-section" aria-label="What did you actually encounter?">
         <p class="discern-prompt">What did you actually encounter?</p>
         <p class="discern-sub">
@@ -179,7 +176,6 @@ Father, I come before You as one who has been counted worthy, by Your grace alon
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 2: CARRY A QUESTION -->
       <section class="carry-section" aria-label="Carry a question forward">
         <p class="carry-prompt">Is there a question this record leaves you with?</p>
         <p class="carry-sub">You may carry it forward, silently, to the next record — or write your own.</p>
@@ -196,34 +192,20 @@ Father, I come before You as one who has been counted worthy, by Your grace alon
 
           <div class="carry-textarea-wrapper" id="carry-write-panel">
             <textarea class="carry-textarea" id="carry-textarea" placeholder="Write your question here..."></textarea>
-            <div style="display: flex; gap: var(--space-3);">
-              <button class="btn btn-primary" type="button" id="carry-save-btn">
-                Save question
-              </button>
-              <button class="btn btn-secondary" type="button" id="carry-cancel-btn">
-                Cancel
-              </button>
+            <div style="display: flex; gap: var(--space-3); margin-top: var(--space-3);">
+              <button class="btn btn-primary" type="button" id="save-question-btn">Save</button>
+              <button class="btn btn-ghost" type="button" id="cancel-question-btn">Cancel</button>
             </div>
-          </div>
-
-          <div class="carry-status" id="carry-status">
-            <strong>Question saved:</strong> <span id="carry-status-text"></span>
-            <button class="btn btn-secondary" type="button" id="carry-clear-btn" style="margin-top: var(--space-2);">
-              Clear saved question
-            </button>
           </div>
         </div>
       </section>
 
-      <!-- RELATED RECORDS -->
       <section class="related-records" id="related-records-mount" aria-label="Related records"></section>
 
-      <!-- HUMAN DOORWAYS -- theme chips (design doc section 7) -->
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
       <div class="movement-divider"></div>
 
-      <!-- MOVEMENT 3: RETURN -->
       <section class="return-panel" aria-label="You have reached the end of this encounter">
         <p class="return-prompt">You have reached the end of this encounter.</p>
         <p class="return-sub">
@@ -258,20 +240,18 @@ Father, I come before You as one who has been counted worthy, by Your grace alon
         </div>
       </section>
 
-      <!-- MOVEMENT 4: GRAPH NAV -->
       <div class="graph-nav" id="graph-nav-mount"></div>
 
-      <!-- REVIEWED THREADS -->
       <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
   <footer>
-    <em>A Living Topology of Transformation</em> · Interior beta · Soli Deo Gloria
+    <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260901V2"></script>
-  <script src="../assets/audio-player.js?v=20260901V2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260901V2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA2"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
 </body>
 </html>

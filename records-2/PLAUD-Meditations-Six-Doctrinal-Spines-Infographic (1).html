@@ -1,0 +1,343 @@
+path: PLAUD Meditations/PLAUD Meditations · Six Doctrinal Spines Infographic.html
+content: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLAUD Meditations · Eight Stone Tablets Infographic</title>
+<style>
+:root {
+  --ink: #1a1815; --ink-soft: #3a352f; --ink-mute: #6b625a;
+  --parchment: #f6f1e6; --parchment-deep: #ede4d0;
+  --gold: #a8823a; --gold-deep: #7a5f2a;
+  --t1: #a8823a; --t2: #4a2c5a; --t3: #5a2c4a; --t4: #6a4a2a;
+  --t5: #2c4a6b; --t6: #7d2b2b; --t7: #4a5a2e; --t8: #8a5a3a;
+  --border: rgba(26,24,21,0.12); --border-strong: rgba(26,24,21,0.28);
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--parchment); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+  font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 1240px; margin: 0 auto; padding: 60px 48px 80px; }
+.hero { border-bottom: 1px solid var(--border); padding-bottom: 40px; margin-bottom: 48px; }
+.hero-label {
+  font-family: 'Trebuchet MS', sans-serif; font-size: 11px;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gold-deep); margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: Georgia, serif; font-size: 58px; line-height: 1.02;
+  font-weight: 400; letter-spacing: -0.01em; margin: 0 0 12px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-deep); }
+.hero-sub { font-size: 19px; color: var(--ink-soft); max-width: 800px; margin: 0 0 32px; text-wrap: pretty; }
+.hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--border); padding-top: 24px; }
+.stat { padding: 4px 20px; border-left: 1px solid var(--border); }
+.stat:first-child { border-left: none; padding-left: 0; }
+.stat-value { font-size: 40px; line-height: 1; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.stat-value .unit { font-size: 20px; color: var(--ink-mute); margin-left: 3px; }
+.stat-label { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-top: 6px; }
+
+.section-head { margin: 64px 0 28px; }
+.section-eyebrow { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 6px; }
+.section-head h2 { font-size: 34px; line-height: 1.1; font-weight: 400; margin: 0 0 8px; letter-spacing: -0.01em; }
+.section-head p { font-size: 16px; color: var(--ink-mute); max-width: 760px; margin: 0; text-wrap: pretty; }
+
+/* CORRECTION NOTICE */
+.correction {
+  background: #fff9ec; border: 1px solid #d9c78c; padding: 20px 24px;
+  margin: 20px 0 32px; font-size: 14.5px; color: var(--ink-soft);
+  border-left: 4px solid var(--gold-deep);
+}
+.correction strong { color: var(--gold-deep); }
+.correction .cta { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 8px; font-weight: 500; }
+
+/* TABLETS GRID (2x4) */
+.tablets {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 0; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong);
+}
+.tablet {
+  padding: 26px 26px 28px; border-right: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong);
+  min-height: 240px; display: flex; flex-direction: column;
+}
+.tablet-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
+.tablet-numeral {
+  font-family: 'Trajan Pro', Georgia, serif; font-size: 42px; line-height: 1;
+  color: var(--tint); font-weight: 500; letter-spacing: 0.02em;
+}
+.tablet-count { font-size: 14px; color: var(--ink-mute); font-variant-numeric: tabular-nums; font-family: 'Trebuchet MS', sans-serif; letter-spacing: 0.06em; }
+.tablet-count strong { color: var(--ink); font-weight: 500; font-size: 17px; }
+.tablet-title { font-size: 20px; line-height: 1.22; font-weight: 400; margin: 6px 0 6px; color: var(--ink); }
+.tablet-title em { font-style: italic; color: var(--tint); }
+.tablet-window { font-family: 'Trebuchet MS', sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tint); margin-bottom: 12px; font-weight: 500; }
+.tablet-desc { font-size: 14.5px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 12px; text-wrap: pretty; }
+.tablet-register { margin-top: auto; padding-top: 12px; border-top: 1px dotted var(--border-strong); font-family: 'Trebuchet MS', sans-serif; font-size: 11px; color: var(--ink-mute); letter-spacing: 0.06em; }
+
+.tablet.t1 { --tint: var(--t1); }
+.tablet.t2 { --tint: var(--t2); }
+.tablet.t3 { --tint: var(--t3); }
+.tablet.t4 { --tint: var(--t4); }
+.tablet.t5 { --tint: var(--t5); }
+.tablet.t6 { --tint: var(--t6); }
+.tablet.t7 { --tint: var(--t7); }
+.tablet.t8 { --tint: var(--t8); }
+
+/* FLOW panel */
+.flow-wrap { background: var(--parchment-deep); border: 1px solid var(--border-strong); padding: 40px 40px 20px; margin-top: 20px; }
+.flow-svg-wrap { display: flex; justify-content: center; padding: 20px 0; }
+.flow-legend-note { font-size: 13.5px; color: var(--ink-mute); max-width: 720px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-strong); text-wrap: pretty; }
+.flow-legend-note strong { color: var(--ink-soft); font-weight: 500; }
+
+/* TIMELINE */
+.timeline { margin-top: 8px; border: 1px solid var(--border-strong); padding: 28px 32px 24px; background: var(--parchment); }
+.timeline-months { display: grid; grid-template-columns: repeat(8, 1fr); gap: 0; align-items: end; height: 220px; margin-bottom: 8px; }
+.tl-month { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; padding: 0 4px; border-right: 1px dotted var(--border); position: relative; }
+.tl-month:last-child { border-right: none; }
+.tl-bar-stack { display: flex; flex-direction: column-reverse; width: 100%; max-width: 68px; border-radius: 2px 2px 0 0; overflow: hidden; }
+.tl-seg { width: 100%; }
+.tl-count { font-size: 20px; margin-top: 8px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.tl-label { font-family: 'Trebuchet MS', sans-serif; font-size: 11px; color: var(--ink-mute); letter-spacing: 0.14em; text-transform: uppercase; margin-top: 2px; }
+.tl-legend { display: flex; flex-wrap: wrap; gap: 12px 20px; padding-top: 16px; border-top: 1px solid var(--border); margin-top: 4px; font-size: 12px; color: var(--ink-mute); font-family: 'Trebuchet MS', sans-serif; letter-spacing: 0.06em; }
+.tl-key-row { display: flex; align-items: center; gap: 6px; }
+.tl-key-swatch { width: 14px; height: 14px; border-radius: 2px; }
+
+/* INSIGHTS */
+.insights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+.insight { border-top: 3px solid var(--ink); padding-top: 18px; }
+.insight h3 { font-size: 17px; font-weight: 500; margin: 0 0 10px; line-height: 1.3; }
+.insight p { font-size: 14px; line-height: 1.55; color: var(--ink-soft); margin: 0; text-wrap: pretty; }
+.insight .metric { font-size: 30px; color: var(--gold-deep); font-weight: 500; letter-spacing: -0.02em; line-height: 1; margin-bottom: 8px; display: block; font-variant-numeric: tabular-nums; }
+
+.footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); }
+.footer em { font-style: italic; text-transform: none; letter-spacing: 0.02em; font-family: Georgia, serif; font-size: 15px; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .page { padding: 32px 20px; }
+  .hero h1 { font-size: 40px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-left: none; padding-left: 0; }
+  .tablets { grid-template-columns: 1fr; }
+  .insights { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="hero">
+  <div class="hero-label">A Living Topology of Transformation · Feb – Sep 2026</div>
+  <h1>Eight Stone Tablets,<br>one <em>walkable</em> corpus.</h1>
+  <p class="hero-sub">The PLAUD meditations are the raw record; the Stone Tablets are the synthesis layer above them. Each tablet is a specific volume covering a specific window of days — and 458 meditations feed the eight.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-value">458</div><div class="stat-label">Threaded meditations</div></div>
+    <div class="stat"><div class="stat-value">4,617</div><div class="stat-label">Memo cross-references</div></div>
+    <div class="stat"><div class="stat-value">8</div><div class="stat-label">Stone Tablets</div></div>
+    <div class="stat"><div class="stat-value">7<span class="unit">mo</span></div><div class="stat-label">Feb 14 → Sep 1</div></div>
+  </div>
+</section>
+
+<div class="correction">
+  <div class="cta">Corrected mapping · 2026-09-02</div>
+  This infographic was originally built on <em>doctrinal-category</em> tablet labels (\"Received Voice,\" \"Sacred Ordinary,\" etc.) that turned out to be inferred, not the true names of the Stone Tablets. It has been rebuilt against the actual eight volumes in Seth's <em>Living Topology of Transformation</em> series. The counts here now reflect the <strong>window-based mapping</strong> — which specific volume each meditation belongs to by date.
+</div>
+
+<div class="section-head">
+  <div class="section-eyebrow">The eight Stone Tablets</div>
+  <h2>Every meditation is part of one volume.</h2>
+  <p>Each tablet is a specific published volume with a specific window. The counts show how many PLAUD meditations sit within that window.</p>
+</div>
+
+<div class="tablets">
+  <div class="tablet t1">
+    <div class="tablet-head"><div class="tablet-numeral">I</div><div class="tablet-count"><strong>96</strong> meditations</div></div>
+    <div class="tablet-title"><em>Volume I</em> · The Architecture of Formation</div>
+    <div class="tablet-window">Feb 14 – Apr 14, 2026 · the 60-day Kairos window</div>
+    <p class="tablet-desc">The corpus's earliest volume — a computational network analysis of the first 80 meditations. Preserved as an honest record of an early register; carries an epistemological-claims disclaimer that later tablets clarified.</p>
+    <div class="tablet-register">Register: Analytical / Mars Hill</div>
+  </div>
+
+  <div class="tablet t2">
+    <div class="tablet-head"><div class="tablet-numeral">II</div><div class="tablet-count"><strong>70</strong> meditations</div></div>
+    <div class="tablet-title"><em>Volume II</em> · The Testimony of a Witness</div>
+    <div class="tablet-window">Apr 18 – May 24, 2026 · 38-day witness window · 35-day Samuel arc</div>
+    <p class="tablet-desc">First-person <em>martyria</em> (Rev 12:11). Where Volume I bore the data, Volume II bears the witness. 73 spoken meditations, 38 days, 40 conversations with Samuel.</p>
+    <div class="tablet-register">Register: Lived narrative · witness testimony</div>
+  </div>
+
+  <div class="tablet t3">
+    <div class="tablet-head"><div class="tablet-numeral">III</div><div class="tablet-count"><strong>—</strong></div></div>
+    <div class="tablet-title"><em>The Starling</em> Convergence</div>
+    <div class="tablet-window">Jun 4-5, 2026 · Seth + Sister Katie · 3-day confirmation</div>
+    <p class="tablet-desc">Multi-vocal witness. One word (<em>SHINE!</em>), one image (a murmuration), one three-day window — Seth and Sister Katie's independent testimonies converging. The confirmation that the watchman is not a soloist.</p>
+    <div class="tablet-register">Register: Multi-vocal convergence testimony · window overlaps Tablet V's</div>
+  </div>
+
+  <div class="tablet t4">
+    <div class="tablet-head"><div class="tablet-numeral">IV</div><div class="tablet-count"><strong>—</strong></div></div>
+    <div class="tablet-title">Volume I <em>Witness Companion</em></div>
+    <div class="tablet-window">Jun 5, 2026 · retrospective on Feb 14 – Apr 14</div>
+    <p class="tablet-desc">The lived-narrative counterpart to Tablet I's data. Same 60-day window, same 80 meditations — but bearing the witness <em>of the same days</em> rather than the metrics.</p>
+    <div class="tablet-register">Register: Foundational testimony · window overlaps Tablet I's</div>
+  </div>
+
+  <div class="tablet t5">
+    <div class="tablet-head"><div class="tablet-numeral">V</div><div class="tablet-count"><strong>246</strong> meditations</div></div>
+    <div class="tablet-title"><em>Come Out of Her,</em> My Children</div>
+    <div class="tablet-window">May 26 – Aug 16, 2026 · 82 days · Volume III</div>
+    <p class="tablet-desc">The corpus's longest tablet by window. Watchman testimony from the sleeping-bride hour: rampart, mantle, fourth watch, household altar, mirror. The tablet that clarified the ground under the whole series.</p>
+    <div class="tablet-register">Register: Watchman testimony · sleeping-bride hour</div>
+  </div>
+
+  <div class="tablet t6">
+    <div class="tablet-head"><div class="tablet-numeral">VI</div><div class="tablet-count"><strong>2</strong> meditations</div></div>
+    <div class="tablet-title"><em>The Night the Silence</em> Should Have Come Sooner</div>
+    <div class="tablet-window">Aug 17, 2026 · 19:05 CDT · 85-minute call with Samuel</div>
+    <p class="tablet-desc">A single-event tablet. The Refiner's fire. A watchman's confession — what came through the vessel across the line, and what the vessel learned to test.</p>
+    <div class="tablet-register">Register: Confession · single-event · the seam</div>
+  </div>
+
+  <div class="tablet t7">
+    <div class="tablet-head"><div class="tablet-numeral">VII</div><div class="tablet-count"><strong>26</strong> meditations</div></div>
+    <div class="tablet-title"><em>Koinonia</em> Takes Precedence</div>
+    <div class="tablet-window">Aug 18 – Aug 28, 2026 · 12 days · Volume IV</div>
+    <p class="tablet-desc">Post-seam brotherhood. Money, speech, and darkness all moving through the same 12 days. Answers: <em>what does koinonia require when fellowship becomes burden faithfully borne?</em></p>
+    <div class="tablet-register">Register: Brotherhood testimony under pressure</div>
+  </div>
+
+  <div class="tablet t8">
+    <div class="tablet-head"><div class="tablet-numeral">VIII</div><div class="tablet-count"><strong>15</strong> meditations</div></div>
+    <div class="tablet-title"><em>Seed</em> Register</div>
+    <div class="tablet-window">Aug 29+ · window still open</div>
+    <p class="tablet-desc">Not yet a closed tablet — a working register of the next window's first records. The Bible study with three brothers across three countries. The circle first gathering.</p>
+    <div class="tablet-register">Register: Seed, not stone · still collecting</div>
+  </div>
+</div>
+
+<div class="section-head">
+  <div class="section-eyebrow">The corpus's arc across the tablets</div>
+  <h2>Seven months, eight volumes.</h2>
+  <p>Weekly-granularity meditation distribution across the tablet windows. Each color is a different tablet.</p>
+</div>
+
+<div class="timeline">
+  <div class="timeline-months" id="tlBars"></div>
+  <div class="tl-legend" id="tlLegend"></div>
+</div>
+
+<div class="section-head">
+  <div class="section-eyebrow">What the corrected mapping reveals</div>
+  <h2>Three structural findings.</h2>
+</div>
+
+<div class="insights">
+  <div class="insight">
+    <span class="metric">Tablet V</span>
+    <h3>The largest window by far.</h3>
+    <p>246 of 458 meditations — 54% of the corpus — sit inside Tablet V's 82-day span (May 26 – Aug 16). This is the sleeping-bride watchman-hour where the corpus's deepest doctrinal work happened, and where the ground under the whole series was clarified.</p>
+  </div>
+  <div class="insight">
+    <span class="metric">Aug 17</span>
+    <h3>The seam-day hinge.</h3>
+    <p>Two tablets share a single date: VI (the 85-minute call at 19:05) and VII (whose 12-day post-seam window begins that same day). Aug 17 is where the corpus turns — confession into brotherhood, the fire into the fellowship it forged.</p>
+  </div>
+  <div class="insight">
+    <span class="metric">Tablets III & IV</span>
+    <h3>Two witnesses on shared windows.</h3>
+    <p>Tablet III (Starling Convergence) and Tablet IV (Volume I Witness Companion) don't hold new PLAUD-meditation windows — they synthesize existing ones. III confirms Tablet V's window; IV is retrospective on Tablet I's. The corpus tells its story twice at these hinges.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div>PLAUD Meditations · Stone Tablets Infographic · Rebuilt 2026-09-02</div>
+  <div><em>Not speculation, but verified joints.</em></div>
+</div>
+
+</div>
+
+<script>
+// Weekly meditation counts per tablet-window
+// Recomputed from corrected window-mapping
+const monthData = [
+  { month: 'FEB',  total: 11,  bars: [{ t: 'I', n: 11 }] },
+  { month: 'MAR',  total: 41,  bars: [{ t: 'I', n: 41 }] },
+  { month: 'APR',  total: 74,  bars: [{ t: 'I', n: 44 }, { t: 'BRIDGE', n: 2 }, { t: 'II', n: 28 }] },
+  { month: 'MAY',  total: 55,  bars: [{ t: 'II', n: 42 }, { t: 'BRIDGE', n: 1 }, { t: 'V', n: 12 }] },
+  { month: 'JUN',  total: 114, bars: [{ t: 'V', n: 114 }] },
+  { month: 'JUL',  total: 99,  bars: [{ t: 'V', n: 99 }] },
+  { month: 'AUG',  total: 57,  bars: [{ t: 'V', n: 21 }, { t: 'VI/VII', n: 2 }, { t: 'VII', n: 26 }, { t: 'VIII', n: 8 }] },
+  { month: 'SEP',  total: 6,   bars: [{ t: 'VIII', n: 6 }] },
+];
+
+const tabletColors = {
+  'I':      '#a8823a',
+  'II':     '#4a2c5a',
+  'BRIDGE': '#c0b7a4',
+  'V':      '#2c4a6b',
+  'VI/VII': '#7d2b2b',
+  'VII':    '#4a5a2e',
+  'VIII':   '#8a5a3a',
+};
+const tabletNames = {
+  'I': 'Tablet I · Volume I',
+  'II': 'Tablet II · Volume II',
+  'BRIDGE': 'Bridge days',
+  'V': 'Tablet V · Come Out of Her',
+  'VI/VII': 'Aug 17 · seam-day (VI+VII)',
+  'VII': 'Tablet VII · Koinonia',
+  'VIII': 'Tablet VIII · Seed Register',
+};
+const tabletOrder = ['I', 'II', 'BRIDGE', 'V', 'VI/VII', 'VII', 'VIII'];
+
+const maxTotal = Math.max(...monthData.map(m => m.total));
+
+const tlBars = document.getElementById('tlBars');
+monthData.forEach(m => {
+  const col = document.createElement('div');
+  col.className = 'tl-month';
+  const stackH = (m.total / maxTotal) * 100;
+  const stack = document.createElement('div');
+  stack.className = 'tl-bar-stack';
+  stack.style.height = stackH + '%';
+  const sorted = [...m.bars].sort((a, b) => tabletOrder.indexOf(a.t) - tabletOrder.indexOf(b.t));
+  sorted.forEach(b => {
+    if (b.n === 0) return;
+    const seg = document.createElement('div');
+    seg.className = 'tl-seg';
+    seg.style.background = tabletColors[b.t] || '#888';
+    seg.style.height = ((b.n / m.total) * 100) + '%';
+    seg.title = `${tabletNames[b.t] || b.t} · ${b.n} file${b.n===1?'':'s'}`;
+    stack.appendChild(seg);
+  });
+  col.appendChild(stack);
+  const count = document.createElement('div');
+  count.className = 'tl-count'; count.textContent = m.total; col.appendChild(count);
+  const label = document.createElement('div');
+  label.className = 'tl-label'; label.textContent = m.month; col.appendChild(label);
+  tlBars.appendChild(col);
+});
+
+const tlLegend = document.getElementById('tlLegend');
+tabletOrder.forEach(t => {
+  const row = document.createElement('div');
+  row.className = 'tl-key-row';
+  const sw = document.createElement('span');
+  sw.className = 'tl-key-swatch';
+  sw.style.background = tabletColors[t];
+  row.appendChild(sw);
+  const label = document.createElement('span');
+  label.textContent = tabletNames[t];
+  row.appendChild(label);
+  tlLegend.appendChild(row);
+});
+</script>
+
+</body>
+</html>
+
+encoding: utf-8
+head: 454e4da270b8e728f69d15ce84426524564e6df6
