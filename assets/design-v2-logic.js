@@ -290,7 +290,7 @@
       const otherId = edge.direction === 'out' ? edge.to : edge.from;
       const label = edge.direction === 'out'
         ? (EDGE_LABELS[edge.type] || edge.type)
-        : `is ${EDGE_LABELS[edge.type] || edge.type} by`;
+        : (EDGE_LABELS_INCOMING[edge.type] || `is ${edge.type} by`);
       const targetHref = jcHrefFromRecord(otherId);
       const targetTitle = jcTitleFor(otherId);
 

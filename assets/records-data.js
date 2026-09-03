@@ -34383,6 +34383,18 @@ const EDGE_LABELS = {
   echoes: 'echoes (thread)',
 };
 
+// Grammatically-correct past-participle form for the incoming ("is X by")
+// direction — string concatenation ("is " + EDGE_LABELS[type] + " by") does
+// not work for irregular verbs (continues -> continued, not "continues"),
+// which produced a real "is continues by" bug on every record page.
+const EDGE_LABELS_INCOMING = {
+  continues: 'is continued by',
+  answers: 'is answered by',
+  reopens: 'is reopened by',
+  open: 'is an open question raised by',
+  echoes: 'is echoed by (thread)',
+};
+
 const STATUS_LABELS = {
   'author-confirmed': 'author-confirmed',
   'editorial': 'editorial connection',
