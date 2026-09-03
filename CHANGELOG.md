@@ -2,6 +2,87 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.1] — September 3, 2026
+
+### Corpus Lattice cross-reference verification (Phase 12)
+
+`JC_EDGES` — the entire reviewed thread-connection graph — was rebuilt wholesale from a new
+owner-supplied ground-truth dataset, "Corpus Lattice" (`Corpus Lattice.json` / `Corpus
+Lattice.csv`): every meditation/tablet resolved to a stable id with an explicit `status:
+"ok"/"external"/"unresolved"` flag on every cross-reference, replacing the Phase 11 appendix-parser
+as the authoritative source for edges specifically (Phase 11's `tabletAnchor`/`JC_RECORDS` parsing
+remains authoritative and untouched).
+
+#### Two verification passes
+- **First pass (schema v1.1):** matched local `records-2/` filenames to Corpus Lattice nodes by
+  exact `path.basename()` equality. This only resolved ~150/456 files, because the Lattice's `path`
+  field preserved each file's original, un-truncated vault filename while `records-2/`'s actual
+  filenames were independently shortened at export time (309 of 458 meditations differ — a
+  previously-known corpus export quirk). Produced 764 verified edges with 307/456 records isolated
+  — a real undercount from the matching method, not genuine corpus sparsity.
+- **Second pass (schema v1.2):** the owner deleted the v1.1 files and supplied a corrected dataset
+  adding paired `archive_filename`/`target_archive_filename` fields (the filename exactly as
+  shortened inside the same zip bundle `records-2/` was extracted from) to every node and every
+  cross-reference target. `scripts/rebuild-edges-from-lattice.mjs` was rewritten to match purely on
+  `archive_filename` exact string equality (schema-version-guarded, refuses to run against older
+  data) — **456/456 local records matched their own Lattice node (100%)**, producing **3,079
+  verified edges with zero isolated records** (every one of the 456 records now has at least one
+  verified connection). Only 2 of the prior 1,997 appendix-parsed edges lack Corpus Lattice
+  backing now (down from 1,150 under the fuzzy-matched first pass).
+
+#### Real bugs found and fixed alongside the edge rebuild
+- **A CSS blank-gap bug.** `.related-records` and `.reviewed-threads` (`#threads-mount`) both
+  carried substantial margin/padding/border-top with no `:empty` rule, so a record with zero
+  Related Records or zero Reviewed Thread Connections showed a large unexplained blank gap plus a
+  stray divider line with nothing under it — highly visible under the first (undercounting) Corpus
+  Lattice pass, since 307/456 records had zero edges at that point. Added `:empty` rules matching
+  the site's existing `#doorway-themes-mount:empty` pattern, and reduced `.related-records`'
+  spacing.
+- **A double-spacing bug.** The JS-injected "Reviewed thread connections" HTML wrapped itself in a
+  second, redundant `<div class="reviewed-threads">` — the exact same class already applied to its
+  own static mount element — doubling the margin/padding/border-top whenever thread connections did
+  render. Removed the redundant inner wrapper.
+- **A template-ordering issue.** The "You have reached the end of this encounter" return panel
+  (5 choices, including "Follow the thread") was positioned *before* the chronological Record
+  Sequence nav and the Reviewed Thread Connections list in the shared record-page template — so the
+  page announced itself as finished while more content still followed below it. Reordered so the
+  return panel is genuinely last on every record page.
+- **An edge `note`-field bug.** An early version of the edge rebuild set each edge's `note` field to
+  the Corpus Lattice's raw `target_title` (still carrying an unfixed underscore-for-colon export
+  artifact, e.g. "Personal Meditation_ Kenosis..."), which was directly redundant with the already-
+  clean link title shown right above it for outgoing edges, and actively showed the *wrong*
+  record's title for incoming edges (a real direction bug). The `note` field is no longer set on
+  Corpus-Lattice-sourced edges; `design-v2-logic.js`'s thread-connection renderer now simply omits
+  the note paragraph when absent.
+- **A self-inflicted mojibake bug, found and fixed mid-task.** A PowerShell cache-busting
+  version-bump step (`Get-Content -Raw` piped through `-replace`) mis-decoded 6 UTF-8 files without
+  a byte-order mark (`archive.html`, `index.html`, `mystery.html`, `mystery-v2.html`, `paths.html`,
+  `threads.html`) as a legacy codepage, silently corrupting real text into mojibake. Caught via
+  byte-precise Node verification (UTF-8 roundtrip check), restored all 6 from clean git `HEAD`
+  content, and re-applied the version bump safely via Node's UTF-8-aware string handling.
+
+#### Safety design
+`scripts/rebuild-edges-from-lattice.mjs` re-derives the `records-2/` filename → `JC_RECORDS` id
+mapping using the exact same deterministic parsing already producing the committed
+`records-data.js` (imported from `build-records2-corpus.mjs`, not re-implemented), and hard-fails
+if that re-derivation doesn't match the committed id set exactly. `JC_RECORDS` and `tabletAnchor`
+are left untouched. `JC_THREADS` is also left untouched — an initial attempt to filter thread
+membership by requiring a direct Corpus-Lattice edge between same-thread steps emptied the
+"murmuration" thread to 0 steps and gutted the others (25→10 total), proving that test wrong for a
+hand-curated cross-corpus narrative thread; the script now only *reports* per-thread edge coverage
+informationally.
+
+#### Verification
+Full pipeline re-run in order; integrity check clean (456 records / 3,079 edges / 4 threads, zero
+duplicate ids/hrefs/edges, zero missing files, zero bad edge/thread references, zero self-loops,
+contiguous order, zero missing `encounter` fields, zero isolated records); repo-wide byte-level
+sweep (UTF-8 roundtrip + mojibake-byte-sequence search + BOM check) clean across every live
+`.html`/`.js`/`.css` file. Live-verified with a freshly restarted dev server and a brand-new browser
+page (ruling out stale-cache artifacts): the originally-reported record now correctly shows both
+Related Records and Reviewed Thread Connections with no blank gap; the Samuel Loop thread on
+`threads.html` still renders its full sequence; the Encounter Index widget and Archive search box
+both still return correct results; September's records remain correctly browsable.
+
 ## [2.0] — September 3, 2026
 
 ### Public Beta 2.0 — Phase 11 full corpus rebuild from `records-2/`

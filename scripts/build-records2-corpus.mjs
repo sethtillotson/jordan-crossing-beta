@@ -43,8 +43,8 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const RECORDS2_DIR = path.join(ROOT, 'records-2');
-const RECORDS_DIR = path.join(ROOT, 'records');
+export const RECORDS2_DIR = path.join(ROOT, 'records-2');
+export const RECORDS_DIR = path.join(ROOT, 'records');
 const DATA_PATH = path.join(ROOT, 'assets', 'records-data.js');
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -118,7 +118,7 @@ function bodyOnly(cleaned) {
  * genuine source-corpus data-quality bug found in one file during Phase 11,
  * not a formatting quirk. Such files must NOT be published as if they were
  * real meditation text. */
-function looksLikeBinaryGarbage(buf) {
+export function looksLikeBinaryGarbage(buf) {
   if (buf.length >= 4 && buf[0] === 0x50 && buf[1] === 0x4b && (buf[2] === 0x03 || buf[2] === 0x05 || buf[2] === 0x07)) {
     return true; // PK\x03\x04 etc. — a zip/docx/xlsx file signature
   }
@@ -131,7 +131,7 @@ function looksLikeBinaryGarbage(buf) {
   return sampleLen > 0 && (controlCount / sampleLen) > 0.05;
 }
 
-function parseRawRecord(filePath) {
+export function parseRawRecord(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8');
   const cleaned = cleanMarkdownArtifacts(raw);
   const body = bodyOnly(cleaned);
@@ -328,7 +328,7 @@ function commonPrefixLen(a, b) {
   while (i < n && a[i] === b[i]) i++;
   return i;
 }
-function bestMatch(nameBase, candidateBases, minLen = 20) {
+export function bestMatch(nameBase, candidateBases, minLen = 20) {
   let best = null, bestLen = 0, bestDiff = Infinity;
   for (const cand of candidateBases) {
     const len = commonPrefixLen(nameBase, cand);
@@ -355,7 +355,7 @@ function slugifyTitle(title) {
     .slice(0, 4)
     .join('-') || 'meditation';
 }
-function makeId(dateKey, title, usedIds) {
+export function makeId(dateKey, title, usedIds) {
   const datePart = dateKey ? dateKey.slice(5, 10) : '00-00';
   const base = `${datePart}-${slugifyTitle(title)}`;
   let candidate = base;
@@ -389,8 +389,8 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
   <title>${escAttr(title)} — The Jordan Crossing</title>
   <meta name="description" content="${escAttr(summary)}">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA3">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA3">
 </head>
 <body data-record-id="${escAttr(id)}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -499,6 +499,10 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
       <div class="doorway-themes-mount" id="doorway-themes-mount"></div>
 
+      <div class="graph-nav" id="graph-nav-mount"></div>
+
+      <div class="reviewed-threads" id="threads-mount"></div>
+
       <div class="movement-divider"></div>
 
       <section class="return-panel" aria-label="You have reached the end of this encounter">
@@ -515,7 +519,7 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
 
           <a class="depth-card" href="../threads.html">
             <div class="depth-title">Follow the thread</div>
-            See the constellation this record belongs to
+            Explore the thread constellation
           </a>
 
           <a class="depth-card" href="../archive.html">
@@ -534,10 +538,6 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
           </button>
         </div>
       </section>
-
-      <div class="graph-nav" id="graph-nav-mount"></div>
-
-      <div class="reviewed-threads" id="threads-mount"></div>
     </div>
   </main>
 
@@ -545,9 +545,9 @@ function renderPage({ id, title, dateLabel, classification, article, summary }) 
     <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260903BETA2"></script>
-  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA3"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA3"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA3"></script>
 </body>
 </html>
 `;
@@ -732,4 +732,11 @@ function main() {
   console.log(`\nWrote assets/records-data.js: ${jcRecords.length} records, ${newEdges.length} edges, ${newThreads.length} threads (unchanged count).`);
 }
 
-main();
+// Only run when invoked directly (`node scripts/build-records2-corpus.mjs`),
+// not when another script imports this module's helper functions (see
+// scripts/rebuild-edges-from-lattice.mjs, which reuses parseRawRecord/makeId
+// to independently re-derive the same filename->id mapping this script
+// produces, without re-triggering a full page regeneration).
+if (process.argv[1] && path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1])) {
+  main();
+}

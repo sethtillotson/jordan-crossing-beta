@@ -400,8 +400,13 @@
     ];
     if (!edges.length) return;
 
-    let html = '<div class="reviewed-threads">';
-    html += '<h2 class="reviewed-threads-heading">Reviewed thread connections</h2>';
+    // The mount element itself already carries the .reviewed-threads class
+    // (spacing/border styling) in every record page's static template —
+    // do NOT wrap this injected content in another element with the same
+    // class, or the margin/padding/border-top apply twice (a real,
+    // previously-unnoticed double-spacing bug fixed alongside the
+    // Corpus Lattice edge rebuild).
+    let html = '<h2 class="reviewed-threads-heading">Reviewed thread connections</h2>';
     html += '<ul class="thread-list">';
 
     edges.forEach(edge => {
@@ -421,13 +426,13 @@
             <span>${label}</span>
             <a href="${targetHref}">${targetTitle}</a>
           </div>
-          <p class="thread-note">${edge.note}</p>
+          ${edge.note ? `<p class="thread-note">${edge.note}</p>` : ''}
           <p class="thread-source">Source: ${edge.source}</p>
         </li>
       `;
     });
 
-    html += '</ul></div>';
+    html += '</ul>';
     mount.innerHTML = html;
   }
 

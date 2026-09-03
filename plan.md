@@ -1,9 +1,21 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Public Beta 2.0, Phase 11 complete, final QA passed, live)
+## Current Status (September 3, 2026 — Phase 12 complete: Corpus Lattice cross-reference verification)
 
-See "Phase 11" below for the full account of the corpus rebuild from `records-2/` (456 verified
-meditations) and the site's promotion from private Interior Beta to public-facing Beta 2.0.
+See "Phase 12" below for the latest: the entire `JC_EDGES` cross-reference graph was rebuilt
+wholesale from the owner's "Corpus Lattice" dataset (a schema-versioned JSON/CSV ground truth with
+per-file/per-node ids, explicit `status: "ok"/"external"/"unresolved"` flags, and — critically, in
+schema v1.2 — paired `archive_filename` fields that resolve the corpus's own filename-shortening
+problem with zero heuristics). 456 records now carry 3,079 verified edges (up from 1,997
+appendix-parsed edges in Phase 11, of which only 2 lacked Corpus Lattice backing); every single
+record now has at least one verified connection (0 isolated records, down from a first-pass 307/456
+under an initial, since-corrected fuzzy-matching approach — see Phase 12 for the full story).
+Also fixed a real CSS/template bug (a blank-gap/double-spacing issue below the "carry a question"
+panel) and reordered the record-page template so the "you have reached the end" panel is genuinely
+last.
+
+See "Phase 11" below for the prior full account of the corpus rebuild from `records-2/` (456
+verified meditations) and the site's promotion from private Interior Beta to public-facing Beta 2.0.
 
 **Final QA (post-Phase-11) and live deployment both confirmed clean:**
 - Automated data validation: 456 records / 1,997 edges / 4 threads, zero duplicate ids/hrefs, zero
@@ -326,6 +338,95 @@ independently re-verified against the new corpus (only remapped by id); audio re
 (component ready, no source material yet); final QA and stakeholder sign-off before any actual
 public announcement/indexing decision.
 
+### Phase 12 (2026-09-03) — Corpus Lattice cross-reference verification, template cleanup
+
+The owner noticed two things browsing the live site: (1) some Samuel Loop records (e.g. "The
+Weight of Calling, the Narrowness of the Gate...") appeared to be missing their carry-a-question
+section, and a visibly blank gap sat below it; (2) they wanted the entire `JC_EDGES` graph
+independently cross-checked against a new authoritative dataset — "Corpus Lattice" (`Corpus
+Lattice.json` / `Corpus Lattice.csv`) — every node resolved to a stable id (`MED-NNNN`/`TAB-X`)
+with an explicit `status: "ok"/"external"/"unresolved"` flag on every cross-reference.
+
+**The visual bug was CSS, not missing markup.** `.related-records` carried `margin-top:4rem +
+padding-top:2rem` with no divider before it; `.reviewed-threads` (`#threads-mount`) carried the
+same margin/padding/border-top even when `initThreadConnections()` correctly left it empty for a
+record with zero edges — with no `:empty` rule, that produced a large blank gap plus a stray
+border line with nothing under it. A first Corpus-Lattice pass (schema v1.1, see below) made this
+far more visible: 307 of 456 records had zero verified edges under that pass's (flawed) matching,
+so most record pages showed the bug. Fixed: reduced `.related-records` spacing; added `:empty`
+rules to `.reviewed-threads` and `.graph-nav` (matching the existing `#doorway-themes-mount:empty`
+pattern). Also found and fixed a genuine **double-spacing bug**: the JS-injected thread-connections
+HTML wrapped itself in a second nested `<div class="reviewed-threads">`, duplicating the same
+class's margin/padding/border whenever threads *did* render — removed the redundant inner wrapper.
+Also reordered the shared record-page template so Related Records → doorway themes → Record
+Sequence → Reviewed Thread Connections all render **before** the "you have reached the end of this
+encounter" panel, which had previously sat mid-page with more content still following it.
+
+**Corpus Lattice verification — two passes.** The first pass (schema v1.1) matched a local
+`records-2/` filename to its Corpus Lattice node by exact `path.basename()` string equality. This
+only resolved ~150/456 files: the Lattice's own `path`/`target_path` fields preserve each file's
+*original, un-truncated* vault filename, while `records-2/`'s actual filenames were independently
+shortened at export time (309 of 458 meditations differ — the corpus's own long-documented "309
+filenames shortened for archive" issue, the same class of problem Phase 10 solved for
+`verified-source-docs/`). That first pass therefore produced only 764 verified edges with 307/456
+records isolated — a real undercount, not a true sparsity in the underlying data, and the resulting
+edges' `note` field also carried a raw, unfixed underscore-for-colon export artifact
+(`target_title`, e.g. "Personal Meditation_ Kenosis...") redundant with the already-clean link text
+right above it. Rather than fix this with fuzzy longest-common-prefix matching (workable, but a
+heuristic), the owner deleted the v1.1 files and supplied a corrected **schema v1.2** dataset: every
+node and every cross-reference target now carries a paired `archive_filename`/`archive_path` (or
+`target_archive_filename`/`target_archive_path`) field — the filename exactly as shortened inside
+the same zip bundle `records-2/` was extracted from. `scripts/rebuild-edges-from-lattice.mjs` was
+rewritten to match purely on `archive_filename` exact string equality (with a `schema_version >=
+1.2` guard that refuses to run against the older schema) — **456/456 local records matched their
+own Lattice node (100%)**, and the verified edge count grew to **3,079 edges with zero isolated
+records** (every one of the 456 records now has at least one Corpus-Lattice-verified connection).
+Only 2 of the prior 1,997 appendix-parsed edges lack any Corpus Lattice backing now (down from
+1,150 under the first, fuzzy-matched pass) — strong confirmation the undercount really was a
+matching-methodology gap, not genuine corpus sparsity. The `note` field was dropped entirely from
+Corpus-Lattice-sourced edges (Corpus Lattice gives no direction-independent descriptive text beyond
+the target's own title, which the link already shows — an earlier attempt at reusing `target_title`
+here was both redundant for outgoing edges and a real direction bug for incoming ones);
+`design-v2-logic.js`'s `initThreadConnections()` now simply omits the note paragraph when absent.
+
+**Safety-first script design.** `scripts/rebuild-edges-from-lattice.mjs` re-derives the
+`records-2/` filename → `JC_RECORDS` id mapping using the *exact same* deterministic parsing
+(`parseRawRecord`/`makeId`, imported from `build-records2-corpus.mjs`, not re-implemented) that
+produced the currently-committed `records-data.js`, then hard-fails if that re-derivation doesn't
+match the committed id set exactly — refusing to build edges against a stale mapping rather than
+silently proceeding. `JC_RECORDS` and `tabletAnchor` are left completely untouched (already
+independently verified in Phase 11 from each file's own appendix). `JC_THREADS` is also left
+untouched — an initial attempt to filter thread membership by requiring a direct Corpus-Lattice
+edge between same-thread steps was reverted after it *emptied* the "murmuration" thread to 0 steps
+and gutted the others (25→10 total steps across all 4 threads), which is real evidence that test is
+wrong for a hand-curated cross-corpus narrative thread, not evidence the members are stale. The
+script now only *reports* per-thread edge coverage as an informational number (e.g. under the final
+v1.2 pass: samuel-loop 8/10, murmuration 4/5, descent 4/5, zech3 3/5 steps have a direct verified
+connection to another same-thread step) — a starting point for a future, more careful thread-
+specific verification pass, not something this script silently discards.
+
+**Verification performed:** full pipeline re-run in order (`build-records2-corpus.mjs` →
+`rebuild-edges-from-lattice.mjs` → `build-stone-tablet-pages.mjs` → `tag-encounter-dimensions.mjs`
+→ `rebuild-reference-pages.mjs` → `relink-corpus-paths.mjs`). Integrity check: 456 records / 3,079
+edges / 4 threads, zero duplicate ids/hrefs/edges, zero missing href files, zero bad edge/thread
+references, zero self-loops, chronological order contiguous, zero missing `encounter` fields, zero
+isolated records. Repo-wide byte-level sweep (UTF-8 roundtrip + literal mojibake-byte-sequence
+search + BOM check) across every `.html`/`.js`/`.css` file in the live site: clean. Live-verified
+in-browser, with a **freshly restarted dev server and a brand-new browser page** (per owner
+request, to rule out any stale-cache artifact): the originally-reported record
+("05-23-weight-calling-narrowness-gate") now correctly shows both Related Records and Reviewed
+Thread Connections with no blank gap; `threads.html`'s Samuel Loop thread still renders its full
+sequence (JC_THREADS untouched, confirmed); the Encounter Index widget and Archive search box both
+still return correct, real results; September's 6 records remain correctly browsable.
+
+**A real self-inflicted bug found and fixed mid-task:** a PowerShell version-bump step (`Get-Content
+-Raw` piped through `-replace`) mis-decoded 6 UTF-8 files without a byte-order mark
+(`archive.html`, `index.html`, `mystery.html`, `mystery-v2.html`, `paths.html`, `threads.html`) as a
+legacy codepage, silently baking real mojibake into them — caught via byte-precise Node
+verification (a genuine corruption, unlike the session's several earlier false-positive
+PowerShell-console-display "mojibake" scares). Restored all 6 from clean git `HEAD` content and
+re-applied the version bump safely via Node's UTF-8-aware string handling instead.
+
 ### Key Functions
 - `jcGetRelatedRecords(recordId, count)` — returns connected records from edges
 - `jcGetPrevNext(id)` / `jcGetEdgesFor(id)` — chronology and labeled-edge lookups, used by both `design-v2-logic.js` (record pages) and `threads.html` (constellation view)
@@ -343,14 +444,20 @@ public announcement/indexing decision.
 
 ## File Manifest
 
+**Phase 12 current state (September 3, 2026):** `assets/records-data.js` now holds 456 records
+(unchanged from Phase 11), **3,079 Corpus-Lattice-verified edges** (replacing Phase 11's 1,997
+appendix-parsed edges), and 4 threads (untouched — see Phase 12 above for why). New top-level data
+files: `Corpus Lattice.json` / `Corpus Lattice.csv` (schema v1.2, gitignored-adjacent — actually
+tracked/committed as the new ground-truth source, see `.gitignore`). New script:
+`scripts/rebuild-edges-from-lattice.mjs`.
+
 **Phase 11 current state (September 3, 2026):** `records-2/` is the canonical raw-source folder
 (456 verified meditations + 8 Stone Tablets + audit doc + 5 reference docs); `records/` holds 456
 regenerated meditation pages + 9 Stone Tablet/audit pages (465 total `-v2.html` files), pure
-generated output with no raw `.md` siblings anymore. `assets/records-data.js` holds 456 records
-(all reviewed, all with `tabletAnchor`), 1,997 edges, 4 threads (remapped). New top-level pages:
-`stone-tablets.html`, `corpus-architecture.html`. `record.html` is deleted. The historical bullets
-below (Phases 1–10) describe the site's evolution up to that point; see "Phase 11" above for the
-full account of what superseded them.
+generated output with no raw `.md` siblings anymore. New top-level pages: `stone-tablets.html`,
+`corpus-architecture.html`. `record.html` is deleted. The historical bullets below (Phases 1–10)
+describe the site's evolution up to that point; see "Phase 11"/"Phase 12" above for the full
+account of what superseded them.
 
 - `index.html`, `mystery.html`, `threads.html`, `paths.html`, `archive.html` — all v2, all cross-linked in nav; `archive.html` rebuilt in Phase 5 into a real browsable, searchable index, now describing 409 local records (Phase 10)
 - `mystery-v2.html`, `record.html` — legacy pages kept only for redirect/reference; not linked from anywhere live except `record.html?mode=original` from the landing page's third invitation card (intentional — refers to the preserved v11 interior record, a different concept from a curated meditation's no-interpretation view)
@@ -362,18 +469,29 @@ full account of what superseded them.
 - `scripts/build-corpus-records.mjs` — the generator that produced the 131 reviewed record pages and rebuilt `assets/records-data.js`; safe to re-run if the pass documents are extended (see its own header for what must be re-applied afterward)
 - `scripts/build-mirror-records.mjs` — the Phase 5 generator that produced the mirrored record pages
 - `scripts/tag-encounter-dimensions.mjs` — the Phase 4 tagger that computes `encounter`/`doorwayThemes` for every record
-- `scripts/relink-corpus-paths.mjs` — the Phase 5 script that safely re-links Corpus Paths steps to local pages, 21 of 48 so far
-- `scripts/integrate-passes-7-8.mjs`, `scripts/integrate-passes-9-13.mjs`, `scripts/integrate-passes-14-16.mjs`, `scripts/integrate-pass-17.mjs` (Phases 6–9) — **superseded by Phase 10.** Each promoted mirrored records and built edges by parsing Pass-N-Cross-References.md *summary* documents; that data was found to be partly hallucinated. Kept in the repository as historical artifacts documenting the project's evolution; do not re-run them — re-run `scripts/rebuild-cross-references-verified.mjs` instead.
-- `scripts/rebuild-cross-references-verified.mjs` (Phase 10, current authoritative rebuilder) — parses each of the 458 verified meditation files' own embedded Cross-Reference Appendix, rebuilds `JC_EDGES` wholesale, adds `tabletAnchor`, mirrors any missing files. Re-run whenever `verified-source-docs/` is updated.
-- `records/*.md` (426 files, up from 411 in Phase 10 — 15 newly mirrored from the verified bundle), `Pass 1–17 *.md` (superseded, see below) — the raw corpus mirror described above. These are committed to this repository (it remains a private Interior Beta, not a public deploy); only the 409 *locally published* meditations are surfaced anywhere in the live site's navigation.
-- `verified-source-docs/PLAUD-Meditations-Corpus_2026-09-02/` (Phase 10) — the owner's verified, corrected corpus bundle: 458 real meditation files (each with an embedded, corrected Cross-Reference Appendix), 9 Stone Tablet volumes, 18 Pass Ledgers (Passes 1–17 plus the new Pass 18 "Corpus-Wide Truth Correction" ledger), and the corrected Master Index/Tracker/infographics. This is the current source of truth for anything cross-reference-related; kept in the repository for re-runs and audit trail.
-- `Superseded-Docs/` (Phase 10) — every document the corpus-wide truth correction superseded: all 17 old `Pass-N-Cross-References.md` files, the old `PLAUD-Meditations-Master-Index.md`/`Tracker.csv`/both infographic HTML files, the old `PLAUD Meditations Corpus Map.md`, and the original project-root `Corpus Map.md` (which still named the pre-correction "seven Stone Tablets"). Kept for historical reference, not linked from the live site.
-- `PLAUD-Meditations-Master-Index.md`, `PLAUD-Meditations-Tracker.csv` — **moved to `Superseded-Docs/` in Phase 10**; the corrected versions live inside `verified-source-docs/`. Reference documents describing the corpus by Tablet grouping and per-file memo-link density; not rendered into the site (they describe aggregate counts, not resolvable per-record link targets).
+- `scripts/relink-corpus-paths.mjs` — the Phase 5 script that safely re-links Corpus Paths steps to local pages, 35 of 48 as of Phase 11
+- `scripts/integrate-passes-7-8.mjs`, `scripts/integrate-passes-9-13.mjs`, `scripts/integrate-passes-14-16.mjs`, `scripts/integrate-pass-17.mjs` (Phases 6–9) — **superseded by Phase 10.** Each promoted mirrored records and built edges by parsing Pass-N-Cross-References.md *summary* documents; that data was found to be partly hallucinated. Kept in the repository as historical artifacts documenting the project's evolution; do not re-run them.
+- `scripts/rebuild-cross-references-verified.mjs` (Phase 10) — parses each of the 458 verified meditation files' own embedded Cross-Reference Appendix, rebuilds `JC_EDGES` wholesale, adds `tabletAnchor`, mirrors any missing files. **Superseded by Phase 11** (records-2/ cutover) then again by **Phase 12** for edges specifically (Corpus Lattice verification). Kept as a historical artifact; `tabletAnchor` generation logic remains referenced by `build-records2-corpus.mjs`.
+- `scripts/build-records2-corpus.mjs` (Phase 11, current authoritative record-page/JC_RECORDS generator) — parses every `records-2/` meditation file's own metadata + embedded Cross-Reference Appendix, regenerates every record page and `JC_RECORDS`/`tabletAnchor` wholesale. Re-run whenever `records-2/` is updated; must be followed by `rebuild-edges-from-lattice.mjs` (Phase 12) to regenerate `JC_EDGES` afterward (this script's own JC_EDGES output is immediately superseded).
+- `scripts/build-stone-tablet-pages.mjs`, `scripts/rebuild-reference-pages.mjs` (Phase 11) — Stone Tablet reader pages and the 3 infographic pages, both sourced from `records-2/`.
+- `scripts/rebuild-edges-from-lattice.mjs` (**Phase 12, current authoritative `JC_EDGES` rebuilder**) — re-derives the `records-2/` filename→id mapping (imported from `build-records2-corpus.mjs`, with a hard safety check against the committed `JC_RECORDS`), matches every local record to its Corpus Lattice node via exact `archive_filename` string equality, and wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references. Reports (does not modify) `JC_THREADS` coverage. Re-run whenever `Corpus Lattice.json` is updated — requires schema v1.2 or later (the `archive_filename` fields); refuses to run against older schemas.
+- `records/*.md` — **removed as of Phase 11**; `records/` is now pure generated `-v2.html` output. Raw source lives exclusively in `records-2/`.
+- `verified-source-docs/PLAUD-Meditations-Corpus_2026-09-02/` (Phase 10) — **superseded by `records-2/` in Phase 11**; gitignored/local-only as of Phase 11's `.gitignore` update. Kept locally for historical audit trail, not part of the public repo.
+- `Superseded-Docs/` (Phase 10, expanded Phase 11) — every document earlier phases superseded, including a full pre-Phase-11 snapshot of the old `records/` folder (`records-pre-records2-cutover-2026-09-03/`). Gitignored/local-only as of Phase 11.
+- `Corpus Lattice.json`, `Corpus Lattice.csv` (Phase 12) — the owner's schema-versioned ground-truth cross-reference dataset (v1.2 as of this writing: every node/cross-reference-target carries paired original/`archive_filename` fields). Committed to the repository as the current source of truth for `JC_EDGES`; re-run `rebuild-edges-from-lattice.mjs` whenever these are updated.
 
 ---
 
 ## Success Criteria
 
+- ✓ **Phase 12 (Corpus Lattice verification):** `JC_EDGES` rebuilt wholesale from the owner's
+  schema-versioned Corpus Lattice dataset — 456 records, 3,079 verified edges (up from 1,997
+  appendix-parsed), zero isolated records (every record has at least one verified connection);
+  matching resolved with zero heuristics once schema v1.2's `archive_filename` fields arrived
+  (100% of local records matched their own Lattice node exactly); a real CSS blank-gap/double-
+  spacing bug and a template-ordering issue (return panel not actually last) found and fixed; see
+  "Phase 12" above for the full account, including a self-inflicted mojibake bug found and fixed
+  mid-task
 - ✓ **Phase 11 (Public Beta 2.0):** full corpus rebuilt from `records-2/` — 456 records (all
   reviewed, all with `tabletAnchor`), 1,997 edges, 4 threads remapped; the previously-broken
   article-body bug (stale pre-verification content displayed as record text) is fully resolved by

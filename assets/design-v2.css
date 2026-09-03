@@ -727,8 +727,8 @@ main {
    ─────────────────────────────────────────────────────────────────── */
 
 .related-records {
-  margin-top: var(--space-16);
-  padding-top: var(--space-8);
+  margin-top: var(--space-10);
+  padding-top: var(--space-6);
   border-top: 2px dashed rgba(201, 162, 39, 0.2);
 }
 
@@ -840,6 +840,15 @@ main {
   margin-top: var(--space-12);
   padding-top: var(--space-8);
   border-top: 1px solid rgba(201, 162, 39, 0.15);
+}
+
+/* Safety net for the rare first/last-in-sequence edge case, matching the
+   same empty-state pattern as .reviewed-threads and .related-records. */
+.graph-nav:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border-top: none;
 }
 
 .graph-nav-heading {
@@ -1162,6 +1171,18 @@ main {
   margin-top: var(--space-12);
   padding-top: var(--space-8);
   border-top: 1px solid rgba(201, 162, 39, 0.15);
+}
+
+/* When a record has zero Corpus-Lattice-verified thread connections,
+   initThreadConnections() (design-v2-logic.js) intentionally leaves this
+   mount empty rather than rendering an empty heading — collapse the
+   margin/padding/border-top too, so no record shows a bare blank gap with
+   a stray divider line and nothing underneath it. */
+.reviewed-threads:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border-top: none;
 }
 
 .reviewed-threads-heading {

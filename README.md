@@ -102,7 +102,8 @@ directly from that source — not patched incrementally.
 │   │                               #   related records, audio player init, no-interpretation mode
 │   ├── mystery-v2-logic.js        # Doorway selection, keyword-pool routing, no-interpretation link
 │   ├── records-data.js            # JC_RECORDS (456 records, all reviewed, all with a tabletAnchor),
-│   │                               #   JC_EDGES (1,997 edges), JC_THREADS (4, remapped in Phase 11)
+│   │                               #   JC_EDGES (3,079 edges, Corpus-Lattice-verified in Phase 12,
+│   │                               #   zero isolated records), JC_THREADS (4, remapped in Phase 11)
 │   ├── corpus-paths-data.js       # JC_CORPUS_PATHS — the nine curated reading paths
 │   ├── audio-player.js/.css       # Accessible audio player component (dormant — see Audio below)
 │   └── beta.js/.css               # Legacy logic, kept for compatibility
@@ -235,21 +236,27 @@ search-and-replace it across every referencing page, not just the one you edited
 
 ### Regenerating the corpus
 
-`node scripts/build-records2-corpus.mjs` is **the current authoritative generator** (Phase 11). It
-reads every meditation file directly from `records-2/` (the canonical raw-source folder), parses
-each one's own title/date/classification metadata and embedded Cross-Reference Appendix, clears and
-regenerates every `records/*-v2.html` page, and rebuilds `JC_RECORDS`/`JC_EDGES` in
-`assets/records-data.js` wholesale. It also remaps `JC_THREADS`' record-id references by title+date
-match (ids can shift when a title is corrected) and leaves `EDGE_LABELS`, `STATUS_LABELS`, and every
+`node scripts/build-records2-corpus.mjs` is **the current authoritative generator for
+records/JC_RECORDS** (Phase 11). It reads every meditation file directly from `records-2/` (the
+canonical raw-source folder), parses each one's own title/date/classification metadata and
+embedded Cross-Reference Appendix, clears and regenerates every `records/*-v2.html` page, and
+rebuilds `JC_RECORDS` (plus an interim `JC_EDGES`, immediately superseded by step 2 below) in
+`assets/records-data.js`. It also remaps `JC_THREADS`' record-id references by title+date match
+(ids can shift when a title is corrected) and leaves `EDGE_LABELS`, `STATUS_LABELS`, and every
 helper function in `records-data.js` untouched. Re-run whenever `records-2/` is updated, then run,
 in order:
 
-1. `node scripts/build-stone-tablet-pages.mjs` — regenerates the 8 Stone Tablet reader pages + the
+1. `node scripts/rebuild-edges-from-lattice.mjs` — **the current authoritative `JC_EDGES`
+   rebuilder** (Phase 12). Matches every local record to its Corpus Lattice node by exact
+   `archive_filename` string equality (requires `Corpus Lattice.json` schema v1.2 or later) and
+   wholesale-replaces `JC_EDGES` with only `status: "ok"` meditation-to-meditation cross-references.
+   Re-run whenever `Corpus Lattice.json`/`Corpus Lattice.csv` are updated.
+2. `node scripts/build-stone-tablet-pages.mjs` — regenerates the 8 Stone Tablet reader pages + the
    Tablet VII audit page from `records-2/`'s Stone Tablet volumes
-2. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
+3. `node scripts/rebuild-reference-pages.mjs` — regenerates `six-doctrinal-spines.html`,
    `spines-timeline.html`, and `corpus-architecture.html` from `records-2/`'s reference infographics
-3. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
-4. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
+4. `node scripts/tag-encounter-dimensions.mjs` — re-tags the full record set
+5. `node scripts/relink-corpus-paths.mjs` — re-checks Corpus Paths steps against the current set
 
 **Superseded, do not re-run:** `scripts/build-corpus-records.mjs`, `build-mirror-records.mjs`,
 `integrate-passes-7-8.mjs`, `integrate-passes-9-13.mjs`, `integrate-passes-14-16.mjs`,

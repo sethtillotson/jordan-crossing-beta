@@ -333,8 +333,8 @@ function renderTabletPage({ entry, title, caption, subtitle, windowLabel, descri
 
   <title>${escapeAttr(title)} — The Jordan Crossing</title>
   <meta name="description" content="${escapeAttr(description)}">
-  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA2">
-  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA2">
+  <link rel="stylesheet" href="../assets/design-v2.css?v=20260903BETA3">
+  <link rel="stylesheet" href="../assets/audio-player.css?v=20260903BETA3">
 </head>
 <body data-record-id="${escapeAttr(entry.id)}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -404,9 +404,9 @@ function renderTabletPage({ entry, title, caption, subtitle, windowLabel, descri
     <em>A Living Topology of Transformation</em> · Public Beta 2.0 · Soli Deo Gloria
   </footer>
 
-  <script src="../assets/records-data.js?v=20260903BETA2"></script>
-  <script src="../assets/audio-player.js?v=20260903BETA2"></script>
-  <script src="../assets/design-v2-logic.js?v=20260903BETA2"></script>
+  <script src="../assets/records-data.js?v=20260903BETA3"></script>
+  <script src="../assets/audio-player.js?v=20260903BETA3"></script>
+  <script src="../assets/design-v2-logic.js?v=20260903BETA3"></script>
 </body>
 </html>
 `;
@@ -428,7 +428,7 @@ function renderStoneTabletsIndex(entries) {
 
   <title>Stone Tablets — The Jordan Crossing</title>
   <meta name="description" content="Browse the eight Stone Tablet volumes of The Jordan Crossing public Beta 2.0.">
-  <link rel="stylesheet" href="assets/design-v2.css?v=20260903BETA2">
+  <link rel="stylesheet" href="assets/design-v2.css?v=20260903BETA3">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
