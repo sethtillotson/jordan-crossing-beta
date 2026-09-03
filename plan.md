@@ -1,9 +1,31 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Public Beta 2.0, Phase 11 complete)
+## Current Status (September 3, 2026 — Public Beta 2.0, Phase 11 complete, final QA passed, live)
 
-See "Phase 11" below for the latest: a full corpus rebuild from `records-2/` (456 verified
+See "Phase 11" below for the full account of the corpus rebuild from `records-2/` (456 verified
 meditations) and the site's promotion from private Interior Beta to public-facing Beta 2.0.
+
+**Final QA (post-Phase-11) and live deployment both confirmed clean:**
+- Automated data validation: 456 records / 1,997 edges / 4 threads, zero duplicate ids/hrefs, zero
+  missing href files, zero bad edge/thread references, zero self-loops, chronological order
+  contiguous 1–456, every hand-written `records/` link across every top-level page resolves.
+- Browser end-to-end verification: full index → Mystery Mode (doorway pooling across all 456
+  records) → archive (September's 6 records correctly browsable, confirming the earlier
+  `MONTH_ORDER` fix held) → Stone Tablet reader → individual record spot-checks all clean (no
+  markdown leakage, no mojibake, correct titles). The Encounter Index widget and archive search box
+  were both exercised directly and return correct, real results.
+- GitHub Pages auto-deploy: last 3 workflow runs (including the Phase 11 push, commit `71fc5b0`)
+  all completed with `conclusion: success`. Live site fetched directly at
+  `https://sethtillotson.github.io/jordan-crossing-beta/` and confirmed byte-for-byte consistent
+  with the Phase 11 build across `index.html`, `mystery.html`, `stone-tablets.html`, and the
+  previously-broken "Joseph, Paul, and Severe Mercy" record page (now showing its correct Genesis
+  50:20 content live).
+
+All session todos are now `done` except 6 legitimately non-actionable ones: 5 were the abandoned
+in-place body-patch approach (`build-body-replace-script` and its dependents), explicitly superseded
+by the `records-2/` full rebuild; 1 (`integrate-audio-player`) remains genuinely blocked on the
+owner supplying real audio source material — the player component itself is already built and
+wired, ready to activate the moment a URL is supplied.
 
 ### Completed ✓
 - **Landing, Mystery Mode, Threads, Corpus Paths, Archive:** all five top-level pages redesigned/built with consistent v2 visual language (dark parchment/gold theme), shared header/nav/footer.
