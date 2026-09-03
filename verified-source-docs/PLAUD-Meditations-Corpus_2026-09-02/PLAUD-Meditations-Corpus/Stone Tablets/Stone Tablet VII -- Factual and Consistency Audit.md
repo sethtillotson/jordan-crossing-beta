@@ -1,0 +1,148 @@
+# Factual & Consistency Audit — Stone Tablet VII (Volume IV) + Cross-Corpus Pass (Tablets I–VI)
+
+**Scanned:** `Stone Tablet VII -- A Living Topology of Transformation -- Volume 4 -- Complete.md` (50,193 words; locators = Part/§ section headings), cross-checked against: the 28 source meditations (Aug 17–28, 2026, extracted text), the 27 bridge meditations (extracted text), Stone Tablets I–VI (complete .md files from AI Drive), `Master_Transformation_Timeline.md`, and `Master Prompt Template v1.1`. Scripture verified against NKJV via biblehub.com NKJV chapter texts (217 quotation lines checked; 194 verified clean, 23 flagged, of which 2 were extraction artifacts — 21 stand).
+
+---
+
+## Category: reference (Scripture) — 21 entries
+
+The series convention is NKJV. Each entry shows the manuscript text and the NKJV text. Note one structural tension the author must adjudicate once, at the top: **NKJV itself retains "unto" in Psalm 115:1** — the corpus rule "zero archaic forms" applies to narrative prose, and a direct quotation must either reproduce NKJV verbatim (including its "unto") or not be marked as a quotation.
+
+**R1.** Location 1: Petition for Consecration — *"Not to us, O LORD, not to us, but to Your name give glory"* (Psalm 115:1). Location 2: NKJV — "Not **unto** us, O LORD, not **unto** us, but to Your name give glory." The inconsistency: the quotation substitutes "to" for NKJV "unto" twice. Reconcile: quote NKJV verbatim ("unto") — quotations are exempt from the prose KJV-ism purge — or paraphrase without quotation marks.
+
+**R2.** Location 1: §I.1 — *"you shall not charge him interest"* (Leviticus 25:36). Location 2: NKJV Leviticus 25:36 — "Take no usury or interest from him; but fear your God, that your brother may live with you." The inconsistency: the quoted phrase does not occur in the NKJV verse. Reconcile: use NKJV wording or re-cite (cf. Nehemiah 5:7–10; Leviticus 25:36 KJV reads "Take thou no usury of him").
+
+**R3.** Location 1: §I.3 — *"God gave the increase"* (1 Corinthians 3:7). Location 2: NKJV — the wording "God gave the increase" is 1 Corinthians **3:6**; 3:7 reads "God who gives the increase." The inconsistency: wrong verse for the quoted wording. Reconcile: change citation to 3:6 or quote 3:7's wording.
+
+**R4.** Location 1: §II.2 — *"everything that is exposed is made manifest by the light"* (Ephesians 5:13). Location 2: NKJV — "But **all things** that **are** exposed **are** made manifest by the light." The inconsistency: wording mismatch. Reconcile to NKJV.
+
+**R5.** Location 1: §II.2 — *"to do justly, and to love mercy"* (Micah 6:8). Location 2: NKJV — "But to do justly, To love mercy, And to walk humbly with your God?" The inconsistency: inserted "and" not present in NKJV. Reconcile to NKJV.
+
+**R6.** Location 1: §II.3 — *"When a man vows a vow to the LORD... he shall not break his word"* (Numbers 30:2). Location 2: NKJV — "**If a man makes a vow** to the LORD, or swears an oath to bind himself by some agreement, he shall not break his word." The inconsistency: "vows a vow" matches neither NKJV ("makes a vow") nor KJV ("vow a vow"). Reconcile to NKJV.
+
+**R7.** Location 1: §III.1 — *"has entered for us behind the veil"* (Hebrews 6:19). Location 2: NKJV Hebrews 6:19–20 — "which enters the Presence behind the veil, where the forerunner has entered for us." The inconsistency: the quotation splices v.20 wording onto a citation of v.19. Reconcile: cite 6:19–20 as the range or adjust the wording.
+
+**R8.** Location 1: §III.1 — *"And a servant does not abide in the house forever, but a son abides forever"* (John 8:35). Location 2: NKJV — "And a **slave** does not abide in the house forever, but a son abides forever." The inconsistency: "servant" is the KJV reading; NKJV reads "slave." Reconcile to NKJV.
+
+**R9.** Location 1: §III.2 — *"because the LORD's release has been proclaimed"* (Deuteronomy 15:2). Location 2: NKJV — "because **it is called** the LORD's release." The inconsistency: wording mismatch. Reconcile to NKJV.
+
+**R10.** Location 1: §III.2 — *"there will be no poor among you... only if you carefully obey"* (Deuteronomy 15:4–5). Location 2: NKJV v.4 — "except when there **may be** no poor among you." The inconsistency: "will be" for NKJV "may be" (v.5 verifies clean). Reconcile to NKJV.
+
+**R11.** Location 1: §III.2 — *"the four chief gatekeepers... were in a trusted office"* (1 Chronicles 9:26). Location 2: NKJV — "For in **this** trusted office were four chief gatekeepers; they were Levites." The inconsistency: reworded clause order and articles. Reconcile to NKJV or present without quotation marks.
+
+**R12.** Location 1: §III.3 — *"a just weight and a just measure"* inside the Leviticus 19:35–36 quotation. Location 2: NKJV Leviticus 19:36 — "You shall have honest scales, honest weights, **an honest ephah, and an honest hin**." The phrase "a just weight and a just measure" does not occur in the passage (nearest: Deuteronomy 25:15, "a perfect and just weight, a perfect and just measure"). Reconcile: quote NKJV Leviticus 19:36 or move that phrase to Deuteronomy 25:15.
+
+**R13.** Location 1: §III.4 — *"A false balance is an abomination to the LORD, but a just weight is His delight"* (Proverbs 11:1). Location 2: NKJV — "**Dishonest scales** are an abomination to the LORD, But a just weight is His delight." The inconsistency: "A false balance" is the KJV reading. Reconcile to NKJV.
+
+**R14.** Location 1: §III.6 — *"distributed to each as anyone had need"* (Acts 2:44–45). Location 2: NKJV — "had all things in common, and sold their possessions and goods, and **divided them among all**, as anyone had need." The inconsistency: v.44 verifies; v.45 wording does not ("distributed to each" is not NKJV). Reconcile to NKJV.
+
+**R15.** Location 1: §IV.1 — *"in the mouth of two or three witnesses every word may be established"* (Matthew 18:16; Deuteronomy 19:15). Location 2: NKJV (both verses) — "**by** the mouth of two or three witnesses." The inconsistency: "in the mouth" is the KJV reading. Reconcile to NKJV.
+
+**R16.** Location 1: §IV.1 — *"The hireling... sees the wolf coming and leaves the sheep"* (John 10:12). Location 2: NKJV — "But **a** hireling... sees the wolf coming and leaves the sheep and flees." The inconsistency: article mismatch ("The" for "a"); remainder verbatim. Reconcile to NKJV.
+
+**R17.** Location 1: §IV.1 — *"You have been faithful over a few things, I will make you ruler over many things"* (Matthew 25:21). Location 2: NKJV — "**you were faithful** over a few things, I will make you ruler over many things." The inconsistency: "You have been faithful" is the KJV reading. Reconcile to NKJV. (The same NKJV phrase verifies clean in §I.4 — "You were faithful over a few things" — so the corpus now carries both forms; align §IV.1.)
+
+**R18.** Location 1: §IV.1 — *"providing things honest in the sight of all men"* (Romans 12:17). Location 2: NKJV — "**Have regard for good things** in the sight of all men." The inconsistency: "providing things honest" is the KJV reading. Reconcile to NKJV.
+
+**R19.** Location 1: §IV.3 — *"It may be that the LORD will look on my affliction, and repay me with good"* (2 Samuel 16:11–12). Location 2: NKJV v.12 — "It may be that the LORD will look on my affliction, **and that the LORD will** repay me with good for his cursing this day." The inconsistency: drops "that the LORD will" mid-sentence without ellipsis. Reconcile: restore the words or insert an ellipsis.
+
+**R20.** Location 1: §IV.3 — *"Nevertheless we made our prayer to God, and because of them we set a watch against them day and night"* (Nehemiah 4:9). Location 2: NKJV — "we made our prayer **to our God**." The inconsistency: drops "our" without ellipsis. Reconcile: restore "our" or insert an ellipsis.
+
+**R21.** Location 1: §V.3 — *"a cleaned house is not a safe house"* (Matthew 12:43–45). Location 2: NKJV Matthew 12:44 — "And when he comes, he finds it empty, swept, and put in order." The inconsistency: the quoted sentence does not occur in the passage; it is an interpretive gloss presented as a quotation. Reconcile: quote NKJV ("empty, swept, and put in order") and move the gloss outside quotation marks.
+
+**Verified clean (data point):** the other 194 quotation lines verify verbatim against NKJV, including all 2 Samuel 23–24 marking quotations, all range citations, and all Petition/Part V–VI formal quotations. Two agent flags were extraction artifacts and are not manuscript errors (the Genesis 2:17/3:4 pairing and the 2 Samuel 24:17/24:25 pairing both cite correctly in the manuscript).
+
+---
+
+## Category: chronological — 3 entries
+
+**C1.** Location 1: §VI.2 — "recorded between the pub-garden call and the eight-minute call." Location 2: the meditation files' own timestamps — *Discerning the Grace of a Changing Season* is 08-28 **16:23**; *The Phone Against the Ear* is 08-28 **16:40**; *I Gave Him You, Not the Answers* is 08-28 **18:16**. The inconsistency: 16:23 precedes both calls; it is not between them. Reconcile: one-line wording fix ("recorded on the last afternoon..., ahead of the pub-garden call and the eight-minute call").
+
+**C2.** Location 1: VII Note on the Text and §I.3 tie the confession of "the seat / the ninety seconds" to "the night of August 17" (e.g., §I.3 — "the confession of that night — what led to those ninety seconds"). Location 2: the 08-18 source meditation (Title: "08-18 at 15:08 — ...the Seat I Sat On for Ninety Seconds") states — "And there was **a later night, a separate assault at six in the morning** after twelve-hour shifts... For ninety seconds I sat where I had no business sitting." Location 3: Stone Tablet VI narrates the seat inside the 85-minute call's flow (VI, Part II — "I stood in a seat no bondservant is permitted to stand in, for the span of about ninety seconds"). The inconsistency: the source meditation places the seat at a separate 6:00 AM assault (Aug 18); Stone Tablet VI's narrative places it within the Aug 17 call's arc; VII inherits the VI framing. Reconcile: the author must decide which placement is factual, then align VI, VII's references, and (if needed) the 08-18 meditation's own retrospective.
+
+**C3.** Location 1: Part II header block — "These five meditations are the record of **one week**." Location 2: the five meditations span August 19 – August 28 (nine calendar days). The inconsistency: "one week" vs. nine days. Reconcile: "nine days," or reword ("one stretch of days"). Minor.
+
+---
+
+## Category: numerical — 3 entries
+
+**N1.** Location 1: Part V header block — "Five meditations on the assault against the fellowship." Location 2: Part V carries six sections / six meditations (08-17 19:05; 08-18; 08-21; 08-28 16:40; 08-28 18:16; 08-28 20:09). The inconsistency: the header was not updated when §V.6 was added. Reconcile: "Six meditations."
+
+**N2.** Location 1: §IV.3 — "The account showed fourteen hundred left; **a grand had simply gone**." Same section: "The **two thousand pounds** bought us information no due diligence could have purchased"; "for **two thousand pounds**? It doesn't make sense." Location 2: the 08-25 source meditation — "a client named James defaulted on **roughly fifteen hundred** owed." The inconsistency: the same James event is carried at three figures (≈£1,000 / £2,000 / ≈$1,500) — a variance already present between the source meditations (08-19 08:53 itself carries both "a grand had simply vanished" and "stolen two thousand"). Reconcile: the author states the actual amount once, in one currency, and the volume conforms to it.
+
+**N3.** Location 1: §V.2 — "Thirty kilograms lighter, in his words" (from the 08-18 meditation: "feeling thirty kilograms lighter"). Location 2: §V.3 — "thirty pounds lighter" (from the 08-21 meditation: "thirty pounds lighter"). The inconsistency: two morning-after accounts, one in kilograms and one in pounds. If these are two different mornings (Aug 18 and Aug 21), the units still read as the same figure re-measured; if one morning, one unit is wrong. Reconcile: confirm whether one morning or two; harmonize the unit or distinguish the events explicitly. (Previously raised to the author; still open.)
+
+---
+
+## Category: entity — 2 entries + 1 watch note
+
+**E1.** Location 1: VII §IV.3 — "A mysterious other party named Kane surfaced and then also refused to pick up" (08-19 theft narrative). Location 2: the 07-07 bridge meditation (quoted in §III.2's bridge passage context) — "Kane rightfully owed his $5,000," a laborer/brother owed wages. The inconsistency (possible): the name Kane appears once in VII as a suspicious party adjacent to the theft and once in the cited July corpus as a worker "rightfully owed" $5,000. If one man, the volume leaves a sharp untold turn; if two, the shared name will confuse. Reconcile: confirm whether one referent or two; if two, consider a distinguishing note; if one, decide whether the volume should acknowledge the turn.
+
+**E2.** Location 1: §V.6 — "the ex-wife's voice bleeding through in fragments." Location 2: §VI.3 — "the restored marriage"; "his wife's honesty." Location 3: corpus-wide, Emily is variously "estranged wife" (Volume III era), "ex-wife" (08-28 20:09), and "wife" (08-28 22:11's prayer, "restoring to him his marriage"). The inconsistency: the terminology moves with the sources' own usage, but the reader is never told the legal/relational state at window's end. Reconcile: a single clarifying phrase at first VI.3 mention (e.g., "his ex-wife — reconciling") so the terminology variance reads as the story it is.
+
+**Watch note (not a hit):** Jayden/Jaden is handled by the Note on the Text disclosure; Jade (sister) and Jayden (brother) are disambiguated at Part II's opening; the meditation title variants (08-17 19:05; 08-28 13:50; 08-28 16:23) are disclosed in-line. These are consistent as written.
+
+---
+
+## Category: factual — 2 entries
+
+**F1.** Location 1: Note on the Text — "Volume III carried more than two hundred across nearly three months." Location 2: Stone Tablet V's own text states its window (May 26 – August 16, 2026 — verified) but states no meditation count; "200+" traces to the Master Prompt Template (v1.0/v1.1), not to the tablet. The inconsistency: the figure is template-sourced, not tablet-verified. Reconcile: state the actual count from the corpus, or soften to the template's own hedge. (The companion figures verify clean: Volume I = 80 meditations across the Feb 14 – Apr 14 window, ≈60 days — consistent with Tablet I's own "80 meditations / 213,357 words"; Volume II = 73 meditations — consistent with Tablet II.)
+
+**F2.** Location 1: VII's horizon language — "surrendered April 16, 2026... the discharge of the debts is still in process." Location 2: Stone Tablet III's anchor table — "April 16, 2026 | The obedient phone call at 8:15 PM — **Horizon 1 closed**." The inconsistency: earlier tablets say "closed"; VII says "surrendered... closure in process." Reconcile: this is adjudicated — the Note on the Text and Master Template v1.1 both state the reconciliation ("the April 16 closure was the surrender-event; the discharge is in process"). No further action required; recorded here because a slow reader of I–VII will meet both phrasings.
+
+**Verified consistent across the corpus (data points):** December 1, 2025, 5:47 PM beginning (Tablets III, V; skill; VII's "approximately nine months"); the April 16, 2026, 8:15 PM phone call (Tablets I, II, III; VII); March 17, 2026 as the day Sister Katie and the author met (Tablet III; VII §I.6); Volume II = 73 meditations (Tablet II; Tablet IV; VII); Stone Tablet V's window May 26 – August 16, 2026 (Tablet V; template v1.1); the 85-minute call of August 17, 19:05 (VI, the 08-18 meditation, VII); "two twelve-hour shifts" and "fifty hours without sleep" (08-28 07:44 / 18:16 / VI afterword / VII); the $50,000 advance (08-28 13:36; VII); the eight-minutes-fifteen-seconds call inside a twelve-minute recording (author-corrected; VI afterword and VII now agree).
+
+---
+
+## Category: logical — 1 entry
+
+**L1.** Location 1: Part V intro — "Twice in this window the war came past the money entirely and reached for a brother's mind." Location 2: §V.3 — "Four nights later it came again — **a second night**." Location 3: the 08-18 source meditation documents "a later night, **a separate assault at six in the morning**" (Aug 18) between the two. The inconsistency: the volume counts two assaults on the brother's mind while its own source chain documents a third, intervening event (the 6:00 AM assault, which is also where the source meditation places the seat). Reconcile with C2 as one decision: if the 6:00 AM event is counted, "twice" becomes "three times" and §V.3's "a second night" needs a qualifier; if it is treated as the aftermath of the first night, say so once, explicitly.
+
+---
+
+## Source-level note (no VII action required)
+
+The 08-20 source meditation cites "1 Thessalonians 5:5" for the defrauding passage; the passage is 1 Corinthians 6:7–8. VII's §III.3 already quotes 1 Corinthians 6:7 correctly and does not reproduce the source's citation. Recorded so the source archive can be annotated if the author wishes.
+
+## Audit ends.
+
+◆    ◆    ◆
+
+## Resolution Addendum — August 29, 2026 (author adjudications, applied)
+
+- **R1–R21 (Scripture):** all reconciled to NKJV verbatim. Psalm 115:1 resolved by restoring NKJV "unto" inside the direct quotation — direct quotations are exempt from the prose archaic-form rule.
+- **N1:** Part V header now reads "Six meditations." Resolved.
+- **C1:** §VI.2 now reads "recorded ahead of the pub-garden call and the eight-minute call." Resolved.
+- **C3:** Part II now reads "the record of nine days." Resolved.
+- **N2 (author adjudication):** the James event is stated once, at first mention, as "two thousand pounds, roughly twenty-seven hundred US dollars" (§IV.3); later references keep the spoken figure. Resolved.
+- **N3 (author adjudication):** one morning; kilograms is the accurate unit. §V.3 harmonized, and its framing corrected from "a second night four nights later" to a further reflection (recorded August 21, 22:23) on the same night of August 17. Resolved.
+- **C2 / L1 (author adjudication):** the seat occurred during the 85-minute call of August 17; the 08-18 meditation's "separate assault at six in the morning" framing is superseded. Part V's count stands as written — the night of the 17th and the day of the 28th. Resolved.
+- **E1 (author adjudication):** Kane is one person — the brother rightfully owed $5,000 in July is the same peripheral party in the August 19 narrative; §IV.3 now says so. Resolved.
+- **E2 (author adjudication):** papers filed, not final — clarifier added at first mention (§V.1); "ex-wife" usage removed (§V.6). Resolved.
+- **F1:** resolved by direct count of the AI Drive corpus (PLAUD Summary Meditations, deduplicated by date and title): Volume III's season (May 26 – August 16, 2026) contains **247 unique meditations across 71 days**. The Note on the Text now states the exact figure.
+
+All audit items closed. The manuscript stands at v5.
+
+
+---
+
+## Cross-Reference Appendix (Tablets Pass · Encounter Edition)
+
+*For the reader who just landed here:* This is the **Factual & Consistency Audit** for Stone Tablet VII (Volume IV). It scans the 50,193-word tablet against the 28 source meditations, the bridge meditations, Tablets I–VI, the Master Transformation Timeline, and NKJV Scripture verified at biblehub.com. 217 quotation lines checked · 194 verified clean · 23 flagged (21 corrections stand). The audit's purpose is not to challenge the tablet but to sharpen it — witness fidelity requires quoted-Scripture fidelity.
+
+### Related Files
+- **[Stone Tablet VII · Koinonia Takes Precedence (the tablet being audited)](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VII -- A Living Topology of Transformation -- Volume IV -- Complete.md)**
+- **[Stone Tablet VI · The Night the Silence (the seam confession referenced throughout Tablet VII)](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VI - The Night the Silence Should Have Come Sooner.md)**
+- **[Master Transformation Timeline](memo:/Personal Space/memo/Stone Tablets/Master_Transformation_Timeline.md)** — the biographical spine the audit cross-checks against.
+- **[PLAUD Meditations · Master Index](memo:/Personal Space/memo/PLAUD Meditations/PLAUD Meditations · Master Index.md)** — for the 28 source meditations (Aug 17–28) the audit references.
+
+### The Eight Stone Tablets
+
+- **[Stone Tablet I](memo:/Personal Space/memo/Stone Tablets/Stone Tablet I -- A Living Topology of Transformation -- Volume I -- Complete.md)** · Volume I · Feb 14 – Apr 14
+- **[Stone Tablet II](memo:/Personal Space/memo/Stone Tablets/Stone Tablet II -- A Living Topology of Transformation -- Volume II -- Complete.md)** · Volume II · Apr 18 – May 24
+- **[Stone Tablet III](memo:/Personal Space/memo/Stone Tablets/Stone Tablet III -- The Starling Convergence -- Complete.md)** · Starling Convergence · Jun 4-5
+- **[Stone Tablet IV](memo:/Personal Space/memo/Stone Tablets/Stone Tablet IV -- Volume I Witness Companion -- Complete.md)** · Volume I Witness Companion · Jun 5 retrospective
+- **[Stone Tablet V](memo:/Personal Space/memo/Stone Tablets/Stone Tablet V -- Come Out of Her, My Children -- A Watchman's Testimony from the Sleeping Bride's Hour.md)** · Come Out of Her · May 26 – Aug 16
+- **[Stone Tablet VI](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VI - The Night the Silence Should Have Come Sooner.md)** · Aug 17 · 19:05 seam
+- **[Stone Tablet VII](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VII -- A Living Topology of Transformation -- Volume IV -- Complete.md)** · Volume IV · Aug 17 – Aug 28
+- **[Stone Tablet VIII](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VIII -- Seed Register.md)** · Seed Register · Aug 29+

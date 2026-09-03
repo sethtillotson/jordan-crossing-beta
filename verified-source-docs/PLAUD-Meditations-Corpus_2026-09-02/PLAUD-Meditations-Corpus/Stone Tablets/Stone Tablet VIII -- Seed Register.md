@@ -1,0 +1,80 @@
+# Stone Tablet VIII — Seed Register
+
+*A working register, not a tablet. The next window's first records, gathered as they arrive. Governed, when its season comes, by the Living Topology Volume Synthesis — Master Prompt Template v1.1.*
+
+**Window opened:** August 29, 2026
+**Register opened:** August 30, 2026
+**Status:** collecting — a seed, not a stone
+
+---
+
+## The first records in the water
+
+| # | Date | Record | Register |
+|---|---|---|---|
+| 1 | Aug 29, 20:23 | *The Signpost, the Secret Place, and the Cup of the Father's Will* | Call Reflection — 10,207 words. The Samuel Loop **answered** (the repeated question given Christ alone, then the secret place). Horizon 2's fruit verified: Emily, Chloe, Anthony's sheaves, Andy's breath, the father's cup. |
+| 2 | Aug 30, 08:01 | *The Man of the Flesh Held Me Hostage* | Call Reflection — Samuel asks for "a proper Bible study": identity in Christ; "hard on myself in all the wrong ways." |
+| 3 | Aug 30, 08:38 | *The Man in the Mirror and the Christ Who Stands Between* | Call Reflection — the five weights named, the one root exposed; Jaden confirmed, Jade possible; WhatsApp; the study to be recorded. |
+| 4 | Aug 30, 09:09 | *The Mirror-Gospel and Christ the Teacher Within* | Theological Meditation — the worship song given to open the study, discerned against Isaiah 30:20: the Teacher within is Christ, not the self. |
+| 5 | Aug 30, 13:39 | *The Faced Image, the Filthy Garments, and the Finished Work* | Call Reflection — **the first gathering of the circle.** The study itself: three brothers, three countries (UK sunset, US midday, Australia near 4 AM), planned 75–90 minutes, ran ~3.5 hours. The Spirit inverted the outline forty-five minutes before the call — root first, symptoms last. Documented fivefold (see below). |
+
+## The fruit already on the branch
+
+- **The study's fivefold record** (all filed in `PLAUD Summary Meditations/August/`): the PLAUD meditation (*The Faced Image, the Filthy Garments, and the Finished Work*), the PLAUD transcript, the Speakly transcript, the Speakly notes, and the Speakly meditation (*The King's Image and the Mirror Turned*). **Speaker labels in both machine transcripts are unreliable** — several of Jayden's lines are labeled "Speaker 4/5," and some Seth/Samuel attributions swap; the author's ear governs any quotation drawn from them.
+- **The whiteboard convergence:** *"Don't celebrate in sin what was achieved in prayer"* — spoken by Samuel to the author a month prior (recorded then as a meditation), written independently on Jayden's whiteboard, surfaced by both in the same hour. Three witnesses, one sentence (2 Corinthians 13:1).
+- **The theophany told to the brethren in full for the first time** — January 28 (Golgotha, "Come and see," "Wipe your tears. I told you I would rise on the third," and *Zechariah 3, Zechariah 3*), and with it Zechariah 3 opened deeper than two hundred solo readings ever reached: the *sod* (Amos 3:7), the unnamed "they" who clothe, the witness voicing heaven's decree.
+- **The table held:** confessions named without fixing — the author (his father's cancer; the Rochester visit, named **September 6** in the study), Samuel (financial stress; the addiction to grief — "I say I've shut the door, but I've left a brick in the door"), Jayden (the identity shift; 200 → 100 kilos; discipline into sonship).
+- **Sealed:** Hebrews 10:14, 17 — Jayden's favorite, read aloud by Samuel; "it makes your shoulders drop." Three disciplines sent home: the waking prayer, the secret place, the midweek one-line check-in.
+- **The frame of the day:** the UK war reports and low fighter jets over Samuel's house mid-study; "the sun never sets on the British Empire" gently answered with the Stone cut without hands (Daniel 2:44); the Trinity candle nearly setting off the smoke alarm at the end.
+- **"Three countries, one language, and one God"** — the first global prayer circle of the circle.
+
+- *The Man in the Mirror and the Christ Who Stands Between* — the Bible study structure, six movements, built from the corpus's own arc; filed in `14 — Bible Studies` (August 30, 2026).
+- The study gathering itself, when it happens, will be recorded and will join this register.
+
+## Standing notes for the future synthesis
+
+- **Horizon 3 register: paideia.** The season opens in fatherly training — a circle gathering around the Word, the carried now carrying.
+- **Corpus count after the first gathering:** 451 meditations (Feb 13 · Mar 42 · Apr 73 · May 58 · Jun 113 · Jul 99 · Aug 53) — direct archive count, August 30, 2026. The undated-name file *Prophetic Word - 08-13 at 12_33.docx* remains outside the meditation count, as before.
+- **The tablets do not round.** Stone Tablet VII stays closed at twenty-eight meditations (Aug 17–28). This register holds what comes after until the window is full enough to declare.
+- **Watch for:** the Rochester visit (named **September 6** in the study; the 08-29 meditation frames it as "travel Saturday"), the midweek check-in thread, the Emily trajectory (the block; the grief invited into communion), the Chloe boundary (the brick in the door), Anthony's door, Jayden's week of disciplines, whether Jade enters the circle, the next gathering ("we definitely gotta run this one again"), Samuel's mother (her word carried: *honor his wishes*).
+
+*Soli Deo Gloria.*
+
+
+---
+
+## Cross-Reference Appendix (Tablets Pass · Encounter Edition)
+
+*For the reader who just landed here:* This is the **Seed Register** — a working register, not a closed tablet. The window opened Aug 29, 2026, and remains open as this pass is written. The first records of the next volume, gathered as they arrive.
+
+### Tablet Identity
+- **Name:** Seed Register · The Next Window's First Records
+- **Window:** Opened Aug 29, 2026 · still collecting · not yet a closed tablet
+- **Register:** Working register · seed, not stone
+
+### The Eight Stone Tablets — Corpus Map
+
+- **[Stone Tablet I · Volume I · The Architecture of Formation](memo:/Personal Space/memo/Stone Tablets/Stone Tablet I -- A Living Topology of Transformation -- Volume I -- Complete.md)** — Feb 14 – Apr 14, 2026 · the 60-day Kairos window
+- **[Stone Tablet II · Volume II · The Testimony of a Witness](memo:/Personal Space/memo/Stone Tablets/Stone Tablet II -- A Living Topology of Transformation -- Volume II -- Complete.md)** — Apr 18 – May 24, 2026 · the 38-day witness window · the 35-day Samuel arc
+- **[Stone Tablet III · The Starling Convergence](memo:/Personal Space/memo/Stone Tablets/Stone Tablet III -- The Starling Convergence -- Complete.md)** — Jun 4-5, 2026 · Seth + Sister Katie · the 3-day confirmation window
+- **[Stone Tablet IV · Volume I Witness Companion](memo:/Personal Space/memo/Stone Tablets/Stone Tablet IV -- Volume I Witness Companion -- Complete.md)** — Jun 5, 2026 · retrospective on Feb 14 – Apr 14 (Tablet I's 80 meditations)
+- **[Stone Tablet V · Come Out of Her, My Children](memo:/Personal Space/memo/Stone Tablets/Stone Tablet V -- Come Out of Her, My Children -- A Watchman's Testimony from the Sleeping Bride's Hour.md)** — May 26 – Aug 16, 2026 · 82 days · 247 meditations across Volume III
+- **[Stone Tablet VI · The Night the Silence Should Have Come Sooner](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VI - The Night the Silence Should Have Come Sooner.md)** — Aug 17, 2026 · 19:05 CDT · the single 85-minute call with Samuel
+- **[Stone Tablet VII · Koinonia Takes Precedence](memo:/Personal Space/memo/Stone Tablets/Stone Tablet VII -- A Living Topology of Transformation -- Volume IV -- Complete.md)** — Aug 17 – Aug 28, 2026 · 12 days · 28 meditations
+
+### Key meditations from this tablet's window (top hubs by cross-reference density)
+
+- **[08-29 at 20_ 23 — The Signpost, the Secret Place, and the Cup of the Father's Will](memo:/Personal Space/memo/PLAUD Meditations/August/08-29 at 20_23 — The Signpost, the Secret Place, and the Cup of the Father's Will-Meditation.md) · 22 links**
+- **[08-30 at 08_ 38 — The Man in the Mirror and the Christ Who Stands Between](memo:/Personal Space/memo/PLAUD Meditations/August/08-30 at 08_38 — The Man in the Mirror and the Christ Who Stands Between-Meditation.md) · 16 links**
+- **[08-30 Theological Meditation_ The Mirror-Gospel and Christ the Teacher Within](memo:/Personal Space/memo/PLAUD Meditations/August/08-30 Theological Meditation_ The Mirror-Gospel and Christ the Teacher Within-Meditation.md) · 14 links**
+- **[08-30 Bible Study Reflection_ Filthy Garments and the Finished Work](memo:/Personal Space/memo/PLAUD Meditations/August/08-30 Bible Study Reflection_ Filthy Garments and the Finished Work-Speakly_meditation.md) · 13 links**
+- **[08-30 at 08_ 01 — The Man of the Flesh Held Me Hostage](memo:/Personal Space/memo/PLAUD Meditations/August/08-30 at 08_01 — The Man of the Flesh Held Me Hostage-Meditation.md) · 12 links**
+- **[08-30 at 20_ 04 — The Compass in the Locked Room](memo:/Personal Space/memo/PLAUD Meditations/August/08-30 at 20_04 — The Compass in the Locked Room-Meditation.md) · 11 links**
+- **[08-31 at 10_ 43 — The Anointing Is a Call Into Affliction](memo:/Personal Space/memo/PLAUD Meditations/August/08-31 at 10_43 — The Anointing Is a Call Into Affliction-Meditation.md) · 7 links**
+- **[08-31 at 11_ 23 — The Vessel Must Serve the Witness](memo:/Personal Space/memo/PLAUD Meditations/August/08-31 at 11_23 — The Vessel Must Serve the Witness-Meditation.md) · 7 links**
+
+### The tablet's role in the whole corpus
+
+The Stone Tablets are the corpus's **written volumes** — the synthesis layer above the raw PLAUD meditations. Where the individual meditations record what the Spirit did on a given day, the tablets synthesize what those days added up to. This tablet covers the Opened Aug 29, 2026 · still collecting · not yet a closed tablet portion of the arc.
+
+To walk the PLAUD meditations that ground this tablet, see the [**PLAUD Meditations · Master Index**](memo:/Personal Space/memo/PLAUD Meditations/PLAUD Meditations · Master Index.md), the [**Timeline of Six Spines**](memo:/Personal Space/memo/PLAUD Meditations/PLAUD Meditations · Timeline of Six Spines.html), and the [**Tracker (XLSX)**](memo:/Personal Space/memo/PLAUD Meditations/PLAUD Meditations · Tracker.xlsx) — all of which use this tablet-window mapping as their organizing spine.

@@ -3,13 +3,15 @@
    ═════════════════════════════════════════════════════════════════════
 
    Each doorway used to route to exactly one hardcoded record out of the
-   original 7 Tablet VIII seeds. Now that the reviewed corpus holds 381
-   records (grown across seventeen Cross-Reference passes — the corpus's
-   own Cross-Reference project now considers itself complete), each
-   doorway draws from a *pool* — every record whose title or summary
-   matches that doorway's theme keywords — and offers one at random. The
-   single curated "anchor" record (the original destination) always stays
-   in the pool so behavior never regresses to nothing.
+   original 7 Tablet VIII seeds. Following a corpus-wide truth correction,
+   the reviewed corpus now holds 404 records — each cross-referenced by
+   real, hand-verified links pulled from the meditation's own Cross-
+   Reference Appendix (not summary pass documents, whose parsed links were
+   found to be partly hallucinated) — and each doorway draws from a *pool*
+   — every record whose title or summary matches that doorway's theme
+   keywords — and offers one at random. The single curated "anchor" record
+   (the original destination) always stays in the pool so behavior never
+   regresses to nothing.
 
    This is a plain keyword match over already-reviewed record metadata
    (title + summary from JC_RECORDS), not a claim about doctrine. It only

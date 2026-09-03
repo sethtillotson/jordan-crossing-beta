@@ -162,15 +162,16 @@
         <p class="caption">What "reviewed" and "mirrored" mean here</p>
         <p>
           <span class="archive-record-badge archive-record-badge--reviewed" style="display:inline-block;">reviewed</span>
-          records have passed through one of the Cross-Reference passes: they carry labeled thread
-          connections and appear in <a href="threads.html">Threads</a>. 
+          records carry a verified Cross-Reference Appendix — hand-checked by the author against the
+          eight Stone Tablet volumes themselves — and appear with labeled thread connections in
+          <a href="threads.html">Threads</a>.
           <span class="archive-record-badge archive-record-badge--mirrored" style="display:inline-block;">mirrored</span>
           records are just as fully readable — the complete original text, the same page — but have not
           yet been cross-referenced, so no thread claims are made for them. Both kinds are local pages in
           this app; neither depends on the author's private drive to open. The corpus's own working
-          record documents 451 meditations in total; this repository currently mirrors 410 of the
-          underlying files, of which a handful are supporting documents rather than meditations proper —
-          see the by-month counts below for exactly what is and isn't present yet.
+          record documents 458 real meditations in total (Feb 15 – Sep 1, 2026); this repository currently
+          mirrors 409 of them locally — see the by-month counts below for exactly what is and isn't
+          present yet.
         </p>
       </div>
 
@@ -180,8 +181,8 @@
           <div class="archive-total-label">records readable locally in this app today</div>
         </div>
         <div>
-          <div class="archive-total-figure">451</div>
-          <div class="archive-total-label">direct-archive count, Feb 13 – Aug 30, 2026 (corpus's own working record)</div>
+          <div class="archive-total-figure">458</div>
+          <div class="archive-total-label">direct-archive count, Feb 15 – Sep 1, 2026 (corpus's own working record)</div>
         </div>
         <div>
           <div class="archive-total-figure" id="archive-reviewed-figure">—</div>
@@ -206,22 +207,29 @@
         <p class="caption">See the shape of the lattice</p>
         <p>
           The corpus's own Cross-Reference project is now complete: every real meditation carries a
-          verified appendix of cross-references, organized around six governing doctrinal spines
-          (the August "Tablets" each record feeds into or walks out from). Two visual companions to
-          this archive: <a href="six-doctrinal-spines.html">The Six Doctrinal Spines</a> (what each
-          spine is, and how files flow between them) and
-          <a href="spines-timeline.html">Timeline of Six Spines</a> (their weekly growth across all
-          seven months of the record, February through September 2026).
+          verified appendix of cross-references, organized around the eight true Stone Tablets — the
+          specific written volumes in the author's <em>Living Topology of Transformation</em> series,
+          each covering a specific window of days, that a meditation belongs to by date (not an
+          inferred doctrinal category). Two visual companions to this archive:
+          <a href="six-doctrinal-spines.html">The Eight Stone Tablets</a> (what each tablet is, and
+          how files flow between them) and
+          <a href="spines-timeline.html">Timeline of the Eight Stone Tablets</a> (their weekly growth
+          across all seven months of the record, February through September 2026).
         </p>
       </section>
 
       <section class="callout" style="margin-top:var(--space-6);">
         <p class="caption">Where this came from</p>
         <p>
-          The reviewed records are drawn from a Corpus Map and Cross-Reference passes the author keeps
-          alongside the source meditations. The mirrored records are the same raw meditation files,
-          rendered the same way, without those pass-level connections claimed yet. As more meditations
-          are reviewed and cross-referenced, they move from "mirrored" to "reviewed" and gain entries
+          The reviewed records are drawn from each meditation's own Cross-Reference Appendix — added
+          directly to the file, hand-verified by the author against the eight Stone Tablet volumes
+          themselves. (An earlier version of this feature parsed summary "pass" ledger documents
+          instead of each file's own appendix, and some of what it inferred did not hold up under that
+          verification; the entire cross-reference layer was rebuilt from the corrected, per-file
+          source once the author caught and fixed it — see <a href="../CHANGELOG.md">CHANGELOG.md</a>
+          for the full account.) The mirrored records are the same raw meditation files, rendered the
+          same way, without those verified connections yet. As more meditations are reviewed and
+          cross-referenced, they move from "mirrored" to "reviewed" and gain entries
           in <a href="threads.html">Threads</a> and <a href="paths.html">Corpus Paths</a> — the underlying
           page does not change, only its labeled connections.
         </p>

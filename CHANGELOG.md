@@ -269,6 +269,45 @@ The Jordan Crossing is now publicly available for reading and reflection.
 
 ---
 
+## [1.10] — September 2, 2026
+
+### Fixed — TRUTH CORRECTION
+
+**The owner discovered that the entire cross-reference layer built in [1.6]–[1.9] was partly hallucinated.** Those releases parsed short, numbered summary lists in Pass-7 through Pass-17 *ledger documents* — a second-hand, compressed description of the corpus's cross-references. The owner then hand-verified every meditation's Cross-Reference Appendix directly against the eight real Stone Tablet volumes themselves (not the inferred doctrinal-category labels those releases had used), correcting mislabeled Tablet anchors, removing links that didn't hold up, and adding ones that were missing — and supplied the corrected corpus as a complete bundle (`verified-source-docs/`): all 458 real meditation files, each now carrying its own embedded, corrected Cross-Reference Appendix; the 9 Stone Tablet volumes; and 18 corrected Pass Ledgers (including a new Pass 18 "Corpus-Wide Truth Correction" ledger explaining the fix).
+
+### Added
+
+#### Phase 10: Cross-Reference Layer Rebuilt From the Verified Per-File Source
+- **`scripts/rebuild-cross-references-verified.mjs`** — a new script (not a small generalization of the prior `integrate-passes-*.mjs` scripts, since the extraction logic is fundamentally different) that parses each of the 458 verified meditation files' own embedded appendix directly — the actual place the owner checked phrase-by-phrase against the Stone Tablets — instead of a Pass-N summary document.
+- **Solved a real filename-matching problem**: the verified bundle's on-disk filenames are shortened (per its own README), while both this repository's raw files and the appendices' own `memo:` links use the original long filenames — and this repository's raw filenames additionally carry pre-existing incidental truncation from an earlier upload (e.g. one file literally ends in `...PLAUD Note .md`, missing the word "Prompt"). Solved by matching on the longest true common character-prefix between filenames, with a length-difference tiebreaker — verified against zero ambiguous ties across all 411 repo files before the real run.
+- **Result:** 409 total local records (394 + 15 newly mirrored from the verified bundle, closing part of the historical "not yet uploaded" gap). **404 reviewed / 5 mirrored** (up from 381/13). Added a new `tabletAnchor` field (the corrected Stone Tablet volume + date window) to 400 records. **`JC_EDGES` grew from 357 to 3,270** — a ~9× increase, rebuilt entirely from the verified appendices' real links (4,488 links scanned; 3,270 resolved to real meditation-to-meditation edges, the rest correctly excluded as Stone-Tablet/non-meditation references or genuinely-unresolvable targets).
+- **Verified identically to every prior phase, plus a new self-loop check** (added given the much higher edge volume): zero duplicate ids/hrefs, contiguous `order`, zero bad edge/thread refs, zero self-loops, a before/after diff, a re-tag of encounter dimensions, and live-fetches of both a newly-mirrored and an existing promoted record.
+- **Found and fixed one pre-existing, isolated data-quality bug** while validating tabletAnchor coverage: one record's `title` field was 22,870 characters (a raw source file's own `**Title:**` metadata line had absorbed the entire rest of the document due to a missing line break) — confirmed present before this phase's script ran, unrelated to this correction. Patched directly.
+- **Replaced both infographic pages** (`six-doctrinal-spines.html`, `spines-timeline.html`) with the bundle's corrected "Eight Stone Tablets" versions — the [1.9] versions had inherited the same six-vs-eight mislabeling this phase corrected everywhere else. Re-applied the same site-chrome wrapper established in [1.9].
+- **Rewrote every stale-copy location** (`index.html`, `threads.html`, `paths.html`, `archive.html`, `mystery-v2-logic.js`) — this time changing the language itself, not just the numbers, since the nature of the claim changed from "N Cross-Reference passes" to "each meditation's own verified Cross-Reference Appendix." `archive.html`'s "Where this came from" callout now explicitly discloses the earlier hallucination and this correction.
+- **Moved every superseded corpus-tagging document to `Superseded-Docs/`**: all 17 old Pass-N-Cross-References.md files, the old Master Index/Tracker/both infographics, the old `PLAUD Meditations Corpus Map.md`, and the original project-root `Corpus Map.md` (which still named the pre-correction "seven Stone Tablets").
+- **Deliberately left untouched**: the four named `JC_THREADS` (Zechariah 3, Samuel Loop, Murmuration, Descent) — an orthogonal classification from the Tablet-window correction, whose defining Corpus Map is now itself superseded with no replacement supplied.
+
+### Known Limitations
+
+- 5 records remain mirrored (not yet reviewed) — genuinely no verified match found.
+- 9 records have no `tabletAnchor` — a mix of the 5 above, known pre-existing content/filename-mismatch cases, and intentionally-excluded duplicate/non-meditation raw files.
+- The four named `JC_THREADS`' own step sequences were **not** re-verified this phase — their source Corpus Map is superseded with no corrected replacement supplied; a future pass should get one from the owner or re-derive thread membership from the new verified data.
+- The 9 Stone Tablet volumes are referenced but not yet ingested as their own browsable site pages.
+- The 6 milestone-named cross-pass narrative chains from [1.8] remain open (narrative prose claims, not appendix-embedded links, so outside this phase's parser).
+- Audio remains out of scope per owner direction; unchanged from [1.3]–[1.9].
+
+### Technical Details
+
+- **Framework**: None (vanilla HTML5/CSS3/JavaScript)
+- **Static Site**: All data in JavaScript; no server-side code
+- **Persistence**: localStorage only for carry-question feature
+- **Deployment**: GitHub Pages with GitHub Actions CI/CD
+- **Cache Strategy**: Query string versioning (?v=YYYYMMDDVN) for CSS/JS
+- **Browser Support**: All modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
+
 ## [Beta 1.0] — June 2026
 
 ### Initial Release (Private)
