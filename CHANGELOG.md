@@ -2,6 +2,28 @@
 
 All notable changes to the Jordan Crossing project are documented in this file.
 
+## [2.4] — September 3, 2026
+
+### "What did you actually encounter?" fixed, then made navigational (Phase 15)
+
+Two live-reported bugs in the same record-page section, fixed in sequence.
+
+**Buttons did nothing.** `initDiscernChoices()` targeted a `.discern-response`/`.active` class pairing
+that no longer matched the real markup — the template emits `.discern-reveal` panels using the native
+`hidden` attribute. Every one of the three response buttons, on all 456 record pages, silently did
+nothing. Fixed the JS to target the real elements/attribute, and replaced the matching orphaned CSS.
+
+**Responses made genuinely navigational.** The owner pointed back to the original design doc, which
+specifies these responses should function as navigation (e.g. "I did not understand" → definitions,
+surrounding sequence, source transcript, related Scripture; "I disagree" → a way to inspect the
+record more closely) rather than static reveal text. Implemented: headings rendered from each
+record's Markdown now get a slugified `id`, enabling real in-page anchors; each response now surfaces
+a small set of navigation links built only from content genuinely present on that specific record
+(Follow the thread / See related records / See the surrounding sequence / Read the Scripture
+referenced / Read the source transcript / Inspect the source transcript) — any section without real
+content on a given record is simply omitted, never a fabricated link. Verified live across records
+with and without a Scripture References heading.
+
 ## [2.3] — September 3, 2026
 
 ### Cross-Reference Appendix richness — Doctrinal Spine, Lexicon Joints, Chiastic Mirror (Phase 14)

@@ -532,6 +532,36 @@ main {
   margin: 0 0 var(--space-4) 0;
 }
 
+/* Real navigation offered inside each "What did you actually encounter?"
+   response — per the original design doc, these responses should function
+   as navigation, not just static reveal text. Links point only to content
+   already present on the page (a Scripture References heading in this
+   record's own body, the Record Sequence / Related Records / Reviewed
+   Thread Connections mounts, or the ?mode=original source view). */
+.discern-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.discern-nav-link {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--gold);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.discern-nav-link:hover {
+  background: rgba(201, 162, 39, 0.2);
+  border-color: var(--gold);
+}
+
 /* ───────────────────────────────────────────────────────────────────
    Shared button styles (used by return-panel quick actions, landing
    page navigation, and various on-page controls across the site)

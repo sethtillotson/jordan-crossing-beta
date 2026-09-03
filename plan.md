@@ -1,19 +1,52 @@
 # Jordan Crossing — Build Progress & Next Steps
 
-## Current Status (September 3, 2026 — Phase 15: "What did you actually encounter?" buttons fixed)
+## Current Status (September 3, 2026 — Phase 15: "What did you actually encounter?" fixed + made navigational)
 
-A real, live-reported bug fixed after Phase 14: on every record page, clicking any of the three
-"What did you actually encounter?" buttons (I recognized something / I'm not sure yet / I want to
-resist this) did nothing. Root cause: `initDiscernChoices()` in `assets/design-v2-logic.js` queried
-`.discern-response` elements and toggled a CSS `.active` class — but the actual record-page template
-(`build-records2-corpus.mjs`) emits each reveal panel as `<div class="discern-reveal" hidden>`, a
-completely different class name and mechanism (the native `hidden` attribute, not a CSS class). The
-querySelector found nothing on all 456 record pages, so clicking any of the three buttons silently
-did nothing. Fixed the JS to target the real `.discern-reveal` elements and toggle their `hidden`
-attribute directly; also replaced the now-correctly-targeted (previously orphaned, never-applied)
-`.discern-response`/`.discern-response.active` CSS rules with `.discern-reveal` rules carrying the
-same intended background/border/reveal-animation styling. Verified live: clicking each of the three
-buttons now correctly shows its own response text and hides the others.
+Two related fixes to the "What did you actually encounter?" section on every record page, both
+live-reported by the owner after Phase 14:
+
+**15a — reveal buttons did nothing.** Root cause: `initDiscernChoices()` in
+`assets/design-v2-logic.js` queried `.discern-response` elements and toggled a CSS `.active` class —
+but the actual record-page template (`build-records2-corpus.mjs`) emits each reveal panel as
+`<div class="discern-reveal" hidden>`, a completely different class name and mechanism (the native
+`hidden` attribute, not a CSS class). The querySelector found nothing on all 456 record pages, so
+clicking any of the three buttons silently did nothing. Fixed the JS to target the real
+`.discern-reveal` elements and toggle their `hidden` attribute directly; also replaced the
+now-correctly-targeted (previously orphaned, never-applied) `.discern-response`/
+`.discern-response.active` CSS rules with `.discern-reveal` rules carrying the same intended
+background/border/reveal-animation styling.
+
+**15b — responses made genuinely navigational, per the original design.** The owner pointed to the
+original design doc (`JORDAN_CROSSING_MYSTERY_MODE_AND_PUBLIC_WITNESS_DESIGN.md`), which specifies
+that these responses were always meant to function as **navigation**, not just static reveal text —
+e.g. choosing "I did not understand" should offer a plain-language orientation, the surrounding
+sequence, definitions, source transcript, or related Scripture; "I disagree" should offer a way to
+inspect the record more closely. The owner confirmed the exact 8-button design isn't required, only
+that each response function as real navigation. Implemented: `renderRecordMarkdown()` now assigns a
+slugified `id` to every heading it renders (`slugifyHeading()`), enabling real in-page anchors;
+`initDiscernChoices()` now builds a small set of navigation links per response
+(`buildDiscernNavLinks()`/`discernNavLink()`/`findHeadingId()`), sourced only from content genuinely
+present on that specific record page (checked via `.textContent.trim()` on each mount, never
+fabricated):
+- **I recognized something** → Follow the thread (`#threads-mount`), See related records
+  (`#related-records-mount`)
+- **I'm not sure yet** → Read the Scripture referenced (anchor to that record's own "Scripture
+  References" heading, when present), See the surrounding sequence (`#graph-nav-mount`), Read the
+  source transcript (`?mode=original`)
+- **I want to resist this** → Inspect the source transcript (`?mode=original`), Read the Scripture
+  referenced (when present)
+
+Any link whose target section has no real content on that record (e.g. a record with no Scripture
+References heading, or no reviewed thread connections) is simply omitted — never a dead or fabricated
+link. Reordered the page's `DOMContentLoaded` handler so `initDiscernChoices()` runs last, after all
+the mount-populating functions, so its "does this section have content" checks see the final DOM.
+Verified live across two different records (one with a full appendix and Scripture heading, one
+without) that all three response types render correct, working links, and that missing sections are
+gracefully omitted rather than broken.
+
+Pure `assets/design-v2-logic.js` + `assets/design-v2.css` change — no data pipeline re-run needed,
+since the static record-page template markup itself is unchanged (only its JS/CSS interpretation
+changed).
 
 See "Phase 14" below for the appendix richness work (Doctrinal Spine, Lexicon Joints, Chiastic
 Mirror), "Phase 13" for the public-beta cleanup pass, "Phase 12" for the Corpus Lattice cross-reference

@@ -33,6 +33,15 @@
     return html.replace(/\u0000(\d+)\u0000/g, (_, index) => code[Number(index)]);
   }
 
+  function slugifyHeading(text) {
+    return text
+      .toLowerCase()
+      .replace(/[\u{1F300}-\u{1FAFF}\u2600-\u27BF]/gu, '') // strip emoji (headings use them decoratively, e.g. "⚡ Opening Observation")
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-');
+  }
+
   function renderRecordMarkdown() {
     const article = document.querySelector('.record-source');
     if (!article || article.dataset.markdownRendered === 'true') return;
@@ -78,7 +87,13 @@
         flushParagraph();
         flushList();
         flushQuote();
-        output.push(`<h${heading[1].length}>${renderInlineMarkdown(heading[2])}</h${heading[1].length}>`);
+        // Slug id lets in-page navigation (the "What did you actually
+        // encounter?" response links) jump directly to a real section of
+        // THIS record's own source text — e.g. its Scripture References —
+        // rather than only revealing static commentary text.
+        const slug = slugifyHeading(heading[2]);
+        const idAttr = slug ? ` id="h-${slug}"` : '';
+        output.push(`<h${heading[1].length}${idAttr}>${renderInlineMarkdown(heading[2])}</h${heading[1].length}>`);
         continue;
       }
 
@@ -144,11 +159,90 @@
 
   // ═══════════════════════════════════════════════════════════════════
   // MOVEMENT 1: DISCERN — Response panel toggling
+  //
+  // Per the original design (JORDAN_CROSSING_MYSTERY_MODE_AND_PUBLIC_
+  // WITNESS_DESIGN.md §"Discern"): these three responses are meant to
+  // function as NAVIGATION, not just static reveal text — e.g. choosing
+  // "I'm not sure yet" (this build's version of the design doc's "I did
+  // not understand") should be able to actually offer definitions/
+  // Scripture, the surrounding sequence, and the source transcript; "I
+  // want to resist this" ("I disagree") should offer a way to inspect the
+  // record more closely. Below, each reveal panel gets real navigation
+  // links built from content ALREADY present on this exact page (a
+  // Scripture References heading inside the article, if this record has
+  // one; the Record Sequence / Related Records / Reviewed Thread
+  // Connections mounts; the ?mode=original no-interpretation view) —
+  // never a fabricated link to something not actually on the page.
   // ═════════════════════════════════════════════════════════════════════
+
+  function findHeadingId(keywords) {
+    const headings = document.querySelectorAll('.record-source h1, .record-source h2, .record-source h3');
+    for (const h of headings) {
+      const text = h.textContent.toLowerCase();
+      if (keywords.some(k => text.includes(k))) return h.id || null;
+    }
+    return null;
+  }
+
+  function discernNavLink(href, label) {
+    return `<a class="discern-nav-link" href="${href}">${label}</a>`;
+  }
+
+  function buildDiscernNavLinks(kind) {
+    const links = [];
+    const scriptureId = findHeadingId(['scripture']);
+    // Check for actual populated content, not just the (always-present)
+    // mount element itself — several of these mounts are legitimately
+    // left empty for records with nothing to show (e.g. zero Related
+    // Records), and linking to an empty section would be a dead end.
+    const hasRelated = !!document.querySelector('#related-records-mount')?.textContent.trim();
+    const hasThreads = !!document.querySelector('#threads-mount')?.textContent.trim();
+    const hasSequence = !!document.querySelector('#graph-nav-mount')?.textContent.trim();
+    // window.location.pathname never contains "?" — any existing query
+    // string lives in window.location.search — so this record page's own
+    // URL plus "?mode=original" (or "&mode=original" if it already has a
+    // query string) always lands on its own no-interpretation route.
+    const existingQuery = window.location.search.replace(/^\?/, '');
+    const originalHref = `${window.location.pathname}?${existingQuery ? existingQuery + '&' : ''}mode=original`;
+
+    if (kind === 'recognized') {
+      // Recognized something real — offer to go deeper, following the
+      // corpus's own labeled connections rather than staying put.
+      if (hasThreads) links.push(discernNavLink('#threads-mount', 'Follow the thread →'));
+      if (hasRelated) links.push(discernNavLink('#related-records-mount', 'See related records →'));
+    } else if (kind === 'uncertain') {
+      // "I did not understand," in the design doc's language — offer
+      // definitions/Scripture, the surrounding sequence, and the source.
+      if (scriptureId) links.push(discernNavLink(`#${scriptureId}`, 'Read the Scripture referenced →'));
+      if (hasSequence) links.push(discernNavLink('#graph-nav-mount', 'See the surrounding sequence →'));
+      links.push(discernNavLink(originalHref, 'Read the source transcript →'));
+    } else if (kind === 'resisted') {
+      // "I disagree" — the site permits refusal, but offers a way to
+      // inspect the record more closely rather than just being dismissed.
+      links.push(discernNavLink(originalHref, 'Inspect the source transcript →'));
+      if (scriptureId) links.push(discernNavLink(`#${scriptureId}`, 'Read the Scripture referenced →'));
+    }
+    return links.length ? `<div class="discern-nav-links">${links.join('')}</div>` : '';
+  }
 
   function initDiscernChoices() {
     const choices = document.querySelectorAll('.discern-choice');
-    
+    const revealKindMap = {
+      'discern-recognized': 'recognized',
+      'discern-uncertain': 'uncertain',
+      'discern-resisted': 'resisted',
+    };
+
+    // Build each reveal panel's real navigation links once, up front —
+    // not deferred to first click — so they're available immediately.
+    Object.keys(revealKindMap).forEach(revealId => {
+      const reveal = document.getElementById(revealId);
+      if (!reveal || reveal.dataset.navBuilt === 'true') return;
+      const navHtml = buildDiscernNavLinks(revealKindMap[revealId]);
+      if (navHtml) reveal.insertAdjacentHTML('beforeend', navHtml);
+      reveal.dataset.navBuilt = 'true';
+    });
+
     choices.forEach(btn => {
       btn.addEventListener('click', () => {
         const revealed = btn.dataset.reveals;
@@ -525,7 +619,6 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     renderRecordMarkdown();
-    initDiscernChoices();
     initReturnChoices();
     initAudioPlayer();
     initGraphNav();
@@ -534,6 +627,11 @@
     initDoorwayThemes();
     initThreadConnections();
     initLexiconChiasticMirror();
+    // Runs last: builds real navigation links for the "What did you
+    // actually encounter?" responses (e.g. "Follow the thread", "See
+    // related records"), which depend on the mounts above already being
+    // populated so an empty section is never linked to.
+    initDiscernChoices();
     trackLastRecord();
   });
 
